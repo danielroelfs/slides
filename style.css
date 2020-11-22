@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+/* Set variables */
+:root {
+    --text-color: #eee;
+    --background-color: rgb(38,38,38); 
+    --accent-color: #CD5D67;
+    --main-font-family: 'Alegreya Sans', sans-serif;
+    --header-font-family: 'Alegreya SC', serif;
+  }
+  
+/* Set globals */
+
+body {
+    font-family: var(--main-font-family);
+    font-weight: 500;
+    font-size: 15pt;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+/* Set text style */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--header-font-family);
+    font-size: 40pt;
+    font-weight: 800;
+}
+
+h1 {
+    padding-bottom: 0.5em;
+}
+
+
+a {
+    color: var(--accent-color);
+}
+
+a:hover {
+    filter: brightness(130%);
+    transition: all .5s ease;
+}
+
+
+/* Table style */
+.tb {
+    table-layout: fixed;
+	border-collapse: collapse;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.tb td {
+	overflow: hidden;
+    padding-top: 10px;
+    padding-right: 20px; 
+    padding-bottom: 10px;
+    padding-left: 20px;
+	word-break: normal;
+}
+
+.tb th{
+    overflow: hidden;
+    padding-top: 20px;
+    padding-right: 20px; 
+    padding-bottom: 10px;
+    padding-left: 20px;
+    word-break: normal;
+    font-variant: small-caps;
+    font-weight: 900;
+    border-bottom: 1px solid var(--text-color);
+}

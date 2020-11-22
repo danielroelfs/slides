@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap');
+
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.95);
+    width: 80%; 
+    height: 80%;
+    margin: 0 auto;
+}
+
+/* Define text */
+body {
+    display: flex;
+    height: 100vh;
+    background-image: url('program_background.jpg');     
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #75ABDC;
+    font-size: 32pt;
+    font-weight: 600;
+}
+
+/* Define text */
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #E896C1;
+    line-height: 100%;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 60pt;
+    transform: scaleX(1.2);
+    letter-spacing: 2px;
+    padding-bottom: 1rem;
+}
+
+/* Other */
+
+#clock {
+    display: block;
+    color: #75ABDC;
+}
+
+#talk {
+    display: block;
+    font-style: italic;
+    margin: 1rem;
+}
+
+#speaker {
+    display: block;
+}
+
+#time {
+    display: block;
+    color: #75ABDC;
+    font-size: 46pt;
+    margin: 1rem;
+    margin-bottom: 3rem;
+}
+
+#now {
+    display: block;
+    font-size: 24pt;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+}
+
+.center {
+    margin: auto 5px;
+    text-align: center;
+}

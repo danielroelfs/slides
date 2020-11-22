@@ -24,6 +24,15 @@ body {
     width: 60%;
     margin: auto;
 }
+@media (max-width: 1000px) {
+    .container {
+        width: 95%;
+    }
+}
+
+i {
+    color: var(--accent-color);
+}
 
 /* Set text style */
 
@@ -55,6 +64,8 @@ a:hover {
 
 /* Table style */
 .tb {
+    position: relative;
+    width: 100%;
     table-layout: fixed;
 	border-collapse: collapse;
     text-align: left;
@@ -80,4 +91,36 @@ a:hover {
     font-variant: small-caps;
     font-weight: 900;
     border-bottom: 1px solid var(--text-color);
+}
+
+.newtab {
+    cursor: pointer;
+}
+
+[data-href] { 
+    cursor: pointer; 
+}
+[data-href]:hover { 
+    cursor: pointer; 
+    color: var(--accent-color);
+    filter: brightness(130%);
+    transition: all .5s ease;
+}
+
+/* Style buttons */
+.btn {
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+}
+  
+.btn:hover {
+    color: var(--accent-color);
+    filter: brightness(130%);
+    transition: all .5s ease;
 }

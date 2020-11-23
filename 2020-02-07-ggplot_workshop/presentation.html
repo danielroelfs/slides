@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>ggploting your way to beautiful figures</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Daniel Roelfs (@dthroelfs) Adriano Winterton (@fuyu00) Linn Sofie Saether (@linnssaether)" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# ggploting your way to beautiful figures
+## <img src="images/ggplot2.png" style="height: 300px" /><img src="images/normentR_hex.png" style="height: 150px" />
+### Daniel Roelfs (<span class="citation">@dthroelfs</span>)<br>Adriano Winterton (<span class="citation">@fuyu00</span>)<br>Linn Sofie Saether (<span class="citation">@linnssaether</span>)
+
+---
+
+class: center, middle, inverse
+
+
+
+# How to improve our figures
+
+---
+class: center, middle, inverse
+
+# When it comes to figure making
+
+&lt;img src="images/ggplot2.png" width="150px" align="middle"/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;font size="+6"&gt; &gt; &lt;/font&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;img src="images/spss_logo.png" width="150px" align="middle"/&gt;
+
+&lt;img src="images/ggplot2.png" width="150px" align="middle"/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;font size="+6"&gt; &gt; &lt;/font&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;img src="images/excel_logo.png" width="150px" align="middle"/&gt;
+
+---
+class: center, middle, inverse
+
+# The anatomy of a ggplot
+
+---
+class: inverse
+
+&lt;img src="images/GrammarOfGraphics_fig.png" class="center"/&gt;
+
+---
+class: inverse
+
+&lt;img src="images/GrammarOfGraphics_fig.png" height="300px" class="centerfig"/&gt;
+
+# Geometries = boxplot, line, scatter, etc.
+
+# Aesthetics = x-axis, y-axis, color, fill, shape
+
+# Data = your awesome TOP data 😃
+
+---
+class: middle
+
+# Installing the packages we need
+
+
+```r
+install.packages("tidyverse") # &lt;- includes ggplot2
+devtools::install_github("norment/normentR") # &lt;- themes and colors
+```
+
+---
+class: middle
+
+# Loading the packages
+
+
+```r
+library(tidyverse)
+library(normentR)
+```
+
+---
+
+## The skeleton
+
+&lt;img src="images/GrammarOfGraphics_fig_black.png" height="150px" align="centerfig"/&gt;
+
+--
+
+## The code
+
+```r
+ggplot(data = mtcars, aes(x = wt, y = mpg)) +
+  geom_point()
+```
+
+&lt;p style="color:#d3d800;"&gt;Data: mtcars
+&lt;p style="color:#0081c9;"&gt;Aethetics: aes(x = wt, y = mpg)
+&lt;p style="color:#5c2483;"&gt;Geometry: geom_point()
+
+---
+class: center, middle, inverse
+
+# ggplot, the layer cake 🍰
+
+---
+
+
+```r
+ggplot(mtcars, aes(x = wt, y = mpg))
+```
+
+&lt;img src="presentation_files/figure-html/unnamed-chunk-4-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+---
+
+
+```r
+ggplot(mtcars, aes(x = wt, y = mpg)) +
+* geom_point()
+```
+
+&lt;img src="presentation_files/figure-html/unnamed-chunk-5-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+---
+
+
+```r
+*ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
+* geom_point(size = 3)
+```
+
+&lt;img src="presentation_files/figure-html/unnamed-chunk-6-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+---
+
+
+```r
+ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
+  geom_point(size = 3) +
+* labs(x = "Weight (1000 lbs)",
+*      y = "Miles/(US) gallon",
+*      color = "Number of cylinders")
+```
+
+&lt;img src="presentation_files/figure-html/unnamed-chunk-7-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+---
+
+
+```r
+ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
+  geom_point(size = 3) +
+  labs(x = "Weight (1000 lbs)",
+       y = "Miles/(US) gallon",
+       color = "Number of cylinders") +
+* scale_color_norment(discrete = TRUE, palette = "logo")
+```
+
+&lt;img src="presentation_files/figure-html/unnamed-chunk-8-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+---
+
+
+```r
+p &lt;- ggplot(mpg %&gt;% filter(class != "2seater"), 
+            aes(x = reorder(class,-cty), y = cty, 
+                fill = reorder(class,-cty))) + 
+  geom_violin() + 
+  geom_boxplot(width = 0.1, outlier.shape = 4) +
+  geom_curve(aes(xend = 1.1, yend = 36, x = 1.6, y = 38), 
+             curvature = 0.2,
+             arrow = arrow(length = unit(2,"mm"))) +
+  geom_text(data = . %&gt;% filter(cty == max(cty)),
+            aes(x = 2.4, y = 38, 
+                label = paste(manufacturer, model, sep = " "))) +
+  labs(x = "Class of vehicle",
+       y = "City mileage",
+       fill = "Class", 
+       title = "What class of car has the\nbest mileage in the city?",
+       caption = "Source: mpg") +
+  scale_x_discrete() +
+  scale_y_continuous(limits = c(0,40)) +
+  scale_fill_norment(discrete = TRUE, palette = "nejm") +
+  theme_norment(legend = FALSE, grid = "Y") +
+  theme(
+    plot.title = element_text(hjust = -0.1)
+  )
+```
+
+
+
+---
+
+
+
+
+```r
+print(p)
+```
+
+&lt;img src="presentation_files/figure-html/unnamed-chunk-12-1.png" width="90%" height="90%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# What's possible with ggplot
+
+&lt;img src="images/BBC_time_image.png" style="height:180%, width=180%"&gt;
+
+---
+
+# What's possible with ggplot
+
+&lt;img src="images/Bach_productivity.png" width="200%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# What's possible with ggplot
+
+&lt;img src="images/column_wheel_permonth.png" width="605" style="display: block; margin: auto;" /&gt;
+
+---
+
+# What's possible with ggplot
+
+&lt;img src="images/Wine_VarietyxPrice.png" width="200%" style="display: block; margin: auto;" /&gt;
+
+---
+class: center,middle,inverse
+
+# One more (very) important concept:
+
+--
+
+&lt;br&gt;
+# Long vs wide format 😃
+
+---
+
+# Long vs wide format
+
+#### `ggplot` wants a single column for x-axis, y-axis, color, etc
+
+This is often not a problem, e.g.:
+
+
+
+
+```r
+str(your_data)
+```
+
+```
+## 'data.frame':	30 obs. of  3 variables:
+##  $ id     : Factor w/ 30 levels "HC_0130","HC_0152",..: 1 15 19 23 18 14 11 3 8 17 ...
+##  $ age    : int  64 32 60 45 53 31 24 54 28 63 ...
+##  $ measure: num  1.92 1.28 2.76 0.32 3.8 1.14 1.66 0.82 1.54 3.52 ...
+```
+
+```r
+print(your_data)
+```
+
+```
+##         id age measure
+## 1  HC_0130  64    1.92
+## 2  HC_0471  32    1.28
+## 3  HC_0576  60    2.76
+## 4  HC_0682  45    0.32
+## 5  HC_0556  53    3.80
+## 6  HC_0455  31    1.14
+## 7  HC_0422  24    1.66
+## 8  HC_0155  54    0.82
+## 9  HC_0382  28    1.54
+## 10 HC_0513  63    3.52
+## 11 HC_0697  44    2.38
+## 12 HC_0656  54    0.52
+## 13 HC_0450  40    3.02
+## 14 HC_0439  52    3.60
+## 15 HC_0582  64    0.96
+## 16 HC_0605  39    1.52
+## 17 HC_0415  52    2.60
+## 18 HC_0744  29    1.20
+## 19 HC_0807  28    0.86
+## 20 HC_0403  55    1.90
+## 21 HC_0162  53    3.64
+## 22 HC_0511  50    1.68
+## 23 HC_0320  40    2.40
+## 24 HC_0693  19    0.28
+## 25 HC_0289  38    2.72
+## 26 HC_0352  51    0.20
+## 27 HC_0834  60    0.64
+## 28 HC_0865  20    2.06
+## 29 HC_0871  21    2.02
+## 30 HC_0152  33    0.80
+```
+
+---
+
+# Long vs wide format
+
+#### `ggplot` wants a single column for x-axis, y-axis, color, etc
+
+This is often not a problem, e.g.:
+
+```r
+ggplot(your_data, aes(x = age, y = measure)) +
+  geom_point()
+```
+
+&lt;img src="presentation_files/figure-html/unnamed-chunk-18-1.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Long vs wide format
+
+#### Example of wide format
+
+
+
+
+```r
+View(wide)
+```
+
+&lt;img src="images/wide.png" width="630" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Long vs wide format
+
+#### Conversion to long format
+
+
+```r
+long &lt;- pivot_longer(data = wide, 
+                     cols = c(iq,workmem,procspeed,cpt))
+View(long)
+```
+
+&lt;img src="images/long.png" width="378" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Long vs wide format
+
+#### Conversion to long format
+
+
+```r
+long &lt;- pivot_longer(data = wide, 
+                     cols = c(iq,workmem,procspeed,cpt))
+View(long)
+```
+
+&lt;img src="images/long_annot.png" width="378" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Long vs wide format
+
+#### Conversion to long format
+
+
+```r
+ggplot(long, aes(x = name, y = value, fill = diag)) +
+  geom_boxplot()
+```
+
+&lt;img src="presentation_files/figure-html/unnamed-chunk-26-1.png" width="400px" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Long vs wide format
+
+#### Conversion to long format
+
+&lt;img src="images/wide_to_long.png" width="800px" style="display: block; margin: auto;" /&gt;
+
+---
+class: center, middle, inverse
+
+&lt;img src="images/cat_meme.png" width="800px" style="display: block; margin: auto;" /&gt;
+
+---
+class: center, middle, inverse
+
+# Download the data here:
+
+&lt;!--# bit.ly/2UxUNnc--&gt;
+# bit.ly/2SntWYd
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

@@ -19,6 +19,11 @@
 		<script src="plugin/chart/Chart.min.js"></script>
 		<script src="plugin/chart/plugin.js"></script>
 
+		<!-- Word cloud scripts-->
+		<script src="https://d3js.org/d3.v4.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+
+
 		<base target="_blank">
 	</head>
 
@@ -37,6 +42,87 @@
 					<!--<div style="text-align: center; margin-top: 20%; margin-left: -5%;"> 
 						<img style="margin: auto" src="https://norment.github.io/ecrm20_escaperoom/images/norment.png" width="50"/>
 					</div>-->
+
+				</section>
+
+				<!-- SLIDE -->
+				<section id="center">
+					<h2>Open Science</h2>
+					
+					<div id="wordcloud" style="height: 80vh;"></div>
+
+					<script>
+
+						// List of words
+						var keywords = [
+							{ word: "open access", size: "60" },
+							{ word: "open data", size: "60" },
+							{ word: "open education", size: "60" },
+							{ word: "open government", size: "40" },
+							{ word: "open licenses", size: "40" },
+							{ word: "open scholarship", size: "40" },
+							{ word: "open software", size: "40" },
+							{ word: "open source", size: "30" },
+							{ word: "politics", size: "30" },
+							{ word: "preprints", size: "20" },
+							{ word: "pre-registrations", size: "20" },
+							{ word: "democracy", size: "20" },
+							{ word: "capitalism", size: "20" },
+							{ word: "reproducibility", size: "20" },
+							{ word: "scripts", size: "10" },
+							{ word: "funding", size: "10" },
+							{ word: "society", size: "10" },
+							{ word: "sharing", size: "10" },
+							{ word: "academia", size: "10" },
+							{ word: "europe", size: "10" },
+							{ word: "collaboration", size: "10" },
+							{ word: "accessibility", size: "10" },
+						]
+						
+						// set the dimensions and margins of the graph
+						var margin = {top: 20, right: 20, bottom: 20, left: 20},
+							width = 800 - margin.left - margin.right,
+							height = 500 - margin.top - margin.bottom;
+						
+						// append the svg object to the body of the page
+						var svg = d3.select("#wordcloud").append("svg")
+							.attr("width", width + margin.left + margin.right)
+							.attr("height", height + margin.top + margin.bottom)
+						  .append("g")
+							.attr("transform",
+								  "translate(" + margin.left + "," + margin.top + ")");
+						
+						// Constructs a new cloud layout instance. It run an algorithm to find the position of words that suits your requirements
+						// Wordcloud features that are different from one word to the other must be here
+						var layout = d3.layout.cloud()
+						  .size([width, height])
+						  .words(keywords.map(function(d) { return {text: d.word, size:d.size}; }))
+						  .padding(5)        //space between words
+						  .rotate(function() { return ~~(Math.random() * 2) * 90; })
+						  .fontSize(function(d) { return d.size; })      // font size of words
+						  .on("end", draw);
+						layout.start();
+						
+						// This function takes the output of 'layout' above and draw the words
+						// Wordcloud features that are THE SAME from one word to the other can be here
+						function draw(words) {
+						  svg
+							.append("g")
+							  .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
+							  .selectAll("text")
+								.data(words)
+							  .enter().append("text")
+								.style("font-size", function(d) { return d.size; + 4 })
+								.style("fill", "#E896C1")
+								.attr("text-anchor", "middle")
+								.style("font-family", "Josefin Sans")
+								.attr("transform", function(d) {
+								  return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+								})
+								.text(function(d) { return d.text; });
+						}
+					
+					</script>
 
 				</section>
 

@@ -138,8 +138,7 @@ section.has-light-background h6 {
 
 .intimg {
 	border-radius: 25%;
-	float: right;
-	max-height: 20vh;
+	max-height: 20vh !important;
 	padding: 1%
 }
 

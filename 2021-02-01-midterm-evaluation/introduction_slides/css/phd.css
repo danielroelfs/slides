@@ -9,8 +9,8 @@
  *
 **/
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 section.has-light-background,
 section.has-light-background h1,
@@ -19,7 +19,7 @@ section.has-light-background h3,
 section.has-light-background h4,
 section.has-light-background h5,
 section.has-light-background h6 {
-	color: #222;
+	color: #1F1F1F;
 }
 
 
@@ -28,21 +28,22 @@ section.has-light-background h6 {
 *********************************************/
 
  :root {
-	--background-color: #222;
-	--main-font: 'Josefin Sans', sans-serif;
-	--main-font-size: 20px;
+	--background-color: #1F1F1F;
+	--main-font: 'Lato', sans-serif;
+	--main-font-size: 24pt;
+	--main-font-weight: 400;
     --main-color: #eee;
-    --primary-accent: #E896C1;
-    --secondary-accent: #75ABDC;
+    --primary-accent: #ef87b5 ; /* #FB6666 */
+    --secondary-accent: #86A4F7;
 	--block-margin: 32px;
 	--heading-margin: 0 0 20px 0;
-	--heading-font: 'Playfair Display', serif;
+	--heading-font: 'Montserrat', sans-serif;
 	--heading-color: #eee;
 	--heading-line-height: 1.2;
 	--heading-letter-spacing: normal;
-	--heading-text-transform: uppercase;
-	--heading-text-shadow: 2px 2px 2px #222;
-	--heading-font-weight: normal;
+	--heading-text-transform: none;
+	--heading-text-shadow: 2px 2px 2px #1F1F1F;
+	--heading-font-weight: 700;
 	--heading1-text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
 	--heading1-size: 3.77em;
 	--heading2-size: 2.11em;
@@ -51,7 +52,7 @@ section.has-light-background h6 {
 	--code-font: monospace;
 	--link-color: #a23;
 	--link-color-hover: #dd5566;
-	--selection-background-color: #E896C1;
+	--selection-background-color: #ef87b5; /* was #E896C1 */
 	--selection-color: #fff;
 }
 
@@ -63,7 +64,7 @@ section.has-light-background h6 {
 .reveal {
 	font-family: var(--main-font);
 	font-size: var(--main-font-size);
-	font-weight: normal;
+	font-weight: var(--main-font-weight);
 	color: var(--main-color);
 }
 
@@ -95,9 +96,11 @@ section.has-light-background h6 {
 	margin-top: 0;
 }
 
-.container{
-	display: flex;
-	height: 100vh;
+.vcenter{
+	margin: 0;
+  	position: absolute;
+  	top: 50%;
+  	transform: translateY(-50%);
 }
 
 .col{
@@ -123,8 +126,7 @@ section.has-light-background h6 {
 	}
 
 .inclist {
-	font-size: 30pt;
-	padding-bottom: 2em;
+	padding-bottom: 1em; /* DR: was 2em */
 }
 
 .itlist {
@@ -136,11 +138,66 @@ section.has-light-background h6 {
 	color: var(--primary-accent);
 }
 
-.intimg {
-	border-radius: 25%;
-	float: right;
-	max-height: 20vh;
-	padding: 1%
+.accent2 {
+	color: var(--secondary-accent);
+}
+
+.italic {
+	font-style: italic;
+}
+
+.small {
+	font-size: 16pt;
+}
+
+.tiny {
+	font-size: 12pt;
+}
+
+.inline {
+	display: inline;
+}
+
+.reveal, tr, td {
+	border: none !important;
+}
+
+.reveal li {
+	padding-bottom: 2em;
+}
+
+#cross-fade {
+	position: relative;
+	height: 75vw;
+	width: 75vw;
+}
+  
+#cross-fade img {
+	position: absolute;
+	left: 0;
+	transition: opacity 0.5s ease-in-out;
+	filter: none;
+}
+  
+#cross-fade img.top:hover {
+	opacity: 0;
+}
+
+img:hover {
+	filter: brightness(140%);
+	transition: 0.5s ease-in-out;
+}
+
+img.nohighlight:hover {
+	filter: none;
+}
+
+.fade-in {
+	animation: fadeIn ease 30s;
+}
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
 }
 
 /*********************************************
@@ -154,27 +211,26 @@ section.has-light-background h6 {
 .reveal h5,
 .reveal h6 {
 	/*-webkit-transform-origin-x: 0;*/
-	margin: 0 0 20px 0;
+	margin: var(--heading-margin);
 	font-family: var(--heading-font);
-    font-weight: normal;
+    font-weight: var(--heading-font-weight);
     color: var(--heading-color);
-	line-height: 1.2;
-	letter-spacing: normal;
-	text-transform: uppercase;
-	text-shadow: 2px 2px 2px #222;
+	line-height: var(--heading-line-height);
+	letter-spacing: var(--heading-letter-spacing);
+	text-transform: var(--heading-text-transform);
+	text-shadow: var(--heading-text-shadow);
 	word-wrap: break-word;
 }
 
 .reveal h1 {
-    font-size: 40pt;
+    font-size: 48pt;
     font-weight: 900;
-    transform: scaleX(1.2);
     letter-spacing: 2pt;
 }
 
 .reveal h2 {
-	font-size: 36pt;
-    letter-spacing: 2pt;
+	font-size: 40pt;
+	letter-spacing: 2pt;
 }
 
 .reveal h3 {
@@ -182,7 +238,7 @@ section.has-light-background h6 {
 }
 
 .reveal h4 {
-	font-size: 30pt;
+	font-size: 24pt;
 }
 
 /*.reveal h1 {
@@ -236,7 +292,7 @@ section.has-light-background h6 {
 .reveal ul {
 	display: inline-block;
 	text-align: left;
-	margin: 0 0 0 1em;
+	margin: 2em 0 0 1em;
 }
 
 .reveal ol {
@@ -332,6 +388,7 @@ section.has-light-background h6 {
 	text-align: left;
 	padding: 0.2em 0.5em 0.2em 0.5em;
 	border-bottom: 1px solid;
+	vertical-align: middle;
 }
 
 .reveal table th[align="center"],
@@ -369,11 +426,6 @@ section.has-light-background h6 {
 .reveal small * {
 	vertical-align: top;
 }
-
-.reveal img {
-	margin: 20px 0;
-}
-
 
 /*********************************************
    * LINKS
@@ -457,14 +509,14 @@ section.has-light-background h4 {
 	text-shadow: none;
 }
 
-.reveal h1,
+/*.reveal h1,
 .reveal h2,
 .reveal h3,
 .reveal h4,
 .reveal h5,
 .reveal h6 {
 	font-weight: 700;
-}
+}*/
 
 .reveal p code {
 	background-color: #23241f;

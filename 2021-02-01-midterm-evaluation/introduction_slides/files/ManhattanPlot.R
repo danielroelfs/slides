@@ -32,7 +32,7 @@ sig <- 5e-8
 #-- Get plot ------------------------
 
 default_color <- "#EEEEEE"
-accent_color <- "#ef87b5"
+accent_color <- "#68aee1"
 
 manhplot <- ggplot(gwas.dat, aes(x = BPcum, y = -log10(P), size = -log10(P))) +
   geom_point(aes(color = ifelse(P > sig, "nsig", "sig")), alpha = 0.75) +

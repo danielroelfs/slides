@@ -260,7 +260,7 @@ img.nohighlight:hover {
 	position: absolute;
 	transform: translateX(-100%) rotate(-90deg);
 	transform-origin: right;
-	top: 25%;
+	top: 20%;
 }
 
 

@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap');
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Define backgrounds */
+.bg {
+    background-color: rgba(255, 255, 255, 0.95);
+    margin: auto;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+@media (max-width: 750px) {
+    .bg {
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 95%;
+    }
+}
+
+.container {
+    padding-bottom: 2.5%;
+    margin: 5%;
+}
+@media (max-width: 750px) {
+    .container {
+        margin-left: 3%;
+    }
+}
+
+/* Define text */
+body {
+    background-image: url('program_background.jpg');     
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #75ABDC;
+    font-size: 18pt;
+    font-weight: 600;
+}
+@media (max-width: 750px) {
+    body {
+        font-size: 14pt;
+    }
+}
+
+h1, h2, h3 {
+    -webkit-transform-origin-x: 0;
+    font-family: 'Playfair Display', serif;
+    color: #E896C1;
+    margin-top: 0%;
+    padding-top: 5%;
+    line-height: 100%;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 40pt;
+    transform: scaleX(1.2);
+    letter-spacing: 2px;
+    margin-bottom: 1em;
+}
+@media (max-width: 750px) {
+    h1 {
+        font-size: 34pt;
+        transform: scaleX(1);
+        letter-spacing: 0px;
+    }
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 26pt;
+        transform: scaleX(1);
+        letter-spacing: 0px;
+    }
+}
+
+h3 {
+    font-size: 29pt;
+}
+@media (max-width: 750px) {
+    h3 {
+        font-size: 17pt;
+    }
+}
+
+a {
+    color: #75ABDC;
+}
+a:hover {
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%);
+    transition: all .5s ease;
+}
+
+speaker {
+    display: table;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 28pt;
+    background: #E896C1;
+    color: #fff;
+    padding: 5pt;
+    padding-bottom: 0;
+    margin-top: 1em;
+}
+@media (max-width: 750px) {
+    speaker {
+        font-size: 24pt;
+    }
+}
+@media (max-width: 600px) {
+    speaker {
+        font-size: 18pt;
+    }
+}
+
+.internal {
+    display: table;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20pt;
+}
+@media (max-width: 750px) {
+    .internal {
+        font-size: 18pt;
+    }
+}
+
+talk {
+    display: block;
+}
+
+talker {
+    font-size: 12pt;
+}
+
+creds {
+    display: block;
+    line-height: 120%;
+    font-size: 16pt;
+    font-style: italic;
+}
+@media (max-width: 750px) {
+    creds {
+        font-size: 14pt;
+    }
+}
+
+icon {
+    display: inline-block;
+    padding-top: 0.25rem;
+}
+
+.last {
+    margin-bottom: 2.5em;
+}
+
+/* Other */
+
+.bio {
+    display: block;
+    margin-top: 1rem; 
+    margin-right: 10%;
+}
+@media (max-width: 750px) {
+    .bio {
+        margin-right: 5%;
+    }
+}
+
+img {
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-top: 5%;
+}
+
+.txtwrap {
+    float: right;
+    margin: 10px;
+    width: 20%;
+}
+@media (max-width: 750px) {
+    .txtwrap {
+        width: 40%;
+    }
+}
+
+.center {
+    display: block;
+    position:relative;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+
+#clock {
+    display: inline-flex;
+    color: #E896C1;
+    float: right;
+}
+
+/* Table style */
+.tb {
+    table-layout: fixed;
+	border-collapse: collapse;
+    text-align: left;
+    vertical-align: middle;
+    width: 90%;
+}
+@media (max-width: 750px) {
+    .tb {
+        table-layout: auto;
+        display: block;
+        font-size: 12pt;
+        width: 100%;
+    }
+}
+
+.tb td {
+	overflow: hidden;
+    padding-top: 15px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+	word-break: normal;
+}
+
+.tb .keynote {
+    color: #E896C1;
+    font-weight: 700;
+}
+
+.tb .break {
+    font-style: italic;
+}

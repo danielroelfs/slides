@@ -46,7 +46,7 @@ p <- ggplot(plotdata, aes(x = reorder_within(comp_new,-abs(rg), diagnosis_new),
                           y = 1, fill = rg_inv)) +
   geom_point(shape = 22, aes(size = se), color = "transparent") +
   geom_point(data = . %>% filter(p.fdr < 0.05), aes(size = se), 
-             shape = 22, color = "black", stroke = 1.5) +
+             shape = 22, color = "#FB6666", stroke = 1.5) +
   geom_text(aes(label = comp_new),  vjust = -0.5, fontface = "bold") +
   geom_text(aes(label = sprintf("(%s)",round(rg_inv,2))), vjust = 1) +
   labs(x = "Rank",

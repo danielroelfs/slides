@@ -70,7 +70,7 @@ p <- ggplot(plotdata, aes(x = reorder_within(comp_new,-abs(rg), diagnosis_new),
                         guide = guide_legend(order = 3, direction = "horizontal", label.position = "bottom",
                                              title.vjust = 0.6, override.aes = list(fill = "grey80", color = "transparent"))) +
   guides(label = guide_legend(order = 1, keywidth = 2, ncol = 2, key.hjust = 1, 
-                              override.aes = list(size = 4, color = "white"))) +
+                              override.aes = list(size = 5, color = "white"))) +
   theme_norment(grid = FALSE, base_size = 12, axis_title_size = 14, bg_col = "transparent") +
   coord_cartesian() +
   theme(
@@ -78,7 +78,8 @@ p <- ggplot(plotdata, aes(x = reorder_within(comp_new,-abs(rg), diagnosis_new),
     legend.position = "bottom",
     legend.direction = "horizontal",
     legend.box = "vertical",
-    legend.text = element_text(size = 12),
+    legend.title = element_text(size = 16),
+    legend.text = element_text(size = 16),
     axis.text.x = element_blank(),
     axis.title.x.top = element_text(size = 16),
     strip.text.y.left = element_text(angle = 0, hjust = 1, color = "white", size = 16),

@@ -18,20 +18,22 @@ data <- data %>%
 
 #-- Create plot ------------------------
 
+main_color <- "#ffffff"
+
 ggplot(data, aes(x = x)) +
-  geom_line(aes(y = x), size = 3, color = "white", lineend = "round") +
-  geom_line(aes(y = y), size = 3, color = "white", lineend = "round") +
-  geom_line(aes(y = y1), size = 3, color = "white", lineend = "round") +
-  geom_line(aes(y = y2), size = 3, color = "white", lineend = "round") +
+  geom_line(aes(y = x), size = 3, color = main_color, linetype = "dotted", lineend = "round") +
+  geom_line(aes(y = y), size = 3, color = main_color, lineend = "round") +
+  geom_line(aes(y = y1), size = 3, color = main_color, lineend = "round") +
+  geom_line(aes(y = y2), size = 3, color = main_color, lineend = "round") +
   lims(x = c(NA,3),
        y = c(1,3)) +
   labs(x = NULL, y = NULL) +
-  cowplot::theme_cowplot() +
+  theme_void() +
   theme(
     axis.ticks = element_blank(),
     axis.text = element_blank(),
-    axis.line.x = element_line(color = "white", size = 1),
-    axis.line.y = element_line(color = "white", size = 1),
+    axis.line.x = element_line(color = main_color, size = 2),
+    axis.line.y = element_line(color = main_color, size = 2),
     panel.border = element_blank(),
     panel.grid.major.x = element_blank(),
     panel.grid.minor.x = element_blank(),

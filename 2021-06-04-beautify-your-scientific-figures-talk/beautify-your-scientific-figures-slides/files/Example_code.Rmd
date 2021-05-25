@@ -1,0 +1,256 @@
+---
+title: "Code to generate the figures in the slides"
+editor_options:
+  chunk_output_type: console
+---
+
+```{r opts, include=FALSE}
+knitr::opts_chunk$set(fig.retina=2, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center')
+```
+
+```{r setup, message=FALSE, warning=FALSE, cache=FALSE, echo=FALSE}
+library(tidyverse)
+library(ggtext)
+library(palmerpenguins)
+library(camcorder)
+```
+
+```{python setup}
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from palmerpenguins import load_penguins
+```
+
+
+```{r}
+ggplot(penguins, aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +
+  geom_point()
+ggsave(here::here("files","ggplot_palmer_basic.png"))
+```
+
+```{python}
+penguins = load_penguins()
+
+colors = {'Adelie':'red', 'Gentoo':'blue', 'Chinstrap':'green'}
+
+plt.scatter(penguins['bill_length_mm'], penguins['bill_depth_mm'], 
+c=penguins['species'].apply(lambda x: colors[x]))
+plt.show()
+plt.savefig('files/matplotlib_palmer_basic.png')
+```
+
+```{r simple-plot}
+ggplot(penguins, aes(x = bill_length_mm, y = bill_depth_mm, color = species)) + 
+  geom_point() + 
+  geom_smooth(method = "lm") +
+  theme_minimal() + 
+  theme(panel.grid = element_line(colour = "grey80"),
+        plot.background = element_rect(color = "transparent",fill = "#EBEBEB"),
+        panel.background = element_rect(color = "transparent",fill = "#EBEBEB"))
+ggsave(here::here("files","ggplot_palmer_simple.png"), width = 6, height = 4, dpi = 300)
+```
+
+```{r intermediate-plot}
+ggplot(penguins, aes(x = bill_length_mm, y = bill_depth_mm, color = species)) + 
+  geom_point(aes(shape = species), size = 2, alpha = 0.8) + 
+  geom_smooth(method = "lm", alpha = 0.2) +
+  labs(title = "Bill length and bill depth in the Palmer penguins dataset",
+       x = "Bill length (mm)",
+       y = "Bill depth (mm)",
+       color = "Species",
+       fill = "Species",
+       shape = "Species") +
+  scale_color_manual(values = c("darkorange","darkorchid","cyan4")) +
+  theme_minimal() + 
+  theme(plot.title = element_markdown(size = 14),
+        legend.position = "right",
+        panel.grid = element_line(colour = "grey80"),
+        plot.background = element_rect(color = "transparent",fill = "#EBEBEB"),
+        panel.background = element_rect(color = "transparent",fill = "#EBEBEB"))
+ggsave(here::here("files","ggplot_palmer_intermediate.png"), width = 6, height = 4, dpi = 300)
+```
+
+```{r final-plot}
+ggplot(penguins, aes(x = bill_length_mm, y = bill_depth_mm, color = species)) + 
+  geom_point(aes(shape = species), size = 2, alpha = 0.8, stroke = 0, key_glyph = "point") + 
+  geom_smooth(aes(fill = species), method = "lm", alpha = 0.1, key_glyph = "point") +
+  labs(title = "**Bill length** and **bill depth** in the _Palmer penguins_ dataset",
+       subtitle = "Split by the three different species: 
+       <b><span style='color:#E58A33'>Adelie</span></b>, 
+       <b><span style='color:#8D41C4'>Chinstrap</span></b>, and 
+       <b><span style='color:#367A7B'>Gentoo</span></b>",
+       x = "Bill length (_mm_)",
+       y = "Bill depth (_mm_)",
+       color = "Species",
+       fill = "Species",
+       shape = "Species") +
+  scale_color_manual(values = c("darkorange","darkorchid","cyan4"),
+                     guide = guide_legend(override.aes = list(size = 6, shape = 16))) +
+  scale_fill_manual(values = c("darkorange","darkorchid","cyan4"), guide = FALSE) +
+  theme_minimal() + 
+  theme(plot.title = element_markdown(size = 16),
+        plot.subtitle = element_markdown(face = "italic"),
+        plot.title.position = "plot",
+        axis.title.x = element_markdown(),
+        axis.title.y = element_markdown(),
+        legend.title = element_markdown(face = "bold"),
+        panel.grid = element_line(colour = "grey80"),
+        plot.background = element_rect(color = "transparent",fill = "#EBEBEB"),
+        panel.background = element_rect(color = "transparent",fill = "#EBEBEB"))
+ggsave(here::here("files","ggplot_palmer_final.png"), width = 6, height = 4, dpi = 300)
+```
+
+```{r define-camcorder-object}
+gg_record(
+  dir = file.path("files","recording"), # where to save the recording
+  device = "png", # device to use to save images
+  width = 6, # width of saved image
+  height = 4, # height of saved image
+  units = "in", # units for width and height
+  dpi = 300, # dpi to use when saving image
+)
+```
+
+
+```{r}
+ggplot(penguins, aes(x = bill_length_mm, y = bill_depth_mm, color = species)) + 
+  geom_point(aes(shape = species), size = 2, alpha = 0.8, stroke = 0, key_glyph = "point") + 
+  geom_smooth(aes(fill = species), method = "lm", alpha = 0.1, key_glyph = "point") +
+  labs(title = "**Bill length** and **bill depth** in the _Palmer penguins_ dataset",
+       subtitle = "Split by the three different species: 
+       <b><span style='color:#E58A33'>Adelie</span></b>, 
+       <b><span style='color:#8D41C4'>Chinstrap</span></b>, and 
+       <b><span style='color:#367A7B'>Gentoo</span></b>",
+       x = "Bill length (_mm_)",
+       y = "Bill depth (_mm_)",
+       color = "Species",
+       fill = "Species",
+       shape = "Species") +
+  scale_color_manual(values = c("darkorange","darkorchid","cyan4"),
+                     guide = guide_legend(override.aes = list(size = 6, shape = 16))) +
+  scale_fill_manual(values = c("darkorange","darkorchid","cyan4"), guide = FALSE) +
+  theme_minimal() +
+  theme(plot.title = element_markdown(size = 16),
+        plot.title.position = "plot",
+        plot.subtitle = element_markdown(face = "italic"),
+        axis.title.x = element_markdown(),
+        axis.title.y = element_markdown(),
+        legend.title = element_markdown(face = "bold"),
+        panel.grid = element_line(colour = "grey80"),
+        plot.background = element_rect(color = "transparent",fill = "#EBEBEB"),
+        panel.background = element_rect(color = "transparent",fill = "#EBEBEB"))
+```
+
+
+```{r}
+gg_playback(
+  name = file.path("files","recording","playback.gif"), # where to save the recording
+  first_image_duration = 8,
+  last_image_duration = 12,
+  frame_duration = 1
+)
+```
+
+```{r manhattan}
+set.seed(49)
+gwas_data_load <- simulateGWAS(nSigCols = 4) %>% 
+  as_tibble() %>% 
+  janitor::clean_names()
+
+sig_data <- gwas_data_load %>% 
+  subset(p < quantile(p, 0.1))
+
+notsig_data <- gwas_data_load %>% 
+  subset(p >= quantile(p,0.1)) %>%
+  group_by(chr) %>% 
+  slice_sample(prop = 0.1)
+
+gwas_data <- bind_rows(sig_data, notsig_data)
+
+data_cum <- gwas_data %>% 
+  group_by(chr) %>% 
+  summarise(max_bp = max(bp)) %>% 
+  mutate(bp_add = lag(cumsum(max_bp), default = 0)) %>% 
+  select(chr, bp_add)
+
+gwas_data <- gwas_data %>% 
+  inner_join(data_cum, by = "chr") %>% 
+  mutate(bp_cum = bp + bp_add)
+
+axis_set <- gwas_data %>% 
+  group_by(chr) %>% 
+  summarize(center = (max(bp_cum) + min(bp_cum)) / 2)
+
+ylim <- 16
+sig <- 5e-8
+
+lead_snps <- gwas_data %>% 
+  filter(p < sig) %>% 
+  group_by(chr) %>% 
+  filter(p == min(p))
+
+gwas_data %>% 
+  mutate(chr = as_factor(chr)) %>% 
+  ggplot(aes(x = bp_cum, y = -log10(p), 
+             color = chr, size = -log10(p))) +
+  geom_point(alpha = 0.75, stroke = 0) +
+  #ggrepel::geom_text_repel(data = lead_snps, aes(label = snp), 
+  #                         color = "black", size = 2, seed = 2021) +
+  geom_hline(yintercept = -log10(sig), color = "grey40", linetype = "dashed") + 
+  labs(x = "Chromosome", 
+       y = "-log<sub>10</sub>(_p_)",
+       fill = NULL,
+       color = NULL) +
+  scale_x_continuous(label = axis_set$chr, breaks = axis_set$center) +
+  scale_y_continuous(expand = c(0,0), limits = c(0, ylim)) +
+  scale_color_manual(values = rep(c("#276FBF", "#183059"), unique(length(axis_set$chr))), guide = FALSE) +
+  scale_size_continuous(range = c(0.4,3), guide = FALSE, limits = c(0,ylim)) +
+  theme(
+    plot.title.position = "plot",
+    legend.position = c(0.9,0.95),
+    axis.title.y = element_markdown(),
+    #panel.border = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank(),
+    axis.text.x = element_text(angle = 60, size = 6, vjust = 0.5),
+    plot.margin = margin(30,10,10,10,unit = "pt")
+  )
+ggsave("files/sim_manhattanplot.png", width = 10, height = 5)
+```
+
+```{r qq-plot}
+ci <- 0.95
+n_snps <- nrow(gwas_data_load)
+
+plotdata <- tibble(
+  observed = -log10(sort(gwas_data_load$p)),
+  expected = -log10(ppoints(n_snps)),
+  clower   = -log10(qbeta(p = (1 - ci) / 2, shape1 = seq(n_snps), shape2 = rev(seq(n_snps)))),
+  cupper   = -log10(qbeta(p = (1 + ci) / 2, shape1 = seq(n_snps), shape2 = rev(seq(n_snps))))
+)
+
+plotdata_sub <- plotdata %>%
+  filter(expected <= 2) %>%
+  sample_frac(0.01)
+
+plotdata_sup <- plotdata %>%
+  filter(expected > 2)
+
+plotdata_small <- bind_rows(plotdata_sub, plotdata_sup)
+
+ggplot(plotdata_small, aes(x = expected, y = observed)) +
+  geom_ribbon(aes(ymax = cupper, ymin = clower), fill = "grey30", alpha = 0.5) +
+  geom_step(color = normentR::norment_colors[["purple"]], size = 1.1, direction = "vh") +
+  geom_segment(data = . %>% filter(expected == max(expected)), 
+               aes(x = 0, xend = expected, y = 0, yend = expected),
+               size = 1.25, alpha = 0.5, color = "grey30", lineend = "round") +
+  labs(x = str_glue("Observed -log<sub>10</sub>(_p_)"),
+       y = str_glue("Expected -log<sub>10</sub>(_p_)")) +
+  theme(axis.title.x = element_markdown(),
+        axis.title.y = element_markdown(),
+        plot.margin = margin(15,10,10,10, unit = "pt"))
+ggsave("files/sim_qqplot.png", width = 5, height = 4)
+```
+
+

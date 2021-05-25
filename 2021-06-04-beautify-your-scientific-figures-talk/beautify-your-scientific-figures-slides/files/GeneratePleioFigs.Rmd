@@ -1,0 +1,128 @@
+---
+title: "Create simple PleioFDR figures"
+editor_options:
+  chunk_output_type: console
+---
+
+```{r opts, include=FALSE}
+knitr::opts_chunk$set(fig.retina=2, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center')
+```
+
+```{r setup, message=FALSE, warning=FALSE, cache=FALSE, echo=FALSE}
+library(tidyverse)
+library(ggtext)
+library(normentR)
+```
+
+```{r cog-vs-edu-qq}
+data <- read_csv("~/Desktop/pleiofdr/results/COG_vs_EDU_qq.fig.csv")
+
+plotdata <- data %>% 
+  mutate(threshold = case_when(str_detect(label, "-3") ~ "_p_ < 10<sup>-3</sup>",
+                               str_detect(label, "-2") ~ "_p_ < 10<sup>-2</sup>",
+                               str_detect(label, "-1") ~ "_p_ < 10<sup>-1</sup>",
+                               TRUE ~ label))
+
+color_palette <- c(norment_colors[["light blue"]],norment_colors[["green"]], norment_colors[["magenta"]], norment_colors[["purple"]])
+
+plotdata %>% 
+  filter(threshold != "Expected") %>% 
+  mutate(threshold = fct_relevel(threshold, "All SNPs", after = 0)) %>% 
+  ggplot(aes(x = x, y = y, color = threshold, group = threshold)) + 
+  geom_segment(aes(x = 0, xend = -log10(5e-8),
+                   y = 0, yend = -log10(5e-8)),
+               inherit.aes = FALSE,
+               color = "grey", lineend = "round", linetype = "dashed") +
+  geom_line(size = 1.2, lineend = "round", key_glyph = "point") + 
+  labs(title = "COG | EDU",
+       x = "Empirical -log<sub>10</sub>(_q_<sub>COG</sub>)",
+       y = "Nominal -log<sub>10</sub>(_p_<sub>COG</sub>)",
+       color = NULL) +
+  scale_x_continuous(breaks = seq(0,8), limits = c(NA,-log10(5e-8))) + 
+  scale_y_continuous(breaks = seq(0,8), limits = c(NA,-log10(5e-8))) +
+  scale_color_manual(values = color_palette,
+                     guide = guide_legend(override.aes = list(size = 6, alpha = 0.9))) +
+  theme(plot.title = element_markdown(hjust = 0.5),
+        axis.title.x = element_markdown(),
+        axis.title.y = element_markdown(),
+        panel.grid.minor = element_blank(),
+        legend.position = c(0.82,0.2),
+        legend.text = element_markdown(),
+        plot.margin = margin(15,10,10,10, unit = "pt"))
+
+ggsave("files/pleio_qq_figure.png", height = 5, width = 5)
+```
+
+```{r cog-vs-edu-tdr}
+data <- read_csv("~/Desktop/pleiofdr/results/COG_vs_EDU_tdr.fig.csv")
+
+plotdata <- data %>% 
+  mutate(threshold = case_when(str_detect(label, "-3") ~ "_p_ < 10<sup>-3</sup>",
+                               str_detect(label, "-2") ~ "_p_ < 10<sup>-2</sup>",
+                               str_detect(label, "-1") ~ "_p_ < 10<sup>-1</sup>",
+                               TRUE ~ label))
+
+color_palette <- c(norment_colors[["light blue"]],norment_colors[["green"]], norment_colors[["magenta"]], norment_colors[["purple"]])
+
+plotdata %>% 
+  mutate(threshold = fct_relevel(threshold, "All SNPs", after = 0)) %>% 
+  ggplot(aes(x = x, y = y, color = threshold, group = threshold)) + 
+  geom_line(size = 1.2, lineend = "round", key_glyph = "point") + 
+  labs(title = "COG | EDU",
+       x = "Nominal -log<sub>10</sub>(_p_<sub>COG</sub>)",
+       y = "Conditional TDR<sub>COG|EDU</sub>",
+       color = NULL) +
+  scale_x_continuous(breaks = seq(0,8), limits = c(NA,-log10(5e-8))) + 
+  scale_y_continuous(breaks = seq(0,1,0.2), labels = scales::percent) + 
+  scale_color_manual(values = color_palette,
+                     guide = guide_legend(override.aes = list(size = 6, alpha = 0.9))) +
+  theme(plot.title = element_markdown(hjust = 0.5),
+        axis.title.x = element_markdown(),
+        axis.title.y = element_markdown(),
+        panel.grid.minor = element_blank(),
+        legend.position = c(0.82,0.2),
+        legend.text = element_markdown(),
+        plot.margin = margin(15,10,10,10, unit = "pt"))
+
+ggsave("files/pleio_tdr_figure.png", height = 5, width = 5)
+```
+
+```{r cog-vs-edu-enrich}
+data <- read_csv("~/Desktop/pleiofdr/results/COG_vs_EDU_enrich.fig.csv")
+
+plotdata <- data %>% 
+  mutate(threshold = case_when(str_detect(label, "-3") ~ "_p_ < 10<sup>-3</sup>",
+                               str_detect(label, "-2") ~ "_p_ < 10<sup>-2</sup>",
+                               str_detect(label, "-1") ~ "_p_ < 10<sup>-1</sup>",
+                               TRUE ~ label))
+
+color_palette <- c(norment_colors[["light blue"]],norment_colors[["green"]], norment_colors[["magenta"]], norment_colors[["purple"]])
+
+plotdata %>% 
+  filter(x < -log10(5e-8)) %>% 
+  mutate(threshold = fct_relevel(threshold, "All SNPs", after = 0)) %>% 
+  ggplot(aes(x = x, y = y, color = threshold, group = threshold)) + 
+  geom_hline(yintercept = 0, color = "grey30") +
+  geom_line(size = 1.2, lineend = "round", key_glyph = "point") + 
+  labs(title = "COG | EDU",
+       x = "Nominal -log<sub>10</sub>(_p_<sub>EDU</sub>)",
+       y = "Fold Enrichment EDU|COG",
+       color = NULL) +
+  scale_x_continuous(breaks = seq(0,8), limits = c(NA,-log10(5e-8))) + 
+  scale_y_continuous(breaks = seq(0,200,40), limits = c(0,200), labels = scales::label_number(suffix = "x")) +
+  scale_color_manual(values = color_palette,
+                     guide = guide_legend(override.aes = list(size = 6, alpha = 0.9))) +
+  theme(plot.title = element_markdown(hjust = 0.5),
+        axis.title.x = element_markdown(),
+        axis.title.y = element_markdown(),
+        panel.grid.minor = element_blank(),
+        legend.position = c(0.1,0.85),
+        legend.text = element_markdown(),
+        plot.margin = margin(15,10,10,10, unit = "pt"))
+
+ggsave("files/pleio_enrich_figure.png", height = 5, width = 6)
+```
+
+
+
+

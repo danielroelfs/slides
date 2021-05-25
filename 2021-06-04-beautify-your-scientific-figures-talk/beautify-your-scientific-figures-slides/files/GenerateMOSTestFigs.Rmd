@@ -1,0 +1,127 @@
+---
+title: "Create simple MOSTest figures"
+editor_options:
+  chunk_output_type: console
+---
+
+```{r opts, include=FALSE}
+knitr::opts_chunk$set(fig.retina=2, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center')
+```
+
+```{r setup, message=FALSE, warning=FALSE, cache=FALSE, echo=FALSE}
+library(tidyverse)
+library(ggtext)
+library(magrittr)
+library(normentR)
+```
+
+```{r mostest-qq}
+
+data <- read_table("~/Downloads/mostest_demo_results/results.plot.csv")
+
+plotdata <- data %>% 
+  mutate(across(contains("y1"), ~ parse_number(.x))) %>% 
+  pivot_longer(cols = contains("y"), names_to = "type", values_to = "y") %>% 
+  separate(type, into = c("method","line")) %>% 
+  mutate(linetype = case_when(line == "y1" ~ "Data (null)",
+                              line == "y2" ~ "Model"),
+         method = case_when(method == "most" ~ "MOSTest",
+                            method == "minp" ~ "Min-_p_"))
+
+plotdata %>% 
+  ggplot(aes(x = most_x, y = y, color = linetype, group = line)) +
+  geom_path(size = 1.1, alpha  = 0.8, lineend = "round", key_glyph = "point") +
+  labs(x = NULL,
+       y = NULL) +
+  scale_y_continuous(breaks = seq(0,8)) +
+  scale_color_manual(values = c("Data (null)" = "grey40", 
+                                "Model" = norment_colors[["green"]]),
+                     guide = guide_legend(override.aes = list(size = 4, alpha = 1), 
+                                          keywidth = 0, keyheight = 0)) +
+  facet_wrap(~ method, scales = "free") +
+  theme_norment() +
+  theme(
+    panel.grid.minor = element_blank(),
+    strip.text = element_markdown(face = "bold", hjust = 0.5),
+    legend.title = element_blank(),
+    legend.position = "bottom",
+    legend.box.background = element_rect(color = "transparent", fill = "white"),
+    legend.key.size = unit(1,"cm"),
+    plot.margin = margin(15,10,10,10, unit = "pt"),
+  )
+
+ggsave("files/mostest_qq_figure.png", height = 4, width = 6)
+```
+
+```{r mostest-qq-plot-from-sumstats}
+infiles <- list.files(path = "~/Downloads/mostest_demo_results/", pattern = ".sumstats$", full.names = TRUE)
+
+data_load <- map_dfr(infiles, ~ read_table(.x, col_types = cols()) %>% 
+                       janitor::clean_names() %>% 
+                       mutate(algorithm = str_extract(basename(.x), "\\.most|\\.minp"),
+                              algorithm = str_remove(algorithm, "\\."),
+                              stat = str_extract(basename(.x), "perm|orig")))
+
+make_qq_df <- function(pval,n_snps, ci = 0.95) {
+  tibble(
+    observed = -log10(sort(pval)),
+    expected = -log10(ppoints(n_snps)),
+    clower   = -log10(qbeta(p = (1 - ci) / 2, shape1 = seq(n_snps), shape2 = rev(seq(n_snps)))),
+    cupper   = -log10(qbeta(p = (1 + ci) / 2, shape1 = seq(n_snps), shape2 = rev(seq(n_snps))))
+  )
+}
+
+data_nested <- data_load %>%
+  group_by(algorithm,stat) %>% 
+  nest() %>% 
+  mutate(qq_data = map(data, ~ make_qq_df(.x$pval, nrow(.x))))
+
+qq_data <- data_nested %>% 
+  select(-data) %>% 
+  unnest(qq_data)
+
+qq_data_low <- qq_data %>% 
+  group_by(algorithm, stat) %>% 
+  mutate(cutoff = quantile(expected, 0.9)) %>% 
+  filter(expected <= cutoff) %>% 
+  slice_sample(prop = 0.01)
+qq_data_high <- qq_data %>% 
+  group_by(algorithm, stat) %>% 
+  mutate(cutoff = quantile(expected, 0.9)) %>% 
+  filter(expected > cutoff)
+plotdata <- bind_rows(qq_data_low,qq_data_high)
+
+plotdata %>% 
+  mutate(observed_filt = ifelse(observed > -log10(5e-8), NA, observed),
+         algorithm_label = case_when(algorithm == "most" ~ "MOSTest",
+                               algorithm == "minp" ~ "Min-_p_"),
+         stat_label = case_when(stat == "orig" ~ "Original _p_-values",
+                                stat == "perm" ~ "Permuted _p_-values")) %>% 
+  ggplot(aes(x = expected, y = observed_filt, color = algorithm_label, group = algorithm_label)) +
+  geom_ribbon(mapping = aes(ymin = clower, ymax = cupper), 
+              fill = "grey30", color = "transparent", alpha = 0.2) +
+  geom_segment(aes(x = 0, xend = -log10(5e-8),
+                   y = 0, yend = -log10(5e-8)),
+               inherit.aes = FALSE,
+               color = "grey30", linetype = "dashed") +
+  geom_step(size = 0.75, direction = "hv", key_glyph = "point") +
+  labs(x = "Expected -log<sub>10</sub>(_p_)",
+       y = "Observed -log<sub>10</sub>(_p_)",
+       color = NULL) +
+  scale_x_continuous(breaks = seq(0,8)) + 
+  scale_y_continuous(breaks = seq(0,8)) +
+  scale_color_manual(values = c("MOSTest" = norment_colors[["purple"]], 
+                                "Min-_p_" = norment_colors[["light blue"]]),
+                     guide = guide_legend(override.aes = list(size = 6, shape = 20))) +
+  facet_wrap( ~ stat_label, scales = "free") +
+  theme(panel.grid.minor = element_blank(),
+        axis.title.x = element_markdown(),
+        axis.title.y = element_markdown(),
+        legend.text = element_markdown(),
+        legend.direction = "horizontal",
+        strip.text = element_markdown(face = "bold", hjust = 0.5),
+        plot.margin = margin(15,10,10,10, unit = "pt"))
+
+ggsave("files/mostest_qq_figure_sumstats.png", height = 4, width = 6)
+```
+

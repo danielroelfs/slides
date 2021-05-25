@@ -1,0 +1,467 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Beautify Your Scientific Figures - Daniel Roelfs</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="css/style.css" id="theme">
+
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/atom-one-dark.css" id="highlight-theme">
+
+		<base target="_blank">
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- START SLIDES -->
+				
+				<!-- SLIDE -->				
+				<section class="center hcenter" data-background="https://unsplash.com/photos/1_CMoFsPfso/download?force=true&w=1920" data-background-size="125%">
+
+					<h1 class="art" style="font-size: 46pt;padding-bottom: 0;">Beautify Your Scientific Figures</h1>
+					<div style="text-align: right;padding: 0% 14.5vw 0 0;">
+						<h3 style="font-size: 20pt;font-style: italic;">Daniel Roelfs<br>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section data-background-transition="slide" class="dark center hcenter">
+
+					<h1 class="animated-text">
+						<span class="art" style="font-weight: 200;">Remember</span>
+						<br>
+						<span style="padding-top: 2em;">DATA GOES BEFORE AESTHETICS</span>
+					</h1>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<section data-auto-animate>
+						<div class="row">
+							<div class="column">
+								<img id="id" src="files/ggplot_palmer_simple.png" style="border: 4px solid;min-width: 80%;">
+							</div>
+							<div class="column">
+								<img id="id"src="files/ggplot_palmer_intermediate.png" style="border: 4px solid;min-width: 80%;">
+							</div>
+						</div>
+					</section>
+
+					<section data-auto-animate data-transition="slide-out">
+						<div class="row">
+							<div class="column">
+								<img id="id" class="layer" src="files/ggplot_palmer_simple.png" style="border: 4px solid;min-width: 80%;">
+							</div>
+							<div class="column">
+								<img id="id" class="layer" src="files/ggplot_palmer_intermediate.png" style="border: 4px solid;min-width: 80%;">
+							</div>
+						</div>
+						<img src="files/ggplot_palmer_final.png" class="fullcenter" style="margin-top: 4em;max-width: 65%;border: 4px solid">
+					</section>
+				</section>
+
+				<!-- SLIDE -->
+				<section data-auto-animate class="hcenter">
+
+					<!-- SUBSLIDE -->
+					<section data-auto-animate>
+
+						<pre data-id="box"><code data-line-numbers="1-3"># ggplot
+ggplot(penguins, aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +
+  geom_point()
+
+# matplotlib
+colors = {'Adelie':'red', 'Gentoo':'blue', 'Chinstrap':'green'}
+
+plt.scatter(penguins['bill_length_mm'], penguins['bill_depth_mm'], 
+	c=penguins['species'].apply(lambda x: colors[x]))
+plt.show()
+
+# MATLAB
+species = categorical(penguins.species);
+color_idx = grp2idx(species);
+
+scatter(penguins.bill_length_mm, penguins.bill_depth_mm, [], color_idx, 'filled')
+						</code></pre>
+
+						<img src="files/ggplot_palmer_basic.png" style="max-width: 50%;">
+					
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section data-auto-animate>
+
+						<pre data-id="box"><code data-line-numbers="5-10"># ggplot
+ggplot(penguins, aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +
+  geom_point()
+
+# matplotlib
+colors = {'Adelie':'red', 'Gentoo':'blue', 'Chinstrap':'green'}
+
+plt.scatter(penguins['bill_length_mm'], penguins['bill_depth_mm'], 
+	c=penguins['species'].apply(lambda x: colors[x]))
+plt.show()
+
+# MATLAB
+species = categorical(penguins.species);
+color_idx = grp2idx(species);
+
+scatter(penguins.bill_length_mm, penguins.bill_depth_mm, [], color_idx, 'filled')
+						</code></pre>
+
+						<img src="files/matplotlib_palmer_basic.png" style="max-width: 50%;">
+					
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section data-auto-animate>
+
+						<pre data-id="box"><code data-line-numbers="12-16"># ggplot
+ggplot(penguins, aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +
+  geom_point()
+
+# matplotlib
+colors = {'Adelie':'red', 'Gentoo':'blue', 'Chinstrap':'green'}
+
+plt.scatter(penguins['bill_length_mm'], penguins['bill_depth_mm'], 
+	c=penguins['species'].apply(lambda x: colors[x]))
+plt.show()
+
+# MATLAB
+species = categorical(penguins.species);
+color_idx = grp2idx(species);
+
+scatter(penguins.bill_length_mm, penguins.bill_depth_mm, [], color_idx, 'filled')
+						</code></pre>
+
+						<img src="files/matlab_palmer_basic.png" style="max-width: 50%;">
+					
+					</section>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section data-background-transition="slide" class="center hcenter dark" style="padding-top: 4em;">
+					<h2>DATA VISUALIZATION</h2>
+					is part art and part science
+
+					<figcaption style="padding-top: 8em;font-size: 12pt;">Claus O. Wilke - "Fundamentals of Data Visualization"</figcaption>
+				</section>
+
+				<!-- SLIDE -->
+				<section class="center hcenter">
+
+					<h2 class="art">Artistic vs scientific, a conflict?</h2>
+					<div class="row" style="justify-content: center;">
+						<div class="column">
+							<img src="https://www.ncbi.nlm.nih.gov/pmc/articles/instance/3513413/bin/ukmss-32331-f0001.jpg" style="height: 60vh;min-width: 100%;">
+							<figcaption>[Hidden for privacy reasons]</figcaption>
+						</div>
+						<div class="column">
+							<img src="https://z3tt.github.io/bespokeDS/img/Fig2_disease-data_full_log.png" style="height: 60vh;min-width: 100%;">
+							<figcaption>Scherer et al. 2019 Journal of Animal Ecology</figcaption>
+						</div>
+						<div class="column">
+							<img src="https://github.com/dominicroye/rstats-chart-challenge-2021/raw/main/figs/Emil_Malta_day11.jpg" style="height: 60vh;min-width: 100%;">
+							<figcaption>Emil Malta for "30 Day Chart Challenge"</figcaption>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section data-background-transition="slide" class="dark center hcenter">
+
+					<h1 class="animated-text">
+						<span class="art" style="font-weight: 200;">Remember</span>
+						<br>
+						<span style="padding-top: 2em;">DATA GOES BEFORE AESTHETICS</span>
+					</h1>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section class="center hcenter" style="padding-top: 1.5em;">
+					<section data-transition="fade"><img src="files/recording/2021_05_22_18_56_36.372808.png" style="height: 80vh;"></section>
+					<section data-transition="fade"><img src="files/recording/2021_05_22_18_56_48.264591.png" style="height: 80vh;"></section>
+					<section data-transition="fade"><img src="files/recording/2021_05_22_18_57_10.812706.png" style="height: 80vh;"></section>
+					<section data-transition="fade"><img src="files/recording/2021_05_22_18_57_48.820003.png" style="height: 80vh;"></section>
+					<section data-transition="fade"><img src="files/recording/2021_05_22_18_58_12.147939.png" style="height: 80vh;"></section>
+					<section data-transition="fade"><img src="files/recording/2021_05_22_18_58_40.080523.png" style="height: 80vh;"></section>
+					<section data-transition="fade"><img src="files/recording/2021_05_22_18_59_27.978792.png" style="height: 80vh;"></section>
+					<section data-transition="fade"><img src="files/recording/2021_05_22_19_08_50.880337.png" style="height: 80vh;"></section>
+					<section data-transition="fade"><img src="files/recording/2021_05_22_19_09_09.220467.png" style="height: 80vh;"></section>
+					<section data-transition="fade"><img src="files/recording/2021_05_22_19_10_02.691564.png" style="height: 80vh;"></section>
+					<section data-transition="fade"><img src="files/recording/2021_05_22_19_11_03.882162.png" style="height: 80vh;"></section>
+					<section data-transition="fade"><img src="files/recording/2021_05_22_19_11_21.899869.png" style="height: 80vh;"></section>
+				</section>
+
+				<!-- SLIDE -->
+				<section data-auto-animate style="padding-top: 10vh;">
+
+					<section data-auto-animate>
+
+						<pre data-id="box"><code><script type="text/template">ggplot(penguins, aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +
+  geom_point()
+						</script></code></pre>
+
+					</section>
+
+					<section data-auto-animate>
+						<pre data-id="box"><code style="min-height: 60vh;"><script type="text/template">ggplot(penguins, aes(x = bill_length_mm, y = bill_depth_mm, color = species)) + 
+  geom_point(aes(shape = species), size = 2, alpha = 0.8, stroke = 0, key_glyph = "point") + 
+  geom_smooth(aes(fill = species), method = "lm", alpha = 0.1, key_glyph = "point") +
+  labs(title = "**Bill length** and **bill depth** in the _Palmer penguins_ dataset",
+       subtitle = "Split by the three different species: 
+       <b><span style='color:#E58A33'>Adelie</span></b>, 
+       <b><span style='color:#8D41C4'>Chinstrap</span></b>, and 
+       <b><span style='color:#367A7B'>Gentoo</span></b>",
+       x = "Bill length (_mm_)",
+       y = "Bill depth (_mm_)",
+       color = "Species",
+       fill = "Species",
+       shape = "Species") +
+  scale_color_manual(values = c("darkorange","darkorchid","cyan4"),
+		     guide = guide_legend(override.aes = list(size = 6, shape = 16))) +
+  scale_fill_manual(values = c("darkorange","darkorchid","cyan4"), guide = FALSE) +
+  theme_minimal() + 
+  theme(plot.title = element_markdown(size = 16),
+  	plot.subtitle = element_markdown(face = "italic"),
+  	plot.title.position = "plot",
+  	axis.title.x = element_markdown(),
+  	axis.title.y = element_markdown(),
+  	legend.title = element_markdown(face = "bold"),
+  	panel.grid = element_line(colour = "grey80"),
+  	plot.background = element_rect(color = "transparent", fill = "#EBEBEB"),
+  	panel.background = element_rect(color = "transparent", fill = "#EBEBEB"))
+						</script></code></pre>
+					</section>
+
+				</section>
+
+				<section class="center hcenter">
+
+					<h1 class="art" style="padding-bottom: 0.5em;">My <i class="fab fa-r-project"></i> setup</h1>
+
+					<pre><code data-line-numbers>### CREATE MY SCIENTIFIC FIGURE ########################
+
+#-- Libraries -------------------------
+
+library(tidyverse)
+library(ggtext)
+library(patchwork)
+library(normentR)
+
+#-- Load data -------------------------
+
+data <- read_table("files/some_data_file.txt")
+
+etc...
+					</code></pre>
+
+					<ul style="font-size: 16pt;padding-top: 1em;">
+						<li><code>{tidyverse}</code> includes <code>{ggplot2}</code>, <code>{dplyr}</code>, and <code>{tidyr}</code></li>
+						<li><code>{ggtext}</code> allows advanced text rendering in plots (easy bold, color, scientific notation etc.)</li>
+						<li><code>{patchwork}</code> lets users easily combine individual plots to create a complex figure</li>
+						<li><code>{normentR}</code> contains a better default theme, scientific color schemes, and NORMENT colors</li>
+						<li style="color: grey;">(Occasionally I use <code>{cowplot}</code> for some advanced figure editing and composing)</li>
+					</ul>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section data-background-transition="slide" class="center hcenter dark">
+					<h1><span style="color: skyblue;">C</span><span style="color: salmon;">O</span><span style="color: yellow;">L</span><span style="color: violet;">O</span><span style="color: green;">R</span><span style="color: orange;">S</span></h1>
+				</section>
+
+				<!-- SLIDE -->
+				<section data-transition="fade-in slide-out" class="center">
+						
+					<div class="row" style="padding-top: 8em;padding-left: 4em;">
+						
+						<div class="col">
+							<h1>Only one point:<br><em>use scientific color maps</em></h1>
+
+							<ul>
+								<li>Created by Fabio Crameri from UiO</li>
+								<li>Implemented in both the <code>{scico}</code> package and the<br><code>{normentR}</code> package</li>
+							</ul>
+						</div>
+						
+						<div class="col">
+							<img src="https://www.fabiocrameri.ch/ws/media-library/ba9d892174b24a85a46804e9699f3b89/scientificcolourmaps_fabiocrameri_pdark.webp" 
+							style="width: 50vw;margin-top: -8em;">
+						<!--<iframe data-src="https://www.nature.com/articles/s41467-020-19160-7.pdf"  data-preload style="position: fixed;left: 4%;bottom: 2%;height: 40vh;width: 60vw;"></iframe>-->
+	
+						</div>
+						
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section data-background-transition="slide" class="center hcenter dark">
+					<h1 class="art">Biostats examples</h1>
+				</section>
+
+				<!-- SLIDE -->
+				<section class="center hcenter">
+
+					<!-- SUBSLIDE -->
+					<section class="center hcenter">
+
+						<h1 class="art">The essentials...</h1>
+
+						<img src="files/sim_manhattanplot.png" style="max-height: 42vh;">
+						<img src="files/sim_qqplot.png" style="max-height: 42vh;">						
+
+						<div style="font-size: 12pt;font-weight: 400;padding-top: 1em;"><em>Tutorials for both of these at <a href="https://danielroelfs.com">danielroelfs.com</a></em></div>
+					
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section class="center hcenter">
+
+						<h1 class="art">PleioFDR QQ-plots</h1>
+
+						<img src="files/COG_vs_EDU_qq.png" style="height: 55vh;">
+						<img src="files/pleio_qq_figure.png" style="height: 55vh;">
+					
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section class="center hcenter">
+
+						<h1 class="art">PleioFDR TDR-plots</h1>
+
+						<img src="files/COG_vs_EDU_tdr.png" style="height: 55vh;">
+						<img src="files/pleio_tdr_figure.png" style="height: 55vh;">
+					
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section class="center hcenter">
+
+						<h1 class="art">PleioFDR enrichment plots</h1>
+
+						<img src="files/COG_vs_EDU_enrich.png" style="height: 55vh;">
+						<img src="files/pleio_enrich_figure.png" style="height: 55vh;">
+					
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section class="center hcenter">
+
+						<h1 class="art">MOSTest QQ plots</h1>
+
+						<img src="files/results.plot.png" style="height: 40vh;">
+						<img src="files/mostest_qq_figure.png" style="height: 40vh;">
+					
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section class="center hcenter">
+
+						<h1 class="art">MOSTest QQ plots (from sumstats)</h1>
+
+						<img src="files/mostest_qq_figure_sumstats.png" style="height: 60vh;">
+					
+					</section>
+					
+				</section>
+
+				<!-- SLIDE -->
+				<section data-background-transition="slide" class="center hcenter dark" style="margin-top: -2em;">
+						<h1>GOAL</h1>
+						Communicate a message clearly and efficiently
+				</section>
+
+				<!-- SLIDE -->
+				<section data-background-transition="slide" class="dark center hcenter">
+
+					<h1 class="animated-text">
+						<span class="art" style="font-weight: 200;">Remember</span>
+						<br>
+						<span style="padding-top: 2em;">DATA GOES BEFORE AESTHETICS</span>
+					</h1>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section style="margin-left: 1em;">
+
+					<h1>Resources</h1>
+					
+					<ul>
+						<li>Fabio Crameri, "<em>Scientific use of colour in science communication</em>"<br>
+							<a href="https://youtu.be/iDPzWARbFrs">YouTube (first 15 mins are most relevant)</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.nature.com/articles/s41467-020-19160-7">Corresponding paper</a>
+						</li>
+						<li>Cédric Scherer, "<em>{ggplot2} Wizardry</em>" (UseR Oslo)<br>
+							<a href="https://youtu.be/5KHvEXYtnOo">YouTube</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="https://www.cedricscherer.com/slides/useR2021.pdf">Slides</a>
+						</li>
+						<li>Thomas Lin Pedersen, "<em>ggplot2 workshop</em>" (RStudio)<br>
+							<a href="https://youtu.be/h29g21z0a68">YouTube</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="https://github.com/thomasp85/ggplot2_workshop">Slides & Exercises</a>
+						</li>
+					</ul>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section class="center hcenter" data-background="https://unsplash.com/photos/1_CMoFsPfso/download?force=true&w=1920" data-background-size="130%">
+
+					<h1 class="art" style="font-size: 72pt !important;">Thank you!</h1>
+					<div class="socials">
+						<a href="https://twitter.com/dthroelfs"><i class="fab fa-twitter"></i>@dthroelfs</a>
+						<a href="https://github.com/danielroelfs"><i class="fab fa-github"></i>danielroelfs</a>
+						<a href="https://www.linkedin.com/in/danielroelfs/"><i class="fab fa-linkedin"></i>danielroelfs</a>
+						<a href="https://orcid.org/0000-0002-1083-002X"><i class="fab fa-orcid"></i>0000-0002-1083-002X</a>
+						<a href="https://danielroelfs.com"><i class="fas fa-globe"></i>danielroelfs.com</a>
+					</div>
+
+				</section>
+
+				<!-- END SLIDES --> 
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				width: "100%",
+    			height: "100%",
+    			margin: 0.1,
+    			minScale: 1,
+    			maxScale: 1,
+				hash: true,
+				center: false,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				dependencies: [
+					{ src: 'plugin/reveald3/reveald3.js' }   
+				],
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
+

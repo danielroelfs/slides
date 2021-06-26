@@ -57,5 +57,5 @@ manhplot <- gwas_data %>%
   theme_void() + 
   theme(legend.position = "none")
 
-ggsave("manhattan_plot.png", plot = manhplot, width = 6, height = 3, dpi = 300, bg = "transparent")
+ggsave("manhattan_plots/manhattan_plot.png", plot = manhplot, width = 6, height = 3, dpi = 300, bg = "transparent")
 

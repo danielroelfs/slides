@@ -150,5 +150,5 @@ manhplot <- gwas_data %>%
 
 #-- Save files ------------------------
 
-ggsave(str_glue("pleio_manhattan_{diag}_nrsn_slides.png"), manhplot, width = 6, height = 3)
+ggsave(str_glue("manhattan_plots/pleio_manhattan_{diag}_nrsn_slides.png"), manhplot, width = 6, height = 3)
 

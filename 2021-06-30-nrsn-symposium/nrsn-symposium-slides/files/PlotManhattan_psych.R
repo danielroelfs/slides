@@ -52,10 +52,10 @@ manhplot <- gwas_data %>%
   ggplot(aes(x = bp_cum, y = -log10(p),  color = sig, size = -log10(p))) +
   geom_point(alpha = 0.75, stroke = 0) +
   scale_y_continuous(expand = c(0,0), limits = c(0, ylim)) +
-  scale_color_manual(values = c("#333333", "#21a695")) +
+  scale_color_manual(values = c("#333333", "#800000")) +
   scale_size_continuous(range = c(2,5)) +
   theme_void() + 
   theme(legend.position = "none")
 
-ggsave("manhattan_plot_psych.png", plot = manhplot, width = 6, height = 3, dpi = 300, bg = "transparent")
+ggsave("manhattan_plots/manhattan_plot_psych.png", plot = manhplot, width = 6, height = 3, dpi = 300, bg = "transparent")
 

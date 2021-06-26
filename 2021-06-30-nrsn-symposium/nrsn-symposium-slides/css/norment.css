@@ -143,16 +143,17 @@ body .fullscreen {
   background-color: transparent !important;
 }
 
-figure .large-image {
-  margin-top: -5.5vmin !important;
-  min-width: 100vw !important;
-  margin-left: -10vmin !important;
+figure.large-image {
+  margin-top: -5.5vmin;
+  min-width: 100vmax;
+  margin-left: -10vmin;
 }
 
-.large-image img {
-  min-width: 99%;
+img.large-image {
+  max-width: 99%;
   min-height: 99%;
   object-fit: contain;
+  vertical-align: middle;
 }
 
 .hide-controls .controls {

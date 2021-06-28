@@ -1,0 +1,39 @@
+
+/* STYLE FOR BREAK SLIES */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 70pt;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    vertical-align: middle;
+}
+
+.brains-bg {
+	background-image: url("brains_background_full.png");
+	background-size: cover;
+}
+
+.glass {
+	text-align: center;
+	margin: auto;
+    padding: 2em;
+	background-color: rgba(100, 100, 100, 0.1);
+	border: 1px solid rgba(100, 100, 100, 0.1);
+	border-radius: 50px;
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	-moz-backdrop-filter: blur(5px);
+	-ms-backdrop-filter: blur(5px);
+	box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+}

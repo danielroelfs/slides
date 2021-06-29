@@ -79,16 +79,22 @@ section.has-light-background, section.has-light-background h1, section.has-light
 }
 
 .logobar {
-  display: block;
-  height: 80vh;
+  display: flex;
 }
-.coll_logo {
+.col_logo {
   width: 17.5%;
   display: inline-block;
   padding: 1%;
 }
-.coll_logo img {
+.col_logo img {
   vertical-align: middle;
+}
+
+.ackn {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .reveal .no-bullets {
@@ -195,6 +201,24 @@ img.large-image {
 
 .reveal table td {
   border-bottom: 0 !important;
+}
+
+.reveal table.acknowledgements {
+  margin-bottom: 5vmin;
+}
+.reveal table.acknowledgements td {
+  text-align: center;
+  font-size: 2vmin;
+  max-width: 40vmax;
+}
+.reveal table.acknowledgements td:last-child {
+  text-align: left;
+  padding-left: 2.5vmax;
+}
+
+div.ack_logos img {
+  display: flex;
+  vertical-align: middle;
 }
 
 .reveal tfoot td {

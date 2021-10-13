@@ -21,3 +21,16 @@ sup {
   text-shadow: none;
   border: none; 
 }
+
+.twitter-handle {
+  font-size: 0.67em;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.twitter-handle a {
+  color: white;
+}
+.twitter-handle a:hover {
+  color: var(--blue);
+}

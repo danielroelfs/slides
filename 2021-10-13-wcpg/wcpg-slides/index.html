@@ -38,8 +38,8 @@
 						<div class="credit">
 							<hr/>
 							<div class="name">Daniel Roelfs</div>
+							<div class="twitter-handle" style="margin-top: -1.25em;"><a href="https://twitter.com/dthroelfs">@dthroelfs</a></div>
 							<div class="role">University of Oslo</div>
-							<!--<div class="role" style="font-size: 0.75em;font-style: italic;">No disclosures to declare</div>-->
 						</div>
 					</div>
 				</section>
@@ -67,8 +67,8 @@
 						<div class="content vcenter">
 							<ul class="no-bullets">
 								<li>Psychiatric conditions are highly polygenic and complex<sup>1</sup></li>
-								<li class="fragment">Psychiatric conditions share symptoms and genetic profiles<sup>2</sup></li>
-								<li class="fragment">MRI studies show that structural and functional changes are widespread across the brain<sup>3</sup></li>
+								<li class="fragment" data-fragment-index="1">Psychiatric conditions share symptoms and genetic profiles<sup>2</sup></li>
+								<li class="fragment" data-fragment-index="2">MRI studies show that structural and functional changes are widespread across the brain<sup>3</sup></li>
 								<li class="fragment b">Investigate distributed nature of genetic effects in the brain and its associations with psychiatric conditions</li>
 							</ul>
 						</div>
@@ -76,9 +76,9 @@
 						<div class="footer">
 							<div class="source">
 								<ol style="line-height: 0;">
-									<li>Anttila <em>et al.</em> Science (2018), Sullivan & Geschwind Cell (2019), Paulus & Thompson JAMA Psychiatry (2019)</li>
-									<li>Plana-Ripoll <em>et al.</em> JAMA Psychiatry (2019), Roelfs <em>et al.</em> Transl. Psychiatry (2021)</li>
-									<li>Petterson-Yeo <em>et al.</em> Neurosci. Biobehav. Rev. (2011), Arnatkeviciute <em>et al.</em> NeuroImage (2021)</li>
+									<li>Anttila <em>et al.</em> <em>Science</em> (2018), Sullivan & Geschwind <em>Cell</em> (2019), Paulus & Thompson <em>JAMA Psychiatry</em> (2019)</li>
+									<li class="fragment" data-fragment-index="1">Plana-Ripoll <em>et al.</em> <em>JAMA Psychiatry</em> (2019), Bulik-Sullivan <em>et al.</em> <em>Nature Genetics</em> (2015)</li>
+									<li class="fragment" data-fragment-index="2">Petterson-Yeo <em>et al.</em> <em>Neurosci. Biobehav. Rev.</em> (2011), Arnatkeviciute <em>et al.</em> <em>NeuroImage</em> (2021)</li>
 								  </ol>
 							</div>
 						</div>
@@ -96,6 +96,34 @@
 						<figure class="large-image">
 							<img src="files/methods_ukb.png" class="large-image" style="width: 80%;">
 						</figure>
+					</div>
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+					<div class="grid-wrapper">
+						<div class="header">
+							<div class="logo"></div>
+							<div class="section">Why use fMRI?</div>
+						</div>
+
+						<div class="content vcenter">
+							<ul class="no-bullets">
+								<li>Changes in fMRI features associated with many psychiatric conditions<sup>1</sup></li>
+								<li class="fragment" data-fragment-index="1">Changes in structural MRI features have been used to study genetic architecture of conditions<sup>2</sup></li>
+								<li class="fragment">fMRI data provides insight into brain function rather than structure</li>
+								<li class="fragment b">Integrate changes in fMRI features with processes underlying psychiatric conditions</li>
+							</ul>
+						</div>
+
+						<div class="footer">
+							<div class="source">
+								<ol style="line-height: 0;">
+									<li>e.g. Brakowski <em>et al.</em> <em>J. Psychiatr. Res.</em> (2017), Syan <em>et al.</em> <em>J. Psychiatry. Neurosci.</em> (2018), etc.</li>
+									<li class="fragment" data-fragment-index="1">Elliott <em>et al.</em> <em>Nature</em> (2018), Friston <em>et al.</em> <em>Schizophr. Res.</em> (2016)</li>
+								</ol>
+							</div>
+						</div>
 					</div>
 				</section>
 
@@ -125,7 +153,7 @@
 								<div class="section">Brain connectivity measures</div>
 							</div>
 
-							<figure class="large-image">
+							<figure class="large-image" style="margin-top: -3em;">
 								<img src="files/methods_fc_connectivity.png" class="large-image" style="width: 90%;">
 							</figure>
 							
@@ -174,8 +202,43 @@
 							<div class="footer">
 								<div class="source">
 									<ol style="line-height: 0;">
-										<li>van der Meer <em>et al.</em> Nature Communications (2020), <a href="https://github.com/precimed/mostest" target="_blank">github.com/precimed/mostest</a></li>
+										<li>van der Meer <em>et al.</em> <em>Nature Communications</em> (2020), <a href="https://github.com/precimed/mostest" target="_blank">github.com/precimed/mostest</a></li>
 									</ol>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section>
+						<div class="grid-wrapper">
+							<div class="header">
+								<div class="logo"></div>
+								<div class="section">What is MOSTest?</div>
+							</div>
+
+							<div class="two-column" style="margin-top: -3em;">
+							
+								<div class="column">
+									<ul class="no-bullets hcenter">
+										<li style="padding-bottom: 3em;">Identifies small and distributed effects not detectable in univariate GWAS</li>
+										<li class="fragment fade-down" style="padding-bottom: 0.5em;">Takes univariate <em>z</em>-scores for each SNP across all phenotypes</li>
+										<li class="fragment fade-down"><i class="fas fa-arrow-down" style="font-size: 5vmin;padding-bottom: 0.5em;"></i><br>
+											Integrates into multivariate test statistic through Mahalanobis distance</li>
+									</ul>
+								</div>
+
+								<div class="column">
+									<figure>
+										<img src="files/methods_mostest.png">
+									</figure>
+								</div>
+								
+							</div>
+
+							<div class="footer">
+								<div class="source">
+									Details in van der Meer <em>et al.</em> <em>Nature Communications</em> (2020), <a href="https://github.com/precimed/mostest" target="_blank">github.com/precimed/mostest</a>
 								</div>
 							</div>
 						</div>
@@ -254,7 +317,7 @@
 							<div class="footer">
 								<div class="source">
 									<ol style="line-height: 0;">
-										<li><em>PleioFDR</em>, Andreassen <em>et al.</em> PLoS Genetics (2019), <a href="https://github.com/precimed/pleiofdr" target="_blank">github.com/precimed/pleiofdr</a></li>
+										<li><em>PleioFDR</em>, Andreassen <em>et al.</em> <em>PLoS Genetics</em> (2019), <a href="https://github.com/precimed/pleiofdr" target="_blank">github.com/precimed/pleiofdr</a></li>
 									</ol>
 								</div>
 							</div>
@@ -269,9 +332,9 @@
 								<div class="section">Conjunctional FDR</div>
 							</div>
 
-							<div class="content" style="margin-top: -0em;">
+							<div class="content" style="margin-top: 1em;">
 								<figure class="large-image">
-									<img src="files/qq_pleio_figure.png" style="width: 90%;">
+									<img src="files/qq_pleio_figure.png" style="width: 85%;">
 								</figure>
 							</div>
 
@@ -286,9 +349,9 @@
 								<div class="section">Conjunctional FDR</div>
 							</div>
 
-							<div class="content" style="margin-top: -0em;">
+							<div class="content" style="margin-top: 1em;">
 								<figure class="large-image">
-									<img src="files/Pleio_manhattan.png" style="width: 90%;">
+									<img src="files/Pleio_manhattan.png" style="width: 80%;">
 								</figure>
 							</div>
 
@@ -311,9 +374,9 @@
 							<div class="content">
 								<ul class="no-bullets hcenter" style="padding-top: 2em;margin: 0;width: 100%;">
 									<li>Functional annotation and mapping of genome-wide assocation studies (FUMA<sup>1</sup>)</li>
-									<li class="fragment fade-down"><i class="fas fa-arrow-down" style="font-size: 5vmin;padding-bottom: 1em;"></i><br>
+									<li class="fragment fade-down" data-fragment-index="1"><i class="fas fa-arrow-down" style="font-size: 5vmin;padding-bottom: 1em;"></i><br>
 										Gene set mapped from the significant loci in the GWAS</li>
-									<li class="fragment fade-down"><i class="fas fa-arrow-down" style="font-size: 5vmin;padding-bottom: 1em;"></i><br>
+									<li class="fragment fade-down" data-fragment-index="2"><i class="fas fa-arrow-down" style="font-size: 5vmin;padding-bottom: 1em;"></i><br>
 										Compare identified genes to genes involved in synapses (e.g. BDNF, NRXN1 etc.)<sup>2</sup><br>
 										<i class="fas fa-arrow-down" style="font-size: 5vmin;padding-top: 1em;"></i></li>
 								</ul>
@@ -322,8 +385,8 @@
 							<div class="footer">
 								<div class="source">
 									<ol style="line-height: 0;">
-										<li>Watanabe <em>et al.</em> Nature Communications (2017)</li>
-										<li><em>SynGO</em>, Koopmans <em>et al.</em> Neuron (2019)</li>
+										<li>Watanabe <em>et al.</em> <em>Nature Communications</em> (2017)</li>
+										<li class="fragment" data-fragment-index="2"><em>SynGO</em>, Koopmans <em>et al.</em> <em>Neuron</em> (2019)</li>
 									  </ol>
 								</div>
 							</div>
@@ -340,12 +403,13 @@
 							</div>
 
 							<figure class="large-image">
-								<img src="files/reactome_figure.jpg" style="width: 100%;">
+								<img src="files/reactome_figure_annot.png" style="width: 82%;">
+								<!--<iframe data-src="https://reactome.org/reacfoam/?species=48887&color=COPPER&analysis=MjAyMTEwMTMxMDQzMjVfNjY2MA%3D%3D&resource=TOTAL&coverage=false" style="width: 100%;height: 75vh;"></iframe>-->
 							</figure>
 
 							<div class="footer">
 								<div class="source">
-										<em>Reactome Pathway Database</em>, Jassal <em>et al.</em> Nucleic Acids Res. (2020)
+									<em><a href="https://reactome.org/reacfoam/?species=48887&color=COPPER&analysis=MjAyMTEwMTMxMDQzMjVfNjY2MA%3D%3D&resource=TOTAL&coverage=false">Reactome Pathway Database</a></em>, Jassal <em>et al.</em> <em>Nucleic Acids Res.</em> (2020)
 								</div>
 							</div>
 
@@ -374,7 +438,7 @@
 								<li class="fragment fade-up"><span class="fa-li"><i class="fas fa-code-branch accent"></i></span>
 									<div style="padding-left: 2em;">Identified a number of synaptic processes associated with shared loci</div>
 								</li>
-							  </ul>
+							</ul>
 
 							<figure class="two-column fragment fade-up" style="display: flex;justify-content: center;align-items: flex-start;">
 								<img class="column" src="files/medrxiv_screenshot.png" style="width: 65%;text-align: center;">

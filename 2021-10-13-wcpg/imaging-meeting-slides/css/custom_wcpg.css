@@ -1,0 +1,23 @@
+.reveal .slides section.color--white {
+    background-color: white;
+  }
+.reveal .slides section.color--white .logo {
+  background-image: url("../lib/norment/logo/color/mark-outline.svg"); 
+}
+
+sup {
+  vertical-align: top !important;
+}
+
+.reveal a {
+  color: var(--main-font-color);
+  text-decoration: none;
+  -webkit-transition: color .25s ease;
+  -moz-transition: color .25s ease;
+  transition: color .25s ease; 
+}
+.reveal a:hover {
+  color: var(--magenta);
+  text-shadow: none;
+  border: none; 
+}

@@ -1,0 +1,80 @@
+.reveal .slides section.color--white {
+    background-color: white;
+}
+.reveal .slides section.color--white .logo {
+    background-image: url("../lib/norment/logo/color/mark-outline.svg"); 
+}
+
+sup {
+    vertical-align: top !important;
+}
+
+/*.reveal a {
+    color: var(--main-font-color);
+    text-decoration: none;
+    -webkit-transition: color .25s ease;
+    -moz-transition: color .25s ease;
+    transition: color .25s ease; 
+}
+.reveal a:hover {
+    color: var(--magenta);
+    text-shadow: none;
+    border: none; 
+}
+
+.reveal a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: var(--magenta);
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+  
+.reveal a:hover::after,
+.reveal a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+}*/
+
+.reveal a {
+    color: var(--main-font-color);
+}
+.reveal a:hover {
+    color: var(--magenta)
+}
+
+.reveal a::after {
+  position: absolute;
+  content: "";
+  background: var(--magenta);
+  bottom: 0;
+  right: 0;
+  height: 0.1em;
+  width: 0%;
+  transition: 300ms ease-in-out;
+}
+
+.reveal a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.twitter-handle {
+    font-size: 0.67em;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.twitter-handle a {
+    color: var(--white);
+}
+.twitter-handle a:hover {
+    color: var(--white);
+}
+.twitter-handle a::after {
+    background-color: var(--white);
+}

@@ -1,0 +1,112 @@
+---
+title: "Code to generate the figures in the slides"
+editor_options:
+  chunk_output_type: console
+---
+
+```{r opts, include=FALSE}
+knitr::opts_chunk$set(fig.retina=2, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center')
+```
+
+```{r setup, message=FALSE, warning=FALSE, cache=FALSE, echo=FALSE}
+library(tidyverse)
+library(ggtext)
+library(scico)
+
+setwd("~/Dropbox/NORMENT/scripts/phd-day-slides/files/")
+
+data <- gapminder::gapminder %>% 
+  filter(year == max(year))
+```
+
+```{r basic-plot}
+data %>% 
+  ggplot(aes(x = gdpPercap, y = lifeExp, 
+             size = pop)) +
+  geom_point(aes(color = continent)) + 
+  geom_smooth(method = "lm") +
+  scale_x_log10()
+
+ggsave("ggplot_gapminder_basic.png", width = 6, height = 6, dpi = 300)
+```
+
+```{r simple-plot}
+data %>% 
+  ggplot(aes(x = gdpPercap, y = lifeExp, 
+             size = pop)) +
+  geom_point(aes(color = continent)) + 
+  geom_smooth(method = "lm", show.legend = FALSE) +
+  scale_x_log10() + 
+  theme_minimal() + 
+  theme(panel.grid = element_line(colour = "grey90"))
+
+ggsave("ggplot_gapminder_simple.png", width = 6, height = 6, dpi = 300)
+```
+
+```{r intermediate-plot}
+data %>% 
+  ggplot(aes(x = gdpPercap, y = lifeExp, 
+             size = pop)) +
+  geom_point(aes(color = continent), 
+             alpha = 0.5, stroke = 0) + 
+  geom_smooth(method = "lm", color = "grey30", alpha = 0.15, show.legend = FALSE) +
+  labs(title = "Relation between GDP and life expectancy",
+       x = "GDP per capita",
+       y = "Life expectancy",
+       color = "Continent",
+       size = "Population") +
+  scale_x_log10() + 
+  scale_color_scico_d(palette = "batlow") +
+  scale_size_continuous(range = c(3,15), labels = scales::label_number(),
+                        guide = guide_legend(label.position = "bottom")) +
+  theme_minimal() + 
+  theme(plot.title = element_markdown(size = 14),
+        legend.box = "vertical",
+        legend.position = "bottom",
+        panel.grid = element_line(colour = "grey90")
+  )
+
+ggsave("ggplot_gapminder_intermediate.png", width = 6, height = 6, dpi = 300)
+```
+
+```{r final-plot}
+data %>% 
+  ggplot(aes(x = gdpPercap, y = lifeExp, 
+             size = pop)) +
+  geom_point(aes(color = continent), alpha = 0.5, stroke = 0) + 
+  geom_smooth(method = "lm", color = "grey30", 
+              alpha = 0.15, show.legend = FALSE) +
+  labs(title = "Relation between GDP and life expectancy",
+       subtitle = "There is a linear relationship between the log<sub>10</sub> GDP per capita and life expectancy",
+       x = "GDP per capita (_$_)",
+       y = "Life expectancy (_years_)",
+       color = "Continent",
+       size = "Population") +
+  scale_x_log10(labels = scales::label_dollar(accuracy = 1, big.mark = ".")) + 
+  scale_color_scico_d(palette = "batlow",
+                      guide = guide_legend(
+                        override.aes = list(size = 6,
+                                            alpha = 1)
+                      )) +
+  scale_size_continuous(range = c(1,15), labels = scales::label_number(),
+                        guide = guide_legend(
+                          label.position = "bottom", 
+                          override.aes = list(shape = 21, alpha = 0.2,
+                                              fill = "grey40")
+                        )) +
+  theme_minimal() + 
+  theme(plot.title = element_markdown(size = 16, face = "bold"),
+        plot.subtitle = element_markdown(face = "italic"),
+        plot.title.position = "plot",
+        axis.title.x = element_markdown(face = "bold"),
+        axis.title.y = element_markdown(face = "bold"),
+        legend.box = "vertical",
+        legend.position = "bottom",
+        legend.title = element_markdown(face = "bold"),
+        panel.grid = element_line(colour = "grey90"),
+        plot.margin = margin(10, 10, 10, 10, unit = "pt")
+  )
+
+ggsave("ggplot_gapminder_final.png", width = 6, height = 6, dpi = 300)
+```
+

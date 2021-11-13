@@ -1,0 +1,1803 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Imaging Group PhD Day</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/phd-day.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/atom-one-dark_modified.css" id="highlight-theme">
+		<link rel="stylesheet" href="plugin/pointer/pointer.css">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+
+		<meta name="theme-color" content="#5F5B6B">
+		<base target="_blank">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<!-- SLIDE -->
+				<section class="title" data-state="hide-controls" data-background="#EEEDE7" data-background-video="files/bg-video.mp4" data-background-video-loop=true>
+
+					<div style="display: block;padding-top: 37.5vh;">
+						<div class="rect">
+							<h1 class="title">Design Matters</h1>
+						</div>
+						<div class="speaker-line">a rant by daniel roelfs</div>
+					</div>
+
+					<div class="bottom-logo-anim">
+						<svg data-allBits style="width: 5%" width="100%" height="100%" viewBox="0 0 577 551" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+							<g transform="matrix(3.33338,0,0,3.33338,296.767,399.208)">
+								<path data-bit d="M0,20.926L-11.435,20.926C-12.037,20.926 -12.524,20.438 -12.524,19.836L-12.524,1.09C-12.524,0.488 -12.037,0 -11.435,0L0,0C0.602,0 1.09,0.488 1.09,1.09L1.09,19.836C1.09,20.438 0.602,20.926 0,20.926" style="fill:#1f1f1f;fill-rule:nonzero;"/>
+							</g>
+							<g transform="matrix(3.33338,0,0,3.33338,458.693,386.403)">
+								<path data-bit d="M0,16.218L-12.218,16.218C-12.82,16.218 -13.308,15.73 -13.308,15.128L-13.308,1.089C-13.308,0.487 -12.82,0 -12.218,0L0,0C0.602,0 1.09,0.487 1.09,1.089L1.09,15.128C1.09,15.73 0.602,16.218 0,16.218" style="fill:#1f1f1f;fill-rule:nonzero;"/>
+							</g>
+							<g transform="matrix(3.33338,0,0,3.33338,379.82,457.27)">
+								<path data-bit d="M0,-36.227L32.139,-36.227C32.741,-36.227 33.228,-35.739 33.228,-35.137L33.228,-27.592C33.228,-26.99 32.741,-26.502 32.139,-26.502L0,-26.502C-0.602,-26.502 -1.09,-26.015 -1.09,-25.413L-1.09,10.468C-1.09,11.07 -1.577,11.557 -2.179,11.557L-15.651,11.557C-16.252,11.557 -16.74,11.07 -16.74,10.468L-16.74,-46.695C-16.74,-47.297 -16.252,-47.784 -15.651,-47.784L-2.179,-47.784C-1.577,-47.784 -1.09,-47.297 -1.09,-46.695L-1.09,-37.317C-1.09,-36.715 -0.602,-36.227 0,-36.227" style="fill:#1f1f1f;fill-rule:nonzero;"/>
+							</g>
+							<g transform="matrix(3.33338,0,0,3.33338,204.82,425.846)">
+								<path data-bit d="M0,-24.854L27.776,-24.854C28.377,-24.854 28.865,-24.366 28.865,-23.764L28.865,-18.323C28.865,-17.721 28.377,-17.233 27.776,-17.233L13.089,-17.233C11.319,-17.233 9.884,-15.798 9.884,-14.028L9.884,-1.09C9.884,-0.488 9.396,0 8.794,0L-8.715,0C-9.317,0 -9.805,-0.488 -9.805,-1.09L-9.805,-16.144C-9.805,-16.745 -9.317,-17.233 -8.715,-17.233L-2.179,-17.233C-1.577,-17.233 -1.09,-17.721 -1.09,-18.323L-1.09,-23.764C-1.09,-24.366 -0.602,-24.854 0,-24.854" style="fill:#1f1f1f;fill-rule:nonzero;"/>
+							</g>
+							<g transform="matrix(3.33338,0,0,3.33338,139.052,299.409)">
+								<path data-bit d="M0,-9.665L0,-12.667C0,-13.269 0.488,-13.757 1.09,-13.757L15.544,-13.757C16.146,-13.757 16.634,-13.269 16.634,-12.667L16.634,-7.453C16.634,-6.852 16.146,-6.364 15.544,-6.364L12.735,-6.364C11.331,-6.364 10.194,-5.226 10.194,-3.823L10.194,3.003C10.194,3.605 9.706,4.092 9.104,4.092L-23.219,4.092C-23.821,4.092 -24.309,3.605 -24.309,3.003L-24.309,-7.486C-24.309,-8.088 -23.821,-8.575 -23.219,-8.575L-1.09,-8.575C-0.488,-8.575 0,-9.063 0,-9.665" style="fill:#1f1f1f;fill-rule:nonzero;"/>
+							</g>
+							<g transform="matrix(3.33338,0,0,3.33338,257.464,90.4827)">
+								<path data-bit d="M11.791,42.753L-3.102,42.753C-3.704,42.753 -4.192,42.265 -4.192,41.663L-4.192,32.955C-4.192,31.196 -5.618,29.77 -7.377,29.77L-17.854,29.77C-18.456,29.77 -18.943,29.282 -18.943,28.68L-18.943,18.898C-18.943,18.296 -18.456,17.809 -17.854,17.809L-5.281,17.809C-4.68,17.809 -4.192,17.321 -4.192,16.719L-4.192,1.09C-4.192,0.488 -3.704,0 -3.102,0L4.866,0C5.467,0 5.955,0.488 5.955,1.09L5.955,8.413C5.955,9.014 6.443,9.502 7.045,9.502L11.791,9.502C12.392,9.502 12.88,9.99 12.88,10.592L12.88,41.663C12.88,42.265 12.392,42.753 11.791,42.753Z" style="fill:#1f1f1f;fill-rule:nonzero;"/>
+							</g>
+							<g transform="matrix(3.33338,0,0,3.33338,61.6534,250.901)">
+								<path data-bit d="M0,-9.471L14.907,-9.471C15.509,-9.471 15.997,-8.983 15.997,-8.381L15.997,-1.089C15.997,-0.487 15.509,0 14.907,0L0,0C-0.602,0 -1.09,-0.487 -1.09,-1.089L-1.09,-8.381C-1.09,-8.983 -0.602,-9.471 0,-9.471" style="fill:#1f1f1f;fill-rule:nonzero;"/>
+							</g>
+							<g transform="matrix(3.33338,0,0,3.33338,366.931,240.205)">
+								<path data-bit d="M0,-32.001L4.751,-32.001C5.353,-32.001 5.84,-31.513 5.84,-30.911L5.84,-8.592C5.84,-7.99 5.353,-7.502 4.751,-7.502L0,-7.502C-0.602,-7.502 -1.09,-7.99 -1.09,-8.592L-1.09,-30.911C-1.09,-31.513 -0.602,-32.001 0,-32.001M-12.874,-54.409L-12.874,10.505C-12.874,11.106 -12.386,11.594 -11.784,11.594L10.508,11.594C12.558,11.594 14.22,13.256 14.22,15.306L14.22,22.408C14.22,23.01 14.708,23.498 15.31,23.498L27.432,23.498C28.034,23.498 28.521,23.01 28.521,22.408L28.521,10.686C28.521,10.084 29.009,9.596 29.611,9.596L44.525,9.596C45.127,9.596 45.614,9.108 45.614,8.507L45.614,2.278C45.614,1.676 45.127,1.188 44.525,1.188L19.657,1.188C19.055,1.188 18.567,0.7 18.567,0.099L18.567,-7.218C18.567,-7.819 19.055,-8.307 19.657,-8.307L31.617,-8.307C32.219,-8.307 32.707,-8.795 32.707,-9.397L32.707,-20.161C32.707,-20.763 32.219,-21.25 31.617,-21.25L19.657,-21.25C19.055,-21.25 18.567,-21.738 18.567,-22.34L18.567,-40.082C18.567,-40.683 18.08,-41.171 17.478,-41.171L0,-41.171C-0.602,-41.171 -1.09,-41.659 -1.09,-42.261L-1.09,-54.409C-1.09,-55.011 -1.577,-55.499 -2.179,-55.499L-11.784,-55.499C-12.386,-55.499 -12.874,-55.011 -12.874,-54.409" style="fill:#1f1f1f;fill-rule:nonzero;"/>
+							</g>
+						</svg>						
+					</div>
+					
+				</section>
+
+				<!-- SLIDE (CHAPTER) -->
+				<section class="dark" data-state="white-controls">
+					
+					<div class="content">
+						<div>
+							<h1 class="chapter">Prologue</h1>
+							<h1>Bad design is intrinsic to science</h1>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+					<!--<div class="menu">
+						<ul>
+							<li class="current">Science & Design</li>
+							<li>Menu</li>
+							<li>Examples</li>
+							<li>Coding</li>
+						</ul>
+					</div>-->
+
+					<div class="content">
+						<figure>
+							<img src="files/Nature-statement-ugly-science.png" style="width: 65vmax;">
+							<figcaption>Nature - <a href="https://doi.org/10.1038/d41586-019-03083-5"><em>The design decisions behind Nature’s new look</em></a> (2019)</figcaption>
+						</figure>
+
+						<figure>
+							<img src="files/krstoffr-nice-slides-tweet.png" style="width: 50vmax;">
+							<figcaption>Reply to a <a href="https://twitter.com/dsquintana/status/1187651903771025409">tweet</a> by Dan Quintana</figcaption>
+						</figure>
+					</div>
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<!-- SUBSLIDE -->
+					<section>
+
+						<div class="content">
+							<div class="multi-col">
+								<div>
+									<figure>
+										<img src="files/TheVerge-CERN-article.png" style="width: 40vw;">
+										<figcaption>The Verge - <a href="https://www.theverge.com/2012/7/4/3136652/cern-scientists-comic-sans-higgs-boson"><em>CERN scientists inexplicably present Higgs boson findings in Comic Sans</em></a> (2012)</figcaption>
+									</figure>
+								</div>
+								<div>
+									<figure>
+										<img src="files/CERN-BrianCox-tweet.png" style="width: 40vw;">
+										<figcaption><a href="https://twitter.com/ProfBrianCox/status/220427166662393856">Reply</a> from prof. Brian Cox to comments from Comis Sans designer Vincent Connare</figcaption>
+									</figure>
+								</div>
+							</div>
+						</div>
+
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section>
+
+						<div class="content">
+							<figure>
+								<img src="files/CERN-aprilfools.png" style="width: 70vmax;">
+								<figcaption>CERN - <a href="https://home.cern/news/news/cern/cern-switch-comic-sans"><em>CERN to switch to Comic Sans</em></a> (2014)</figcaption>
+							</figure>
+						</div>
+
+					</section>
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="content">
+						<figure>
+							<img src="files/med_slides_meme.png" style="width: 55vmax;">
+						</figure>
+					</div>
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="content">
+						<figure>
+							<img src="files/moser_bad_slides_example.jpeg" style="width: 60vmax;">
+							<figcaption>Picture of Evard Moser's presentation at the NordicAIMeet 2021 (<a href="https://twitter.com/NORAdotAI/status/1455096595641405441?s=20">source</a>, 1 Nov. 2021)</figcaption>
+						</figure>
+					</div>
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="content">
+						<b>literally any poster session ever</b>
+					</div>
+				</section>
+
+				<!-- SLIDE -->
+				<section data-visibility="hidden">
+
+					<div class="grid-wrapper">
+
+						<div class="grid-header">
+							<div class="logo"></div>
+							<h1>Slide title</h1>
+						</div>
+
+						<div class="grid-content">
+							Slide 1
+						</div>
+
+						<div class="grid-footer">
+							Reference
+						</div>
+
+					</div>
+				</section>
+
+				<!-- SLIDE -->
+				<section data-background-image="https://gifimage.net/wp-content/uploads/2017/10/house-explosion-gif-8.gif" data-state="white-controls">
+					<div class="content">
+						<span style="color:#fff;font-family: monospace;padding-top: 2em;">&lt;basic design principles&gt;</span>
+					</div>
+				</section>
+
+				<!-- SLIDE (CHAPTER) -->
+				<section class="dark" data-state="white-controls">
+
+					<div class="content">
+						<div>
+							<h1 class="chapter">Chapter 1</h1>
+							<h1>Scientific posters</h1>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+					
+					<div class="content">
+						<b>I don't want to talk about scientific posters</b>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="header">
+						<h1>Poster sessions suck</h1>
+					</div>
+
+					<div class="content h">
+						<figure>
+							<img src="files/poster-session-ineffective-quote.png" style="width: 50vw;">
+							<figcaption>Rowe & Ilic - <a href="https://doi.org/10.1111/febs.13383">Rethinking poster presentations at large-scale scientific meetings – is it time for the format to evolve?</a> (2015)</figcaption>
+						</figure>
+					</div>
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="header">
+						<h1>Resources</h1>
+					</div>
+
+					<div class="content h">
+						<ul class="no-bullets resources short" style="font-size: smaller;">
+							<li><a href="https://sendfox.com/trk/click/5dy9wzzn/zvpoxw">Nguyen Gobber - How to Design Scientific Posters?</a><br>(presentation from graphic designers on improving scientific posters, with general rules)</li>
+							<li><a href="https://sciencedesignguide.com">Dirma Janse - The Science Poster Design Guide</a><br>(book + website created by graphic designer)</li>
+							<li><a href="https://www.youtube.com/watch?v=SYk29tnxASs">Mike Morrison - How to create a better research poster in less time</a><br>(YouTube video on UX of poster sessions (~20mins) + templates, also <a href="https://doi.org/10.1016/j.cell.2020.07.029">this paper</a>)</li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- SLIDE (CHAPTER) -->
+				<section class="dark" data-state="white-controls">
+
+					<div class="content">
+						<div>
+							<h1 class="chapter">Chapter 2</h1>
+							<div>
+								<h1 style="font-size: 7vmin;font-weight: 800;font-style: italic;padding-bottom: 0.5em;">"I don't care about design"</h1>
+								<span style="display: flex;font-size: 4vmin;justify-content: flex-end;">- No one ever</span>
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="content">
+						<div style="flex-direction: row;width: 80vw;font-size: 3vmin;">
+							<div class="em" style="text-align: left;padding-bottom: 5vh;">"But whether something is nice or pretty is subjective!"</div>
+							<div class="b" style="text-align: right;padding-bottom: 10vh;">Art can be subjective, design is either good or bad at serving a purpose<br>
+								and the ability to serve its purpose can be measured</div>
+							<div class="em fragment" data-fragment-index="1" style="text-align: left;padding-bottom: 5vh;">"So I should care about design, but why invest time in making it look pretty too"</div>
+							<div class="b fragment" data-fragment-index="1" style="text-align: right;">People like looking at pretty things</div>
+						</div>
+
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="content">
+						<h1>Case in point: the entire field or marketing, advertising, interior design, ...</h1>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section data-visibility="hidden">
+
+					<!-- SUBSLIDE -->
+					<section class="grid-wrapper">
+
+						<div class="grid-header center">
+							<h1>Which do you want in your house?</h1>
+						</div>
+
+						<div class="grid-content">
+							<div class="multi-col">
+								<div>
+									<figure>
+										<img src="files/monobloc-chair.jpg" style="height: 60vmin;">
+										<figcaption>Monobloc chair</em></figcaption>
+									</figure>
+								</div>
+								<div>
+									<figure>
+										<img src="files/design-chair.jpg" style="height: 60vmin;">
+										<figcaption>Gudmundur Ludvik - <em>Close</em> dinnertable chair</figcaption>
+									</figure>
+								</div>
+							</div>
+						</div>
+
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section>
+
+						<div class="content">
+							<figure>
+								<img src="files/basel-monobloc-ban.png" style="width: 70vw;">
+								<figcaption>BaZ - <a href="https://www.bazonline.ch/basel/stadt/abschied-von-plastikstuehlen/story/17131280"><em>Abschied von Plastikstühlen</em></a> (<em>"Farewell to the plastic chair"</em>, 2008)</figcaption>
+							</figure>
+						</div>
+
+					</section>
+				</section>
+
+				<!-- SLIDE -->
+				<section class="grid-wrapper">
+
+					<div class="grid-header center">
+						<h1>Which looks more appealing?</h1>
+					</div>
+
+					<div class="grid-content">
+						<div class="multi-col">
+							<div>
+								<figure>
+									<img src="https://ash.org.uk/wp-content/uploads/2016/06/SP-TPDMock_upLores.jpg" style="width: 42vw">
+									<figcaption>UK plain packaging for cigarettes</figcaption>
+								</figure>
+							</div>
+
+							<div>
+								<figure>
+									<img src="https://ipcdn.freshop.com/resize?url=https://images.freshop.com/00028200003577/0ae1d465a821986300fc15f219233cac_large.png&width=512&type=webp&quality=80" style="width: 35vw;">
+									<figcaption>Malboro cigarette packet</figcaption>
+								</figure>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- SLIDE -->
+				<section class="grid-wrapper">
+
+					<div class="grid-header center">
+						<h1>Which looks more trustworthy?</h1>
+					</div>
+
+					<div class="grid-content">
+						<div class="multi-col">
+							<div>
+								<figure>
+									<img src="files/amc-site-2005.png" style="height: 45vh">
+									<figcaption>AMC website in 2005</figcaption>
+								</figure>
+							</div>
+
+							<div>
+								<figure>
+									<img src="files/amc-site-2021.png" style="height: 45vh;">
+									<figcaption>AMC website in 2021</figcaption>
+								</figure>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- SLIDE -->
+				<section class="grid-wrapper">
+
+					<div class="grid-header center">
+						<h1>What about these?</h1>
+					</div>
+
+					<div class="grid-content">
+						<div class="multi-col">
+							<div>
+								<figure>
+									<img src="files/basic-r-scatterplot.png" style="width: 42vw">
+									<figcaption>Gapminder figure in default <code>ggplot</code> style</figcaption>
+								</figure>
+							</div>
+
+							<div>
+								<figure>
+									<img src="files/design-scatterplot.png" style="width: 42vw">
+									<figcaption>Gapminder figure with better style and accessible colors</figcaption>
+								</figure>
+							</div>
+
+						</div>
+						<div class="fragment" style="text-align: center;">We'll go over how to go from left to right later</div>
+					</div>
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="content">
+						<figure>
+							<img src="files/ungvoksen_ggplot_screenshot.png" style="height: 80vh;">
+							<figcaption>FHI's UngVoksen newsletter uses figure with default <code>ggplot</code> theme (<a href="https://www.fhi.no/studier/ungvoksen/nyhetsbrev/">source</a>)</figcaption>
+						</figure>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="header">
+						<h1>Efficient communication</h1>
+					</div>
+
+					<div class="content h">
+
+						<figure style="height: 70vh;width: 70vw;">
+							<a class="twitter-timeline" style="background: transparent;" data-width="100%" data-height="100%" data-dnt="true" data-theme="dark" href="https://twitter.com/jburnmurdoch?ref_src=twsrc%5Etfw">Tweets by jburnmurdoch</a> 
+							<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>						
+						</figure>
+
+					</div>
+					
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<!-- SUBSLIDE -->
+					<section>
+
+						<div class="content" style="height: 90%;">
+							<div class="multi-col"> 
+								<div>
+									Low cost, low reward
+								</div>
+
+								<div class="slidecontainer">
+									<input type="range" min="1" max="100" value="50" class="slider" style="margin-top: 70%;">
+									<img src="files/r_normal_distribution.png" style="width: 100%;transform: rotate(180deg);opacity: 0.5;">
+								</div>
+
+								<div>
+									High cost, high reward
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section>
+
+						<div class="content">
+							<figure class="no-shadow">
+								<img src="files/cost-triangle.png" style="width: 70vw">
+							</figure>
+						</div>
+						
+					</section>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="content">
+						<figure class="no-shadow">
+							<img src="files/manuscript-timeline.png" style="background: transparent;width: 80vw">
+						</figure>
+					</div>
+					
+				</section>
+
+				<!-- SLIDE (CHAPTER) -->
+				<section class="dark" data-state="white-controls">
+					
+					<div class="content">
+						<div>
+							<h1 class="chapter">Chapter 3</h1>
+							<h1>Design is communication</h1>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="content">
+						<figure>
+							<img src="files/design_is_communication_screenshot.png" style="width: 70vw">
+							<figcaption>Paper on the influence of graphic design on science communication (<a href="https://doi.org/10.1139/facets-2018-0049">source</a>)</figcaption>
+						</figure>
+					</div>
+					
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="header">
+						<h1>Science interacts with</h1>
+					</div>
+
+					<div class="content h">
+						<div class="multi-col">
+							<ul class="no-bullets" style="padding-right: 20%;">
+								<li>Educators</li>
+								<li>Journalists</li>
+								<li>Policymakers</li>
+								<li>etc.</li>
+							</ul>
+
+							<ul class="no-bullets">
+								<li>Editors</li>
+								<li>Reviewers</li>
+								<li>Grant agencies</li>
+							</ul>
+						</div>
+
+						<span style="padding-bottom: 2em;">How many of these will read and understand your paper?</span>
+
+						<b>You want to keep them happy</b>
+
+
+					</div>
+					
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="header">
+						<h1>Why does it matter?</h1>
+					</div>
+
+					<div class="content h" style="height: 70vh;">
+						<ul class="no-bullets short" style="max-width: 80vw;">
+							<li>Academics are people too, people like looking at nice things</li>
+							<li class="fragment">Good and clear figures or illustrations are part of science communication</li>
+							<li class="fragment">People remember visuals better than text</li>
+							<li class="fragment">Succeeding at explaining 1 thing &gt; failing to explain 10 things</li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="content">
+						<b>Low cognitive effort = happy audience</b>
+					</div>
+				</section>
+
+				<!-- SLIDE (CHAPTER) -->
+				<section class="dark" data-state="white-controls">
+				
+					<div class="content">
+						<div>
+							<h1 class="chapter">Chapter 4</h1>
+							<h1>Presentations</h1>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="content">
+						<ul class="no-bullets short">
+							<li>More people will see your presentations than your posters</li>
+							<li class="fragment">More people you care about will see your presentations</li>
+							<li class="fragment">Presentations have higher return on investment</li>
+							<li class="fragment b">So let's talk about how to improve presentations</li>
+						</ul>
+					</div>
+					
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="content">
+						<b>Be nice to your scientist</b>
+					</div>
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="content">
+						<div class="multi-col">
+							<div>
+								<figure>
+									<img src="files/cognitive_load_slide.jpg" style="width: 45vw;">
+									<figcaption>Slide on cognitive load demanding a lot of cognitive load (<a href="https://www.slideshare.net/MelissaAnneWisniewsk/cognitive-load-in-instructional-design">source</a>)</figcaption>
+								</figure>
+							</div>
+							<div>
+								<figure>
+									<img src="files/example_new_slides/Slide2.png" style="width: 45vw;">
+									<figcaption>Same slide redesigned</figcaption>
+								</figure>
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="content">
+						<figure class="no-shadow">
+							<img src="files/cognitive_load_slide.png" style="width: 90vw;">
+						</figure>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="content">
+						<div class="multi-col">
+							<div>
+								<figure>
+									<img src="files/example_old_slides/Slide2.png" style="width: 45vw;">
+								</figure>
+							</div>
+							<div>
+								<figure>
+									<img src="files/example_new_slides/Slide3.png" style="width: 45vw;">
+								</figure>
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- SUBSLIDE -->
+				<section>
+
+					<div class="header">
+						<h1>Illustrations</h1>
+					</div>
+
+					<div class="content h" style="height: 70%;">
+						Replace text with illustrations wherever you can
+						<figure style="width: 112vh;height: 63vh;">
+							<iframe width="100%" height="100%" src="https://danielroelfs.github.io/slides/2021-10-29-synergy-meeting/synergy-meeting-slides/index.html#/2"></iframe>
+						</figure>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="header">
+						<h1>Illustrations</h1>
+					</div>
+
+					<div class="content h" style="height: 70%;">
+						<ul class="no-bullets short">
+							<li>Time spent is an investment</li>
+							<li class="fragment">Provides visual aid to explain complex concepts and methods</li>
+							<li class="fragment">Can be reused for manuscripts and grant applications</li>
+						</ul>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="header">
+						<h1>Illustrations improve grant applications</h1>
+					</div>
+
+					<div class="content h">
+						<div class="multi-col">
+							<div>
+								<figure>
+									<img src="files/screenshot_ida_grants.png" style="width: 45vw;">
+									<figcaption>Ida talking about how figures improve grant applications (shared with permission)</figcaption>
+								</figure>
+							</div>
+							<div>
+								<figure>
+									<img src="files/screenshot_dan_grants.png" style="width: 45vw;">
+									<figcaption>Dan talking about how figures improve grant applications (shared with permission)</figcaption>
+								</figure>
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="header">
+						<h1>Take it to the next level</h1>
+					</div>
+
+					<div class="content h" style="height: 65vh;">
+						<table>
+							<tr>
+								<td>
+									<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Microsoft_Office_PowerPoint_%282019–present%29.svg/2203px-Microsoft_Office_PowerPoint_%282019–present%29.svg.png" style="width: 5vmin;padding: 5px;">
+								</td> 
+								<td>PowerPoint</td>
+								<td>free at university, frustrating</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="https://media.inkscape.org/static/images/inkscape-logo.svg" style="width: 5vmin;padding: 5px;">
+								</td> 
+								<td>InkScape</td>
+								<td>free, open source, not great</td>
+							</tr>
+							<tr>
+								<td style="display: flex;flex-direction: column;width: auto;">
+									<img src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/illustrator.svg" style="width: 5vmin;padding: 5px;">
+									<img src="https://www.adobe.com/content/dam/cc/icons/indesign.svg" style="width: 5vmin;padding: 5px;">
+								</td> 
+								<td>Adobe Illustrator<br>Adobe InDesign</td>
+								<td>$$$, free at university virtual<br>desktop</td>
+							</tr>
+							<tr class="b">
+								<td style="display: flex;flex-direction: column;width: auto;">
+									<img src="https://affinity.help/_assets/designer_1x.png" style="width: 5vmin;padding: 5px;">
+									<img src="https://affinity.help/_assets/photo_1x.png" style="width: 5vmin;padding: 5px;">
+								</td> 
+								<td>Affinity Designer<br>Affinity Publisher</td> 
+								<td>$, lifetime license</td>
+							</tr>
+						</table>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="header">
+						<h1>Aspect ratio</h1>
+					</div>
+
+					<div class="content h" style="height: 75%;">
+						<span>Maximize the space available</span>
+						<figure class="no-shadow">
+							<img src="files/aspect_ratio.png" style="height: 65vh;background: transparent;">
+						</figure>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="content">
+						<figure>
+							<img src="files/zoom_4x3_screenshot.png" style="width: 75vw;">
+							<figcaption>Black bars on either side when the slideshow doesn't match screen size</figcaption>
+						</figure>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="content">
+						<span><span class="em">"1 minute per slide"</span> is outdated</span>
+					</div>
+
+				</section>
+				
+				<!-- SLIDE -->
+				<section>
+
+					<div class="full-multi-col">
+						<div>
+							<figure>
+								<img src="files/cognitive_load_slide.jpg" style="width: 40vw;">
+							</figure>
+						</div>
+						<div style="flex-direction: column;">
+							<figure style="margin: 1vh;">
+								<img src="files/example_new_slides/Slide4.png" style="height: 30vh;">
+							</figure>
+							<figure style="margin: 1vh;">
+								<img src="files/example_new_slides/Slide5.png" style="height: 30vh;">
+							</figure>
+							<figure style="margin: 1vh;">
+								<img src="files/example_new_slides/Slide6.png" style="height: 30vh;">
+							</figure>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="header">
+						<h1>Margins</h1>
+					</div>
+
+					<div class="content h">
+						<div class="multi-col">
+							<div>
+								<figure>
+									<img src="files/example_new_slides/Slide2.png" style="width: 45vw;">
+									<figcaption>Decent margins, room to breathe</figcaption>
+								</figure>
+							</div>
+							<div>
+								<figure>
+									<img src="files/custom_random_slides/Slide1.png" style="width: 45vw;">
+									<figcaption>Tight margins, claustrophobic</figcaption>
+								</figure>
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="header">
+						<h1>Alignment</h1>
+					</div>
+
+					<div class="content h">
+						<div class="multi-col">
+							<div>
+								<figure>
+									<img src="files/example_new_slides/Slide2.png" style="width: 45vw;">
+									<figcaption>Left alignment</figcaption>
+								</figure>
+							</div>
+							<div>
+								<figure>
+									<img src="files/custom_random_slides/Slide2.png" style="width: 45vw;">
+									<figcaption>Center alignment</figcaption>
+								</figure>
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="content">
+						<ul class="no-bullets short">
+							<li>Be more lazy</li>
+							<li class="fragment">Keep it simple, stupid</li>
+							<li class="fragment">Less is more</li>
+						</ul>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section data-visibility="hidden">
+
+					<div class="content">
+						<div class="multi-col">
+							<div>
+								<figure>
+									<img src="https://www.nanoparticles.ch/archive/2019_Kelesidis2_PO.pdf" style="width: 35vw;">
+									<figcaption>Award winning poster at 23rd ETH-Conference on Combustion Generated Nanoparticles 2019</figcaption>
+								</figure>
+							</div>
+							<div>
+								<figure>
+									<img src="files/elleke_tissink_poster.png" style="width: 55vw;">
+									<figcaption>Award winning poster from <a href="https://twitter.com/EPTissink">Elleke Tissink</a> at WCPG 2021</figcaption>
+								</figure>
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- SLIDE (CHAPTER) -->
+				<section class="dark" data-state="white-controls">
+
+					<div class="content">
+						<div>
+							<h1 class="chapter">Chapter 5</h1>
+							<h1>The devil is in the details</h1>
+						</div>
+					</div>
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="header">
+						<h1>Case study: typefaces & fonts</h1>
+					</div>
+
+					<div class="content h" style="height: 65vh;">
+						<figure style="margin-bottom: 0;">
+							<img src="files/arial_screenshot_MB.png" style="height: 50vh">
+							<figcaption>Arial and Comic Sans are universally disliked among designers (<a href="https://practicaltypography.com/system-fonts.html">source</a>, <a href="https://www.marksimonson.com/notebook/view/the-scourge-of-arial">source</a>)</figcaption>
+						</figure>
+						<figure>
+							<img src="files/helvetica_screenshot_MB.png" style="height: 10vh">
+							<figcaption>Helvetica isn't much liked either</figcaption>
+						</figure>
+					</div>
+					
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="header">
+						<h1>Arial sucks</h1>
+					</div>
+
+					<div class="content h">
+						<figure class="comparisons">
+							<img src="files/typography_comparisons_1.png" style="width: 90vw">
+							<figcaption class="fragment"><div>Arial 👎</div><div>Poppins 👍</div></figcaption>
+						</figure>
+					</div>
+					
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="header">
+						<h1>Context matters</h1>
+					</div>
+
+					<div class="content h">
+						<figure>
+							<img src="files/typography_comparisons_3.png" style="width: 90vw">
+							<figcaption>Font choices matter, <em>Copperplate</em> looks cheap for a law firm and too expensive for a kindergarten</figcaption>
+						</figure>
+					</div>
+					
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<!-- SUBSLIDE -->
+					<section>
+						<div class="header">
+							<h1>Choose wisely</h1>
+						</div>
+	
+						<div class="content h" style="padding-left: 25%;">
+							<figure>
+								<img src="files/decent_fonts_list.png" style="height: 100vh">
+								<figcaption>Fonts with a ★ are plausible for body text</figcaption>
+							</figure>
+						</div>
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section>
+						<div class="header">
+							<h1>Best of Google Fonts</h1>
+						</div>
+	
+						<div class="content" style="height: auto;padding-top: 2em;">
+							<ul class="no-bullets">
+								<li>Open Sans</li>
+								<li>Roboto</li>
+								<li>Poppins (body font for this presentation )</li>
+								<li>Lato (header font for this presentation)</li>
+								<li>Alegreya</li>
+								<li>Montserrat</li>
+								<li>Raleway</li>
+								<li>Merriweather</li>
+							</ul>
+						</div>
+					</section>
+					
+				</section>
+
+				<!-- SLIDE (CHAPTER) -->
+				<section class="dark" data-state="white-controls">
+
+					<div class="content">
+						<div>
+							<h1 class="chapter">Chapter 6</h1>
+							<h1>Colors are complicated</h1>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="content">
+						<figure>
+							<img src="files/xkcd_painbow_award.png" style="width: 50vw;padding: 2vmin;">
+							<figcaption>XKCD - Painbow Award (<a href="https://xkcd.com/2537">2537</a>)</figcaption>
+						</figure>
+					</div>
+					
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+					<div class="content">
+						<div class="multi-col">
+							<div>
+								<figure>
+									<img src="files/covid_maps.png" style="width: 95vw;">
+									<figcaption>Colors influence your emotional reaction (<a href="https://www.cedricscherer.com/2021/06/08/colors-and-emotions-in-data-visualization/">image source</a>, <a href="https://blog.datawrapper.de/coronaviruscharts/">source</a>)</figcaption>
+								</figure>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+					<div class="content">
+						<figure>
+							<img src="files/crameri_natcomms_screenshot.png" style="width: 70vw">
+							<figcaption>Fabio Crameri <em>et al.</em> - <a href="https://doi.org/10.1038/s41467-020-19160-7">The misuse of colour in science communication</a>, <em>Nature Communications</em> (2020)</figcaption>
+						</figure>
+					</div>
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<!-- SUBSLIDE -->
+					<section>
+						<div class="content">
+							<div class="multi-col">
+								<div>
+									<figure>
+										<img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-020-19160-7/MediaObjects/41467_2020_19160_Fig2_HTML.png?as=webp" 
+											style="width: 45vw;padding: 2vmin;">
+										<figcaption>Color discrepancy between <em>jet</em> or <em>rainbow</em> color palette and scientific colors (<a href="https://doi.org/10.1038/s41467-020-19160-7">source</a>)</figcaption>
+									</figure>
+								</div>
+								<div>
+									<figure>
+										<img src="files/crameri_scientificcolors_overview.png" style="height: 75vh">
+										<figcaption>Fabio Crameri - <a href="https://www.fabiocrameri.ch/colourmaps/">Scientific Color Maps</a></figcaption>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section>
+
+						<div class="content">
+							<figure>
+								<img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-020-19160-7/MediaObjects/41467_2020_19160_Fig6_HTML.png?as=webp" style="height: 80vh;padding: 2vmin;">
+								<figcaption>Fabio Crameri - Guideline for choosing the right scientific colour map (<a href="https://doi.org/10.1038/s41467-020-19160-7">source</a>)</figcaption>
+							</figure>
+						</div>
+
+					</section>
+
+				</section>
+
+				<!-- SLIDE (CHAPTER) -->
+				<section class="dark" data-state="white-controls">
+
+					<div class="content">
+						<div>
+							<h1 class="chapter">Chapter 7</h1>
+							<h1>Simple ways to quickly improve a figure</h1>
+							<span>(with code 👍)</span>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="full-multi-col">
+						<div style="background: #A5CAC1;"><p>how to use scientific colors in <code>{ggplot2}</code></p></div>
+						<div style="display: flex;flex-direction: column;width: 100%;">
+							<div style="width: 100%;">
+								<pre class="r"><code data-trim data-line-numbers="1|1,7-9">
+								library(normentR)
+
+								penguins %>%
+								  ggplot(aes(x = bill_length_mm, y = body_mass_g, 
+								  		        color = species)) +
+								  geom_point(size = 2) + 
+								  scale_color_norment(discrete = TRUE, 
+								    							  palette = "batlow") + 
+								  theme_norment(base_size = 9)
+								</code></pre>
+							</div>
+							<div class="fragment" style="width: 100%;">
+								<pre class="r"><code data-trim data-line-numbers="1,7-9">
+								library(scico)
+																
+								penguins %>%
+								  ggplot(aes(x = bill_length_mm, y = body_mass_g, 
+								  		        color = species)) +
+								  geom_point(size = 2) + 
+								  scale_color_scico_d(palette = "batlow") +
+								  theme_minimal(base_size = 9)
+								</code></pre>
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<div class="full-multi-col">
+						<div style="background: #A5CAC1;"><p><code>theme_minimal()</code> is your friend</p></div>
+						<div style="display: flex;flex-direction: column;width: 100%;">
+							<div style="width: 100%;">
+								<pre class="r"><code data-trim data-line-numbers="7">
+								penguins %>%
+								  ggplot(aes(x = bill_length_mm, y = body_mass_g, 
+								  		        color = species)) +
+								  geom_point(size = 2) + 
+								  scale_color_norment(discrete = TRUE, 
+								    							  palette = "batlow") + 
+								  theme_minimal()
+								</code></pre>
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<!-- SUBSLIDE -->
+					<section>
+						<div class="content">
+							<h1>My <i class="fab fa-r-project"></i> setup</h1>
+							<pre class="r" style="width: 45vw;"><code data-trim data-line-numbers>
+								### CREATE SCATTER PLOT ########################
+
+								#-- Libraries -------------------------
+
+								library(tidyverse)
+								library(ggtext)
+								library(scico)
+								library(patchwork)
+
+								#-- Load data ------------------------
+
+								...
+							</code></pre>
+						</div>
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section>
+						<div class="content">
+							<h1>My <i class="fab fa-python"></i> setup</h1>
+							<pre class="python" style="width: 45vw;"><code data-trim data-line-numbers>
+								### RUN XGBOOST ANALYSIS ########################
+
+								# -- Libraries -------------------------
+								
+								import numpy as np
+								import pandas as pd
+								import matplotlib.pyplot as plt
+
+								# -- Load data -------------------------
+
+								...
+							</code></pre>
+						</div>
+					</section>
+
+				</section>
+
+
+				<!-- SLIDE -->
+				<section>
+
+					<!-- SUBSLIDE -->
+					<section data-auto-animate>
+						<div class="full-multi-col">
+							<div data-id="1">
+								<pre class="r" style="width: 100%;"><code data-trim data-line-numbers>
+									data %>% 
+									  ggplot(aes(x = gdpPercap, y = lifeExp, 
+									             size = pop)) +
+									  geom_point(aes(color = continent)) + 
+									  geom_smooth(method = "lm") +
+									  scale_x_log10()
+								</code></pre>
+							</div>
+							<div data-id="2">
+								<figure>
+									<img src="files/ggplot_gapminder_basic.png" style="width: 100%;">
+								</figure>
+							</div>
+						</div>
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section data-auto-animate>
+						<div class="full-multi-col">
+							<div data-id="1">
+								<pre class="r" style="width: 100%;"><code data-trim data-line-numbers>
+									data %>% 
+									  ggplot(aes(x = gdpPercap, y = lifeExp, 
+									             size = pop)) +
+									  geom_point(aes(color = continent)) + 
+									  geom_smooth(method = "lm", show.legend = FALSE) +
+									  scale_x_log10() + 
+									  theme_minimal() + 
+									  theme(panel.grid = element_line(colour = "grey90"))
+								</code></pre>
+							</div>
+							<div data-id="2">
+								<figure>
+									<img src="files/ggplot_gapminder_simple.png" style="width: 100%;">
+								</figure>
+							</div>
+						</div>
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section data-auto-animate>
+						<div class="full-multi-col">
+							<div data-id="1">
+								<pre class="r" style="width: 100%;height: 47vh;"><code data-trim data-line-numbers>
+									data %>% 
+									  ggplot(aes(x = gdpPercap, y = lifeExp, 
+									             size = pop)) +
+									  geom_point(aes(color = continent), alpha = 0.5, stroke = 0) + 
+									  geom_smooth(method = "lm", color = "grey30", 
+									              alpha = 0.15, show.legend = FALSE) +
+									  labs(title = "Relation between GDP and life expectancy",
+									       x = "GDP per capita",
+									       y = "Life expectancy",
+									       color = "Continent",
+									       size = "Population") +
+									  scale_x_log10() + 
+									  scale_color_scico_d(palette = "batlow") +
+									  scale_size_continuous(range = c(1,15), labels = scales::label_number(),
+									                        guide = guide_legend(label.position = "bottom") + 
+									  theme_minimal() + 
+									  theme(plot.title = element_markdown(size = 14),
+									        legend.box = "vertical",
+									        legend.position = "bottom",
+									        panel.grid = element_line(colour = "grey90")
+									  )
+								</code></pre>
+							</div>
+							<div data-id="2">
+								<figure>
+									<img src="files/ggplot_gapminder_intermediate.png" style="width: 100%;">
+								</figure>
+							</div>
+						</div>
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section data-auto-animate>
+						<div class="full-multi-col">
+							<div data-id="1">
+								<pre class="r" style="width: 100%;height: 78vh;"><code data-trim data-line-numbers><script type="text/template">
+									data %>% 
+									  ggplot(aes(x = gdpPercap, y = lifeExp, 
+									             size = pop)) +
+									  geom_point(aes(color = continent), alpha = 0.5, stroke = 0) + 
+									  geom_smooth(method = "lm", color = "grey30", 
+									              alpha = 0.15, show.legend = FALSE) +
+									  labs(title = "Relation between GDP and life expectancy",
+									       subtitle = "There is a linear relationship between the log<sub>10</sub> GDP per capita and life expectancy",
+									       x = "GDP per capita (_$_)",
+									       y = "Life expectancy (_years_)",
+									       color = "Continent",
+									       size = "Population") +
+									  scale_x_log10(labels = scales::label_dollar(accuracy = 1, big.mark = ".")) + 
+									  scale_color_scico_d(palette = "batlow",
+									                      guide = guide_legend(
+									                        override.aes = list(size = 6,
+									                                            alpha = 1)
+									                      )) +
+									  scale_size_continuous(range = c(3,15), labels = scales::label_number(),
+									                        guide = guide_legend(
+									                          label.position = "bottom", 
+									                          override.aes = list(shape = 21, alpha = 0.2,
+									                                              fill = "grey40")
+									                        )) +
+									  theme_minimal() + 
+									  theme(plot.title = element_markdown(size = 16, face = "bold"),
+									        plot.subtitle = element_markdown(face = "italic"),
+									        plot.title.position = "plot",
+									        axis.title.x = element_markdown(face = "bold"),
+									        axis.title.y = element_markdown(face = "bold"),
+									        legend.box = "vertical",
+									        legend.position = "bottom",
+									        legend.title = element_markdown(face = "bold"),
+									        panel.grid = element_line(colour = "grey90")
+									  )
+								</script></code></pre>
+							</div>
+							<div data-id="2">
+								<figure>
+									<img src="files/ggplot_gapminder_final.png" style="width: 100%;">
+								</figure>
+							</div>
+						</div>
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section>
+						<div class="content">
+							<div class="multi-col">
+								<div>
+									<figure>
+										<img src="files/ggplot_gapminder_basic.png" style="width: 42vw;">
+									</figure>
+								</div>
+								<div>
+									<figure>
+										<img src="files/ggplot_gapminder_final.png" style="width: 42vw;">
+									</figure>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<!-- SUBSLIDE -->
+					<section>
+						<div class="content">
+							<figure>
+								<img src="files/ugly_ggplot_theme.png" style="width: 80vw;">
+								<figcaption>The monstrosity you can make with all <code>{ggplot2}</code> <code>theme()</code> options (based on a <a href="https://gist.github.com/emilyriederer/2bf4f67d7e198f8359b61706c82e42ee">gist</a> by Emily Riederer)</figcaption>
+							</figure>
+						</div>
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section>
+						<div class="content" style="width: 100%;">
+							<pre class="r" style="width: 80vw;height: 70vh;"><code data-trim data-line-numbers>
+								ggplot(data, aes(x = x, y = y, col = as_factor(x))) + 
+								geom_point(size = 5) + 
+								labs(title = "test title",
+								     subtitle = "test subtitle",
+								     x = "my x axis",
+								     y = "my y axis",
+								     caption = "this is a caption",
+								     col = "Renamed Legend") +
+								facet_grid(w ~ z, switch = "y") +
+								theme(
+									plot.background = element_rect(fill = "lightyellow"),
+									plot.title = element_text(size = 30, hjust = 0.25),
+									plot.subtitle = element_text(size = 20, hjust = 0.75, color = "mediumvioletred", family = "serif"),
+									plot.caption = element_text(size = 10, face = "italic", angle = 25),
+
+									panel.background = element_rect(fill = "lightblue", colour = "darkred", size = 4),
+									panel.border = element_rect(fill = NA, color = "green", size = 2),
+									panel.grid.major.x = element_line(color = "purple", linetype = 2),
+									panel.grid.minor.x = element_line(color = "orange", linetype = 3),
+									panel.grid.minor.y = element_blank(),
+
+									axis.title.x = element_text(face = "bold.italic", color = "blue"),
+									axis.title.y = element_text(family = "mono", face = "bold", size = 20, hjust = 0.25),
+									axis.text = element_text(face = "italic", size = 15),
+									axis.text.x.bottom = element_text(angle = 180), # note that axis.text options from above are inherited
+
+									strip.background = element_rect(fill = "magenta"),
+									strip.text.y = element_text(color = "white"),
+									strip.placement = "outside",
+
+									legend.background = element_rect(fill = "orangered4"), # generally will want to match w plot background
+									legend.key = element_rect(fill = "orange"),
+									legend.direction = "horizontal",
+									legend.position = "bottom",
+									legend.justification = "left",
+									legend.title = element_text(family = "serif", color = "white"),
+									legend.text = element_text(family = "mono", face = "italic", color = "limegreen")
+								)
+							</code></pre>
+						</div>
+					</section>
+
+				</section> 
+
+				<!-- SLIDE -->
+				<section data-visibility="hidden">
+
+					<!-- SUBSLIDE -->
+					<section class="grid-wrapper">
+					
+						<div class="grid-header">
+							<h1>One quick word on file organization</h1>
+						</div>
+					
+						<div class="grid-content">
+							<pre class="bash" style="height: 87%;margin-top: 0;"><code data-trim data-line-numbers>
+								$ pwd
+								/Users/dtroelfs/Dropbox/NORMENT/r_scripts/ica_genetics
+								$ tree
+								./
+								├── convert_pleio_results.m
+								├── compare_ic_modelorders.R
+								├── create_fuma_table.R
+								├── create_manhattan_figure.R
+								├── extract_pleio_qq_data.ipynb
+								├── extract_ukb_questionnaire_fields.R
+								├── figures/
+								│   ├── ica_weightmatrix.png
+								│   ├── ic_heritability.png
+								│   ├── ic_manhattan_plots.png
+								│   ├── icxic_ldsc_matrix.png
+								│   └── questionscores_distribution.png
+								├── files/
+								│   ├── fuma_job_names.txt
+								│   ├── ica_loadings.txt
+								│   ├── ldsc_stats.txt
+								│   ├── question_definitions.txt
+								│   └── sumstats/
+								│       ├── GWAS_ICA_1.sumstats.gz
+								│       └── GWAS_ICA_2.sumstats.gz
+								├── ica_genetics.Rproj
+								├── plot_heritability.R
+								├── plot_ica_weight_matrix.R
+								├── plot_icxic_ldsc_matrix.R
+								└── plot_questionnaire_scores.R
+								
+								3 directories, 21 files
+							</code></pre>
+						</div>
+										
+					</section>
+					
+					<!-- SUBSLIDE -->
+					<section class="grid-wrapper">
+					
+						<div class="grid-header">
+							<h1>&#8230; on coding style</h1>
+						</div>
+					
+						<div class="grid-content">
+							<pre class="r" style="height: 65%;"><code data-trim data-line-numbers>
+								### PLOT ICA WEIGHT MATRIX ########################
+							
+								#-- Libraries -------------------------
+							
+								library(tidyverse)
+								
+								#-- Load data ------------------------
+								
+								data <- read_csv("files/ica_loadings.txt") %>%
+								  janitor::clean_names()
+								
+								#-- Wrangle data ------------------------
+								
+								data <- data %>%
+								  mutate(diagnosis = str_to_upper(diagnosis))
+							
+								#-- Create plot ------------------------
+							
+								data %>%
+								  pivot_longer(cols = starts_with("ic"), names_to = "ic", values_to = "loading") %>%
+								  mutate(ic = fct_reorder(ic, parse_number(ic))) %>%
+								  ggplot(aes(x = ic, y = question, fill = loading)) +
+								  geom_tile()
+							</code></pre>
+						</div>
+
+					</section>
+
+				</section>
+
+				<!-- SLIDE (CHAPTER) -->
+				<section class="dark" data-state="white-controls">
+
+					<div class="content">
+						<div>
+							<h1 class="chapter">Epilogue</h1>
+							<h1>Some basic rules for better design</h1>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<!-- SUBSLIDE -->
+					<section>
+
+						<div class="header">
+							<h1>KISS</h1>
+						</div>
+
+						<div class="rules-content">
+							<span class="concl-rule">Keep It Simple, Stupid</span>
+							<figure>
+								<img src="">
+							</figure>
+						</div>
+
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section>
+
+						<div class="header">
+							<h1>Color scheme</h1>
+						</div>
+
+						<div class="rules-content">
+							<span class="concl-rule">When in doubt, go for greyscale</span>
+							<span style="padding-top: 2em;">e.g.</span>
+							<ul class="no-bullets" style="text-align: left;padding-top: 0.5em;">
+								<li>Black on white <em style="color: #999;">(when presenting in a bright room)</em></li>
+								<li>Light grey on black <em style="color: #999;">(when presenting in a darkened room)</em></li>
+							</ul>
+						</div>
+
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section>
+
+						<div class="header">
+							<h1>Fonts</h1>
+						</div>
+
+						<div class="rules-content" style="height: 80%;">
+							<span class="concl-rule">Don't use Comic Sans or Arial, ever!</span>
+							<figure style="width: 80%;height: 50vh;">
+								<iframe width="100%" height="100%" src="https://practicaltypography.com/system-fonts.html"></iframe>
+								<figcaption>Some typographers hate Arial more than Comic Sans (from <a href="https://practicaltypography.com/system-fonts.html">Butterick's Practical Typography</a>)</figcaption>
+							</figure>
+						</div>
+
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section>
+
+						<div class="header">
+							<h1>Line length</h1>
+						</div>
+
+						<div class="rules-content" style="height: 80%;">
+							<span class="concl-rule">Length of a single line should be between 40-60 characters</span>
+							<figure>
+								<img style="width: 60vw;" src="https://cc-prod.scene7.com/is/image/CCProdAuthor/web-design-best-practices_06?$png$&jpegSize=200&wid=1281">
+								<figcaption>Optimal line length to maximize readability (<a href="https://www.adobe.com/products/xd/learn/design/layout/web-design-best-practices.html">source</a>, <a href="https://nguyengobber.com/media/pages/profile/dba757e150-1623419925/210608_howtodesignscientificposters_presentation-for-distribution.pdf">source</a>, <a href="https://practicaltypography.com/line-length.html">source</a>)</figcaption>
+							</figure>
+						</div>
+
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section>
+
+						<div class="header">
+							<h1>Dynamic figure design</h1>
+						</div>
+
+						<div class="rules-content" style="height: 70vh;">
+
+							<figure class="no-shadow">
+								<img src="files/dynamic_figure_design.png" style="background: transparent;width: 90vw;">						
+							</figure>
+
+						</div>
+
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section>
+
+						<div class="header">
+							<h1>Presenting on Zoom</h1>
+						</div>
+
+						<div class="rules-content" style="height: 80vh;">
+							<span class="concl-rule">Don't use 4x3 aspect ratio when presenting on Zoom</span>
+							<figure>
+								<img style="width: 60vw;" src="files/zoom_4x3_screenshot.png">
+								<figcaption>Black bars on either side when the slideshow doesn't match screen size</figcaption>
+							</figure>
+						</div>
+
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section>
+
+						<div class="header">
+							<h1>NORMENT template</h1>
+						</div>
+
+						<div class="rules-content" style="height: 80vh;">
+							<span class="concl-rule">The original NORMENT template is outdated</span>
+							<figure style="width: 96vh;height: 54vh;" class="fragment">
+								<iframe width="100%" height="100%" src="https://danielroelfs.github.io/revealjs-norment-theme/"></iframe>
+								<figcaption><a href="https://www.med.uio.no/norment/english/internal/general-information/templates">Link to the new templates.</a> Disclaimer: I created the new NORMENT template</figcaption>
+							</figure>
+						</div>
+
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section>
+
+						<div class="header">
+							<h1>Priorities</h1>
+						</div>
+
+						<div class="rules-content">
+							<span class="concl-rule flashing">Data goes before aesthetics</span>
+						</div>
+
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section>
+
+						<div class="header">
+							<h1>Final rule</h1>
+						</div>
+
+						<div class="rules-content">
+							<span class="concl-rule">Trust your gut</span>
+						</div>
+
+					</section>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section class="grid-wrapper">
+
+					<div class="grid-header">
+						<h1>Resources</h1>
+					</div>
+					
+					<div class="grid-content">
+						<ul class="no-bullets resources" style="font-size: smaller;">
+							<li><a href="https://www.fabiocrameri.ch/colourmaps/">Fabio Crameri - Scientific Color maps</a> (+ <a href="https://doi.org/10.1038/s41467-020-19160-7">paper</a>)</li>							
+							<li><a href="https://github.com/thomasp85/scico">Thomas Lin Pedersen - <code>{scico}</code></a> (R package with scientific color maps)</li>							
+							<li><a href="https://www.data-to-viz.com">Yan Holtz - From Data to Viz</a> (decision tree for figure format, + R code)</li>							
+							<li><a href="https://www.cedricscherer.com/2021/06/06/visualizing-distributions-with-raincloud-plots-and-how-to-create-them-with-ggplot2/">Cédric Scherer - Visualizing Distributions with Raincloud Plots</a> (<code>{ggplot2}</code>-based tutorial)</li>							
+							<li><a href="https://blog.datawrapper.de/which-color-scale-to-use-in-data-vis/">Lisa Charlotte Muth - Which color scale to use when visualizing data</a> (part of 4-part series for <a href="https://www.datawrapper.de/">Datawrapper</a>)</li>
+							<li><a href="https://blog.datawrapper.de/gendercolor/">Lisa Charlotte Muth - An alternative to pink & blue: Colors for gender data</a> (for <a href="https://www.datawrapper.de/">Datawrapper</a>)</li>
+							<li><a href="https://sendfox.com/trk/click/5dy9wzzn/zvpoxw">Nguyen Gobber - How to Design Scientific Posters?</a> (pdf)</li>
+							<li><a href="https://sciencedesignguide.com">Dirma Janse - The Science Poster Design Guide</a> (book + website)</li>
+							<li><a href="https://practicaltypography.com">Butterick's Practical Typography</a> (everything you need to know about fonts)</li>
+							<!--<li><a href="https://fontawesome.com">fontawesome</a> (free icon library)</li>-->
+							<li><a href="https://slidesgo.com">Slidesgo.com</a> (free Powerpoint templates. They're not all good but they can serve as inspiration)</li>
+							<li><a href="https://slides.com">Slides.com</a> (web-based alternative to Powerpoint)</li>
+							<li><a href="https://github.com/hakimel/reveal.js">reveal.js</a> (same software as above but CLI. More functionality, but steep learning curve)</li>
+						</ul>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section class="grid-wrapper">
+
+					<div class="grid-header">
+						<h1>Design in this presentation</h1>
+					</div>
+
+					<div class="grid-content" style="text-align: center;">
+						<figure>
+							<img src="files/design_elements_used.svg" style="height: 65vh;">
+						</figure>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section data-state="hide-controls">
+
+					<h1 style="padding-top: 30vh;font-size: 6vh;">Thank you!</h1>
+
+					<div class="anim-logo" style="margin-top: -30vh;">
+						<svg data-allBits style="width: 15%" width="100%" height="100%" viewBox="0 0 577 551" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+							<g transform="matrix(3.33338,0,0,3.33338,296.767,399.208)">
+								<path data-bit d="M0,20.926L-11.435,20.926C-12.037,20.926 -12.524,20.438 -12.524,19.836L-12.524,1.09C-12.524,0.488 -12.037,0 -11.435,0L0,0C0.602,0 1.09,0.488 1.09,1.09L1.09,19.836C1.09,20.438 0.602,20.926 0,20.926" style="fill:rgb(0,137,207);fill-rule:nonzero;"/>
+							</g>
+							<g transform="matrix(3.33338,0,0,3.33338,458.693,386.403)">
+								<path data-bit d="M0,16.218L-12.218,16.218C-12.82,16.218 -13.308,15.73 -13.308,15.128L-13.308,1.089C-13.308,0.487 -12.82,0 -12.218,0L0,0C0.602,0 1.09,0.487 1.09,1.089L1.09,15.128C1.09,15.73 0.602,16.218 0,16.218" style="fill:rgb(46,48,146);fill-rule:nonzero;"/>
+							</g>
+							<g transform="matrix(3.33338,0,0,3.33338,379.82,457.27)">
+								<path data-bit d="M0,-36.227L32.139,-36.227C32.741,-36.227 33.228,-35.739 33.228,-35.137L33.228,-27.592C33.228,-26.99 32.741,-26.502 32.139,-26.502L0,-26.502C-0.602,-26.502 -1.09,-26.015 -1.09,-25.413L-1.09,10.468C-1.09,11.07 -1.577,11.557 -2.179,11.557L-15.651,11.557C-16.252,11.557 -16.74,11.07 -16.74,10.468L-16.74,-46.695C-16.74,-47.297 -16.252,-47.784 -15.651,-47.784L-2.179,-47.784C-1.577,-47.784 -1.09,-47.297 -1.09,-46.695L-1.09,-37.317C-1.09,-36.715 -0.602,-36.227 0,-36.227" style="fill:rgb(46,48,146);fill-rule:nonzero;"/>
+							</g>
+							<g transform="matrix(3.33338,0,0,3.33338,204.82,425.846)">
+								<path data-bit d="M0,-24.854L27.776,-24.854C28.377,-24.854 28.865,-24.366 28.865,-23.764L28.865,-18.323C28.865,-17.721 28.377,-17.233 27.776,-17.233L13.089,-17.233C11.319,-17.233 9.884,-15.798 9.884,-14.028L9.884,-1.09C9.884,-0.488 9.396,0 8.794,0L-8.715,0C-9.317,0 -9.805,-0.488 -9.805,-1.09L-9.805,-16.144C-9.805,-16.745 -9.317,-17.233 -8.715,-17.233L-2.179,-17.233C-1.577,-17.233 -1.09,-17.721 -1.09,-18.323L-1.09,-23.764C-1.09,-24.366 -0.602,-24.854 0,-24.854" style="fill:rgb(0,137,207);fill-rule:nonzero;"/>
+							</g>
+							<g transform="matrix(3.33338,0,0,3.33338,139.052,299.409)">
+								<path data-bit d="M0,-9.665L0,-12.667C0,-13.269 0.488,-13.757 1.09,-13.757L15.544,-13.757C16.146,-13.757 16.634,-13.269 16.634,-12.667L16.634,-7.453C16.634,-6.852 16.146,-6.364 15.544,-6.364L12.735,-6.364C11.331,-6.364 10.194,-5.226 10.194,-3.823L10.194,3.003C10.194,3.605 9.706,4.092 9.104,4.092L-23.219,4.092C-23.821,4.092 -24.309,3.605 -24.309,3.003L-24.309,-7.486C-24.309,-8.088 -23.821,-8.575 -23.219,-8.575L-1.09,-8.575C-0.488,-8.575 0,-9.063 0,-9.665" style="fill:rgb(0,185,242);fill-rule:nonzero;"/>
+							</g>
+							<g transform="matrix(3.33338,0,0,3.33338,257.464,90.4827)">
+								<path data-bit d="M11.791,42.753L-3.102,42.753C-3.704,42.753 -4.192,42.265 -4.192,41.663L-4.192,32.955C-4.192,31.196 -5.618,29.77 -7.377,29.77L-17.854,29.77C-18.456,29.77 -18.943,29.282 -18.943,28.68L-18.943,18.898C-18.943,18.296 -18.456,17.809 -17.854,17.809L-5.281,17.809C-4.68,17.809 -4.192,17.321 -4.192,16.719L-4.192,1.09C-4.192,0.488 -3.704,0 -3.102,0L4.866,0C5.467,0 5.955,0.488 5.955,1.09L5.955,8.413C5.955,9.014 6.443,9.502 7.045,9.502L11.791,9.502C12.392,9.502 12.88,9.99 12.88,10.592L12.88,41.663C12.88,42.265 12.392,42.753 11.791,42.753Z" style="fill:rgb(236,0,140);fill-rule:nonzero;"/>
+							</g>
+							<g transform="matrix(3.33338,0,0,3.33338,61.6534,250.901)">
+								<path data-bit d="M0,-9.471L14.907,-9.471C15.509,-9.471 15.997,-8.983 15.997,-8.381L15.997,-1.089C15.997,-0.487 15.509,0 14.907,0L0,0C-0.602,0 -1.09,-0.487 -1.09,-1.089L-1.09,-8.381C-1.09,-8.983 -0.602,-9.471 0,-9.471" style="fill:rgb(0,185,242);fill-rule:nonzero;"/>
+							</g>
+							<g transform="matrix(3.33338,0,0,3.33338,366.931,240.205)">
+								<path data-bit d="M0,-32.001L4.751,-32.001C5.353,-32.001 5.84,-31.513 5.84,-30.911L5.84,-8.592C5.84,-7.99 5.353,-7.502 4.751,-7.502L0,-7.502C-0.602,-7.502 -1.09,-7.99 -1.09,-8.592L-1.09,-30.911C-1.09,-31.513 -0.602,-32.001 0,-32.001M-12.874,-54.409L-12.874,10.505C-12.874,11.106 -12.386,11.594 -11.784,11.594L10.508,11.594C12.558,11.594 14.22,13.256 14.22,15.306L14.22,22.408C14.22,23.01 14.708,23.498 15.31,23.498L27.432,23.498C28.034,23.498 28.521,23.01 28.521,22.408L28.521,10.686C28.521,10.084 29.009,9.596 29.611,9.596L44.525,9.596C45.127,9.596 45.614,9.108 45.614,8.507L45.614,2.278C45.614,1.676 45.127,1.188 44.525,1.188L19.657,1.188C19.055,1.188 18.567,0.7 18.567,0.099L18.567,-7.218C18.567,-7.819 19.055,-8.307 19.657,-8.307L31.617,-8.307C32.219,-8.307 32.707,-8.795 32.707,-9.397L32.707,-20.161C32.707,-20.763 32.219,-21.25 31.617,-21.25L19.657,-21.25C19.055,-21.25 18.567,-21.738 18.567,-22.34L18.567,-40.082C18.567,-40.683 18.08,-41.171 17.478,-41.171L0,-41.171C-0.602,-41.171 -1.09,-41.659 -1.09,-42.261L-1.09,-54.409C-1.09,-55.011 -1.577,-55.499 -2.179,-55.499L-11.784,-55.499C-12.386,-55.499 -12.874,-55.011 -12.874,-54.409" style="fill:rgb(140,99,170);fill-rule:nonzero;"/>
+							</g>
+						</svg>						
+					</div>
+
+				</section>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight_modified.js"></script>
+		<script src="plugin/pointer/pointer.js"></script>
+
+		<script>
+			Reveal.initialize({
+				hash: true,
+				center: false,
+    			height: "100%",
+				width: "100%",
+    			margin: 0,
+    			minScale: 1,
+    			maxScale: 1,
+
+				pointer: {
+					key: "q", // key to enable pointer, default "q", not case-sensitive
+					color: "#5F5B6B", // color of a cursor, default "red" any valid CSS color
+					pointerSize: 12, // pointer size in px, default 12
+					alwaysVisible: false, // should pointer mode be always visible? default "false"
+					tailLength: 10, // NOT IMPLEMENTED YET!!! how long the "tail" should be? default 10
+			  	},
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealPointer ],
+			});
+		</script>
+
+		<script>
+			//TweenMax.staggerFrom("[data-bit]", 1.5, { y: 25, autoAlpha: 0 }, -0.15);
+			//TweenMax.from("[data-allBits]", 1.5, { y: -100, ease: Back.easeOut.config(4) });
+			Reveal.addEventListener( 'ready', function() {
+				TweenMax.staggerFrom("[data-bit]", 1, { y: 25, autoAlpha: 0 }, -0.15);
+				TweenMax.from("[data-allBits]", 1.5, { y: -100, ease: Back.easeOut.config(4) });
+			} );
+			Reveal.addEventListener( 'slidechanged', function() {
+				TweenMax.staggerFrom("[data-bit]", 1.5, { y: 50, autoAlpha: 0 }, -0.15);
+				TweenMax.from("[data-allBits]", 1.5, { y: -100, ease: Back.easeOut.config(4) });
+			} );
+		</script>
+	</body>
+</html>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1600 1200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Patterns">
+        <g>
+            <g>
+                <rect id="Background" x="0" y="0" width="1600" height="1200" style="fill:rgb(36,55,46);"/>
+                <g id="Opacity-70" opacity="0.7">
+                    <g id="Shape" transform="matrix(1,0,0,1,0,-40)">
+                        <rect x="0" y="0" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="800" y="0" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="320" y="160" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="960" y="320" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="1440" y="480" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="0" y="640" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="640" y="800" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="640" y="960" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="160" y="1120" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="1440" y="1120" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                    </g>
+                </g>
+                <g id="Opacity-60" opacity="0.6">
+                    <g id="Shape1" serif:id="Shape" transform="matrix(1,0,0,1,0,-40)">
+                        <rect x="960" y="0" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="1440" y="0" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="0" y="160" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="0" y="480" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="1280" y="800" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="0" y="960" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="1280" y="960" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="800" y="1120" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="480" y="480" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                    </g>
+                </g>
+                <g id="Opacity-50" opacity="0.5">
+                    <g id="Shape2" serif:id="Shape" transform="matrix(1,0,0,1,0,120)">
+                        <rect x="160" y="0" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="0" y="160" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="800" y="160" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="1440" y="160" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="1280" y="320" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="480" y="480" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="640" y="480" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="320" y="640" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="480" y="640" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="1440" y="800" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="480" y="960" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="1120" y="960" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                    </g>
+                </g>
+                <g id="Opacity-40" opacity="0.4">
+                    <g id="Shape3" serif:id="Shape" transform="matrix(1,0,0,1,160,-40)">
+                        <rect x="480" y="0" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="960" y="0" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="320" y="320" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="0" y="480" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="960" y="480" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="640" y="640" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="800" y="640" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="1280" y="800" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="0" y="960" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="640" y="960" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                    </g>
+                </g>
+                <g id="Opacity-30" opacity="0.3">
+                    <g id="Shape4" serif:id="Shape" transform="matrix(1,0,0,1,160,-40)">
+                        <rect x="1120" y="0" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="480" y="160" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="800" y="160" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="960" y="320" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="160" y="480" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="480" y="480" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="160" y="640" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="960" y="640" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="0" y="800" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                    </g>
+                </g>
+                <g id="Opacity-20" opacity="0.2">
+                    <g id="Shape5" serif:id="Shape" transform="matrix(1,0,0,1,160,-40)">
+                        <rect x="160" y="0" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="320" y="160" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="1120" y="160" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="160" y="320" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="480" y="320" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="800" y="480" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="0" y="640" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        <rect x="800" y="960" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,160,-40)">
+                    <g id="Color-3">
+                        <g id="Shape6" serif:id="Shape">
+                            <rect x="0" y="0" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                            <rect x="320" y="0" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                            <rect x="640" y="160" width="160" height="160" style="fill:rgb(239,69,102);"/>
+                            <rect x="1120" y="320" width="160" height="160" style="fill:rgb(239,69,102);"/>
+                            <rect x="640" y="480" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                            <rect x="1120" y="640" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                            <rect x="640" y="800" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                            <rect x="320" y="960" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,0,920)">
+                    <g id="Color-2">
+                        <g id="Shape7" serif:id="Shape">
+                            <rect x="320" y="0" width="160" height="160" style="fill:rgb(239,69,102);"/>
+                            <rect x="1120" y="0" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                            <rect x="0" y="160" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                            <rect x="320" y="160" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                            <rect x="640" y="160" width="160" height="160" style="fill:rgb(55,171,183);"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,0,120)">
+                    <g id="Color-1">
+                        <g id="Shape8" serif:id="Shape">
+                            <rect x="1120" y="0" width="160" height="160" style="fill:rgb(249,205,174);"/>
+                            <rect x="1440" y="0" width="160" height="160" style="fill:rgb(249,205,174);"/>
+                            <rect x="160" y="160" width="160" height="160" style="fill:rgb(249,205,174);"/>
+                            <rect x="1440" y="480" width="160" height="160" style="fill:rgb(249,205,174);"/>
+                            <rect x="0" y="640" width="160" height="160" style="fill:rgb(249,205,174);"/>
+                            <rect x="960" y="640" width="160" height="160" style="fill:rgb(249,205,174);"/>
+                            <rect x="1120" y="640" width="160" height="160" style="fill:rgb(249,205,174);"/>
+                            <rect x="960" y="960" width="160" height="160" style="fill:rgb(249,205,174);"/>
+                            <rect x="1280" y="960" width="160" height="160" style="fill:rgb(249,205,174);"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

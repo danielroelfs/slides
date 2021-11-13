@@ -1,0 +1,158 @@
+// Main layout definitions
+
+// Partials
+@import 'vars';
+
+// Main containers
+.reveal {
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $font-color;
+    height: 100%;
+    & section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        //box-sizing: border-box;
+        //grid-column-gap: 10vmin;
+        //grid-row-gap: 5vmin;
+        //grid-template-areas: "header" "content" "footer";
+        //grid-template-rows: 10vmin 1fr 1vmin;
+        //text-align: left;
+        //background: $background-color;
+        //opacity: 1 !important;
+    }
+}
+
+.reveal-viewport {
+    background: $background-color;
+    //background-image: url('../files/Ngaruroro.svg');
+    background-size: cover;
+    & section.title {
+        background: transparent;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: auto;
+    padding-top: 3vh;
+    //border: 5px solid red;
+    &.h {
+        height: 60vh;
+    }
+}
+
+.header {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    width: 85%;
+    padding: 15vh 0 5vh 10vmin;
+    //border: 1px solid;
+    h1 {
+        font-family: $header-font;
+        text-transform: uppercase;
+        font-size: 4vmin;
+        font-weight: 900;
+    }
+}
+
+::selection {
+    background: rgba(255, 255, 0, 0.75);
+}
+
+// Dark slide
+.reveal section.dark {
+    display: flex;
+    //background: #314D49;
+    background: $dark-bg;
+    //background: $secondary-accent;
+    font-family: $header-font;
+    font-weight: 700;
+    font-size: 4vmin;
+    color: $dark-color;
+    & h1 {
+        font-size: 6vmin;
+        padding-bottom: 2vh;
+    }
+    & h2 {
+        font-size: 4vmin;
+    }
+}
+
+// Grid layout
+
+.reveal .slides section .grid-wrapper,
+.reveal .slides section.grid-wrapper {
+    box-sizing: border-box;
+    grid-column-gap: 10vmin;
+    grid-row-gap: 5vmin;
+    grid-template-areas: "header" "content" "footer";
+    grid-template-rows: 10vmin 1fr 1vmin;
+    height: 100%;
+    padding: 10vmin;
+}
+
+.reveal .slides section {
+    height: 100%;
+    & .grid-header {
+        display: flex;
+        grid-area: header; 
+        //text-align: left;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 5vh 0 5vh 0;
+        //border: 1px solid;
+        &.center {
+            width: 100%;
+            justify-content: center;
+        }
+        h1 {
+            font-family: $header-font;
+            //text-transform: uppercase;
+            font-size: 4vmin;
+            font-weight: 900;
+        }
+    }
+    & .grid-content {
+        box-sizing: border-box;
+        grid-column-gap: 10vmin;
+        grid-row-gap: 5vmin;
+        grid-template-areas: "header" "content" "footer";
+        grid-template-rows: 10vmin 1fr 1vmin;
+        text-align: left;
+        height: 100%;
+        vertical-align: middle;
+        //border: 1px solid;
+        & .multi-col {
+            padding-top: 2vh;
+        }
+    }
+    & .grid-footer {
+        position: absolute;
+        font-size: 2vmin;
+        bottom: 2vmin;
+        margin-left: 5.5vmin;
+        grid-area: footer;
+        text-align: left;
+        //border: 1px solid;
+    }
+}
+
+// Other
+
+.rules-content {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+}

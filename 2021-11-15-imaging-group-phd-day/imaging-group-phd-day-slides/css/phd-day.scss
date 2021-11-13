@@ -1,0 +1,360 @@
+//
+// Stylesheet for the Imaging Group PhD Day
+//
+
+// Partials
+@use 'main';
+@use 'slider';
+@import 'vars';
+
+// Miscellaneous
+
+em {
+    font-style: italic;
+}
+
+.em {
+    font-style: italic;
+}
+
+b {
+    font-weight: 700;
+}
+
+.b {
+    font-weight: 700;
+}
+
+.multi-col {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    //border: 1px solid;
+    & ul:last-child {
+        min-width: 20vw;
+        margin-left: 5%;
+    }
+}
+
+.full-multi-col {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    & > div {
+        display: flex;
+        flex: 1 1 0;
+        overflow: auto;
+        height: 100%;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+        padding: 5vmin;
+    }
+    & > div:first-child {
+        margin-left: -100%;
+        padding-left: calc(100% + 5vmin);
+    }
+}
+
+figure.comparisons {
+    figcaption {
+        display: flex;
+        flex-direction: row;
+        & > div {
+            flex: 1;
+            font-size: 2vmin;
+            padding-right: 2vw;
+            justify-content: space-between;
+            text-align: center;
+        }
+    }
+}
+
+ul {
+    text-align: left;
+    &.no-bullets {
+        list-style: none;
+    }
+    &.resources {
+        & li {
+            font-size: 2.5vmin;
+            padding-bottom: 0.5em;
+        }
+    }
+    & li {
+        padding-bottom: 0.5em;
+    }
+    &.short li {
+        padding-bottom: 2em;
+    }
+}
+
+.concl-rule {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.chapter {
+    font-size: $font-size !important;
+    font-weight: 200;
+    text-align: left;
+}
+
+.flashing {
+    animation: blinker 1s linear infinite;
+}
+@keyframes blinker {  
+    50% { opacity: 0; }
+}
+
+// Links
+a {
+    display: inline-block;
+    position: relative;
+    color: lighten($font-color, 20%);
+    text-decoration: none;
+    padding: 0.2em 0 0.4em 0; 
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0.25em;
+        background-color: $primary-accent;
+        transition: opacity 500ms, transform 500ms;
+        opacity: 0.8;
+        transform: scale(0);
+        transform-origin: center;
+    }
+    &:hover::after, &:focus::after {
+      transform: scale(1);
+    }
+}
+
+// Headers
+h1, h2, h3, h4, h5, h6 {
+    font-family: $header-font;
+}
+
+h1 {
+    font-weight: 900;
+    &.title {
+        text-transform: uppercase;
+    }
+}
+
+h2 {
+    font-weight: 900;
+}
+
+// Figures
+figure {
+    display: inline-block;
+    margin: 1em;
+    background: transparent;
+    & img,iframe {
+        //vertical-align: top;
+        //box-shadow: 9px 6px 10px grey;
+        background: white;
+        box-shadow: 16px 10px 26px #A0A0A0;
+        transition: 0.5s;
+        &:hover {
+            //box-shadow: 32px 20px 52px grey;
+            box-shadow: 24px 15px 39px #A0A0A0;
+            transition: 0.5s;
+        }
+    }
+    & figcaption {
+        font-size: 1.25vmin;
+        text-align: right;
+        margin-top: 0.5vmin;
+    }
+    &.no-shadow img {
+        box-shadow: none;
+    }
+}
+
+// Menu
+.menu {
+    position: absolute;
+    grid-area: header; 
+    top: 2vmin;
+    right: $menu-size;
+    //font-family: $menu-font;
+    font-size: $menu-size;
+    color: $menu-color;
+    padding: 1vmin;
+    border: 1vmin solid darken($menu-color, 10%);
+    z-index: 20;
+    & ul {
+        list-style: none;
+        text-align: right;
+        & .current {
+            color: darken($menu-color, 10%);
+            font-weight: bold;
+        }
+        & li {
+            padding-bottom: 0;
+        }
+    }
+}
+
+// Title
+.title {
+    display: flex;
+    letter-spacing: 1.5vw;
+    & .rect {
+        display: flex;
+        height: 20vh;
+        width: 80%;
+        border: 1.5vmin solid;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    & .speaker-line {
+        font-size: 2.5vmin;
+        font-weight: 400;
+        letter-spacing: initial;
+        width: 80%;
+        margin: auto;
+        padding-top: 0.2em;
+        text-align: right;
+    }
+}
+
+// Controls
+.reveal .controls {
+    color: $controls-color;
+    font-size: 0.75vmin;
+}
+
+.reveal .progress {
+    background: rgba(0, 0, 0, 0.2);
+    color: #8c8663; // was #8c8663
+}
+
+.white-controls .reveal {
+    & .controls {
+        color: $dark-color;
+    }
+    & .progress {
+        background: rgba(0, 0, 0, 0.2);
+        color: $dark-color;
+    }
+}
+
+.hide-controls .reveal {
+    & .controls {
+        color: transparent;
+    }
+    & .progress {
+        background: transparent;
+        color: transparent;
+    }
+}  
+
+// Logos
+.anim-logo {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    & svg {
+        margin: auto;
+    }
+}
+
+.bottom-logo-anim {
+    position: fixed;
+    bottom: 1vmin;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+.bottom-logo {
+    position: fixed;
+    background-image: url("../files/seal_black.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: 5vmin;
+    width: 5vmin;
+    bottom: 5vmin;
+    left: 50%;
+}
+
+.reveal .slides section .logo {
+    display: flex;
+    background-image: url("../files/seal_black.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    display: inline-block;
+    grid-area: header;
+    height: 6vmin;
+    margin-right: 6vmin;
+    width: 6vmin;
+}
+
+// Code
+.reveal pre {
+    display: block;
+    position: relative;
+    margin: 20px auto;
+    text-align: left;
+    font-size: 0.55em;
+    font-family: $code-font;
+    line-height: 1.2em;
+    word-wrap: break-word;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    white-space: pre-line;
+    border-radius: 1vmin;
+    box-shadow: 16px 10px 26px #A0A0A0;
+    transition: 0.5s;
+    width: 100%;
+    &:hover {
+        //box-shadow: 32px 20px 52px grey;
+        box-shadow: 24px 15px 39px #A0A0A0;
+        transition: 0.5s;
+    }
+    & ::selection {
+        background: rgba(150, 150, 150, 0.75);
+    }
+}
+
+code {
+    font-family: $code-font;
+    line-height: 2.25vmin;
+    text-transform: none;
+    tab-size: 2.5;
+    border-radius: 1vmin;
+}
+  
+pre code {
+    display: block;
+    font-size: $code-size;
+    padding: 1vmin;
+    overflow: auto;
+    max-height: 400px;
+    word-wrap: normal;
+}
+  
+.reveal .code-wrapper {
+    white-space: normal;
+}
+  
+.reveal .code-wrapper code {
+    white-space: pre;
+}
+
+// Tables
+
+table {
+    text-align: left;
+    td {
+        vertical-align: middle;
+        padding: 0.75em;
+        line-height: 1.15em;
+    }
+}

@@ -1,0 +1,83 @@
+---
+title: "Code to generate the figures in the slides"
+editor_options:
+  chunk_output_type: console
+---
+
+```{r setup, message=FALSE, warning=FALSE, cache=FALSE, echo=FALSE}
+library(tidyverse)
+library(ggtext)
+```
+
+```{r load-data}
+data <- gapminder::gapminder
+```
+
+```{r spss-plot, eval=FALSE}
+spss_colors <- c("#425AA6","#5CB457","#D2CD9D","#723179","#FBF686","#DD4541")
+
+data %>% 
+  filter(year == max(year)) %>% 
+  mutate(continent = str_to_lower(continent)) %>% 
+  ggplot(aes(x = gdpPercap, y = lifeExp, color = continent, size = pop)) + 
+  geom_point(shape = 1) + 
+  #geom_smooth(aes(color = NULL), method = "lm",
+  #            color = "black", se = FALSE, size = 0.5) +
+  #ggpubr::stat_regline_equation(aes(color = NULL)) +
+  geom_abline(slope = 16.6, intercept = 4.9) +
+  scale_x_continuous(trans = "log10") +
+  scale_color_manual(values = spss_colors) +
+  scale_size_continuous(range = c(3,30), guide = "none") +
+  coord_cartesian(ylim = c(38,NA)) +
+  theme_gray(base_size = 20) +
+  theme(text = element_text(face = "bold"),
+        axis.title = element_text(face = "bold"),
+        axis.ticks.length = unit(3,"mm"),
+        panel.grid = element_blank(),
+        panel.border = element_rect(fill = "transparent", size = 1),
+        legend.key = element_rect(fill = "transparent"))
+ggsave("spss-scatterplot.png", plot = last_plot(), width = 12, height = 8, dpi = 72)
+```
+
+```{r basic-plot}
+data %>% 
+  filter(year == max(year)) %>% 
+  mutate(continent = str_to_lower(continent)) %>% 
+  ggplot(aes(x = gdpPercap, y = lifeExp, size = pop)) + 
+  geom_point(aes(color = continent), alpha = 0.5) + 
+  geom_smooth(method = "lm") +
+  scale_x_continuous(trans = "log10") +
+  scale_size_continuous(range = c(3,30), guide = "none") +
+  coord_cartesian(ylim = c(38,NA)) + 
+  theme_gray(base_size = 20)
+ggsave("basic-r-scatterplot.png", plot = last_plot(), width = 12, height = 8, dpi = 72)
+```
+
+```{r good-plot}
+colors <- scico::scico(5, palette = "batlow")
+
+data %>% 
+  filter(year == max(year)) %>% 
+  ggplot(aes(x = gdpPercap, y = lifeExp, color = continent, size = pop)) + 
+  geom_point(alpha = 0.6, stroke = 0) + 
+  geom_smooth(aes(color = NULL), method = "lm",
+              color = "grey30", alpha = 0.2) +
+  labs(title = "Relationship between GDP and life expectancy",
+       x = "**GDP per capita (_$_)**",
+       y = "**Life expectancy (_years_)**",
+       color = NULL) +
+  scale_x_continuous(trans = "log10", labels = scales::label_dollar(big.mark = ".", accuracy = 1)) +
+  scale_color_manual(values = colors, guide = guide_legend(override.aes = list(size = 8, alpha = 1))) +
+  scale_size_continuous(range = c(3,30), guide = "none") +
+  hrbrthemes::theme_ipsum_rc(base_size = 20) + 
+  theme(plot.title = element_markdown(size = 24),
+        plot.title.position = "plot",
+        axis.title.x = element_markdown(size = 20, hjust = 0.5, padding = unit(10,"pt")),
+        axis.title.y = element_markdown(size = 20, hjust = 0.5, padding = unit(10,"pt")),
+        legend.text = element_markdown(),
+        panel.grid.minor.x = element_blank(),
+        plot.background = element_rect(fill = "white", color = "transparent"))
+ggsave("design-scatterplot.png", plot = last_plot(), width = 12, height = 8, dpi = 72)
+```
+
+

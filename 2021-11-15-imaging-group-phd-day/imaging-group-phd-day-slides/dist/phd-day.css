@@ -250,20 +250,20 @@ figure.comparisons figcaption > div {
   text-align: center;
 }
 
-ul {
+ul, ol {
   text-align: left;
 }
-ul.no-bullets {
+ul.no-bullets, ol.no-bullets {
   list-style: none;
 }
-ul.resources li {
+ul.resources li, ol.resources li {
   font-size: 2.5vmin;
   padding-bottom: 0.5em;
 }
-ul li {
+ul li, ol li {
   padding-bottom: 0.5em;
 }
-ul.short li {
+ul.short li, ol.short li {
   padding-bottom: 2em;
 }
 

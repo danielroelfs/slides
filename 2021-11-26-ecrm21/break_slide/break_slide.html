@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>ECRM21 - Break Slide</title>
+
+		<link rel="stylesheet" href="../intro_slides/dist/ecrm.css">
+
+        <script>
+            function startTime() {
+                var today = new Date();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                h = checkTime(h);
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('clock').innerHTML =
+                h + ":" + m + ":" + s;
+                var t = setTimeout(startTime, 500);
+            }
+            
+            function checkTime(i) {
+                if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                return i;
+            }
+        </script>
+
+	</head>
+	<body class="break-slide" onload="startTime()">
+
+        <div class="reveal double-center">
+
+                <div class="logo">
+                    <div class="square">
+                        <img src="../intro_slides/files/seal_white.png">
+                    </div>
+                    <h1 class="title upp">
+                        Early<span style="color: transparent;">Career</span><br>
+                        Researchers<br>
+                        <span style="color: transparent;">Meeting</span>2021
+                    </h1>
+                </div>
+
+                <div class="next-event">
+                    <!--<h3>Welcome! 🎉</h3>
+                    We'll start at 10:15
+                    Up next:
+                    <h3>Keynote</h3>
+                    at 11:10-->
+                    <!--<h3>Anders Malkomsen</h3>
+                    at 13:00-->
+                    <h3>Interactive session</h3>
+                    at 14:50
+                </div>
+
+                <!--<div class="next-event" style="font-size: 8vmin;">
+                    <h3>Interactive session</h3>
+                </div>-->
+
+                <div id="now">
+                    The current time is
+                    <div id="clock"></div>
+                </div>
+            
+        </div>
+
+    </body>
+</html>

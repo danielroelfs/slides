@@ -36,12 +36,7 @@ i {
 
 /* Set text style */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--header-font-family);
     font-size: 40pt;
     font-weight: 800;
@@ -50,7 +45,6 @@ h6 {
 h1 {
     padding-bottom: 0.5em;
 }
-
 
 a {
     color: var(--accent-color);
@@ -61,7 +55,6 @@ a:hover {
     transition: all .5s ease;
 }
 
-
 /* Table style */
 .tb {
     position: relative;
@@ -70,6 +63,7 @@ a:hover {
 	border-collapse: collapse;
     text-align: left;
     vertical-align: middle;
+    margin-bottom: 8vh;
 }
 
 .tb td {

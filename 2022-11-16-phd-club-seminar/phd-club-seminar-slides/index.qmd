@@ -1,5 +1,5 @@
 ---
-title: "Plotting in Python and R"
+title: "Enhancing plots in `{ggplot2}`"
 author: "Daniel Roelfs" 
 format:
   revealjs:
@@ -22,7 +22,6 @@ knitr:
     dpi: 200
 execute:
   freeze: auto
-  cache: true
   echo: true
   fig-width: 7
   fig-height: 4
@@ -66,17 +65,17 @@ _"It would be great if you could share your experience about plotting in R envir
 | ![{ggplot2}](https://raw.githubusercontent.com/rstudio/hex-stickers/master/SVG/ggplot2.svg){.no-shadow width="100" fig-alt="ggplot2 hex sticker" style="margin: 2vmin"} |      ![`plotnine`](https://plotnine.readthedocs.io/en/stable/_images/logo-540.png){.no-shadow width="100" fig-alt="plotnine logo" style="margin: 2vmin"} |  ![`matplotlib`](https://matplotlib.org/stable/_images/sphx_glr_logos2_003_2_0x.png){.no-shadow width="175" fig-alt="matplotlib logo" style="margin: 2vmin"} |
 |:-----------------:|:-------------------------:|:-------------------------:|
 | for {{< fa brands r-project >}}             | for {{< fa brands python >}}                | for {{< fa brands python >}}                |
-| tons of [extensions](https://github.com/z3tt/awesome-ggplot2) like `{ggtext}` and `{patchwork}` | access `ggplot`-like syntax in Python | powerful, but very steep learning curve |
+| tons of [extensions](https://github.com/z3tt/awesome-ggplot2) (see also [here](https://exts.ggplot2.tidyverse.org/gallery/)) like `{ggtext}` and `{ggdist}` | access `ggplot`-like syntax in Python | powerful, but very steep learning curve |
 | most popular at NORMENT | if you dislike `matplotlib` as much as I do but have to use Python | you're either very smart, or you have a stubborn supervisor |
 :::
 
--------------------------------------------------------------------------------
+## {visibility="hidden"}
 
 ::: {.center-xy}
 ![`{ggplot2}` showcase](./files/ggplot-showcase.png){width="50vw" fig-alt="ggplot2 showcase"}
 :::
 
--------------------------------------------------------------------------------
+## {visibility="hidden"}
 
 ::: {.center-xy}
 ![`matplotlib` showcase](./files/matplotlib-showcase.png){width="50vw" fig-alt="matplotlib showcase"}
@@ -116,7 +115,7 @@ _"It would be great if you could share your experience about plotting in R envir
 ::: {.center-y style="width: 70%;margin-left: 2vw"}
 _"Okay these are cool,<br>but what about actually useful plots?"_
 <br><br>
-**-- _the audience_**
+**-- _you, probably_**
 :::
 
 -------------------------------------------------------------------------------
@@ -149,10 +148,6 @@ _"Okay these are cool,<br>but what about actually useful plots?"_
 ![Plot from [an article ](https://doi.org/10.1038/s41386-022-01305-5) by Jarek Rokicki](./files/plot-oxytocin-expression-patterns.jpeg){height="600" fig-alt="collection of plots on oxytocin patterns"}
 :::
 
-::: {.chapter .center}
-## [Data before aesthetics]{.flashing}
-:::
-
 ::::: {.chapter .center style="width: 100%; margin-left: 0;"}
 ## Chapter 3
 ### How to go from A to B?
@@ -168,7 +163,6 @@ _"Okay these are cool,<br>but what about actually useful plots?"_
 #| echo: false
 
 palmerpenguins::penguins |> 
-    drop_na() |> 
     ggplot(aes(x = bill_length_mm, y = bill_depth_mm, color = body_mass_g)) + 
     geom_point()
 ```
@@ -182,12 +176,11 @@ palmerpenguins::penguins |>
 #| echo: false
 
 palmerpenguins::penguins |> 
-    drop_na() |> 
     ggplot(aes(x = bill_length_mm, y = bill_depth_mm, color = body_mass_g)) + 
     geom_point(alpha = .6, size = 3) + 
     ggforce::geom_mark_ellipse(aes(group = species, label = species)) +
     labs(title = "Bill size of brush-tailed penguins _Pygoscelis_",
-         caption = "Data: Gorman, Williams & Fraser (2014) _PLoS ONE_", 
+         caption = "Data: Gorman, Williams & Fraser (2014), _PLoS ONE_", 
          x = "**Bill length** (mm)",
          y = "**Bill depth** (mm)",
          color = "**Body mass** (g)") +
@@ -196,7 +189,7 @@ palmerpenguins::penguins |>
     scale_color_scico(palette = "bamako", direction = -1, 
                       guide = guide_colorbar(title.position = "top", title.hjust = .5, 
                                              ticks = FALSE, 
-                                             barwidth = unit(20, "lines"), barheight = unit(.5, "lines"))) +
+                                             barwidth = 15, barheight = 0.5)) +
     coord_cartesian(expand = FALSE, clip = "off") +
     theme_minimal() +
     theme(plot.title = element_markdown(size = 18, face = "bold"),
@@ -207,7 +200,7 @@ palmerpenguins::penguins |>
           legend.title = element_markdown(),
           axis.title.x = element_markdown(),
           axis.title.y = element_markdown(),
-          plot.margin = margin(25, 25, 10, 25))
+          plot.margin = margin(15, 15, 5, 15))
 ```
 :::
 ::::
@@ -251,11 +244,10 @@ import matplotlib.pyplot as plt
 
 ```{r}
 #| label: apply-theme
-#| fig-height: 3
-#| code-line-numbers: "5"
+#| fig-height: 3.5
+#| code-line-numbers: "4"
 
 palmerpenguins::penguins |> 
-    drop_na() |> 
     ggplot(aes(x = bill_length_mm, y = bill_depth_mm, color = body_mass_g)) + 
     geom_point() + 
     theme_minimal()
@@ -291,7 +283,7 @@ scale_fill_viridis()
 ::::: {.center style="height: 100%; width: 100%; margin-left: 0;"}
 :::: {.columns}
 ::: {.column width="50%"}
-![Color discrepancy between jet or rainbow color palette and scientific colors ([source](https://www.nature.com/articles/s41467-020-19160-7)) by Fabio Crameri](https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-020-19160-7/MediaObjects/41467_2020_19160_Fig2_HTML.png?as=webp){fig-alt="cvd visualisation"}
+![Color discrepancy between jet or rainbow color palette and [scientific colors](https://www.nature.com/articles/s41467-020-19160-7) by Fabio Crameri](https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-020-19160-7/MediaObjects/41467_2020_19160_Fig2_HTML.png?as=webp){fig-alt="cvd visualisation"}
 :::
 
 ::: {.column width="50%"}
@@ -307,11 +299,10 @@ scale_fill_viridis()
 
 ```{r}
 #| label: apply-scico
-#| fig-height: 3
-#| code-line-numbers: "5"
+#| fig-height: 3.5
+#| code-line-numbers: "4"
 
 palmerpenguins::penguins |> 
-    drop_na() |> 
     ggplot(aes(x = bill_length_mm, y = bill_depth_mm, color = body_mass_g)) + 
     geom_point() + 
     scale_color_scico(palette = "bamako", direction = -1) +
@@ -341,10 +332,9 @@ palmerpenguins::penguins |>
 #| echo: false
 
 palmerpenguins::penguins |> 
-    drop_na() |> 
     ggplot(aes(x = bill_length_mm, y = bill_depth_mm, color = body_mass_g)) + 
     geom_point() + 
-    labs(title = "Bill size of brush-tailed penguins _Pygoscelis_",
+    labs(title = "Bill size of brush-tailed penguins Pygoscelis",
          caption = "Data: Gorman, Williams & Fraser (2014) PLoS ONE", 
          x = "Bill length (mm)",
          y = "Bill depth (mm)",
@@ -376,11 +366,10 @@ palmerpenguins::penguins |>
 #| echo: false
 
 palmerpenguins::penguins |> 
-    drop_na() |> 
     ggplot(aes(x = bill_length_mm, y = bill_depth_mm, color = body_mass_g)) + 
     geom_point() + 
     labs(title = "Bill size of brush-tailed penguins _Pygoscelis_",
-         caption = "Data: Gorman, Williams & Fraser (2014) _PLoS ONE_", 
+         caption = "Data: Gorman, Williams & Fraser (2014), _PLoS ONE_", 
          x = "**Bill length** (mm)",
          y = "**Bill depth** (mm)",
          color = "**Body mass** (g)") +
@@ -411,7 +400,6 @@ palmerpenguins::penguins |>
 #| echo: false
 
 palmerpenguins::penguins |> 
-    drop_na() |> 
     ggplot(aes(x = bill_length_mm, y = bill_depth_mm, color = body_mass_g)) + 
     geom_point() + 
     labs(title = "Bill size of brush-tailed penguins _Pygoscelis_",
@@ -440,7 +428,7 @@ palmerpenguins::penguins |>
 
 ::: {.subsection .center}
 ## Step 4
-### Fix the legend
+### Move the legend
 :::
 
 -------------------------------------------------------------------------------
@@ -453,7 +441,6 @@ palmerpenguins::penguins |>
 #| echo: false
 
 palmerpenguins::penguins |> 
-    drop_na() |> 
     ggplot(aes(x = bill_length_mm, y = bill_depth_mm, color = body_mass_g)) + 
     geom_point() + 
     labs(title = "Bill size of brush-tailed penguins _Pygoscelis_",
@@ -464,7 +451,7 @@ palmerpenguins::penguins |>
     scale_color_scico(palette = "bamako", direction = -1, 
                       guide = guide_colorbar(title.position = "top", title.hjust = .5, 
                                              ticks = FALSE,
-                                             barwidth = unit(20, "lines"), barheight = unit(.5, "lines"))) +
+                                             barwidth = 15, barheight = 0.5)) +
     theme_minimal() + 
     theme(plot.title = element_markdown(size = 18, face = "bold"),
           plot.title.position = "plot",
@@ -485,7 +472,7 @@ palmerpenguins::penguins |>
 :::
 
 ::: {.subsection .center}
-## Step 4
+## Step 5
 ### Final touches
 :::
 
@@ -499,20 +486,19 @@ palmerpenguins::penguins |>
 #| echo: false
 
 palmerpenguins::penguins |> 
-    drop_na() |> 
     ggplot(aes(x = bill_length_mm, y = bill_depth_mm, color = body_mass_g)) + 
     geom_point(alpha = 0.6, size = 1.5) + 
     labs(title = "Bill size of brush-tailed penguins _Pygoscelis_",
-         caption = "Data: Gorman, Williams & Fraser (2014) _PLoS ONE_", 
+         caption = "Data: Gorman, Williams & Fraser (2014), _PLoS ONE_", 
          x = "**Bill length** (mm)",
          y = "**Bill depth** (mm)",
          color = "**Body mass** (g)") +
-    scale_x_continuous(limits = c(25, 65)) + 
+    scale_x_continuous(limits = c(30, 60)) + 
     scale_y_continuous(limits = c(12, 24)) +
     scale_color_scico(palette = "bamako", direction = -1, 
                       guide = guide_colorbar(title.position = "top", title.hjust = .5, 
                                              ticks = FALSE, 
-                                             barwidth = unit(20, "lines"), barheight = unit(.5, "lines"))) +
+                                             barwidth = 15, barheight = 0.5)) +
     coord_cartesian(expand = FALSE, clip = "off") +
     theme_minimal() +
     theme(plot.title = element_markdown(size = 18, face = "bold"),
@@ -523,7 +509,7 @@ palmerpenguins::penguins |>
           legend.title = element_markdown(),
           axis.title.x = element_markdown(),
           axis.title.y = element_markdown(),
-          plot.margin = margin(25, 25, 10, 25))
+          plot.margin = margin(15, 15, 5, 15))
 ```
 
 ### Code
@@ -535,7 +521,7 @@ palmerpenguins::penguins |>
 :::
 
 ::: {.chapter .center style="margin-left: 10vw;"}
-## Chapter X
+## Chapter 4
 ### "How to make the PNG file look like it does in my RStudio thingy"
 :::
 
@@ -619,7 +605,7 @@ last_plot()
 :::
 
 ::: {.chapter .center}
-## Chapter X
+## Chapter 5
 ### Correlation plots are hard
 :::
 
@@ -645,13 +631,12 @@ corr_matrix
 
 ```{r}
 #| label: corr-plot-intro
-#| fig-height: 3
+#| fig-height: 3.25
 
 corr_matrix |> 
-    ggplot(aes(x = var2, y = var1, fill = cor, label = round(cor, 2))) + 
+    ggplot(aes(x = var1, y = var2, fill = cor, label = round(cor, 2))) + 
     geom_tile() +
     geom_text() + 
-    scale_x_discrete(limits = rev) + 
     scale_fill_scico(palette = "vik", limits = c(-1, 1)) + 
     theme_minimal()
 ```
@@ -678,14 +663,14 @@ corr_matrix |>
            across(c(var1, var2), ~ str_replace_all(.x, "mm", "(mm)")),
            across(c(var1, var2), ~ str_replace_all(.x, "g$", "(g)")),
            across(c(var1, var2), ~ str_to_sentence(.x))) |> 
-    ggplot(aes(x = var2, y = var1, fill = cor)) + 
+    ggplot(aes(x = var1, y = var2, fill = cor)) + 
     geom_tile(data = . %>% filter(var1 != var2)) + 
     geom_point(data = . %>% filter(var1 == var2), shape = 4, size = 12) +
     geom_text(data = . %>% filter(var1 != var2), aes(label = round(cor,2)), size = 2.5) + 
     labs(title = "Correlation between body dimensions of _Pygoscelis_",
          x = NULL,
          y = NULL,
-         fill = "Corr (r<sub>g</sub>)") +
+         fill = "Corr (r~g~)") +
     scale_x_discrete(limits = rev) + 
     scale_fill_scico(palette = "vik", limits = c(-1, 1),
                      guide = guide_colorbar(barwidth = 0.75, barheight = 10, ticks = FALSE)) +
@@ -695,10 +680,9 @@ corr_matrix |>
           plot.title = element_markdown(size = 12, face = "bold"),
           plot.title.position = "plot",
           legend.title = element_markdown(face = "bold"),
-          legend.text = element_markdown(face = "italic"),
           axis.text.x = element_markdown(angle = 45, hjust = 1),
           axis.title.y = element_markdown(),
-          plot.margin = margin(25, 25, 10, 25))
+          plot.margin = margin(15, 15, 5, 15))
 ```
 
 ### Code
@@ -710,8 +694,31 @@ corr_matrix |>
 :::
 
 ::: {.chapter .center}
-## Chapter X
-### Improving bar- and boxplots
+## Chapter 6
+### Enhancing boxplots
+:::
+
+-------------------------------------------------------------------------------
+
+::: panel-tabset
+### Plot
+
+```{r}
+#| label: boxplot-plot-intro
+#| fig-height: 3
+
+palmerpenguins::penguins |> 
+    ggplot(aes(x = species, y = body_mass_g)) + 
+    geom_boxplot() +
+    theme_minimal()
+```
+
+### Code
+
+```{r}
+#| label: boxplot-plot-intro
+#| eval: false
+```
 :::
 
 -------------------------------------------------------------------------------
@@ -770,7 +777,7 @@ palmerpenguins::penguins |>
           legend.text = element_markdown(face = "italic"),
           axis.text.x = element_markdown(face = "bold"),
           axis.title.y = element_markdown(),
-          plot.margin = margin(25, 25, 10, 25))
+          plot.margin = margin(15, 15, 10, 15))
 ```
 
 ### Code
@@ -783,7 +790,7 @@ palmerpenguins::penguins |>
 
 
 ::: {.chapter .center}
-## Chapter X
+## Chapter 7
 ### Where to find inspiration?
 :::
 
@@ -799,15 +806,41 @@ Your colleagues
 Google?
 :::
 
+::: {.chapter .center}
+## [Data before aesthetics]{.flashing}
+:::
 
+## Acknowledgements {preview-link="true"}
 
+::: {.midlist}
+[Cédric Scherer](https://www.cedricscherer.com) for creating excellent inspirational and [teaching resources](https://www.cedricscherer.com/2022/08/09/2-day-workshop-on-graphic-design-with-ggplot2-at-rstudioconf-2022/) for `{ggplot2}`, see also [here](https://github.com/rstudio-conf-2022/ggplot2-graphic-design) and [here](https://github.com/z3tt/OutlierConf2021) 
 
+[Linn-Sofie Sæther](https://twitter.com/linnssaether) for helping set the curriculum
 
+This presentation was created using [Quarto](https://quarto.org/docs/presentations/revealjs/), see [here](https://github.com/danielroelfs/slides/blob/main/2022-11-16-phd-club-seminar/phd-club-seminar-slides/index.qmd) for the source code for this presentation
+:::
 
+## Resources {preview-link="true"}
 
+::: {.midlist style="font-size: 3vmin;"}
+**How to dodge the pitfalls of bad illustrations**, Chris Woolston, _Nature_ (2014), [10.1038/nature.2014.15999](https://doi.org/10.1038/nature.2014.15999)
 
+**Ten Simple Rules for Better Figures**, Nicolas P. Rougier, Michael Droettboom, and Philip E. Bourne, _PLOS Computational Biology_ (2014), [10.1371/journal.pcbi.1003833](https://doi.org/10.1371/journal.pcbi.1003833)
+
+**The misuse of colour in science communication**, Fabio Crameri, Grace E. Shephard, and Philip J. Heron, _Nature Communications_ (2020), [10.1038/s41467-020-19160-7](https://doi.org/10.1038/s41467-020-19160-7)
+
+**`{ggtext}` package**, Claus Wilke, [github.com/wilkelab/ggtext](https://github.com/wilkelab/ggtext)
+
+**`{scico}` package**, Thomas Lin Pedersen, [github.com/thomasp85/scico](https://github.com/thomasp85/scico)
+:::
 
 -------------------------------------------------------------------------------
+
+::: {.chapter .center}
+### Thank you!
+:::
+
+## {visibility="hidden"}
 
 ::: panel-tabset
 ### Plot

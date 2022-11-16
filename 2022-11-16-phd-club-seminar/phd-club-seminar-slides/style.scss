@@ -93,7 +93,8 @@ $presentation-selection-background-color: #EEEDE7;
 // title page
 #title-slide {
   & .title {
-    font-size: 8vmin;
+    font-size: 7vmin;
+    color: $font-color;
     text-transform: uppercase;
     letter-spacing: 1vw;
     max-width: 75%;
@@ -102,6 +103,10 @@ $presentation-selection-background-color: #EEEDE7;
     padding: 0.5em;
     text-align: left;
     align-items: top;
+    & code {
+      color: inherit;
+      font-weight: bold;
+    }
   }
   & .quarto-title-author {
     font-family: $mono-font;
@@ -418,6 +423,7 @@ button {
 
 // menu button
 .reveal .slide-menu-button .fa-bars::before {
+  visibility: hidden;
   background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(185, 181, 156)" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>');
 }
 
@@ -434,5 +440,15 @@ button {
 @keyframes blinker {  
   50% { 
     opacity: 0; 
+  }
+}
+
+// center list
+.reveal .midlist {
+  width: 60vw; 
+  margin: auto; 
+  margin-top: 15vh;
+  & p {
+    padding-bottom: 1em;
   }
 }

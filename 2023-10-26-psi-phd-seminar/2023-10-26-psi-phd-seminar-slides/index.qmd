@@ -1,0 +1,782 @@
+---
+title: "Data Viz<br>For Science"
+subtitle: "& How It Earned Me<br>Two Free Dinners"
+author: "Daniel Roelfs"
+format:
+  revealjs:
+    theme: [fonts.scss, style.scss]
+    transition: slide
+    background-transition: slide
+    controls: true
+    controls-layout: bottom-right
+    highlight-style: atom-one-dark
+revealjs-plugins:
+  - pointer
+  - fontawesome
+editor: source
+editor_options:
+  chunk_output_type: console
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+    retina: 3
+    dpi: 200
+execute:
+  freeze: auto
+  fig-width: 7
+  fig-height: 3.75
+# for settings see: https://quarto.org/docs/reference/formats/presentations/revealjs.html
+---
+
+```{r}
+#| label: pkgs
+#| include: false
+
+library(tidyverse)
+library(scico)
+library(ggtext)
+library(ggdist)
+library(patchwork)
+library(showtext)
+library(ggbeeswarm)
+```
+
+```{r}
+#| label: setup
+#| include: false
+
+font_add_google(name = "Yanone Kaffeesatz", family = "custom")
+showtext_auto()
+```
+
+------------------------------------------------------------------------
+
+::: {.center-y style="width: 70%; margin-left: 2vw"}
+*"We're planning on celebrating Oktoberfest at 26th October at PSI (HUP, Promenta, and hopefully Brainmint) but **need to** organize a seminar beforehand."* <br><br> **-- Valerie**
+:::
+
+::: {.chapter .center}
+## Chapter X
+
+### Picking the right tool
+:::
+
+------------------------------------------------------------------------
+
+::: center-xy
+![](./files/spongebob-package-meme.png){fig-alt="Spongebob strong-stronger-strongest meme with data viz packages"}
+:::
+
+::: {.chapter .center}
+## Chapter X
+
+### The Basics
+:::
+
+## Defaults are meh
+
+::: panel-tabset
+### Plot
+
+```{r}
+#| label: colors-base
+#| message: false
+#| warning: false
+
+colors_guide_settings_c <- guide_colorbar(
+  direction = "horizontal", barwidth = 15, barheight = 1, ticks = FALSE)
+colors_guide_settings_d <- guide_legend(
+  override.aes = list(shape = 21, size = 8, stroke = 0, alpha = 1))
+colors_guide_labs <- LETTERS[seq(3)]
+
+plot_colors_base_c <- taylor::taylor_all_songs |> 
+  ggplot(aes(x = tempo, y = energy, fill = danceability)) +
+  geom_point(shape = 21, size = 4, stroke = 0, alpha = 0.75) +
+  geom_smooth(method = "lm", color = "black", fill = "black", alpha = 0.2) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = NULL
+  ) +
+  scale_fill_continuous(guide = colors_guide_settings_c) +
+  theme_minimal(base_family = "custom") + 
+  theme(
+    plot.title = element_markdown(size = 80),
+    axis.text = element_blank(),
+    legend.position = "bottom",
+    legend.text = element_blank()
+  )
+
+plot_colors_base_d <- taylor::taylor_all_songs |> 
+  drop_na(mode_name) |> 
+  mutate(tempo_binned = cut_interval(energy, n = 3)) |> 
+  ggplot(aes(x = tempo_binned, y = loudness, fill = tempo_binned)) +
+  geom_violin(alpha = 0.5, key_glyph = "point") + 
+  geom_boxplot(width = 0.2, outlier.shape = 4, outlier.size = 2, 
+               show.legend = FALSE) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = NULL
+  ) +
+  scale_fill_discrete(labels = colors_guide_labs, 
+                      guide = colors_guide_settings_d) +
+  theme_minimal(base_family = "custom") + 
+  theme(
+    plot.title = element_markdown(size = 80),
+    axis.text = element_blank(),
+    legend.position = "bottom",
+    legend.text = element_text(size = 40),
+    panel.grid.major.x = element_blank()
+  )
+
+plot_colors_base_c + plot_colors_base_d
+```
+
+### Code
+
+```{r}
+#| label: colors-base
+#| eval: false
+#| echo: true
+```
+:::
+
+## Better alternatives: `viridis`
+
+::: {style="padding-bottom: 1em;"}
+:::
+
+```{r}
+#| label: viridis-palette
+#| echo: true
+#| eval: false
+
+scale_color_viridis_c()   # Continuous scale
+scale_color_viridis_d()   # Discrete scale
+```
+
+::: center-x
+![](https://jmsallan.netlify.app/blog/the-viridis-palettes/index_files/figure-html/unnamed-chunk-1-1.png){width="60%" fig-alt="viridis color palettes"}
+:::
+
+## Better alternatives: `{scico}`
+
+::: {style="padding-bottom: 1em;"}
+:::
+
+```{r}
+#| label: scico-palette
+#| echo: true
+#| eval: false
+
+scico::scale_color_scico()    # Continuous scale
+scico::scale_color_scico_d()  # Discrete scale
+```
+
+::: center-x
+![](https://github.com/thomasp85/scico/blob/main/man/figures/README-unnamed-chunk-3-1.png?raw=true){width="120%" fig-alt="scico color palettes"}
+:::
+
+## Discrete scales {preview-link="true"}
+
+::: {.midlist style="font-size: 3vmin;"}
+[**R Color Palettes**](https://emilhvitfeldt.github.io/r-color-palettes/discrete.html) by Emil Hvitveldt - Website collecting _a ton_ of discrete color palettes
+
+[**coolors.co**](https://coolors.co/generate) - Randomly generate a set of colors
+
+[**`{colorblindr}`**](https://github.com/clauswilke/colorblindr) - Test your plots for CVD accessiblity directly in R
+
+[**`{nord}`**](https://github.com/jkaupp/nord) - Muted color palettes based on UI systems and a group of Canadian artists
+
+[**`{wesanderson}`**](https://github.com/karthik/wesanderson) - Color palette based on Wes Anderson film aesthetics
+
+[**`{dutchmasters}`**](https://github.com/EdwinTh/dutchmasters) - Color palette based on famous paintings by Dutch artists
+
+[**`{taylor}`**](https://github.com/wjakethompson/taylor/) - Color palette based on Taylor Swift album covers
+:::
+
+## Some examples
+
+::: panel-tabset
+### Plot
+
+```{r}
+#| label: colors-examples1
+#| message: false
+#| warning: false
+
+
+(plot_colors_base_c +
+   labs(title = "{viridis}'s \"plasma\" palette") +
+   scale_fill_viridis_c(option = "plasma", guide = colors_guide_settings_c)) + 
+(plot_colors_base_d + 
+   labs(title = "{nord}'s \"aurora\" palette") +
+   nord::scale_fill_nord(palette = "aurora", 
+                         labels = colors_guide_labs,
+                         guide = colors_guide_settings_d))
+```
+
+### Code
+
+```{r}
+#| label: colors-examples1
+#| eval: false
+#| echo: true
+```
+:::
+
+## Some more examples
+
+::: panel-tabset
+### Plot
+
+```{r}
+#| label: colors-examples2
+#| message: false
+#| warning: false
+
+
+(plot_colors_base_c +
+   labs(title = "{scico}'s \"navia\" palette") +
+   scale_fill_scico(palette = "navia", guide = colors_guide_settings_c)) + 
+(plot_colors_base_d + 
+   labs(title = "{wesanderson}'s \"AsteroidCity1\" palette") +
+   scale_fill_manual(labels = colors_guide_labs,
+                     values = wesanderson::wes_palette("AsteroidCity1"), 
+                     guide = colors_guide_settings_d))
+```
+### Code
+
+```{r}
+#| label: colors-examples2
+#| eval: false
+#| echo: true
+```
+:::
+
+
+::: {.chapter .center}
+## Chapter X
+
+### Dare to rebel
+:::
+
+<!--
+## Move the y-axis to the right
+
+::: panel-tabset
+### Plot
+
+```{r}
+#| label: abortion-plot
+
+readxl::read_excel("~/Downloads/Abortions (NHCc).xls", skip = 3) |> 
+  select(1, "2015":last_col()) |> 
+  rename(region = Year) |> 
+  pivot_longer(cols = "2015":last_col(), names_to = "year", values_to = "abortions") |> 
+  drop_na() |> 
+  filter(region != "Norway") |> 
+  mutate(year = as.numeric(year)) |> 
+  ggplot(aes(x = year, y = abortions, group = region)) + 
+  geom_line(linewidth = 1, alpha = 0.5, lineend = "round") +
+  geom_path(data = . %>% filter(region == "Oslo"), color = "tomato4", 
+            linewidth = 1.5, lineend = "round") +
+  ggrepel::geom_label_repel(data = . %>% filter(year == min(year)), aes(label = region),
+                           size = 14, hjust = 1, family = "custom", 
+                           min.segment.length = 0, xlim = c(2012.5, 2014.5), 
+                           point.padding = 0.5, seed = 42) +
+  labs(
+    title = "Number of abortions (per 1000 inhabitants) in Norway",
+    caption = "Data source: Norhealth by FHI",
+    x = NULL,
+    y = NULL
+  ) +
+  scale_x_continuous(expand = expansion(add = c(2.2, 0.1)),
+                     breaks = seq(2016, 2022, 2)) +
+  scale_y_continuous(position = "right", limits = c(0, NA)) +
+  theme_minimal(base_family = "custom") + 
+  theme(
+    plot.title.position = "plot",
+    plot.title = element_markdown(size = 100),
+    plot.subtitle = element_markdown(size = 60),
+    plot.caption = element_markdown(size = 40),
+    axis.title.y.right = element_markdown(size = 80, lineheight = 0, 
+                                          margin = margin(l = 5)),
+    axis.text = element_markdown(size = 60)
+  )
+```
+
+### Code
+
+```{r}
+#| label: abortion-plot
+#| eval: false
+#| echo: true
+```
+:::
+
+```{r}
+#| label: guttmacher
+#| eval: false
+
+data_guttmacher <- read_csv("files/guttmacher-data.csv") |> 
+  janitor::clean_names()
+
+data_guttmacher |> filter(country_name == "Norway") |> distinct(measure_name) |> View()
+
+data_guttmacher |> 
+  filter(measure_name == "Average annual no. of abortions per 1,000 women aged 15–49") |> 
+  mutate(perc = datum / 1000) |> 
+  ggplot(aes(x = perc, y = reorder(country_name, perc))) + 
+  geom_col() +
+  scale_x_continuous(labels = scales::label_percent())
+
+data_guttmacher |> 
+  filter(measure_name %in% c("Average annual % of all pregnancies ending in abortion", "Average annual no. of abortions per 1,000 women aged 15–49")) |> 
+  pivot_wider(id_cols = country_name, names_from = measure_name, values_from = datum) |> 
+  janitor::clean_names() |> 
+  rename(unmet_need = 2,
+         abortion_rate = 3) |> 
+  ggplot(aes(x = unmet_need, y = abortion_rate)) + 
+  geom_point() + 
+  geom_label(aes(label = country_name))
+```
+-->
+
+## Move the title to the plot area
+
+```{r}
+#| label: load-marathon-data
+
+data_marathon <- read_csv2("./files/oslo_marathon_results_2023.csv") |> 
+  janitor::clean_names() |> 
+  mutate(sex = str_sub(category, 1, 1),
+         sex = if_else(sex == "M", "Men", "Women", "Other/Unknown"),
+         sex = fct_infreq(sex))
+
+x <- data_marathon |> 
+  count(sex) |> 
+  mutate(frac = n / sum(n),
+         ymax = cumsum(frac),
+         ymin = lag(ymax, default = 0),
+         label = str_glue("{sex}\n{round(frac * 100, 2)}%")) |> 
+  ggplot(aes(ymax = ymax, ymin = ymin, xmax = 4, xmin = 3, fill = sex)) +
+  geom_rect() +
+  geom_label(aes(x = 3.5, y = (ymax + ymin) / 2, label = label),
+             size = 7, lineheight = 0.5) +
+  labs(
+    title = "Sex distribution in the Oslo marathon"
+  ) +
+  scale_x_continuous(limits = c(2, 4)) +
+  scale_y_continuous(expand = expansion(add = 0)) +
+  scale_fill_manual(values = c("#4A9EA8", "#E16843", "#5F666D")) +
+  coord_polar(theta = "y") + 
+  theme_void(base_family = "custom") +
+  theme(
+    plot.title = element_markdown(hjust = 0.5, lineheight = 0.5),
+    legend.position = "none"
+  )
+```
+
+::: panel-tabset
+### Plot
+
+```{r}
+#| label: marathon-times
+
+data_marathon |> 
+  ggplot(aes(x = time, fill = sex)) + 
+  geom_histogram(alpha = 0.9, binwidth = 60, key_glyph = "point") + 
+  geom_richtext(data = tibble(), aes(x = 4.2 * 60^2, y = 40,
+                                     label = "Finish times at the 2023 Oslo Marathon"),
+                family = "custom", size = 32, fontface = "bold", hjust = 0, 
+                inherit.aes = FALSE,
+                label.padding = unit(0.75, "lines"), label.color = NA) + 
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = NULL
+  ) + 
+  scale_x_time(breaks = scales::date_breaks("30 mins")) +
+  scale_y_continuous(breaks = NULL, expand = expansion(add = c(0, 2))) +
+  scale_fill_manual(values = c("#4A9EA8", "#E16843", "#5F666D"),
+                    guide = guide_legend(override.aes = list(shape = 21, size = 4))) + 
+  theme_minimal(base_family = "custom") + 
+  theme(
+    legend.title = element_markdown(size = 0),
+    legend.position = c(0.85, 0.25),
+    legend.text = element_text(size = 30),
+    axis.text = element_text(size = 40)
+  )
+```
+
+### Code
+
+```{r}
+#| label: marathon-times
+#| eval: false
+#| echo: true
+#| code-line-numbers: "4-8"
+```
+:::
+
+## Label everything
+
+::: panel-tabset
+### Plot
+
+```{r}
+#| label: taylor-scatter
+
+taylor::taylor_albums |> 
+  drop_na() |> 
+  ggplot(aes(x = user_score * 10, y = metacritic_score, fill = album_name)) + 
+  geom_point(size = 6, shape = 21, show.legend = FALSE) + 
+  ggrepel::geom_label_repel(aes(label = album_name), size = 12,
+                            min.segment.length = 0,
+                            max.overlaps = 15, seed = 42,
+                            fill = "white", family = "custom") +
+  geom_richtext(data = tibble(), aes(x = 60.5, y = 85,
+                                     label = "Users are more<br>positive about Taytay<br>albums than critics"),
+                family = "custom", size = 36, fontface = "bold", hjust = 0, lineheight = 0,
+                inherit.aes = FALSE,
+                label.padding = unit(0.75, "lines"), label.color = NA) +
+  labs(
+    x = "User ratings",
+    y = "Metacritic ratings"
+  ) + 
+  scale_x_continuous(limits = c(60, 100)) +
+  scale_y_continuous(limits = c(60, 100)) +
+  taylor::scale_fill_albums() +
+  theme_minimal(base_family = "custom") + 
+  theme(
+    axis.title = element_markdown(size = 60),
+    axis.text = element_markdown(size = 50)
+  )
+
+```
+
+### Code
+
+```{r}
+#| label: taylor-scatter
+#| eval: false
+#| echo: true
+#| code-line-numbers: "5-8"
+```
+:::
+
+## Label averages
+
+::: panel-tabset
+### Plot
+
+```{r}
+#| label: taylor-tempos
+
+data_taylor_songs <- taylor::taylor_all_songs |> 
+  filter(str_detect(album_name, "Taylor's Version", negate = TRUE),
+         str_detect(album_name, "Holiday Collection", negate = TRUE)) |> 
+  drop_na(tempo) |> 
+  mutate(cat_median = median(tempo),
+         cat_q25 = quantile(tempo, probs = 0.25),
+         cat_q75 = quantile(tempo, probs = 0.75)) |> 
+  group_by(album_name) |> 
+  mutate(album_median = median(tempo),
+         album_mad = mad(tempo))
+
+data_taylor_songs |> 
+  ggplot(aes(x = tempo, y = reorder(album_name, album_release))) +
+  geom_rect(aes(xmin = cat_q25, xmax = cat_q75, ymin = -Inf, ymax = Inf), 
+            fill = "#fbe8e9", color = "#fbe8e9", alpha = 0.6) +
+  geom_vline(aes(xintercept = cat_median), color = "grey40", linetype = "dashed") + 
+  geom_line(linewidth = 0.5, color = "black") +
+  geom_text(aes(x = album_median, label = round(album_median, 0)), 
+            family = "custom", size = 12, color = "grey40", nudge_y = 0.4) +
+  geom_point(aes(x = album_median), color = "grey40", shape = "|", size = 12) +
+  geom_segment(aes(x = -Inf, xend = Inf, y = -Inf, yend = -Inf), linewidth = 1) +
+  geom_beeswarm(shape = 21, color = "white", fill = "black", size = 2) +
+  labs(
+    title = "Swiftly Shifting Tempos",
+    subtitle = "Marks indicate the median tempo per album, dashed line indicates median across albums<br>Shaded area indicate the 25<sup>th</sup> and 75<sup>th</sup> percentile across the discography",
+    x = NULL,
+    y = NULL,
+    caption = "Adapted on a data visualization by @ryanahart"
+  ) + 
+  scale_x_continuous(breaks = c(75, 100, 125, 150, 175, 200)) +
+  theme_minimal(base_family = "custom") +
+  theme(
+    panel.grid = element_blank(),
+    plot.title.position = "plot",
+    plot.title = element_markdown(size = 120),
+    plot.subtitle = element_markdown(size = 60, lineheight = 0),
+    axis.text = element_markdown(size = 40),
+    plot.caption = element_markdown(size = 30)
+  )
+```
+
+### Code
+
+```{r}
+#| label: taylor-tempos
+#| eval: false
+#| echo: true
+#| code-line-numbers: "1-10"
+```
+:::
+
+::: {.chapter .center}
+## Chapter X
+
+### Alternative plot types
+:::
+
+## Boxplots vs. vagina plots
+
+::: panel-tabset
+### Plot
+
+```{r}
+#| label: box-vs-vagina
+
+boxplot_vagina_base <- taylor::taylor_all_songs |> 
+  drop_na(mode_name) |> 
+  mutate(mode_name = fct_rev(mode_name)) |> 
+  ggplot(aes(x = mode_name, y = valence, fill = mode_name)) +
+  labs(
+    title = "Valence by mode",
+    x = NULL,
+    y = NULL,
+  ) +
+  taylor::scale_fill_taylor_d(guide = "none") +
+  scale_y_continuous(limits = c(0, 1)) +
+  theme_minimal(base_family = "custom") + 
+  theme(
+    plot.title.position = "plot",
+    plot.title = element_markdown(size = 80),
+    axis.text = element_markdown(size = 50),
+    panel.grid.major.x = element_blank()
+  )
+
+(boxplot_vagina_base + 
+    geom_boxplot(width = 0.5, outlier.shape = 4, outlier.size = 1.5)) +
+(boxplot_vagina_base +
+  geom_violin(alpha = 0.7) + 
+  geom_boxplot(width = 0.2, outlier.shape = NA, outlier.size = 3) +
+  geom_jitter(width = 0.05, size = 2, alpha = 0.2, stroke = 0) + 
+  geom_point(data = . %>% group_by(mode_name) %>% summarise(mean = mean(valence)),
+             aes(y = mean), fill = "white", shape = 23, size = 3))
+```
+
+### Code
+
+```{r}
+#| label: box-vs-vagina
+#| eval: false
+#| echo: true
+#| code-line-numbers: "21,23-27"
+```
+:::
+
+## Simple vs fancy scatterplots
+
+::: panel-tabset
+### Plot
+
+```{r}
+#| label: scatter-vs-fancy-scatter
+
+scatter_fancy_base <- taylor::taylor_all_songs |> 
+  ggplot(aes(x = tempo, y = energy)) +
+  labs(
+    title = "Correlation between tempo and energy<br>in Mrs. Swift's discography",
+    x = "Tempo",
+    y = "Energy",
+    fill = NULL
+  ) +
+  scale_y_continuous(limits = c(0, 1)) +
+  theme_minimal(base_family = "custom") + 
+  theme(
+    plot.title.position = "plot",
+    plot.title = element_markdown(size = 80, lineheight = 0),
+    axis.title = element_markdown(size = 60),
+    axis.text = element_text(size = 40),
+    legend.position = "bottom",
+    legend.text = element_blank()
+  )
+
+(scatter_fancy_base + 
+    geom_point()) +
+(scatter_fancy_base +
+   ggpubr::stat_cor(aes(
+     label = paste(after_stat(rr.label), after_stat(p.label), sep = "~`,`~")),
+                    label.y = 0.98, size = 20, family = "custom") +
+   geom_point(alpha = 0.8) + 
+   geom_rug(alpha = 0.2) +
+   geom_smooth(method = "lm", color = "maroon", fill = "maroon", alpha = 0.2))
+```
+
+### Code
+
+```{r}
+#| label: scatter-vs-fancy-scatter
+#| eval: false
+#| echo: true
+#| code-line-numbers: "23-28"
+```
+:::
+
+## Fancy geoms and labels
+
+::: panel-tabset
+### Plot
+
+```{r}
+#| label: ggdist-exmpl-submit
+
+ggdist_pi_base <- taylor::taylor_all_songs |> 
+  mutate(album_name = fct_relevel(album_name, taylor::album_levels)) |> 
+  drop_na(album_name) |>
+  filter(str_detect(album_name, "Taylor's Version", negate = TRUE),
+         !ep) |> 
+  select(album_name, loudness) |> 
+  group_by(album_name) |> 
+  median_qi(.width = c(0.5, 0.8, 0.95)) |>
+  drop_na() |> 
+  ggplot(aes(x = loudness, y = album_name, 
+             xmin = .lower, xmax = .upper)) + 
+  labs(
+    title = "Loudness across the Taylor Swift discography",
+    subtitle = "Median, 50<sup>th</sup>, 80<sup>th</sup> and 95<sup>th</sup> percentile",
+    x = NULL,
+    y = NULL
+  ) +
+  theme_minimal(base_family = "custom") + 
+  theme(
+    plot.title.position = "plot",
+    plot.title = element_markdown(size = 80),
+    plot.subtitle = element_markdown(size = 40),
+    axis.text = element_markdown(size = 40),
+    panel.grid.major.y = element_blank()
+  )
+
+(ggdist_pi_base + 
+    geom_pointinterval() +
+    labs(
+      x = "Loudness (in dB)"
+    ) +
+    scale_x_continuous(trans = "reverse") +
+    theme(
+      axis.title = element_markdown(size = 40),
+    )
+) &
+  plot_annotation(
+    title = "What you submit...",
+    theme = theme(
+      plot.title = element_markdown(family = "custom", size = 90, lineheight = 0)
+    )
+  )
+```
+
+### Code
+
+```{r}
+#| label: ggdist-exmpl-submit
+#| eval: false
+#| echo: true
+#| code-line-numbers: "28-35"
+```
+:::
+
+## Fancy geoms and labels
+
+::: panel-tabset
+### Plot
+
+```{r}
+#| label: ggdist-exmpl-present
+
+(ggdist_pi_base + 
+   geom_text(data = . %>% group_by(album_name) %>% summarise(label_pos = max(.upper)),
+             aes(x = label_pos, y = album_name,
+                 label = album_name, color = album_name),
+             family = "custom", size = 25,
+             nudge_y = 0.33, hjust = 0,
+             inherit.aes = FALSE, show.legend = FALSE) +
+   geom_pointinterval() +
+   scale_x_continuous(trans = "reverse",
+                      labels = scales::label_number(suffix = " dB"),
+                      expand = expansion(add = c(0, 1))) +
+   taylor::scale_color_albums() +
+   theme(
+         axis.text.y = element_blank(),
+   )
+) &
+  plot_annotation(
+    title = "What you present...",
+    theme = theme(
+      plot.title = element_markdown(family = "custom", size = 90, lineheight = 0)
+    )
+  )
+```
+
+### Code
+
+```{r}
+#| label: ggdist-exmpl-present
+#| eval: false
+#| echo: true
+#| code-line-numbers: "2-15"
+```
+:::
+
+## Fancy geoms (cont.)
+
+::: panel-tabset
+### Plot
+
+```{r}
+#| label: ggdist-valence
+
+taylor::taylor_all_songs |> 
+  filter(str_detect(album_name, "Holiday Collection", negate = TRUE),
+         str_detect(album_name, "Taylor's Version", negate = TRUE)) |> 
+  drop_na(valence, album_name) |> 
+  mutate(album_label = str_glue("{album_name} ({year(album_release)})")) |> 
+  ggplot(aes(x = valence, y = reorder(album_label, valence), fill = album_name)) +
+  stat_gradientinterval(position = "dodge", fill_type = "gradient") +
+  geom_beeswarm(shape = 21, size = 2) +
+  labs(
+    title = "\"Valence\" per Taylor Swift album",
+    subtitle = "**va·lence** [noun]: A measure describing the musical positiveness conveyed by a track.<br>Tracks with high valence sound more positive, while tracks with low valence sound more negative",
+    x = "Valence",
+    y = NULL
+  ) + 
+  scale_x_continuous(limits = c(0, 1), expand = expansion(add = c(0, 0.01))) +
+  taylor::scale_fill_albums(guide = "none") +
+  theme_minimal(base_family = "custom") +
+  theme(
+    plot.title.position = "plot",
+    plot.title = element_markdown(size = 90),
+    plot.subtitle = element_markdown(size = 40, lineheight = 0),
+    axis.text = element_markdown(size = 40),
+    axis.title = element_markdown(size = 60),
+    panel.grid.major.y = element_blank()
+  )
+```
+
+### Code
+
+```{r}
+#| label: ggdist-valence
+#| eval: false
+#| echo: true
+```
+:::
+
+## Resources {preview-link="true"}
+
+::: {.midlist style="font-size: 3vmin;"}
+**Designing Charts in R**, Cédric Scherer, _Masterclass for the Data Visualization Society_ (2023), [slides for the presentation](https://z3tt.github.io/ggplot-dvs/slides.html)
+:::

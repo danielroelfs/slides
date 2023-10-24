@@ -444,47 +444,48 @@ Daniel Roelfs
 <span id="cb1-5"><a href="#cb1-5"></a>colors_guide_labs <span class="ot">&lt;-</span> LETTERS[<span class="fu">seq</span>(<span class="dv">3</span>)]</span>
 <span id="cb1-6"><a href="#cb1-6"></a></span>
 <span id="cb1-7"><a href="#cb1-7"></a>plot_colors_base_c <span class="ot">&lt;-</span> taylor<span class="sc">::</span>taylor_all_songs <span class="sc">|&gt;</span> </span>
-<span id="cb1-8"><a href="#cb1-8"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> tempo, <span class="at">y =</span> energy, <span class="at">fill =</span> danceability)) <span class="sc">+</span></span>
-<span id="cb1-9"><a href="#cb1-9"></a>  <span class="fu">geom_point</span>(<span class="at">shape =</span> <span class="dv">21</span>, <span class="at">size =</span> <span class="dv">4</span>, <span class="at">stroke =</span> <span class="dv">0</span>, <span class="at">alpha =</span> <span class="fl">0.75</span>) <span class="sc">+</span></span>
-<span id="cb1-10"><a href="#cb1-10"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">fill =</span> <span class="st">"black"</span>, <span class="at">alpha =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
-<span id="cb1-11"><a href="#cb1-11"></a>  <span class="fu">labs</span>(</span>
-<span id="cb1-12"><a href="#cb1-12"></a>    <span class="at">x =</span> <span class="cn">NULL</span>,</span>
-<span id="cb1-13"><a href="#cb1-13"></a>    <span class="at">y =</span> <span class="cn">NULL</span>,</span>
-<span id="cb1-14"><a href="#cb1-14"></a>    <span class="at">fill =</span> <span class="cn">NULL</span></span>
-<span id="cb1-15"><a href="#cb1-15"></a>  ) <span class="sc">+</span></span>
-<span id="cb1-16"><a href="#cb1-16"></a>  <span class="fu">scale_fill_continuous</span>(<span class="at">guide =</span> colors_guide_settings_c) <span class="sc">+</span></span>
-<span id="cb1-17"><a href="#cb1-17"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"custom"</span>) <span class="sc">+</span> </span>
-<span id="cb1-18"><a href="#cb1-18"></a>  <span class="fu">theme</span>(</span>
-<span id="cb1-19"><a href="#cb1-19"></a>    <span class="at">plot.title =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">80</span>),</span>
-<span id="cb1-20"><a href="#cb1-20"></a>    <span class="at">axis.text =</span> <span class="fu">element_blank</span>(),</span>
-<span id="cb1-21"><a href="#cb1-21"></a>    <span class="at">legend.position =</span> <span class="st">"bottom"</span>,</span>
-<span id="cb1-22"><a href="#cb1-22"></a>    <span class="at">legend.text =</span> <span class="fu">element_blank</span>()</span>
-<span id="cb1-23"><a href="#cb1-23"></a>  )</span>
-<span id="cb1-24"><a href="#cb1-24"></a></span>
-<span id="cb1-25"><a href="#cb1-25"></a>plot_colors_base_d <span class="ot">&lt;-</span> taylor<span class="sc">::</span>taylor_all_songs <span class="sc">|&gt;</span> </span>
-<span id="cb1-26"><a href="#cb1-26"></a>  <span class="fu">drop_na</span>(mode_name) <span class="sc">|&gt;</span> </span>
-<span id="cb1-27"><a href="#cb1-27"></a>  <span class="fu">mutate</span>(<span class="at">tempo_binned =</span> <span class="fu">cut_interval</span>(energy, <span class="at">n =</span> <span class="dv">3</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb1-28"><a href="#cb1-28"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> tempo_binned, <span class="at">y =</span> loudness, <span class="at">fill =</span> tempo_binned)) <span class="sc">+</span></span>
-<span id="cb1-29"><a href="#cb1-29"></a>  <span class="fu">geom_violin</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">key_glyph =</span> <span class="st">"point"</span>) <span class="sc">+</span> </span>
-<span id="cb1-30"><a href="#cb1-30"></a>  <span class="fu">geom_boxplot</span>(<span class="at">width =</span> <span class="fl">0.2</span>, <span class="at">outlier.shape =</span> <span class="dv">4</span>, <span class="at">outlier.size =</span> <span class="dv">2</span>, </span>
-<span id="cb1-31"><a href="#cb1-31"></a>               <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
-<span id="cb1-32"><a href="#cb1-32"></a>  <span class="fu">labs</span>(</span>
-<span id="cb1-33"><a href="#cb1-33"></a>    <span class="at">x =</span> <span class="cn">NULL</span>,</span>
-<span id="cb1-34"><a href="#cb1-34"></a>    <span class="at">y =</span> <span class="cn">NULL</span>,</span>
-<span id="cb1-35"><a href="#cb1-35"></a>    <span class="at">fill =</span> <span class="cn">NULL</span></span>
-<span id="cb1-36"><a href="#cb1-36"></a>  ) <span class="sc">+</span></span>
-<span id="cb1-37"><a href="#cb1-37"></a>  <span class="fu">scale_fill_discrete</span>(<span class="at">labels =</span> colors_guide_labs, </span>
-<span id="cb1-38"><a href="#cb1-38"></a>                      <span class="at">guide =</span> colors_guide_settings_d) <span class="sc">+</span></span>
-<span id="cb1-39"><a href="#cb1-39"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"custom"</span>) <span class="sc">+</span> </span>
-<span id="cb1-40"><a href="#cb1-40"></a>  <span class="fu">theme</span>(</span>
-<span id="cb1-41"><a href="#cb1-41"></a>    <span class="at">plot.title =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">80</span>),</span>
-<span id="cb1-42"><a href="#cb1-42"></a>    <span class="at">axis.text =</span> <span class="fu">element_blank</span>(),</span>
-<span id="cb1-43"><a href="#cb1-43"></a>    <span class="at">legend.position =</span> <span class="st">"bottom"</span>,</span>
-<span id="cb1-44"><a href="#cb1-44"></a>    <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">40</span>),</span>
-<span id="cb1-45"><a href="#cb1-45"></a>    <span class="at">panel.grid.major.x =</span> <span class="fu">element_blank</span>()</span>
-<span id="cb1-46"><a href="#cb1-46"></a>  )</span>
-<span id="cb1-47"><a href="#cb1-47"></a></span>
-<span id="cb1-48"><a href="#cb1-48"></a>plot_colors_base_c <span class="sc">+</span> plot_colors_base_d</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-8"><a href="#cb1-8"></a>  <span class="fu">drop_na</span>(energy, danceability) <span class="sc">|&gt;</span> </span>
+<span id="cb1-9"><a href="#cb1-9"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> tempo, <span class="at">y =</span> energy, <span class="at">fill =</span> danceability)) <span class="sc">+</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a>  <span class="fu">geom_point</span>(<span class="at">shape =</span> <span class="dv">21</span>, <span class="at">size =</span> <span class="dv">4</span>, <span class="at">stroke =</span> <span class="dv">0</span>, <span class="at">alpha =</span> <span class="fl">0.75</span>) <span class="sc">+</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>) <span class="sc">+</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a>  <span class="fu">labs</span>(</span>
+<span id="cb1-13"><a href="#cb1-13"></a>    <span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb1-14"><a href="#cb1-14"></a>    <span class="at">y =</span> <span class="cn">NULL</span>,</span>
+<span id="cb1-15"><a href="#cb1-15"></a>    <span class="at">fill =</span> <span class="cn">NULL</span></span>
+<span id="cb1-16"><a href="#cb1-16"></a>  ) <span class="sc">+</span></span>
+<span id="cb1-17"><a href="#cb1-17"></a>  <span class="fu">scale_fill_continuous</span>(<span class="at">guide =</span> colors_guide_settings_c) <span class="sc">+</span></span>
+<span id="cb1-18"><a href="#cb1-18"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"custom"</span>) <span class="sc">+</span> </span>
+<span id="cb1-19"><a href="#cb1-19"></a>  <span class="fu">theme</span>(</span>
+<span id="cb1-20"><a href="#cb1-20"></a>    <span class="at">plot.title =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">80</span>),</span>
+<span id="cb1-21"><a href="#cb1-21"></a>    <span class="at">axis.text =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb1-22"><a href="#cb1-22"></a>    <span class="at">legend.position =</span> <span class="st">"bottom"</span>,</span>
+<span id="cb1-23"><a href="#cb1-23"></a>    <span class="at">legend.text =</span> <span class="fu">element_blank</span>()</span>
+<span id="cb1-24"><a href="#cb1-24"></a>  )</span>
+<span id="cb1-25"><a href="#cb1-25"></a></span>
+<span id="cb1-26"><a href="#cb1-26"></a>plot_colors_base_d <span class="ot">&lt;-</span> taylor<span class="sc">::</span>taylor_all_songs <span class="sc">|&gt;</span> </span>
+<span id="cb1-27"><a href="#cb1-27"></a>  <span class="fu">drop_na</span>(loudness) <span class="sc">|&gt;</span> </span>
+<span id="cb1-28"><a href="#cb1-28"></a>  <span class="fu">mutate</span>(<span class="at">tempo_binned =</span> <span class="fu">cut_interval</span>(energy, <span class="at">n =</span> <span class="dv">3</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb1-29"><a href="#cb1-29"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> tempo_binned, <span class="at">y =</span> loudness, <span class="at">fill =</span> tempo_binned)) <span class="sc">+</span></span>
+<span id="cb1-30"><a href="#cb1-30"></a>  <span class="fu">geom_violin</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">key_glyph =</span> <span class="st">"point"</span>) <span class="sc">+</span> </span>
+<span id="cb1-31"><a href="#cb1-31"></a>  <span class="fu">geom_boxplot</span>(<span class="at">width =</span> <span class="fl">0.2</span>, <span class="at">outlier.shape =</span> <span class="dv">4</span>, <span class="at">outlier.size =</span> <span class="dv">2</span>, </span>
+<span id="cb1-32"><a href="#cb1-32"></a>               <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb1-33"><a href="#cb1-33"></a>  <span class="fu">labs</span>(</span>
+<span id="cb1-34"><a href="#cb1-34"></a>    <span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb1-35"><a href="#cb1-35"></a>    <span class="at">y =</span> <span class="cn">NULL</span>,</span>
+<span id="cb1-36"><a href="#cb1-36"></a>    <span class="at">fill =</span> <span class="cn">NULL</span></span>
+<span id="cb1-37"><a href="#cb1-37"></a>  ) <span class="sc">+</span></span>
+<span id="cb1-38"><a href="#cb1-38"></a>  <span class="fu">scale_fill_discrete</span>(<span class="at">labels =</span> colors_guide_labs, </span>
+<span id="cb1-39"><a href="#cb1-39"></a>                      <span class="at">guide =</span> colors_guide_settings_d) <span class="sc">+</span></span>
+<span id="cb1-40"><a href="#cb1-40"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"custom"</span>) <span class="sc">+</span> </span>
+<span id="cb1-41"><a href="#cb1-41"></a>  <span class="fu">theme</span>(</span>
+<span id="cb1-42"><a href="#cb1-42"></a>    <span class="at">plot.title =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">80</span>),</span>
+<span id="cb1-43"><a href="#cb1-43"></a>    <span class="at">axis.text =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb1-44"><a href="#cb1-44"></a>    <span class="at">legend.position =</span> <span class="st">"bottom"</span>,</span>
+<span id="cb1-45"><a href="#cb1-45"></a>    <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">40</span>),</span>
+<span id="cb1-46"><a href="#cb1-46"></a>    <span class="at">panel.grid.major.x =</span> <span class="fu">element_blank</span>()</span>
+<span id="cb1-47"><a href="#cb1-47"></a>  )</span>
+<span id="cb1-48"><a href="#cb1-48"></a></span>
+<span id="cb1-49"><a href="#cb1-49"></a>plot_colors_base_c <span class="sc">+</span> plot_colors_base_d</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -523,9 +524,15 @@ Daniel Roelfs
 <p><a href="https://coolors.co/generate"><strong>coolors.co</strong></a> - Randomly generate a set of colors</p>
 <p><a href="https://github.com/clauswilke/colorblindr"><strong><code>{colorblindr}</code></strong></a> - Test your plots for CVD accessiblity directly in R</p>
 <p><a href="https://github.com/jkaupp/nord"><strong><code>{nord}</code></strong></a> - Muted color palettes based on UI systems and a group of Canadian artists</p>
-<p><a href="https://github.com/karthik/wesanderson"><strong><code>{wesanderson}</code></strong></a> - Color palette based on Wes Anderson film aesthetics</p>
-<p><a href="https://github.com/EdwinTh/dutchmasters"><strong><code>{dutchmasters}</code></strong></a> - Color palette based on famous paintings by Dutch artists</p>
-<p><a href="https://github.com/wjakethompson/taylor/"><strong><code>{taylor}</code></strong></a> - Color palette based on Taylor Swift album covers</p>
+<p><a href="https://github.com/karthik/wesanderson"><strong><code>{wesanderson}</code></strong></a> - Color palettes based on Wes Anderson film aesthetics</p>
+<p><a href="https://github.com/EdwinTh/dutchmasters"><strong><code>{dutchmasters}</code></strong></a> - Color palettes based on famous paintings by Dutch artists</p>
+<p><a href="https://github.com/dill/beyonce"><strong><code>{beyonce}</code></strong></a> - Palettes based on her most iconic album covers and photos, see <a href="https://beyoncepalettes.tumblr.com">here</a> for all palettes</p>
+</div>
+</section>
+<section id="the-taylor-package" class="slide level2">
+<h2>The {taylor} package</h2>
+<div class="center-xy">
+<iframe width="1000" height="550" src="https://taylor.wjakethompson.com" title="Taylor Swift R package"></iframe>
 </div>
 </section>
 <section id="some-examples" class="slide level2">
@@ -543,13 +550,14 @@ Daniel Roelfs
 <div id="tabset-2-2">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>(plot_colors_base_c <span class="sc">+</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a>   <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"{viridis}'s </span><span class="sc">\"</span><span class="st">plasma</span><span class="sc">\"</span><span class="st"> palette"</span>) <span class="sc">+</span></span>
-<span id="cb4-3"><a href="#cb4-3"></a>   <span class="fu">scale_fill_viridis_c</span>(<span class="at">option =</span> <span class="st">"plasma"</span>, <span class="at">guide =</span> colors_guide_settings_c)) <span class="sc">+</span> </span>
-<span id="cb4-4"><a href="#cb4-4"></a>(plot_colors_base_d <span class="sc">+</span> </span>
-<span id="cb4-5"><a href="#cb4-5"></a>   <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"{nord}'s </span><span class="sc">\"</span><span class="st">aurora</span><span class="sc">\"</span><span class="st"> palette"</span>) <span class="sc">+</span></span>
-<span id="cb4-6"><a href="#cb4-6"></a>   nord<span class="sc">::</span><span class="fu">scale_fill_nord</span>(<span class="at">palette =</span> <span class="st">"aurora"</span>, </span>
-<span id="cb4-7"><a href="#cb4-7"></a>                         <span class="at">labels =</span> colors_guide_labs,</span>
-<span id="cb4-8"><a href="#cb4-8"></a>                         <span class="at">guide =</span> colors_guide_settings_d))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-2"><a href="#cb4-2"></a>   <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">fill =</span> <span class="st">"black"</span>, <span class="at">alpha =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a>   <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"{viridis}'s </span><span class="sc">\"</span><span class="st">plasma</span><span class="sc">\"</span><span class="st"> palette"</span>) <span class="sc">+</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a>   <span class="fu">scale_fill_viridis_c</span>(<span class="at">option =</span> <span class="st">"plasma"</span>, <span class="at">guide =</span> colors_guide_settings_c)) <span class="sc">+</span> </span>
+<span id="cb4-5"><a href="#cb4-5"></a>(plot_colors_base_d <span class="sc">+</span> </span>
+<span id="cb4-6"><a href="#cb4-6"></a>   <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"{nord}'s </span><span class="sc">\"</span><span class="st">aurora</span><span class="sc">\"</span><span class="st"> palette"</span>) <span class="sc">+</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a>   nord<span class="sc">::</span><span class="fu">scale_fill_nord</span>(<span class="at">palette =</span> <span class="st">"aurora"</span>, </span>
+<span id="cb4-8"><a href="#cb4-8"></a>                         <span class="at">labels =</span> colors_guide_labs,</span>
+<span id="cb4-9"><a href="#cb4-9"></a>                         <span class="at">guide =</span> colors_guide_settings_d))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -571,21 +579,444 @@ Daniel Roelfs
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>(plot_colors_base_c <span class="sc">+</span></span>
 <span id="cb5-2"><a href="#cb5-2"></a>   <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"{scico}'s </span><span class="sc">\"</span><span class="st">navia</span><span class="sc">\"</span><span class="st"> palette"</span>) <span class="sc">+</span></span>
-<span id="cb5-3"><a href="#cb5-3"></a>   <span class="fu">scale_fill_scico</span>(<span class="at">palette =</span> <span class="st">"navia"</span>, <span class="at">guide =</span> colors_guide_settings_c)) <span class="sc">+</span> </span>
-<span id="cb5-4"><a href="#cb5-4"></a>(plot_colors_base_d <span class="sc">+</span> </span>
-<span id="cb5-5"><a href="#cb5-5"></a>   <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"{wesanderson}'s </span><span class="sc">\"</span><span class="st">AsteroidCity1</span><span class="sc">\"</span><span class="st"> palette"</span>) <span class="sc">+</span></span>
-<span id="cb5-6"><a href="#cb5-6"></a>   <span class="fu">scale_fill_manual</span>(<span class="at">labels =</span> colors_guide_labs,</span>
-<span id="cb5-7"><a href="#cb5-7"></a>                     <span class="at">values =</span> wesanderson<span class="sc">::</span><span class="fu">wes_palette</span>(<span class="st">"AsteroidCity1"</span>), </span>
-<span id="cb5-8"><a href="#cb5-8"></a>                     <span class="at">guide =</span> colors_guide_settings_d))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-3"><a href="#cb5-3"></a>   <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">fill =</span> <span class="st">"black"</span>, <span class="at">alpha =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a>   <span class="fu">scale_fill_scico</span>(<span class="at">palette =</span> <span class="st">"navia"</span>, <span class="at">guide =</span> colors_guide_settings_c)) <span class="sc">+</span> </span>
+<span id="cb5-5"><a href="#cb5-5"></a>(plot_colors_base_d <span class="sc">+</span> </span>
+<span id="cb5-6"><a href="#cb5-6"></a>   <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"{wesanderson}'s </span><span class="sc">\"</span><span class="st">AsteroidCity1</span><span class="sc">\"</span><span class="st"> palette"</span>) <span class="sc">+</span></span>
+<span id="cb5-7"><a href="#cb5-7"></a>   <span class="fu">scale_fill_manual</span>(<span class="at">labels =</span> colors_guide_labs,</span>
+<span id="cb5-8"><a href="#cb5-8"></a>                     <span class="at">values =</span> wesanderson<span class="sc">::</span><span class="fu">wes_palette</span>(<span class="st">"AsteroidCity1"</span>), </span>
+<span id="cb5-9"><a href="#cb5-9"></a>                     <span class="at">guide =</span> colors_guide_settings_d))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
+</div>
+</section>
+<section class="slide level2">
+
+<div class="center-xy">
+<p><img data-src="./files/bob_ross_meme.png" alt="Bob Ross meme for plots"></p>
 </div>
 </section>
 <section id="chapter-x-2" class="slide level2 chapter center">
 <h2>Chapter X</h2>
+<h3 id="tricks-to-spice-up-your-plots">5 tricks to spice up your plots</h3>
+</section>
+<section id="custom-legend-keys" class="slide level2">
+<h2>Custom legend keys</h2>
+<div class="text-slide">
+<p>Different legend keys more clearly show the color and look neater</p>
+</div>
+<div class="panel-tabset">
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Plot</a></li><li><a href="#tabset-4-2">Code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="index_files/figure-revealjs/legend-keys-1.png" width="1400"></p>
+</div>
+</div>
+</div>
+<div id="tabset-4-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6" data-code-line-numbers="27,33-37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>(taylor<span class="sc">::</span>taylor_all_songs <span class="sc">|&gt;</span> </span>
+<span id="cb6-2"><a href="#cb6-2"></a>   <span class="fu">drop_na</span>(album_release, mode_name) <span class="sc">|&gt;</span> </span>
+<span id="cb6-3"><a href="#cb6-3"></a>   <span class="fu">arrange</span>(album_release) <span class="sc">|&gt;</span> </span>
+<span id="cb6-4"><a href="#cb6-4"></a>   <span class="fu">mutate</span>(<span class="at">cumsum =</span> <span class="fu">cumsum</span>(<span class="fu">row_number</span>())) <span class="sc">|&gt;</span> </span>
+<span id="cb6-5"><a href="#cb6-5"></a>   <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> album_release, <span class="at">y =</span> cumsum, <span class="at">color =</span> mode_name)) <span class="sc">+</span></span>
+<span id="cb6-6"><a href="#cb6-6"></a>   <span class="fu">geom_step</span>(<span class="at">size =</span> <span class="fl">1.5</span>, <span class="at">direction =</span> <span class="st">"vh"</span>) <span class="sc">+</span> </span>
+<span id="cb6-7"><a href="#cb6-7"></a>   <span class="fu">labs</span>(</span>
+<span id="cb6-8"><a href="#cb6-8"></a>     <span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb6-9"><a href="#cb6-9"></a>     <span class="at">y =</span> <span class="cn">NULL</span>,</span>
+<span id="cb6-10"><a href="#cb6-10"></a>     <span class="at">color =</span> <span class="cn">NULL</span></span>
+<span id="cb6-11"><a href="#cb6-11"></a>   ) <span class="sc">+</span></span>
+<span id="cb6-12"><a href="#cb6-12"></a>   <span class="fu">scale_color_manual</span>(<span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>),</span>
+<span id="cb6-13"><a href="#cb6-13"></a>                      <span class="at">values =</span> wesanderson<span class="sc">::</span><span class="fu">wes_palette</span>(<span class="st">"Moonrise2"</span>)) <span class="sc">+</span> </span>
+<span id="cb6-14"><a href="#cb6-14"></a>   <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"custom"</span>) <span class="sc">+</span> </span>
+<span id="cb6-15"><a href="#cb6-15"></a>   <span class="fu">theme</span>(</span>
+<span id="cb6-16"><a href="#cb6-16"></a>     <span class="at">plot.title =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">80</span>),</span>
+<span id="cb6-17"><a href="#cb6-17"></a>     <span class="at">axis.text =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb6-18"><a href="#cb6-18"></a>     <span class="at">legend.position =</span> <span class="fu">c</span>(<span class="fl">0.3</span>, <span class="fl">0.8</span>),</span>
+<span id="cb6-19"><a href="#cb6-19"></a>     <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">40</span>),</span>
+<span id="cb6-20"><a href="#cb6-20"></a>     <span class="at">panel.grid.major.x =</span> <span class="fu">element_blank</span>()</span>
+<span id="cb6-21"><a href="#cb6-21"></a>   )) <span class="sc">+</span></span>
+<span id="cb6-22"><a href="#cb6-22"></a>  (taylor<span class="sc">::</span>taylor_all_songs <span class="sc">|&gt;</span> </span>
+<span id="cb6-23"><a href="#cb6-23"></a>     <span class="fu">drop_na</span>(album_release, mode_name) <span class="sc">|&gt;</span> </span>
+<span id="cb6-24"><a href="#cb6-24"></a>     <span class="fu">arrange</span>(album_release) <span class="sc">|&gt;</span> </span>
+<span id="cb6-25"><a href="#cb6-25"></a>     <span class="fu">mutate</span>(<span class="at">cumsum =</span> <span class="fu">cumsum</span>(<span class="fu">row_number</span>())) <span class="sc">|&gt;</span> </span>
+<span id="cb6-26"><a href="#cb6-26"></a>     <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> album_release, <span class="at">y =</span> cumsum, <span class="at">color =</span> mode_name)) <span class="sc">+</span></span>
+<span id="cb6-27"><a href="#cb6-27"></a>     <span class="fu">geom_step</span>(<span class="at">linewidth =</span> <span class="fl">1.5</span>, <span class="at">direction =</span> <span class="st">"vh"</span>, <span class="at">key_glyph =</span> <span class="st">"point"</span>) <span class="sc">+</span></span>
+<span id="cb6-28"><a href="#cb6-28"></a>     <span class="fu">labs</span>(</span>
+<span id="cb6-29"><a href="#cb6-29"></a>       <span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb6-30"><a href="#cb6-30"></a>       <span class="at">y =</span> <span class="cn">NULL</span>,</span>
+<span id="cb6-31"><a href="#cb6-31"></a>       <span class="at">color =</span> <span class="cn">NULL</span></span>
+<span id="cb6-32"><a href="#cb6-32"></a>     ) <span class="sc">+</span></span>
+<span id="cb6-33"><a href="#cb6-33"></a>     <span class="fu">scale_color_manual</span>(<span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>),</span>
+<span id="cb6-34"><a href="#cb6-34"></a>                       <span class="at">values =</span> wesanderson<span class="sc">::</span><span class="fu">wes_palette</span>(<span class="st">"Moonrise2"</span>), </span>
+<span id="cb6-35"><a href="#cb6-35"></a>                       <span class="at">guide =</span> <span class="fu">guide_legend</span>(</span>
+<span id="cb6-36"><a href="#cb6-36"></a>                         <span class="at">override.aes =</span> <span class="fu">list</span>(<span class="at">size =</span> <span class="dv">6</span>, </span>
+<span id="cb6-37"><a href="#cb6-37"></a>                                             <span class="at">stroke =</span> <span class="dv">0</span>, <span class="at">alpha =</span> <span class="dv">1</span>))) <span class="sc">+</span></span>
+<span id="cb6-38"><a href="#cb6-38"></a>     <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"custom"</span>) <span class="sc">+</span> </span>
+<span id="cb6-39"><a href="#cb6-39"></a>     <span class="fu">theme</span>(</span>
+<span id="cb6-40"><a href="#cb6-40"></a>       <span class="at">plot.title =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">80</span>),</span>
+<span id="cb6-41"><a href="#cb6-41"></a>       <span class="at">axis.text =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb6-42"><a href="#cb6-42"></a>       <span class="at">legend.position =</span> <span class="fu">c</span>(<span class="fl">0.3</span>, <span class="fl">0.8</span>),</span>
+<span id="cb6-43"><a href="#cb6-43"></a>       <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">40</span>),</span>
+<span id="cb6-44"><a href="#cb6-44"></a>       <span class="at">panel.grid.major.x =</span> <span class="fu">element_blank</span>()</span>
+<span id="cb6-45"><a href="#cb6-45"></a>     ))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="an-example" class="slide level2">
+<h2>An example</h2>
+<div class="panel-tabset">
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Plot</a></li><li><a href="#tabset-5-2">Code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="index_files/figure-revealjs/marathon-times-1.png" width="1400"></p>
+</div>
+</div>
+</div>
+<div id="tabset-5-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7" data-code-line-numbers="8-12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="fu">read_csv2</span>(<span class="st">"./files/oslo_marathon_results_2023.csv"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb7-2"><a href="#cb7-2"></a>  janitor<span class="sc">::</span><span class="fu">clean_names</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb7-3"><a href="#cb7-3"></a>  <span class="fu">mutate</span>(<span class="at">sex =</span> <span class="fu">str_sub</span>(category, <span class="dv">1</span>, <span class="dv">1</span>),</span>
+<span id="cb7-4"><a href="#cb7-4"></a>         <span class="at">sex =</span> <span class="fu">if_else</span>(sex <span class="sc">==</span> <span class="st">"M"</span>, <span class="st">"Men"</span>, <span class="st">"Women"</span>, <span class="st">"Other/Unknown"</span>),</span>
+<span id="cb7-5"><a href="#cb7-5"></a>         <span class="at">sex =</span> <span class="fu">fct_infreq</span>(sex)) <span class="sc">|&gt;</span> </span>
+<span id="cb7-6"><a href="#cb7-6"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> time, <span class="at">fill =</span> sex)) <span class="sc">+</span> </span>
+<span id="cb7-7"><a href="#cb7-7"></a>  <span class="fu">geom_histogram</span>(<span class="at">alpha =</span> <span class="fl">0.9</span>, <span class="at">binwidth =</span> <span class="dv">60</span>, <span class="at">key_glyph =</span> <span class="st">"point"</span>) <span class="sc">+</span> </span>
+<span id="cb7-8"><a href="#cb7-8"></a>  <span class="fu">geom_richtext</span>(<span class="at">data =</span> <span class="fu">tibble</span>(), <span class="fu">aes</span>(<span class="at">x =</span> <span class="fl">4.2</span> <span class="sc">*</span> <span class="dv">60</span><span class="sc">^</span><span class="dv">2</span>, <span class="at">y =</span> <span class="dv">40</span>,</span>
+<span id="cb7-9"><a href="#cb7-9"></a>                                     <span class="at">label =</span> <span class="st">"Finish times at the 2023 Oslo Marathon"</span>),</span>
+<span id="cb7-10"><a href="#cb7-10"></a>                <span class="at">family =</span> <span class="st">"custom"</span>, <span class="at">size =</span> <span class="dv">32</span>, <span class="at">fontface =</span> <span class="st">"bold"</span>, <span class="at">hjust =</span> <span class="dv">0</span>, </span>
+<span id="cb7-11"><a href="#cb7-11"></a>                <span class="at">inherit.aes =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb7-12"><a href="#cb7-12"></a>                <span class="at">label.padding =</span> <span class="fu">unit</span>(<span class="fl">0.75</span>, <span class="st">"lines"</span>), <span class="at">label.color =</span> <span class="cn">NA</span>) <span class="sc">+</span> </span>
+<span id="cb7-13"><a href="#cb7-13"></a>  <span class="fu">labs</span>(</span>
+<span id="cb7-14"><a href="#cb7-14"></a>    <span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb7-15"><a href="#cb7-15"></a>    <span class="at">y =</span> <span class="cn">NULL</span>,</span>
+<span id="cb7-16"><a href="#cb7-16"></a>    <span class="at">fill =</span> <span class="cn">NULL</span></span>
+<span id="cb7-17"><a href="#cb7-17"></a>  ) <span class="sc">+</span> </span>
+<span id="cb7-18"><a href="#cb7-18"></a>  <span class="fu">scale_x_time</span>(<span class="at">breaks =</span> scales<span class="sc">::</span><span class="fu">date_breaks</span>(<span class="st">"30 mins"</span>)) <span class="sc">+</span></span>
+<span id="cb7-19"><a href="#cb7-19"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">breaks =</span> <span class="cn">NULL</span>, <span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">add =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">2</span>))) <span class="sc">+</span></span>
+<span id="cb7-20"><a href="#cb7-20"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"#4A9EA8"</span>, <span class="st">"#E16843"</span>, <span class="st">"#5F666D"</span>),</span>
+<span id="cb7-21"><a href="#cb7-21"></a>                    <span class="at">guide =</span> <span class="fu">guide_legend</span>(<span class="at">override.aes =</span> <span class="fu">list</span>(<span class="at">shape =</span> <span class="dv">21</span>, <span class="at">size =</span> <span class="dv">4</span>))) <span class="sc">+</span> </span>
+<span id="cb7-22"><a href="#cb7-22"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"custom"</span>) <span class="sc">+</span> </span>
+<span id="cb7-23"><a href="#cb7-23"></a>  <span class="fu">theme</span>(</span>
+<span id="cb7-24"><a href="#cb7-24"></a>    <span class="at">legend.title =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">0</span>),</span>
+<span id="cb7-25"><a href="#cb7-25"></a>    <span class="at">legend.position =</span> <span class="fu">c</span>(<span class="fl">0.85</span>, <span class="fl">0.25</span>),</span>
+<span id="cb7-26"><a href="#cb7-26"></a>    <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">30</span>),</span>
+<span id="cb7-27"><a href="#cb7-27"></a>    <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">40</span>)</span>
+<span id="cb7-28"><a href="#cb7-28"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="dare-to-label-creatively" class="slide level2">
+<h2>Dare to label creatively</h2>
+<div class="panel-tabset">
+<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Plot</a></li><li><a href="#tabset-6-2">Code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="index_files/figure-revealjs/ggdist-exmpl-pre-1.png" width="1400"></p>
+</div>
+</div>
+</div>
+<div id="tabset-6-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8" data-code-line-numbers="28-35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>ggdist_pi_base <span class="ot">&lt;-</span> taylor<span class="sc">::</span>taylor_all_songs <span class="sc">|&gt;</span> </span>
+<span id="cb8-2"><a href="#cb8-2"></a>  <span class="fu">mutate</span>(<span class="at">album_name =</span> <span class="fu">fct_relevel</span>(album_name, taylor<span class="sc">::</span>album_levels)) <span class="sc">|&gt;</span> </span>
+<span id="cb8-3"><a href="#cb8-3"></a>  <span class="fu">drop_na</span>(album_name) <span class="sc">|&gt;</span></span>
+<span id="cb8-4"><a href="#cb8-4"></a>  <span class="fu">filter</span>(<span class="fu">str_detect</span>(album_name, <span class="st">"Taylor's Version"</span>, <span class="at">negate =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb8-5"><a href="#cb8-5"></a>         <span class="sc">!</span>ep) <span class="sc">|&gt;</span> </span>
+<span id="cb8-6"><a href="#cb8-6"></a>  <span class="fu">select</span>(album_name, loudness) <span class="sc">|&gt;</span> </span>
+<span id="cb8-7"><a href="#cb8-7"></a>  <span class="fu">group_by</span>(album_name) <span class="sc">|&gt;</span> </span>
+<span id="cb8-8"><a href="#cb8-8"></a>  <span class="fu">median_qi</span>(<span class="at">.width =</span> <span class="fu">c</span>(<span class="fl">0.5</span>, <span class="fl">0.8</span>, <span class="fl">0.95</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb8-9"><a href="#cb8-9"></a>  <span class="fu">drop_na</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb8-10"><a href="#cb8-10"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> loudness, <span class="at">y =</span> album_name, </span>
+<span id="cb8-11"><a href="#cb8-11"></a>             <span class="at">xmin =</span> .lower, <span class="at">xmax =</span> .upper)) <span class="sc">+</span> </span>
+<span id="cb8-12"><a href="#cb8-12"></a>  <span class="fu">labs</span>(</span>
+<span id="cb8-13"><a href="#cb8-13"></a>    <span class="at">title =</span> <span class="st">"Loudness across the Taylor Swift discography"</span>,</span>
+<span id="cb8-14"><a href="#cb8-14"></a>    <span class="at">subtitle =</span> <span class="st">"Median, 50&lt;sup&gt;th&lt;/sup&gt;, 80&lt;sup&gt;th&lt;/sup&gt; and 95&lt;sup&gt;th&lt;/sup&gt; percentile"</span>,</span>
+<span id="cb8-15"><a href="#cb8-15"></a>    <span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb8-16"><a href="#cb8-16"></a>    <span class="at">y =</span> <span class="cn">NULL</span></span>
+<span id="cb8-17"><a href="#cb8-17"></a>  ) <span class="sc">+</span></span>
+<span id="cb8-18"><a href="#cb8-18"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"custom"</span>) <span class="sc">+</span> </span>
+<span id="cb8-19"><a href="#cb8-19"></a>  <span class="fu">theme</span>(</span>
+<span id="cb8-20"><a href="#cb8-20"></a>    <span class="at">plot.title.position =</span> <span class="st">"plot"</span>,</span>
+<span id="cb8-21"><a href="#cb8-21"></a>    <span class="at">plot.title =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">80</span>),</span>
+<span id="cb8-22"><a href="#cb8-22"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">40</span>),</span>
+<span id="cb8-23"><a href="#cb8-23"></a>    <span class="at">axis.text =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">40</span>),</span>
+<span id="cb8-24"><a href="#cb8-24"></a>    <span class="at">panel.grid.major.y =</span> <span class="fu">element_blank</span>()</span>
+<span id="cb8-25"><a href="#cb8-25"></a>  )</span>
+<span id="cb8-26"><a href="#cb8-26"></a></span>
+<span id="cb8-27"><a href="#cb8-27"></a>ggdist_pi_base <span class="sc">+</span> </span>
+<span id="cb8-28"><a href="#cb8-28"></a>    <span class="fu">geom_pointinterval</span>() <span class="sc">+</span></span>
+<span id="cb8-29"><a href="#cb8-29"></a>    <span class="fu">labs</span>(</span>
+<span id="cb8-30"><a href="#cb8-30"></a>      <span class="at">x =</span> <span class="st">"Loudness (in dB)"</span></span>
+<span id="cb8-31"><a href="#cb8-31"></a>    ) <span class="sc">+</span></span>
+<span id="cb8-32"><a href="#cb8-32"></a>    <span class="fu">scale_x_continuous</span>(<span class="at">trans =</span> <span class="st">"reverse"</span>) <span class="sc">+</span></span>
+<span id="cb8-33"><a href="#cb8-33"></a>    <span class="fu">theme</span>(</span>
+<span id="cb8-34"><a href="#cb8-34"></a>      <span class="at">axis.title =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">40</span>),</span>
+<span id="cb8-35"><a href="#cb8-35"></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="dare-to-label-creatively-1" class="slide level2">
+<h2>Dare to label creatively</h2>
+<div class="panel-tabset">
+<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">Plot</a></li><li><a href="#tabset-7-2">Code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-7-1">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="index_files/figure-revealjs/ggdist-exmpl-post-1.png" width="1400"></p>
+</div>
+</div>
+</div>
+<div id="tabset-7-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9" data-code-line-numbers="2-13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a>ggdist_pi_base <span class="sc">+</span> </span>
+<span id="cb9-2"><a href="#cb9-2"></a>  <span class="fu">geom_text</span>(<span class="at">data =</span> . <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(album_name) <span class="sc">%&gt;%</span> <span class="fu">summarise</span>(<span class="at">label_pos =</span> <span class="fu">max</span>(.upper)),</span>
+<span id="cb9-3"><a href="#cb9-3"></a>            <span class="fu">aes</span>(<span class="at">x =</span> label_pos, <span class="at">y =</span> album_name,</span>
+<span id="cb9-4"><a href="#cb9-4"></a>                <span class="at">label =</span> album_name, <span class="at">color =</span> album_name),</span>
+<span id="cb9-5"><a href="#cb9-5"></a>            <span class="at">family =</span> <span class="st">"custom"</span>, <span class="at">size =</span> <span class="dv">25</span>,</span>
+<span id="cb9-6"><a href="#cb9-6"></a>            <span class="at">nudge_y =</span> <span class="fl">0.33</span>, <span class="at">hjust =</span> <span class="dv">0</span>,</span>
+<span id="cb9-7"><a href="#cb9-7"></a>            <span class="at">inherit.aes =</span> <span class="cn">FALSE</span>, <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb9-8"><a href="#cb9-8"></a>  <span class="fu">geom_pointinterval</span>() <span class="sc">+</span></span>
+<span id="cb9-9"><a href="#cb9-9"></a>  <span class="fu">geom_curve</span>(<span class="at">data =</span> <span class="fu">tibble</span>(), <span class="fu">aes</span>(<span class="at">x =</span> <span class="sc">-</span><span class="dv">12</span>, <span class="at">y =</span> <span class="dv">5</span>, <span class="at">xend =</span> <span class="sc">-</span><span class="fl">9.5</span>, <span class="at">yend =</span> <span class="fl">5.9</span>), </span>
+<span id="cb9-10"><a href="#cb9-10"></a>             <span class="at">arrow =</span> <span class="fu">arrow</span>(<span class="at">length =</span> <span class="fu">unit</span>(<span class="fl">0.5</span>, <span class="st">"lines"</span>)), </span>
+<span id="cb9-11"><a href="#cb9-11"></a>             <span class="at">curvature =</span> <span class="sc">-</span><span class="fl">0.4</span>, <span class="at">inherit.aes =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb9-12"><a href="#cb9-12"></a>  <span class="fu">geom_richtext</span>(<span class="at">data =</span> <span class="fu">tibble</span>(), <span class="fu">aes</span>(<span class="at">x =</span> <span class="sc">-</span><span class="dv">12</span>, <span class="at">y =</span> <span class="fl">4.9</span>, <span class="at">label =</span> <span class="st">"Marks indicate the median, 50&lt;sup&gt;th&lt;/sup&gt;,&lt;br&gt;80&lt;sup&gt;th&lt;/sup&gt; and 95&lt;sup&gt;th&lt;/sup&gt; percentile"</span>),</span>
+<span id="cb9-13"><a href="#cb9-13"></a>                <span class="at">family =</span> <span class="st">"custom"</span>, <span class="at">size =</span> <span class="dv">14</span>, <span class="at">lineheight =</span> <span class="dv">0</span>, <span class="at">inherit.aes =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb9-14"><a href="#cb9-14"></a>  <span class="fu">labs</span>(</span>
+<span id="cb9-15"><a href="#cb9-15"></a>    <span class="at">subtitle =</span> <span class="cn">NULL</span></span>
+<span id="cb9-16"><a href="#cb9-16"></a>  ) <span class="sc">+</span></span>
+<span id="cb9-17"><a href="#cb9-17"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">trans =</span> <span class="st">"reverse"</span>,</span>
+<span id="cb9-18"><a href="#cb9-18"></a>                     <span class="at">labels =</span> scales<span class="sc">::</span><span class="fu">label_number</span>(<span class="at">suffix =</span> <span class="st">" dB"</span>),</span>
+<span id="cb9-19"><a href="#cb9-19"></a>                     <span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">add =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>))) <span class="sc">+</span></span>
+<span id="cb9-20"><a href="#cb9-20"></a>  taylor<span class="sc">::</span><span class="fu">scale_color_albums</span>() <span class="sc">+</span></span>
+<span id="cb9-21"><a href="#cb9-21"></a>  <span class="fu">theme</span>(</span>
+<span id="cb9-22"><a href="#cb9-22"></a>    <span class="at">axis.text.y =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb9-23"><a href="#cb9-23"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="another-example" class="slide level2">
+<h2>Another example</h2>
+<div class="panel-tabset">
+<ul id="tabset-8" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-8-1">Plot</a></li><li><a href="#tabset-8-2">Code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-8-1">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="index_files/figure-revealjs/taylor-scatter-1.png" width="1400"></p>
+</div>
+</div>
+</div>
+<div id="tabset-8-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10" data-code-line-numbers="5-13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a>taylor<span class="sc">::</span>taylor_albums <span class="sc">|&gt;</span> </span>
+<span id="cb10-2"><a href="#cb10-2"></a>  <span class="fu">drop_na</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb10-3"><a href="#cb10-3"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> user_score <span class="sc">*</span> <span class="dv">10</span>, <span class="at">y =</span> metacritic_score, <span class="at">fill =</span> album_name)) <span class="sc">+</span> </span>
+<span id="cb10-4"><a href="#cb10-4"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">6</span>, <span class="at">shape =</span> <span class="dv">21</span>, <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span> </span>
+<span id="cb10-5"><a href="#cb10-5"></a>  ggrepel<span class="sc">::</span><span class="fu">geom_label_repel</span>(<span class="fu">aes</span>(<span class="at">label =</span> album_name), <span class="at">size =</span> <span class="dv">12</span>,</span>
+<span id="cb10-6"><a href="#cb10-6"></a>                            <span class="at">min.segment.length =</span> <span class="dv">0</span>,</span>
+<span id="cb10-7"><a href="#cb10-7"></a>                            <span class="at">max.overlaps =</span> <span class="dv">15</span>, <span class="at">seed =</span> <span class="dv">42</span>,</span>
+<span id="cb10-8"><a href="#cb10-8"></a>                            <span class="at">fill =</span> <span class="st">"white"</span>, <span class="at">family =</span> <span class="st">"custom"</span>) <span class="sc">+</span></span>
+<span id="cb10-9"><a href="#cb10-9"></a>  <span class="fu">geom_richtext</span>(<span class="at">data =</span> <span class="fu">tibble</span>(), <span class="fu">aes</span>(<span class="at">x =</span> <span class="fl">60.5</span>, <span class="at">y =</span> <span class="dv">85</span>,</span>
+<span id="cb10-10"><a href="#cb10-10"></a>                                     <span class="at">label =</span> <span class="st">"Users are more&lt;br&gt;positive about Taytay&lt;br&gt;albums than critics"</span>),</span>
+<span id="cb10-11"><a href="#cb10-11"></a>                <span class="at">family =</span> <span class="st">"custom"</span>, <span class="at">size =</span> <span class="dv">36</span>, <span class="at">fontface =</span> <span class="st">"bold"</span>, <span class="at">hjust =</span> <span class="dv">0</span>, <span class="at">lineheight =</span> <span class="dv">0</span>,</span>
+<span id="cb10-12"><a href="#cb10-12"></a>                <span class="at">inherit.aes =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb10-13"><a href="#cb10-13"></a>                <span class="at">label.padding =</span> <span class="fu">unit</span>(<span class="fl">0.75</span>, <span class="st">"lines"</span>), <span class="at">label.color =</span> <span class="cn">NA</span>) <span class="sc">+</span></span>
+<span id="cb10-14"><a href="#cb10-14"></a>  <span class="fu">labs</span>(</span>
+<span id="cb10-15"><a href="#cb10-15"></a>    <span class="at">x =</span> <span class="st">"User ratings"</span>,</span>
+<span id="cb10-16"><a href="#cb10-16"></a>    <span class="at">y =</span> <span class="st">"Metacritic ratings"</span></span>
+<span id="cb10-17"><a href="#cb10-17"></a>  ) <span class="sc">+</span> </span>
+<span id="cb10-18"><a href="#cb10-18"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">60</span>, <span class="dv">100</span>)) <span class="sc">+</span></span>
+<span id="cb10-19"><a href="#cb10-19"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">60</span>, <span class="dv">100</span>)) <span class="sc">+</span></span>
+<span id="cb10-20"><a href="#cb10-20"></a>  taylor<span class="sc">::</span><span class="fu">scale_fill_albums</span>() <span class="sc">+</span></span>
+<span id="cb10-21"><a href="#cb10-21"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"custom"</span>) <span class="sc">+</span> </span>
+<span id="cb10-22"><a href="#cb10-22"></a>  <span class="fu">theme</span>(</span>
+<span id="cb10-23"><a href="#cb10-23"></a>    <span class="at">axis.title =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">60</span>),</span>
+<span id="cb10-24"><a href="#cb10-24"></a>    <span class="at">axis.text =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">50</span>)</span>
+<span id="cb10-25"><a href="#cb10-25"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="one-more-example" class="slide level2">
+<h2>One more example</h2>
+<div class="panel-tabset">
+<ul id="tabset-9" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-9-1">Plot</a></li><li><a href="#tabset-9-2">Code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-9-1">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="index_files/figure-revealjs/ggdist-valence-1.png" width="1400"></p>
+</div>
+</div>
+</div>
+<div id="tabset-9-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11" data-code-line-numbers="9,16-17,26-30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a>album_colors <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">album_name =</span> taylor<span class="sc">::</span>album_levels,</span>
+<span id="cb11-2"><a href="#cb11-2"></a>                       <span class="at">col =</span> taylor<span class="sc">::</span>album_compare)</span>
+<span id="cb11-3"><a href="#cb11-3"></a></span>
+<span id="cb11-4"><a href="#cb11-4"></a>taylor<span class="sc">::</span>taylor_all_songs <span class="sc">|&gt;</span> </span>
+<span id="cb11-5"><a href="#cb11-5"></a>  <span class="fu">filter</span>(<span class="fu">str_detect</span>(album_name, <span class="st">"Holiday Collection"</span>, <span class="at">negate =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb11-6"><a href="#cb11-6"></a>         <span class="fu">str_detect</span>(album_name, <span class="st">"Taylor's Version"</span>, <span class="at">negate =</span> <span class="cn">TRUE</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb11-7"><a href="#cb11-7"></a>  <span class="fu">drop_na</span>(valence, album_name) <span class="sc">|&gt;</span> </span>
+<span id="cb11-8"><a href="#cb11-8"></a>  <span class="fu">inner_join</span>(album_colors, <span class="at">by =</span> <span class="st">"album_name"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb11-9"><a href="#cb11-9"></a>  <span class="fu">mutate</span>(<span class="at">album_label =</span> <span class="fu">str_glue</span>(<span class="st">"&lt;span style='color: </span><span class="sc">\"</span><span class="st">{col}</span><span class="sc">\"</span><span class="st">'&gt;{album_name} ({year(album_release)})&lt;/span&gt;"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb11-10"><a href="#cb11-10"></a>  <span class="fu">group_by</span>(album_label) <span class="sc">|&gt;</span> </span>
+<span id="cb11-11"><a href="#cb11-11"></a>  <span class="fu">mutate</span>(<span class="at">median_valence =</span> <span class="fu">median</span>(valence)) <span class="sc">|&gt;</span> </span>
+<span id="cb11-12"><a href="#cb11-12"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> valence, <span class="at">y =</span> <span class="fu">reorder</span>(album_label, median_valence), <span class="at">fill =</span> album_name)) <span class="sc">+</span></span>
+<span id="cb11-13"><a href="#cb11-13"></a>  <span class="fu">stat_gradientinterval</span>(<span class="at">position =</span> <span class="st">"dodge"</span>, <span class="at">fill_type =</span> <span class="st">"gradient"</span>) <span class="sc">+</span></span>
+<span id="cb11-14"><a href="#cb11-14"></a>  <span class="fu">geom_beeswarm</span>(<span class="at">shape =</span> <span class="dv">21</span>, <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb11-15"><a href="#cb11-15"></a>  <span class="fu">labs</span>(</span>
+<span id="cb11-16"><a href="#cb11-16"></a>    <span class="at">title =</span> <span class="st">"</span><span class="sc">\"</span><span class="st">Valence</span><span class="sc">\"</span><span class="st"> per Taylor Swift album"</span>,</span>
+<span id="cb11-17"><a href="#cb11-17"></a>    <span class="at">subtitle =</span> <span class="st">"**va·lence** [noun]: A measure describing the musical positiveness conveyed by a track.&lt;br&gt;Tracks with high valence sound more positive, while tracks with low valence sound more negative"</span>,</span>
+<span id="cb11-18"><a href="#cb11-18"></a>    <span class="at">x =</span> <span class="st">"Valence"</span>,</span>
+<span id="cb11-19"><a href="#cb11-19"></a>    <span class="at">y =</span> <span class="cn">NULL</span></span>
+<span id="cb11-20"><a href="#cb11-20"></a>  ) <span class="sc">+</span> </span>
+<span id="cb11-21"><a href="#cb11-21"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>), <span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">add =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.01</span>))) <span class="sc">+</span></span>
+<span id="cb11-22"><a href="#cb11-22"></a>  taylor<span class="sc">::</span><span class="fu">scale_fill_albums</span>(<span class="at">guide =</span> <span class="st">"none"</span>) <span class="sc">+</span></span>
+<span id="cb11-23"><a href="#cb11-23"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"custom"</span>) <span class="sc">+</span></span>
+<span id="cb11-24"><a href="#cb11-24"></a>  <span class="fu">theme</span>(</span>
+<span id="cb11-25"><a href="#cb11-25"></a>    <span class="at">plot.title.position =</span> <span class="st">"plot"</span>,</span>
+<span id="cb11-26"><a href="#cb11-26"></a>    <span class="at">plot.title =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">90</span>),</span>
+<span id="cb11-27"><a href="#cb11-27"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">40</span>, <span class="at">lineheight =</span> <span class="dv">0</span>),</span>
+<span id="cb11-28"><a href="#cb11-28"></a>    <span class="at">axis.text.x =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">40</span>),</span>
+<span id="cb11-29"><a href="#cb11-29"></a>    <span class="at">axis.text.y =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">40</span>),</span>
+<span id="cb11-30"><a href="#cb11-30"></a>    <span class="at">axis.title =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">60</span>),</span>
+<span id="cb11-31"><a href="#cb11-31"></a>    <span class="at">panel.grid.major.y =</span> <span class="fu">element_blank</span>()</span>
+<span id="cb11-32"><a href="#cb11-32"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="label-axes-ticks-directly" class="slide level2">
+<h2>Label axes ticks directly</h2>
+<div class="panel-tabset">
+<ul id="tabset-10" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-10-1">Plot</a></li><li><a href="#tabset-10-2">Code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-10-1">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="index_files/figure-revealjs/label-ticks-directly-1.png" width="1400"></p>
+</div>
+</div>
+</div>
+<div id="tabset-10-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12" data-code-line-numbers="31-33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a>scatter_fancy_base <span class="ot">&lt;-</span> taylor<span class="sc">::</span>taylor_all_songs <span class="sc">|&gt;</span> </span>
+<span id="cb12-2"><a href="#cb12-2"></a>  <span class="fu">drop_na</span>(tempo, loudness) <span class="sc">|&gt;</span> </span>
+<span id="cb12-3"><a href="#cb12-3"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> tempo, <span class="at">y =</span> loudness)) <span class="sc">+</span></span>
+<span id="cb12-4"><a href="#cb12-4"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span> </span>
+<span id="cb12-5"><a href="#cb12-5"></a>  <span class="fu">geom_rug</span>(<span class="at">alpha =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
+<span id="cb12-6"><a href="#cb12-6"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">color =</span> <span class="st">"maroon"</span>, <span class="at">fill =</span> <span class="st">"maroon"</span>, <span class="at">alpha =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
+<span id="cb12-7"><a href="#cb12-7"></a>  <span class="fu">labs</span>(</span>
+<span id="cb12-8"><a href="#cb12-8"></a>    <span class="at">title =</span> <span class="st">"Correlation between tempo and loudness&lt;br&gt;in Mrs. Swift's discography"</span>,</span>
+<span id="cb12-9"><a href="#cb12-9"></a>    <span class="at">fill =</span> <span class="cn">NULL</span></span>
+<span id="cb12-10"><a href="#cb12-10"></a>  ) <span class="sc">+</span></span>
+<span id="cb12-11"><a href="#cb12-11"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">trans =</span> <span class="st">"reverse"</span>, <span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="sc">-</span><span class="dv">16</span>)) <span class="sc">+</span></span>
+<span id="cb12-12"><a href="#cb12-12"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"custom"</span>) <span class="sc">+</span> </span>
+<span id="cb12-13"><a href="#cb12-13"></a>  <span class="fu">theme</span>(</span>
+<span id="cb12-14"><a href="#cb12-14"></a>    <span class="at">plot.title.position =</span> <span class="st">"plot"</span>,</span>
+<span id="cb12-15"><a href="#cb12-15"></a>    <span class="at">plot.title =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">70</span>, <span class="at">lineheight =</span> <span class="dv">0</span>),</span>
+<span id="cb12-16"><a href="#cb12-16"></a>    <span class="at">axis.title =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">60</span>),</span>
+<span id="cb12-17"><a href="#cb12-17"></a>    <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">40</span>),</span>
+<span id="cb12-18"><a href="#cb12-18"></a>    <span class="at">legend.position =</span> <span class="st">"bottom"</span>,</span>
+<span id="cb12-19"><a href="#cb12-19"></a>    <span class="at">legend.text =</span> <span class="fu">element_blank</span>()</span>
+<span id="cb12-20"><a href="#cb12-20"></a>  )</span>
+<span id="cb12-21"><a href="#cb12-21"></a></span>
+<span id="cb12-22"><a href="#cb12-22"></a>(scatter_fancy_base <span class="sc">+</span></span>
+<span id="cb12-23"><a href="#cb12-23"></a>    <span class="fu">labs</span>(</span>
+<span id="cb12-24"><a href="#cb12-24"></a>      <span class="at">x =</span> <span class="st">"Tempo (in bpm)"</span>,</span>
+<span id="cb12-25"><a href="#cb12-25"></a>      <span class="at">y =</span> <span class="st">"Loudness (in dB)"</span></span>
+<span id="cb12-26"><a href="#cb12-26"></a>    )) <span class="sc">+</span></span>
+<span id="cb12-27"><a href="#cb12-27"></a>  (scatter_fancy_base <span class="sc">+</span></span>
+<span id="cb12-28"><a href="#cb12-28"></a>     <span class="fu">labs</span>(</span>
+<span id="cb12-29"><a href="#cb12-29"></a>       <span class="at">x =</span> <span class="st">"Tempo"</span>,</span>
+<span id="cb12-30"><a href="#cb12-30"></a>       <span class="at">y =</span> <span class="st">"Loudness"</span></span>
+<span id="cb12-31"><a href="#cb12-31"></a>     ) <span class="sc">+</span></span>
+<span id="cb12-32"><a href="#cb12-32"></a>     <span class="fu">scale_x_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span><span class="fu">label_number</span>(<span class="at">suffix =</span> <span class="st">" bpm"</span>)) <span class="sc">+</span></span>
+<span id="cb12-33"><a href="#cb12-33"></a>     <span class="fu">scale_y_continuous</span>(<span class="at">trans =</span> <span class="st">"reverse"</span>, <span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="sc">-</span><span class="dv">16</span>),</span>
+<span id="cb12-34"><a href="#cb12-34"></a>                        <span class="at">labels =</span> scales<span class="sc">::</span><span class="fu">label_number</span>(<span class="at">suffix =</span> <span class="st">" dB"</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="custom-fonts" class="slide level2">
+<h2>Custom fonts</h2>
+<div class="text-slide">
+<p>Use any font from the Google Fonts library in your plots</p>
+<p>Can help to better communicate a ✨vibe✨</p>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="fu">library</span>(showtext)</span>
+<span id="cb13-2"><a href="#cb13-2"></a><span class="fu">font_add_google</span>(<span class="at">name =</span> <span class="st">"Merriweather"</span>, <span class="at">family =</span> <span class="st">"custom"</span>)</span>
+<span id="cb13-3"><a href="#cb13-3"></a><span class="fu">showtext_auto</span>()</span>
+<span id="cb13-4"><a href="#cb13-4"></a></span>
+<span id="cb13-5"><a href="#cb13-5"></a>p <span class="sc">+</span> <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"custom"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="an-example-1" class="slide level2">
+<h2>An example</h2>
+<div class="panel-tabset">
+<ul id="tabset-11" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-11-1">Plot</a></li><li><a href="#tabset-11-2">Source</a></li></ul>
+<div class="tab-content">
+<div id="tabset-11-1">
+<div class="center-x">
+<p><img data-src="https://danielroelfs-dev.netlify.app/blog/analyzing-bach/index.markdown_strict_files/figure-markdown_strict/colplot-key-cat1-1.png" style="width:80.0%" alt="Plot showing a different font"></p>
+</div>
+</div>
+<div id="tabset-11-2">
+<p>Shameless self-referencing: <a href="https://danielroelfs.com/blog/analyzing-bach/">danielroelfs.com</a></p>
+</div>
+</div>
+</div>
+</section>
+<section id="resources" class="slide level2" data-preview-link="true">
+<h2>Resources</h2>
+<div class="midlist" style="font-size: 3vmin;">
+<p><strong>Enhancing plots in {ggplot2}</strong>, Me, <em>Imaging Group PhD Seminar</em> (2022), <a href="https://danielroelfs.github.io/slides/2022-11-16-phd-club-seminar/phd-club-seminar_index.html">Slides and resources from the presentation last year</a></p>
+<p><strong>Designing Charts in R</strong>, Cédric Scherer, <em>Masterclass for the Data Visualization Society</em> (2023), <a href="https://z3tt.github.io/ggplot-dvs/slides.html">slides for the presentation</a></p>
+<p><strong>Beyond Bar and Line Graphs: Time for a New Data Presentation Paradigm</strong>, Weissgerber <em>et al.</em>, <em>PLoS Biology</em> (2015), DOI: <a href="https://doi.org/10.1371/journal.pbio.1002128">10.1371/journal.pbio.1002128</a></p>
+<p><strong>The misuse of colour in science communication</strong>, Crameri <em>et al.</em>, <em>Nature Communications</em> (2020), DOI: <a href="https://doi.org/10.1038/s41467-020-19160-7">10.1038/s41467-020-19160-7</a></p>
+<p><strong>More examples of the things showed today</strong>, Me, <em>danielroelfs.com</em>, <a href="https://danielroelfs.com/blog">danielroelfs.com/blog</a></p>
+</div>
+</section>
+<section id="chapter-x-3" class="slide level2 chapter center">
+<h2>Chapter X</h2>
 <h3 id="dare-to-rebel">Dare to rebel</h3>
 </section>
+<section id="not-all-plots-need-to-be-alike" class="slide level2">
+<h2>Not all plots need to be alike</h2>
+<div class="text-slide">
+<p>Data viz can serve two purposes: - Communicate data - Capture attention</p>
+<div class="fragment">
+<p>It’s totally allowed to make a pretty, creative plot for your presentations, and a separate basic one for your manuscript.</p>
+</div>
+<div class="fragment">
+<p>So, release your inner creative whenever you can</p>
+</div>
+<div class="fragment">
+<p>Fade in</p>
+</div>
+</div>
 <!--
 ## Move the y-axis to the right
 
@@ -651,399 +1082,124 @@ readxl::read_excel("~/Downloads/Abortions (NHCc).xls", skip = 3) |>
 :::
 
 -->
+</section>
 <section id="move-the-title-to-the-plot-area" class="slide level2">
 <h2>Move the title to the plot area</h2>
-<div class="panel-tabset">
-<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Plot</a></li><li><a href="#tabset-4-2">Code</a></li></ul>
-<div class="tab-content">
-<div id="tabset-4-1">
-<div class="cell">
-<div class="cell-output-display">
-<p><img data-src="index_files/figure-revealjs/marathon-times-1.png" width="1400"></p>
-</div>
-</div>
-</div>
-<div id="tabset-4-2">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6" data-code-line-numbers="4-8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>data_marathon <span class="sc">|&gt;</span> </span>
-<span id="cb6-2"><a href="#cb6-2"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> time, <span class="at">fill =</span> sex)) <span class="sc">+</span> </span>
-<span id="cb6-3"><a href="#cb6-3"></a>  <span class="fu">geom_histogram</span>(<span class="at">alpha =</span> <span class="fl">0.9</span>, <span class="at">binwidth =</span> <span class="dv">60</span>, <span class="at">key_glyph =</span> <span class="st">"point"</span>) <span class="sc">+</span> </span>
-<span id="cb6-4"><a href="#cb6-4"></a>  <span class="fu">geom_richtext</span>(<span class="at">data =</span> <span class="fu">tibble</span>(), <span class="fu">aes</span>(<span class="at">x =</span> <span class="fl">4.2</span> <span class="sc">*</span> <span class="dv">60</span><span class="sc">^</span><span class="dv">2</span>, <span class="at">y =</span> <span class="dv">40</span>,</span>
-<span id="cb6-5"><a href="#cb6-5"></a>                                     <span class="at">label =</span> <span class="st">"Finish times at the 2023 Oslo Marathon"</span>),</span>
-<span id="cb6-6"><a href="#cb6-6"></a>                <span class="at">family =</span> <span class="st">"custom"</span>, <span class="at">size =</span> <span class="dv">32</span>, <span class="at">fontface =</span> <span class="st">"bold"</span>, <span class="at">hjust =</span> <span class="dv">0</span>, </span>
-<span id="cb6-7"><a href="#cb6-7"></a>                <span class="at">inherit.aes =</span> <span class="cn">FALSE</span>,</span>
-<span id="cb6-8"><a href="#cb6-8"></a>                <span class="at">label.padding =</span> <span class="fu">unit</span>(<span class="fl">0.75</span>, <span class="st">"lines"</span>), <span class="at">label.color =</span> <span class="cn">NA</span>) <span class="sc">+</span> </span>
-<span id="cb6-9"><a href="#cb6-9"></a>  <span class="fu">labs</span>(</span>
-<span id="cb6-10"><a href="#cb6-10"></a>    <span class="at">x =</span> <span class="cn">NULL</span>,</span>
-<span id="cb6-11"><a href="#cb6-11"></a>    <span class="at">y =</span> <span class="cn">NULL</span>,</span>
-<span id="cb6-12"><a href="#cb6-12"></a>    <span class="at">fill =</span> <span class="cn">NULL</span></span>
-<span id="cb6-13"><a href="#cb6-13"></a>  ) <span class="sc">+</span> </span>
-<span id="cb6-14"><a href="#cb6-14"></a>  <span class="fu">scale_x_time</span>(<span class="at">breaks =</span> scales<span class="sc">::</span><span class="fu">date_breaks</span>(<span class="st">"30 mins"</span>)) <span class="sc">+</span></span>
-<span id="cb6-15"><a href="#cb6-15"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">breaks =</span> <span class="cn">NULL</span>, <span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">add =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">2</span>))) <span class="sc">+</span></span>
-<span id="cb6-16"><a href="#cb6-16"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"#4A9EA8"</span>, <span class="st">"#E16843"</span>, <span class="st">"#5F666D"</span>),</span>
-<span id="cb6-17"><a href="#cb6-17"></a>                    <span class="at">guide =</span> <span class="fu">guide_legend</span>(<span class="at">override.aes =</span> <span class="fu">list</span>(<span class="at">shape =</span> <span class="dv">21</span>, <span class="at">size =</span> <span class="dv">4</span>))) <span class="sc">+</span> </span>
-<span id="cb6-18"><a href="#cb6-18"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"custom"</span>) <span class="sc">+</span> </span>
-<span id="cb6-19"><a href="#cb6-19"></a>  <span class="fu">theme</span>(</span>
-<span id="cb6-20"><a href="#cb6-20"></a>    <span class="at">legend.title =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">0</span>),</span>
-<span id="cb6-21"><a href="#cb6-21"></a>    <span class="at">legend.position =</span> <span class="fu">c</span>(<span class="fl">0.85</span>, <span class="fl">0.25</span>),</span>
-<span id="cb6-22"><a href="#cb6-22"></a>    <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">30</span>),</span>
-<span id="cb6-23"><a href="#cb6-23"></a>    <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">40</span>)</span>
-<span id="cb6-24"><a href="#cb6-24"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="label-everything" class="slide level2">
-<h2>Label everything</h2>
-<div class="panel-tabset">
-<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Plot</a></li><li><a href="#tabset-5-2">Code</a></li></ul>
-<div class="tab-content">
-<div id="tabset-5-1">
-<div class="cell">
-<div class="cell-output-display">
-<p><img data-src="index_files/figure-revealjs/taylor-scatter-1.png" width="1400"></p>
-</div>
-</div>
-</div>
-<div id="tabset-5-2">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7" data-code-line-numbers="5-8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>taylor<span class="sc">::</span>taylor_albums <span class="sc">|&gt;</span> </span>
-<span id="cb7-2"><a href="#cb7-2"></a>  <span class="fu">drop_na</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb7-3"><a href="#cb7-3"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> user_score <span class="sc">*</span> <span class="dv">10</span>, <span class="at">y =</span> metacritic_score, <span class="at">fill =</span> album_name)) <span class="sc">+</span> </span>
-<span id="cb7-4"><a href="#cb7-4"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">6</span>, <span class="at">shape =</span> <span class="dv">21</span>, <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span> </span>
-<span id="cb7-5"><a href="#cb7-5"></a>  ggrepel<span class="sc">::</span><span class="fu">geom_label_repel</span>(<span class="fu">aes</span>(<span class="at">label =</span> album_name), <span class="at">size =</span> <span class="dv">12</span>,</span>
-<span id="cb7-6"><a href="#cb7-6"></a>                            <span class="at">min.segment.length =</span> <span class="dv">0</span>,</span>
-<span id="cb7-7"><a href="#cb7-7"></a>                            <span class="at">max.overlaps =</span> <span class="dv">15</span>, <span class="at">seed =</span> <span class="dv">42</span>,</span>
-<span id="cb7-8"><a href="#cb7-8"></a>                            <span class="at">fill =</span> <span class="st">"white"</span>, <span class="at">family =</span> <span class="st">"custom"</span>) <span class="sc">+</span></span>
-<span id="cb7-9"><a href="#cb7-9"></a>  <span class="fu">geom_richtext</span>(<span class="at">data =</span> <span class="fu">tibble</span>(), <span class="fu">aes</span>(<span class="at">x =</span> <span class="fl">60.5</span>, <span class="at">y =</span> <span class="dv">85</span>,</span>
-<span id="cb7-10"><a href="#cb7-10"></a>                                     <span class="at">label =</span> <span class="st">"Users are more&lt;br&gt;positive about Taytay&lt;br&gt;albums than critics"</span>),</span>
-<span id="cb7-11"><a href="#cb7-11"></a>                <span class="at">family =</span> <span class="st">"custom"</span>, <span class="at">size =</span> <span class="dv">36</span>, <span class="at">fontface =</span> <span class="st">"bold"</span>, <span class="at">hjust =</span> <span class="dv">0</span>, <span class="at">lineheight =</span> <span class="dv">0</span>,</span>
-<span id="cb7-12"><a href="#cb7-12"></a>                <span class="at">inherit.aes =</span> <span class="cn">FALSE</span>,</span>
-<span id="cb7-13"><a href="#cb7-13"></a>                <span class="at">label.padding =</span> <span class="fu">unit</span>(<span class="fl">0.75</span>, <span class="st">"lines"</span>), <span class="at">label.color =</span> <span class="cn">NA</span>) <span class="sc">+</span></span>
-<span id="cb7-14"><a href="#cb7-14"></a>  <span class="fu">labs</span>(</span>
-<span id="cb7-15"><a href="#cb7-15"></a>    <span class="at">x =</span> <span class="st">"User ratings"</span>,</span>
-<span id="cb7-16"><a href="#cb7-16"></a>    <span class="at">y =</span> <span class="st">"Metacritic ratings"</span></span>
-<span id="cb7-17"><a href="#cb7-17"></a>  ) <span class="sc">+</span> </span>
-<span id="cb7-18"><a href="#cb7-18"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">60</span>, <span class="dv">100</span>)) <span class="sc">+</span></span>
-<span id="cb7-19"><a href="#cb7-19"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">60</span>, <span class="dv">100</span>)) <span class="sc">+</span></span>
-<span id="cb7-20"><a href="#cb7-20"></a>  taylor<span class="sc">::</span><span class="fu">scale_fill_albums</span>() <span class="sc">+</span></span>
-<span id="cb7-21"><a href="#cb7-21"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"custom"</span>) <span class="sc">+</span> </span>
-<span id="cb7-22"><a href="#cb7-22"></a>  <span class="fu">theme</span>(</span>
-<span id="cb7-23"><a href="#cb7-23"></a>    <span class="at">axis.title =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">60</span>),</span>
-<span id="cb7-24"><a href="#cb7-24"></a>    <span class="at">axis.text =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">50</span>)</span>
-<span id="cb7-25"><a href="#cb7-25"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</div>
-</div>
 </section>
 <section id="label-averages" class="slide level2">
 <h2>Label averages</h2>
 <div class="panel-tabset">
-<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Plot</a></li><li><a href="#tabset-6-2">Code</a></li></ul>
+<ul id="tabset-12" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-12-1">Plot</a></li><li><a href="#tabset-12-2">Code</a></li></ul>
 <div class="tab-content">
-<div id="tabset-6-1">
+<div id="tabset-12-1">
 <div class="cell">
 <div class="cell-output-display">
 <p><img data-src="index_files/figure-revealjs/taylor-tempos-1.png" width="1400"></p>
 </div>
 </div>
 </div>
-<div id="tabset-6-2">
+<div id="tabset-12-2">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8" data-code-line-numbers="1-10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>data_taylor_songs <span class="ot">&lt;-</span> taylor<span class="sc">::</span>taylor_all_songs <span class="sc">|&gt;</span> </span>
-<span id="cb8-2"><a href="#cb8-2"></a>  <span class="fu">filter</span>(<span class="fu">str_detect</span>(album_name, <span class="st">"Taylor's Version"</span>, <span class="at">negate =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb8-3"><a href="#cb8-3"></a>         <span class="fu">str_detect</span>(album_name, <span class="st">"Holiday Collection"</span>, <span class="at">negate =</span> <span class="cn">TRUE</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb8-4"><a href="#cb8-4"></a>  <span class="fu">drop_na</span>(tempo) <span class="sc">|&gt;</span> </span>
-<span id="cb8-5"><a href="#cb8-5"></a>  <span class="fu">mutate</span>(<span class="at">cat_median =</span> <span class="fu">median</span>(tempo),</span>
-<span id="cb8-6"><a href="#cb8-6"></a>         <span class="at">cat_q25 =</span> <span class="fu">quantile</span>(tempo, <span class="at">probs =</span> <span class="fl">0.25</span>),</span>
-<span id="cb8-7"><a href="#cb8-7"></a>         <span class="at">cat_q75 =</span> <span class="fu">quantile</span>(tempo, <span class="at">probs =</span> <span class="fl">0.75</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb8-8"><a href="#cb8-8"></a>  <span class="fu">group_by</span>(album_name) <span class="sc">|&gt;</span> </span>
-<span id="cb8-9"><a href="#cb8-9"></a>  <span class="fu">mutate</span>(<span class="at">album_median =</span> <span class="fu">median</span>(tempo),</span>
-<span id="cb8-10"><a href="#cb8-10"></a>         <span class="at">album_mad =</span> <span class="fu">mad</span>(tempo))</span>
-<span id="cb8-11"><a href="#cb8-11"></a></span>
-<span id="cb8-12"><a href="#cb8-12"></a>data_taylor_songs <span class="sc">|&gt;</span> </span>
-<span id="cb8-13"><a href="#cb8-13"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> tempo, <span class="at">y =</span> <span class="fu">reorder</span>(album_name, album_release))) <span class="sc">+</span></span>
-<span id="cb8-14"><a href="#cb8-14"></a>  <span class="fu">geom_rect</span>(<span class="fu">aes</span>(<span class="at">xmin =</span> cat_q25, <span class="at">xmax =</span> cat_q75, <span class="at">ymin =</span> <span class="sc">-</span><span class="cn">Inf</span>, <span class="at">ymax =</span> <span class="cn">Inf</span>), </span>
-<span id="cb8-15"><a href="#cb8-15"></a>            <span class="at">fill =</span> <span class="st">"#fbe8e9"</span>, <span class="at">color =</span> <span class="st">"#fbe8e9"</span>, <span class="at">alpha =</span> <span class="fl">0.6</span>) <span class="sc">+</span></span>
-<span id="cb8-16"><a href="#cb8-16"></a>  <span class="fu">geom_vline</span>(<span class="fu">aes</span>(<span class="at">xintercept =</span> cat_median), <span class="at">color =</span> <span class="st">"grey40"</span>, <span class="at">linetype =</span> <span class="st">"dashed"</span>) <span class="sc">+</span> </span>
-<span id="cb8-17"><a href="#cb8-17"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
-<span id="cb8-18"><a href="#cb8-18"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">x =</span> album_median, <span class="at">label =</span> <span class="fu">round</span>(album_median, <span class="dv">0</span>)), </span>
-<span id="cb8-19"><a href="#cb8-19"></a>            <span class="at">family =</span> <span class="st">"custom"</span>, <span class="at">size =</span> <span class="dv">12</span>, <span class="at">color =</span> <span class="st">"grey40"</span>, <span class="at">nudge_y =</span> <span class="fl">0.4</span>) <span class="sc">+</span></span>
-<span id="cb8-20"><a href="#cb8-20"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> album_median), <span class="at">color =</span> <span class="st">"grey40"</span>, <span class="at">shape =</span> <span class="st">"|"</span>, <span class="at">size =</span> <span class="dv">12</span>) <span class="sc">+</span></span>
-<span id="cb8-21"><a href="#cb8-21"></a>  <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="sc">-</span><span class="cn">Inf</span>, <span class="at">xend =</span> <span class="cn">Inf</span>, <span class="at">y =</span> <span class="sc">-</span><span class="cn">Inf</span>, <span class="at">yend =</span> <span class="sc">-</span><span class="cn">Inf</span>), <span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
-<span id="cb8-22"><a href="#cb8-22"></a>  <span class="fu">geom_beeswarm</span>(<span class="at">shape =</span> <span class="dv">21</span>, <span class="at">color =</span> <span class="st">"white"</span>, <span class="at">fill =</span> <span class="st">"black"</span>, <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb8-23"><a href="#cb8-23"></a>  <span class="fu">labs</span>(</span>
-<span id="cb8-24"><a href="#cb8-24"></a>    <span class="at">title =</span> <span class="st">"Swiftly Shifting Tempos"</span>,</span>
-<span id="cb8-25"><a href="#cb8-25"></a>    <span class="at">subtitle =</span> <span class="st">"Marks indicate the median tempo per album, dashed line indicates median across albums&lt;br&gt;Shaded area indicate the 25&lt;sup&gt;th&lt;/sup&gt; and 75&lt;sup&gt;th&lt;/sup&gt; percentile across the discography"</span>,</span>
-<span id="cb8-26"><a href="#cb8-26"></a>    <span class="at">x =</span> <span class="cn">NULL</span>,</span>
-<span id="cb8-27"><a href="#cb8-27"></a>    <span class="at">y =</span> <span class="cn">NULL</span>,</span>
-<span id="cb8-28"><a href="#cb8-28"></a>    <span class="at">caption =</span> <span class="st">"Adapted on a data visualization by @ryanahart"</span></span>
-<span id="cb8-29"><a href="#cb8-29"></a>  ) <span class="sc">+</span> </span>
-<span id="cb8-30"><a href="#cb8-30"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">75</span>, <span class="dv">100</span>, <span class="dv">125</span>, <span class="dv">150</span>, <span class="dv">175</span>, <span class="dv">200</span>)) <span class="sc">+</span></span>
-<span id="cb8-31"><a href="#cb8-31"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"custom"</span>) <span class="sc">+</span></span>
-<span id="cb8-32"><a href="#cb8-32"></a>  <span class="fu">theme</span>(</span>
-<span id="cb8-33"><a href="#cb8-33"></a>    <span class="at">panel.grid =</span> <span class="fu">element_blank</span>(),</span>
-<span id="cb8-34"><a href="#cb8-34"></a>    <span class="at">plot.title.position =</span> <span class="st">"plot"</span>,</span>
-<span id="cb8-35"><a href="#cb8-35"></a>    <span class="at">plot.title =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">120</span>),</span>
-<span id="cb8-36"><a href="#cb8-36"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">60</span>, <span class="at">lineheight =</span> <span class="dv">0</span>),</span>
-<span id="cb8-37"><a href="#cb8-37"></a>    <span class="at">axis.text =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">40</span>),</span>
-<span id="cb8-38"><a href="#cb8-38"></a>    <span class="at">plot.caption =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">30</span>)</span>
-<span id="cb8-39"><a href="#cb8-39"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14" data-code-line-numbers="1-10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a>data_taylor_songs <span class="ot">&lt;-</span> taylor<span class="sc">::</span>taylor_all_songs <span class="sc">|&gt;</span> </span>
+<span id="cb14-2"><a href="#cb14-2"></a>  <span class="fu">filter</span>(<span class="fu">str_detect</span>(album_name, <span class="st">"Taylor's Version"</span>, <span class="at">negate =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb14-3"><a href="#cb14-3"></a>         <span class="fu">str_detect</span>(album_name, <span class="st">"Holiday Collection"</span>, <span class="at">negate =</span> <span class="cn">TRUE</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb14-4"><a href="#cb14-4"></a>  <span class="fu">drop_na</span>(tempo) <span class="sc">|&gt;</span> </span>
+<span id="cb14-5"><a href="#cb14-5"></a>  <span class="fu">mutate</span>(<span class="at">cat_median =</span> <span class="fu">median</span>(tempo),</span>
+<span id="cb14-6"><a href="#cb14-6"></a>         <span class="at">cat_q25 =</span> <span class="fu">quantile</span>(tempo, <span class="at">probs =</span> <span class="fl">0.25</span>),</span>
+<span id="cb14-7"><a href="#cb14-7"></a>         <span class="at">cat_q75 =</span> <span class="fu">quantile</span>(tempo, <span class="at">probs =</span> <span class="fl">0.75</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb14-8"><a href="#cb14-8"></a>  <span class="fu">group_by</span>(album_name) <span class="sc">|&gt;</span> </span>
+<span id="cb14-9"><a href="#cb14-9"></a>  <span class="fu">mutate</span>(<span class="at">album_median =</span> <span class="fu">median</span>(tempo),</span>
+<span id="cb14-10"><a href="#cb14-10"></a>         <span class="at">album_mad =</span> <span class="fu">mad</span>(tempo))</span>
+<span id="cb14-11"><a href="#cb14-11"></a></span>
+<span id="cb14-12"><a href="#cb14-12"></a>data_taylor_songs <span class="sc">|&gt;</span> </span>
+<span id="cb14-13"><a href="#cb14-13"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> tempo, <span class="at">y =</span> <span class="fu">reorder</span>(album_name, album_release))) <span class="sc">+</span></span>
+<span id="cb14-14"><a href="#cb14-14"></a>  <span class="fu">geom_rect</span>(<span class="fu">aes</span>(<span class="at">xmin =</span> cat_q25, <span class="at">xmax =</span> cat_q75, <span class="at">ymin =</span> <span class="sc">-</span><span class="cn">Inf</span>, <span class="at">ymax =</span> <span class="cn">Inf</span>), </span>
+<span id="cb14-15"><a href="#cb14-15"></a>            <span class="at">fill =</span> <span class="st">"#fbe8e9"</span>, <span class="at">color =</span> <span class="st">"#fbe8e9"</span>, <span class="at">alpha =</span> <span class="fl">0.6</span>) <span class="sc">+</span></span>
+<span id="cb14-16"><a href="#cb14-16"></a>  <span class="fu">geom_vline</span>(<span class="fu">aes</span>(<span class="at">xintercept =</span> cat_median), <span class="at">color =</span> <span class="st">"grey40"</span>, <span class="at">linetype =</span> <span class="st">"dashed"</span>) <span class="sc">+</span> </span>
+<span id="cb14-17"><a href="#cb14-17"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb14-18"><a href="#cb14-18"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">x =</span> album_median, <span class="at">label =</span> <span class="fu">round</span>(album_median, <span class="dv">0</span>)), </span>
+<span id="cb14-19"><a href="#cb14-19"></a>            <span class="at">family =</span> <span class="st">"custom"</span>, <span class="at">size =</span> <span class="dv">12</span>, <span class="at">color =</span> <span class="st">"grey40"</span>, <span class="at">nudge_y =</span> <span class="fl">0.4</span>) <span class="sc">+</span></span>
+<span id="cb14-20"><a href="#cb14-20"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> album_median), <span class="at">color =</span> <span class="st">"grey40"</span>, <span class="at">shape =</span> <span class="st">"|"</span>, <span class="at">size =</span> <span class="dv">12</span>) <span class="sc">+</span></span>
+<span id="cb14-21"><a href="#cb14-21"></a>  <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="sc">-</span><span class="cn">Inf</span>, <span class="at">xend =</span> <span class="cn">Inf</span>, <span class="at">y =</span> <span class="sc">-</span><span class="cn">Inf</span>, <span class="at">yend =</span> <span class="sc">-</span><span class="cn">Inf</span>), <span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb14-22"><a href="#cb14-22"></a>  <span class="fu">geom_beeswarm</span>(<span class="at">shape =</span> <span class="dv">21</span>, <span class="at">color =</span> <span class="st">"white"</span>, <span class="at">fill =</span> <span class="st">"black"</span>, <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb14-23"><a href="#cb14-23"></a>  <span class="fu">labs</span>(</span>
+<span id="cb14-24"><a href="#cb14-24"></a>    <span class="at">title =</span> <span class="st">"Swiftly Shifting Tempos"</span>,</span>
+<span id="cb14-25"><a href="#cb14-25"></a>    <span class="at">subtitle =</span> <span class="st">"Marks indicate the median tempo per album, dashed line indicates median across albums&lt;br&gt;Shaded area indicate the 25&lt;sup&gt;th&lt;/sup&gt; and 75&lt;sup&gt;th&lt;/sup&gt; percentile across the discography"</span>,</span>
+<span id="cb14-26"><a href="#cb14-26"></a>    <span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb14-27"><a href="#cb14-27"></a>    <span class="at">y =</span> <span class="cn">NULL</span>,</span>
+<span id="cb14-28"><a href="#cb14-28"></a>    <span class="at">caption =</span> <span class="st">"Adapted on a data visualization by @ryanahart"</span></span>
+<span id="cb14-29"><a href="#cb14-29"></a>  ) <span class="sc">+</span> </span>
+<span id="cb14-30"><a href="#cb14-30"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">75</span>, <span class="dv">100</span>, <span class="dv">125</span>, <span class="dv">150</span>, <span class="dv">175</span>, <span class="dv">200</span>)) <span class="sc">+</span></span>
+<span id="cb14-31"><a href="#cb14-31"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"custom"</span>) <span class="sc">+</span></span>
+<span id="cb14-32"><a href="#cb14-32"></a>  <span class="fu">theme</span>(</span>
+<span id="cb14-33"><a href="#cb14-33"></a>    <span class="at">panel.grid =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb14-34"><a href="#cb14-34"></a>    <span class="at">plot.title.position =</span> <span class="st">"plot"</span>,</span>
+<span id="cb14-35"><a href="#cb14-35"></a>    <span class="at">plot.title =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">120</span>),</span>
+<span id="cb14-36"><a href="#cb14-36"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">60</span>, <span class="at">lineheight =</span> <span class="dv">0</span>),</span>
+<span id="cb14-37"><a href="#cb14-37"></a>    <span class="at">axis.text =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">40</span>),</span>
+<span id="cb14-38"><a href="#cb14-38"></a>    <span class="at">plot.caption =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">30</span>)</span>
+<span id="cb14-39"><a href="#cb14-39"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="chapter-x-3" class="slide level2 chapter center">
+<section id="chapter-x-4" class="slide level2 chapter center">
 <h2>Chapter X</h2>
 <h3 id="alternative-plot-types">Alternative plot types</h3>
 </section>
 <section id="boxplots-vs.-vagina-plots" class="slide level2">
 <h2>Boxplots vs.&nbsp;vagina plots</h2>
 <div class="panel-tabset">
-<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">Plot</a></li><li><a href="#tabset-7-2">Code</a></li></ul>
+<ul id="tabset-13" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-13-1">Plot</a></li><li><a href="#tabset-13-2">Code</a></li></ul>
 <div class="tab-content">
-<div id="tabset-7-1">
+<div id="tabset-13-1">
 <div class="cell">
 <div class="cell-output-display">
 <p><img data-src="index_files/figure-revealjs/box-vs-vagina-1.png" width="1400"></p>
 </div>
 </div>
 </div>
-<div id="tabset-7-2">
+<div id="tabset-13-2">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9" data-code-line-numbers="21,23-27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a>boxplot_vagina_base <span class="ot">&lt;-</span> taylor<span class="sc">::</span>taylor_all_songs <span class="sc">|&gt;</span> </span>
-<span id="cb9-2"><a href="#cb9-2"></a>  <span class="fu">drop_na</span>(mode_name) <span class="sc">|&gt;</span> </span>
-<span id="cb9-3"><a href="#cb9-3"></a>  <span class="fu">mutate</span>(<span class="at">mode_name =</span> <span class="fu">fct_rev</span>(mode_name)) <span class="sc">|&gt;</span> </span>
-<span id="cb9-4"><a href="#cb9-4"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> mode_name, <span class="at">y =</span> valence, <span class="at">fill =</span> mode_name)) <span class="sc">+</span></span>
-<span id="cb9-5"><a href="#cb9-5"></a>  <span class="fu">labs</span>(</span>
-<span id="cb9-6"><a href="#cb9-6"></a>    <span class="at">title =</span> <span class="st">"Valence by mode"</span>,</span>
-<span id="cb9-7"><a href="#cb9-7"></a>    <span class="at">x =</span> <span class="cn">NULL</span>,</span>
-<span id="cb9-8"><a href="#cb9-8"></a>    <span class="at">y =</span> <span class="cn">NULL</span>,</span>
-<span id="cb9-9"><a href="#cb9-9"></a>  ) <span class="sc">+</span></span>
-<span id="cb9-10"><a href="#cb9-10"></a>  taylor<span class="sc">::</span><span class="fu">scale_fill_taylor_d</span>(<span class="at">guide =</span> <span class="st">"none"</span>) <span class="sc">+</span></span>
-<span id="cb9-11"><a href="#cb9-11"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
-<span id="cb9-12"><a href="#cb9-12"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"custom"</span>) <span class="sc">+</span> </span>
-<span id="cb9-13"><a href="#cb9-13"></a>  <span class="fu">theme</span>(</span>
-<span id="cb9-14"><a href="#cb9-14"></a>    <span class="at">plot.title.position =</span> <span class="st">"plot"</span>,</span>
-<span id="cb9-15"><a href="#cb9-15"></a>    <span class="at">plot.title =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">80</span>),</span>
-<span id="cb9-16"><a href="#cb9-16"></a>    <span class="at">axis.text =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">50</span>),</span>
-<span id="cb9-17"><a href="#cb9-17"></a>    <span class="at">panel.grid.major.x =</span> <span class="fu">element_blank</span>()</span>
-<span id="cb9-18"><a href="#cb9-18"></a>  )</span>
-<span id="cb9-19"><a href="#cb9-19"></a></span>
-<span id="cb9-20"><a href="#cb9-20"></a>(boxplot_vagina_base <span class="sc">+</span> </span>
-<span id="cb9-21"><a href="#cb9-21"></a>    <span class="fu">geom_boxplot</span>(<span class="at">width =</span> <span class="fl">0.5</span>, <span class="at">outlier.shape =</span> <span class="dv">4</span>, <span class="at">outlier.size =</span> <span class="fl">1.5</span>)) <span class="sc">+</span></span>
-<span id="cb9-22"><a href="#cb9-22"></a>(boxplot_vagina_base <span class="sc">+</span></span>
-<span id="cb9-23"><a href="#cb9-23"></a>  <span class="fu">geom_violin</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span> </span>
-<span id="cb9-24"><a href="#cb9-24"></a>  <span class="fu">geom_boxplot</span>(<span class="at">width =</span> <span class="fl">0.2</span>, <span class="at">outlier.shape =</span> <span class="cn">NA</span>, <span class="at">outlier.size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
-<span id="cb9-25"><a href="#cb9-25"></a>  <span class="fu">geom_jitter</span>(<span class="at">width =</span> <span class="fl">0.05</span>, <span class="at">size =</span> <span class="dv">2</span>, <span class="at">alpha =</span> <span class="fl">0.2</span>, <span class="at">stroke =</span> <span class="dv">0</span>) <span class="sc">+</span> </span>
-<span id="cb9-26"><a href="#cb9-26"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> . <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(mode_name) <span class="sc">%&gt;%</span> <span class="fu">summarise</span>(<span class="at">mean =</span> <span class="fu">mean</span>(valence)),</span>
-<span id="cb9-27"><a href="#cb9-27"></a>             <span class="fu">aes</span>(<span class="at">y =</span> mean), <span class="at">fill =</span> <span class="st">"white"</span>, <span class="at">shape =</span> <span class="dv">23</span>, <span class="at">size =</span> <span class="dv">3</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15" data-code-line-numbers="21,23-27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a>boxplot_vagina_base <span class="ot">&lt;-</span> taylor<span class="sc">::</span>taylor_all_songs <span class="sc">|&gt;</span> </span>
+<span id="cb15-2"><a href="#cb15-2"></a>  <span class="fu">drop_na</span>(mode_name) <span class="sc">|&gt;</span> </span>
+<span id="cb15-3"><a href="#cb15-3"></a>  <span class="fu">mutate</span>(<span class="at">mode_name =</span> <span class="fu">fct_rev</span>(mode_name)) <span class="sc">|&gt;</span> </span>
+<span id="cb15-4"><a href="#cb15-4"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> mode_name, <span class="at">y =</span> valence, <span class="at">fill =</span> mode_name)) <span class="sc">+</span></span>
+<span id="cb15-5"><a href="#cb15-5"></a>  <span class="fu">labs</span>(</span>
+<span id="cb15-6"><a href="#cb15-6"></a>    <span class="at">title =</span> <span class="st">"Valence by mode"</span>,</span>
+<span id="cb15-7"><a href="#cb15-7"></a>    <span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb15-8"><a href="#cb15-8"></a>    <span class="at">y =</span> <span class="cn">NULL</span>,</span>
+<span id="cb15-9"><a href="#cb15-9"></a>  ) <span class="sc">+</span></span>
+<span id="cb15-10"><a href="#cb15-10"></a>  taylor<span class="sc">::</span><span class="fu">scale_fill_taylor_d</span>(<span class="at">guide =</span> <span class="st">"none"</span>) <span class="sc">+</span></span>
+<span id="cb15-11"><a href="#cb15-11"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb15-12"><a href="#cb15-12"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"custom"</span>) <span class="sc">+</span> </span>
+<span id="cb15-13"><a href="#cb15-13"></a>  <span class="fu">theme</span>(</span>
+<span id="cb15-14"><a href="#cb15-14"></a>    <span class="at">plot.title.position =</span> <span class="st">"plot"</span>,</span>
+<span id="cb15-15"><a href="#cb15-15"></a>    <span class="at">plot.title =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">80</span>),</span>
+<span id="cb15-16"><a href="#cb15-16"></a>    <span class="at">axis.text =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">50</span>),</span>
+<span id="cb15-17"><a href="#cb15-17"></a>    <span class="at">panel.grid.major.x =</span> <span class="fu">element_blank</span>()</span>
+<span id="cb15-18"><a href="#cb15-18"></a>  )</span>
+<span id="cb15-19"><a href="#cb15-19"></a></span>
+<span id="cb15-20"><a href="#cb15-20"></a>(boxplot_vagina_base <span class="sc">+</span> </span>
+<span id="cb15-21"><a href="#cb15-21"></a>    <span class="fu">geom_boxplot</span>(<span class="at">width =</span> <span class="fl">0.5</span>, <span class="at">outlier.shape =</span> <span class="dv">4</span>, <span class="at">outlier.size =</span> <span class="fl">1.5</span>)) <span class="sc">+</span></span>
+<span id="cb15-22"><a href="#cb15-22"></a>(boxplot_vagina_base <span class="sc">+</span></span>
+<span id="cb15-23"><a href="#cb15-23"></a>  <span class="fu">geom_violin</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span> </span>
+<span id="cb15-24"><a href="#cb15-24"></a>  <span class="fu">geom_boxplot</span>(<span class="at">width =</span> <span class="fl">0.2</span>, <span class="at">outlier.shape =</span> <span class="cn">NA</span>, <span class="at">outlier.size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb15-25"><a href="#cb15-25"></a>  <span class="fu">geom_jitter</span>(<span class="at">width =</span> <span class="fl">0.05</span>, <span class="at">size =</span> <span class="dv">2</span>, <span class="at">alpha =</span> <span class="fl">0.2</span>, <span class="at">stroke =</span> <span class="dv">0</span>) <span class="sc">+</span> </span>
+<span id="cb15-26"><a href="#cb15-26"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> . <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(mode_name) <span class="sc">%&gt;%</span> <span class="fu">summarise</span>(<span class="at">mean =</span> <span class="fu">mean</span>(valence)),</span>
+<span id="cb15-27"><a href="#cb15-27"></a>             <span class="fu">aes</span>(<span class="at">y =</span> mean), <span class="at">fill =</span> <span class="st">"white"</span>, <span class="at">shape =</span> <span class="dv">23</span>, <span class="at">size =</span> <span class="dv">3</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 </div>
-</section>
-<section id="simple-vs-fancy-scatterplots" class="slide level2">
-<h2>Simple vs fancy scatterplots</h2>
-<div class="panel-tabset">
-<ul id="tabset-8" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-8-1">Plot</a></li><li><a href="#tabset-8-2">Code</a></li></ul>
-<div class="tab-content">
-<div id="tabset-8-1">
-<div class="cell">
-<div class="cell-output-display">
-<p><img data-src="index_files/figure-revealjs/scatter-vs-fancy-scatter-1.png" width="1400"></p>
-</div>
-</div>
-</div>
-<div id="tabset-8-2">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb10" data-code-line-numbers="23-28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a>scatter_fancy_base <span class="ot">&lt;-</span> taylor<span class="sc">::</span>taylor_all_songs <span class="sc">|&gt;</span> </span>
-<span id="cb10-2"><a href="#cb10-2"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> tempo, <span class="at">y =</span> energy)) <span class="sc">+</span></span>
-<span id="cb10-3"><a href="#cb10-3"></a>  <span class="fu">labs</span>(</span>
-<span id="cb10-4"><a href="#cb10-4"></a>    <span class="at">title =</span> <span class="st">"Correlation between tempo and energy&lt;br&gt;in Mrs. Swift's discography"</span>,</span>
-<span id="cb10-5"><a href="#cb10-5"></a>    <span class="at">x =</span> <span class="st">"Tempo"</span>,</span>
-<span id="cb10-6"><a href="#cb10-6"></a>    <span class="at">y =</span> <span class="st">"Energy"</span>,</span>
-<span id="cb10-7"><a href="#cb10-7"></a>    <span class="at">fill =</span> <span class="cn">NULL</span></span>
-<span id="cb10-8"><a href="#cb10-8"></a>  ) <span class="sc">+</span></span>
-<span id="cb10-9"><a href="#cb10-9"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
-<span id="cb10-10"><a href="#cb10-10"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"custom"</span>) <span class="sc">+</span> </span>
-<span id="cb10-11"><a href="#cb10-11"></a>  <span class="fu">theme</span>(</span>
-<span id="cb10-12"><a href="#cb10-12"></a>    <span class="at">plot.title.position =</span> <span class="st">"plot"</span>,</span>
-<span id="cb10-13"><a href="#cb10-13"></a>    <span class="at">plot.title =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">80</span>, <span class="at">lineheight =</span> <span class="dv">0</span>),</span>
-<span id="cb10-14"><a href="#cb10-14"></a>    <span class="at">axis.title =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">60</span>),</span>
-<span id="cb10-15"><a href="#cb10-15"></a>    <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">40</span>),</span>
-<span id="cb10-16"><a href="#cb10-16"></a>    <span class="at">legend.position =</span> <span class="st">"bottom"</span>,</span>
-<span id="cb10-17"><a href="#cb10-17"></a>    <span class="at">legend.text =</span> <span class="fu">element_blank</span>()</span>
-<span id="cb10-18"><a href="#cb10-18"></a>  )</span>
-<span id="cb10-19"><a href="#cb10-19"></a></span>
-<span id="cb10-20"><a href="#cb10-20"></a>(scatter_fancy_base <span class="sc">+</span> </span>
-<span id="cb10-21"><a href="#cb10-21"></a>    <span class="fu">geom_point</span>()) <span class="sc">+</span></span>
-<span id="cb10-22"><a href="#cb10-22"></a>(scatter_fancy_base <span class="sc">+</span></span>
-<span id="cb10-23"><a href="#cb10-23"></a>   ggpubr<span class="sc">::</span><span class="fu">stat_cor</span>(<span class="fu">aes</span>(</span>
-<span id="cb10-24"><a href="#cb10-24"></a>     <span class="at">label =</span> <span class="fu">paste</span>(<span class="fu">after_stat</span>(rr.label), <span class="fu">after_stat</span>(p.label), <span class="at">sep =</span> <span class="st">"~`,`~"</span>)),</span>
-<span id="cb10-25"><a href="#cb10-25"></a>                    <span class="at">label.y =</span> <span class="fl">0.98</span>, <span class="at">size =</span> <span class="dv">20</span>, <span class="at">family =</span> <span class="st">"custom"</span>) <span class="sc">+</span></span>
-<span id="cb10-26"><a href="#cb10-26"></a>   <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span> </span>
-<span id="cb10-27"><a href="#cb10-27"></a>   <span class="fu">geom_rug</span>(<span class="at">alpha =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
-<span id="cb10-28"><a href="#cb10-28"></a>   <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">color =</span> <span class="st">"maroon"</span>, <span class="at">fill =</span> <span class="st">"maroon"</span>, <span class="at">alpha =</span> <span class="fl">0.2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="fancy-geoms-and-labels" class="slide level2">
-<h2>Fancy geoms and labels</h2>
-<div class="panel-tabset">
-<ul id="tabset-9" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-9-1">Plot</a></li><li><a href="#tabset-9-2">Code</a></li></ul>
-<div class="tab-content">
-<div id="tabset-9-1">
-<div class="cell">
-<div class="cell-output-display">
-<p><img data-src="index_files/figure-revealjs/ggdist-exmpl-submit-1.png" width="1400"></p>
-</div>
-</div>
-</div>
-<div id="tabset-9-2">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb11" data-code-line-numbers="28-35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a>ggdist_pi_base <span class="ot">&lt;-</span> taylor<span class="sc">::</span>taylor_all_songs <span class="sc">|&gt;</span> </span>
-<span id="cb11-2"><a href="#cb11-2"></a>  <span class="fu">mutate</span>(<span class="at">album_name =</span> <span class="fu">fct_relevel</span>(album_name, taylor<span class="sc">::</span>album_levels)) <span class="sc">|&gt;</span> </span>
-<span id="cb11-3"><a href="#cb11-3"></a>  <span class="fu">drop_na</span>(album_name) <span class="sc">|&gt;</span></span>
-<span id="cb11-4"><a href="#cb11-4"></a>  <span class="fu">filter</span>(<span class="fu">str_detect</span>(album_name, <span class="st">"Taylor's Version"</span>, <span class="at">negate =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb11-5"><a href="#cb11-5"></a>         <span class="sc">!</span>ep) <span class="sc">|&gt;</span> </span>
-<span id="cb11-6"><a href="#cb11-6"></a>  <span class="fu">select</span>(album_name, loudness) <span class="sc">|&gt;</span> </span>
-<span id="cb11-7"><a href="#cb11-7"></a>  <span class="fu">group_by</span>(album_name) <span class="sc">|&gt;</span> </span>
-<span id="cb11-8"><a href="#cb11-8"></a>  <span class="fu">median_qi</span>(<span class="at">.width =</span> <span class="fu">c</span>(<span class="fl">0.5</span>, <span class="fl">0.8</span>, <span class="fl">0.95</span>)) <span class="sc">|&gt;</span></span>
-<span id="cb11-9"><a href="#cb11-9"></a>  <span class="fu">drop_na</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb11-10"><a href="#cb11-10"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> loudness, <span class="at">y =</span> album_name, </span>
-<span id="cb11-11"><a href="#cb11-11"></a>             <span class="at">xmin =</span> .lower, <span class="at">xmax =</span> .upper)) <span class="sc">+</span> </span>
-<span id="cb11-12"><a href="#cb11-12"></a>  <span class="fu">labs</span>(</span>
-<span id="cb11-13"><a href="#cb11-13"></a>    <span class="at">title =</span> <span class="st">"Loudness across the Taylor Swift discography"</span>,</span>
-<span id="cb11-14"><a href="#cb11-14"></a>    <span class="at">subtitle =</span> <span class="st">"Median, 50&lt;sup&gt;th&lt;/sup&gt;, 80&lt;sup&gt;th&lt;/sup&gt; and 95&lt;sup&gt;th&lt;/sup&gt; percentile"</span>,</span>
-<span id="cb11-15"><a href="#cb11-15"></a>    <span class="at">x =</span> <span class="cn">NULL</span>,</span>
-<span id="cb11-16"><a href="#cb11-16"></a>    <span class="at">y =</span> <span class="cn">NULL</span></span>
-<span id="cb11-17"><a href="#cb11-17"></a>  ) <span class="sc">+</span></span>
-<span id="cb11-18"><a href="#cb11-18"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"custom"</span>) <span class="sc">+</span> </span>
-<span id="cb11-19"><a href="#cb11-19"></a>  <span class="fu">theme</span>(</span>
-<span id="cb11-20"><a href="#cb11-20"></a>    <span class="at">plot.title.position =</span> <span class="st">"plot"</span>,</span>
-<span id="cb11-21"><a href="#cb11-21"></a>    <span class="at">plot.title =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">80</span>),</span>
-<span id="cb11-22"><a href="#cb11-22"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">40</span>),</span>
-<span id="cb11-23"><a href="#cb11-23"></a>    <span class="at">axis.text =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">40</span>),</span>
-<span id="cb11-24"><a href="#cb11-24"></a>    <span class="at">panel.grid.major.y =</span> <span class="fu">element_blank</span>()</span>
-<span id="cb11-25"><a href="#cb11-25"></a>  )</span>
-<span id="cb11-26"><a href="#cb11-26"></a></span>
-<span id="cb11-27"><a href="#cb11-27"></a>(ggdist_pi_base <span class="sc">+</span> </span>
-<span id="cb11-28"><a href="#cb11-28"></a>    <span class="fu">geom_pointinterval</span>() <span class="sc">+</span></span>
-<span id="cb11-29"><a href="#cb11-29"></a>    <span class="fu">labs</span>(</span>
-<span id="cb11-30"><a href="#cb11-30"></a>      <span class="at">x =</span> <span class="st">"Loudness (in dB)"</span></span>
-<span id="cb11-31"><a href="#cb11-31"></a>    ) <span class="sc">+</span></span>
-<span id="cb11-32"><a href="#cb11-32"></a>    <span class="fu">scale_x_continuous</span>(<span class="at">trans =</span> <span class="st">"reverse"</span>) <span class="sc">+</span></span>
-<span id="cb11-33"><a href="#cb11-33"></a>    <span class="fu">theme</span>(</span>
-<span id="cb11-34"><a href="#cb11-34"></a>      <span class="at">axis.title =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">40</span>),</span>
-<span id="cb11-35"><a href="#cb11-35"></a>    )</span>
-<span id="cb11-36"><a href="#cb11-36"></a>) <span class="sc">&amp;</span></span>
-<span id="cb11-37"><a href="#cb11-37"></a>  <span class="fu">plot_annotation</span>(</span>
-<span id="cb11-38"><a href="#cb11-38"></a>    <span class="at">title =</span> <span class="st">"What you submit..."</span>,</span>
-<span id="cb11-39"><a href="#cb11-39"></a>    <span class="at">theme =</span> <span class="fu">theme</span>(</span>
-<span id="cb11-40"><a href="#cb11-40"></a>      <span class="at">plot.title =</span> <span class="fu">element_markdown</span>(<span class="at">family =</span> <span class="st">"custom"</span>, <span class="at">size =</span> <span class="dv">90</span>, <span class="at">lineheight =</span> <span class="dv">0</span>)</span>
-<span id="cb11-41"><a href="#cb11-41"></a>    )</span>
-<span id="cb11-42"><a href="#cb11-42"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="fancy-geoms-and-labels-1" class="slide level2">
-<h2>Fancy geoms and labels</h2>
-<div class="panel-tabset">
-<ul id="tabset-10" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-10-1">Plot</a></li><li><a href="#tabset-10-2">Code</a></li></ul>
-<div class="tab-content">
-<div id="tabset-10-1">
-<div class="cell">
-<div class="cell-output-display">
-<p><img data-src="index_files/figure-revealjs/ggdist-exmpl-present-1.png" width="1400"></p>
-</div>
-</div>
-</div>
-<div id="tabset-10-2">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb12" data-code-line-numbers="2-15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a>(ggdist_pi_base <span class="sc">+</span> </span>
-<span id="cb12-2"><a href="#cb12-2"></a>   <span class="fu">geom_text</span>(<span class="at">data =</span> . <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(album_name) <span class="sc">%&gt;%</span> <span class="fu">summarise</span>(<span class="at">label_pos =</span> <span class="fu">max</span>(.upper)),</span>
-<span id="cb12-3"><a href="#cb12-3"></a>             <span class="fu">aes</span>(<span class="at">x =</span> label_pos, <span class="at">y =</span> album_name,</span>
-<span id="cb12-4"><a href="#cb12-4"></a>                 <span class="at">label =</span> album_name, <span class="at">color =</span> album_name),</span>
-<span id="cb12-5"><a href="#cb12-5"></a>             <span class="at">family =</span> <span class="st">"custom"</span>, <span class="at">size =</span> <span class="dv">25</span>,</span>
-<span id="cb12-6"><a href="#cb12-6"></a>             <span class="at">nudge_y =</span> <span class="fl">0.33</span>, <span class="at">hjust =</span> <span class="dv">0</span>,</span>
-<span id="cb12-7"><a href="#cb12-7"></a>             <span class="at">inherit.aes =</span> <span class="cn">FALSE</span>, <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
-<span id="cb12-8"><a href="#cb12-8"></a>   <span class="fu">geom_pointinterval</span>() <span class="sc">+</span></span>
-<span id="cb12-9"><a href="#cb12-9"></a>   <span class="fu">scale_x_continuous</span>(<span class="at">trans =</span> <span class="st">"reverse"</span>,</span>
-<span id="cb12-10"><a href="#cb12-10"></a>                      <span class="at">labels =</span> scales<span class="sc">::</span><span class="fu">label_number</span>(<span class="at">suffix =</span> <span class="st">" dB"</span>),</span>
-<span id="cb12-11"><a href="#cb12-11"></a>                      <span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">add =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>))) <span class="sc">+</span></span>
-<span id="cb12-12"><a href="#cb12-12"></a>   taylor<span class="sc">::</span><span class="fu">scale_color_albums</span>() <span class="sc">+</span></span>
-<span id="cb12-13"><a href="#cb12-13"></a>   <span class="fu">theme</span>(</span>
-<span id="cb12-14"><a href="#cb12-14"></a>         <span class="at">axis.text.y =</span> <span class="fu">element_blank</span>(),</span>
-<span id="cb12-15"><a href="#cb12-15"></a>   )</span>
-<span id="cb12-16"><a href="#cb12-16"></a>) <span class="sc">&amp;</span></span>
-<span id="cb12-17"><a href="#cb12-17"></a>  <span class="fu">plot_annotation</span>(</span>
-<span id="cb12-18"><a href="#cb12-18"></a>    <span class="at">title =</span> <span class="st">"What you present..."</span>,</span>
-<span id="cb12-19"><a href="#cb12-19"></a>    <span class="at">theme =</span> <span class="fu">theme</span>(</span>
-<span id="cb12-20"><a href="#cb12-20"></a>      <span class="at">plot.title =</span> <span class="fu">element_markdown</span>(<span class="at">family =</span> <span class="st">"custom"</span>, <span class="at">size =</span> <span class="dv">90</span>, <span class="at">lineheight =</span> <span class="dv">0</span>)</span>
-<span id="cb12-21"><a href="#cb12-21"></a>    )</span>
-<span id="cb12-22"><a href="#cb12-22"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="fancy-geoms-cont." class="slide level2">
-<h2>Fancy geoms (cont.)</h2>
-<div class="panel-tabset">
-<ul id="tabset-11" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-11-1">Plot</a></li><li><a href="#tabset-11-2">Code</a></li></ul>
-<div class="tab-content">
-<div id="tabset-11-1">
-<div class="cell">
-<div class="cell-output-display">
-<p><img data-src="index_files/figure-revealjs/ggdist-valence-1.png" width="1400"></p>
-</div>
-</div>
-</div>
-<div id="tabset-11-2">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a>taylor<span class="sc">::</span>taylor_all_songs <span class="sc">|&gt;</span> </span>
-<span id="cb13-2"><a href="#cb13-2"></a>  <span class="fu">filter</span>(<span class="fu">str_detect</span>(album_name, <span class="st">"Holiday Collection"</span>, <span class="at">negate =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb13-3"><a href="#cb13-3"></a>         <span class="fu">str_detect</span>(album_name, <span class="st">"Taylor's Version"</span>, <span class="at">negate =</span> <span class="cn">TRUE</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb13-4"><a href="#cb13-4"></a>  <span class="fu">drop_na</span>(valence, album_name) <span class="sc">|&gt;</span> </span>
-<span id="cb13-5"><a href="#cb13-5"></a>  <span class="fu">mutate</span>(<span class="at">album_label =</span> <span class="fu">str_glue</span>(<span class="st">"{album_name} ({year(album_release)})"</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb13-6"><a href="#cb13-6"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> valence, <span class="at">y =</span> <span class="fu">reorder</span>(album_label, valence), <span class="at">fill =</span> album_name)) <span class="sc">+</span></span>
-<span id="cb13-7"><a href="#cb13-7"></a>  <span class="fu">stat_gradientinterval</span>(<span class="at">position =</span> <span class="st">"dodge"</span>, <span class="at">fill_type =</span> <span class="st">"gradient"</span>) <span class="sc">+</span></span>
-<span id="cb13-8"><a href="#cb13-8"></a>  <span class="fu">geom_beeswarm</span>(<span class="at">shape =</span> <span class="dv">21</span>, <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb13-9"><a href="#cb13-9"></a>  <span class="fu">labs</span>(</span>
-<span id="cb13-10"><a href="#cb13-10"></a>    <span class="at">title =</span> <span class="st">"</span><span class="sc">\"</span><span class="st">Valence</span><span class="sc">\"</span><span class="st"> per Taylor Swift album"</span>,</span>
-<span id="cb13-11"><a href="#cb13-11"></a>    <span class="at">subtitle =</span> <span class="st">"**va·lence** [noun]: A measure describing the musical positiveness conveyed by a track.&lt;br&gt;Tracks with high valence sound more positive, while tracks with low valence sound more negative"</span>,</span>
-<span id="cb13-12"><a href="#cb13-12"></a>    <span class="at">x =</span> <span class="st">"Valence"</span>,</span>
-<span id="cb13-13"><a href="#cb13-13"></a>    <span class="at">y =</span> <span class="cn">NULL</span></span>
-<span id="cb13-14"><a href="#cb13-14"></a>  ) <span class="sc">+</span> </span>
-<span id="cb13-15"><a href="#cb13-15"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>), <span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">add =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.01</span>))) <span class="sc">+</span></span>
-<span id="cb13-16"><a href="#cb13-16"></a>  taylor<span class="sc">::</span><span class="fu">scale_fill_albums</span>(<span class="at">guide =</span> <span class="st">"none"</span>) <span class="sc">+</span></span>
-<span id="cb13-17"><a href="#cb13-17"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"custom"</span>) <span class="sc">+</span></span>
-<span id="cb13-18"><a href="#cb13-18"></a>  <span class="fu">theme</span>(</span>
-<span id="cb13-19"><a href="#cb13-19"></a>    <span class="at">plot.title.position =</span> <span class="st">"plot"</span>,</span>
-<span id="cb13-20"><a href="#cb13-20"></a>    <span class="at">plot.title =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">90</span>),</span>
-<span id="cb13-21"><a href="#cb13-21"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">40</span>, <span class="at">lineheight =</span> <span class="dv">0</span>),</span>
-<span id="cb13-22"><a href="#cb13-22"></a>    <span class="at">axis.text =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">40</span>),</span>
-<span id="cb13-23"><a href="#cb13-23"></a>    <span class="at">axis.title =</span> <span class="fu">element_markdown</span>(<span class="at">size =</span> <span class="dv">60</span>),</span>
-<span id="cb13-24"><a href="#cb13-24"></a>    <span class="at">panel.grid.major.y =</span> <span class="fu">element_blank</span>()</span>
-<span id="cb13-25"><a href="#cb13-25"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="resources" class="slide level2" data-preview-link="true">
-<h2>Resources</h2>
-<div class="midlist" style="font-size: 3vmin;">
-<p><strong>Designing Charts in R</strong>, Cédric Scherer, <em>Masterclass for the Data Visualization Society</em> (2023), <a href="https://z3tt.github.io/ggplot-dvs/slides.html">slides for the presentation</a></p>
-</div>
+<!--
+
+::: {.cell}
+
+:::
+
+-->
 <div class="footer footer-default">
 
 </div>

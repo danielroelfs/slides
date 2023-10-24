@@ -451,10 +451,6 @@ button {
 
 // blinking animation
 .flashing {
-  font-size: 6vmin;
-  font-weight: 900;
-  margin-left: -6vw;
-  text-transform: uppercase;
   background-color: transparent;
   animation: blinker 1s linear infinite;
 }
@@ -475,6 +471,17 @@ button {
     & code {
       color: inherit;
     }
+  }
+}
+
+.reveal .text-slide {
+  margin-top: 3em;
+  & p {
+    font-size: 100%;
+    padding-bottom: 1em;
+  }
+  & li {
+    font-size: 100%;
   }
 }
 

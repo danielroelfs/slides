@@ -90,9 +90,10 @@ colors_guide_settings_d <- guide_legend(
 colors_guide_labs <- LETTERS[seq(3)]
 
 plot_colors_base_c <- taylor::taylor_all_songs |> 
+  drop_na(energy, danceability) |> 
   ggplot(aes(x = tempo, y = energy, fill = danceability)) +
   geom_point(shape = 21, size = 4, stroke = 0, alpha = 0.75) +
-  geom_smooth(method = "lm", color = "black", fill = "black", alpha = 0.2) +
+  geom_smooth(method = "lm") +
   labs(
     x = NULL,
     y = NULL,
@@ -108,7 +109,7 @@ plot_colors_base_c <- taylor::taylor_all_songs |>
   )
 
 plot_colors_base_d <- taylor::taylor_all_songs |> 
-  drop_na(mode_name) |> 
+  drop_na(loudness) |> 
   mutate(tempo_binned = cut_interval(energy, n = 3)) |> 
   ggplot(aes(x = tempo_binned, y = loudness, fill = tempo_binned)) +
   geom_violin(alpha = 0.5, key_glyph = "point") + 
@@ -189,11 +190,19 @@ scico::scale_color_scico_d()  # Discrete scale
 
 [**`{nord}`**](https://github.com/jkaupp/nord) - Muted color palettes based on UI systems and a group of Canadian artists
 
-[**`{wesanderson}`**](https://github.com/karthik/wesanderson) - Color palette based on Wes Anderson film aesthetics
+[**`{wesanderson}`**](https://github.com/karthik/wesanderson) - Color palettes based on Wes Anderson film aesthetics
 
-[**`{dutchmasters}`**](https://github.com/EdwinTh/dutchmasters) - Color palette based on famous paintings by Dutch artists
+[**`{dutchmasters}`**](https://github.com/EdwinTh/dutchmasters) - Color palettes based on famous paintings by Dutch artists
 
-[**`{taylor}`**](https://github.com/wjakethompson/taylor/) - Color palette based on Taylor Swift album covers
+[**`{beyonce}`**](https://github.com/dill/beyonce) - Palettes based on her most iconic album covers and photos, see [here](https://beyoncepalettes.tumblr.com) for all palettes
+:::
+
+## The {taylor} package
+
+::: {.center-xy}
+```{=html}
+<iframe width="1000" height="550" src="https://taylor.wjakethompson.com" title="Taylor Swift R package"></iframe>
+```
 :::
 
 ## Some examples
@@ -208,6 +217,7 @@ scico::scale_color_scico_d()  # Discrete scale
 
 
 (plot_colors_base_c +
+   geom_smooth(method = "lm", color = "black", fill = "black", alpha = 0.2) +
    labs(title = "{viridis}'s \"plasma\" palette") +
    scale_fill_viridis_c(option = "plasma", guide = colors_guide_settings_c)) + 
 (plot_colors_base_d + 
@@ -239,6 +249,7 @@ scico::scale_color_scico_d()  # Discrete scale
 
 (plot_colors_base_c +
    labs(title = "{scico}'s \"navia\" palette") +
+   geom_smooth(method = "lm", color = "black", fill = "black", alpha = 0.2) +
    scale_fill_scico(palette = "navia", guide = colors_guide_settings_c)) + 
 (plot_colors_base_d + 
    labs(title = "{wesanderson}'s \"AsteroidCity1\" palette") +
@@ -255,11 +266,473 @@ scico::scale_color_scico_d()  # Discrete scale
 ```
 :::
 
+------------------------------------------------------------------------
+
+::: center-xy
+![](./files/bob_ross_meme.png){fig-alt="Bob Ross meme for plots"}
+:::
 
 ::: {.chapter .center}
 ## Chapter X
+### 5 tricks to spice up your plots
+:::
 
+## Custom legend keys
+
+::: {.text-slide}
+Different legend keys more clearly show the color and look neater
+:::
+
+::: panel-tabset
+### Plot
+
+```{r}
+#| label: legend-keys
+#| message: false
+#| warning: false
+#| fig-height: 2
+
+(taylor::taylor_all_songs |> 
+   drop_na(album_release, mode_name) |> 
+   arrange(album_release) |> 
+   mutate(cumsum = cumsum(row_number())) |> 
+   ggplot(aes(x = album_release, y = cumsum, color = mode_name)) +
+   geom_step(size = 1.5, direction = "vh") + 
+   labs(
+     x = NULL,
+     y = NULL,
+     color = NULL
+   ) +
+   scale_color_manual(labels = c("A", "B"),
+                      values = wesanderson::wes_palette("Moonrise2")) + 
+   theme_minimal(base_family = "custom") + 
+   theme(
+     plot.title = element_markdown(size = 80),
+     axis.text = element_blank(),
+     legend.position = c(0.3, 0.8),
+     legend.text = element_text(size = 40),
+     panel.grid.major.x = element_blank()
+   )) +
+  (taylor::taylor_all_songs |> 
+     drop_na(album_release, mode_name) |> 
+     arrange(album_release) |> 
+     mutate(cumsum = cumsum(row_number())) |> 
+     ggplot(aes(x = album_release, y = cumsum, color = mode_name)) +
+     geom_step(linewidth = 1.5, direction = "vh", key_glyph = "point") +
+     labs(
+       x = NULL,
+       y = NULL,
+       color = NULL
+     ) +
+     scale_color_manual(labels = c("A", "B"),
+                       values = wesanderson::wes_palette("Moonrise2"), 
+                       guide = guide_legend(
+                         override.aes = list(size = 6, 
+                                             stroke = 0, alpha = 1))) +
+     theme_minimal(base_family = "custom") + 
+     theme(
+       plot.title = element_markdown(size = 80),
+       axis.text = element_blank(),
+       legend.position = c(0.3, 0.8),
+       legend.text = element_text(size = 40),
+       panel.grid.major.x = element_blank()
+     ))
+
+```
+
+### Code
+
+```{r}
+#| label: legend-keys
+#| eval: false
+#| echo: true
+#| code-line-numbers: "27,33-37"
+```
+:::
+
+## An example
+
+::: panel-tabset
+### Plot
+
+```{r}
+#| label: marathon-times
+
+read_csv2("./files/oslo_marathon_results_2023.csv") |> 
+  janitor::clean_names() |> 
+  mutate(sex = str_sub(category, 1, 1),
+         sex = if_else(sex == "M", "Men", "Women", "Other/Unknown"),
+         sex = fct_infreq(sex)) |> 
+  ggplot(aes(x = time, fill = sex)) + 
+  geom_histogram(alpha = 0.9, binwidth = 60, key_glyph = "point") + 
+  geom_richtext(data = tibble(), aes(x = 4.2 * 60^2, y = 40,
+                                     label = "Finish times at the 2023 Oslo Marathon"),
+                family = "custom", size = 32, fontface = "bold", hjust = 0, 
+                inherit.aes = FALSE,
+                label.padding = unit(0.75, "lines"), label.color = NA) + 
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = NULL
+  ) + 
+  scale_x_time(breaks = scales::date_breaks("30 mins")) +
+  scale_y_continuous(breaks = NULL, expand = expansion(add = c(0, 2))) +
+  scale_fill_manual(values = c("#4A9EA8", "#E16843", "#5F666D"),
+                    guide = guide_legend(override.aes = list(shape = 21, size = 4))) + 
+  theme_minimal(base_family = "custom") + 
+  theme(
+    legend.title = element_markdown(size = 0),
+    legend.position = c(0.85, 0.25),
+    legend.text = element_text(size = 30),
+    axis.text = element_text(size = 40)
+  )
+```
+
+### Code
+
+```{r}
+#| label: marathon-times
+#| eval: false
+#| echo: true
+#| code-line-numbers: "8-12"
+```
+:::
+
+## Dare to label creatively
+
+::: panel-tabset
+### Plot
+
+```{r}
+#| label: ggdist-exmpl-pre
+
+ggdist_pi_base <- taylor::taylor_all_songs |> 
+  mutate(album_name = fct_relevel(album_name, taylor::album_levels)) |> 
+  drop_na(album_name) |>
+  filter(str_detect(album_name, "Taylor's Version", negate = TRUE),
+         !ep) |> 
+  select(album_name, loudness) |> 
+  group_by(album_name) |> 
+  median_qi(.width = c(0.5, 0.8, 0.95)) |>
+  drop_na() |> 
+  ggplot(aes(x = loudness, y = album_name, 
+             xmin = .lower, xmax = .upper)) + 
+  labs(
+    title = "Loudness across the Taylor Swift discography",
+    subtitle = "Median, 50<sup>th</sup>, 80<sup>th</sup> and 95<sup>th</sup> percentile",
+    x = NULL,
+    y = NULL
+  ) +
+  theme_minimal(base_family = "custom") + 
+  theme(
+    plot.title.position = "plot",
+    plot.title = element_markdown(size = 80),
+    plot.subtitle = element_markdown(size = 40),
+    axis.text = element_markdown(size = 40),
+    panel.grid.major.y = element_blank()
+  )
+
+ggdist_pi_base + 
+    geom_pointinterval() +
+    labs(
+      x = "Loudness (in dB)"
+    ) +
+    scale_x_continuous(trans = "reverse") +
+    theme(
+      axis.title = element_markdown(size = 40),
+    )
+```
+
+### Code
+
+```{r}
+#| label: ggdist-exmpl-pre
+#| eval: false
+#| echo: true
+#| code-line-numbers: "28-35"
+```
+:::
+
+## Dare to label creatively
+
+::: panel-tabset
+### Plot
+
+```{r}
+#| label: ggdist-exmpl-post
+
+ggdist_pi_base + 
+  geom_text(data = . %>% group_by(album_name) %>% summarise(label_pos = max(.upper)),
+            aes(x = label_pos, y = album_name,
+                label = album_name, color = album_name),
+            family = "custom", size = 25,
+            nudge_y = 0.33, hjust = 0,
+            inherit.aes = FALSE, show.legend = FALSE) +
+  geom_pointinterval() +
+  geom_curve(data = tibble(), aes(x = -12, y = 5, xend = -9.5, yend = 5.9), 
+             arrow = arrow(length = unit(0.5, "lines")), 
+             curvature = -0.4, inherit.aes = FALSE) +
+  geom_richtext(data = tibble(), aes(x = -12, y = 4.9, label = "Marks indicate the median, 50<sup>th</sup>,<br>80<sup>th</sup> and 95<sup>th</sup> percentile"),
+                family = "custom", size = 14, lineheight = 0, inherit.aes = FALSE) +
+  labs(
+    subtitle = NULL
+  ) +
+  scale_x_continuous(trans = "reverse",
+                     labels = scales::label_number(suffix = " dB"),
+                     expand = expansion(add = c(0, 1))) +
+  taylor::scale_color_albums() +
+  theme(
+    axis.text.y = element_blank(),
+  )
+```
+
+### Code
+
+```{r}
+#| label: ggdist-exmpl-post
+#| eval: false
+#| echo: true
+#| code-line-numbers: "2-13"
+```
+:::
+
+## Another example
+
+::: panel-tabset
+### Plot
+
+```{r}
+#| label: taylor-scatter
+
+taylor::taylor_albums |> 
+  drop_na() |> 
+  ggplot(aes(x = user_score * 10, y = metacritic_score, fill = album_name)) + 
+  geom_point(size = 6, shape = 21, show.legend = FALSE) + 
+  ggrepel::geom_label_repel(aes(label = album_name), size = 12,
+                            min.segment.length = 0,
+                            max.overlaps = 15, seed = 42,
+                            fill = "white", family = "custom") +
+  geom_richtext(data = tibble(), aes(x = 60.5, y = 85,
+                                     label = "Users are more<br>positive about Taytay<br>albums than critics"),
+                family = "custom", size = 36, fontface = "bold", hjust = 0, lineheight = 0,
+                inherit.aes = FALSE,
+                label.padding = unit(0.75, "lines"), label.color = NA) +
+  labs(
+    x = "User ratings",
+    y = "Metacritic ratings"
+  ) + 
+  scale_x_continuous(limits = c(60, 100)) +
+  scale_y_continuous(limits = c(60, 100)) +
+  taylor::scale_fill_albums() +
+  theme_minimal(base_family = "custom") + 
+  theme(
+    axis.title = element_markdown(size = 60),
+    axis.text = element_markdown(size = 50)
+  )
+
+```
+
+### Code
+
+```{r}
+#| label: taylor-scatter
+#| eval: false
+#| echo: true
+#| code-line-numbers: "5-13"
+```
+:::
+
+## One more example
+
+::: panel-tabset
+### Plot
+
+```{r}
+#| label: ggdist-valence
+
+album_colors <- tibble(album_name = taylor::album_levels,
+                       col = taylor::album_compare)
+
+taylor::taylor_all_songs |> 
+  filter(str_detect(album_name, "Holiday Collection", negate = TRUE),
+         str_detect(album_name, "Taylor's Version", negate = TRUE)) |> 
+  drop_na(valence, album_name) |> 
+  inner_join(album_colors, by = "album_name") |> 
+  mutate(album_label = str_glue("<span style='color: \"{col}\"'>{album_name} ({year(album_release)})</span>")) |> 
+  group_by(album_label) |> 
+  mutate(median_valence = median(valence)) |> 
+  ggplot(aes(x = valence, y = reorder(album_label, median_valence), fill = album_name)) +
+  stat_gradientinterval(position = "dodge", fill_type = "gradient") +
+  geom_beeswarm(shape = 21, size = 2) +
+  labs(
+    title = "\"Valence\" per Taylor Swift album",
+    subtitle = "**va·lence** [noun]: A measure describing the musical positiveness conveyed by a track.<br>Tracks with high valence sound more positive, while tracks with low valence sound more negative",
+    x = "Valence",
+    y = NULL
+  ) + 
+  scale_x_continuous(limits = c(0, 1), expand = expansion(add = c(0, 0.01))) +
+  taylor::scale_fill_albums(guide = "none") +
+  theme_minimal(base_family = "custom") +
+  theme(
+    plot.title.position = "plot",
+    plot.title = element_markdown(size = 90),
+    plot.subtitle = element_markdown(size = 40, lineheight = 0),
+    axis.text.x = element_markdown(size = 40),
+    axis.text.y = element_markdown(size = 40),
+    axis.title = element_markdown(size = 60),
+    panel.grid.major.y = element_blank()
+  )
+```
+
+### Code
+
+```{r}
+#| label: ggdist-valence
+#| eval: false
+#| echo: true
+#| code-line-numbers: "9,16-17,26-30"
+```
+:::
+
+## Label axes ticks directly
+
+::: panel-tabset
+### Plot
+
+```{r}
+#| label: label-ticks-directly
+
+scatter_fancy_base <- taylor::taylor_all_songs |> 
+  drop_na(tempo, loudness) |> 
+  ggplot(aes(x = tempo, y = loudness)) +
+  geom_point(alpha = 0.8) + 
+  geom_rug(alpha = 0.2) +
+  geom_smooth(method = "lm", color = "maroon", fill = "maroon", alpha = 0.2) +
+  labs(
+    title = "Correlation between tempo and loudness<br>in Mrs. Swift's discography",
+    fill = NULL
+  ) +
+  scale_y_continuous(trans = "reverse", limits = c(0, -16)) +
+  theme_minimal(base_family = "custom") + 
+  theme(
+    plot.title.position = "plot",
+    plot.title = element_markdown(size = 70, lineheight = 0),
+    axis.title = element_markdown(size = 60),
+    axis.text = element_text(size = 40),
+    legend.position = "bottom",
+    legend.text = element_blank()
+  )
+
+(scatter_fancy_base +
+    labs(
+      x = "Tempo (in bpm)",
+      y = "Loudness (in dB)"
+    )) +
+  (scatter_fancy_base +
+     labs(
+       x = "Tempo",
+       y = "Loudness"
+     ) +
+     scale_x_continuous(labels = scales::label_number(suffix = " bpm")) +
+     scale_y_continuous(trans = "reverse", limits = c(0, -16),
+                        labels = scales::label_number(suffix = " dB")))
+```
+
+### Code
+
+```{r}
+#| label: label-ticks-directly
+#| eval: false
+#| echo: true
+#| code-line-numbers: "31-33"
+```
+:::
+
+## Custom fonts
+
+::: {.text-slide}
+Use any font from the Google Fonts library in your plots
+
+Can help to better communicate a ✨vibe✨
+:::
+
+```{r}
+#| label: custom-font
+#| echo: true
+#| eval: false
+
+library(showtext)
+font_add_google(name = "Merriweather", family = "custom")
+showtext_auto()
+
+p + theme_minimal(base_family = "custom")
+```
+
+## An example
+
+::: panel-tabset
+### Plot
+
+::::{.center-x}
+![](https://danielroelfs-dev.netlify.app/blog/analyzing-bach/index.markdown_strict_files/figure-markdown_strict/colplot-key-cat1-1.png){fig-alt="Plot showing a different font" width=80%}
+::::
+
+### Source
+
+Shameless self-referencing: [danielroelfs.com](https://danielroelfs.com/blog/analyzing-bach/)
+
+:::
+
+## Resources {preview-link="true"}
+
+::: {.midlist style="font-size: 3vmin;"}
+**Enhancing plots in {ggplot2}**, Me, _Imaging Group PhD Seminar_ (2022),
+[Slides and resources from the presentation last year](https://danielroelfs.github.io/slides/2022-11-16-phd-club-seminar/phd-club-seminar_index.html)
+
+**Designing Charts in R**, Cédric Scherer, _Masterclass for the Data Visualization Society_ (2023), [slides for the presentation](https://z3tt.github.io/ggplot-dvs/slides.html)
+
+**Beyond Bar and Line Graphs: Time for a New Data Presentation Paradigm**, Weissgerber _et al._, _PLoS Biology_ (2015), DOI: [10.1371/journal.pbio.1002128](https://doi.org/10.1371/journal.pbio.1002128)
+
+**The misuse of colour in science communication**, Crameri _et al._, _Nature Communications_ (2020), DOI: [10.1038/s41467-020-19160-7](https://doi.org/10.1038/s41467-020-19160-7)
+
+**More examples of the things showed today**, Me, _danielroelfs.com_, [danielroelfs.com/blog](https://danielroelfs.com/blog)
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+::: {.chapter .center}
+## Chapter X
 ### Dare to rebel
+:::
+
+## Not all plots need to be alike
+
+::: {.text-slide}
+Data viz can serve two purposes:
+- Communicate data
+- Capture attention
+
+:::: {.fragment}
+It's totally allowed to make a pretty, creative plot for your presentations, and a separate basic one for your manuscript.
+::::
+
+:::: {.fragment}
+So, release your inner creative whenever you can
+::::
+
+:::: {.fragment}
+Fade in
+::::
 :::
 
 <!--
@@ -346,126 +819,8 @@ data_guttmacher |>
 
 ## Move the title to the plot area
 
-```{r}
-#| label: load-marathon-data
 
-data_marathon <- read_csv2("./files/oslo_marathon_results_2023.csv") |> 
-  janitor::clean_names() |> 
-  mutate(sex = str_sub(category, 1, 1),
-         sex = if_else(sex == "M", "Men", "Women", "Other/Unknown"),
-         sex = fct_infreq(sex))
 
-x <- data_marathon |> 
-  count(sex) |> 
-  mutate(frac = n / sum(n),
-         ymax = cumsum(frac),
-         ymin = lag(ymax, default = 0),
-         label = str_glue("{sex}\n{round(frac * 100, 2)}%")) |> 
-  ggplot(aes(ymax = ymax, ymin = ymin, xmax = 4, xmin = 3, fill = sex)) +
-  geom_rect() +
-  geom_label(aes(x = 3.5, y = (ymax + ymin) / 2, label = label),
-             size = 7, lineheight = 0.5) +
-  labs(
-    title = "Sex distribution in the Oslo marathon"
-  ) +
-  scale_x_continuous(limits = c(2, 4)) +
-  scale_y_continuous(expand = expansion(add = 0)) +
-  scale_fill_manual(values = c("#4A9EA8", "#E16843", "#5F666D")) +
-  coord_polar(theta = "y") + 
-  theme_void(base_family = "custom") +
-  theme(
-    plot.title = element_markdown(hjust = 0.5, lineheight = 0.5),
-    legend.position = "none"
-  )
-```
-
-::: panel-tabset
-### Plot
-
-```{r}
-#| label: marathon-times
-
-data_marathon |> 
-  ggplot(aes(x = time, fill = sex)) + 
-  geom_histogram(alpha = 0.9, binwidth = 60, key_glyph = "point") + 
-  geom_richtext(data = tibble(), aes(x = 4.2 * 60^2, y = 40,
-                                     label = "Finish times at the 2023 Oslo Marathon"),
-                family = "custom", size = 32, fontface = "bold", hjust = 0, 
-                inherit.aes = FALSE,
-                label.padding = unit(0.75, "lines"), label.color = NA) + 
-  labs(
-    x = NULL,
-    y = NULL,
-    fill = NULL
-  ) + 
-  scale_x_time(breaks = scales::date_breaks("30 mins")) +
-  scale_y_continuous(breaks = NULL, expand = expansion(add = c(0, 2))) +
-  scale_fill_manual(values = c("#4A9EA8", "#E16843", "#5F666D"),
-                    guide = guide_legend(override.aes = list(shape = 21, size = 4))) + 
-  theme_minimal(base_family = "custom") + 
-  theme(
-    legend.title = element_markdown(size = 0),
-    legend.position = c(0.85, 0.25),
-    legend.text = element_text(size = 30),
-    axis.text = element_text(size = 40)
-  )
-```
-
-### Code
-
-```{r}
-#| label: marathon-times
-#| eval: false
-#| echo: true
-#| code-line-numbers: "4-8"
-```
-:::
-
-## Label everything
-
-::: panel-tabset
-### Plot
-
-```{r}
-#| label: taylor-scatter
-
-taylor::taylor_albums |> 
-  drop_na() |> 
-  ggplot(aes(x = user_score * 10, y = metacritic_score, fill = album_name)) + 
-  geom_point(size = 6, shape = 21, show.legend = FALSE) + 
-  ggrepel::geom_label_repel(aes(label = album_name), size = 12,
-                            min.segment.length = 0,
-                            max.overlaps = 15, seed = 42,
-                            fill = "white", family = "custom") +
-  geom_richtext(data = tibble(), aes(x = 60.5, y = 85,
-                                     label = "Users are more<br>positive about Taytay<br>albums than critics"),
-                family = "custom", size = 36, fontface = "bold", hjust = 0, lineheight = 0,
-                inherit.aes = FALSE,
-                label.padding = unit(0.75, "lines"), label.color = NA) +
-  labs(
-    x = "User ratings",
-    y = "Metacritic ratings"
-  ) + 
-  scale_x_continuous(limits = c(60, 100)) +
-  scale_y_continuous(limits = c(60, 100)) +
-  taylor::scale_fill_albums() +
-  theme_minimal(base_family = "custom") + 
-  theme(
-    axis.title = element_markdown(size = 60),
-    axis.text = element_markdown(size = 50)
-  )
-
-```
-
-### Code
-
-```{r}
-#| label: taylor-scatter
-#| eval: false
-#| echo: true
-#| code-line-numbers: "5-8"
-```
-:::
 
 ## Label averages
 
@@ -579,204 +934,34 @@ boxplot_vagina_base <- taylor::taylor_all_songs |>
 ```
 :::
 
-## Simple vs fancy scatterplots
 
-::: panel-tabset
-### Plot
 
+
+<!--
 ```{r}
-#| label: scatter-vs-fancy-scatter
+#| eval: false
 
-scatter_fancy_base <- taylor::taylor_all_songs |> 
-  ggplot(aes(x = tempo, y = energy)) +
+x <- data_marathon |> 
+  count(sex) |> 
+  mutate(frac = n / sum(n),
+         ymax = cumsum(frac),
+         ymin = lag(ymax, default = 0),
+         label = str_glue("{sex}\n{round(frac * 100, 2)}%")) |> 
+  ggplot(aes(ymax = ymax, ymin = ymin, xmax = 4, xmin = 3, fill = sex)) +
+  geom_rect() +
+  geom_label(aes(x = 3.5, y = (ymax + ymin) / 2, label = label),
+             size = 7, lineheight = 0.5) +
   labs(
-    title = "Correlation between tempo and energy<br>in Mrs. Swift's discography",
-    x = "Tempo",
-    y = "Energy",
-    fill = NULL
+    title = "Sex distribution in the Oslo marathon"
   ) +
-  scale_y_continuous(limits = c(0, 1)) +
-  theme_minimal(base_family = "custom") + 
+  scale_x_continuous(limits = c(2, 4)) +
+  scale_y_continuous(expand = expansion(add = 0)) +
+  scale_fill_manual(values = c("#4A9EA8", "#E16843", "#5F666D")) +
+  coord_polar(theta = "y") + 
+  theme_void(base_family = "custom") +
   theme(
-    plot.title.position = "plot",
-    plot.title = element_markdown(size = 80, lineheight = 0),
-    axis.title = element_markdown(size = 60),
-    axis.text = element_text(size = 40),
-    legend.position = "bottom",
-    legend.text = element_blank()
-  )
-
-(scatter_fancy_base + 
-    geom_point()) +
-(scatter_fancy_base +
-   ggpubr::stat_cor(aes(
-     label = paste(after_stat(rr.label), after_stat(p.label), sep = "~`,`~")),
-                    label.y = 0.98, size = 20, family = "custom") +
-   geom_point(alpha = 0.8) + 
-   geom_rug(alpha = 0.2) +
-   geom_smooth(method = "lm", color = "maroon", fill = "maroon", alpha = 0.2))
-```
-
-### Code
-
-```{r}
-#| label: scatter-vs-fancy-scatter
-#| eval: false
-#| echo: true
-#| code-line-numbers: "23-28"
-```
-:::
-
-## Fancy geoms and labels
-
-::: panel-tabset
-### Plot
-
-```{r}
-#| label: ggdist-exmpl-submit
-
-ggdist_pi_base <- taylor::taylor_all_songs |> 
-  mutate(album_name = fct_relevel(album_name, taylor::album_levels)) |> 
-  drop_na(album_name) |>
-  filter(str_detect(album_name, "Taylor's Version", negate = TRUE),
-         !ep) |> 
-  select(album_name, loudness) |> 
-  group_by(album_name) |> 
-  median_qi(.width = c(0.5, 0.8, 0.95)) |>
-  drop_na() |> 
-  ggplot(aes(x = loudness, y = album_name, 
-             xmin = .lower, xmax = .upper)) + 
-  labs(
-    title = "Loudness across the Taylor Swift discography",
-    subtitle = "Median, 50<sup>th</sup>, 80<sup>th</sup> and 95<sup>th</sup> percentile",
-    x = NULL,
-    y = NULL
-  ) +
-  theme_minimal(base_family = "custom") + 
-  theme(
-    plot.title.position = "plot",
-    plot.title = element_markdown(size = 80),
-    plot.subtitle = element_markdown(size = 40),
-    axis.text = element_markdown(size = 40),
-    panel.grid.major.y = element_blank()
-  )
-
-(ggdist_pi_base + 
-    geom_pointinterval() +
-    labs(
-      x = "Loudness (in dB)"
-    ) +
-    scale_x_continuous(trans = "reverse") +
-    theme(
-      axis.title = element_markdown(size = 40),
-    )
-) &
-  plot_annotation(
-    title = "What you submit...",
-    theme = theme(
-      plot.title = element_markdown(family = "custom", size = 90, lineheight = 0)
-    )
+    plot.title = element_markdown(hjust = 0.5, lineheight = 0.5),
+    legend.position = "none"
   )
 ```
-
-### Code
-
-```{r}
-#| label: ggdist-exmpl-submit
-#| eval: false
-#| echo: true
-#| code-line-numbers: "28-35"
-```
-:::
-
-## Fancy geoms and labels
-
-::: panel-tabset
-### Plot
-
-```{r}
-#| label: ggdist-exmpl-present
-
-(ggdist_pi_base + 
-   geom_text(data = . %>% group_by(album_name) %>% summarise(label_pos = max(.upper)),
-             aes(x = label_pos, y = album_name,
-                 label = album_name, color = album_name),
-             family = "custom", size = 25,
-             nudge_y = 0.33, hjust = 0,
-             inherit.aes = FALSE, show.legend = FALSE) +
-   geom_pointinterval() +
-   scale_x_continuous(trans = "reverse",
-                      labels = scales::label_number(suffix = " dB"),
-                      expand = expansion(add = c(0, 1))) +
-   taylor::scale_color_albums() +
-   theme(
-         axis.text.y = element_blank(),
-   )
-) &
-  plot_annotation(
-    title = "What you present...",
-    theme = theme(
-      plot.title = element_markdown(family = "custom", size = 90, lineheight = 0)
-    )
-  )
-```
-
-### Code
-
-```{r}
-#| label: ggdist-exmpl-present
-#| eval: false
-#| echo: true
-#| code-line-numbers: "2-15"
-```
-:::
-
-## Fancy geoms (cont.)
-
-::: panel-tabset
-### Plot
-
-```{r}
-#| label: ggdist-valence
-
-taylor::taylor_all_songs |> 
-  filter(str_detect(album_name, "Holiday Collection", negate = TRUE),
-         str_detect(album_name, "Taylor's Version", negate = TRUE)) |> 
-  drop_na(valence, album_name) |> 
-  mutate(album_label = str_glue("{album_name} ({year(album_release)})")) |> 
-  ggplot(aes(x = valence, y = reorder(album_label, valence), fill = album_name)) +
-  stat_gradientinterval(position = "dodge", fill_type = "gradient") +
-  geom_beeswarm(shape = 21, size = 2) +
-  labs(
-    title = "\"Valence\" per Taylor Swift album",
-    subtitle = "**va·lence** [noun]: A measure describing the musical positiveness conveyed by a track.<br>Tracks with high valence sound more positive, while tracks with low valence sound more negative",
-    x = "Valence",
-    y = NULL
-  ) + 
-  scale_x_continuous(limits = c(0, 1), expand = expansion(add = c(0, 0.01))) +
-  taylor::scale_fill_albums(guide = "none") +
-  theme_minimal(base_family = "custom") +
-  theme(
-    plot.title.position = "plot",
-    plot.title = element_markdown(size = 90),
-    plot.subtitle = element_markdown(size = 40, lineheight = 0),
-    axis.text = element_markdown(size = 40),
-    axis.title = element_markdown(size = 60),
-    panel.grid.major.y = element_blank()
-  )
-```
-
-### Code
-
-```{r}
-#| label: ggdist-valence
-#| eval: false
-#| echo: true
-```
-:::
-
-## Resources {preview-link="true"}
-
-::: {.midlist style="font-size: 3vmin;"}
-**Designing Charts in R**, Cédric Scherer, _Masterclass for the Data Visualization Society_ (2023), [slides for the presentation](https://z3tt.github.io/ggplot-dvs/slides.html)
-:::
+-->

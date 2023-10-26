@@ -28,6 +28,8 @@ execute:
 # for settings see: https://quarto.org/docs/reference/formats/presentations/revealjs.html
 ---
 
+## The Plan
+
 ```{r}
 #| label: pkgs
 #| include: false
@@ -49,13 +51,13 @@ font_add_google(name = "Yanone Kaffeesatz", family = "custom")
 showtext_auto()
 ```
 
-------------------------------------------------------------------------
+<!--
 
 ::: {.center-y style="width: 70%; margin-left: 2vw"}
 *"We're planning on celebrating Oktoberfest at 26th October at PSI (HUP, Promenta, and hopefully Brainmint) but **need to** organize a seminar beforehand."* <br><br> **-- Valerie**
 :::
+-->
 
-## The Plan
 
 ::: {.text-slide}
 :::: {.fragment}
@@ -78,7 +80,7 @@ The part where I rant about how it's okay to be creative with your plots
 
 
 ::: {.chapter .center}
-## Chapter X
+## Chapter 1
 
 ### Picking the right tool
 :::
@@ -106,9 +108,9 @@ library(patchwork)  # for composing multiple plots
 :::
 
 ::: {.chapter .center}
-## Chapter X
+## Chapter 2
 
-### The Basics
+### Colors
 :::
 
 ## Defaults are meh
@@ -313,7 +315,7 @@ scico::scale_color_scico_d()  # Discrete scale
 :::
 
 ::: {.chapter .center}
-## Chapter X
+## Chapter 3
 ### 5 tricks to spice up your plots
 :::
 

@@ -93,6 +93,9 @@ html {
   align-items: center; 
   text-align: center; 
   min-height: 80vh;
+  & code {
+    font-size: 140%;
+  }
 }
 
 // title page

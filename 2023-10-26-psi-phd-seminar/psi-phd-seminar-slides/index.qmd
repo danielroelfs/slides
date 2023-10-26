@@ -9,7 +9,7 @@ format:
     background-transition: slide
     controls: true
     controls-layout: bottom-right
-    highlight-style: atom-one-dark
+    highlight-style: github-dark
 revealjs-plugins:
   - pointer
   - fontawesome
@@ -55,6 +55,28 @@ showtext_auto()
 *"We're planning on celebrating Oktoberfest at 26th October at PSI (HUP, Promenta, and hopefully Brainmint) but **need to** organize a seminar beforehand."* <br><br> **-- Valerie**
 :::
 
+## The Plan
+
+::: {.text-slide}
+:::: {.fragment}
+[C]{style="color: navy;"}[o]{style="color: salmon;"}[l]{style="color: maroon;"}[o]{style="color: blue;"}[r]{style="color: indigo;"}[s]{style="color: orange;"}
+::::
+
+:::: {.fragment}
+5 new tricks I discovered since last time
+::::
+
+:::: {.fragment}
+New `geom_<x>`'s I found out about
+::::
+
+:::: {.fragment}
+The part where I rant about how it's okay to be creative with your plots
+::::
+:::
+
+
+
 ::: {.chapter .center}
 ## Chapter X
 
@@ -65,6 +87,22 @@ showtext_auto()
 
 ::: center-xy
 ![](./files/spongebob-package-meme.png){fig-alt="Spongebob strong-stronger-strongest meme with data viz packages"}
+:::
+
+------------------------------------------------------------------------
+
+::: {.center-xy}
+```{r}
+#| label: recc-pkgs
+#| eval: false
+#| echo: true
+#| code-line-numbers: false
+
+library(tidyverse)  # includes ggplot2
+library(ggtext)     # for extra text options
+library(ggdist)     # for extra geoms
+library(patchwork)  # for composing multiple plots
+```
 :::
 
 ::: {.chapter .center}
@@ -152,6 +190,7 @@ plot_colors_base_c + plot_colors_base_d
 #| label: viridis-palette
 #| echo: true
 #| eval: false
+#| code-line-numbers: false
 
 scale_color_viridis_c()   # Continuous scale
 scale_color_viridis_d()   # Discrete scale
@@ -170,6 +209,7 @@ scale_color_viridis_d()   # Discrete scale
 #| label: scico-palette
 #| echo: true
 #| eval: false
+#| code-line-numbers: false
 
 scico::scale_color_scico()    # Continuous scale
 scico::scale_color_scico_d()  # Discrete scale
@@ -660,6 +700,7 @@ Can help to better communicate a ✨vibe✨
 #| label: custom-font
 #| echo: true
 #| eval: false
+#| code-line-numbers: false
 
 library(showtext)
 font_add_google(name = "Merriweather", family = "custom")
@@ -708,7 +749,7 @@ Shameless self-referencing: [danielroelfs.com](https://danielroelfs.com/blog/ana
 
 
 
-
+<!--
 
 ::: {.chapter .center}
 ## Chapter X
@@ -735,7 +776,6 @@ Fade in
 ::::
 :::
 
-<!--
 ## Move the y-axis to the right
 
 ::: panel-tabset
@@ -815,7 +855,6 @@ data_guttmacher |>
   geom_point() + 
   geom_label(aes(label = country_name))
 ```
--->
 
 ## Move the title to the plot area
 
@@ -936,8 +975,6 @@ boxplot_vagina_base <- taylor::taylor_all_songs |>
 
 
 
-
-<!--
 ```{r}
 #| eval: false
 

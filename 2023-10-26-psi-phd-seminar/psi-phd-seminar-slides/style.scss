@@ -19,7 +19,8 @@ $header-weight: 700;
 $header-color: $font-color;
 
 $background-color: #EFEFEF;
-$primary-accent: #9BA0BC;
+$primary-accent: #C46150;
+//$primary-accent: #AC354B;
 //$secondary-accent: #2D898B;
 $secondary-accent: #CF878D;
 $controls-color: $primary-accent;
@@ -34,9 +35,9 @@ $font-family-serif: $main-font;
 $presentation-heading-color: $font-color;
 $presentation-heading-font-weight: 800;
 
-//$link-color: $primary-accent;
+$link-color: $primary-accent;
 $link-color: $secondary-accent;
-$link-color-dark: #65B8CF;
+$link-color-dark: #AFAFAF;
 $link-color-visited: $link-color;
 $link-color-hover: darken($link-color, 15%);
 
@@ -416,6 +417,7 @@ section.has-dark-background code {
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
   color: $controls-color;
+  height: 5px;
 }
 
 .white-controls, .chapter, .subsection, .has-dark-background {

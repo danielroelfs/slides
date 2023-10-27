@@ -25,6 +25,8 @@ execute:
   echo: true
   fig-width: 7
   fig-height: 4
+include-in-header:
+  text: <script async src="https://analytics-danielroelfs.netlify.app/script.js" data-website-id="9fe732c4-da3b-494b-8229-98bf0a4e550e"></script>
 # for settings see: https://quarto.org/docs/reference/formats/presentations/revealjs.html
 ---
 

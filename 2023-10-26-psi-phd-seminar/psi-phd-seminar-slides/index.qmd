@@ -1,7 +1,7 @@
 ---
 title: "Data Viz<br>For Science"
 subtitle: "& How It Earned Me<br>Two Free Dinners"
-author: "Daniel Roelfs"
+author: "[Daniel Roelfs](https://danielroelfs.com)"
 format:
   revealjs:
     theme: [fonts.scss, style.scss]
@@ -721,9 +721,6 @@ Shameless self-referencing: [danielroelfs.com](https://danielroelfs.com/blog/ana
 ## Resources {preview-link="true"}
 
 ::: {.midlist style="font-size: 3vmin;"}
-**Enhancing plots in {ggplot2}**, Me, _Imaging Group PhD Seminar_ (2022),
-[Slides and resources from the presentation last year](https://danielroelfs.github.io/slides/2022-11-16-phd-club-seminar/phd-club-seminar_index.html)
-
 **Designing Charts in R**, Cédric Scherer, _Masterclass for the Data Visualization Society_ (2023), [slides for the presentation](https://z3tt.github.io/ggplot-dvs/slides.html)
 
 **Beyond Bar and Line Graphs: Time for a New Data Presentation Paradigm**, Weissgerber _et al._, _PLoS Biology_ (2015), DOI: [10.1371/journal.pbio.1002128](https://doi.org/10.1371/journal.pbio.1002128)
@@ -731,4 +728,14 @@ Shameless self-referencing: [danielroelfs.com](https://danielroelfs.com/blog/ana
 **The misuse of colour in science communication**, Crameri _et al._, _Nature Communications_ (2020), DOI: [10.1038/s41467-020-19160-7](https://doi.org/10.1038/s41467-020-19160-7)
 
 **More examples of the things showed today**, Me, _danielroelfs.com_, [danielroelfs.com/blog](https://danielroelfs.com/blog)
+:::
+
+## Additional links from presentation {preview-link="true"}
+
+::: {.midlist style="font-size: 3vmin;"}
+[**Slides and resources from last year's presentation**](https://danielroelfs.github.io/slides/2022-11-16-phd-club-seminar/phd-club-seminar_index.html) - Talk I gave last year on enhancing ggplots, includes inspiration, code, and a 5 step guide
+
+[**The {taylor} package**](https://taylor.wjakethompson.com) - Package with both color palettes, themes, and datasets on Taylor Swift, [GitHub](https://github.com/wjakethompson/taylor/)
+
+[**Quarto + reveal.js**](https://quarto.org/docs/presentations/revealjs/) - Quarto, the "Rmarkdown successor" used for creating these slides ([link to the source code](https://github.com/danielroelfs/slides/blob/main/2023-10-26-psi-phd-seminar/psi-phd-seminar-slides/index.qmd) for this particular presentation, and [from last year's presentation](https://github.com/danielroelfs/slides/blob/main/2022-11-16-phd-club-seminar/phd-club-seminar-slides/index.qmd))
 :::

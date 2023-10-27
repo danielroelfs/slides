@@ -27,6 +27,6 @@ window.onload = function() {
     var umamiscript = document.createElement("script");
     umamiscript.async = true
     umamiscript.src = "https://analytics-danielroelfs.netlify.app/script.js";
-    umamiscript.setAttribute("data-website-id", "da48a88a-2e87-4024-8c99-639222aab54d");
+    umamiscript.setAttribute("data-website-id", "9fe732c4-da3b-494b-8229-98bf0a4e550e");
     document.head.appendChild(umamiscript);
 }

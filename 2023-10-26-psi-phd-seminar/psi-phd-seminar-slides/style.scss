@@ -1,0 +1,496 @@
+// adapted from https://github.com/rstudio-conf-2022/ggplot2-graphic-design/tree/main/materials
+
+/*-- scss:defaults --*/
+
+// imports
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+// variables
+$main-font: 'Theinhardt', serif; 
+$font-color: #444;
+$font-size: 4vmin;
+
+$mono-font: 'Fira Mono', monospace;
+$code-font: 'Fira Mono', monospace;
+
+$header-font: 'Flexibility-Display', sans-serif;
+$header-weight: 700;
+$header-color: $font-color;
+
+$background-color: #EFEFEF;
+$primary-accent: #C46150;
+//$primary-accent: #AC354B;
+//$secondary-accent: #2D898B;
+$secondary-accent: #CF878D;
+$controls-color: $primary-accent;
+
+$background-color-dark: $primary-accent;
+$font-color-dark: #EFEFEF;
+
+// quarto
+$font-family-sans-serif: $main-font;
+$font-family-serif: $main-font;
+
+$presentation-heading-color: $font-color;
+$presentation-heading-font-weight: 800;
+
+$link-color: $primary-accent;
+$link-color: $secondary-accent;
+$link-color-dark: #AFAFAF;
+$link-color-visited: $link-color;
+$link-color-hover: darken($link-color, 15%);
+
+$presentation-selection-background-color: #FFFFFF;
+
+/*---------- MAIN ----------*/
+/*-- scss:rules --*/
+
+html {
+  font-size: 18pt;
+}
+
+// main containers
+.reveal {
+  font-family: $main-font;
+  font-size: $font-size;
+  color: $font-color;
+}
+
+.reveal-viewport {
+  background: $background-color;
+  background-size: cover;
+}
+
+.reveal-viewport .chapter {
+  color: $font-color-dark;
+  background: $background-color-dark;
+  background-size: cover;
+  & a {
+    color: $link-color-dark;
+  }
+}
+
+.reveal-viewport .subsection {
+  background: darken($secondary-accent, 15%);
+}
+
+.center-x {
+  display: flex; 
+  justify-content: center; 
+  text-align: center; 
+}
+
+.center-y {
+  display: flex; 
+  align-items: center; 
+  min-height: 80vh;
+}
+
+.center-xy {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  min-height: 80vh;
+  & code {
+    font-size: 140%;
+  }
+}
+
+// title page
+#title-slide {
+  
+  height: 100%;
+  padding-top: 20%;
+  
+  & .title, .subtitle {
+    font-family: $header-font;
+    font-weight: $header-weight;
+    text-transform: uppercase;
+    color: $font-color;
+    margin-left: 6vw;
+    text-align: left;
+    align-items: top;
+    line-height: 1;
+  }
+  
+  & .title {
+    font-size: 200%;
+  }
+  
+  & .quarto-title-author {
+    font-family: $header-font;
+    font-size: 40%;
+    text-transform: uppercase;
+    margin: auto;
+    padding-top: 20%;
+  }
+  & .quarto-title-author-name::before {
+    content: "Invited talk by ";
+  }
+}
+
+// headers
+.reveal h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font;
+  text-transform: uppercase;
+}
+
+.reveal h1, h2, h3 {
+  font-weight: $header-weight;
+  text-transform: uppercase;
+}
+
+.reveal h2 {
+  margin-top: 0.5em;
+  margin-bottom: 2.5px;
+  text-transform: uppercase;
+}
+
+.reveal h2 > code {
+  color: inherit;
+  margin-bottom: 2.8px;
+}
+
+.reveal h3 {
+  margin-bottom: 2.8px;
+  font-weight: bold;
+}
+
+.reveal h4 {
+  margin-bottom: 2.8px;
+  font-weight: bold;
+  color: #606060;
+}
+
+.reveal h5 {
+  margin-bottom: 2.8px;
+  font-weight: bold;
+  color: #606060;
+}
+
+.reveal [id^='chapter-'] {
+  font-family: $header-font;
+  text-transform: uppercase;
+  margin-left: 10vw;
+  width: calc(100% - 10vw);
+  & h2, h3 {
+    font-family: $header-font;
+    font-size: 1.5rem;
+    font-weight: $header-weight;
+    text-transform: inherit;
+  }
+  & h3 {
+    font-weight: 400;
+  } 
+}
+
+.reveal p {
+  font-size: .75em;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.reveal table {
+  font-size: .75em;
+  max-width: 80%;
+}
+
+.lightable-minimal.lightable-hover tbody tr:hover { 
+  background-color: #28a87d !important;
+  color: #ffffff;
+}
+
+.reveal .slide figure > figcaption, .reveal .slide img.stretch+p.caption, .reveal .slide img.r-stretch + p.caption  {
+  font-size: .4em;
+  color: #606060;
+  text-align: center;
+  margin-top: 1;
+}
+
+details {
+  margin-bottom: 5px;
+}
+
+details > summary {
+  font-family: $mono-font;
+  font-size: 1.25rem;
+  color: #a0a0a0;
+}
+
+code > a, code > span {
+  font-family: $code-font;
+  font-size: 75%;
+  line-height: 0.7;
+}
+
+.panel-tabset li > a {
+  color: #a0a0a0;
+  font-size: 40%;
+  font-weight: bold;
+}
+
+.reveal .slide ul[role="tablist"] li {
+  margin-bottom: -0.1em !important;
+}
+
+.reveal .slide ul li, .reveal .slide ol li {
+  margin-top: 0 !important;
+}
+
+.reveal .slide ul, .reveal .slide ol {
+  margin-bottom: 0.25em !important;
+}
+
+//.cell {
+//    margin-bottom: 12px;
+//}
+
+.footer p {
+  color: #a0a0a0;
+  font-size: 1.25rem;
+}
+
+a:link, a:visited {
+  color: $link-color;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: ease .5s;
+}
+
+a:hover {
+  color: $link-color-hover;
+  text-decoration-color: $link-color-hover;
+}
+
+.small {
+  font-size: .75rem;
+}
+
+.reveal li {
+  font-size: 2.1rem;
+}
+
+.reveal li li, li li li {
+  font-size: 1.75rem;
+}
+
+.reveal pre {
+  height: 98.1%
+}
+
+.reveal .slide .question {
+  border-left: 3px solid #28a87d;
+  padding: 0.5rem 0.5rem 0.2rem 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+  background: #d9f6ec;
+}
+
+.reveal .slide .poll {
+  border-left: 3px solid #FFD166;
+  padding: 0.5rem 0.5rem 0.2rem 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+  background: #FFEDC2;
+}
+
+.reveal .slide .recap {
+  border-left: 3px solid #663399;
+  padding: 0.5rem 0.5rem 0.2rem 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  background: #e6d9f2;
+}
+
+.simple-highlight-ylw {
+ background-color: #FFD166;
+ padding: 0.1em 0.2em;
+ font-weight: bold;
+}
+
+.simple-highlight-grn {
+ background-color: #79dfbd;
+ padding: 0.1em 0.2em;
+ font-weight: bold;
+}
+
+.circle-highlight {
+  position: relative;
+}
+
+.circle-highlight:before {
+  content: "";
+  z-index: -1;
+  left: -0.4em;
+  top: -0.15em;
+  border-width: 2.7px;
+  border-style: solid;
+  border-color: #28a87d;
+  position: absolute;
+  border-right-color: transparent;
+  width: 100%;
+  height: 1em;
+  transform: rotate(2deg);
+  opacity: 0.65;
+  border-radius: 75%;
+  padding: 0.1em 0.25em;
+}
+
+.circle-highlight:after {
+  content: "";
+  z-index: -1;
+  left: -0.6em;
+  top: 0.04em;
+  padding: 0.05em 0.29em;
+  border-width: 2.7px;
+  border-style: solid;
+  border-color: #28a87d;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  position:absolute;
+  width: 100%;
+  height: 1em;
+  transform: rotate(-1deg);
+  opacity: 0.65;
+  border-radius: 80%;
+}
+
+.reveal .slide body::-webkit-scrollbar {
+  display: none;
+}
+
+
+///////
+/// 
+///
+
+// img
+.reveal img.r-stretch, .reveal .cell-output-display img {
+  display: flex;
+  margin: auto;
+}
+
+// tabset
+.panel-tabset [role=tab][aria-selected=true] {
+  border-bottom-color: transparent;
+}
+
+// code
+.reveal code {
+  color: $primary-accent;
+}
+
+.reveal .cell {
+  & pre.sourceCode code {
+    font-family: $code-font;
+    background-color: #333333;
+  }
+}
+
+.reveal .cell-output-display, .reveal {
+  & img, iframe {
+    vertical-align: middle;
+    box-shadow: 4px 3px 6px #A0A0A0;
+    transition: 0.5s;
+    &.no-shadow { 
+      box-shadow: none;
+    }
+    &:hover {
+        box-shadow: 6px 4px 8px #A0A0A0;
+        transition: 0.5s;
+      &.no-shadow { 
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+section.has-dark-background code {
+  color: $secondary-accent;
+}
+
+// controls
+.reveal .controls {
+  color: $controls-color;
+  font-size: 0.75vmin;
+}
+  
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2);
+  color: $controls-color;
+  height: 5px;
+}
+
+.white-controls, .chapter, .subsection, .has-dark-background {
+  & .controls {
+      color: $font-color-dark;
+  }
+  & .progress {
+      background: rgba(0, 0, 0, 0.2);
+      color: $font-color-dark;
+  }
+}
+
+.hide-controls .reveal {
+  & .controls {
+      color: transparent;
+  }
+  & .progress {
+      background: transparent;
+      color: transparent;
+  }
+}  
+
+// button
+button {
+  cursor: pointer;
+}
+
+// menu button
+.reveal .slide-menu-button .fa-bars::before {
+  visibility: hidden;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(185, 181, 156)" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>');
+}
+
+// blinking animation
+.flashing {
+  background-color: transparent;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { 
+    opacity: 0; 
+  }
+}
+
+// center list
+.reveal .midlist {
+  width: 60vw; 
+  margin: auto; 
+  margin-top: 15vh;
+  & p {
+    padding-bottom: 1em;
+    & code {
+      color: inherit;
+    }
+  }
+}
+
+.reveal .text-slide {
+  margin-top: 3em;
+  & p {
+    font-size: 100%;
+    padding-bottom: 1em;
+  }
+  & li {
+    font-size: 100%;
+  }
+}
+
+
+
+
+

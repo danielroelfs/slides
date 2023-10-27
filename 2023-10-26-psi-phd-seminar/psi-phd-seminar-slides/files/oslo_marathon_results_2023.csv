@@ -1,0 +1,2547 @@
+rank;race_no;name;nation;club;category;time;behind
+1;1058;Tage Morken Augustson;NOR;Varegg Fleridrett;M24-34;2:25:44;
+2;1006;Stian Christoffersen;NOR;Runar IL;M24-34;2:26:10;+ 26
+3;1082;Piera Tobiassen;NOR;Sirma IL;M24-34;2:26:59;+ 1:16
+4;1121;Halfdan-Emil Færø;NOR;Varegg Fleridrett;M24-34;2:27:08;+ 1:24
+5;11;Nijs Dekker;NED;;M24-34;2:27:24;+ 1:40
+6;73064;Sebastian Conrad Håkansson;NOR;Svorkmo NOI;M24-34;2:28:17;+ 2:34
+7;3;Odd Arne Engesæter;NOR;Oksen Ferdinand;M40-44;2:30:21;+ 4:38
+8;1110;Øyvind Heiberg Sundby;NOR;Tjalve IK;M40-44;2:32:22;+ 6:39
+9;31;Robert Olsson;SWE;Finnskogarnas sk;M35-39;2:33:31;+ 7:47
+10;1060;Even Bentzen Løvås;NOR;Halden IL;M24-34;2:34:40;+ 8:57
+11;20;Jimmy Voxek;SWE;Falkenberg Allstars;M45-49;2:35:03;+ 9:20
+12;1031;Mats Hellerud;NOR;Moss IL;M24-34;2:35:11;+ 9:28
+13;1108;Kim Are Bull Hansen;NOR;Harding IL;M40-44;2:35:23;+ 9:40
+14;1048;Espen Sæther;NOR;Velledalen IL - Friidrett;M24-34;2:35:32;+ 9:48
+15;1105;Erik Fossen Nilsen;NOR;Hind IK;M35-39;2:35:38;+ 9:55
+16;1091;Jacob Hystad;NOR;Stord IL (Allianseidrettslag);M24-34;2:36:07;+ 10:24
+17;73118;Trym Tangen Solsvik;NOR;;M24-34;2:37:13;+ 11:29
+18;1085;Knut Borkholm;NOR;Eiker-Kvikk IF;M18-21;2:37:19;+ 11:36
+19;32;Kristoffer Lamøy;NOR;Åsen IL;M24-34;2:37:42;+ 11:59
+20;1078;Pål Oraug;NOR;Sarpsborg IL;M40-44;2:40:08;+ 14:25
+21;1028;John Henry Strupstad;NOR;Rustad IL;M40-44;2:40:56;+ 15:12
+22;40861;Johan Fries;SWE;;M35-39;2:41:05;+ 15:21
+23;26;Kjell Magnus Antonsen;NOR;Oslofjord Triatlon;M45-49;2:41:14;+ 15:31
+24;73058;Jonas Tofte Røhne;NOR;AAJ BIL;M24-34;2:43:03;+ 17:20
+25;41261;Thomas Berntsen;NOR;Cisco;M24-34;2:43:15;+ 17:32
+26;41147;André Bjugstad;NOR;Brøttum;M24-34;2:43:54;+ 18:11
+27;1049;Kristin Waaktaar Opland;NOR;Bratsberg IL;K40-44;2:44:20;+ 18:37
+28;5;Aleksandr Tsaplin;NEU;;M24-34;2:44:38;+ 18:55
+29;73018;Torstein Bjerland;NOR;;M40-44;2:44:45;+ 19:01
+30;1117;Pål Jenssen;NOR;Sandefjord Turn og Idrettsforening;M24-34;2:45:10;+ 19:27
+31;40482;Matthew Underhill;GBR;South Coast Sharks;M24-34;2:45:24;+ 19:41
+32;41252;Richard Vernimmen;NED;Brams Bootcamp;M50-54;2:45:32;+ 19:49
+33;40455;Giles Heaman;GBR;South Coast Sharks;M45-49;2:46:01;+ 20:18
+34;40473;Danny Smith;NOR;;M24-34;2:46:17;+ 20:34
+35;22;Mads Buhaug;NOR;Øyer-Tretten IF;M24-34;2:46:37;+ 20:53
+36;23;Truls Follesø;NOR;Bodø Bauta løpeklubb;M24-34;2:46:46;+ 21:02
+37;14;Melissah Gibson;GBR;Ealing Eagles Running Club;K35-39;2:46:49;+ 21:06
+38;41181;Eskild Aas;NOR;Vidar Sportsklubben;M24-34;2:47:37;+ 21:53
+39;40812;Sjur Molstad;NOR;;M40-44;2:47:41;+ 21:58
+40;73133;Pål Harboe;NOR;Casual Running;M24-34;2:47:51;+ 22:07
+41;28;Mads Huken Mathiesen;NOR;Ullensaker/Kisa IL Friidrett;M22-23;2:48:01;+ 22:17
+42;41278;Ådne Skogsbakken;NOR;Søndre Land IL Friidrett;M24-34;2:48:07;+ 22:24
+43;41283;Magnus Romstad Stavne;NOR;Ås IL;M24-34;2:48:48;+ 23:04
+44;41200;Ethan Mcchristian;USA;Ingen;M24-34;2:48:59;+ 23:16
+45;7;Marshall Ritter;USA;;M24-34;2:49:19;+ 23:36
+46;73059;Peter Jensen;DEN;Romerike Ultraløperklubb;M45-49;2:49:36;+ 23:53
+47;1120;Morten Lunheim Solbakken;NOR;Lillehammer IF;M35-39;2:49:40;+ 23:57
+48;1101;Henrik Nordtug;NOR;Steinkjer Friidrettsklubb;M35-39;2:49:42;+ 23:59
+49;1018;Siri Schøne Ness;NOR;Lyn Ski;K35-39;2:49:43;+ 24:00
+50;41465;Rasmus Krogstad;NOR;Heming IL;M24-34;2:50:12;+ 24:29
+51;33;Marit Haslie;NOR;Vidar Sportsklubben;K24-34;2:50:25;+ 24:41
+52;41452;August Krokan;NOR;Tromsø Løpeklubb;M24-34;2:50:28;+ 24:45
+53;73123;Bendik Thorbjørnsen;NOR;Aurskog - Høland Friidrettslag - Friidrett;M24-34;2:50:43;+ 24:59
+54;1022;Andreas Skjetne;NOR;Nittedal IL;M35-39;2:51:09;+ 25:26
+55;40335;Hallvard Romsaas;NOR;;M18-21;2:51:43;+ 25:59
+56;1119;Ørjan Skilbrei;NOR;Lærdal IL;M35-39;2:51:52;+ 26:09
+57;24;Anders Danielsen;NOR;;M24-34;2:51:57;+ 26:14
+58;4;Ole Jørgen Rølsåsen;NOR;;M24-34;2:52:27;+ 26:44
+59;1040;Sverre Gunnar Brunstad;NOR;Lørenskog Friidrettslag;M55-59;2:52:36;+ 26:53
+60;29;Andreas Haraldsen;NOR;Runar IL;M40-44;2:53:06;+ 27:22
+61;40890;Andreas Kindem;NOR;;M24-34;2:53:12;+ 27:29
+62;40030;Eivind Bækkedal;NOR;Veritas BIL;M24-34;2:53:14;+ 27:31
+63;41152;Ziming Xia;CHN;DarkRunners;M35-39;2:53:14;+ 27:31
+64;73126;Thomas Schjøtt Hannevig;NOR;Fana IL;M24-34;2:53:35;+ 27:52
+65;6;Steven Flowers;GBR;Western Tempo;M40-44;2:54:11;+ 28:28
+66;41121;Ole Christian Wendel;NOR;Anna Asset Management;M24-34;2:54:14;+ 28:31
+67;41218;Sondre Bolstad;NOR;Lillehammer IF;M40-44;2:54:17;+ 28:33
+68;1084;Hugo Jan Olsen;NOR;BFG Bergen Løpeklubb;M55-59;2:54:20;+ 28:37
+69;34;Anders Haslie;NOR;;M40-44;2:54:30;+ 28:46
+70;73091;Espen Gundersen;NOR;Hind IK;M35-39;2:54:36;+ 28:53
+71;41438;Olav Carlsson;NOR;Kri-Kri;M24-34;2:54:51;+ 29:08
+72;41308;Sigurd Agnalt;NOR;;M24-34;2:55:04;+ 29:20
+73;41354;Roine Karlsson;SWE;Finnskogarnas SK (klubb);M40-44;2:55:46;+ 30:03
+74;73035;Dan (juan) Johnsen;NOR;The Game;M35-39;2:55:53;+ 30:09
+75;40820;John Henry Amlien;NOR;;M35-39;2:55:54;+ 30:10
+76;40786;Didier Elisabeth;FRA;Santéforméquilibre;M50-54;2:55:57;+ 30:14
+77;73076;Alessandro Santini;SUI;GOLD Savosa;M40-44;2:56:17;+ 30:34
+78;41184;Jonathan David-Andersen;NOR;Heming IL;M22-23;2:56:18;+ 30:35
+79;41071;Håkon Hansen;NOR;;M24-34;2:56:33;+ 30:50
+80;73107;Jonas Resare;SWE;Grenland ultra runners;M50-54;2:56:37;+ 30:54
+81;73019;Vemund Sande;NOR;Gjøvik Friidrettsklubb;M24-34;2:56:44;+ 31:01
+82;41067;Andreas Runde;NOR;Team Blå Xtra Personell;M24-34;2:56:45;+ 31:01
+83;40333;Even Hatling;NOR;;M18-21;2:56:46;+ 31:03
+84;73053;Frida Bustad;NOR;;K24-34;2:56:53;+ 31:10
+85;40356;Richard Edwards;GBR;;M35-39;2:56:56;+ 31:13
+86;41343;Andreas Lervik;NOR;Veritas BIL;M40-44;2:57:00;+ 31:17
+87;1093;Anne Jorunn Hodne;NOR;Spirit friidrettsklubb;K35-39;2:57:08;+ 31:24
+88;41426;Jardar Tosterud;NOR;;M35-39;2:57:10;+ 31:27
+89;41292;Sverre Fillingsnes;NOR;Markisebedriften;M35-39;2:57:20;+ 31:37
+90;41212;Egil Tronstad;NOR;Spydeberg IL;M50-54;2:57:39;+ 31:56
+91;41169;Øyvind Langørgen;NOR;Nesodden IF;M55-59;2:57:44;+ 32:01
+92;40805;Lucas Hotier;FRA;;M18-21;2:57:48;+ 32:04
+93;1009;Åke Fagereng;NOR;Romerike Ultraløperklubb;M40-44;2:57:48;+ 32:05
+94;40975;Oliver Riley;GBR;;M24-34;2:57:55;+ 32:11
+95;1094;Rune Kvikstad;NOR;Vind IL;M45-49;2:58:14;+ 32:31
+96;41262;Volrath Robinson Bugge;NOR;Cisco;M24-34;2:58:26;+ 32:43
+97;41075;Valentin-Ionut Nitu;GBR;;M35-39;2:58:27;+ 32:44
+98;41086;Arne Laurits Rossebø Lie;NOR;GinTurbo Løbeforæning;M24-34;2:58:28;+ 32:44
+99;73073;Tim Bergheim Holen;NOR;;M24-34;2:58:29;+ 32:45
+100;41435;Morten Grønneberg;NOR;Asker Sk Friidrett;M50-54;2:58:44;+ 33:00
+101;40822;Muharrem Yilmaz;GER;Ayyo Team Essen;M50-54;2:58:45;+ 33:02
+102;40991;Tor Olav Leksbø;NOR;;M24-34;2:58:56;+ 33:13
+103;1109;Helge Johansen;NOR;Trondheim Triatlonklubb;M50-54;2:58:59;+ 33:16
+104;41093;Oscar Adrian Melheim;NOR;Forsvarets Ingeniørhøgskole;M22-23;2:59:00;+ 33:17
+105;41437;Jørgen Myking;NOR;Kamp/Vestheim IF;M24-34;2:59:06;+ 33:22
+106;40095;Jonas Frislid Jarfonn;NOR;;M35-39;2:59:13;+ 33:30
+107;40498;Haakon Bergsholm;NOR;OPV Consulting;M24-34;2:59:13;+ 33:30
+108;41038;Marius Lindtvedt Hansen;NOR;;M24-34;2:59:16;+ 33:32
+109;40127;Joakim Bødtker;NOR;;M24-34;2:59:24;+ 33:41
+110;41126;Erik Skaadel;NOR;;M24-34;2:59:25;+ 33:41
+111;41170;Malte Sebastian Hinsch;NOR;Northern Runners;M40-44;2:59:27;+ 33:44
+112;41434;Aleksander Hansen;NOR;;M24-34;2:59:30;+ 33:46
+113;73117;Marc Gispert Giron;ESP;Club Atletic TMB;M40-44;2:59:30;+ 33:47
+114;40924;Ingar Benno Rydland;NOR;Veidekke BIL;M24-34;2:59:31;+ 33:48
+115;40614;Micael Lindqvist;SWE;Apladalens LK;M50-54;2:59:36;+ 33:52
+116;40925;Anders Nicolai Marstrander;NOR;Shades of Norway;M40-44;2:59:38;+ 33:55
+117;40933;Håvard Helling;NOR;Veritas BIL;M40-44;2:59:40;+ 33:56
+118;41020;Atle Brandsar;NOR;Team Brandy/Team Alle Gutta;M35-39;2:59:43;+ 33:59
+119;41202;Magnus Meyer;NOR;Bratsberg IL;M50-54;2:59:43;+ 33:59
+120;40474;Øystein Brittmark;NOR;;M24-34;2:59:43;+ 34:00
+121;40582;Anders Nilsson;SWE;;M40-44;2:59:44;+ 34:01
+122;40960;Steffen Storbakk;NOR;;M40-44;2:59:45;+ 34:02
+123;41392;Mikkel Trøstheim;NOR;Flåværingen IL;M24-34;2:59:46;+ 34:02
+124;40039;Josef Moradi;NOR;;M24-34;2:59:46;+ 34:03
+125;40898;Alexander Solum;NOR;Nøtterø Rønners;M35-39;2:59:49;+ 34:06
+126;41340;Ørjan Aasen;NOR;Ottestad IL;M24-34;2:59:50;+ 34:07
+127;41237;Henrik Fjellstad;NOR;Vindbjart IL;M24-34;2:59:52;+ 34:09
+128;40076;Erik Lindstad;NOR;;M24-34;2:59:52;+ 34:09
+129;40797;Damian Darul;POL;KB MARATON Turek;M40-44;2:59:54;+ 34:10
+130;41373;Audun Brennhaugen;NOR;;M24-34;2:59:54;+ 34:11
+131;73010;John Gunnar Dybvad;NOR;Lånke IL;M24-34;2:59:56;+ 34:13
+132;21;Anette Hauge;NOR;;K35-39;3:00:00;+ 34:17
+133;40060;Marius Brevik;NOR;;M24-34;3:00:01;+ 34:18
+134;40494;Christer Myerscough Aarvik;NOR;;M45-49;3:00:01;+ 34:18
+135;41364;Herman Morken;NOR;;M24-34;3:00:04;+ 34:20
+136;41210;Sander Floeng;NOR;Hof IL;M35-39;3:00:05;+ 34:21
+137;40150;Masaru Watanabe;JPN;;M45-49;3:00:07;+ 34:23
+138;41349;Christer Morken;NOR;;M24-34;3:00:08;+ 34:24
+139;73025;Andreas Ulvær;NOR;Gjensidige Sport;M40-44;3:00:09;+ 34:26
+140;40286;Peter Marcus Hoffmann;SWE;;M24-34;3:00:11;+ 34:27
+141;41295;Øyvind Ytterhus Utengen;NOR;Bratsberg IL;M24-34;3:00:12;+ 34:29
+142;40882;Niclas Hägglund;SWE;Exsitec Ski Team;M24-34;3:00:15;+ 34:32
+143;73116;Jaime Gutiérrez Vicente;ESP;Fartsholdere Oslo Maraton 2023;M35-39;3:00:19;+ 34:36
+144;41235;Jan Frode Haugseth;NOR;Byåsen IL;M45-49;3:00:21;+ 34:37
+145;40992;Kévin Lissajoux;FRA;;M24-34;3:00:23;+ 34:39
+146;40296;Lars Thoresen Haug;NOR;;M24-34;3:00:47;+ 35:04
+147;73041;Trygve Haugnæss;NOR;2150 Kondisjonsidrettslag;M40-44;3:00:57;+ 35:14
+148;40821;Janis Resnis;NOR;Norge;M40-44;3:01:03;+ 35:19
+149;41026;Erlend Godager;NOR;;M24-34;3:01:05;+ 35:22
+150;41386;Erik Jansson Palmer;SWE;Trångsvikens IF;M24-34;3:01:17;+ 35:33
+151;1100;Kristoffer Reitan Buvarp;NOR;Steinkjer Friidrettsklubb;M22-23;3:01:27;+ 35:44
+152;40232;Petter Nord;NOR;Brevik Racing Team;M50-54;3:01:38;+ 35:54
+153;40744;Stefano Eliseo;ITA;Atletica Taviano 97;M45-49;3:01:39;+ 35:55
+154;41400;Magnus Nordrum Brøste;NOR;Slurkarlaget IL;M24-34;3:01:41;+ 35:57
+155;41419;Jon Per Nygaard;NOR;Ren-Eng FIK;M55-59;3:01:44;+ 36:01
+156;40338;Eivind Hebnes-Førre;NOR;;M40-44;3:01:56;+ 36:12
+157;40754;Charlie Strandberg;SWE;;M24-34;3:02:16;+ 36:33
+158;40128;Sveinar Rasmussen;NOR;;M45-49;3:02:38;+ 36:55
+159;40308;Morten Horn Elieson;NOR;Oddersjaa SSK;M24-34;3:02:41;+ 36:58
+160;40999;Thierry Ancilotto Toto Missipo;ITA;;M24-34;3:02:43;+ 36:59
+161;41388;Willy Hatlevoll;NOR;Oslofjord Triatlon;M65-69;3:02:45;+ 37:02
+162;1065;Bendik Kettle;NOR;Oslostudentenes IK - Friidrett;M18-21;3:02:48;+ 37:04
+163;40410;Thomas Natvig;NOR;;M24-34;3:02:51;+ 37:08
+164;40476;Tommy Christensen;NOR;;M50-54;3:03:04;+ 37:21
+165;41220;Alexander Longnes;NOR;Rygene IL;M22-23;3:03:05;+ 37:22
+166;40149;Bart Desplenter;BEL;;M40-44;3:03:09;+ 37:25
+167;41431;Florian Kühn;NOR;;M45-49;3:03:09;+ 37:26
+168;41284;Anders Treekrem;NOR;Ås IL;M24-34;3:03:22;+ 37:39
+169;40783;Hans Erik Heggem;NOR;Neate AS;M24-34;3:03:27;+ 37:43
+170;17;Antonia Herhold;SWE;;K24-34;3:03:28;+ 37:45
+171;41149;Helge Kolstad;NOR;Sagene IF Sykkel / ECO STOR;M50-54;3:03:32;+ 37:49
+172;40018;Carl Fredrik Andresen;NOR;;M24-34;3:03:47;+ 38:04
+173;40169;Sven Hatzfeld;GER;;M24-34;3:03:56;+ 38:13
+174;1045;Olav Egge Brandal;NOR;Hareid IL;M24-34;3:04:00;+ 38:16
+175;41341;Joel Turøy Midttveit;NOR;;M22-23;3:04:02;+ 38:18
+176;41027;Kristoffer Pinås;NOR;HULK;M22-23;3:04:02;+ 38:18
+177;40721;Øyvind Stamnes;NOR;;M40-44;3:04:03;+ 38:20
+178;41156;Didrik Sollihaug;NOR;Bislet Running Club;M22-23;3:04:23;+ 38:40
+179;41179;João Eiras;POR;Vidar Sportsklubben;M35-39;3:04:26;+ 38:43
+180;41329;Gabriel Lambertsen;NOR;Deloitte BIL;M24-34;3:04:30;+ 38:47
+181;1068;Thomas Bach Bernås;NOR;Adamstuen Løpeklubb;M40-44;3:04:34;+ 38:51
+182;40242;Fredrik Egner;NOR;;M18-21;3:04:38;+ 38:55
+183;1055;Tom Dønnem;NOR;Tromsø Løpeklubb;M50-54;3:04:49;+ 39:06
+184;41398;Eivind Michalsen;NOR;;M40-44;3:04:51;+ 39:08
+185;1014;Espen Skyberg;NOR;Romerike Ultraløperklubb;M45-49;3:05:01;+ 39:17
+186;41013;Tomasz Danielkiewicz;POL;"WKB Piast Wroc&#322;aw";M35-39;3:05:07;+ 39:24
+187;41347;Thomas Beka;NOR;;M35-39;3:05:19;+ 39:35
+188;40903;Stuart Spencer;AUS;;M45-49;3:05:20;+ 39:36
+189;40147;Georg Jørgensen;NOR;;M24-34;3:05:25;+ 39:41
+190;40827;Stig Arild Nakkestad;NOR;;M35-39;3:05:26;+ 39:43
+191;1039;Olav Listaul;NOR;Seljord Idrettslag;M24-34;3:05:30;+ 39:47
+192;40641;Erik Rokkerud;NOR;Saint tempo;M24-34;3:05:31;+ 39:47
+193;41370;Janis Berzins;NOR;;M50-54;3:05:43;+ 40:00
+194;73102;Svein Tore Holsether;NOR;Nesøya IL;M50-54;3:06:03;+ 40:20
+195;1066;Bence Tilk;HUN;Oslostudentenes IK - Friidrett;M24-34;3:06:19;+ 40:35
+196;42656;Kyrre Berland;NOR;;M24-34;3:06:21;+ 40:38
+197;41008;Daniel Jenssen;NOR;Nordstrand IF;M24-34;3:06:23;+ 40:40
+198;40803;Bjørn-Tomas Vatnedal;NOR;;M24-34;3:06:29;+ 40:45
+199;1033;Thomas Kristoffersen;NOR;Moss IL;M40-44;3:06:29;+ 40:46
+200;40036;Fabrice Driot;FRA;A LA BONNE FOULEE;M50-54;3:06:32;+ 40:48
+201;40281;André Hope;NOR;Dammen1182 Sandefjord Løpeklubb;M35-39;3:06:35;+ 40:52
+202;41337;Martin Fagerli;SWE;;M45-49;3:06:59;+ 41:16
+203;73097;Sebastian Koldéus;SWE;Ursus REM;M45-49;3:07:12;+ 41:28
+204;40507;Josh Frewin;GBR;Tring RC;M24-34;3:07:26;+ 41:43
+204;40669;Ashwin Joeloemsingh;NED;;M24-34;3:07:26;+ 41:43
+206;40768;Thomas Robson;GBR;;M35-39;3:07:31;+ 41:48
+207;40981;Morten Stensberg;NOR;;M50-54;3:07:32;+ 41:48
+208;41239;Erik Fossnes;NOR;Sogndal IL;M24-34;3:07:33;+ 41:50
+209;41459;Per Elias Kalfoss;NOR;Norges Skiforbund;M50-54;3:07:34;+ 41:51
+210;40931;Gustav Orbring;SWE;;M24-34;3:07:43;+ 42:00
+211;41300;Arne Moen Lid;NOR;Høydalsmo Idrettslag;M24-34;3:07:46;+ 42:03
+212;40509;Hakan Demirkiran;GER;Ayyo Team Essen;M45-49;3:07:56;+ 42:13
+213;40778;Rolf Sindre Johansen Libakken;NOR;;M35-39;3:08:04;+ 42:21
+214;41458;Eirik Nilsen;NOR;NGI;M24-34;3:08:05;+ 42:22
+215;41445;Jules Vangeel;BEL;;M18-21;3:08:07;+ 42:23
+216;41206;Rikke Lorenzen;NOR;Røa IL;K18-21;3:08:18;+ 42:34
+217;40680;Are Aanesland;NOR;MHwirth Bil;M50-54;3:08:25;+ 42:41
+218;1059;Harald Slettemark;NOR;TambarskjelvarIL;M55-59;3:08:26;+ 42:43
+219;40070;Per Øivind Dalen;NOR;;M55-59;3:08:31;+ 42:48
+220;40596;Jessica Fennell;GBR;;K24-34;3:08:42;+ 42:59
+221;41174;Richard Waren;NOR;Bamford1869;M40-44;3:08:43;+ 43:00
+222;41267;Eirik Byklum;NOR;Equinor BIL Oslo;M50-54;3:08:44;+ 43:01
+223;41367;Tim Leiss;NOR;;M35-39;3:08:55;+ 43:11
+224;1098;Lars Joar Hognestad;NOR;Romerike Friidrett;M35-39;3:08:55;+ 43:11
+225;40798;Joakim Øren Antonsen;NOR;;M35-39;3:08:59;+ 43:16
+226;40447;Ratko Perlic;NOR;;M24-34;3:09:14;+ 43:31
+227;41097;Øyvind Bjerkestrand;NOR;;M50-54;3:09:17;+ 43:34
+228;13;Alice Macarthur;GBR;;K24-34;3:09:22;+ 43:39
+229;41064;Per Olav Røhmer;NOR;;M24-34;3:09:30;+ 43:46
+230;1102;Mona Grindberg;NOR;Verdal Friidrettsklubb;K50-54;3:09:35;+ 43:51
+231;41076;Arne Magnus Holter;NOR;Cyberingeniørskolen;M18-21;3:09:56;+ 44:13
+232;40212;Lorcan Mcclean;IRL;;M24-34;3:10:00;+ 44:16
+233;40788;Kadir Aktas;GER;Ayyo Team Essen;M40-44;3:10:03;+ 44:20
+234;41033;Jesper Van Der Molen;NED;;M24-34;3:10:07;+ 44:24
+235;40520;Ben Murcott;GBR;;M24-34;3:10:15;+ 44:31
+236;1015;Frida Anette Sollid;NOR;Romerike Ultraløperklubb;K24-34;3:10:29;+ 44:45
+237;73068;Anja Lindanger;NOR;Spirit friidrettsklubb;K45-49;3:10:40;+ 44:56
+238;41236;Eirik Lundteigen Aune;NOR;Byåsen IL;M24-34;3:10:54;+ 45:11
+239;40347;Jordan Willis;NOR;;M24-34;3:10:56;+ 45:13
+240;41450;Kristen Nyhamar;NOR;;M24-34;3:11:01;+ 45:17
+241;41163;Kristian Andresen;NOR;Kragerø IF Friidrett;M24-34;3:11:03;+ 45:20
+242;40446;Julien Guinot;FRA;;M40-44;3:11:04;+ 45:20
+243;41208;Glenn Cato Kleiv Andersen;NOR;Stovnerkameratene;M45-49;3:11:08;+ 45:24
+244;41193;Erik Jørstad;NOR;Fredrikstad IF;M40-44;3:11:16;+ 45:33
+245;73112;Ida Slorafoss;NOR;Romerike Ultraløperklubb;K35-39;3:11:19;+ 45:36
+246;40478;Viktor Bilstad;NOR;;M22-23;3:11:21;+ 45:37
+247;41198;Andrine Charlotte Ordemann Olsen;NOR;Alta IF;K22-23;3:11:38;+ 45:55
+248;40462;Dirk Eichler;GER;;M24-34;3:11:45;+ 46:02
+249;40969;Markus Skjævestad;NOR;Tromøy Bowling Klubb;M24-34;3:11:48;+ 46:05
+250;40274;James Wordie;GBR;;M24-34;3:11:48;+ 46:05
+251;40917;Alexander Savabini;NOR;Dashie;M40-44;3:11:56;+ 46:13
+252;40404;"S&#322;awomir Bryndza";POL;;M35-39;3:12:01;+ 46:18
+253;41178;Morten Fredriksen;NOR;Moss IL;M40-44;3:12:03;+ 46:20
+254;40837;Rafal Wos;POL;Stajniak Team;M45-49;3:12:14;+ 46:31
+255;73070;Jørgen Aam;NOR;;M24-34;3:12:18;+ 46:35
+256;41167;Kristian Horne;NOR;Nittedal IL;M24-34;3:12:20;+ 46:36
+257;41425;Sigmund Vallumrød Eidsten;NOR;;M24-34;3:12:22;+ 46:38
+258;40058;Michal Kostas;POL;;M35-39;3:12:30;+ 46:47
+259;40491;Brit Schei;NOR;Oslo Brannkorpsidrettslag;K24-34;3:12:36;+ 46:53
+260;40930;Jan Petter Bekkevold;NOR;CM Racing Team;M40-44;3:12:43;+ 47:00
+261;40031;Bendik Bergsli;NOR;F. Gump Løpeforening;M24-34;3:12:47;+ 47:03
+262;40059;Tom Erik Breive;NOR;;M40-44;3:12:47;+ 47:03
+263;41913;Emil Jonassen;NOR;F. Gump Løpeforening;M24-34;3:12:52;+ 47:09
+264;40140;Martin Nymoen;NOR;;M18-21;3:12:57;+ 47:14
+265;41158;Jostein Selbæk-Tungevåg;NOR;Aase Gruppen;M24-34;3:13:00;+ 47:16
+266;41189;Sondre Andreas Berg Paulsen;NOR;Oslofjord Triatlon;M24-34;3:13:02;+ 47:18
+267;40354;Lucas Kemperman;NED;;M35-39;3:13:02;+ 47:19
+268;41382;Marius Fjeldbo;NOR;;M24-34;3:13:08;+ 47:24
+269;40293;Christian Duy Dao;NOR;Skjetten Løpeklubb;M24-34;3:13:08;+ 47:25
+270;41085;Sondre Strømdahl;NOR;;M24-34;3:13:09;+ 47:25
+271;40173;Anders Folke Westlund;NOR;;M24-34;3:13:10;+ 47:27
+272;1067;Kristian Lefdal;NOR;Oslostudentenes IK - Friidrett;M22-23;3:13:11;+ 47:27
+273;42825;;NOR;;;3:13:16;+ 47:33
+274;41368;Hans Herman Lund;NOR;;M18-21;3:13:16;+ 47:33
+275;73122;Erik Persheim;NOR;;M35-39;3:13:17;+ 47:34
+276;73127;Marius Karlsen;NOR;;M24-34;3:13:17;+ 47:34
+277;42740;Ylli Lio;NOR;Tinn IL - Friidrett;M40-44;3:13:27;+ 47:44
+278;41173;Stig Petter Olsrød;NOR;Trondheim & Omegn Sportsklubb;M50-54;3:13:29;+ 47:46
+279;40961;Kevin Versprille;NED;PAC Rotterdam;M24-34;3:13:32;+ 47:49
+280;41250;Magnus Sellie Hansen;NOR;Skaun IL;M22-23;3:13:37;+ 47:54
+281;41414;Kjetil Heggland;NOR;;M35-39;3:13:54;+ 48:10
+282;40163;Findlay Dickson;GBR;;M18-21;3:13:54;+ 48:11
+283;40468;Thomas Burgess;GBR;;M24-34;3:13:57;+ 48:14
+284;41186;Henrik Romundstad;NOR;Heming IL;M24-34;3:14:05;+ 48:21
+285;73081;Paul Dunne;IRL;;M55-59;3:14:21;+ 48:37
+286;1;Juan Guerra Gonzalez;ESP;;M50-54;3:14:31;+ 48:48
+287;40443;Francois Mailleux;BEL;;M24-34;3:14:32;+ 48:49
+288;40211;Neritan Kurteshi;ALB;Superior Group;M55-59;3:14:40;+ 48:56
+289;40224;Elise Svaleng Johnsen;NOR;;K24-34;3:14:42;+ 48:59
+290;41336;Christoffer Hopstock;NOR;Summit by hopstock helse as;M35-39;3:14:47;+ 49:04
+291;40324;Jan Olav Lindåsen;NOR;;M35-39;3:14:49;+ 49:05
+292;40228;Elise Røer Drabløs;NOR;;K24-34;3:14:50;+ 49:07
+293;41372;Ivar Bratberg;NOR;Sankthanshaugen LK;M50-54;3:14:54;+ 49:11
+294;40022;Bård Johan Hanssen;NOR;;M24-34;3:14:57;+ 49:13
+295;40086;Øyvind Sørgjerd;NOR;Aker Solutions;M50-54;3:15:03;+ 49:19
+296;40725;Gerrit Schaak;NED;;M24-34;3:15:03;+ 49:19
+297;73069;Sebastian Edmund Pedersen Wood;NOR;Cisco;M24-34;3:15:03;+ 49:20
+298;42742;Anders Rønningen;NOR;;M24-34;3:15:04;+ 49:21
+299;40888;Sylwester Wiatr;POL;;M45-49;3:15:05;+ 49:21
+300;40037;Joachim Reitan;NOR;FFI BIL;M50-54;3:15:06;+ 49:23
+301;1061;Marita Nesbø Øvrebø;NOR;Sauda IL;K24-34;3:15:07;+ 49:24
+302;40883;Carlos Eduardo Silva De Souza;BRA;;M35-39;3:15:10;+ 49:27
+303;36;Line Mari Langseth Staubo;NOR;;K35-39;3:15:11;+ 49:27
+304;40942;Petter Saltvik;NOR;;M18-21;3:15:16;+ 49:33
+305;41358;Daniel Fikstvedt;NOR;Vidar Sportsklubben;M24-34;3:15:17;+ 49:33
+306;41023;Kim Aarli Larsen;NOR;Skeid;M55-59;3:15:17;+ 49:33
+307;41185;Jan Mohr Sunde;NOR;Heming IL;M40-44;3:15:18;+ 49:35
+308;41294;Fredrik Grøvdal;NOR;Lyn Ski;M24-34;3:15:25;+ 49:42
+309;40126;Kurt Matthiesen;NOR;Flåklypatoppen;M50-54;3:15:41;+ 49:58
+310;40148;Roger Hild Hansen;NOR;Team Hild;M40-44;3:15:43;+ 50:00
+311;41317;Jan Thomsen;NOR;Nibio;M45-49;3:15:47;+ 50:04
+312;40006;Kjell Kristian Netland;NOR;;M24-34;3:15:49;+ 50:06
+313;40256;John Kristian Schjølberg Leinan;NOR;;M24-34;3:16:01;+ 50:17
+314;41253;Niels Severijns;NED;Nederland;M40-44;3:16:02;+ 50:19
+315;41242;Odd Austin Fauske;NOR;Structor Tekniske Systemer BIL;M24-34;3:16:13;+ 50:30
+316;41115;Lane Aasen;USA;;M24-34;3:16:25;+ 50:41
+317;73088;Christian Eek;NOR;;M50-54;3:16:38;+ 50:55
+318;40926;Arne Tenden;NOR;;M24-34;3:16:40;+ 50:57
+319;40621;Eirik Haugen;NOR;Statnett SBIL Oslo;M24-34;3:16:43;+ 50:59
+320;1062;Geir Blom Breivik;NOR;Kongsberg IF;M22-23;3:16:45;+ 51:02
+321;40632;Etienne Dullin;FRA;;M24-34;3:16:46;+ 51:03
+322;40098;Olav Hestmann;NOR;;M24-34;3:16:46;+ 51:03
+323;41319;Kenneth Semb Skaarbrevik;NOR;Team Kjøttmeis;M45-49;3:16:48;+ 51:04
+324;40774;Ilker Kayi;GER;Ayyo Team Essen;M45-49;3:16:51;+ 51:08
+325;40275;Håkon Eknes;NOR;Deloitte BIL;M24-34;3:17:17;+ 51:34
+326;41271;Markus Bjørkli Jansen;NOR;Norges Bank Idrettslag;M24-34;3:17:20;+ 51:37
+327;40619;Vincent Christiansen;NOR;;M45-49;3:17:25;+ 51:42
+328;40838;Heine Madland;NOR;;M18-21;3:17:36;+ 51:52
+329;41099;Anders Aksnes;NOR;;M24-34;3:17:36;+ 51:52
+330;40200;Árpád Kralován;HUN;;M45-49;3:17:37;+ 51:53
+331;41225;Jan Erik Hedemark;NOR;DNB;M50-54;3:17:37;+ 51:53
+332;40101;Sverre Eliasson Stubhaug;NOR;LIK;M24-34;3:17:51;+ 52:07
+333;41287;Morten Jørgensen;NOR;Hobøl IL;M55-59;3:17:56;+ 52:12
+334;73055;Anders Nordby;NOR;Vidar Sportsklubben;M45-49;3:17:59;+ 52:16
+335;41199;Oskar André Borgen Ordemann;NOR;Alta IF;M24-34;3:18:04;+ 52:21
+336;41219;Christian Brennum;NOR;Asker Sk Friidrett;M45-49;3:18:05;+ 52:22
+337;41105;Ida Carine Longva;NOR;;K35-39;3:18:06;+ 52:23
+338;40854;Sverre Runde;NOR;Lillehammer Tekkers;M24-34;3:18:17;+ 52:34
+339;40174;Yellen Van Leemputten;BEL;;M24-34;3:18:18;+ 52:35
+340;40459;Sander Simensen;NOR;;M22-23;3:18:27;+ 52:44
+341;41245;Are Nyhus Weimoth;NOR;Ullensaker/Kisa IL Friidrett;M50-54;3:18:36;+ 52:53
+342;73103;Kristian Hoel;NOR;;M50-54;3:18:46;+ 53:03
+343;41090;Robert Krol;POL;;M24-34;3:18:48;+ 53:05
+344;40738;Paal Fredrik Kvarberg;NOR;Disputas;M24-34;3:18:52;+ 53:09
+345;40867;Jesper Graff;NOR;Strikkeklubben;M24-34;3:18:53;+ 53:10
+346;41390;Anette Foss Lia;NOR;;K40-44;3:18:57;+ 53:14
+347;40401;Dieter Klein;AUT;-;M50-54;3:19:03;+ 53:20
+348;41194;Kristian Holm Espenes;NOR;Askim IF;M35-39;3:19:03;+ 53:20
+349;40650;Arkadiy Smirnov;ISR;;M24-34;3:19:04;+ 53:20
+350;41353;Marie-Louise Olsson;SWE;Finnskogas SK;K35-39;3:19:12;+ 53:29
+351;41077;Daniel Olaf Riley;NOR;;M22-23;3:19:17;+ 53:34
+352;40800;Kose Rodarte;HKG;;M24-34;3:19:29;+ 53:46
+353;41172;Martin Kristiansen Lockertsen;NOR;Trondheim & Omegn Sportsklubb;M24-34;3:19:31;+ 53:48
+354;40946;Andreas Talgø Lie;NOR;DrDropin;M24-34;3:19:36;+ 53:53
+355;41396;Øystein Nitter;NOR;;M24-34;3:19:37;+ 53:54
+356;40197;Knut Espenes;NOR;Lea Oda;M45-49;3:19:39;+ 53:56
+357;40243;Hugo Bluet;NOR;;M24-34;3:19:42;+ 53:58
+358;41552;Nina Fridtun;NOR;;K24-34;3:19:50;+ 54:07
+359;40748;Espen Rande;NOR;Løpekameratene;M50-54;3:19:52;+ 54:08
+360;40901;Nicola Ceccarelli;ITA;;M45-49;3:19:57;+ 54:13
+361;40437;Harshal Babla;GBR;;M24-34;3:20:03;+ 54:20
+362;40538;César Dueñas Merino;ESP;;M40-44;3:20:05;+ 54:22
+363;41456;Kevin Egeland;NOR;Kev Consulting AS;M45-49;3:20:06;+ 54:22
+364;41333;Eirik Skulstad;NOR;;M24-34;3:20:10;+ 54:27
+365;41320;Wout Huiskes;NED;;M18-21;3:20:10;+ 54:27
+366;40565;Dominic Innes;GBR;;M24-34;3:20:14;+ 54:31
+367;40009;Kjell Jørstad Braut;NOR;Oppdal SK;M45-49;3:20:18;+ 54:34
+368;40978;Stian Sandtorv;NOR;Bobleprinsens Yacht Club;M35-39;3:20:23;+ 54:40
+369;40322;Tom Larkin;GBR;;M24-34;3:20:23;+ 54:40
+370;41449;Kim Andre Østergaard;NOR;;M24-34;3:20:33;+ 54:50
+371;40415;David Joynson;GBR;;M60-64;3:20:34;+ 54:51
+372;40500;Simen Fagerli Pedersen;NOR;;M22-23;3:20:35;+ 54:52
+373;40305;Chris Boeije;NED;;M35-39;3:20:35;+ 54:52
+374;41402;Hadrian Mjøsund Sletner;NOR;Storegrå paut- og løpeselskab;M24-34;3:20:41;+ 54:58
+375;1001;Ingvild Aurdal;NOR;Fet IL;K50-54;3:20:43;+ 55:00
+376;40458;Julian Roess;NOR;;M24-34;3:20:54;+ 55:10
+377;41001;Morten Grevle;NOR;;M35-39;3:21:03;+ 55:20
+378;73033;Marie Therese Ruud;NOR;;K24-34;3:21:09;+ 55:26
+379;40583;Michell Hansson;SWE;Langbein;M35-39;3:21:19;+ 55:35
+380;40584;Espen Døvle;NOR;Langbein;M35-39;3:21:22;+ 55:38
+381;40616;Erik Mølmann;NOR;Skedsmokorset;M24-34;3:21:22;+ 55:39
+382;42632;Jan-Åge Dyrkorn;NOR;Trasstassarane;M22-23;3:21:24;+ 55:41
+383;40776;Stig Sævareid;NOR;;M24-34;3:21:28;+ 55:44
+384;40108;Jim Stian Olsen;NOR;;M40-44;3:21:29;+ 55:45
+385;40205;Jon Schjerpen;NOR;Løpegutta;M24-34;3:21:30;+ 55:47
+386;73067;Cecilie Husvæg;NOR;TotalEnergies AS BIL;K40-44;3:21:31;+ 55:48
+387;41221;Hanne Winger Pedersen;NOR;Rygge IL;K40-44;3:21:42;+ 55:59
+388;40090;Simon Hult;NOR;;M45-49;3:21:44;+ 56:01
+389;41055;Kari Lier;NOR;Ring IL;K45-49;3:21:46;+ 56:02
+390;41230;Glenn Klausen;NOR;Sarpsborg IL;M50-54;3:21:53;+ 56:10
+391;40638;Thomas Stevenson;GBR;;M22-23;3:21:55;+ 56:12
+392;8;Tim Garrett;AUS;;M40-44;3:22:00;+ 56:16
+393;40094;Håvard Strand;NOR;Kondis treningssenter;M40-44;3:22:02;+ 56:19
+394;40765;Ben Stevenson;GBR;;M24-34;3:22:03;+ 56:19
+395;40713;Eivind Vinsand;NOR;;M24-34;3:22:08;+ 56:24
+396;41241;Helge Grenager Solheim;NOR;Oppsal IF;M45-49;3:22:11;+ 56:28
+397;40470;Magnus Kleven;NOR;;M24-34;3:22:12;+ 56:29
+398;41285;Erik Sand;NOR;Ravn IL;M24-34;3:22:16;+ 56:33
+399;40026;Absi Archer;NOR;Pål og Kristian løper sammen;M24-34;3:22:17;+ 56:34
+400;40929;Magnus Kure;NOR;COWI;M35-39;3:22:23;+ 56:39
+401;40876;Vegard Flesland;NOR;;M18-21;3:22:24;+ 56:41
+402;1017;Theodor Strømø;NOR;Lyn Ski;M18-21;3:22:25;+ 56:41
+403;40156;Ali Fouikri;NOR;;M24-34;3:22:26;+ 56:43
+404;40895;Bim Cornelia Kase;NOR;;K40-44;3:22:29;+ 56:46
+405;40272;Marwin Söllner;GER;;M22-23;3:22:32;+ 56:49
+406;40973;Jørgen Johansen Svae;NOR;Svae IL;M24-34;3:22:34;+ 56:50
+407;1002;Julie Spets;NOR;Strindheim il;K24-34;3:22:34;+ 56:51
+408;40722;Jesper Johansson;SWE;;M45-49;3:22:35;+ 56:52
+409;40204;Sigrid Skatteboe;NOR;;K35-39;3:22:36;+ 56:52
+410;41021;Sigve Kolderup;NOR;;M24-34;3:22:44;+ 57:01
+411;40911;Tom Wright;GBR;Rocket Running;M24-34;3:22:45;+ 57:02
+412;73128;Daniel Kjellgren;NOR;Kjellgren Media BIL;M24-34;3:22:52;+ 57:09
+413;41227;Nils-Jørgen Berthelsen;NOR;Aktiv mot kreft;M35-39;3:22:53;+ 57:10
+414;40340;"Pawe&#322; Wojtas";POL;-;M24-34;3:22:57;+ 57:14
+415;41117;Karl Johansen;NOR;Roliglangtur;M40-44;3:22:58;+ 57:15
+416;40227;Kristoffer Husevåg;NOR;;M35-39;3:23:00;+ 57:16
+417;42857;Vegard Velle Sivertsen;NOR;Bergens TF;M18-21;3:23:01;+ 57:17
+418;41083;Erlend Wessel Carlsen;NOR;;M35-39;3:23:10;+ 57:27
+419;41089;Eirik Varg Kaldheim;NOR;;M24-34;3:23:11;+ 57:28
+420;40692;Alf Ivar Martinsen;NOR;;M45-49;3:23:11;+ 57:28
+421;41312;Truls Dyrkorn;NOR;Hendums Utvalgte;M18-21;3:23:11;+ 57:28
+422;40035;Antonio Galindo Agundez;NOR;;M35-39;3:23:19;+ 57:36
+423;1008;Helge Eide;NOR;Romerike Ultraløperklubb;M55-59;3:23:22;+ 57:38
+424;41357;Fredi Karo;EST;;M24-34;3:23:27;+ 57:44
+425;40168;Vlad Cristea;NOR;;M24-34;3:23:32;+ 57:48
+426;40171;Erencan Karaca;TUR;Beat Run Crew;M24-34;3:23:35;+ 57:52
+427;40727;Mikael Svensson;SWE;Lidköpings vsk;M50-54;3:23:37;+ 57:53
+428;40159;Victor Overaae Solberg;NOR;;M35-39;3:23:42;+ 57:59
+429;40389;Marek Travnicek;CZE;;M45-49;3:23:47;+ 58:04
+430;40151;Gøran Bråten;NOR;;M40-44;3:23:50;+ 58:06
+431;40528;Kamiel Altena;NED;;M22-23;3:23:51;+ 58:08
+432;41327;Magnus Mjøsund;NOR;;M24-34;3:23:59;+ 58:16
+433;41345;Fredrik Bentdal;NOR;;M24-34;3:24:03;+ 58:20
+434;40315;Nyan Ruey;NOR;;K24-34;3:24:09;+ 58:26
+435;73092;Tore Jacobsen;NOR;MIT;M35-39;3:24:09;+ 58:26
+436;40089;Kim Holst-Larsen;NOR;;M50-54;3:24:10;+ 58:26
+437;40907;Sarah Lillemoen;NOR;;K24-34;3:24:12;+ 58:29
+438;41258;Bjørn Fredriksli;NOR;Team Vidar;M40-44;3:24:27;+ 58:44
+439;73017;Martin Brandal;NOR;;M24-34;3:24:29;+ 58:45
+440;73113;Ida Furnes Breivik;NOR;Webstep;K35-39;3:24:30;+ 58:47
+441;41249;Fermin Tolosa;ESP;Iveland IL;M55-59;3:24:41;+ 58:58
+442;40223;Oskar Idland;NOR;;M22-23;3:24:42;+ 58:59
+443;40466;Vetle Sælen;NOR;;M24-34;3:24:44;+ 59:01
+444;40593;Kristian Fredrik Jørgensen;NOR;Privat;M35-39;3:24:47;+ 59:04
+445;41190;Mina Bankerud;NOR;Oslo Politis IL;K24-34;3:24:50;+ 59:07
+446;40639;Nils-Endre Lerø;NOR;Sjøforsvaret;M24-34;3:24:52;+ 59:09
+447;73080;Lars Reinsnes;NOR;Sjøforsvaret;M24-34;3:24:53;+ 59:09
+448;40215;Geir Andre Wahlquist;NOR;Drammen Spillforening;M45-49;3:24:53;+ 59:10
+449;40165;Lydia Smedéus;SWE;;K24-34;3:25:00;+ 59:17
+450;1089;Linn Vibekken;NOR;Ullensaker/Kisa IL Friidrett;K40-44;3:25:06;+ 59:23
+451;1035;Ragnhild Narvestad Hungnes;NOR;Vidar Sportsklubben;K24-34;3:25:11;+ 59:28
+452;40566;Ludvig Karlstad;NOR;;M24-34;3:25:12;+ 59:29
+453;41062;Emil Røsholt Eriksen;NOR;;M24-34;3:25:12;+ 59:29
+454;40983;Kari Renslo Instefjord;NOR;;K24-34;3:25:16;+ 59:32
+455;40414;Brage Husby Foss;NOR;;M24-34;3:25:19;+ 59:36
+456;40750;Christoph Brandt;GER;TSV Altenholz;M40-44;3:25:21;+ 59:37
+457;41829;Clément Berhet;FRA;;M24-34;3:25:30;+ 59:47
+458;41046;Sven Pickhardt;NOR;Team Pickhardt;M40-44;3:25:32;+ 59:49
+459;41096;Silje Samde;NOR;;K24-34;3:25:33;+ 59:49
+460;40110;Magnus Nordheim;NOR;;M22-23;3:25:34;+ 59:51
+461;41325;Erling Løberg;NOR;;M24-34;3:25:34;+ 59:51
+462;41440;Per André Granvoll;NOR;KF;M40-44;3:25:36;+ 59:53
+463;73086;Epifanio Gabriel Muñoñz Martinez;ESP;;M55-59;3:25:47;+ 1:00:04
+464;40986;Jørgen Strand;NOR;Otto Olsen AS;M45-49;3:25:51;+ 1:00:07
+465;41078;Tamás Horváth;HUN;;M35-39;3:25:51;+ 1:00:08
+466;1116;Mikkel Gisle Johnsen;NOR;Gui Sportsklubb;M35-39;3:25:52;+ 1:00:08
+467;40696;Robin Eivik;NOR;Kondis treningssenter;M60-64;3:25:55;+ 1:00:12
+468;40869;Ezequiel Matias Gomez Molino;ARG;;M24-34;3:25:56;+ 1:00:13
+469;41350;Hampus Lilja;SWE;;M35-39;3:26:02;+ 1:00:18
+470;40878;Janis Actins;LAT;VSK Noskrien;M50-54;3:26:02;+ 1:00:19
+471;40530;Alejandro Florian;COL;;M40-44;3:26:08;+ 1:00:25
+472;40740;Birger Lunheim;NOR;;M24-34;3:26:09;+ 1:00:26
+473;42782;;NOR;;;3:26:22;+ 1:00:38
+474;41054;Isabelle Høeg Eriksen Reyes-Johannessen;NOR;;K24-34;3:26:24;+ 1:00:40
+475;41211;K H;NOR;;;3:26:28;+ 1:00:45
+476;41082;Kristoffer Søyland;NOR;Grimstad;M24-34;3:26:31;+ 1:00:48
+477;41157;Peder Johan Valen-Sendstad;NOR;;M22-23;3:26:36;+ 1:00:52
+478;40119;Thor Thorsen;NOR;;M24-34;3:26:37;+ 1:00:54
+479;41417;Håkon Meland-Tangen;NOR;Bækkelagets SK;M45-49;3:26:39;+ 1:00:55
+480;40041;James Lee;NOR;;M24-34;3:26:39;+ 1:00:56
+481;40423;Brage Celius;NOR;Orange Cyberdefense;M24-34;3:26:41;+ 1:00:57
+482;40422;Daniel Magnus;NOR;;M24-34;3:26:41;+ 1:00:57
+483;40029;Richard Apeland;NOR;;M24-34;3:26:47;+ 1:01:04
+484;40254;Simen Kjørsvik Reinås;NOR;;M24-34;3:26:48;+ 1:01:05
+485;40816;Kjell Magne Sunde;NOR;;M50-54;3:26:50;+ 1:01:07
+486;42821;Jørgen Solheim;NOR;Atea AS;M24-34;3:26:51;+ 1:01:08
+487;40998;Catherine Berg;NOR;;K24-34;3:26:54;+ 1:01:10
+488;40479;Øystein Holth;NOR;Team Gnagsår;M45-49;3:26:54;+ 1:01:11
+489;41003;Henriette Solberg Johannessen;NOR;;K24-34;3:26:56;+ 1:01:13
+490;40846;Pernille Halle;NOR;;K24-34;3:26:57;+ 1:01:13
+491;41112;Daniel Krogh;NOR;;M24-34;3:26:58;+ 1:01:15
+492;40428;Eugenia Krogsvold;NOR;;K24-34;3:26:58;+ 1:01:15
+493;42769;Nicolay Andersen;NOR;Stathelle og Omegn IL;M22-23;3:26:59;+ 1:01:15
+494;41069;Elisabeth Backes;LUX;;K24-34;3:27:05;+ 1:01:22
+495;40244;Jostein Hole Kobbeltvedt;NOR;;M40-44;3:27:08;+ 1:01:24
+496;40449;Jonas Petersson;SWE;;M50-54;3:27:08;+ 1:01:25
+497;40291;Johan Loreto;NOR;;M22-23;3:27:12;+ 1:01:29
+498;41128;Bjørnar Foss Olsen;NOR;;M40-44;3:27:12;+ 1:01:29
+499;40268;Kim Engvik;NOR;Aktiv mot kreft / Organdonasjon;M50-54;3:27:13;+ 1:01:29
+500;40361;Isaac Pollock;GBR;;M24-34;3:27:14;+ 1:01:31
+501;40826;Angelo Orlandi;NOR;;M24-34;3:27:16;+ 1:01:33
+502;40935;Risto Autio;FIN;;M35-39;3:27:18;+ 1:01:34
+503;41116;Oliver Walker;NOR;;M22-23;3:27:19;+ 1:01:36
+504;40161;Martin Krane;NOR;;M40-44;3:27:21;+ 1:01:38
+505;40162;Ross Agar;GBR;;M24-34;3:27:22;+ 1:01:38
+506;40844;Konrad Ledsten-Ullersmo;NOR;;M22-23;3:27:26;+ 1:01:43
+507;73016;Odd Edøy;NOR;Sunndal Il Friidrett;M65-69;3:27:27;+ 1:01:44
+508;41281;Kjetil Kårbø;NOR;Laksevåg TIL;M45-49;3:27:30;+ 1:01:46
+509;41359;Roman Isaev;POR;Run Zeppelin Lisbon;M45-49;3:27:32;+ 1:01:48
+510;40643;Annika Winsnes;NOR;;K24-34;3:27:33;+ 1:01:50
+511;41451;Kristoffer Brabrand;NOR;;M35-39;3:27:34;+ 1:01:51
+512;42737;Christoffer Siopan Engtrø;NOR;Structor Tekniske Systemer BIL;M24-34;3:27:35;+ 1:01:52
+513;73106;Yftach Paschur;ISR;;M24-34;3:27:38;+ 1:01:54
+514;40570;Harold Mufoncol;NOR;;M24-34;3:27:39;+ 1:01:55
+515;40601;Raymond Steinset;NOR;Ulnes;M35-39;3:27:41;+ 1:01:58
+516;40728;Ivan Veljkovic;NOR;;M45-49;3:27:42;+ 1:01:59
+517;25;Vilde Alise Lyse;NOR;;K24-34;3:27:46;+ 1:02:03
+518;40909;Alf Kalmar;NOR;RunAgain;M24-34;3:28:04;+ 1:02:20
+519;40674;Erik Øye;NOR;Ultimate Nordic;M35-39;3:28:07;+ 1:02:24
+520;40226;Peter Freriks;NED;BMW marathoners;M40-44;3:28:15;+ 1:02:32
+521;41109;Petter Lønaas;NOR;;M18-21;3:28:16;+ 1:02:33
+522;40579;Chun Wai Michael Tam;NOR;;M24-34;3:28:24;+ 1:02:41
+523;42701;Marek Szala;POL;RiksTV;M40-44;3:28:25;+ 1:02:41
+524;40120;Marius Kristiansen;NOR;;M24-34;3:28:26;+ 1:02:43
+525;40970;Per Fordal;NOR;;M24-34;3:28:28;+ 1:02:45
+526;40488;Björn Fischer;GER;;M40-44;3:28:29;+ 1:02:46
+527;41276;David Lekve;NOR;Twoday;M22-23;3:28:31;+ 1:02:48
+528;40170;Filip Hyla;POL;;M24-34;3:28:34;+ 1:02:51
+529;40372;Torgeir Haug;NOR;;M50-54;3:28:38;+ 1:02:54
+530;40671;Jon-Andre Fosstvedt;NOR;;M45-49;3:28:43;+ 1:03:00
+531;40002;Kristian Gaarder;NOR;;M50-54;3:28:45;+ 1:03:02
+532;40611;Peter Rothmund;NOR;;M50-54;3:28:46;+ 1:03:03
+533;41111;Christian Bro Matland;NOR;;M45-49;3:28:48;+ 1:03:04
+534;40025;Kristian Schnell;NOR;Pål og Kristian løper sammen;M24-34;3:28:48;+ 1:03:05
+535;40365;Florin Balint;ROU;;M24-34;3:28:48;+ 1:03:05
+536;40603;Jørn Kjørsvik;NOR;GARANTUM IL;M50-54;3:28:49;+ 1:03:05
+537;40757;Jon Ivar Ask;NOR;;M35-39;3:28:49;+ 1:03:06
+538;40023;Tord Røsstad;NOR;;M24-34;3:28:51;+ 1:03:07
+539;40953;Marius Havdahl Nilsen;NOR;;M35-39;3:28:53;+ 1:03:10
+540;40393;Mustafa Jarallah;NOR;;M24-34;3:28:59;+ 1:03:16
+541;40651;Charlotte Mcinnes;AUS;;K35-39;3:29:01;+ 1:03:17
+542;41461;Esben Rusås;NOR;DNV BIL;M35-39;3:29:02;+ 1:03:19
+543;41275;Kristian Kjørstad;NOR;Eid IL;M35-39;3:29:03;+ 1:03:19
+544;40770;David Cheshire;GBR;Litago Bros;M24-34;3:29:03;+ 1:03:20
+545;73096;Erlend B Jenssen;NOR;Romerike Ultraløperklubb;M45-49;3:29:03;+ 1:03:20
+546;40829;Alexander Nordly;NOR;;M22-23;3:29:04;+ 1:03:21
+547;40180;Jarle Kvinlaug;NOR;;M24-34;3:29:04;+ 1:03:21
+548;41031;Adam Kana-Ah;GBR;;M24-34;3:29:08;+ 1:03:25
+549;41063;Kjetil Sivesind Gullhaug;NOR;;M35-39;3:29:11;+ 1:03:28
+550;40278;Joachim Svensson;NOR;;M24-34;3:29:13;+ 1:03:30
+551;40988;Annette Christin Lund;NOR;Team Hoka One One;K35-39;3:29:16;+ 1:03:32
+552;41014;Lwando Ndabankulu;RSA;;M24-34;3:29:18;+ 1:03:34
+553;41120;Kim André Langli;NOR;BundeBygg;M35-39;3:29:18;+ 1:03:35
+554;40866;Andrés Pardo Rodríguez;COL;;M35-39;3:29:19;+ 1:03:36
+555;40125;Daniel Olafsrud;NOR;;M35-39;3:29:20;+ 1:03:37
+556;41217;Ole-Magnus Høiback;NOR;NTNUI - Friidrett;M24-34;3:29:22;+ 1:03:39
+557;40386;Davide Murari;ITA;;M24-34;3:29:24;+ 1:03:41
+558;41363;Emil Frenningsmoen;NOR;;M18-21;3:29:25;+ 1:03:41
+559;41428;Maik Kämmerer;GER;;M45-49;3:29:25;+ 1:03:42
+560;40602;Espen Slettemeås Holm;NOR;Team Anthon;M45-49;3:29:29;+ 1:03:45
+561;40913;Jonas Andresen;NOR;;M18-21;3:29:29;+ 1:03:46
+562;40106;Graziano Gentili;ITA;VERDE PISELLO GROUP MILANO;M45-49;3:29:31;+ 1:03:48
+563;40695;Gerrit Karafiat;NOR;;M35-39;3:29:34;+ 1:03:50
+564;40613;Scott Kendall;AUS;;M24-34;3:29:36;+ 1:03:53
+565;40406;Declan Keaney;IRL;;M24-34;3:29:39;+ 1:03:55
+566;40207;Kristian Lindqvist;FIN;IK Falken;M50-54;3:29:39;+ 1:03:56
+567;41439;Pål Yngve Kristoffersen;NOR;;M40-44;3:29:39;+ 1:03:56
+568;40828;Jakob Johansen;NOR;;M24-34;3:29:42;+ 1:03:58
+569;40965;Mathea Kvadsheim;NOR;;K24-34;3:29:43;+ 1:03:59
+570;41314;Magnus Moen;NOR;;M18-21;3:29:43;+ 1:04:00
+571;1064;Geir Søndeland;NOR;Stavanger Friidrettsklubb;M35-39;3:29:44;+ 1:04:00
+572;41201;Mikael Frøynes;NOR;Sem IF;M22-23;3:29:47;+ 1:04:03
+573;42960;Sebastian Steenfeldt;NOR;;M22-23;3:29:47;+ 1:04:04
+574;40219;Antony Martin;FRA;;M35-39;3:29:49;+ 1:04:06
+575;40368;Stian Bakløkken Øverstad;NOR;Redalen IL;M24-34;3:29:52;+ 1:04:09
+576;40408;Amund Lund-Kristensen;NOR;Deloitte;M24-34;3:29:53;+ 1:04:10
+577;40409;Herman Lund-Kristensen;NOR;;M24-34;3:29:53;+ 1:04:10
+578;41165;Christian Hoen;NOR;Nittedal IL;M24-34;3:29:53;+ 1:04:10
+579;40677;Lars Hauge;NOR;Greåker IF;M55-59;3:29:54;+ 1:04:10
+580;1023;Marie Fornes Danielsen;NOR;Gjerpen IF Allianse - Friidrett;K24-34;3:29:56;+ 1:04:13
+581;40559;M0n5t3r Von Mortensrud;NOR;;M40-44;3:29:56;+ 1:04:13
+582;40456;Ryan Murphy;IRL;;M22-23;3:29:57;+ 1:04:13
+583;41399;Erik Lollik-Andersen;NOR;;M18-21;3:29:57;+ 1:04:13
+584;40382;Helga Brugmans;BEL;;K50-54;3:29:57;+ 1:04:14
+585;41346;Andreas Rose;NOR;Aprila Bank ASA;M24-34;3:29:57;+ 1:04:14
+586;41164;Kristine Rønningen;NOR;Nittedal IL;K50-54;3:29:59;+ 1:04:16
+587;40535;Nikolai Bjerkestrand;NOR;;M24-34;3:30:00;+ 1:04:17
+588;40815;Kenneth Daae;NOR;;M24-34;3:30:02;+ 1:04:19
+589;40700;Jard Bringedal;NOR;K601;M60-64;3:30:03;+ 1:04:20
+590;41842;Mariusz Kedziora;POL;;M24-34;3:30:06;+ 1:04:22
+591;40831;Petri Raivio;FIN;;M40-44;3:30:11;+ 1:04:28
+592;41223;Olav Astad Kristiansen;NOR;Aktiv Mot Kreft;M55-59;3:30:11;+ 1:04:28
+593;41595;Nils Otto Steen-Utheim;NOR;;M50-54;3:30:11;+ 1:04:28
+594;42853;Alexander Flaa;NOR;Fartsholdere Oslo Maraton 2023;M35-39;3:30:12;+ 1:04:29
+595;41296;Simon Lund Eikrem;NOR;Freidig SPK;M45-49;3:30:14;+ 1:04:30
+596;40357;Peter Kleven;NOR;;M24-34;3:30:14;+ 1:04:31
+597;41142;Markus Fritsche;NOR;BMW Group Norway;M45-49;3:30:19;+ 1:04:36
+598;40091;Raymond Mathisen;NOR;Rockwool Kondis;M45-49;3:30:34;+ 1:04:50
+599;40049;Christian Koehncke;GER;;M45-49;3:30:34;+ 1:04:51
+600;41065;Felice Swenden;BEL;;K24-34;3:30:34;+ 1:04:51
+601;41332;Andreas Håland;NOR;;M24-34;3:30:37;+ 1:04:54
+602;41260;Oscar Petlund;NOR;Cisco;M24-34;3:30:42;+ 1:04:59
+603;41191;Andrea Svenningsen;NOR;Oslo Politis IL;K24-34;3:30:44;+ 1:05:01
+604;40672;Hans A. Grønnvoll;NOR;;M35-39;3:30:50;+ 1:05:07
+605;40743;Blue Newton;GBR;;M24-34;3:30:54;+ 1:05:10
+606;40742;Michael Silvester;GBR;;M24-34;3:30:54;+ 1:05:10
+607;40691;Simon Malthieu;NOR;;M24-34;3:30:54;+ 1:05:11
+608;42712;Albert Dunnink;NED;Outmate & Secuur interieurs;M24-34;3:31:02;+ 1:05:19
+609;40746;Anette Hüttepohl;NOR;YVE/Trondheim Maraton;K40-44;3:31:06;+ 1:05:23
+610;40166;Kim Ewald Fossum;DEN;;M50-54;3:31:09;+ 1:05:26
+611;40358;Alex Purchell;GBR;;M40-44;3:31:10;+ 1:05:27
+612;40093;Guanghu Yang;CHN;;M40-44;3:31:13;+ 1:05:29
+613;40814;Victor Thorén;SWE;;M24-34;3:31:13;+ 1:05:30
+614;73004;Gorm Solhaug;NOR;DKP Earlybird;M50-54;3:31:13;+ 1:05:30
+615;40390;Mats Øien;NOR;Budal I.L;M24-34;3:31:15;+ 1:05:32
+616;40416;Arseniy Sikalov;UKR;;M24-34;3:31:23;+ 1:05:39
+617;1118;Per Øyvind Bonkerud;NOR;Kolbukameratene IL;M40-44;3:31:24;+ 1:05:40
+618;41153;Simen Heimdahl;NOR;Privat;M24-34;3:31:26;+ 1:05:42
+619;41051;Bekir Oray Gungor;TUR;Bold Union;M40-44;3:31:31;+ 1:05:48
+620;40043;Imran Kheirhua;NOR;Exsitec;M24-34;3:31:37;+ 1:05:54
+621;42417;Jens Paton;NOR;;M18-21;3:31:38;+ 1:05:55
+622;40531;Eirik Bredesen;NOR;Betonmast Oslo;M50-54;3:31:38;+ 1:05:55
+623;40753;Olaide Ogunronbi;NGR;;M40-44;3:31:42;+ 1:05:59
+624;40525;Niclas Malmbom;SWE;Arvika Polisen;M40-44;3:31:52;+ 1:06:09
+625;40856;Fabiaan Hendricks;NED;;M35-39;3:31:55;+ 1:06:11
+626;40213;Håvar Ringen;NOR;Nordnes løp og sprint;M24-34;3:31:56;+ 1:06:13
+627;40008;Jon Kjellum;NOR;;M35-39;3:32:01;+ 1:06:17
+628;40179;Martin Hanley;GBR;;M24-34;3:32:01;+ 1:06:18
+629;73109;Tone Solberg;NOR;Trondheim & Omegn Sportsklubb;K24-34;3:32:06;+ 1:06:23
+630;40886;Andy Mundy;GBR;;M24-34;3:32:09;+ 1:06:25
+631;40429;Gregory Gleed;GBR;;M35-39;3:32:11;+ 1:06:28
+632;40726;Mathias Karlsen;NOR;;M24-34;3:32:12;+ 1:06:28
+633;41401;Sander Blymke Mogensen;NOR;;M18-21;3:32:16;+ 1:06:32
+634;40271;Hannah Müller;GER;;K22-23;3:32:16;+ 1:06:33
+635;40252;Telmo Reis;POR;Lousada Runners;M40-44;3:32:18;+ 1:06:35
+636;41380;Sondre Kielland;NOR;;M24-34;3:32:19;+ 1:06:36
+637;40027;Anders Bergan;NOR;;M45-49;3:32:29;+ 1:06:45
+638;1043;Kari Beate Hovde;NOR;Sauland IL;K45-49;3:32:34;+ 1:06:50
+639;41205;Martin Wangen-Eriksen;NOR;Røa IL;M24-34;3:32:36;+ 1:06:53
+640;41867;Thomas Berg Tellefsen;NOR;;M35-39;3:32:38;+ 1:06:55
+641;41072;Hans Fredrik Christensen;NOR;;M60-64;3:32:42;+ 1:06:59
+642;42881;Simen Totlund;NOR;Trasstassarane;M22-23;3:32:46;+ 1:07:03
+643;40545;Koen Demey;NOR;;M45-49;3:32:46;+ 1:07:03
+644;41316;Vetle Fink;NOR;;M24-34;3:32:55;+ 1:07:12
+645;41133;Ingvild Bakke;NOR;;K40-44;3:32:55;+ 1:07:12
+646;1111;Adrian Alvsvåg Jacobsen;NOR;Studentspretten IL;M24-34;3:32:58;+ 1:07:14
+647;41047;Guy Frainier;SUI;;M45-49;3:32:59;+ 1:07:16
+648;40887;Ben Fernandes;POR;;M22-23;3:33:00;+ 1:07:17
+649;40857;Ketil Stenhammer;NOR;;M22-23;3:33:06;+ 1:07:22
+650;40542;Rolf Grung;NOR;;M45-49;3:33:06;+ 1:07:23
+651;40506;Nick Hayes;GBR;;M35-39;3:33:15;+ 1:07:32
+652;40492;Christine Eng;NOR;;K24-34;3:33:25;+ 1:07:42
+653;40712;Martin Freudling;GER;ASV Hegge Germany;M50-54;3:33:28;+ 1:07:45
+654;40958;Frode Georgsen;NOR;Rådtassene;M55-59;3:33:38;+ 1:07:54
+655;40741;Tom Christian Jandal;NOR;;M40-44;3:33:40;+ 1:07:57
+656;40675;Filip Patocka;CZE;;M35-39;3:33:42;+ 1:07:59
+657;40017;Edvard Eidissen;NOR;;M24-34;3:33:42;+ 1:07:59
+658;40004;Martin Wingstad Blakkisrud;NOR;;M24-34;3:33:49;+ 1:08:06
+659;40749;Christopher Ager;NOR;;M24-34;3:33:50;+ 1:08:07
+660;40761;Zoltan Janos Palinkas;NOR;;M50-54;3:33:50;+ 1:08:07
+661;41050;Elina Kaikova;NOR;;K24-34;3:34:00;+ 1:08:16
+662;40439;Frikk Bergsli;NOR;F. Gump Løpeforening;M24-34;3:34:01;+ 1:08:18
+663;40785;Jean Luc Dufeal;FRA;Santéforméquilibre;M55-59;3:34:03;+ 1:08:19
+664;42670;Narve Nilssen;NOR;Ingen;M24-34;3:34:04;+ 1:08:21
+665;42452;Mia Breistøl;NOR;Bærum Rednecks;K18-21;3:34:06;+ 1:08:22
+666;40077;Petter Larseng;NOR;;M45-49;3:34:18;+ 1:08:35
+667;41326;Andreas Hole;NOR;;M24-34;3:34:25;+ 1:08:42
+668;40793;Jonathan Branski;FRA;;M35-39;3:34:27;+ 1:08:44
+669;40299;Eilert Midttun Rostrup;NOR;Ekeberg Løp & Sprint;M24-34;3:34:28;+ 1:08:44
+670;73108;Øystein Tallhaug Engelstad;NOR;;M24-34;3:34:31;+ 1:08:47
+671;40188;Simen Madsen;NOR;;M24-34;3:34:34;+ 1:08:51
+672;41924;Emilia Worthington;NOR;;K22-23;3:34:39;+ 1:08:56
+673;41441;Kjetil Andre Bergh;NOR;Mjøndalen IF;M40-44;3:34:39;+ 1:08:56
+674;40102;Jakub Abrahamowicz;POL;;M35-39;3:34:43;+ 1:08:59
+675;40758;Magnus Aske Blikeng;NOR;;M35-39;3:34:49;+ 1:09:06
+676;40083;Ove Haugland Jakobsen;NOR;;M40-44;3:34:50;+ 1:09:06
+677;40038;Cathrine Holme;NOR;Fokus Trening;K50-54;3:34:51;+ 1:09:08
+678;40604;Claudio Fedi;ITA;p.c.a. hitachi rail pistoia italy;M45-49;3:34:55;+ 1:09:12
+679;40948;Henriette Brynthe;NOR;;K35-39;3:34:56;+ 1:09:13
+680;40080;Steinar Skaar;NOR;Løpsklubben 1814 BIL;M65-69;3:34:59;+ 1:09:15
+681;40176;Vilde Helene Hansen;NOR;;K24-34;3:34:59;+ 1:09:15
+682;40784;Simen Aas;NOR;;M24-34;3:34:59;+ 1:09:15
+683;40832;Kristoffer Væting;NOR;;M22-23;3:35:01;+ 1:09:18
+684;41875;Kenneth J Kløw;NOR;;M40-44;3:35:04;+ 1:09:21
+685;40959;Lene Bjerkestrand;NOR;;K24-34;3:35:06;+ 1:09:23
+686;40653;Kristian Pedersen;NOR;;M24-34;3:35:14;+ 1:09:31
+687;41404;Sindre Torsnes;NOR;Söderberg & Partners;M24-34;3:35:15;+ 1:09:31
+688;40433;John Mackey;AUS;;M50-54;3:35:21;+ 1:09:38
+689;41025;Mathias Aune;NOR;Nordea;M24-34;3:35:29;+ 1:09:46
+690;41366;Vegard Josvanger;NOR;;M24-34;3:35:33;+ 1:09:49
+691;1083;Bjørn Laastad;NOR;BFG Bergen Løpeklubb;M60-64;3:35:36;+ 1:09:52
+692;41029;Fredrik Wik;NOR;;M22-23;3:35:39;+ 1:09:55
+693;41427;Håkon Aleksander Vik;NOR;;M24-34;3:35:39;+ 1:09:55
+694;41150;Ørjan Moen;NOR;Norge;M24-34;3:35:40;+ 1:09:56
+695;1025;Pål Rune Helgetveit;NOR;Skade Idrettslaget;M55-59;3:35:41;+ 1:09:58
+696;1081;Jan-Helge Balto;NOR;Sirma IL;M70-74;3:35:45;+ 1:10:01
+697;40310;Ed Hickey;GBR;;M22-23;3:35:47;+ 1:10:03
+698;40810;Annika Stokke;NOR;;K22-23;3:35:58;+ 1:10:15
+699;41043;Aleksander Skugstad;NOR;;M24-34;3:35:59;+ 1:10:16
+700;40941;Andreas Lidsheim;NOR;;M24-34;3:36:00;+ 1:10:17
+701;41136;Pawel Spyt;POL;"Górnik Wa&#322;brzych";M40-44;3:36:02;+ 1:10:19
+702;41432;Pia Helene Paulsen;NOR;Trim og Trivsel Turlag;K24-34;3:36:02;+ 1:10:19
+703;40214;Kristine Dahl;DEN;Aarhus1900;K24-34;3:36:03;+ 1:10:19
+704;42249;Jørgen Trædal Haukeland;NOR;;M35-39;3:36:06;+ 1:10:23
+705;40453;August Taranrød;NOR;;M22-23;3:36:09;+ 1:10:26
+706;73072;Andreas Mehlfuehrer;AUT;;M40-44;3:36:10;+ 1:10:27
+707;41678;T W;NOR;;;3:36:15;+ 1:10:32
+708;40860;Vegard Hofslundsengen;NOR;;M24-34;3:36:17;+ 1:10:34
+709;41443;Ole Henrik Moe;NOR;Aibel Asker BIL;M24-34;3:36:21;+ 1:10:38
+710;73074;Daniel Salvesen;NOR;Romerike Ultraløperklubb;M50-54;3:36:22;+ 1:10:38
+711;40921;Florin Campean;NOR;TRA;M35-39;3:36:22;+ 1:10:39
+712;41024;Frode Eidsmo;NOR;Oslo Speedskaters / Team Kondis;M60-64;3:36:22;+ 1:10:39
+713;41187;Tom Reinert Johansen;NOR;GTI Friidrettsklubb;M40-44;3:36:26;+ 1:10:43
+714;40608;Wytze Van Der Velde;NED;;M55-59;3:36:33;+ 1:10:50
+715;41586;Daniel Vikhagen;NOR;;M24-34;3:36:33;+ 1:10:50
+716;41464;Svein Fidjestøl;NOR;;M40-44;3:36:34;+ 1:10:51
+717;40331;Torvald Nikolas Kambestad;NOR;;M24-34;3:36:37;+ 1:10:53
+718;41079;Kyrre Tømmerberg;NOR;;M50-54;3:36:39;+ 1:10:56
+719;41244;Fredrik Damman;NOR;Skåla IL;M24-34;3:36:42;+ 1:10:58
+720;41141;Andre Jensen;NOR;JW Runners club;M50-54;3:36:42;+ 1:10:58
+721;41338;Jørgen Kleppan;NOR;Stokke IL;M22-23;3:36:42;+ 1:10:59
+722;40852;Jose Martinez;ARG;;M45-49;3:36:43;+ 1:11:00
+723;41183;Torleif Arnesen;NOR;Rye SpKl;M55-59;3:36:45;+ 1:11:02
+724;41328;Ali Al-Saatie;NOR;;M18-21;3:36:50;+ 1:11:07
+725;1080;Agnar Øystein Varsi;NOR;Sirma IL;M55-59;3:36:56;+ 1:11:12
+726;41254;Anouk Hye Jin Bakker;NED;Brams Bootcamp;K45-49;3:36:58;+ 1:11:14
+727;41068;Slawomir Lesniak;POL;;M40-44;3:36:58;+ 1:11:15
+728;40940;Saulius Lazdauskas;LTU;"FLOW TEAM KLAIP&#278;DA";M50-54;3:37:05;+ 1:11:22
+729;1106;Lars Bjørbæk;NOR;Florø Tog IF;M40-44;3:37:07;+ 1:11:24
+730;41269;Robert Eriksson;SWE;Avanade Nordics;M45-49;3:37:11;+ 1:11:28
+731;41764;Zouhair Chkiriba;MAR;;M24-34;3:37:15;+ 1:11:32
+732;40367;Karen Helene Grøndalen;NOR;;K24-34;3:37:17;+ 1:11:33
+733;41307;Bert Skorupski;GER;;M45-49;3:37:21;+ 1:11:37
+734;41767;Steinar Graver;NOR;;M35-39;3:37:21;+ 1:11:38
+735;40830;Patrick King;NOR;;M24-34;3:37:22;+ 1:11:39
+736;40900;Joseph Hodgson;NOR;;M40-44;3:37:23;+ 1:11:39
+737;40339;Bertrand Etchecopar;FRA;;M55-59;3:37:23;+ 1:11:39
+738;41088;Christian Juel-Jensen;NOR;;M45-49;3:37:23;+ 1:11:40
+739;40624;Clémence Schüssler;FRA;;K24-34;3:37:24;+ 1:11:40
+740;41418;Felix Ruf;GER;;M24-34;3:37:33;+ 1:11:50
+741;1027;Karense Ulseth;NOR;Tjøme Løpeklubb;K40-44;3:37:38;+ 1:11:55
+742;40635;Thomas Husby Sæther;NOR;;M35-39;3:37:39;+ 1:11:56
+743;73040;Jørgen Aspelund;NOR;HENT AS;M35-39;3:37:44;+ 1:12:01
+744;41011;Torbjørn Grimen;NOR;;M24-34;3:37:50;+ 1:12:06
+745;40736;Martin Smedhaugen;NOR;;M24-34;3:37:50;+ 1:12:07
+746;1052;Ola Mellem;NOR;TUIL Tromsdalen Friidrett;M65-69;3:37:50;+ 1:12:07
+747;40618;Marit Lundberg;NOR;;K24-34;3:37:53;+ 1:12:10
+748;40346;Alexander Fastberg;SWE;;M24-34;3:37:54;+ 1:12:10
+749;40499;Håvard Crantz Lorentzen;NOR;;M24-34;3:37:55;+ 1:12:11
+750;42937;Mihail Sparans;NOR;;M35-39;3:37:57;+ 1:12:13
+751;40934;Abdulhadi Kasim;NOR;;M24-34;3:37:57;+ 1:12:14
+752;41118;Tommy Haltbrekken;NOR;;M24-34;3:38:06;+ 1:12:22
+753;41393;Marius Reierstad;NOR;;M24-34;3:38:11;+ 1:12:27
+754;40573;Ronald William Polenz;NOR;Phonero;M35-39;3:38:17;+ 1:12:33
+755;41293;Eivind Næve;NOR;Leik IL;M18-21;3:38:18;+ 1:12:35
+756;41507;Ørjan Danielsen;NOR;;M35-39;3:38:22;+ 1:12:38
+757;41412;Isabel Sunde;NOR;;K22-23;3:38:26;+ 1:12:43
+758;40001;Tarjei Johre;NOR;;M24-34;3:38:26;+ 1:12:43
+759;40658;Patrick Otoole;USA;;M35-39;3:38:29;+ 1:12:46
+760;40912;Erlend Ytreberg;NOR;;M24-34;3:38:30;+ 1:12:47
+761;41868;Anica Worthington;NOR;;K22-23;3:38:31;+ 1:12:48
+762;40107;Nick Weidemann;GER;;M24-34;3:38:33;+ 1:12:49
+763;41129;Simen Elvestrand;NOR;Bodø Bauta;M24-34;3:38:33;+ 1:12:50
+764;40760;Einar Fuglem;NOR;Mølmann Fuglem IL;M24-34;3:38:37;+ 1:12:54
+765;40220;Sylvain Sureau;FRA;;M35-39;3:38:47;+ 1:13:04
+766;40705;Gustav Olsson;NOR;;M18-21;3:38:49;+ 1:13:05
+767;42209;Joshua Lerner;AUS;;M24-34;3:38:50;+ 1:13:07
+768;42905;Markus Endresen Thorstensen;NOR;;M22-23;3:38:54;+ 1:13:11
+769;40323;Thomas Hage;GER;Hotel Bellavista Mallorca;M50-54;3:38:56;+ 1:13:13
+770;40116;M S;NOR;;;3:38:57;+ 1:13:14
+771;41894;Tom Verrept;BEL;;M24-34;3:39:01;+ 1:13:18
+772;40990;Bjørnar Sjøvik;NOR;;M24-34;3:39:01;+ 1:13:18
+773;40655;Anders Nytun Fossøy;NOR;Smellen LK;M24-34;3:39:01;+ 1:13:18
+774;40199;Arben Shati;ALB;Superior Group;M55-59;3:39:06;+ 1:13:22
+775;42217;Jens Ekman Norsted;NOR;;M24-34;3:39:13;+ 1:13:29
+776;40845;Ali Djait;ALG;;M35-39;3:39:17;+ 1:13:34
+777;40870;Magnus Løver;NOR;;M24-34;3:39:23;+ 1:13:39
+778;73065;Karl Anders Mæland Nilsen;NOR;GTI Friidrettsklubb;M45-49;3:39:23;+ 1:13:40
+779;40081;Rune Myrdal;NOR;Knowit BIL;M50-54;3:39:23;+ 1:13:40
+780;40400;Lola Garrido Ramos;ESP;Club 100 maratones;K55-59;3:39:23;+ 1:13:40
+781;41389;Sturla Hassel;NOR;;M40-44;3:39:25;+ 1:13:42
+782;1046;Aasmund Egge Brandal;NOR;Hareid IL;M24-34;3:39:25;+ 1:13:42
+783;42673;Marika Lael Kromberg Underwood;NOR;Ingen;K24-34;3:39:26;+ 1:13:43
+784;41052;Ole Kristian Egeberg;NOR;Maratånegl;M24-34;3:39:30;+ 1:13:46
+785;40391;Tonje Roaldstveit;NOR;;K24-34;3:39:33;+ 1:13:50
+786;40591;Vanessa Köllner;GER;Triabolos Hamburg;K24-34;3:39:34;+ 1:13:51
+787;40556;Simon Skoogh;SWE;;M22-23;3:39:38;+ 1:13:55
+788;40686;Matthew Perry;GBR;;M24-34;3:39:39;+ 1:13:56
+789;41996;Sylvain Proux;FRA;;M24-34;3:39:44;+ 1:14:01
+790;41286;Marius Berg Mortensen;NOR;Høland Idrettslag - HIL;M24-34;3:39:46;+ 1:14:02
+791;40769;Edvard Tollefsrud;NOR;;M24-34;3:39:46;+ 1:14:03
+792;41188;André Nesset;NOR;Lalm IL;M24-34;3:39:47;+ 1:14:03
+793;40597;Fiona Mueller-Lundin;SWE;;K24-34;3:39:51;+ 1:14:08
+794;42025;Elias Hansen;NOR;;M24-34;3:39:53;+ 1:14:10
+795;40079;Markus Hellumsand;NOR;Munkelia Toppidrett;M24-34;3:39:57;+ 1:14:13
+796;42760;Markus Karlstad;NOR;Five Liter Gang;M24-34;3:39:58;+ 1:14:14
+797;40157;Emma Simila;FIN;;K35-39;3:40:00;+ 1:14:17
+798;40681;Amador Sevillano Marino;ESP;;M35-39;3:40:01;+ 1:14:17
+799;41084;Espen Skaaland;NOR;;M45-49;3:40:03;+ 1:14:20
+800;40325;Alexander Valstad Haveråen;NOR;;M24-34;3:40:04;+ 1:14:20
+801;41387;André Nilssen;NOR;;M24-34;3:40:06;+ 1:14:23
+802;40751;Hans-Christian Norveel;NOR;Norconsult BIL;M24-34;3:40:06;+ 1:14:23
+803;40078;John Mcseveny;GBR;;M35-39;3:40:08;+ 1:14:25
+804;41222;Bernard Brons;NOR;Kristiansand Løpeklubb;M35-39;3:40:19;+ 1:14:35
+805;40996;Maria Hörnquist;SWE;Anderstorps OK;K45-49;3:40:19;+ 1:14:35
+806;40247;Morten Fredriksen;NOR;;M40-44;3:40:20;+ 1:14:37
+807;73104;Patrick Randem;NOR;;M24-34;3:40:21;+ 1:14:37
+808;42590;Timo Helland;NOR;;M18-21;3:40:22;+ 1:14:39
+809;41259;Andreas Aardal Hanssen;NOR;Cisco;M45-49;3:40:23;+ 1:14:39
+810;40536;Vegar Anthonessen;NOR;;M24-34;3:40:23;+ 1:14:40
+811;40454;Ulf Engström;SWE;Kristinehamn Multisport;M40-44;3:40:26;+ 1:14:43
+812;40796;Inga Dahlen Konow;NOR;;K24-34;3:40:32;+ 1:14:48
+813;73006;Marianne Årdalen;NOR;Gjerpen IF Allianse - Friidrett;K50-54;3:40:36;+ 1:14:53
+814;40548;Antonino Nicotra;ITA;;M35-39;3:40:39;+ 1:14:55
+815;40835;Erik Asplund;NOR;;M24-34;3:40:40;+ 1:14:56
+816;40569;Nicholas Bergh;NOR;;M24-34;3:40:43;+ 1:15:00
+817;42663;Frank Reimertz;NOR;Oslo Politis IL;M24-34;3:40:43;+ 1:15:00
+818;41028;Ask Moum;NOR;;M18-21;3:40:46;+ 1:15:03
+819;41048;Stian Storli;NOR;Team Kraket;M24-34;3:40:47;+ 1:15:04
+820;41636;Tord Rødland Hauge+;NOR;NTNUI Gjøvik Løping;M18-21;3:40:47;+ 1:15:04
+821;42932;Hanne Winther;NOR;Fyllesvin;K24-34;3:40:48;+ 1:15:05
+822;40003;Jostein Billingsø;NOR;;M35-39;3:40:48;+ 1:15:05
+823;40486;Atle Aulom;NOR;Team Turtlespeed;M50-54;3:40:49;+ 1:15:05
+824;40892;Amalie Tranøy Hovden;NOR;;K24-34;3:40:50;+ 1:15:07
+825;40011;Runar Flugstad;NOR;;M35-39;3:40:55;+ 1:15:11
+826;40654;Jorge Luis Spinelli;ARG;;M65-69;3:40:55;+ 1:15:12
+827;40972;Mattias Pinto;NOR;;M24-34;3:40:56;+ 1:15:13
+828;41270;Espen Fystro;NOR;Norges Bank;M24-34;3:41:02;+ 1:15:19
+829;40412;Thomas Leknes;NOR;;M50-54;3:41:03;+ 1:15:20
+830;40644;Stephen Allwright;GBR;Vidar Sportsklubben;M24-34;3:41:04;+ 1:15:21
+831;42277;Ryan Stenzel;NOR;;M35-39;3:41:10;+ 1:15:26
+832;40397;Thomas Mccormack;GBR;;M24-34;3:41:10;+ 1:15:27
+833;40724;Mats Tranvåg;NOR;;M35-39;3:41:10;+ 1:15:27
+834;40891;John Emil Gaup;NOR;;M22-23;3:41:14;+ 1:15:30
+835;41058;Laurids Sædberg Hansen;NOR;;M22-23;3:41:16;+ 1:15:33
+836;40918;Vegard Hauge;NOR;;M24-34;3:41:18;+ 1:15:35
+837;40234;Jørgen Hexeberg Linna;NOR;;M24-34;3:41:21;+ 1:15:38
+838;41137;Bendik Lukassen;NOR;;M18-21;3:41:21;+ 1:15:38
+839;41234;Victor Halnes;NOR;Ski IL Friidrett;M24-34;3:41:21;+ 1:15:38
+840;40053;Krister Olofsson-Prsa;SWE;Profality AB;M45-49;3:41:23;+ 1:15:39
+841;40055;Petter Hansen;NOR;Team Driv Trening;M50-54;3:41:32;+ 1:15:48
+842;41131;Synnøve Hodnekvam;NOR;;K24-34;3:41:32;+ 1:15:49
+843;40987;Lars Lødding;NOR;;M35-39;3:41:33;+ 1:15:49
+844;42640;Siri Bergfald;NOR;Romerike Ultraløperklubb;K45-49;3:41:38;+ 1:15:54
+845;40311;Alexander Suchacek;SVK;T.L.A.P.;M40-44;3:41:40;+ 1:15:57
+846;40661;Kevin England;USA;Louisiana Running Company;M24-34;3:41:43;+ 1:16:00
+847;42902;Rune Andersen;NOR;;M50-54;3:41:47;+ 1:16:04
+848;40864;Per Winje;NOR;;M18-21;3:41:50;+ 1:16:07
+849;41331;Thomas Espås;NOR;;M24-34;3:41:53;+ 1:16:10
+850;41608;Bjørn Spockeli;NOR;Nordic Semiconductor;M24-34;3:41:58;+ 1:16:14
+851;40191;Solveig Evensen;NOR;;K24-34;3:42:01;+ 1:16:17
+852;41463;Vibeke Steffensen;NOR;GTI Friidrettsklubb;K40-44;3:42:01;+ 1:16:18
+853;40956;Eirik Ytreberg;NOR;Chads atleter;M24-34;3:42:05;+ 1:16:22
+854;42971;Henrik Nandrup;NOR;;M24-34;3:42:10;+ 1:16:27
+855;40949;Hans Kristian Gran;NOR;;M40-44;3:42:11;+ 1:16:28
+856;41406;Ådne Øvergaard;NOR;;M24-34;3:42:21;+ 1:16:38
+857;73085;Daniel Rafal Zaluk;POL;;M45-49;3:42:23;+ 1:16:39
+858;1107;Preben Gare;NOR;Drangedal Idrettslag;M35-39;3:42:24;+ 1:16:40
+859;40109;Richard Bjørnstad;NOR;;M24-34;3:42:25;+ 1:16:42
+860;40916;Kjetil Aasgard;NOR;;M45-49;3:42:25;+ 1:16:42
+861;40392;Fredrik Sundby;NOR;;M22-23;3:42:27;+ 1:16:43
+862;42671;Oskar Mathisen;NOR;Ingen;M24-34;3:42:37;+ 1:16:54
+863;41132;Jakob Olsen;NOR;;M22-23;3:42:37;+ 1:16:54
+864;41196;Anne Johansen;NOR;Askim IF;K40-44;3:42:42;+ 1:16:59
+865;40432;Ørjan Eilertsen;NOR;Bodø Bauta Løpeklubb;M50-54;3:42:43;+ 1:16:59
+866;1114;Solveig Gysland Sæby;NOR;GTI Friidrettsklubb;K60-64;3:42:47;+ 1:17:03
+867;42707;Ole Setsaas;NOR;DNB;M24-34;3:42:47;+ 1:17:03
+868;40819;Mats Nicolaisen;NOR;;M35-39;3:42:47;+ 1:17:04
+869;40511;Kelly Martin;GBR;;M45-49;3:42:48;+ 1:17:05
+870;40552;Anwar Andries;NED;;M35-39;3:42:51;+ 1:17:08
+871;40980;Jordi Hofmans;NED;;M24-34;3:42:54;+ 1:17:10
+872;41273;Siw Bottolfsen Knutsen;NOR;Sørild FIK;K40-44;3:42:54;+ 1:17:11
+873;40807;Johan-Thomas Hegdahl;NOR;;M55-59;3:42:55;+ 1:17:12
+874;41748;Alf Georg Grastveit;NOR;;M24-34;3:42:57;+ 1:17:14
+875;40054;Benjamin Holt;NOR;Team Holt;M50-54;3:42:58;+ 1:17:15
+876;40250;Vibeke Johansen;NOR;Nordkapp Løpeklubb;K45-49;3:43:03;+ 1:17:20
+877;42949;Eline Caspersen Grimsmo;NOR;Fossum IF;K50-54;3:43:06;+ 1:17:23
+878;40974;Erik Lundberg;NOR;Team Lundberg;M24-34;3:43:11;+ 1:17:28
+879;41311;Tommy Evenrud;NOR;Vind IL;M45-49;3:43:12;+ 1:17:28
+880;40282;Kjetil Dahl Knutsen;NOR;;M45-49;3:43:22;+ 1:17:38
+881;40192;Odd Even Thorsen;NOR;;M35-39;3:43:22;+ 1:17:38
+882;40440;"Micha&#322; Jokiel";POL;OLAWS Zlotoryja;M35-39;3:43:22;+ 1:17:39
+883;40501;William Dyson;GBR;;M35-39;3:43:23;+ 1:17:40
+884;40167;Roy Anders Tuft;NOR;Løpetrening;M55-59;3:43:23;+ 1:17:40
+885;41734;Elizabeth Wright;GBR;;K35-39;3:43:27;+ 1:17:43
+886;1112;Mikael Sækingstad;NOR;Selsbakk IF;M24-34;3:43:27;+ 1:17:43
+887;41453;Birger Johan Blom;NOR;FRI IL;M60-64;3:43:28;+ 1:17:44
+888;42741;Eirik Grastveit;NOR;Sokndal Friidrettsklubb;M35-39;3:43:34;+ 1:17:51
+889;1053;Kjetil Karlsen;NOR;Jotun IL;M35-39;3:43:35;+ 1:17:52
+890;41005;Gøran Østerman Thengs;NOR;;M24-34;3:43:38;+ 1:17:54
+891;40779;Zeynel Abidin Arslan;GER;Ayyo Team Essen;M60-64;3:43:38;+ 1:17:55
+892;41361;Dieudonné Willems;NOR;;M50-54;3:43:39;+ 1:17:56
+893;40874;Marius Walaas Brodahl;NOR;;M18-21;3:43:43;+ 1:17:59
+894;41429;Marianne Heibø;NOR;Gjerpen IF Allianse - Friidrett;K40-44;3:43:44;+ 1:18:01
+895;40879;Christoffer Pedersen Orheim;NOR;;M24-34;3:43:44;+ 1:18:01
+896;41215;Tristan Hollande;NOR;Adamstuen Løpeklubb;M45-49;3:43:46;+ 1:18:03
+897;41066;Vebjørn Skare;NOR;Chads atleter;M24-34;3:43:55;+ 1:18:12
+898;40589;Ole Kristian Holme;NOR;TechnipFMC;M24-34;3:43:55;+ 1:18:12
+899;40919;Jørn Eriksen;NOR;PwC BIL;M50-54;3:43:58;+ 1:18:15
+900;40997;Simen Selstø;NOR;Strilalandslaget;M24-34;3:44:00;+ 1:18:16
+901;41573;Johannes Gustavsson;SWE;;M35-39;3:44:02;+ 1:18:18
+902;40348;Ole Jacob Hystad;NOR;Team Ølvikjo;M60-64;3:44:05;+ 1:18:22
+903;40189;Ola Skage Sander;NOR;Ulanbator Beach Boys / Mårhundens Venner IL 2;M40-44;3:44:06;+ 1:18:23
+904;73099;Chris Strandmann;NOR;;M18-21;3:44:07;+ 1:18:24
+905;40184;Anders Kvinge;NOR;;M35-39;3:44:07;+ 1:18:24
+906;41781;Johan Bjørnstad;NOR;;M22-23;3:44:08;+ 1:18:24
+907;10;Emily Venkatesan;GBR;;K22-23;3:44:08;+ 1:18:25
+908;42804;Anders Hoel;NOR;PwC BIL;M24-34;3:44:10;+ 1:18:27
+909;41016;Toril Haug-Moberg;NOR;;K40-44;3:44:14;+ 1:18:31
+910;40791;Alex Major;GBR;;M24-34;3:44:15;+ 1:18:32
+911;41291;Terje Gravvold;NOR;Vidar Sportsklubben;MFH;3:44:17;+ 1:18:33
+912;41280;Niillas Henry Nystad;NOR;Nordlys IL;M35-39;3:44:20;+ 1:18:36
+913;40648;Jens Klepp;NOR;;M50-54;3:44:20;+ 1:18:37
+914;40143;Viktor Symotiuk;UKR;Kolomyia running team;M24-34;3:44:24;+ 1:18:41
+915;42250;Jacob Mather;GBR;;M24-34;3:44:25;+ 1:18:42
+916;41100;Synne Bauer Larsen;NOR;;K24-34;3:44:26;+ 1:18:42
+917;40610;Lisa Garnweidner-Holme;NOR;;K40-44;3:44:28;+ 1:18:44
+918;40426;Kim Hed;SWE;;M40-44;3:44:29;+ 1:18:46
+919;42199;Michaela Brchnelova;SVK;;K24-34;3:44:34;+ 1:18:50
+920;40216;Adrian Agasøster;NOR;;M35-39;3:44:38;+ 1:18:55
+921;40534;William Irving;NOR;;M24-34;3:44:41;+ 1:18:58
+922;40906;Bence Hegedus;HUN;;M24-34;3:44:42;+ 1:18:59
+923;41421;Truyen Ngoc Nguyen;NOR;;M50-54;3:44:44;+ 1:19:00
+924;42931;Gunhild Nicolaisen;NOR;Fyllesvin;K24-34;3:44:45;+ 1:19:01
+925;73026;Rune Wilhelmsen;NOR;Stovnerkameratene;M45-49;3:44:45;+ 1:19:02
+926;41503;Lucian Baciu;NOR;;M40-44;3:44:47;+ 1:19:04
+927;40937;Kamil Kos;POL;Eika BIL;M24-34;3:44:48;+ 1:19:05
+928;40551;Jonas Holmbacka;SWE;;M40-44;3:44:48;+ 1:19:05
+929;41462;Kjartan Nielsen Friis;NOR;;M40-44;3:44:56;+ 1:19:13
+930;40451;Øyvind Noer Olsen;NOR;;M35-39;3:44:59;+ 1:19:15
+931;41197;Anders Egge Brandal;NOR;Hareid IL;M24-34;3:44:59;+ 1:19:16
+932;41004;Mikael Aamli Lao;NOR;;M24-34;3:45:00;+ 1:19:17
+933;40246;Nicolas Toraille;FRA;;M35-39;3:45:01;+ 1:19:18
+934;41298;Andrea Pellegrino;ITA;Team Camelot ASD;M40-44;3:45:08;+ 1:19:24
+935;41297;Akram Shalabi;LBA;Fartsholdere Oslo Maraton 2023;M35-39;3:45:08;+ 1:19:24
+936;40111;T K;NOR;;;3:45:10;+ 1:19:26
+937;40745;Elle Caroline Woxen;NOR;;K24-34;3:45:15;+ 1:19:31
+938;42924;Stian Gjøsund;NOR;BK Tri;M40-44;3:45:20;+ 1:19:36
+939;40142;Magne Maråk;NOR;Ranheim;M24-34;3:45:20;+ 1:19:37
+940;40766;Jeroen Engeler;BEL;;M24-34;3:45:26;+ 1:19:43
+941;42855;Bjarne Brynning;NOR;Horten Friidrettsklubb;M65-69;3:45:33;+ 1:19:50
+942;41411;Henrik Bakke Dukefoss;NOR;Lillehammer Tekkers;M24-34;3:45:34;+ 1:19:51
+943;40363;Ingar Høiseth;NOR;;M24-34;3:45:37;+ 1:19:53
+944;40131;Ben Till;GBR;;M24-34;3:45:38;+ 1:19:54
+945;40994;Jon Røsjø;NOR;JWBSRC;M55-59;3:45:39;+ 1:19:55
+946;41053;Lewis Martin Sinkala;GBR;;M24-34;3:45:41;+ 1:19:57
+947;42339;Morten Hegelstad;NOR;;M22-23;3:45:41;+ 1:19:58
+948;41279;Svein-Rune Johannessen;NOR;Ålesund FIK;M60-64;3:45:42;+ 1:19:59
+949;42645;Bente Haugen;NOR;Gjerdrum IL;K45-49;3:45:45;+ 1:20:02
+950;40396;Hannah Tarpey;GBR;;K24-34;3:45:46;+ 1:20:03
+951;40645;James Stephenson;GBR;;M45-49;3:45:47;+ 1:20:04
+952;42802;Eline Studsrød Pettersen;NOR;PwC BIL;K24-34;3:45:48;+ 1:20:04
+953;42806;;NOR;;;3:45:49;+ 1:20:06
+954;40463;Joachim Husevåg;NOR;;M24-34;3:45:53;+ 1:20:09
+955;73042;Tim Wilkowski;GER;;M24-34;3:45:53;+ 1:20:10
+956;40944;Esben Kuhnt;NOR;;M35-39;3:45:56;+ 1:20:12
+957;73095;Mats Stegemann;SWE;Exsitec IF;M35-39;3:45:56;+ 1:20:13
+958;40245;Ørjan Carlsen;NOR;;M24-34;3:45:58;+ 1:20:14
+959;40659;Ole-Jakob Rosenvold;NOR;;M50-54;3:46:01;+ 1:20:18
+960;42713;Matthijs Gensen;NED;Outmate & Secuur interieurs;M24-34;3:46:04;+ 1:20:21
+961;40574;Siri White;NOR;;K35-39;3:46:09;+ 1:20:25
+962;41525;Andre Blaauw;NOR;Team Schiefel;M50-54;3:46:11;+ 1:20:27
+963;40790;Per Magnus Dahl;NOR;;M24-34;3:46:12;+ 1:20:28
+964;40652;Kuo Chun Tsai;TPE;;M55-59;3:46:13;+ 1:20:30
+965;40533;Erik Røyert;NOR;TPS;M24-34;3:46:18;+ 1:20:35
+966;40943;Kristine Green;NOR;;K24-34;3:46:21;+ 1:20:38
+967;40430;Joakim Bjørnestad;NOR;;M24-34;3:46:22;+ 1:20:38
+968;40873;Thomas Bakke;NOR;DPI;M45-49;3:46:23;+ 1:20:40
+969;42648;R A;NOR;;;3:46:24;+ 1:20:40
+970;40979;Per-Johan Thörn Wistrand;SWE;;M40-44;3:46:24;+ 1:20:40
+971;41168;Randi Aalgaard;NOR;Nesodden IF;K40-44;3:46:24;+ 1:20:41
+972;41151;Hilde Gunnufsen;NOR;;K50-54;3:46:33;+ 1:20:50
+973;41700;Gilles Degeest;BEL;JTP Blancs Gilets;M24-34;3:46:36;+ 1:20:53
+974;42841;Stian Aandal;NOR;Gui Sportsklubb;M18-21;3:46:36;+ 1:20:53
+975;42340;Markus Hegelstad;NOR;;M18-21;3:46:42;+ 1:20:58
+976;40421;Jørn-Åge Longva;NOR;;M50-54;3:46:46;+ 1:21:03
+977;40355;Johan Pram;NOR;;M24-34;3:46:48;+ 1:21:04
+978;41376;Tharald Halvorsen;NOR;;M24-34;3:46:53;+ 1:21:10
+979;41790;Iris Margareta Binder;NOR;;K35-39;3:46:53;+ 1:21:10
+980;1103;Bjørn Raknes;NOR;Sørild FIK;M50-54;3:46:54;+ 1:21:10
+981;40519;David Hagen;GER;;M50-54;3:46:54;+ 1:21:11
+982;73134;Robin Wallén;SWE;IF Linnéa;M40-44;3:46:57;+ 1:21:13
+983;42922;Ronald Hauwaerts;BEL;;M24-34;3:46:58;+ 1:21:14
+984;40634;Solveig Bækken Hefte;NOR;Statnett BIL;K24-34;3:47:00;+ 1:21:17
+985;42003;Maciej Grzybowski;POL;Ineriørverkstedet AS;M35-39;3:47:03;+ 1:21:20
+986;40343;Werner Dontzow;FRA;;M45-49;3:47:05;+ 1:21:22
+987;40939;Tobias Lund-Melcher;NOR;Skatt Helsfyr BIL;M45-49;3:47:16;+ 1:21:32
+988;41351;Maiken Mediaa;NOR;;K22-23;3:47:16;+ 1:21:32
+989;73066;Roger Hæhre;NOR;Romerike Ultraløperklubb;M45-49;3:47:18;+ 1:21:35
+990;73022;Terje Uriansrud;NOR;Webstep;M50-54;3:47:21;+ 1:21:37
+991;40834;Nicola Cmiljic;GBR;;K24-34;3:47:23;+ 1:21:40
+992;40629;Tomasz Chlodecki;POL;Kuznia Triathlonu;M35-39;3:47:26;+ 1:21:42
+993;40255;Hans Henrik Verpe;NOR;;M35-39;3:47:27;+ 1:21:44
+994;41010;Øyvind Sjaastad;NOR;;M24-34;3:47:28;+ 1:21:44
+995;40208;Eivind Gagnat;NOR;;M35-39;3:47:37;+ 1:21:54
+996;42790;Hans Kristian Aasland;NOR;Gjesdal IL;M50-54;3:47:43;+ 1:22:00
+997;41884;Amanda Schjetlein;NOR;;K24-34;3:47:47;+ 1:22:04
+998;40045;Marius Halvorsen;NOR;;M22-23;3:47:50;+ 1:22:07
+999;40910;Ragnild Tiller;NOR;;K24-34;3:47:54;+ 1:22:10
+1000;40698;Julia Siumkina;NOR;;K24-34;3:47:55;+ 1:22:11
+1001;40318;Fredrik Mellbye;NOR;Mambas Runners Club;M24-34;3:47:56;+ 1:22:13
+1002;42552;Stine Wiklander Langeland;NOR;;K24-34;3:47:58;+ 1:22:15
+1003;42966;Isak Aarøen;NOR;Førde;M24-34;3:47:59;+ 1:22:15
+1004;40842;Kristian Elias Koppang;NOR;;M18-21;3:48:00;+ 1:22:17
+1005;42456;Martin Bang-Jareg;NOR;;M22-23;3:48:02;+ 1:22:19
+1006;41255;Rob Marcelissen;NED;Brams Bootcamp;M55-59;3:48:03;+ 1:22:20
+1007;41266;Henrik Bettum;NOR;Krogsveen;M24-34;3:48:04;+ 1:22:20
+1008;40418;Christopher Oliver;GBR;;M35-39;3:48:04;+ 1:22:21
+1009;40134;Daniel Oliver;GBR;;M35-39;3:48:04;+ 1:22:21
+1010;40580;Kornelius Mølmann Fuglem;NOR;;M22-23;3:48:15;+ 1:22:32
+1011;41701;Tom Hussey;GBR;;M24-34;3:48:25;+ 1:22:42
+1012;73009;Anette Morvik Robberstad;NOR;;K24-34;3:48:26;+ 1:22:43
+1013;40576;Anders Paulseth;NOR;;M22-23;3:48:26;+ 1:22:43
+1014;40989;Fanny Storvall;FIN;IF Åsarna;K24-34;3:48:29;+ 1:22:46
+1015;42755;Simen Rasmussen;NOR;The Lonesome Travellers;M22-23;3:48:31;+ 1:22:48
+1016;40258;Thor Thorsen;NOR;Treningscamp;M55-59;3:48:33;+ 1:22:50
+1017;41625;Sanna Krauss;NOR;;K22-23;3:48:35;+ 1:22:51
+1018;40872;Joonas Andersson;NOR;;M24-34;3:48:35;+ 1:22:52
+1019;40730;Jonathan Lindblad;NOR;;M18-21;3:48:36;+ 1:22:52
+1020;40817;Sofie Lilleøren Veum;NOR;;K24-34;3:48:37;+ 1:22:54
+1021;42119;Isak Haugen;NOR;;M24-34;3:48:37;+ 1:22:54
+1022;42462;Jørund Grave;NOR;;M24-34;3:48:38;+ 1:22:54
+1023;41374;Kristian Enger;NOR;Engers;M50-54;3:48:38;+ 1:22:55
+1024;40547;Regine Øyehaug;NOR;;K24-34;3:48:42;+ 1:22:59
+1025;42714;Michiel Compagner;NED;Outmate & Secuur interieurs;M24-34;3:48:43;+ 1:22:59
+1026;40802;Jakub Koscik;POL;Adidas Runners Warsaw;M35-39;3:48:45;+ 1:23:02
+1027;40153;Alvydas Kontrimas;GBR;;M65-69;3:48:47;+ 1:23:04
+1028;42961;Julia Corradi;BRA;;K35-39;3:48:48;+ 1:23:04
+1029;41012;Bjørn Leknes Stuan;NOR;;M24-34;3:48:52;+ 1:23:09
+1030;40682;Tommy Syversen;NOR;;M40-44;3:48:54;+ 1:23:10
+1031;40868;Staffan Fagerudd;FIN;Sundom IF;M24-34;3:48:54;+ 1:23:10
+1032;40074;Carl-Martin Nymark;NOR;;M35-39;3:48:55;+ 1:23:11
+1033;41073;Margrethe Frank;NOR;;K24-34;3:48:57;+ 1:23:14
+1034;40563;Sondre Holt Tangen;NOR;Sandefjord;M24-34;3:48:58;+ 1:23:15
+1035;40050;Jone Jonsson;NOR;;M45-49;3:48:59;+ 1:23:16
+1036;73054;François Stander;BEL;;M50-54;3:48:59;+ 1:23:16
+1037;41228;Gerwin Tiemens;NED;Outmate & Secuur interieurs;M24-34;3:49:02;+ 1:23:18
+1038;41541;Wencke Enge;NOR;;K50-54;3:49:02;+ 1:23:19
+1039;42540;Herman Krøglid;NOR;;M24-34;3:49:03;+ 1:23:19
+1040;40320;Bernard Wollenburger;FRA;;M50-54;3:49:04;+ 1:23:21
+1041;42216;Jack Ashfield;GBR;;M24-34;3:49:05;+ 1:23:22
+1042;40762;Krzysztof Gunciarz;NOR;;M24-34;3:49:12;+ 1:23:28
+1043;40493;Agata Reistad;NOR;Coop;K50-54;3:49:12;+ 1:23:29
+1044;40209;Jørgen Bjerkeengen;NOR;;M24-34;3:49:13;+ 1:23:30
+1045;41384;Erik Norrud Pollen;NOR;;M24-34;3:49:14;+ 1:23:31
+1046;73131;Kristian Hjorth;NOR;Nordbyen Snakes;M24-34;3:49:14;+ 1:23:31
+1047;42511;Trym Dale Wangberg;NOR;;M18-21;3:49:20;+ 1:23:36
+1048;40782;Shawn Courcelles;NOR;;M24-34;3:49:21;+ 1:23:38
+1049;40364;Xavier-Yves Zanota;FRA;;M45-49;3:49:26;+ 1:23:43
+1050;40865;Vincent Olsen;NOR;;M24-34;3:49:29;+ 1:23:46
+1051;40144;Samson Langvik-Hansen;NOR;;M24-34;3:49:29;+ 1:23:46
+1052;41377;Carl Nield;GBR;;M24-34;3:49:32;+ 1:23:49
+1053;42793;Martin Stensholt;NOR;Santander Consumer Bank;M24-34;3:49:32;+ 1:23:49
+1054;41246;Thomas Børnich;NOR;Pilares Eiendom;M40-44;3:49:33;+ 1:23:49
+1055;42344;Camila Rodal;ARG;;K24-34;3:49:33;+ 1:23:50
+1056;73124;Rebecca Gundersen;NOR;;K22-23;3:49:34;+ 1:23:51
+1057;42933;Mathias Drager;NOR;Ingen;M18-21;3:49:36;+ 1:23:53
+1058;40431;Francesco Pizzi;ITA;;M24-34;3:49:37;+ 1:23:53
+1059;40586;Pernille Hordnes Sørås;NOR;PwC;K24-34;3:49:37;+ 1:23:54
+1060;41659;Jakob Muan Haga;NOR;Sweco BIL;M24-34;3:49:39;+ 1:23:56
+1061;42164;Trym Bjor Aasheim;NOR;;M24-34;3:49:41;+ 1:23:58
+1062;41588;Katharina Rueckert;GER;;K24-34;3:49:44;+ 1:24:00
+1063;41866;Anni Molari;FIN;;K40-44;3:49:44;+ 1:24:01
+1064;41666;Aleksander Sørebø;NOR;;M18-21;3:49:44;+ 1:24:01
+1065;40028;Gisle Wathne;NOR;Bekkadalen I.L.;M55-59;3:49:45;+ 1:24:02
+1066;42415;Sabine Schlögl;AUT;;K45-49;3:49:46;+ 1:24:02
+1067;42646;Rudi Nesbø;NOR;;M24-34;3:49:48;+ 1:24:04
+1068;40936;Henrik Nygaard;NOR;Team Nygaard;M18-21;3:49:49;+ 1:24:05
+1069;40073;Helge Refsum;NOR;;M40-44;3:49:49;+ 1:24:06
+1070;40710;Nicolas Pasquier;FRA;;M24-34;3:49:53;+ 1:24:09
+1071;42796;Evelina Skrifvars;FIN;Norges Bank;K24-34;3:49:55;+ 1:24:11
+1072;41122;Mari Kristiansen;NOR;Kute IL;K24-34;3:49:59;+ 1:24:16
+1073;40075;Helge Angell-Hansen;NOR;;M50-54;3:50:00;+ 1:24:17
+1074;40646;Andre Soares;BRA;;M50-54;3:50:01;+ 1:24:18
+1075;42934;Patryk Latka;POL;;M24-34;3:50:03;+ 1:24:20
+1076;42484;Rúni Úr Árantsstovu;FRO;;M55-59;3:50:03;+ 1:24:20
+1077;40371;Sondre Langmo;NOR;;M22-23;3:50:04;+ 1:24:20
+1078;41415;Julian Falch Milde;NOR;;M24-34;3:50:06;+ 1:24:22
+1079;42611;Gerard Folkestad Taylor;NOR;;M24-34;3:50:06;+ 1:24:23
+1080;42011;Peder Hornseth Nygaard;NOR;;M24-34;3:50:06;+ 1:24:23
+1081;40190;Sivert Høgevold;NOR;;M22-23;3:50:07;+ 1:24:24
+1082;40787;Robert Sørum-Stavdal;NOR;Team stavdal;M24-34;3:50:09;+ 1:24:25
+1083;42515;Milli Vassgård;NOR;;K22-23;3:50:10;+ 1:24:27
+1084;42768;Iwan Groenen;NED;Brams Bootcamp;M55-59;3:50:11;+ 1:24:28
+1085;40915;Przemyslaw Janecki;POL;Projekt Maraton Europa plus;M40-44;3:50:12;+ 1:24:28
+1086;41143;Daniel Strandskogen;NOR;;M24-34;3:50:12;+ 1:24:29
+1087;42532;Helge Wilhelm Dahl;NOR;;M24-34;3:50:15;+ 1:24:31
+1088;40660;Johnny Mclaughlin;GBR;;M24-34;3:50:15;+ 1:24:32
+1089;42569;Stian Utteberg;NOR;;M24-34;3:50:17;+ 1:24:34
+1090;42677;Hilde Sandvik Lund;NOR;Fossum IF;K40-44;3:50:21;+ 1:24:37
+1091;42636;Ivan Velmeskin;NOR;;M35-39;3:50:25;+ 1:24:42
+1092;42374;Zoe Bell;GER;;K24-34;3:50:31;+ 1:24:48
+1093;42480;Trygve Leivestad Scharff;NOR;;M18-21;3:50:33;+ 1:24:50
+1094;40709;Marius Kirkenes;NOR;OBIL;M40-44;3:50:34;+ 1:24:51
+1095;42363;Raymond Forbord;NOR;Østbygda IL;M35-39;3:50:40;+ 1:24:57
+1096;41000;Anders Sætre;NOR;Vestfold Fysikalsk Medisin;M40-44;3:50:41;+ 1:24:58
+1097;40792;Jens Martin Bakke;NOR;;M22-23;3:50:43;+ 1:25:00
+1098;40731;Dasen Pather;GBR;Best Athletics;M40-44;3:50:47;+ 1:25:03
+1099;42878;Eirik Rodal;NOR;;M18-21;3:50:52;+ 1:25:09
+1100;40734;Oddmund Olav Aasen;NOR;Vidar FK;M18-21;3:50:52;+ 1:25:09
+1101;40620;Theodoros Gkoumas;GRE;Pallinioi dromeis;M65-69;3:50:52;+ 1:25:09
+1102;1071;Kristin Isachsen;NOR;Asker Sk Friidrett;K65-69;3:50:53;+ 1:25:09
+1103;41455;Tobias Myrvoll;NOR;Team Right To Play/KPMG Puls;M24-34;3:50:53;+ 1:25:10
+1104;42433;Hanna Skjæret Eliseussen;NOR;;K24-34;3:50:54;+ 1:25:11
+1105;40395;Sindre Lindberg;NOR;Nesseblomst/Bjørndal Løvene;M24-34;3:51:00;+ 1:25:16
+1106;40517;Marcel Oscar Sort Gustems;ESP;;M24-34;3:51:02;+ 1:25:19
+1107;73047;Stian Øidvin;NOR;Romerike Ultraløperklubb;M40-44;3:51:03;+ 1:25:20
+1108;41309;Bernt Jørgen Utakleiv;NOR;;M50-54;3:51:08;+ 1:25:25
+1109;40435;Flemming Fjordbak;DEN;;M50-54;3:51:08;+ 1:25:25
+1110;40270;Erik Ettner Sanne;NOR;;M24-34;3:51:10;+ 1:25:26
+1111;40452;Philibert Mostenne;BEL;VALENCIENNES TRIATHLON;M24-34;3:51:10;+ 1:25:27
+1112;40276;Vetle Stenmark;NOR;;M24-34;3:51:13;+ 1:25:30
+1113;73105;Stian Hasdahl;NOR;Team Right To Play;M35-39;3:51:16;+ 1:25:32
+1114;41865;Nikita Zhevnitskiy;NOR;COACH_POTATOES;M24-34;3:51:16;+ 1:25:33
+1115;40362;Lasse Brunvoll;NOR;;M24-34;3:51:22;+ 1:25:38
+1116;42861;Henrik Gommerud;NOR;;M24-34;3:51:22;+ 1:25:39
+1117;40495;Sondre Motrøen Halvorsen;NOR;;M35-39;3:51:27;+ 1:25:43
+1118;42207;Christian Håsum;DEN;;M24-34;3:51:28;+ 1:25:45
+1119;41667;Elin Meling;NOR;;K18-21;3:51:34;+ 1:25:50
+1120;42708;Adrian Langfeldt;NOR;DNB;M24-34;3:51:34;+ 1:25:51
+1121;41430;Oskar Borvik;NOR;;M22-23;3:51:35;+ 1:25:52
+1122;41007;Petter Sandberg Adolfsen;NOR;;M24-34;3:51:36;+ 1:25:53
+1123;41103;Felipe Longé;NOR;;M40-44;3:51:36;+ 1:25:53
+1124;40637;Dagfinn Skrede;NOR;;M35-39;3:51:38;+ 1:25:55
+1125;73129;Pär Wåhlin;SWE;;M40-44;3:51:45;+ 1:26:02
+1126;41070;Anders Christiansen;NOR;;M24-34;3:51:49;+ 1:26:06
+1127;41324;Holger Jaeger;GER;;M50-54;3:51:55;+ 1:26:11
+1128;41655;Simen Leander Løbak;NOR;;M22-23;3:52:00;+ 1:26:17
+1129;40195;Synnøve Solheim Kristensen;NOR;;K18-21;3:52:02;+ 1:26:19
+1130;40600;Mariana Hristova;BUL;;K50-54;3:52:04;+ 1:26:21
+1131;40863;Arunas Dubinskas;LTU;;M45-49;3:52:10;+ 1:26:27
+1132;40553;Bartosz Tochowicz;POL;;M50-54;3:52:12;+ 1:26:29
+1133;40203;Glenn Steen-Haugen;NOR;Løperne Av Guttas Runde Bord;M35-39;3:52:13;+ 1:26:30
+1134;42930;Pål Delebekk;NOR;Blå og stolt;M50-54;3:52:15;+ 1:26:32
+1135;42444;Jonas Hatlebrekke;NOR;;M22-23;3:52:18;+ 1:26:34
+1136;41825;Jochen Moens;BEL;;M40-44;3:52:18;+ 1:26:35
+1137;40280;Jonas Lærum;NOR;;M24-34;3:52:19;+ 1:26:36
+1138;42010;Ask Bjørndal Øines;NOR;;M24-34;3:52:21;+ 1:26:37
+1139;42233;Thibault Lhuillier;FRA;;M24-34;3:52:24;+ 1:26:41
+1140;40781;Vegard Molaug;NOR;;M24-34;3:52:30;+ 1:26:47
+1141;41104;Caolan Cullen;IRL;;M24-34;3:52:32;+ 1:26:49
+1142;41804;Katrine Brustad Horn;NOR;;K24-34;3:52:34;+ 1:26:50
+1143;41030;Aleksander Natedal;NOR;JWBSRC;M45-49;3:52:35;+ 1:26:52
+1144;41224;Fredrik Storihle;NOR;DNB;M24-34;3:52:37;+ 1:26:54
+1145;42092;Pernille Breili;NOR;Team Astera;K24-34;3:52:40;+ 1:26:56
+1146;41795;Marcel Wagtelenberg;NED;de Gemzen;M55-59;3:52:41;+ 1:26:58
+1147;41192;Paul Johan Undheim;NOR;Molde og Omegn IF;M55-59;3:52:42;+ 1:26:59
+1148;40201;Marcus Hagen;NOR;;M24-34;3:52:43;+ 1:26:59
+1149;40670;Martin Tømterud;NOR;;M24-34;3:52:43;+ 1:27:00
+1150;42942;Eyob Lemee;NOR;;M22-23;3:52:44;+ 1:27:00
+1151;42302;Thomas Antonsen;NOR;;M24-34;3:52:45;+ 1:27:01
+1152;40615;Helena Andrén;SWE;Apladalens Löparklubb;K40-44;3:52:45;+ 1:27:01
+1153;40287;Bjørn Aase Dimmen;NOR;ÅKP DigiCat;M55-59;3:52:45;+ 1:27:01
+1154;41591;Marc Weber;GER;;M50-54;3:52:46;+ 1:27:02
+1155;40699;Steinar Johansen;NOR;;M35-39;3:52:48;+ 1:27:05
+1156;40808;Matthew Downey;IRL;;M22-23;3:52:49;+ 1:27:05
+1157;40457;Lee Moy;IRL;;M22-23;3:52:50;+ 1:27:07
+1158;42439;Kamran Hasanjan;NOR;;M18-21;3:52:52;+ 1:27:09
+1159;40795;Anamelia Dami;BRA;Farnezi Sante;K60-64;3:52:58;+ 1:27:15
+1160;41874;Arne Dahl Rasmussen;DEN;;M55-59;3:52:59;+ 1:27:16
+1161;41134;Rafal Radlowski;POL;;M24-34;3:53:00;+ 1:27:17
+1162;40683;Henrik Jørgensen;NOR;;M24-34;3:53:02;+ 1:27:19
+1163;42499;Angelica Marklund;SWE;The average RC;K35-39;3:53:03;+ 1:27:20
+1164;41369;Erik Johansen;NOR;;M24-34;3:53:05;+ 1:27:22
+1165;40763;Oscar Gaup;NOR;;M24-34;3:53:06;+ 1:27:23
+1166;42692;Audun Eltvik;NOR;ITverket;M24-34;3:53:09;+ 1:27:25
+1167;40850;Risto Rasimus;FIN;Oula;M55-59;3:53:10;+ 1:27:26
+1168;42248;Hans Christian Harvei;NOR;EY BIL;M24-34;3:53:10;+ 1:27:27
+1169;40920;Harald Rygge;NOR;;M50-54;3:53:17;+ 1:27:33
+1170;40512;Clyde Mcpherson;GBR;;M40-44;3:53:18;+ 1:27:35
+1171;42856;Jørgen Rugelsjøen Wikdahl;NOR;;M24-34;3:53:21;+ 1:27:38
+1172;42567;Bjørn Andre Skarstein Sundet;NOR;;M24-34;3:53:23;+ 1:27:39
+1173;42644;Lasse Storgaard;NOR;Romerike Ultraløperklubb;M35-39;3:53:26;+ 1:27:43
+1174;40818;Johannes Eskedahl;NOR;;M18-21;3:53:28;+ 1:27:45
+1175;41303;John Reinertsen;NOR;RiksTV;M40-44;3:53:29;+ 1:27:46
+1176;73014;Vincent Macarez;FRA;;M40-44;3:53:30;+ 1:27:46
+1177;40885;Roi Nicklas;ISR;;M24-34;3:53:30;+ 1:27:46
+1178;40884;Roi Miller;ISR;;M24-34;3:53:30;+ 1:27:46
+1179;41381;Sjur Tømte;NOR;Fredrikstad IF;M60-64;3:53:32;+ 1:27:49
+1180;40689;Frida Hagelbrand;SWE;Runacademy IF;K24-34;3:53:36;+ 1:27:52
+1181;40964;Alexander Escalona;NOR;;M18-21;3:53:36;+ 1:27:52
+1182;40904;Houman Avin;NOR;;M35-39;3:53:37;+ 1:27:53
+1183;40914;Sindre Bjørnstad;NOR;;M24-34;3:53:39;+ 1:27:55
+1184;42880;Signe Rismyhr Engelund;NOR;;K24-34;3:53:41;+ 1:27:57
+1185;73083;Jan-Petter Engelund;NOR;Kondis Elverum;M60-64;3:53:41;+ 1:27:57
+1186;41074;Ingrid Thøgersen;NOR;;K24-34;3:53:43;+ 1:28:00
+1187;40342;Elena Fabrizia Nesa Burgener;SUI;;K60-64;3:53:46;+ 1:28:02
+1188;40337;Rastislav Starinsky;SVK;;M45-49;3:53:52;+ 1:28:08
+1189;42986;Kristin Albrigtsen;NOR;;K24-34;3:53:58;+ 1:28:14
+1190;41567;Espen Stenersen;NOR;;M35-39;3:54:04;+ 1:28:20
+1191;1041;Ole Peter Bergaust;NOR;Veldre Friidrett;M75-79;3:54:04;+ 1:28:21
+1192;40631;Sander Lykken;NOR;;M22-23;3:54:06;+ 1:28:23
+1193;41467;Håvard Lønaas;NOR;;M45-49;3:54:09;+ 1:28:25
+1194;40704;Marco Barcelos;BRA;;M50-54;3:54:10;+ 1:28:27
+1195;42783;Dag Henrik Bråtane;NOR;Indre Styrketrening med Sandra;M55-59;3:54:11;+ 1:28:28
+1196;42704;Halvor Marstrander;NOR;Aktiv Mot Kreft;M40-44;3:54:13;+ 1:28:30
+1197;42690;Christer Gimse;NOR;Adamstuen Løpeklubb;M40-44;3:54:14;+ 1:28:31
+1198;41518;Alexander Jensenius;NOR;;M45-49;3:54:15;+ 1:28:32
+1199;41420;August Waaraas;NOR;;M22-23;3:54:16;+ 1:28:32
+1200;42623;Christian Delphin;NOR;;M22-23;3:54:18;+ 1:28:35
+1201;73015;Arild Thomassen;NOR;Lyskpomponenter;M50-54;3:54:28;+ 1:28:45
+1202;41750;Philip Leer-Salvesen;NOR;;M24-34;3:54:31;+ 1:28:48
+1203;40840;"Maciej Ner&#322;o";POL;;M35-39;3:54:34;+ 1:28:50
+1204;41092;Hubert Wittmann;GER;TV Geiselhöring;M50-54;3:54:37;+ 1:28:53
+1205;40539;Grzegorz Stefaniak;POL;Triathlon Rawa;M45-49;3:54:38;+ 1:28:55
+1206;40044;Trond Jørgensen;NOR;Hytteplan Sport;M55-59;3:54:39;+ 1:28:56
+1207;40526;Per Martin Simensen;NOR;;M24-34;3:54:39;+ 1:28:56
+1208;42166;Petter Knutsen;NOR;;M45-49;3:54:41;+ 1:28:58
+1209;42820;Richard Meyer;NOR;JWBSRC;M50-54;3:54:47;+ 1:29:03
+1210;41773;Adrian Egeland;NOR;;M24-34;3:54:52;+ 1:29:08
+1211;41806;Karine Nilsen;NOR;;K24-34;3:54:52;+ 1:29:09
+1212;41902;Maren Larsen;NOR;;K24-34;3:54:55;+ 1:29:12
+1213;42434;Cecilie Laursen;NOR;;K24-34;3:54:56;+ 1:29:13
+1214;41442;Johannes Nilssen;NOR;;M24-34;3:55:01;+ 1:29:18
+1215;40855;Francisco Javier Leal Carranco;MEX;;M50-54;3:55:02;+ 1:29:19
+1216;41160;Javier Aguirre;COL;;M45-49;3:55:05;+ 1:29:22
+1217;41080;Kristoffer Lavik;NOR;Moss CK;M35-39;3:55:05;+ 1:29:22
+1218;41166;Magnus Haakestad;NOR;Nittedal IL;M45-49;3:55:08;+ 1:29:24
+1219;42684;Åge Johnny Kalstad;NOR;Førde IL - Friidrett;M50-54;3:55:10;+ 1:29:27
+1220;42908;Lars Erik Koren;NOR;Manglerud Mil og Motvind;M24-34;3:55:12;+ 1:29:28
+1221;41818;Henrik Lunde;NOR;;M40-44;3:55:12;+ 1:29:28
+1222;41637;Kiran Nandedkar;NOR;Runners high;M45-49;3:55:13;+ 1:29:29
+1223;40133;Rafael Gomez;CHI;;M35-39;3:55:13;+ 1:29:30
+1224;41858;Skender Gashi;KOS;Superior Group;M65-69;3:55:16;+ 1:29:32
+1225;73021;Erling Holm-Olsen;NOR;Ørnes IL;M50-54;3:55:16;+ 1:29:32
+1226;42631;Arnstein Værdal;NOR;Follo Kjøtt & Diesel;M40-44;3:55:16;+ 1:29:33
+1227;40541;Peder Dingstad;NOR;;M24-34;3:55:26;+ 1:29:42
+1228;42859;Wår-Iren Monsen;NOR;Team Molli;K50-54;3:55:30;+ 1:29:47
+1229;42731;Anders Lermoen;NOR;;M40-44;3:55:35;+ 1:29:52
+1230;41044;Alex Collins;GBR;North Somerset Athletics Club;M18-21;3:55:36;+ 1:29:52
+1231;42482;Baste Amble;NOR;;M55-59;3:55:40;+ 1:29:57
+1232;42613;Richard Hveding;NOR;;M40-44;3:55:41;+ 1:29:58
+1233;40442;Jonas Van Gassen;BEL;;M24-34;3:55:50;+ 1:30:06
+1234;40349;Henning Borgen;NOR;;M50-54;3:55:55;+ 1:30:12
+1235;41563;Konstantin Müller;GER;;M24-34;3:55:55;+ 1:30:12
+1236;40230;Anders Stålesen Svendsen;NOR;;M35-39;3:55:58;+ 1:30:15
+1237;40516;Jörg Graupner;GER;;M50-54;3:55:59;+ 1:30:15
+1238;42808;Christian Neumayer;NOR;Team Right To Play/KPMG Puls;M24-34;3:56:01;+ 1:30:18
+1239;41162;Rikke Haughem;NOR;Runar IL;K24-34;3:56:02;+ 1:30:19
+1240;42437;Predrag Anicic;SRB;;M60-64;3:56:04;+ 1:30:20
+1241;42669;Odd Martin Nerheim;NOR;Ingen;M22-23;3:56:04;+ 1:30:20
+1242;40480;Robert Kaspersen;NOR;;M40-44;3:56:05;+ 1:30:22
+1243;42921;Asbjørn Aas;NOR;Flesberg IL;M40-44;3:56:06;+ 1:30:22
+1244;40752;Natalie Jaman-Hogan;NOR;;K24-34;3:56:06;+ 1:30:23
+1245;41203;Bjørn Kåre Gjerde;NOR;BUL IL;M65-69;3:56:09;+ 1:30:26
+1246;42606;Kirsty Roy;NOR;;K35-39;3:56:12;+ 1:30:29
+1247;41801;Rune Skogvoll;NOR;;M24-34;3:56:14;+ 1:30:31
+1248;40013;Willy Høydal;NOR;;M50-54;3:56:15;+ 1:30:31
+1249;42826;Sebastian Mattisgard Hennig;NOR;Undheim IL;M24-34;3:56:16;+ 1:30:33
+1250;40065;Steinar Kristoffersen;NOR;;M55-59;3:56:17;+ 1:30:34
+1251;42633;Astrid Storrusten;NOR;;K24-34;3:56:26;+ 1:30:43
+1252;40248;Jan Inge Yttervik;NOR;;M50-54;3:56:27;+ 1:30:43
+1253;42496;Espen Westergren-Andresen;NOR;;M24-34;3:56:29;+ 1:30:46
+1254;42073;Alexander Slaatsveen;NOR;;M24-34;3:56:31;+ 1:30:48
+1255;42486;Ajah Cham;NOR;;K24-34;3:56:32;+ 1:30:49
+1256;42734;Siv Grethe Berge Hoff;NOR;Bergsøy IL;K50-54;3:56:36;+ 1:30:52
+1257;42791;Egil Ravndal;NOR;Gjesdal IL;M40-44;3:56:38;+ 1:30:54
+1258;40329;Jonas Nordhagen;NOR;;M24-34;3:56:39;+ 1:30:55
+1259;40927;Dan Sigvardsson;NOR;;M45-49;3:56:44;+ 1:31:01
+1260;41290;Jan Magnus Eriksen;NOR;Orkla;M45-49;3:56:44;+ 1:31:01
+1261;41798;Michael Knowles;IRL;;M24-34;3:56:45;+ 1:31:02
+1262;42693;Erik Andreas Tangen Skoglund;NOR;Rygge IL;M24-34;3:56:47;+ 1:31:04
+1263;41034;Oscar Hammerstad;NOR;Nordea;M24-34;3:56:49;+ 1:31:05
+1264;40756;Øivind Kristensen;NOR;;M55-59;3:56:50;+ 1:31:07
+1265;40160;Balder Støen;NOR;;M18-21;3:56:50;+ 1:31:07
+1266;41315;Kristin Vardebakken;NOR;;K35-39;3:56:51;+ 1:31:07
+1267;41362;Håkon Lundby;NOR;;M45-49;3:56:51;+ 1:31:07
+1268;42467;Mathias Kolstad;NOR;;M24-34;3:56:52;+ 1:31:09
+1269;40549;Caitlin Carr;GBR;;K24-34;3:56:54;+ 1:31:11
+1270;41627;Knut Birger Lunde;NOR;;M45-49;3:56:55;+ 1:31:11
+1271;41155;Sebastian Lunde;NOR;BRC;M24-34;3:56:55;+ 1:31:12
+1272;40853;Michela De Palo;ITA;;K50-54;3:56:58;+ 1:31:15
+1273;41663;Jellina Thies;GER;;K24-34;3:57:02;+ 1:31:19
+1274;40789;Axel Weisheit;GER;Team Awesome / Team Passion of Sports;M40-44;3:57:07;+ 1:31:24
+1275;40294;Matthew Smith;NOR;;M45-49;3:57:12;+ 1:31:29
+1276;42588;James Bell;GBR;Team BMW;M35-39;3:57:13;+ 1:31:30
+1277;41731;Jacob Håsum Nielsen;DEN;;M24-34;3:57:14;+ 1:31:31
+1278;41299;Audun Løvvik;NOR;Lillesand IL;M35-39;3:57:15;+ 1:31:31
+1279;42991;Henry Michael Ekerholt;NOR;;M18-21;3:57:16;+ 1:31:32
+1280;40780;Javier Leon Ayarza;PER;;M22-23;3:57:16;+ 1:31:32
+1281;42152;Phillip Johannessen;NOR;;M35-39;3:57:17;+ 1:31:34
+1282;41809;Sigurd Simensen;NOR;;M22-23;3:57:20;+ 1:31:36
+1283;41838;Solvei Kvinge;NOR;;K24-34;3:57:21;+ 1:31:37
+1284;40859;Sascha Taylor Larsen;NOR;;M24-34;3:57:21;+ 1:31:38
+1285;42510;Kristian Mydske;NOR;;M18-21;3:57:22;+ 1:31:39
+1286;40380;Joanna Nowak;NOR;Telia BIL;K40-44;3:57:24;+ 1:31:40
+1287;73100;Espen Haraldsen;NOR;Romerike Ultraløperklubb;M55-59;3:57:24;+ 1:31:40
+1288;73101;Cathrine Haraldsen;NOR;Romerike Ultraløperklubb;K50-54;3:57:24;+ 1:31:41
+1289;73062;Joar Bølstad;NOR;;M40-44;3:57:24;+ 1:31:41
+1290;40257;Kim Gorostuen;NOR;;M35-39;3:57:25;+ 1:31:41
+1291;41240;Rune Eng;NOR;Alvdal IL;M40-44;3:57:25;+ 1:31:42
+1292;42492;Dag Torgerstuen;NOR;;M35-39;3:57:26;+ 1:31:43
+1293;41036;Hermann Berntsen;NOR;Rambøll;M24-34;3:57:27;+ 1:31:43
+1294;42094;Aurélie Kroes;BEL;;K24-34;3:57:33;+ 1:31:49
+1295;40777;Matthew Routliffe;CAN;;M24-34;3:57:35;+ 1:31:52
+1296;42877;Vegard Larsen;NOR;;M22-23;3:57:38;+ 1:31:54
+1297;40502;Andres Calderon;MEX;Dromo Run Crew;M35-39;3:57:38;+ 1:31:55
+1298;41830;Michael Robertson;IRL;;M35-39;3:57:39;+ 1:31:55
+1299;41891;Marte Dyrnes;NOR;Gullungene;K24-34;3:57:40;+ 1:31:57
+1300;41624;Chen Lu;NOR;SAS Norge;M45-49;3:57:40;+ 1:31:57
+1301;73130;Siw Benonisen;NOR;Romerike Ultraløperklubb;K50-54;3:57:42;+ 1:31:59
+1302;42570;Magnus Natvig;NOR;Smellen LK;M24-34;3:57:45;+ 1:32:01
+1303;41631;Sigurd Fuglseth;NOR;;M24-34;3:57:48;+ 1:32:04
+1304;40351;Marc-Antoine Herbet;FRA;;M24-34;3:57:50;+ 1:32:07
+1305;40950;Kristin Engevik Kristoffersen;NOR;;K24-34;3:57:52;+ 1:32:09
+1306;40679;Anne Gro Enger;NOR;;K50-54;3:57:54;+ 1:32:11
+1307;41395;Jens Petter Arnstad;NOR;;M35-39;3:57:54;+ 1:32:11
+1308;42709;Roy Arne Stavik;NOR;Norborg IL;M50-54;3:57:57;+ 1:32:13
+1309;1057;Geir Dybdahl;NOR;Kopervik IL;M55-59;3:58:00;+ 1:32:17
+1310;41409;Jørgen Stenhammer;NOR;;M24-34;3:58:02;+ 1:32:18
+1311;41746;Mari Vesela;NOR;;K24-34;3:58:06;+ 1:32:23
+1312;40609;Robin Johannesson;SWE;;M24-34;3:58:08;+ 1:32:25
+1313;40206;Mateusz Ksiezopolski;NOR;Love Dance Help;M24-34;3:58:09;+ 1:32:25
+1314;40445;Tomas Karlsen;NOR;;M24-34;3:58:09;+ 1:32:26
+1315;42918;Stian Hole;NOR;-;M50-54;3:58:09;+ 1:32:26
+1316;42535;Magnus Bergkvam;NOR;;M18-21;3:58:09;+ 1:32:26
+1317;40014;Per Christian Moen;NOR;Clouscapes AS;M40-44;3:58:10;+ 1:32:26
+1318;41119;Hågen Næss;NOR;;M18-21;3:58:12;+ 1:32:29
+1319;42498;Mario Fernandes;POR;;M40-44;3:58:13;+ 1:32:30
+1320;42497;Svein Risa;NOR;Team Trofé;M35-39;3:58:15;+ 1:32:32
+1321;42315;Marcus Bergsman;DEN;;M24-34;3:58:16;+ 1:32:32
+1322;41729;Ismene Haase;GER;Schwesterlein;K45-49;3:58:17;+ 1:32:33
+1323;42638;Piotr Nadolny;POL;L;M45-49;3:58:17;+ 1:32:34
+1324;41124;Ingrid Hegseth;NOR;Hessdalen IL;K24-34;3:58:18;+ 1:32:35
+1325;40587;Andreas Løchen Wiig;NOR;Nordkapp løpeklubb;M35-39;3:58:21;+ 1:32:37
+1326;40703;Javier Sanz Montero;ESP;Corredores de Parque Sur;M65-69;3:58:21;+ 1:32:38
+1327;42488;Aaron Herrera;NOR;;M40-44;3:58:23;+ 1:32:39
+1328;41693;Flor Peeters;BEL;;M24-34;3:58:24;+ 1:32:41
+1329;42929;Michal Kowalik;POL;;M35-39;3:58:25;+ 1:32:42
+1330;42113;Thomas Klitzing;NOR;;M24-34;3:58:26;+ 1:32:43
+1331;40647;Esther Achenbach;GER;;K50-54;3:58:27;+ 1:32:43
+1332;40297;Cameron Macphail;USA;;M35-39;3:58:27;+ 1:32:44
+1333;41679;F K;NOR;;;3:58:34;+ 1:32:51
+1334;40772;Carl-Magnus Forssell;NOR;;M24-34;3:58:34;+ 1:32:51
+1335;40848;Jacob Broch-Due;NOR;Vatos Locos;M35-39;3:58:37;+ 1:32:53
+1336;42425;Eva Dahl;NOR;Team LEM;K24-34;3:58:37;+ 1:32:54
+1337;42542;Synne Martine Hansen Myhre;NOR;;K24-34;3:58:39;+ 1:32:55
+1338;40799;Morten Moen-Larsen;NOR;Runagain.com;M40-44;3:58:39;+ 1:32:56
+1339;41997;Thomas Proux;FRA;;M24-34;3:58:40;+ 1:32:57
+1340;41277;Corsin Spiller;SUI;Ørje IL;M55-59;3:58:40;+ 1:32:57
+1341;42225;Ula Bielawny;POL;;K35-39;3:58:43;+ 1:33:00
+1342;41615;Noah Mikael Kristoffersen;NOR;TEAM Kristoffersen;M18-21;3:58:46;+ 1:33:02
+1343;41689;Tarje Otre;NOR;;M35-39;3:58:46;+ 1:33:03
+1344;40532;Louisa Groß;GER;;K24-34;3:58:48;+ 1:33:05
+1345;40082;Bjørn Forum;NOR;;M24-34;3:58:50;+ 1:33:07
+1346;41403;Jan Magne Bae;NOR;;M40-44;3:58:52;+ 1:33:09
+1347;41123;Mark Hurda;NEU;;M24-34;3:58:54;+ 1:33:10
+1348;40475;Ivar Simensen;NOR;Data Respons BIL;M50-54;3:58:54;+ 1:33:11
+1349;42048;Jørgen Frønes;NOR;;M35-39;3:58:54;+ 1:33:11
+1350;40497;Hans Olav Herje;NOR;Gritera;M24-34;3:58:55;+ 1:33:12
+1351;40560;Claudio Ramirez;CAN;;M50-54;3:58:56;+ 1:33:13
+1352;40843;Stig Ullersmo;NOR;;M55-59;3:58:56;+ 1:33:13
+1353;42976;Szymon Okon;POL;SSW Pragmatic Solutions;M35-39;3:58:57;+ 1:33:13
+1354;42827;Kjell Berg;NOR;Kongsberg AMS B.I.L;M55-59;3:58:58;+ 1:33:15
+1355;41313;Thor Michael Vardebakken;NOR;;M45-49;3:58:58;+ 1:33:15
+1356;41739;Ove Lefstad;NOR;;M40-44;3:58:58;+ 1:33:15
+1357;42578;Henrik Haaland;NOR;;M18-21;3:59:00;+ 1:33:16
+1358;1034;Liv Berit Jegteberg Lystad;NOR;Vidar Sportsklubben;K60-64;3:59:00;+ 1:33:17
+1359;41130;Rita Solheim Paulsen;NOR;Bodø Bauta Løpeklubb;K24-34;3:59:01;+ 1:33:17
+1360;41898;Didier Lapalus;NOR;;M60-64;3:59:01;+ 1:33:17
+1361;42343;Sebastian Davidsohn;ARG;;M45-49;3:59:01;+ 1:33:18
+1362;41528;Kenneth Knudsen;NOR;;M40-44;3:59:04;+ 1:33:21
+1363;40554;Richard Joye;SUI;XtremA;M45-49;3:59:08;+ 1:33:24
+1364;40158;Kristiina Lahtinen Tuulia;FIN;;K35-39;3:59:08;+ 1:33:25
+1365;41550;Didrik Bjerkan;NOR;;M35-39;3:59:09;+ 1:33:26
+1366;42622;David Jin Li;ESP;;M18-21;3:59:10;+ 1:33:27
+1367;1013;Tore Mortensen;NOR;Romerike Ultraløperklubb;M50-54;3:59:11;+ 1:33:27
+1368;41540;Erik Kolbjørnsen;NOR;Oslo Frontrunners;M55-59;3:59:11;+ 1:33:28
+1369;40313;Teodor Nørstebø-Vartdal;NOR;;M18-21;3:59:13;+ 1:33:30
+1370;42288;Pontus Ueland;NOR;;M24-34;3:59:15;+ 1:33:32
+1371;42866;Eivind Hagtvedt;NOR;;M35-39;3:59:17;+ 1:33:34
+1372;41672;Henrik Bjørnstad;NOR;;M24-34;3:59:18;+ 1:33:34
+1373;42655;Wenche Rasch;NOR;Rustad IL;K60-64;3:59:20;+ 1:33:36
+1374;41009;Arve Leivestad;NOR;;M50-54;3:59:20;+ 1:33:37
+1375;42614;Jens Laureta;NOR;;M40-44;3:59:21;+ 1:33:38
+1376;42700;Johannes Breivik;NOR;SEB BIL;M24-34;3:59:22;+ 1:33:39
+1377;42147;Haakon Sando Rølmann;NOR;GK CC;M24-34;3:59:22;+ 1:33:39
+1378;40261;Egil Halvorsen;NOR;;M45-49;3:59:24;+ 1:33:40
+1379;40984;Della Slowik;USA;Schapendonk;K40-44;3:59:24;+ 1:33:41
+1380;41903;Tor Olav Haukelidsæter;NOR;;M60-64;3:59:25;+ 1:33:42
+1381;41733;Jakob Karlsen;NOR;;M18-21;3:59:26;+ 1:33:42
+1382;40923;Vegard Edvardsen;NOR;;M24-34;3:59:27;+ 1:33:44
+1383;41635;Ingrid Hirth;NOR;;K24-34;3:59:28;+ 1:33:44
+1384;40905;Andriy Kupyna;UKR;Elopak BIL;M45-49;3:59:29;+ 1:33:45
+1385;42854;Svein Dybdahl;NOR;Stadsbygd IL;M24-34;3:59:30;+ 1:33:46
+1386;40598;Jekaterina Nagina;LTU;;K40-44;3:59:31;+ 1:33:48
+1387;41654;Martin Øvergård;NOR;;M24-34;3:59:32;+ 1:33:48
+1388;41709;Margun Haugenes;NOR;;K50-54;3:59:33;+ 1:33:49
+1389;42226;Stian Aspdahl Hagland;NOR;;M40-44;3:59:34;+ 1:33:51
+1390;40388;Matteus Andersson;NOR;;M24-34;3:59:34;+ 1:33:51
+1391;40385;Pontus Sköld;NOR;;M24-34;3:59:35;+ 1:33:52
+1392;73044;Martin Boger;NOR;Storebrand Sport;M24-34;3:59:35;+ 1:33:52
+1393;73082;Alexander Venås;NOR;;M24-34;3:59:35;+ 1:33:52
+1394;40097;Tommy Juntti;SWE;;M40-44;3:59:36;+ 1:33:52
+1395;73111;Andrine Odland;NOR;A-team;K24-34;3:59:36;+ 1:33:52
+1396;41931;Jonatan Palmgren;SWE;Gott Snack;M24-34;3:59:39;+ 1:33:56
+1397;41761;Ahmed Saidi;MAR;;M24-34;3:59:41;+ 1:33:58
+1398;42865;Lukas Skaar;NOR;;M18-21;3:59:42;+ 1:33:59
+1399;41413;Kjetil Engen;NOR;Veidekke Bil;M35-39;3:59:42;+ 1:33:59
+1400;41018;Magnus Løvsletten;NOR;;M22-23;3:59:42;+ 1:33:59
+1401;41466;Berhanu Mengistu;NOR;;M35-39;3:59:43;+ 1:34:00
+1402;40858;Richard Hvid;DEN;;M45-49;3:59:44;+ 1:34:00
+1403;40957;Thomas Jacobsen;DEN;;M45-49;3:59:44;+ 1:34:00
+1404;42413;Mari Steine Dahl;NOR;Team LEM;K35-39;3:59:44;+ 1:34:01
+1405;42809;Jacob Steinrem Rasmussen;NOR;Team Right To Play/KPMG Puls;M22-23;3:59:44;+ 1:34:01
+1406;42843;Jin Hui Zhang;NOR;Fartsholdere Oslo Maraton 2023;M24-34;3:59:47;+ 1:34:04
+1407;40823;Olena Byberg;NOR;;K18-21;3:59:49;+ 1:34:06
+1408;40665;Matias Rønningen;NOR;;M35-39;3:59:50;+ 1:34:07
+1409;40801;Ole Kristian Eide;NOR;;M24-34;3:59:50;+ 1:34:07
+1410;41247;Nicholas Padget;NOR;Isachsen Anlegg;M40-44;3:59:51;+ 1:34:07
+1411;42550;Ole Hallvard Dæhli;NOR;;M24-34;3:59:51;+ 1:34:07
+1412;40871;Magnus Andre Lidal;NOR;;M24-34;3:59:52;+ 1:34:08
+1413;40963;Are Sjøberg;NOR;;M35-39;3:59:53;+ 1:34:10
+1414;73115;Alvaro Hole;NOR;Ås IL;M35-39;3:59:56;+ 1:34:13
+1415;40678;Roar Foss;NOR;Team TVT;M55-59;3:59:58;+ 1:34:14
+1416;41454;Mathias Sørbø;NOR;Team Right To Play/KPMG Puls;M24-34;4:00:01;+ 1:34:17
+1417;42275;Monica Abrahamsen;NOR;;K24-34;4:00:01;+ 1:34:18
+1418;42940;Øyvind Handeland;NOR;;M70-74;4:00:03;+ 1:34:19
+1419;40932;Anders Winther;NOR;Team Winther;M40-44;4:00:05;+ 1:34:21
+1420;41032;John Ingram;NOR;;M40-44;4:00:05;+ 1:34:21
+1421;42744;Børje Lenningsvik;NOR;Korgen IL;M50-54;4:00:08;+ 1:34:25
+1422;42397;Mari Lomsdalen Næss;NOR;;K22-23;4:00:09;+ 1:34:25
+1423;42539;Helene Gade Gørbitz;NOR;;K24-34;4:00:20;+ 1:34:36
+1424;40088;Inge - Stian Johansen;NOR;Nesbygda IF;M55-59;4:00:20;+ 1:34:37
+1425;40198;Martin Quinn;GBR;;M35-39;4:00:22;+ 1:34:39
+1426;41587;Øyvind Renslo;NOR;KS;M50-54;4:00:27;+ 1:34:44
+1427;42732;Andreas Engen;NOR;Gimle IF;M24-34;4:00:27;+ 1:34:44
+1428;42475;"Rafa&#322; Marczak";POL;Love Dance Help;M35-39;4:00:28;+ 1:34:45
+1429;40489;Gunnar Sunde Fagervoll;NOR;;M40-44;4:00:38;+ 1:34:54
+1430;40693;Bruno Mercier;FRA;;M50-54;4:00:38;+ 1:34:54
+1431;40202;Geir T. Storvik;NOR;;M50-54;4:00:38;+ 1:34:55
+1432;42109;Linda Gammelsæter;NOR;;K22-23;4:00:39;+ 1:34:56
+1433;42837;Andreas Maliberg;NOR;Flisa Allianseidrettslag;M35-39;4:00:47;+ 1:35:03
+1434;42042;Arcangelo Lariccia;ITA;;M55-59;4:00:47;+ 1:35:04
+1435;40524;Marie Nyvoll;NOR;;K22-23;4:00:49;+ 1:35:06
+1436;42536;Vegard Bråthen;NOR;Team Jan og Vegard;M24-34;4:00:49;+ 1:35:06
+1437;40259;Jon Hjelmervik;NOR;;M45-49;4:00:52;+ 1:35:09
+1438;40483;Sveinung Rotevatn;NOR;;M35-39;4:00:53;+ 1:35:10
+1439;42571;Siri Aamodt;NOR;;K24-34;4:00:54;+ 1:35:10
+1440;73028;Tor Lambrechts;NOR;;M40-44;4:01:01;+ 1:35:18
+1441;41383;Tim Herrmann Holmen;NOR;;M24-34;4:01:03;+ 1:35:20
+1442;42426;Tone Oraug;NOR;Slitusprinterne;K40-44;4:01:07;+ 1:35:23
+1443;42724;Inger Elisabeth Grønningen;NOR;Lensvik IL;K40-44;4:01:07;+ 1:35:24
+1444;42414;Lasse Hyenes Lysne;NOR;SKANSKA AKTIV / TEAM LEM;M35-39;4:01:10;+ 1:35:27
+1445;41520;Jørn Magnus Lund;NOR;Jml Sykkelklubb;M45-49;4:01:12;+ 1:35:29
+1446;42771;Aksel Gundersen;NOR;Heming IL;M24-34;4:01:18;+ 1:35:34
+1447;40605;Chris Pang;GBR;;M35-39;4:01:18;+ 1:35:35
+1448;42163;Victoria Fritz;NOR;;K22-23;4:01:24;+ 1:35:41
+1449;40513;Andreas Heiborg;NOR;Cyborg-Heiborg: Il Tempo Gigante 2;M24-34;4:01:25;+ 1:35:42
+1450;41022;Pauliina Hartikainen;FIN;;K24-34;4:01:41;+ 1:35:58
+1451;40040;Per Jacobsen;DEN;;M55-59;4:01:48;+ 1:36:05
+1452;73020;Ronald Saleming;NED;Bardu IL;M60-64;4:01:48;+ 1:36:05
+1453;41457;Sigbjørn Eriksen;NOR;;M45-49;4:02:04;+ 1:36:20
+1454;42591;Vilde Vik;NOR;Eide Kam;K24-34;4:02:08;+ 1:36:25
+1455;41901;Anbjørg Rangberg;NOR;Team Solstråle;K35-39;4:02:09;+ 1:36:26
+1456;40420;Didrik Greve Økland;NOR;;M24-34;4:02:19;+ 1:36:36
+1457;41907;Linda Helland;NOR;;K40-44;4:02:23;+ 1:36:40
+1458;42927;Rasmus Reistad;NOR;;M24-34;4:02:25;+ 1:36:42
+1459;42424;Jordi Somers;NED;;M45-49;4:02:32;+ 1:36:49
+1460;42661;Kenth Nesset;NOR;Lalm IL;M24-34;4:02:33;+ 1:36:50
+1461;42388;Eirik Eide;NOR;;M40-44;4:02:35;+ 1:36:52
+1462;73057;Izabela Sliwinska;POL;Love Dance Help;K40-44;4:02:36;+ 1:36:53
+1463;42120;Katelyn Tuck;CAN;;K24-34;4:02:45;+ 1:37:02
+1464;41094;Knut Hubred;NOR;;M40-44;4:02:50;+ 1:37:06
+1465;42328;Kristian Nordlie;NOR;;M40-44;4:02:51;+ 1:37:08
+1466;41651;Christophe Leroy;BEL;;M50-54;4:02:55;+ 1:37:11
+1467;41837;Igor Gielwanowski;POL;;M45-49;4:03:00;+ 1:37:16
+1468;41772;Erik Jarle Nordbø;NOR;E2 Invest;M24-34;4:03:00;+ 1:37:17
+1469;40664;Guerlouse Duterloo;NOR;;M24-34;4:03:02;+ 1:37:18
+1470;40612;Petter Edfeldt;SWE;;M50-54;4:03:03;+ 1:37:19
+1471;41881;Magnus Killingland;NOR;;M24-34;4:03:06;+ 1:37:23
+1472;42407;Simon Palmer;NOR;;M45-49;4:03:11;+ 1:37:28
+1473;42383;Joakim Birkelid;NOR;Team Kraket;M24-34;4:03:12;+ 1:37:29
+1474;42561;Frida Hovland;NOR;;K24-34;4:03:14;+ 1:37:30
+1475;73063;Øistein Schmidt Galaaen;NOR;Romerike Ultraløperklubb;M45-49;4:03:14;+ 1:37:31
+1476;40588;Jay Yocogan;PHI;;K24-34;4:03:18;+ 1:37:34
+1477;41961;Åshild Dahl;NOR;;K24-34;4:03:24;+ 1:37:40
+1478;42387;Henrik Heien;NOR;;M24-34;4:03:26;+ 1:37:43
+1479;40550;Albert Medina;ESP;;M24-34;4:03:34;+ 1:37:51
+1480;73089;Tobias Teie;NOR;PLUR;M35-39;4:03:37;+ 1:37:54
+1481;40269;Asbjørn Olsen;NOR;;M24-34;4:03:37;+ 1:37:54
+1482;41561;Jimena Val Gora;ARG;;K40-44;4:03:46;+ 1:38:03
+1483;42423;Ruben Austefjord;NOR;;M24-34;4:04:00;+ 1:38:17
+1484;41433;Martin Olsen;NOR;;M24-34;4:04:02;+ 1:38:18
+1485;42610;Sebastian Isrenn;NOR;;M18-21;4:04:08;+ 1:38:25
+1486;41106;Jan Bakke;NOR;GNSVGF;M24-34;4:04:11;+ 1:38:27
+1487;42875;Terrence O'neill;NOR;;M24-34;4:04:14;+ 1:38:31
+1488;40809;Mattias Hjelmgren;SWE;Inglorius Runners;M50-54;4:04:15;+ 1:38:31
+1489;42890;Kjell Gustumhaugen;NOR;;M45-49;4:04:19;+ 1:38:36
+1490;1038;Morten Olaf Wold;NOR;GTI Friidrettsklubb;M70-74;4:04:20;+ 1:38:37
+1491;41256;Knud Nelissen;NED;Brams Bootcamp;M50-54;4:04:24;+ 1:38:40
+1492;41614;Karen Sætre;NOR;;K24-34;4:04:32;+ 1:38:49
+1493;42093;Antonio Jesús Garcia Garcia;ESP;;M24-34;4:04:40;+ 1:38:57
+1494;42494;Kenny Kaluiji;ANG;Team Hanniken;M35-39;4:04:42;+ 1:38:58
+1495;41856;Terje Stausland;NOR;;M50-54;4:04:43;+ 1:38:59
+1496;42050;Thomas Foldnes;NOR;;M24-34;4:04:43;+ 1:39:00
+1497;40332;Brage Kampenhaug Rødal;NOR;Tøff nok;M24-34;4:04:48;+ 1:39:04
+1498;40068;Ronny Sørbønsveen;NOR;;M45-49;4:04:48;+ 1:39:04
+1499;41613;Andreas Skifjeld;NOR;;M35-39;4:04:51;+ 1:39:07
+1500;42445;Ida Myrhaug Dåstøl;NOR;Hafslund;K24-34;4:04:56;+ 1:39:13
+1501;42702;Ståle Bjørnersen;NOR;RiksTV;M45-49;4:04:57;+ 1:39:14
+1502;42529;Selin Aktitiz Gungor;TUR;Bold Union;K24-34;4:04:57;+ 1:39:14
+1503;41006;Tor Mikkel Bjørnstad;NOR;;M24-34;4:05:05;+ 1:39:21
+1504;41747;Rune Gullesen;NOR;;M40-44;4:05:06;+ 1:39:22
+1505;42243;Gerardo Aguilar;NOR;;M50-54;4:05:06;+ 1:39:22
+1506;42395;Francesc Mañosa;ESP;;M60-64;4:05:06;+ 1:39:23
+1507;42594;Jeanette Stangeby;NOR;;K24-34;4:05:09;+ 1:39:26
+1508;41102;Jens Hundere Øvreseth;NOR;;M24-34;4:05:17;+ 1:39:33
+1509;40902;Håvard Aspø;NOR;;M24-34;4:05:24;+ 1:39:40
+1510;42951;Robin Andersen;NOR;;M24-34;4:05:25;+ 1:39:42
+1511;40177;Markus Vindheim;NOR;;M24-34;4:05:28;+ 1:39:45
+1512;41966;Jens Emil Asp;NOR;;M24-34;4:05:32;+ 1:39:49
+1513;40663;Maris Valts;EST;;K40-44;4:05:36;+ 1:39:52
+1514;41575;Trond Andersen;NOR;;M45-49;4:05:41;+ 1:39:58
+1515;42326;Malin Emilie Granli;NOR;;K24-34;4:05:41;+ 1:39:58
+1516;42770;Gleb Mirolyubov;KAZ;Cisco;M24-34;4:05:42;+ 1:39:59
+1517;41110;Jonathan Spaggiari;FRA;;M22-23;4:05:48;+ 1:40:04
+1518;41893;Jonathan Tom;GBR;;M50-54;4:05:55;+ 1:40:11
+1519;42574;Trine Merete Alnæs;NOR;;K24-34;4:05:58;+ 1:40:15
+1520;40099;Dag Mattis Pettersen;NOR;;M45-49;4:06:05;+ 1:40:22
+1521;40966;Mathias Oliver Haslien;NOR;"SÅS IL &#128133;";M24-34;4:06:06;+ 1:40:23
+1522;42446;Øyvind Vaadal;NOR;Roterud IL / Nye Veier BIL;M55-59;4:06:19;+ 1:40:35
+1523;42780;Espen Mathias Sperre;NOR;Eidanger Idrettslag;M50-54;4:06:20;+ 1:40:37
+1524;42556;Jesper Berglund;NOR;;M22-23;4:06:24;+ 1:40:41
+1525;42134;Debbie Chapman;GBR;;K50-54;4:06:31;+ 1:40:48
+1526;42874;Linnea Flesland;NOR;;K24-34;4:06:37;+ 1:40:53
+1527;41056;Aurimas Grauslys;LTU;;M24-34;4:06:43;+ 1:41:00
+1528;42547;Hilde Huse;NOR;;K60-64;4:06:46;+ 1:41:03
+1529;41862;Anita Norbeck;NOR;;K50-54;4:06:46;+ 1:41:03
+1530;41673;Simen Steinkjer Løken;NOR;;M24-34;4:06:49;+ 1:41:06
+1531;42036;Sylvia Pollock;GBR;;K50-54;4:06:49;+ 1:41:06
+1532;40413;Luc Versmissen;BEL;fien hein;M50-54;4:06:50;+ 1:41:06
+1533;41057;Øyvind Nesdal;NOR;;M55-59;4:06:52;+ 1:41:09
+1534;41699;Opi Piet Hans-Peter Lahann;GER;BSG Schleswig-Holstein Netz;M65-69;4:06:54;+ 1:41:10
+1535;42362;Katrine Haugstulen;NOR;;K24-34;4:06:54;+ 1:41:11
+1536;42069;Silje Hovland;NOR;;K22-23;4:06:56;+ 1:41:13
+1537;42118;Camilla Walla;NOR;;K24-34;4:06:57;+ 1:41:13
+1538;40249;Krzysztof Jarzynka;POL;K2;M55-59;4:07:08;+ 1:41:24
+1539;42186;Even Vigdal;NOR;;M22-23;4:07:11;+ 1:41:28
+1540;41953;Mauro Fanton;GBR;;M50-54;4:07:12;+ 1:41:28
+1541;42004;Mikael Birgersson;SWE;;M50-54;4:07:12;+ 1:41:28
+1542;42748;Kenneth Gran;NOR;Gran Consult AS;M24-34;4:07:14;+ 1:41:31
+1543;42653;Jessica K Treldal;NOR;Bamford1869;K40-44;4:07:15;+ 1:41:32
+1544;42408;Frida Pedersen;NOR;;K24-34;4:07:16;+ 1:41:32
+1545;40487;Jostein Lundgaard;NOR;Nammo Raufoss BIL;M55-59;4:07:16;+ 1:41:32
+1546;42236;Ashiq Mustun;FRA;Bigot team;M55-59;4:07:17;+ 1:41:33
+1547;40739;Mads Rafdal;NOR;;M24-34;4:07:17;+ 1:41:34
+1548;42317;Anton Zohnesen;DEN;;M22-23;4:07:19;+ 1:41:36
+1549;40403;Walter Danjoy;NOR;;M35-39;4:07:42;+ 1:41:58
+1550;40737;Malin Berg;NOR;;K18-21;4:07:47;+ 1:42:03
+1551;42057;Sander Framvik;NOR;;M22-23;4:07:48;+ 1:42:05
+1552;40136;Christian Martin;GBR;;M45-49;4:07:50;+ 1:42:07
+1553;1032;Isak Kvarme;NOR;Moss IL;M18-21;4:07:51;+ 1:42:08
+1554;40985;Ole Johan Gustavsen;NOR;;M18-21;4:07:52;+ 1:42:08
+1555;41995;Jean-François Proux;FRA;;M60-64;4:07:53;+ 1:42:10
+1556;42372;Anders Skyrud Jensen;NOR;;M50-54;4:07:56;+ 1:42:12
+1557;42955;Anna Spjelkavik;NOR;;K24-34;4:07:56;+ 1:42:13
+1558;42776;Bernt Ove Finsveen;NOR;;M50-54;4:07:57;+ 1:42:14
+1559;42359;Petronella Persson;SWE;;K24-34;4:08:01;+ 1:42:18
+1560;73120;Peter Alfonsius Brekke;NOR;;M35-39;4:08:04;+ 1:42:20
+1561;41706;Timm Leibfried;GER;;M35-39;4:08:05;+ 1:42:21
+1562;41662;Jonas Selsing;NOR;;M24-34;4:08:16;+ 1:42:33
+1563;40237;Marthin Storm Hansen;NOR;;M50-54;4:08:21;+ 1:42:37
+1564;42710;Christian Søvik;NOR;Norborg IL;M45-49;4:08:21;+ 1:42:38
+1565;42336;Marino Marco;ITA;Atletica Taviano 97;M45-49;4:08:27;+ 1:42:44
+1566;41582;Kristin Ask;NOR;;K45-49;4:08:31;+ 1:42:47
+1567;41017;Vemund Olimb;NOR;Veidekke BIL;M24-34;4:08:35;+ 1:42:52
+1568;42558;Simon Hoddø;NOR;;M24-34;4:08:37;+ 1:42:54
+1569;42788;Jon Henrik Mathisen;NOR;Krogsveen;M24-34;4:08:43;+ 1:42:59
+1570;42870;Jakob Kullblikk;NOR;;M24-34;4:08:44;+ 1:43:00
+1571;41908;Line Stuve;NOR;;K35-39;4:08:55;+ 1:43:12
+1572;40568;Jan Sindre Kile;NOR;;M50-54;4:09:00;+ 1:43:16
+1573;40438;Markus Giesen;GER;Mülheims Helden;M55-59;4:09:05;+ 1:43:22
+1574;42716;Joakim Hvidsten;NOR;;M35-39;4:09:06;+ 1:43:23
+1575;73098;Marcin Mackowski;POL;Ingen;M45-49;4:09:09;+ 1:43:25
+1576;42815;David Brødgaard;NOR;Team Right To Play/KPMG Puls;M40-44;4:09:10;+ 1:43:26
+1577;40922;Ernani Panzeri;BRA;Caveira Marathon Team;M55-59;4:09:12;+ 1:43:29
+1578;41915;Jessica Lundqvist;NOR;;K24-34;4:09:20;+ 1:43:37
+1579;42210;Guillaume Minet;FRA;;M24-34;4:09:27;+ 1:43:44
+1580;40687;Erika Jursaite;LTU;;K24-34;4:09:35;+ 1:43:52
+1581;42231;August Ekanger;NOR;;M24-34;4:09:41;+ 1:43:57
+1582;41765;Øyvind Skaten;NOR;;M24-34;4:09:47;+ 1:44:04
+1583;73002;Karolina Viktorsson;SWE;;K45-49;4:09:51;+ 1:44:08
+1584;73037;Heidi Spada;NOR;Team Brannfjell;K50-54;4:09:51;+ 1:44:08
+1585;42237;Sabine Mustun;FRA;bigot team;K50-54;4:09:58;+ 1:44:14
+1586;40450;Ivar Hovden;NOR;Knausen IL;M60-64;4:10:02;+ 1:44:18
+1587;42406;Silvia Masiero;NOR;;K35-39;4:10:02;+ 1:44:19
+1588;40562;Roald Haver;NOR;Brusand;M55-59;4:10:06;+ 1:44:22
+1589;42647;Lone Nielsen;DEN;Gjerpen IF Allianse - Friidrett;K60-64;4:10:20;+ 1:44:37
+1590;42373;Tilda Persson;NOR;;K24-34;4:10:22;+ 1:44:39
+1591;42385;Adrian Kristiansen;NOR;;M24-34;4:10:23;+ 1:44:40
+1592;42153;Ingrid Svensrud;NOR;;K45-49;4:10:24;+ 1:44:40
+1593;40490;Lars Kværner;NOR;;M55-59;4:10:24;+ 1:44:41
+1594;41797;Thea Mari Lindset;NOR;;K24-34;4:10:26;+ 1:44:42
+1595;41926;Birgitte Kristensen;NOR;;K35-39;4:10:28;+ 1:44:45
+1596;42179;Lene Gjøsæter;NOR;;K24-34;4:10:29;+ 1:44:46
+1597;42310;Camilla Wehmeyer;GBR;;K24-34;4:10:33;+ 1:44:50
+1598;73032;Øystein Reed;NOR;Viking Maori;M35-39;4:10:37;+ 1:44:53
+1599;40283;Jaime Garcia;BRA;Manguaças Team;M40-44;4:10:37;+ 1:44:54
+1600;42088;Arnoud Proos;NED;;M35-39;4:10:39;+ 1:44:56
+1601;40303;Mathias Tveit Olsen;NOR;;M22-23;4:10:40;+ 1:44:56
+1602;40881;Kristian Skolem;NOR;Mandagstrimmen;M35-39;4:10:46;+ 1:45:02
+1603;40899;Kayser Hasanjan;NOR;;M24-34;4:10:48;+ 1:45:05
+1604;42495;Maria Helena Meyer Dolve;NOR;;K24-34;4:10:54;+ 1:45:10
+1605;41857;Sindre Lindstad Hoholm;NOR;;M24-34;4:10:54;+ 1:45:11
+1606;42409;Henrik Holmsen;NOR;;M35-39;4:10:56;+ 1:45:13
+1607;42352;Helene Langseth Solberg;NOR;;K24-34;4:10:58;+ 1:45:15
+1608;42007;Joakim Kristiansen;NOR;Polisen Arvika;M35-39;4:11:07;+ 1:45:24
+1609;40521;Kjetil Fjellheim;NOR;;M45-49;4:11:08;+ 1:45:25
+1610;41562;Svein Arne Rying;NOR;Mr Dugalas;M50-54;4:11:12;+ 1:45:28
+1611;40755;Trond Mæhlum;NOR;Hvitsten seilforening;M55-59;4:11:13;+ 1:45:30
+1612;40875;Dragan Mladenovic;SRB;;M50-54;4:11:15;+ 1:45:31
+1613;40251;Lisa Børkja;NOR;;K24-34;4:11:16;+ 1:45:33
+1614;41835;Christopher Nicholls;GBR;;M35-39;4:11:18;+ 1:45:34
+1615;40266;Cornelia Örtenwall;SWE;;K24-34;4:11:24;+ 1:45:41
+1616;41322;Henrik Angelskår;NOR;;M24-34;4:11:27;+ 1:45:44
+1617;41735;Elin Georgsson;NOR;;K24-34;4:11:33;+ 1:45:50
+1617;41736;Frida Georgsson;SWE;;K24-34;4:11:33;+ 1:45:50
+1619;73075;Johannes Klemp;NOR;-;M24-34;4:11:35;+ 1:45:51
+1620;40862;Stian Isachsen;NOR;;M24-34;4:11:39;+ 1:45:55
+1621;42205;Lotte Bentzen;DEN;;K45-49;4:11:39;+ 1:45:55
+1622;40995;Dominik Zakrzewski;POL;RKSOP;M24-34;4:11:52;+ 1:46:09
+1623;42920;Camilla Gjelsten;NOR;Oslo kommunes bedriftsidrettslag;K45-49;4:11:58;+ 1:46:15
+1624;42138;Jon Erik Liebermann;NOR;;M24-34;4:12:00;+ 1:46:16
+1625;41658;Joanna Skonieczna;NOR;;K35-39;4:12:04;+ 1:46:20
+1626;42422;Khop Bahadur Gurung;NEP;;M60-64;4:12:05;+ 1:46:21
+1627;73071;Sebastian Antonsen;NOR;KIF Langrenn;M22-23;4:12:09;+ 1:46:26
+1628;40471;Geir Nevland;NOR;;M55-59;4:12:15;+ 1:46:32
+1629;42084;Olivier Renier;FRA;;M24-34;4:12:16;+ 1:46:33
+1630;42871;Vetle Rosseland;NOR;Høvdingen;M18-21;4:12:19;+ 1:46:36
+1631;41049;Mads Håkestad;NOR;;M18-21;4:12:20;+ 1:46:36
+1632;42885;Claes Edgren;SWE;Trollhättan;M55-59;4:12:21;+ 1:46:37
+1633;40309;Erik Hellbacher;SWE;;M45-49;4:12:29;+ 1:46:45
+1634;41723;Anders Eide;NOR;Team Classic full rulle;M22-23;4:12:33;+ 1:46:49
+1635;1099;Arvid Feed Jakobsen;NOR;Varhaug IL;M18-21;4:12:34;+ 1:46:51
+1636;41171;C S;NOR;;;4:12:35;+ 1:46:51
+1637;40284;Thomas Gelmann;FRA;;M40-44;4:12:40;+ 1:46:56
+1638;40636;Steven Dickson;GBR;;M24-34;4:12:43;+ 1:47:00
+1639;42822;Mathias Johansson;SWE;Atea AS;M35-39;4:12:43;+ 1:47:00
+1640;42348;Kim Grønnerød;NOR;Halden politiidrettslag;M35-39;4:12:44;+ 1:47:00
+1641;41653;Henrik Rekk Christensen;NOR;IFBS;M22-23;4:12:44;+ 1:47:01
+1642;40062;Gro Anita Imsland;NOR;Team Imsland;K45-49;4:12:54;+ 1:47:10
+1643;42114;Maria Osa Furmyr;NOR;;K24-34;4:12:54;+ 1:47:11
+1644;41352;Roger Nilsen;NOR;;M50-54;4:12:55;+ 1:47:12
+1645;41035;Per Øyvind Syvertsen;NOR;;M24-34;4:13:01;+ 1:47:18
+1646;40196;Joanna Fojcik;POL;;K45-49;4:13:03;+ 1:47:20
+1647;41061;Magda Grzybowska-Czana;POL;;K35-39;4:13:03;+ 1:47:20
+1648;41059;Christian Brandsnes;NOR;Ullern Pils & Bowling;M40-44;4:13:08;+ 1:47:24
+1649;40048;Stig Lønsethagen;NOR;;M40-44;4:13:09;+ 1:47:26
+1650;40262;Mikael Hedne;NOR;;M35-39;4:13:09;+ 1:47:26
+1651;40585;Tom Bednarski;POL;;M35-39;4:13:14;+ 1:47:30
+1652;40072;Justin Fackrell;NOR;Equinor bil;M50-54;4:13:14;+ 1:47:31
+1653;1077;Nils Magnus Fossnes;NOR;Ros IL;M35-39;4:13:16;+ 1:47:32
+1654;40032;Veton Kastrati;NOR;;M24-34;4:13:16;+ 1:47:32
+1655;40628;Annabel Grønntun;NOR;;K18-21;4:13:16;+ 1:47:33
+1656;42052;Helene Kallekleiv;NOR;;K24-34;4:13:16;+ 1:47:33
+1657;42206;Ingvild Hardal;NOR;;K24-34;4:13:17;+ 1:47:33
+1658;40607;Knut Nedregård;NOR;Team Nedregård Running;M50-54;4:13:20;+ 1:47:36
+1659;73023;Tore Malme;NOR;Söderberg & Partners;M50-54;4:13:20;+ 1:47:37
+1660;42391;Karim Bennour;FRA;;M24-34;4:13:25;+ 1:47:42
+1661;41523;Bjørn Olav Nyborg Eliassen;NOR;;M50-54;4:13:25;+ 1:47:42
+1662;73110;Adam Chedi Choudary;NOR;Pricewaterhousecoopers AS;M24-34;4:13:28;+ 1:47:45
+1663;40300;Aleksander Thers Jakobsen;NOR;;M24-34;4:13:29;+ 1:47:45
+1664;41846;Diana Rensvala;NOR;;K24-34;4:13:31;+ 1:47:47
+1665;42525;Frida Fjell;NOR;Strilalandslaget;K24-34;4:13:37;+ 1:47:54
+1666;40221;Cedric Lecomte;FRA;;M35-39;4:13:37;+ 1:47:54
+1667;40527;Maria Ponikiewicz;POL;;K45-49;4:13:45;+ 1:48:01
+1668;42098;Suraj Jaiswal;NOR;;M40-44;4:13:45;+ 1:48:01
+1669;42803;John Siayor;NOR;PwC BIL;M24-34;4:13:45;+ 1:48:02
+1670;1104;Eirik Nor Midthjell;NOR;Eid IL;M18-21;4:13:47;+ 1:48:03
+1671;41379;"Micha&#322; Lusztak";POL;AR Running Team;M22-23;4:13:48;+ 1:48:05
+1672;40118;Abdelbassit Abdelaziz;ESP;;M55-59;4:13:50;+ 1:48:06
+1673;40279;Jeppe Storgaard Noddeland;NOR;;M40-44;4:13:51;+ 1:48:08
+1674;42035;Richard Pollock;GBR;;M55-59;4:13:52;+ 1:48:09
+1675;41391;Tyler Tarnowski;NEU;Gravel Smashers;M24-34;4:13:53;+ 1:48:10
+1676;42220;Kjersti Tuvnes Lunder;NOR;;K45-49;4:13:54;+ 1:48:10
+1677;40225;Hans Van Zalen;NED;BMW Marathoners;M40-44;4:13:55;+ 1:48:11
+1678;41819;Jordan Berken;USA;;M35-39;4:14:01;+ 1:48:17
+1679;42054;Kjetil Steinsland;NOR;ASKO;M45-49;4:14:01;+ 1:48:18
+1680;42654;Christian Geitle Andersen;NOR;Tjøme Løpeklubb;M40-44;4:14:02;+ 1:48:18
+1681;42345;Frode Buran;NOR;;M45-49;4:14:02;+ 1:48:19
+1682;42212;Maxim Grace;GBR;;M24-34;4:14:03;+ 1:48:19
+1683;42455;Jordi Santonja Blanes;ESP;;M50-54;4:14:03;+ 1:48:20
+1684;42824;Eskil Johnsen;NOR;Ibestad IL;M40-44;4:14:04;+ 1:48:20
+1685;40465;Charles Hoksbergen;GBR;;M24-34;4:14:07;+ 1:48:24
+1686;40178;Michail Iliadis;GRE;ADIDAS RUNNERS ATHENS;M50-54;4:14:09;+ 1:48:25
+1687;41559;Erik Wennemo;NOR;;M55-59;4:14:09;+ 1:48:26
+1688;41940;Espen Svartdal;NOR;;M24-34;4:14:10;+ 1:48:27
+1689;41408;Oscar Thån Conrad;NOR;Team Omegapoint Norge;M24-34;4:14:11;+ 1:48:27
+1690;41502;Frode Øvre - Helland;NOR;;M60-64;4:14:11;+ 1:48:28
+1691;41859;Ole Marius Hoddø;NOR;;M24-34;4:14:15;+ 1:48:32
+1692;41992;Jon Hoddø;NOR;;M22-23;4:14:15;+ 1:48:32
+1693;1075;Ole Guttulsrød;NOR;Rygge IL;M65-69;4:14:18;+ 1:48:35
+1694;42897;Mikael Bakkeli;NOR;;M24-34;4:14:19;+ 1:48:35
+1695;42914;Christoffer Knudsen;NOR;Løpeløken;M35-39;4:14:20;+ 1:48:37
+1696;73011;Geir Bjerkestrand;NOR;Hvam IL;M55-59;4:14:26;+ 1:48:43
+1697;42597;Christopher Stangeby;NOR;;M24-34;4:14:32;+ 1:48:48
+1698;42139;Remo Fiorini;GBR;;M45-49;4:14:34;+ 1:48:51
+1699;42665;Malin Johansen;NOR;Askim IF;K18-21;4:14:35;+ 1:48:52
+1700;42111;Trond Aasen;NOR;Team Progas;M55-59;4:14:37;+ 1:48:53
+1701;40880;Filip Aune;NOR;;M24-34;4:14:42;+ 1:48:59
+1702;42171;Marius Fredriksen;NOR;;M24-34;4:14:44;+ 1:49:00
+1703;42448;Håkon Kristian Solberg;NOR;Løp for Ada;M24-34;4:14:44;+ 1:49:01
+1704;41042;Shaun Wootton;GBR;Sneyd Striders;M50-54;4:14:48;+ 1:49:04
+1705;40341;Damien Farelly;FRA;;M24-34;4:14:48;+ 1:49:05
+1706;41127;Oscar Grøttland;NOR;;M18-21;4:14:49;+ 1:49:05
+1707;42376;Lasse Ingebrigtsen;NOR;;M55-59;4:14:49;+ 1:49:06
+1708;42559;Mathias Hamre;NOR;;M24-34;4:14:50;+ 1:49:06
+1709;42194;Torgeir Haugen;NOR;;M45-49;4:14:51;+ 1:49:08
+1710;41394;Linus Johan Moltzau-Anderssn;NOR;;M18-21;4:14:52;+ 1:49:09
+1711;73003;Lars Møller;NOR;Romerike Ultraløperklubb;M50-54;4:14:53;+ 1:49:10
+1712;40908;Kay-Terje Vigdal;NOR;;M45-49;4:14:55;+ 1:49:12
+1713;42584;Jonas Lindgren;SWE;;M45-49;4:14:55;+ 1:49:12
+1714;40606;Aldas Vakalas;LTU;;M24-34;4:14:58;+ 1:49:14
+1715;42581;Erik Lundgrenn;NOR;Trailboyz;M24-34;4:14:58;+ 1:49:15
+1716;42851;Hilde Johansen;NOR;Romerike Ultraløperklubb;K50-54;4:15:05;+ 1:49:21
+1717;42106;Åsmund Bækken;NOR;;M50-54;4:15:07;+ 1:49:23
+1718;41533;Åse Sandberg Hovden;NOR;Toten Treningssenter;K65-69;4:15:14;+ 1:49:31
+1719;41101;Jonathan Nilsen;NOR;Brødrene Nilsen;M22-23;4:15:15;+ 1:49:31
+1720;73114;Stine Helena Bang Svendsen;NOR;Trondheim & Omegn Sportsklubb;K40-44;4:15:18;+ 1:49:35
+1721;41424;Sander Kolle;NOR;;M18-21;4:15:19;+ 1:49:35
+1722;40718;Clement Devouassoud;NOR;;M40-44;4:15:20;+ 1:49:37
+1723;42917;Shirin Asadi;NOR;;K22-23;4:15:20;+ 1:49:37
+1724;42627;Adrian Aasheim;NOR;;M22-23;4:15:30;+ 1:49:47
+1725;41015;Rasmus Ingebretsen;NOR;;M22-23;4:15:31;+ 1:49:48
+1726;40732;Fredrik Gleisner;SWE;;M22-23;4:15:33;+ 1:49:49
+1727;41776;Frida Ytterdal Krogsrud;NOR;;K24-34;4:15:34;+ 1:49:50
+1728;41863;Hanna Bjørseth Mo;NOR;;K24-34;4:15:34;+ 1:49:50
+1729;42889;Henrik Syversen;NOR;;M24-34;4:15:34;+ 1:49:51
+1730;42564;Håvard Berg;NOR;;M18-21;4:15:35;+ 1:49:52
+1731;42585;Ole Daniel Johnsen;NOR;;M24-34;4:15:36;+ 1:49:52
+1732;41148;Nils Trond Terkelsen;NOR;DNB;M50-54;4:15:39;+ 1:49:56
+1733;42338;Gabriel Sonesen Perez;NOR;;M18-21;4:15:41;+ 1:49:57
+1734;41356;Andreas Øgaard;NOR;Tromøya Trim;M24-34;4:15:42;+ 1:49:58
+1735;73121;Rakel Erla Sævarsdottir;ISL;Romerike Ultraløperklubb;K35-39;4:15:43;+ 1:49:59
+1736;42468;Åshild Nakken Follesø;NOR;;K24-34;4:15:45;+ 1:50:01
+1737;41569;Hans Christian Loland;NOR;;M40-44;4:15:46;+ 1:50:03
+1738;42548;Karol Adamus;POL;Noris Ski;M24-34;4:15:46;+ 1:50:03
+1739;42451;Øyvind E. Hansen;NOR;;M60-64;4:15:49;+ 1:50:06
+1740;42329;Margarito Franco;ITA;Atletica Taviano 97;M60-64;4:15:54;+ 1:50:10
+1741;42410;Niels Mose;DEN;;M35-39;4:15:56;+ 1:50:13
+1742;40719;Stelios Fiorentzis;GRE;;M40-44;4:16:01;+ 1:50:18
+1743;41817;Elise Sofie Hagen;NOR;;K24-34;4:16:02;+ 1:50:18
+1744;40775;Krzysztof Bugiera;NOR;;M35-39;4:16:07;+ 1:50:24
+1745;41602;John-Are Forsland;NOR;;M40-44;4:16:16;+ 1:50:33
+1746;41824;Alex Velde;NOR;;M40-44;4:16:17;+ 1:50:33
+1747;41879;Markus Mähönen;FIN;;M45-49;4:16:18;+ 1:50:35
+1748;42102;Carolin Bjerke;NOR;;K40-44;4:16:20;+ 1:50:37
+1749;41976;Danielle Jackson;GBR;;K24-34;4:16:27;+ 1:50:44
+1750;41810;Jon Aalborg;NOR;;M40-44;4:16:27;+ 1:50:44
+1751;42947;Sesilie Morken;NOR;;K24-34;4:16:29;+ 1:50:46
+1752;42753;Mathias Bråthen;NOR;The Lonesome Travelers;M24-34;4:16:32;+ 1:50:49
+1753;40319;Fredrik Lugg;NOR;Mambas Runners Club;M24-34;4:16:36;+ 1:50:52
+1754;42411;Nicklas Dahl Dani;NOR;;M24-34;4:16:38;+ 1:50:54
+1755;40292;Henry Mai;NOR;;M24-34;4:16:38;+ 1:50:55
+1756;42516;Bjørn Martin Solberg;NOR;The Boldwins;M45-49;4:16:45;+ 1:51:02
+1757;42314;Rebecka Skipper Grønli;DEN;;K24-34;4:16:48;+ 1:51:04
+1758;42557;Marius Kirkerud;NOR;;M24-34;4:16:55;+ 1:51:12
+1759;42341;Martin Norheim;NOR;;M22-23;4:16:58;+ 1:51:15
+1760;42620;Adam Kokott;POL;;M45-49;4:16:59;+ 1:51:15
+1761;42725;Ibrahim Mufti Pradityo;NOR;Nomad;M24-34;4:17:01;+ 1:51:17
+1762;40954;Michael Rogan;GBR;;M24-34;4:17:05;+ 1:51:22
+1763;41656;Gaute Lund Berg;NOR;Norconsult BIL;M24-34;4:17:08;+ 1:51:24
+1764;42140;Hubert Brocard;NOR;;M70-74;4:17:08;+ 1:51:24
+1765;42618;Espen Berg;NOR;;M50-54;4:17:13;+ 1:51:30
+1766;42634;Emil Dypsund;NOR;;M24-34;4:17:15;+ 1:51:32
+1767;41757;Stine Aanvik;NOR;;K24-34;4:17:21;+ 1:51:37
+1768;40344;Karim Terbeche;BDI;Los Spritzos;M45-49;4:17:23;+ 1:51:39
+1769;40345;Djallel Abdiche;FRA;;M45-49;4:17:23;+ 1:51:40
+1770;42863;Camilla Stranger;NOR;;K24-34;4:17:28;+ 1:51:45
+1771;42680;Geir Einan;NOR;Jotun IL;M55-59;4:17:31;+ 1:51:48
+1772;40977;Knut Marius Skoglund;NOR;Danske Bank;M45-49;4:17:34;+ 1:51:51
+1773;41763;El Mehdi Sayarh;MAR;;M24-34;4:17:44;+ 1:52:00
+1774;40295;François Collineau;FRA;CKS Group;M45-49;4:17:46;+ 1:52:03
+1775;42626;Marte Dalen;NOR;;K24-34;4:17:51;+ 1:52:08
+1776;42576;Daniel Jakobsen;NOR;Grimstad;M24-34;4:17:52;+ 1:52:08
+1777;42531;Marte Gjøen-Gjøsæter;NOR;;K24-34;4:17:59;+ 1:52:15
+1778;42603;Filip Egner;NOR;;M18-21;4:18:00;+ 1:52:16
+1779;40806;Ben Murphy;IRL;;M22-23;4:18:00;+ 1:52:17
+1780;42377;Even Kristoffersen;NOR;;M24-34;4:18:06;+ 1:52:23
+1781;42182;Marius Strøm;NOR;Skanska;M24-34;4:18:06;+ 1:52:23
+1782;42944;Magdalena Panus;GER;;K45-49;4:18:07;+ 1:52:24
+1783;40839;Peter Panus;GER;;M45-49;4:18:07;+ 1:52:24
+1784;42493;Linn Christin Bjørnerud;NOR;;K35-39;4:18:08;+ 1:52:25
+1785;42572;Anthony Day;GBR;;M50-54;4:18:12;+ 1:52:29
+1786;42381;Christian Høitomt;NOR;TØFF;M24-34;4:18:17;+ 1:52:33
+1787;42869;Thomas Bølstad Martinsen;NOR;;M24-34;4:18:17;+ 1:52:34
+1788;41410;Nikolai Loftesnes;NOR;Sogndal IL;M24-34;4:18:18;+ 1:52:34
+1789;42242;Sofia Skogen;NOR;;K24-34;4:18:23;+ 1:52:40
+1790;42852;Stig Andy Kvalheim;NOR;Romerike Ultraløperklubb;M50-54;4:18:31;+ 1:52:48
+1791;40139;Saskia Sandner;GER;LG Veitenstein;K35-39;4:18:35;+ 1:52:52
+1792;41538;Anita Amundsen;NOR;Tren Saltnes;K24-34;4:18:35;+ 1:52:52
+1793;40138;Matthias Ott;GER;SV Heubach;M45-49;4:18:36;+ 1:52:53
+1794;40877;Nikolai Øvrebekk;NOR;;M24-34;4:18:37;+ 1:52:54
+1795;42596;Elias Maximus Marøy;NOR;;M22-23;4:18:44;+ 1:53:01
+1796;40326;Peter Bassøe;NOR;;M35-39;4:18:49;+ 1:53:05
+1797;41138;Simen Nielsen;NOR;;M24-34;4:18:59;+ 1:53:15
+1798;40518;Henning J Haugland;NOR;;M55-59;4:19:01;+ 1:53:17
+1799;40928;Nathaniel Ayeh;NOR;;M24-34;4:19:04;+ 1:53:21
+1800;42126;Malin Louise Joten Skog;NOR;;K24-34;4:19:09;+ 1:53:25
+1801;42162;Oscar Zamudio;MEX;;M24-34;4:19:13;+ 1:53:29
+1802;42963;Gaute Edøy Martinsen;NOR;Kondistreninga Oslo;M50-54;4:19:14;+ 1:53:31
+1803;42736;Hedvig Bakken;NOR;Rindal IL;K40-44;4:19:17;+ 1:53:34
+1804;41335;Aleksander Eig Lien;NOR;;M24-34;4:19:18;+ 1:53:35
+1805;41348;Ulrik Mjelde;NOR;;M24-34;4:19:21;+ 1:53:38
+1806;41710;Stig Landa Gjerde-Tanglien;NOR;Team Atlungstad Brenneri;M35-39;4:19:33;+ 1:53:50
+1807;40688;Josep Sarlé Guiu;AND;;M75-79;4:19:33;+ 1:53:50
+1808;41954;Henrik Bjørnevik;NOR;;M24-34;4:19:38;+ 1:53:54
+1809;42044;Anders Berg Langvandsbråten;NOR;;M22-23;4:19:39;+ 1:53:56
+1810;41828;Yevhenii Hulak;NOR;;M35-39;4:19:42;+ 1:53:59
+1811;15;Mari Dregelid;NOR;;K24-34;4:19:45;+ 1:54:02
+1812;42440;Knut Ivar Solstad Ertsås;NOR;;M45-49;4:19:47;+ 1:54:04
+1813;73024;Hans Ole Hansen;NOR;Seige Menn;M50-54;4:19:48;+ 1:54:04
+1814;41936;Magdalena Drozek;NOR;;K24-34;4:19:56;+ 1:54:12
+1815;40896;Liudmyla Batrushtai;UKR;Kit;K45-49;4:19:56;+ 1:54:13
+1816;41545;Einar Nesvik;NOR;Team Jøsneset;M60-64;4:19:57;+ 1:54:14
+1817;42353;Laetitia Mace;NOR;;K40-44;4:19:58;+ 1:54:15
+1818;42506;Håkon Caspari;NOR;Fred. Olsen Sportsklubb;M24-34;4:20:01;+ 1:54:18
+1819;41981;Ylva Holby;NOR;;K35-39;4:20:02;+ 1:54:19
+1820;41982;Karin Aarnes Nørstebø;NOR;;K35-39;4:20:03;+ 1:54:19
+1821;42295;Alina Krajecka-Solarz;POL;;K50-54;4:20:10;+ 1:54:27
+1822;42294;Tomasz Sobieski;POL;;M50-54;4:20:12;+ 1:54:29
+1823;40360;Xavier Ariza;ESP;;M45-49;4:20:14;+ 1:54:31
+1824;41991;Erik Mohr-Skogan;NOR;;M24-34;4:20:20;+ 1:54:37
+1825;41397;Thomas Alexander Dale;NOR;;M24-34;4:20:24;+ 1:54:41
+1826;41334;Severin Beyer;NOR;;M24-34;4:20:25;+ 1:54:41
+1827;41999;Nils Christian Svere;NOR;Team Metereter;M24-34;4:20:26;+ 1:54:43
+1828;40464;Sasha Petrie;GBR;;K22-23;4:20:28;+ 1:54:45
+1829;41504;Øystein Gundersen;NOR;;M40-44;4:20:30;+ 1:54:47
+1830;42616;Bedir Yiyit;NOR;Achilles International of Norway;MFH;4:20:39;+ 1:54:55
+1831;41880;Marjo Saari;FIN;;K45-49;4:20:40;+ 1:54:56
+1832;42136;Jonathan Lundblad;NOR;TØFF;M24-34;4:20:41;+ 1:54:58
+1833;42132;Jack Leonard;GBR;;M35-39;4:20:46;+ 1:55:03
+1834;41788;Chalent Angelopoulos;GRE;DROMEIS PEDION AREOS;M40-44;4:20:50;+ 1:55:06
+1835;42404;Adam Remøy;NOR;;M18-21;4:20:52;+ 1:55:08
+1836;41786;Steinar Smith;NOR;;M18-21;4:20:55;+ 1:55:11
+1837;42197;Ali Rashid;NOR;;M24-34;4:20:56;+ 1:55:12
+1838;42332;Arben Krasniqi;SWE;FKC;M50-54;4:20:57;+ 1:55:14
+1839;41918;Sarah Marbet Næss;SUI;;K40-44;4:21:01;+ 1:55:17
+1840;42299;Fred Welsman;GBR;;M24-34;4:21:10;+ 1:55:26
+1841;42884;Helene Hall;NOR;;K24-34;4:21:10;+ 1:55:26
+1842;42292;Henning Dirdal;NOR;Felleskjøpet;M50-54;4:21:11;+ 1:55:28
+1843;1016;Isabel Aarnes;NOR;Romerike Ultraløperklubb;K35-39;4:21:16;+ 1:55:32
+1844;42104;Simen Ringdahl;NOR;;M24-34;4:21:17;+ 1:55:34
+1845;42939;Karl Barvik;NOR;;M24-34;4:21:20;+ 1:55:37
+1846;42055;Abigail Spencer;USA;;K24-34;4:21:27;+ 1:55:44
+1847;40945;Benjamin Karlsen;NOR;Edru Livsstil;M40-44;4:21:31;+ 1:55:48
+1848;40804;Thor Eskerud;NOR;;M22-23;4:21:33;+ 1:55:49
+1849;42599;Audun Strand Lien;NOR;;M24-34;4:21:33;+ 1:55:50
+1850;73050;Kolbjørn Larsen;NOR;Orkanger IF - Friidrett;M50-54;4:21:38;+ 1:55:55
+1851;41946;Markus Hast;FIN;;M65-69;4:21:45;+ 1:56:01
+1852;42635;Markko-Rollin Põdra;EST;;M40-44;4:21:57;+ 1:56:13
+1853;40461;Jonathan Wegger Hultin;NOR;CEH;M24-34;4:22:01;+ 1:56:17
+1854;42479;Martin Thorén;SWE;;M24-34;4:22:06;+ 1:56:22
+1855;41641;Nils Åsheim Megård;NOR;;M35-39;4:22:07;+ 1:56:23
+1856;42530;Roar Sivertsen;NOR;;M60-64;4:22:10;+ 1:56:27
+1857;42926;Jakob Netskar;NOR;Norges Bank;M24-34;4:22:23;+ 1:56:40
+1858;42252;Sivert Jakobsen;NOR;;M24-34;4:22:27;+ 1:56:44
+1859;41530;Frode Hatlem;NOR;;M50-54;4:22:34;+ 1:56:51
+1860;41889;Vegard Høistad;NOR;Il Bjørn;M45-49;4:22:36;+ 1:56:53
+1861;40411;Amalie Frisk-Olsen;NOR;;K22-23;4:22:37;+ 1:56:54
+1862;73001;Stig Morten Negård;NOR;Hell Ultraløperklubb;M45-49;4:22:40;+ 1:56:56
+1863;42400;Esko Hätälä;FIN;Remmirunners;M50-54;4:22:41;+ 1:56:57
+1864;42619;Magnus Bjerkan;NOR;;M24-34;4:22:51;+ 1:57:07
+1865;1079;Mehdi Jouga;NOR;Ski IL Friidrett;M22-23;4:22:54;+ 1:57:11
+1866;42954;Daniel Larsen;NOR;;M24-34;4:22:54;+ 1:57:11
+1867;41938;Carl Øystein Karlsen;NOR;;M50-54;4:23:00;+ 1:57:16
+1868;40836;Caspar Molthe Van Doorn;NOR;;M18-21;4:23:02;+ 1:57:18
+1869;42160;Abir Ali;GBR;Liverpool Running Bugs;M45-49;4:23:04;+ 1:57:20
+1870;41529;Jessica Røed;USA;;K45-49;4:23:07;+ 1:57:23
+1871;42587;Rebwar Eliassi;NOR;;M24-34;4:23:08;+ 1:57:24
+1872;42071;Anders Ljåstad;NOR;;M18-21;4:23:10;+ 1:57:26
+1873;42521;Martin Ytterstad;NOR;OBIL;M35-39;4:23:14;+ 1:57:30
+1874;41939;Frank Bennett;IRL;;M40-44;4:23:14;+ 1:57:31
+1875;41423;Erik Dukefoss;NOR;;M24-34;4:23:14;+ 1:57:31
+1876;1005;Karl Johan Johansen;NOR;Strindheim il;M65-69;4:23:16;+ 1:57:33
+1877;42470;Sondre Rognerud Holgersen;NOR;;M24-34;4:23:16;+ 1:57:33
+1878;41796;Ørnulf Lindset;NOR;;M50-54;4:23:24;+ 1:57:40
+1879;40436;Jesper Fjordbak;DEN;;M40-44;4:23:27;+ 1:57:44
+1880;42375;Tommy Olsen;NOR;Unstad;M50-54;4:23:37;+ 1:57:54
+1881;42582;Lars Kristian Sæbø;NOR;;M24-34;4:23:39;+ 1:57:55
+1882;42938;Heidi Jacobsen;NOR;;K65-69;4:23:41;+ 1:57:58
+1883;42195;Filip Wohlfahrt Staaf;NOR;;M22-23;4:23:47;+ 1:58:03
+1884;41566;Jørn Nicolaisen;NOR;Konnerud IL;M45-49;4:23:54;+ 1:58:10
+1885;42279;Péter Szigeti;SWE;;M35-39;4:23:55;+ 1:58:12
+1886;42969;Vetle Seigerud;NOR;;M24-34;4:24:03;+ 1:58:20
+1887;41980;Tom Hjellnes;NOR;Vågsbygd Runners;M50-54;4:24:04;+ 1:58:20
+1888;41852;Dusan Antic;SRB;;M40-44;4:24:09;+ 1:58:26
+1889;42891;Brynjar Nielsen Meling;NOR;Sjødin Meling;M55-59;4:24:13;+ 1:58:30
+1890;42325;Katinka Johansen;NOR;;K22-23;4:24:15;+ 1:58:31
+1891;41956;Saki Paryanto Kaastad;NOR;;K35-39;4:24:18;+ 1:58:35
+1892;42893;Desiree Andersen;NOR;;K40-44;4:24:20;+ 1:58:37
+1893;41556;Mette Dahle Andersen;NOR;Smiley;K60-64;4:24:20;+ 1:58:37
+1894;42721;Torbjørg Kjoberg;NOR;BFG Bergen Løpeklubb;K55-59;4:24:25;+ 1:58:42
+1895;42454;Krzysztof Mackowiak;ZIM;;M24-34;4:24:30;+ 1:58:47
+1896;42764;Svend Widar Aa;NOR;Jula Norge;M40-44;4:24:31;+ 1:58:47
+1897;42948;Isak Billet;NOR;;M24-34;4:24:45;+ 1:59:02
+1898;42187;Andrea Fiskaa Haugen;NOR;;K22-23;4:24:45;+ 1:59:02
+1899;41812;Gurkeerat Singh Dhillon;NOR;;M40-44;4:24:46;+ 1:59:03
+1900;42429;Celine Teige;NOR;;K35-39;4:24:52;+ 1:59:08
+1901;40716;Agnes Woolley;GBR;;K24-34;4:24:53;+ 1:59:10
+1902;42609;Mariano Tirado;ESP;;M40-44;4:24:53;+ 1:59:10
+1903;42156;Morten Lyngved;NOR;Betonmast;M40-44;4:24:54;+ 1:59:11
+1904;42785;Kåre Fauske;NOR;Gaular IL;M65-69;4:24:56;+ 1:59:13
+1904;41822;Per Magnus Barlaug;NOR;Kirkenes Kulturkanon;M35-39;4:24:56;+ 1:59:13
+1906;42378;Stig Gøran Hansen;NOR;OFN RYGGE;M45-49;4:24:57;+ 1:59:14
+1907;42794;Zvonimir Grubisic;CRO;Team Avanade Nordics;M24-34;4:25:01;+ 1:59:17
+1908;41978;Sam Harris;GBR;;M24-34;4:25:02;+ 1:59:19
+1909;40425;Roy Løvtangen;NOR;Munkholmen O-Lag;M24-34;4:25:03;+ 1:59:19
+1910;41883;Daniel Ridges;GBR;;M22-23;4:25:08;+ 1:59:24
+1911;41878;Susanne Rosvoll;NOR;;K24-34;4:25:10;+ 1:59:26
+1912;41519;Maren Lossius;NOR;Norge;K24-34;4:25:11;+ 1:59:28
+1913;42679;Mathilde Sofie Kjellsbøl Hole;NOR;Velledalen IL - Friidrett;K24-34;4:25:16;+ 1:59:33
+1914;42431;Sofie Marie Arias;NOR;;K24-34;4:25:19;+ 1:59:36
+1915;42739;Anne Håkanes;NOR;Tinn IL - Friidrett;K18-21;4:25:25;+ 1:59:41
+1916;42738;Vegard Klæboe;NOR;Structor Tekniske Systemer BIL;M35-39;4:25:28;+ 1:59:45
+1917;42311;Ghiasuddin Nawabi;NOR;;M24-34;4:25:32;+ 1:59:48
+1918;40505;Åsmund Tokheim;NOR;;M35-39;4:25:32;+ 1:59:49
+1919;42800;Erik Holst;NOR;PwC BIL;M24-34;4:25:35;+ 1:59:51
+1920;42801;Kristian Vadla Sletten;NOR;PwC BIL;M24-34;4:25:35;+ 1:59:52
+1921;42812;Nikolay Ribe;NOR;Team Right To Play/KPMG Puls;M22-23;4:25:35;+ 1:59:52
+1922;41510;Mathias Lind Engelstad;NOR;;M24-34;4:25:35;+ 1:59:52
+1923;42600;Christian Ringstad;NOR;;M24-34;4:25:41;+ 1:59:57
+1924;42125;Jon Håkon Dybwad;NOR;;M24-34;4:25:42;+ 1:59:58
+1925;42789;Eirik Bakland;NOR;Krogsveen;M24-34;4:25:42;+ 1:59:59
+1926;42086;Lorenzo Cerra;ITA;;M24-34;4:25:43;+ 1:59:59
+1927;42681;Arnt Moen;NOR;Jotun IL;M55-59;4:25:43;+ 2:00:00
+1928;40145;Arezoo Shekarchi;USA;;K50-54;4:25:49;+ 2:00:06
+1929;41871;Dag Ove Mæle;NOR;;M24-34;4:25:49;+ 2:00:06
+1930;41777;Manuel Stöckert;NOR;;M45-49;4:25:58;+ 2:00:15
+1931;42958;Helene Anneli Døsvik;NOR;;K24-34;4:26:00;+ 2:00:17
+1932;42303;Francesco Bottini;ITA;;M24-34;4:26:03;+ 2:00:20
+1933;41721;Agnes Floa;NOR;;K24-34;4:26:04;+ 2:00:21
+1934;42945;Paul Helliesen;NOR;Team Lindstrøm;M55-59;4:26:07;+ 2:00:23
+1935;42191;Tetiana Cherneta;NOR;;K35-39;4:26:13;+ 2:00:29
+1936;73049;Karen Brownlie;GBR;;K45-49;4:26:16;+ 2:00:33
+1937;41771;Håkon Holme Frøberg;NOR;;M24-34;4:26:20;+ 2:00:37
+1938;41932;Nikla Schmidt;RSA;;K24-34;4:26:22;+ 2:00:38
+1939;40317;Olav Meberg;NOR;Mambas Runners Club;M24-34;4:26:22;+ 2:00:39
+1940;42253;Gordon Clarke;IRL;;M40-44;4:26:26;+ 2:00:43
+1941;42580;Paola Jorgelina Ozan;ARG;Outlier Sports;K24-34;4:26:41;+ 2:00:58
+1942;41708;Andreas Hold;GER;Bergpack;M55-59;4:26:42;+ 2:00:58
+1943;42546;Jarek Kowalski;POL;;M50-54;4:26:44;+ 2:01:00
+1944;42165;Kenichi Takahashi;JPN;;M65-69;4:26:46;+ 2:01:03
+1945;42405;Sebastian Hansen;NOR;;M18-21;4:26:49;+ 2:01:05
+1946;42364;Neiva Ribeiro;BRA;;K55-59;4:26:51;+ 2:01:08
+1947;42357;Sondre Ødegaard;NOR;;M24-34;4:26:54;+ 2:01:11
+1948;40510;Roy Gustavsen;NOR;Manchester United;M40-44;4:26:56;+ 2:01:13
+1949;42846;Jacob Jacobsen;NOR;FARTSHOLDER 4 TIMER 30 MINUTTER;M45-49;4:26:58;+ 2:01:15
+1950;41707;Kagan Cakmak;NOR;;M24-34;4:27:03;+ 2:01:20
+1951;42883;Jonas Høgstad;NOR;;M24-34;4:27:11;+ 2:01:28
+1952;41698;Martin Blaalid;NOR;;M24-34;4:27:13;+ 2:01:30
+1953;42845;Synne Granå Vesterhus;NOR;FARTSHOLDER 4 timer 30 minutter;K45-49;4:27:14;+ 2:01:30
+1954;42595;André Aamelfot;NOR;;M24-34;4:27:22;+ 2:01:39
+1955;41934;Charlotte Poulsen;DEN;;K55-59;4:27:23;+ 2:01:40
+1955;41935;Brian Vernersen;DEN;;M55-59;4:27:23;+ 2:01:40
+1957;41677;Thomas Svarre;NOR;;M40-44;4:27:25;+ 2:01:42
+1958;42579;Andreas Hauger;NOR;;M40-44;4:27:26;+ 2:01:43
+1959;42070;Trond Pedersen;NOR;;M50-54;4:27:28;+ 2:01:44
+1960;40379;Gisle Austefjord;NOR;Blommenholm Joggegruppe;M40-44;4:27:29;+ 2:01:46
+1961;42554;Jorge Hervas Mas;ESP;;M45-49;4:27:40;+ 2:01:57
+1962;40676;Arian Dautaj;NOR;;M18-21;4:27:41;+ 2:01:58
+1963;42959;Atle Larsen;NOR;EFC;M45-49;4:27:41;+ 2:01:58
+1964;42526;Cecilie Riiser Evje;NOR;Sats;K40-44;4:27:49;+ 2:02:05
+1965;41993;Bianka Hofmann;SUI;;K45-49;4:27:52;+ 2:02:09
+1966;42394;Patrik Ådemark;NOR;Ådemark Ekonomi;M55-59;4:27:53;+ 2:02:09
+1967;42781;Jan Ivar Slåen;NOR;Eidanger Idrettslag;M45-49;4:27:53;+ 2:02:10
+1968;41784;Linda Koch;GER;;K45-49;4:27:53;+ 2:02:10
+1969;41789;Maren Koch;GER;;K35-39;4:27:53;+ 2:02:10
+1970;42355;Antonio Rojas Gomez;ESP;Quiebrajano;M65-69;4:28:03;+ 2:02:20
+1971;40592;Javier Lucas;ESP;Colla Parotet;M40-44;4:28:03;+ 2:02:20
+1972;40522;Joris Guédon;FRA;Dalons Team;M24-34;4:28:25;+ 2:02:41
+1973;40523;Paul Doublet;FRA;Dalons Team;M24-34;4:28:25;+ 2:02:42
+1974;40968;Erling Falch;NOR;;M55-59;4:28:27;+ 2:02:43
+1975;41945;Mari Sipola;FIN;;K50-54;4:28:27;+ 2:02:44
+1976;42886;Terje Adolfsen;NOR;Romerike Ultraløperklubb;M50-54;4:28:28;+ 2:02:44
+1977;42389;Brage Risborg;NOR;;M24-34;4:28:36;+ 2:02:53
+1978;42598;Ståle Bergby;NOR;Hytteplan Sport;M55-59;4:28:47;+ 2:03:03
+1979;42435;Petter Gulliksen;NOR;;M24-34;4:28:49;+ 2:03:06
+1980;41514;Nina Kristoffersen;NOR;;K45-49;4:28:50;+ 2:03:07
+1981;40894;Alain Lakhloufi;MAR;;M65-69;4:28:50;+ 2:03:07
+1982;42970;Marcus Iden;NOR;;M22-23;4:28:50;+ 2:03:07
+1983;41649;Lone Næss;NOR;;K45-49;4:28:56;+ 2:03:12
+1984;42346;Marcus Kayihura;NOR;;M22-23;4:28:57;+ 2:03:14
+1985;42443;Andreas Bettingen;GER;Marathon4you.de;M55-59;4:28:59;+ 2:03:15
+1986;42520;Sverre Starholm;NOR;OBIL;M45-49;4:29:08;+ 2:03:25
+1987;40241;Anders Øverlien Eskelund;NOR;;M22-23;4:29:09;+ 2:03:26
+1988;42116;Mathias Engqvist;SWE;;M45-49;4:29:13;+ 2:03:29
+1989;42135;"Miros&#322;aw Wn&#281;k";POL;;M45-49;4:29:22;+ 2:03:39
+1990;42075;Jørgen Noreng;NOR;Ültimate running club of Fluberg;M24-34;4:29:30;+ 2:03:46
+1991;41623;Lisa Gustavsson;SWE;;K35-39;4:29:34;+ 2:03:50
+1992;42683;Martin Jensen;NOR;;M24-34;4:29:36;+ 2:03:53
+1993;42592;Branislav Loncar;SRB;"NBGD Open Run - Novobeogradska trka&#269;ka liga";M24-34;4:29:36;+ 2:03:53
+1994;42283;Brage Solheim;NOR;;M24-34;4:29:39;+ 2:03:56
+1995;73078;Adrian Sollie Strand;NOR;Team Dynamitt;M24-34;4:29:41;+ 2:03:57
+1996;41040;Gabriel Abildgaard;NOR;Bane NOR BIL;M24-34;4:29:44;+ 2:04:00
+1997;41917;Marius Tobias Hoven;NOR;;M45-49;4:29:44;+ 2:04:00
+1998;42215;Randall Avers;NOR;;M45-49;4:29:46;+ 2:04:03
+1999;42183;"Przemys&#322;aw Posmyk";POL;;M45-49;4:29:52;+ 2:04:08
+2000;42879;Rayan Bargharar;NOR;;M18-21;4:30:01;+ 2:04:17
+2001;42956;Thomas Auklend;NOR;Aktiv mot kreft;M22-23;4:30:05;+ 2:04:21
+2002;42077;Pawel Milosz Szubtarski;NOR;Egencia / AmexGbt;M35-39;4:30:08;+ 2:04:25
+2003;42316;Magnus Kristoffer Bomann;NOR;;M24-34;4:30:13;+ 2:04:29
+2004;42247;Gary Pickering;AUS;;M65-69;4:30:17;+ 2:04:34
+2005;42056;Steinar Danbolt;NOR;;M24-34;4:30:23;+ 2:04:40
+2006;42290;Fabienne Mercier;FRA;;K55-59;4:30:47;+ 2:05:04
+2007;73056;Gábor Nagy;HUN;;M40-44;4:30:47;+ 2:05:04
+2008;42108;Jawad Hafeez;GBR;;M40-44;4:30:48;+ 2:05:04
+2009;41590;Peter Streijffert;NOR;;M50-54;4:30:48;+ 2:05:05
+2010;42264;Arne Andersson;SWE;;M60-64;4:30:55;+ 2:05:12
+2011;42039;Hans Endre Sæterøy;NOR;;M55-59;4:31:02;+ 2:05:19
+2012;42196;Isak Lysvold;NOR;;M22-23;4:31:11;+ 2:05:27
+2013;41547;Koen Wellens;BEL;;M60-64;4:31:24;+ 2:05:41
+2014;42390;Daniel Wilzen;SWE;;M50-54;4:31:26;+ 2:05:43
+2015;41515;Kristin M Erichsen;NOR;;K35-39;4:31:27;+ 2:05:44
+2016;42334;Anette Lie-Stenersen;NOR;;K35-39;4:31:28;+ 2:05:44
+2017;40112;N G;RSA;;;4:31:33;+ 2:05:50
+2018;41821;Jens Barklage Genannt Hilgefort;GER;;M50-54;4:31:42;+ 2:05:59
+2019;42565;Vladislav Koreniuk;NOR;Ukraine;M24-34;4:31:50;+ 2:06:07
+2020;41238;Tomasz Nowakowski;POL;Jutul IL;M50-54;4:31:55;+ 2:06:12
+2021;42703;Benedikte Henriksen;NOR;Team Lapskaus;K40-44;4:31:57;+ 2:06:14
+2022;41675;H H;NOR;;;4:32:01;+ 2:06:18
+2023;41774;Robert Anayahan;FRA;;M60-64;4:32:08;+ 2:06:24
+2024;41628;Andreas Nygård;NOR;;M24-34;4:32:10;+ 2:06:27
+2025;40123;Klas Brandt;SWE;;M50-54;4:32:12;+ 2:06:28
+2026;40285;Guilhem Vialart;FRA;;M40-44;4:32:20;+ 2:06:37
+2027;42630;Bjørn Hopperstad;NOR;Brannslokkesystemer as;M55-59;4:32:23;+ 2:06:40
+2028;42906;Sara Simonsen;NOR;;K24-34;4:32:23;+ 2:06:40
+2029;41661;Mika Filander;FIN;Laihian Luja;M40-44;4:32:24;+ 2:06:41
+2030;42896;Kjartan Dirdal;NOR;Vassøy Runners;M45-49;4:32:37;+ 2:06:53
+2031;40567;Kevin Koroma;NOR;BDO Drammen;M24-34;4:32:47;+ 2:07:04
+2032;42019;Rhiannon Dovey;NOR;;K40-44;4:32:48;+ 2:07:05
+2033;40352;Alexandra Battersby;GBR;;K40-44;4:32:49;+ 2:07:05
+2034;42538;Ask Laugerud;NOR;;M22-23;4:32:50;+ 2:07:07
+2035;41690;Karina Sørensen;NOR;;K24-34;4:32:52;+ 2:07:09
+2036;41509;Jarle Olavesen;NOR;;M50-54;4:32:54;+ 2:07:10
+2037;41558;Henriette Pedersen;NOR;;K24-34;4:32:57;+ 2:07:13
+2038;42284;Patrik Rønningen;NOR;;M24-34;4:32:58;+ 2:07:14
+2039;42168;Erik Aleksander Svendsen;NOR;;M18-21;4:33:09;+ 2:07:26
+2040;41600;Linn Drageset;NOR;Linn;K45-49;4:33:32;+ 2:07:49
+2041;42170;Robert Carr;GBR;;M55-59;4:33:44;+ 2:08:01
+2042;42122;Karin Engqvist;SWE;;K45-49;4:33:52;+ 2:08:08
+2043;41845;Johan Holt-Nilsen;NOR;;M24-34;4:33:53;+ 2:08:09
+2044;41805;Rajpreet Singh Pannu;NOR;;M55-59;4:33:58;+ 2:08:14
+2045;41598;Terje Nordhagen;NOR;;M55-59;4:34:01;+ 2:08:18
+2046;41832;Fredrik Solheim Kristensen;NOR;;M24-34;4:34:02;+ 2:08:19
+2047;41584;Max Finanger;NOR;;M24-34;4:34:03;+ 2:08:20
+2048;41448;Avery Bettis;USA;;M24-34;4:34:05;+ 2:08:21
+2049;41644;Gunnar Ramsland;NOR;;M45-49;4:34:14;+ 2:08:31
+2050;42950;Jon Maksim Nygaard Andreassen;NOR;;M24-34;4:34:23;+ 2:08:39
+2051;42650;Are Ølstad;NOR;Bamford1869;M45-49;4:34:25;+ 2:08:42
+2052;42675;Amund L Øyrås;NOR;Ingen;M24-34;4:34:26;+ 2:08:43
+2053;41683;Wolfgang Mysliwietz;AUT;;M40-44;4:34:39;+ 2:08:56
+2054;42752;Guro Handeland;NOR;The Lonesome Travellers;K24-34;4:34:44;+ 2:09:01
+2055;42280;Clara Biehl;NOR;;K24-34;4:34:45;+ 2:09:02
+2056;42281;Jesper Olsson;NOR;;M24-34;4:34:45;+ 2:09:02
+2057;42658;Sture Simon Borgen;NOR;Vidar Sportsklubben;M65-69;4:34:53;+ 2:09:09
+2058;42481;Sandra Mathisen;NOR;;K24-34;4:34:53;+ 2:09:10
+2059;40066;Jakob Schultz;NOR;Spaghetti alle vongole;M40-44;4:34:58;+ 2:09:15
+2060;40448;Des Mcdonnell;IRL;;M40-44;4:35:08;+ 2:09:25
+2061;42639;Kristine Henriksen;NOR;;K40-44;4:35:08;+ 2:09:25
+2062;42227;Oskar Örn;SWE;;M24-34;4:35:14;+ 2:09:31
+2063;42241;Hanne Klausen Dahlby;NOR;;K24-34;4:35:17;+ 2:09:34
+2064;42074;Oskar Hansen Frost;NOR;Semming IL;M22-23;4:35:24;+ 2:09:41
+2065;42034;Jens William Frodesen;NOR;Semming IL;M22-23;4:35:25;+ 2:09:41
+2066;42313;Magnus Sødergren;NOR;Dr.Dropin;M24-34;4:35:25;+ 2:09:41
+2067;42745;Ole Joar Bruset;NOR;Pipelife Norge AS;M40-44;4:35:25;+ 2:09:42
+2068;42185;Iarla Flynn;IRL;;M50-54;4:35:35;+ 2:09:52
+2069;41873;Mari Storli;NOR;;K24-34;4:35:50;+ 2:10:07
+2070;41872;Kathrine Killingland;NOR;;K24-34;4:35:50;+ 2:10:07
+2071;42555;Piotr Cebula;POL;;M24-34;4:35:54;+ 2:10:11
+2072;40577;Thomas Heim;NOR;;M24-34;4:35:56;+ 2:10:13
+2073;40529;Geir Haugland;NOR;;M60-64;4:35:58;+ 2:10:15
+2074;42568;Arnt Ove Sævik;NOR;;M45-49;4:36:00;+ 2:10:16
+2075;42839;Thor Erik Steen;NOR;;M35-39;4:36:05;+ 2:10:22
+2076;40642;William Akhtar;NOR;;M24-34;4:36:15;+ 2:10:31
+2077;41851;Emma Weilbach;RSA;;K24-34;4:36:16;+ 2:10:32
+2078;41904;Callam Collins;GBR;;M24-34;4:36:21;+ 2:10:38
+2079;42810;Jo Faafeng Gunneriussen;NOR;Team Right To Play/KPMG Puls;M24-34;4:36:31;+ 2:10:48
+2080;42900;Silje Bretteville;NOR;;K18-21;4:36:37;+ 2:10:53
+2081;42450;Joakim Løhren;NOR;;M24-34;4:36:39;+ 2:10:56
+2082;42593;Håvard Falck;NOR;;M24-34;4:36:42;+ 2:10:58
+2083;41681;B C;USA;;;4:36:48;+ 2:11:05
+2084;41323;Vladimir Komendantskiy;GBR;;M40-44;4:37:04;+ 2:11:20
+2085;73008;Trond Treet;NOR;FASiA Sport & Rehab;M50-54;4:37:04;+ 2:11:21
+2086;40304;Magnus Midthun;NOR;;M22-23;4:37:05;+ 2:11:21
+2087;42979;William Nafstad;NOR;Aktiv mot kreft;M24-34;4:37:13;+ 2:11:30
+2088;42566;Ewa Piwonska;POL;;K50-54;4:37:17;+ 2:11:33
+2089;42082;Roberta Ruth Campbell;GBR;Springwell running club;K40-44;4:37:22;+ 2:11:38
+2090;41696;Mathias Kjær Østergaard Andersen;DEN;;M24-34;4:37:22;+ 2:11:39
+2091;41861;Anette Ibenholt;NOR;Forsvarsmateriell;K35-39;4:37:28;+ 2:11:45
+2092;42583;Dan Atle Solheim;NOR;Buns of Steel;M40-44;4:37:38;+ 2:11:54
+2093;40993;Ingrid Bredesen Hangaas;NOR;Bodø bauta løpeklubb;K45-49;4:37:41;+ 2:11:58
+2094;42621;Frederic Taillier;FRA;;M50-54;4:37:45;+ 2:12:02
+2095;41853;Siri Wilhelmsen;NOR;;K24-34;4:37:49;+ 2:12:05
+2096;42589;Gustaf Asker;NOR;Team BMW;M24-34;4:37:52;+ 2:12:09
+2097;42519;Tanya Wallin;NOR;;K45-49;4:37:52;+ 2:12:09
+2098;41640;Liudmyla Luchynska;NOR;;K40-44;4:37:54;+ 2:12:10
+2099;42489;Kevin Christy;NOR;;M24-34;4:37:56;+ 2:12:12
+2100;40185;Yngve Stiansen;NOR;Arendal politiidrettslag;M45-49;4:38:03;+ 2:12:20
+2101;42105;Carlos Queiroz;BRA;;M50-54;4:38:05;+ 2:12:22
+2102;41542;Oyuka Larring;NOR;;K45-49;4:38:15;+ 2:12:32
+2103;42872;Simen Stenersen;NOR;;M24-34;4:38:23;+ 2:12:40
+2104;41860;Vegard Hagen;NOR;;M24-34;4:38:23;+ 2:12:40
+2105;42953;Heidi Strøm;NOR;;K50-54;4:38:31;+ 2:12:47
+2106;41517;Gry-Hege Vikan Fjeld;NOR;;K45-49;4:38:31;+ 2:12:48
+2107;42983;Fredrik Jansson;NOR;;M50-54;4:38:32;+ 2:12:48
+2108;41002;Henri Vainikainen;NOR;ØPIL;M24-34;4:38:32;+ 2:12:49
+2109;41572;Sofie Christiansen;NOR;;K22-23;4:38:37;+ 2:12:54
+2110;40240;Sander Jahren Stensrud;NOR;;M24-34;4:38:38;+ 2:12:54
+2111;42401;Veikko Mäkinen;FIN;;M40-44;4:38:49;+ 2:13:06
+2112;40733;Ernie Ernst;SUI;;M50-54;4:38:57;+ 2:13:13
+2113;42382;Philip J. Kerr;SWE;;M24-34;4:39:05;+ 2:13:22
+2114;42062;Sigurd Bakko;NOR;;M24-34;4:39:09;+ 2:13:26
+2115;42518;Cécile Crendal;FRA;;K24-34;4:39:34;+ 2:13:51
+2116;41622;Renju Kochumman Raju;IND;Team Kerala;M35-39;4:39:39;+ 2:13:56
+2117;42651;Liam Turner;NOR;Bamford1869;M45-49;4:39:40;+ 2:13:57
+2118;42894;Niklas Lorentzen;NOR;;M24-34;4:39:44;+ 2:14:01
+2119;41557;Geir Dahl;NOR;NKI Fagskoler AS;M50-54;4:39:45;+ 2:14:02
+2120;41702;Sead Alijagic;NOR;;M60-64;4:39:55;+ 2:14:11
+2121;41848;Jean Pierre Plebani;ITA;Podistica Solidarieta;M50-54;4:39:58;+ 2:14:15
+2122;42403;Håkon Eikeland;NOR;;M24-34;4:39:59;+ 2:14:16
+2123;42551;Ismail Acar;NOR;;M24-34;4:40:12;+ 2:14:29
+2124;41783;Adnan Fouikri;NOR;;M24-34;4:40:18;+ 2:14:34
+2125;41564;Solrun Fjelstad;NOR;;K55-59;4:40:19;+ 2:14:36
+2126;42466;Lise Marthe Aasvik;NOR;;K40-44;4:40:22;+ 2:14:39
+2127;41688;Mykola Blokhin;UKR;;M24-34;4:40:27;+ 2:14:43
+2128;42024;Synne Fredriksen;NOR;;K24-34;4:40:31;+ 2:14:48
+2129;42228;Alexey Airikh;KAZ;;M50-54;4:40:42;+ 2:14:59
+2130;42430;Alex Christoffersen;NOR;;M18-21;4:40:52;+ 2:15:09
+2131;42840;Andreas Lervik;NOR;Team Aremark;M50-54;4:40:54;+ 2:15:11
+2132;41594;Leif Uwe Vogelsang;NOR;;M40-44;4:41:02;+ 2:15:19
+2133;42641;Tom Andreas Paulsen;NOR;Romerike Ultraløperklubb;M45-49;4:41:11;+ 2:15:28
+2134;41827;Jacques Riedinger;FRA;;M55-59;4:41:11;+ 2:15:28
+2135;42029;Bjørn-Tore Lorgen;NOR;;M24-34;4:41:14;+ 2:15:31
+2136;42660;Kari Heggenes Kvammen;NOR;Voss IL;K55-59;4:41:29;+ 2:15:45
+2137;42061;Olena Baginska;CAN;;K40-44;4:41:33;+ 2:15:50
+2138;42844;Christine Marcussen;NOR;Bamford1869;K35-39;4:41:41;+ 2:15:58
+2139;42031;Terje Eliassen;NOR;@Froztrunner;M45-49;4:41:41;+ 2:15:58
+2140;41144;Krzysztof Sabisz;POL;Arka Gdynia;M45-49;4:41:45;+ 2:16:01
+2141;42980;Jacob Stålesen;NOR;;M24-34;4:41:49;+ 2:16:06
+2142;42502;Sølve Skår;NOR;Team Rask;M24-34;4:42:02;+ 2:16:18
+2143;40092;Manuel Jorge Neves;POR;;M50-54;4:42:12;+ 2:16:28
+2144;40625;"Wojciech P&#322;awiak";POL;;M35-39;4:42:20;+ 2:16:36
+2145;42805;Geir Magne Skjeldnes;NOR;Kyrksæterøra IL;M45-49;4:42:25;+ 2:16:42
+2146;41749;Geir Vevle;NOR;Team Broby;M40-44;4:42:33;+ 2:16:50
+2147;42476;Steffi Prabel;NOR;;K40-44;4:42:41;+ 2:16:58
+2148;41652;Erlend Førsund;NOR;;M45-49;4:42:43;+ 2:16:59
+2149;41570;Hege Kvitting;NOR;Røykås Racing Girls;K50-54;4:42:47;+ 2:17:03
+2150;42876;Tobias Brandsegg;NOR;;M22-23;4:42:49;+ 2:17:05
+2151;42161;Sigrid Lønn;NOR;;K45-49;4:43:00;+ 2:17:17
+2152;42312;Trude Een Eide;NOR;;K45-49;4:43:00;+ 2:17:17
+2153;73125;Arslan Fareedoon Bhatti;NOR;;M35-39;4:43:09;+ 2:17:25
+2154;1087;Kristian Tysseland;NOR;IL Koll;M18-21;4:43:14;+ 2:17:31
+2155;41577;Lillian Holm;NOR;;K50-54;4:43:15;+ 2:17:31
+2156;42370;Lars Hilmer;GER;PM Racing Team;M24-34;4:43:17;+ 2:17:33
+2157;42369;Daniel Strack;GER;PM Racing Team;M24-34;4:43:17;+ 2:17:34
+2158;42371;Alexander Schüssler;GER;PM Racing Team;M24-34;4:43:18;+ 2:17:34
+2159;42472;Nicolai Dahl;NOR;;M22-23;4:43:24;+ 2:17:40
+2160;42915;Daniel Meinecke;NOR;;M35-39;4:43:29;+ 2:17:46
+2161;41037;Paz Palomino Puerto;ESP;GUERRERAS FLAMENCAS CD;K40-44;4:43:30;+ 2:17:46
+2162;40847;Hedda Østby Nystuen;NOR;;K18-21;4:43:38;+ 2:17:55
+2163;1115;Grete Håvåg Lothe;NOR;Korlevoll-Odda IL;K70-74;4:43:40;+ 2:17:56
+2163;42919;Mathias Thorstensen;NOR;Anton Sport;M22-23;4:43:40;+ 2:17:56
+2165;41513;Hilde Bjertnæs;NOR;;K60-64;4:43:40;+ 2:17:57
+2166;42973;Emil Mohr-Skogan;NOR;;M18-21;4:43:44;+ 2:18:01
+2167;40084;Gabriel Ionut Ples;NOR;;M40-44;4:43:50;+ 2:18:07
+2168;42471;Magnus Wennberg;NOR;;M24-34;4:43:52;+ 2:18:08
+2169;42504;Taylor Jean;NOR;;M24-34;4:43:53;+ 2:18:10
+2170;42503;Andrius B;NOR;Zydrunas and Mantas WIMHOF TEAM;M35-39;4:43:56;+ 2:18:12
+2171;41854;Simon Dyhr;NOR;;M35-39;4:43:57;+ 2:18:13
+2172;42501;Anders Reiersen;NOR;Team Rask;M24-34;4:44:15;+ 2:18:32
+2173;42604;Trygve Bakken;NOR;;M18-21;4:44:25;+ 2:18:42
+2174;41943;Marcin Jakimiuk;POL;;M35-39;4:44:29;+ 2:18:45
+2175;42432;Eivind Van;NOR;;M22-23;4:44:31;+ 2:18:47
+2176;40402;Maurizio Bodano;ITA;Urban Runners Milano;M50-54;4:44:31;+ 2:18:48
+2177;42936;Olav Grøttland;NOR;;M55-59;4:44:32;+ 2:18:49
+2178;42335;Elisabet Scheiderbauer;SWE;MS Fighters;K45-49;4:44:47;+ 2:19:04
+2179;42442;Judith Strack;GER;Marathon4you.de;K60-64;4:44:51;+ 2:19:08
+2180;42360;Magnus Henrichsen;NOR;;M24-34;4:44:57;+ 2:19:13
+2181;41745;Tobias Knøsmoen;NOR;;M40-44;4:44:59;+ 2:19:16
+2182;42798;Andreas Ivarsson;SWE;BMW;M24-34;4:45:01;+ 2:19:18
+2183;41378;Grzegorz la&#324;POL;AR Running Team;M24-34;4:45:13;+ 2:19:30
+2184;42904;Marius Westerhaug;NOR;;M35-39;4:45:20;+ 2:19:37
+2185;42848;Raquel Galetto;MEX;Fartsholdere Oslo Maraton 2023;K50-54;4:45:26;+ 2:19:43
+2186;42847;Sayra Barraza;NOR;Fartsholdere Oslo Maraton 2023;K45-49;4:45:27;+ 2:19:43
+2187;73029;Jan Morten Hornseth;NOR;Norsk Tipping BIL;M50-54;4:45:38;+ 2:19:54
+2188;42131;Morteza Vaseghi;NOR;;M40-44;4:45:41;+ 2:19:57
+2189;41581;Dagfinn Sæther;NOR;;M65-69;4:45:48;+ 2:20:04
+2190;42998;Gjermund Myrvang;NOR;;M22-23;4:45:52;+ 2:20:08
+2191;41717;Sven Klinger;GER;;M50-54;4:45:52;+ 2:20:09
+2192;42911;Sindre Maximus Neby;NOR;Anton Sport;M24-34;4:45:54;+ 2:20:10
+2193;73030;Artur Majder;POL;;M45-49;4:45:57;+ 2:20:13
+2194;42213;Kristiane Austad;NOR;;K24-34;4:46:03;+ 2:20:20
+2195;42297;Mariann Solheim Føinum;NOR;Ugler i mosen;K24-34;4:46:13;+ 2:20:30
+2196;42687;Prathap Salian;NOR;Runners High;M40-44;4:46:20;+ 2:20:36
+2197;42935;Dilip Sarang;NOR;;M35-39;4:46:21;+ 2:20:37
+2198;42276;Komba Teddy Hashim;TAN;;M45-49;4:46:21;+ 2:20:38
+2199;41968;Kai Man Edgar Ng;HKG;;M60-64;4:46:26;+ 2:20:43
+2200;42888;Bjørnar Sjølie;NOR;;M40-44;4:46:28;+ 2:20:44
+2201;40599;Pontus Blomster;FIN;PBKonsult;M50-54;4:46:34;+ 2:20:51
+2202;42830;Kasper Lien;NOR;;M22-23;4:46:38;+ 2:20:54
+2203;41535;Thomas Strandos-Lundesgaard;NOR;;M24-34;4:46:39;+ 2:20:56
+2204;41905;Elisabeth Nyland;NOR;;K35-39;4:46:43;+ 2:20:59
+2205;42018;Vincent Velasco;NOR;;M24-34;4:46:52;+ 2:21:09
+2206;41989;Frederik Haugan;NOR;;M22-23;4:46:53;+ 2:21:09
+2207;42975;Jonas Rystedt;SWE;;M50-54;4:46:53;+ 2:21:10
+2208;41775;Roman Vesely;NOR;;M55-59;4:46:58;+ 2:21:15
+2209;40238;Kristin Øverlien;NOR;;K50-54;4:46:59;+ 2:21:16
+2210;42608;Nora Tjäder;NOR;;K35-39;4:47:04;+ 2:21:21
+2211;42903;Sander Hansen;NOR;;M18-21;4:47:12;+ 2:21:29
+2212;42366;Agnese Ozolina;SWE;Sisters;K24-34;4:47:26;+ 2:21:43
+2213;18;Agita Ozolina;LAT;;K24-34;4:47:26;+ 2:21:43
+2214;42978;Nicolas Manus;NOR;Aktiv mot kreft;M24-34;4:47:32;+ 2:21:48
+2215;41803;Magdalena Radzik;POL;;K45-49;4:47:36;+ 2:21:53
+2216;41800;Hubert Getta;GER;;M55-59;4:47:41;+ 2:21:58
+2217;42527;Jo Inge Kjellvang;NOR;;M45-49;4:47:41;+ 2:21:58
+2218;42032;Dusan Lovre;SRB;;M40-44;4:47:44;+ 2:22:00
+2219;42333;Maurits Kvåle;NOR;;M24-34;4:47:53;+ 2:22:09
+2220;42151;Kari Heggemsnes;NOR;;K55-59;4:48:06;+ 2:22:23
+2221;41633;Kristian Øie Jensen;NOR;HBL;M55-59;4:48:11;+ 2:22:27
+2222;42722;Harald Mo;NOR;Sogndal IL;M55-59;4:48:20;+ 2:22:36
+2223;42473;Danae Chaldeou;GRE;;K22-23;4:48:20;+ 2:22:36
+2224;73048;Torstein Eliassen;NOR;Moss IL;M24-34;4:48:29;+ 2:22:46
+2225;41927;Jan Petter Kristensen;NOR;;M35-39;4:48:55;+ 2:23:12
+2226;42901;Robert Sanderson;AUS;;M18-21;4:49:03;+ 2:23:19
+2227;41597;Joachim Løe;NOR;;M40-44;4:49:05;+ 2:23:21
+2228;41979;Sander Krogstad;NOR;;M24-34;4:49:15;+ 2:23:32
+2229;42549;Gro Lillian Netland Hulløen;NOR;;K60-64;4:49:17;+ 2:23:33
+2230;41621;Terje Hult;NOR;Team Sportsmanden;M65-69;4:49:19;+ 2:23:35
+2231;42728;Patriq Backlund;NOR;Madrunners;M50-54;4:49:38;+ 2:23:54
+2232;1051;Karianne Larsen;NOR;BUL IL;K24-34;4:49:54;+ 2:24:10
+2233;41695;Jun Yin;NOR;;K40-44;4:49:57;+ 2:24:14
+2234;41642;Frode Brandal;NOR;Ik Hero;M75-79;4:50:09;+ 2:24:25
+2235;42177;Maryam Naseri;NOR;;K24-34;4:50:15;+ 2:24:32
+2236;41526;Terje Bergman;NOR;;M60-64;4:50:23;+ 2:24:40
+2237;41737;Christer Aver;NOR;;M24-34;4:50:28;+ 2:24:44
+2238;40982;Bård-Andre Larssen;NOR;;M24-34;4:50:34;+ 2:24:51
+2239;42180;Roman Mendez;IRL;;M40-44;4:50:39;+ 2:24:55
+2240;41555;Maria Karlsen;NOR;;K40-44;4:50:45;+ 2:25:02
+2241;42146;Arnt Cederholm;NOR;;M65-69;4:50:46;+ 2:25:03
+2242;41836;Eirik Aleksander Bang;NOR;;M18-21;4:50:54;+ 2:25:11
+2243;42040;Thomas Bråthen;NOR;;M24-34;4:51:02;+ 2:25:19
+2244;42813;Jørgen Andreas Gjestvang;NOR;Team Right To Play/KPMG Puls;M24-34;4:51:22;+ 2:25:39
+2245;41778;Stian Løvås;NOR;;M24-34;4:51:30;+ 2:25:46
+2246;41950;Ricky Passam;GBR;;M50-54;4:51:31;+ 2:25:48
+2247;42298;Olivia Henriksson;SWE;;K24-34;4:51:33;+ 2:25:50
+2248;42659;Arne Hasvoll;NOR;Horten Friidrettsklubb;M75-79;4:51:35;+ 2:25:52
+2249;40194;Sindre Birkeland;NOR;;M24-34;4:51:38;+ 2:25:54
+2250;42379;Vebjørn Hobbesland;NOR;;M24-34;4:51:51;+ 2:26:07
+2251;42749;Bjørnar Bostad Haugerud;NOR;Gran Consult AS;M24-34;4:51:57;+ 2:26:13
+2252;41560;Karoline Rivero Bernacki;NOR;;K24-34;4:52:05;+ 2:26:21
+2253;42219;Tobias Pettersson;SWE;Jon å gänget;M45-49;4:52:06;+ 2:26:23
+2254;42300;Sunniva Finne;NOR;Phonero;K40-44;4:52:06;+ 2:26:23
+2255;42541;Sone Næss;NOR;;M24-34;4:52:18;+ 2:26:35
+2256;41840;Øyvind Raad;NOR;;M50-54;4:52:20;+ 2:26:37
+2257;42985;Serine Lunde;NOR;;K24-34;4:52:21;+ 2:26:37
+2258;42121;Siri Åmot;NOR;Data Respons;K55-59;4:52:21;+ 2:26:38
+2259;42508;Bartek Mioskowski;NOR;UNGEKATTERKOLLEKTIVET;M24-34;4:52:23;+ 2:26:40
+2260;42174;Jens Otto Finstad Michelsen;NOR;NHHI HÅNDBALL;M24-34;4:52:25;+ 2:26:42
+2261;42751;Lindy Aasgaard;NOR;The Lonesome Travellers;K45-49;4:52:29;+ 2:26:45
+2262;42190;Victoria Tviberg;NOR;;K24-34;4:52:35;+ 2:26:51
+2263;42030;Parisa Shakari;NOR;;K24-34;4:52:43;+ 2:26:59
+2264;42327;Anders Næss Evensen;NOR;;M35-39;4:52:47;+ 2:27:04
+2265;41820;Charalampos Lianos;GRE;;M40-44;4:52:52;+ 2:27:09
+2266;73090;Erik Nord Søvik;NOR;;M18-21;4:52:53;+ 2:27:10
+2267;42544;Asta Grauslyte;LTU;;K24-34;4:53:04;+ 2:27:20
+2268;42398;Iselin Haug;NOR;;K24-34;4:53:06;+ 2:27:23
+2269;42774;Christian Løvstad;NOR;NoA;M24-34;4:53:10;+ 2:27:27
+2270;41532;Jon Hovden;NOR;Toten treningssenter;M65-69;4:53:16;+ 2:27:33
+2271;42524;Kenneth Bahl;NOR;;M22-23;4:53:24;+ 2:27:40
+2272;41580;Rahul Raghunath Shinde;IND;;M35-39;4:53:28;+ 2:27:44
+2273;42285;Arnaud Putois;FRA;;M55-59;4:53:36;+ 2:27:52
+2274;41972;Grethe Madeleine Børke-Jensen;NOR;EY BIL;K24-34;4:53:36;+ 2:27:53
+2275;42428;Christoffer Buraas;NOR;;M22-23;4:53:40;+ 2:27:57
+2276;42026;Lydia Pollock;GBR;;K24-34;4:53:48;+ 2:28:05
+2277;42730;Ridvan Akinci;NOR;;M24-34;4:53:50;+ 2:28:06
+2278;42349;Inge Magnus;NOR;;M24-34;4:54:13;+ 2:28:30
+2279;42155;Pauline Duke;GBR;Springwell running club;K50-54;4:54:18;+ 2:28:34
+2280;42999;Dobrota Hofmeisterova;CZE;;K22-23;4:54:19;+ 2:28:36
+2280;42997;Matyas Urban;CZE;DOMA;M22-23;4:54:19;+ 2:28:36
+2282;42246;Crystal Shiu;AUS;;K35-39;4:54:37;+ 2:28:53
+2283;42014;Anders Skinnerud;NOR;;M50-54;4:54:41;+ 2:28:58
+2284;42080;Alanna Millar;GBR;Springwell running club;K24-34;4:54:44;+ 2:29:01
+2285;41647;Bernt Olav Øvregaard;NOR;;M70-74;4:54:45;+ 2:29:02
+2286;41955;Trym Engja;NOR;;M22-23;4:54:51;+ 2:29:07
+2287;42282;Atle Stavdal;NOR;Team Stavdal;M55-59;4:54:55;+ 2:29:12
+2288;42157;Ida Marie Folden-Sørgården;NOR;;K18-21;4:54:59;+ 2:29:16
+2289;41994;Grant Tyrrell;NZL;;M45-49;4:55:14;+ 2:29:30
+2290;41877;Andrea Leikvoll Karlsen;NOR;;K22-23;4:55:17;+ 2:29:34
+2291;42193;Guillaume Pinel;FRA;;M24-34;4:55:24;+ 2:29:41
+2292;42465;Marianne Haugeplass;NOR;;K40-44;4:55:25;+ 2:29:42
+2293;42200;Brianna Patterson;USA;;K24-34;4:55:35;+ 2:29:52
+2294;42509;Juri Marcinkevicz;EST;Sporttravel;M55-59;4:55:35;+ 2:29:52
+2295;40514;Alexandre Carlier;FRA;;M40-44;4:55:36;+ 2:29:53
+2296;42629;Merete Støverud Stokke;NOR;;K50-54;4:55:51;+ 2:30:08
+2297;42354;Gunnar Vorren;NOR;;M55-59;4:55:53;+ 2:30:10
+2298;42898;Adriana Bodilcu;ROU;;K45-49;4:55:59;+ 2:30:16
+2299;41618;Jan Erik Sæther Ask;NOR;;M45-49;4:56:04;+ 2:30:20
+2300;42287;Thomas Hansen;NOR;;M24-34;4:56:23;+ 2:30:40
+2301;42286;Benjamin Lindseth;NOR;;M24-34;4:56:24;+ 2:30:41
+2302;42306;Jayeong Song;KOR;;K24-34;4:56:39;+ 2:30:56
+2303;42305;Ivan Korsak;UKR;;M24-34;4:56:39;+ 2:30:56
+2304;42862;Jaime Diaz;NOR;FiveLiterGang!;M50-54;4:56:45;+ 2:31:02
+2305;41967;Hanne Karlsen;NOR;;K50-54;4:56:48;+ 2:31:04
+2306;42537;Konrad Palmer;NOR;;M40-44;4:56:54;+ 2:31:10
+2307;42910;Helle Cecilie Palmer;NOR;Løvemammaene;K40-44;4:56:54;+ 2:31:11
+2308;41549;Ida Kristine Seppola;NOR;;K35-39;4:56:57;+ 2:31:14
+2309;40186;Balwayne Phillips;JAM;;M40-44;4:57:00;+ 2:31:17
+2310;42240;Valentina Bellomi;ITA;;K35-39;4:57:12;+ 2:31:28
+2311;42176;Casper Larsen;DEN;Vikingchef;M24-34;4:57:20;+ 2:31:37
+2312;1097;Harald Sel;NOR;Bryne Friidrettsklubb;M80-84;4:57:22;+ 2:31:39
+2313;1019;Kirste Sandness;NOR;Bodø Friidrettsklubb;K60-64;4:57:27;+ 2:31:44
+2314;41990;Rose Van Der Hilst;NOR;;K40-44;4:57:29;+ 2:31:45
+2315;41951;Curtis Lasher;NOR;;M35-39;4:57:32;+ 2:31:49
+2316;42331;Nickolas Czyzewski;USA;;M35-39;4:57:33;+ 2:31:49
+2317;42491;Natalie Byklum;NOR;;K18-21;4:57:38;+ 2:31:54
+2318;40484;Kjell Ove Særheim;NOR;;M24-34;4:57:43;+ 2:31:59
+2319;42615;Pär Kristian Rangmar;SWE;;M40-44;4:57:53;+ 2:32:09
+2320;42505;Håkan Wallin;SWE;;M45-49;4:58:02;+ 2:32:19
+2321;40759;Shih Jhe Huang;TPE;;M24-34;4:58:04;+ 2:32:20
+2322;42483;Jon Reidar Johnsen Hyttedalen;NOR;;M24-34;4:58:05;+ 2:32:21
+2323;41833;Simen Nordengen;NOR;;M24-34;4:58:07;+ 2:32:23
+2324;42625;Andreas Sunde;NOR;;M50-54;4:58:08;+ 2:32:25
+2325;42514;Torje Løland;NOR;;M18-21;4:58:19;+ 2:32:35
+2326;42513;Tone-Lill Løland;NOR;;K45-49;4:58:19;+ 2:32:36
+2327;42251;Marcus Magnussen;NOR;;M24-34;4:58:20;+ 2:32:37
+2328;42172;Hod Stern;NOR;;M50-54;4:58:28;+ 2:32:44
+2329;42773;Lene Krogvold Jonasson;NOR;NoA;K45-49;4:58:28;+ 2:32:45
+2330;42729;;NOR;;;4:58:31;+ 2:32:48
+2331;42990;Viktor Näslund;SWE;;M22-23;4:58:41;+ 2:32:57
+2332;42957;Philipp Lehnertz;GER;;M18-21;4:58:51;+ 2:33:08
+2333;1047;Henrik Fredriksen Tempelen;NOR;Alta IF;M24-34;4:58:57;+ 2:33:13
+2334;42261;Maelys Lapalus;NOR;;K24-34;4:59:15;+ 2:33:32
+2335;42533;Monica Egeberg;NOR;;K50-54;4:59:21;+ 2:33:38
+2336;42204;Fredrik Jakobsson;SWE;Mindflower;M45-49;4:59:29;+ 2:33:46
+2337;41975;Thomas Gislerud;NOR;Team Gislerud Carpets;M45-49;4:59:30;+ 2:33:46
+2338;41610;Kenth Anders Nygaard;NOR;;M45-49;4:59:49;+ 2:34:05
+2339;41841;Jacek Schmidt;POL;;M55-59;4:59:51;+ 2:34:08
+2340;42130;Sara Stavem;NOR;;K24-34;5:00:02;+ 2:34:18
+2341;40951;Kjell Magnus Habberstad;NOR;;M35-39;5:00:05;+ 2:34:21
+2342;42652;Lise Grønskar;NOR;Bamford1869;K35-39;5:00:26;+ 2:34:43
+2343;1042;Inge Asbjørn Haugen;NOR;Hornindal IL;M70-74;5:00:28;+ 2:34:45
+2344;42523;Nicola Nixon;GBR;;K24-34;5:00:30;+ 2:34:46
+2345;42522;Thomas Purnell;GBR;;M24-34;5:00:32;+ 2:34:48
+2346;42033;Håkon Brandal Åsebø;NOR;Semming IL;M22-23;5:00:37;+ 2:34:53
+2347;42267;Vetle Fleiner;NOR;;M24-34;5:00:39;+ 2:34:56
+2348;42485;Hugo Sollie;NOR;;M65-69;5:00:40;+ 2:34:57
+2349;42534;Filip Kjønnø;NOR;;M18-21;5:00:45;+ 2:35:02
+2350;73027;David Beard;RSA;;M60-64;5:00:48;+ 2:35:05
+2351;42453;Victoria Celine Hildebrandt;NOR;;K24-34;5:01:01;+ 2:35:18
+2352;42490;Sander Sandnes;NOR;;M22-23;5:01:02;+ 2:35:19
+2353;42347;Jan Erik Andersen;NOR;;M50-54;5:01:06;+ 2:35:22
+2354;42008;Rikke Bjerre;DEN;;K45-49;5:01:12;+ 2:35:29
+2355;41579;Kaisa Filtvedt;NOR;Gin Turbo Løbeforæning;K24-34;5:01:23;+ 2:35:40
+2356;42553;Onyebuchi Okolo;NOR;Roundabouts spirit's;M24-34;5:01:27;+ 2:35:44
+2357;42545;Dainius Grauslys;LTU;;M22-23;5:01:31;+ 2:35:47
+2358;40707;Mateo Huljev;NOR;;M24-34;5:01:39;+ 2:35:56
+2359;42849;Vidar Blaafjelldal;NOR;Fartsholdere Oslo Maraton 2023;M65-69;5:01:40;+ 2:35:57
+2360;42258;Egle Brerro;LTU;;K35-39;5:01:45;+ 2:36:01
+2361;42296;Christopher Paddon;NOR;;M24-34;5:01:53;+ 2:36:10
+2362;41715;Markus Straubinger;GER;;M50-54;5:01:58;+ 2:36:15
+2363;41524;Jonas Nilsson;NOR;;M55-59;5:02:11;+ 2:36:27
+2364;41650;Sandra González Checa;ESP;;K24-34;5:03:04;+ 2:37:20
+2365;42049;Sigurd Eidem;NOR;;M24-34;5:03:11;+ 2:37:28
+2366;42449;Chris Kiddey;GBR;;M18-21;5:03:28;+ 2:37:44
+2367;41516;Gernot Ernst;GER;Sosialistisk Idrettslag Meheia;M55-59;5:03:41;+ 2:37:57
+2368;42795;Sana Khan;NOR;Oslo Maraton x Jevi Majid;K35-39;5:03:45;+ 2:38:01
+2369;42293;Rikke Biseth Borregaard;NOR;;K24-34;5:03:45;+ 2:38:01
+2370;42386;Csilla Prosser;AUT;100 Marathon Club Austria;K55-59;5:03:47;+ 2:38:04
+2371;42188;Sasa Blagojevic;SRB;;M50-54;5:04:59;+ 2:39:15
+2372;41574;Andy Mcniven;NOR;;M45-49;5:05:01;+ 2:39:18
+2373;42189;Celine Helene Didriksen;NOR;;K24-34;5:05:02;+ 2:39:19
+2374;42149;Magnus Fjellstad;NOR;;M24-34;5:05:13;+ 2:39:30
+2375;41330;Jonas Lie;NOR;;M18-21;5:05:16;+ 2:39:33
+2376;42337;Jonatan Brattström;NOR;;M24-34;5:05:27;+ 2:39:44
+2377;42895;Gard Haug;NOR;Team Classic Full Rulle;M18-21;5:05:33;+ 2:39:49
+2378;42392;Maria Magdalena Chiruta;NOR;;K40-44;5:05:45;+ 2:40:02
+2379;41154;Vemund Refnin;NOR;;M24-34;5:06:15;+ 2:40:31
+2380;42365;Marta Pawlowska;NOR;;K24-34;5:06:15;+ 2:40:32
+2381;40841;Carl V H Gulbrandsen;NOR;;M24-34;5:06:16;+ 2:40:32
+2382;42015;Christoph Solenthaler;SUI;;M50-54;5:06:39;+ 2:40:56
+2383;41780;Konstantin Afonin;NEU;;M40-44;5:06:50;+ 2:41:07
+2384;42223;Kelin Coleman;FRA;;K24-34;5:07:31;+ 2:41:47
+2385;41091;Martin Jonassen;NOR;Jonassen bil;M24-34;5:07:31;+ 2:41:48
+2386;42674;Markus Jonassen;NOR;Ingen;M24-34;5:07:32;+ 2:41:48
+2387;41752;Tom Haugeplass;NOR;;M40-44;5:07:40;+ 2:41:56
+2388;41714;Volker Schmidt;GER;;M55-59;5:07:53;+ 2:42:09
+2389;42864;Firdovsi Karimov;AZE;Baku Marathon Club;M40-44;5:07:58;+ 2:42:14
+2390;42009;Lisbeth Broløs Brøndum;DEN;;K55-59;5:08:08;+ 2:42:25
+2391;42324;Nikolas Leuhold;SUI;;M24-34;5:08:17;+ 2:42:34
+2392;41537;Prem Chand;NOR;;M24-34;5:08:20;+ 2:42:37
+2393;42053;Luca Biagi;ITA;Opera Runner;M45-49;5:08:22;+ 2:42:39
+2394;42260;Jan Øivind Wold;NOR;;M24-34;5:08:44;+ 2:43:01
+2395;42263;Jesper Henriksen;NOR;;M24-34;5:08:44;+ 2:43:01
+2396;42765;Martin André Aamodt;NOR;Jula Norge;M24-34;5:08:45;+ 2:43:01
+2397;73039;Marius Ødegård;NOR;BUL IL;M45-49;5:08:48;+ 2:43:05
+2398;41768;Martin Wright;GBR;Warrington Tri Club;M50-54;5:08:51;+ 2:43:08
+2399;40033;Steinar Gulden;NOR;;M50-54;5:09:01;+ 2:43:18
+2400;42816;Tor Øyel Kaldestad;NOR;Team Right To Play/KPMG Puls;M24-34;5:09:16;+ 2:43:32
+2401;42229;Guri Bjerkeli;NOR;;K60-64;5:09:16;+ 2:43:32
+2402;42393;Geir Johan Hegna;NOR;;M45-49;5:10:06;+ 2:44:22
+2403;41928;Emil Grönlund;SWE;Gott Snack;M24-34;5:10:40;+ 2:44:56
+2404;42941;Jon Weydahl;NOR;Drøbak maratonklubb;M60-64;5:10:44;+ 2:45:00
+2405;42743;;NOR;;;5:11:08;+ 2:45:25
+2406;42858;Asma Manai;NOR;;K24-34;5:11:10;+ 2:45:27
+2407;41738;Tobias Karlsson;SWE;;M35-39;5:11:28;+ 2:45:44
+2408;42517;Aleksandra Zajac;POL;;K24-34;5:11:36;+ 2:45:53
+2409;42027;Trym Ramberg;NOR;NTK;M22-23;5:11:52;+ 2:46:09
+2410;41759;Martin Nguyen;NOR;;M24-34;5:11:54;+ 2:46:11
+2411;42668;Stig Andre Lippert;NOR;Ingen;M24-34;5:12:07;+ 2:46:24
+2412;42642;Runar Thorstensen;NOR;Romerike Ultraløperklubb;M50-54;5:12:17;+ 2:46:34
+2413;42892;Daniel Grønhaug;NOR;Norges Bank;M22-23;5:13:09;+ 2:47:26
+2414;42912;Mohammad Khyam Younas;NOR;;M24-34;5:13:24;+ 2:47:40
+2415;42351;Andreas Netteland;NOR;;M24-34;5:13:25;+ 2:47:42
+2416;42868;Johanna Mwakimako;NOR;;K35-39;5:13:28;+ 2:47:44
+2417;41676;D K;NOR;;;5:13:41;+ 2:47:57
+2418;42560;Malin H. Rohde;NOR;Sportsjentene;K24-34;5:13:46;+ 2:48:03
+2419;41947;Henrik Muller;NOR;;M22-23;5:14:34;+ 2:48:51
+2420;42575;Lars Mathias Bjunes;NOR;Grimstad;M24-34;5:14:59;+ 2:49:15
+2421;42474;Nils Tomas Hörnqvist;SWE;;M50-54;5:15:04;+ 2:49:20
+2422;42076;Gillian Mitchell;GBR;;K55-59;5:15:07;+ 2:49:23
+2423;42384;Kintu Andrew Kavuma;UGA;;M45-49;5:15:11;+ 2:49:28
+2424;42224;Bettina Graham Hansen;NOR;;K55-59;5:15:27;+ 2:49:43
+2425;41609;Silje Sværen;NOR;Team Jøsneset;K50-54;5:15:39;+ 2:49:56
+2426;40236;Jonas Glendrange;NOR;;M35-39;5:15:42;+ 2:49:58
+2427;41998;Styrk Heen;NOR;Team Metereter;M24-34;5:15:46;+ 2:50:03
+2428;73005;Jarle Dregelid;NOR;;M24-34;5:16:39;+ 2:50:56
+2429;42358;Maria Del Mar Bernal Muñoz;ESP;;K50-54;5:16:53;+ 2:51:09
+2430;42867;Axel Kleivane;NOR;;M24-34;5:16:54;+ 2:51:10
+2431;42477;Wolfgang Peter Mnich;GER;;M60-64;5:16:54;+ 2:51:11
+2432;42254;David Bowler;GBR;;M35-39;5:17:31;+ 2:51:47
+2433;42301;Inger Lise Skogen;NOR;;K45-49;5:17:55;+ 2:52:12
+2434;41669;Chun Yu Lau;HKG;Team Flow;M35-39;5:18:23;+ 2:52:40
+2435;41694;David Völgyes;HUN;;M40-44;5:18:36;+ 2:52:53
+2436;42899;Egil Brekke;NOR;;M22-23;5:19:22;+ 2:53:39
+2437;42972;Erik Marthinussen;NOR;;M24-34;5:19:42;+ 2:53:59
+2438;42974;Oskar Marthinussen;NOR;;M24-34;5:19:43;+ 2:53:59
+2439;42418;Jonas Erik Thorsen;NOR;;M18-21;5:20:14;+ 2:54:31
+2440;40496;Aubry Huyghebaert;BEL;;M24-34;5:21:06;+ 2:55:22
+2441;42063;Robert Bengtsson;SWE;;M24-34;5:21:22;+ 2:55:39
+2442;42964;Håkon Haug;NOR;;M24-34;5:22:14;+ 2:56:31
+2443;42380;Peter Friis;FIN;Country Marathon Club;M60-64;5:22:36;+ 2:56:52
+2444;42984;Svein Svendsgård;NOR;Ingen;M24-34;5:22:42;+ 2:56:59
+2445;41536;Erik Thorelli;NOR;;M24-34;5:23:38;+ 2:57:55
+2446;41787;Hanne Abrahamsen;NOR;;K50-54;5:23:45;+ 2:58:02
+2447;42643;Frode Andersson;NOR;Romerike Ultraløperklubb;M60-64;5:23:45;+ 2:58:02
+2448;42607;Kevin Ransve;NOR;;M18-21;5:23:50;+ 2:58:06
+2449;42278;Sindre Kaasa Rosengren;NOR;;M24-34;5:23:52;+ 2:58:09
+2450;42021;Frieda Kapsamer;AUT;;K24-34;5:24:00;+ 2:58:16
+2451;42368;Nina Johnsen;NOR;Fet IL;K35-39;5:24:07;+ 2:58:24
+2452;1012;Ingunn Ytrehus;NOR;Romerike Ultraløperklubb;K70-74;5:24:07;+ 2:58:24
+2453;42065;Stig-Robert Bekkelund;NOR;;M35-39;5:24:12;+ 2:58:29
+2454;42107;Aslak Wold;NOR;;M24-34;5:24:17;+ 2:58:34
+2455;41906;Anne Grete Vindstad;NOR;;K50-54;5:24:17;+ 2:58:34
+2456;42158;Mirte Van Balen;NED;;K24-34;5:24:46;+ 2:59:02
+2457;42676;Elias Langlien Strengelsrud;NOR;Ingen;M18-21;5:24:54;+ 2:59:11
+2458;42528;Julie Braadland;NOR;Team Kvinnehelse;K24-34;5:25:01;+ 2:59:17
+2459;42137;Eigil Nødtvedt;NOR;Trim Ein Kollega / Ågotnes skule;M70-74;5:25:25;+ 2:59:42
+2460;41657;Oda Strifeldt;NOR;Team Sneglefart;K24-34;5:25:36;+ 2:59:53
+2461;42767;Corrie Broks;NED;Brams Bootcamp;K65-69;5:25:46;+ 3:00:03
+2462;42427;Bernhard Keiler;AUT;100 Marathon Club Austria;M65-69;5:25:49;+ 3:00:06
+2463;42202;Maria Angeles Jimenez Sigstad;NOR;;K24-34;5:26:04;+ 3:00:21
+2464;42624;Eystein Rabbit Holter;NOR;;M55-59;5:26:09;+ 3:00:26
+2465;42244;Marius Mogan Olsen;NOR;;M24-34;5:26:24;+ 3:00:41
+2466;42230;Geir Fevang;NOR;;M65-69;5:26:54;+ 3:01:11
+2467;42994;Eivind Monsen;NOR;Rattlåskompaniet;M24-34;5:27:00;+ 3:01:17
+2468;40564;Joel Sletten;NOR;;M18-21;5:27:13;+ 3:01:30
+2469;42023;Joseph Jameson-Rickard;NOR;;M24-34;5:27:14;+ 3:01:31
+2470;40649;Anders Mæland Nilsen;NOR;;M18-21;5:27:24;+ 3:01:41
+2471;42117;Leonardo Alberto López Marcos;ESP;Mr. Space;M24-34;5:27:26;+ 3:01:42
+2472;42304;Xavier Trebaol;FRA;;M70-74;5:27:29;+ 3:01:45
+2473;42438;Hsienhsin Yang;TPE;;M45-49;5:27:29;+ 3:01:46
+2474;41960;Jerry Rick;USA;;M60-64;5:27:33;+ 3:01:50
+2475;42750;Silje Mathisen;NOR;The Lonesome Travellers;K24-34;5:27:46;+ 3:02:03
+2476;41912;Alexander Wærsland;NOR;Team Stavdal;M35-39;5:27:50;+ 3:02:07
+2477;73051;Can Hicabi Tartanoglu;NOR;Neuro Boogies;M24-34;5:27:54;+ 3:02:11
+2478;73052;Dejana Mitrovic;NOR;Neuro Boogie;K24-34;5:27:58;+ 3:02:15
+2479;42006;Vegard Klakegg;NOR;;M35-39;5:28:06;+ 3:02:23
+2480;41108;Frithjof Skottun;NOR;;M18-21;5:28:10;+ 3:02:27
+2481;40662;Deo Jaravata;PHI;;M55-59;5:28:29;+ 3:02:45
+2482;41922;Christian Anker;NOR;;M24-34;5:29:56;+ 3:04:13
+2483;41785;Lucia Aerden;NED;;K24-34;5:30:04;+ 3:04:21
+2484;40590;Xiaoxiong Ma;NOR;;M24-34;5:30:18;+ 3:04:35
+2485;41864;Anne Mo;NOR;;K50-54;5:30:37;+ 3:04:54
+2486;42662;C L;NOR;;;5:30:45;+ 3:05:02
+2487;42416;Ajit Kumar;NOR;;M40-44;5:31:19;+ 3:05:36
+2488;42601;Anne-Lise Doran;NOR;;K40-44;5:31:26;+ 3:05:43
+2489;41605;Caroline With Bjørnstad;NOR;;K24-34;5:32:00;+ 3:06:17
+2490;42001;Eirik Nicolas White;NOR;;M40-44;5:32:43;+ 3:07:00
+2491;41753;Anastassia Sommer;NOR;;K35-39;5:33:19;+ 3:07:36
+2492;1010;Lise Lysfjord Pettersen;NOR;Romerike Ultraløperklubb;K50-54;5:33:50;+ 3:08:07
+2493;41985;Per Øyvind Kaste;NOR;Team Jurull;M45-49;5:33:57;+ 3:08:14
+2494;40302;Reece How;GBR;;M24-34;5:33:57;+ 3:08:14
+2495;42318;Fabian Borch;NOR;;M24-34;5:34:13;+ 3:08:30
+2496;42319;June Nordli;NOR;Bedriftsidrettslaget til Norwegian;K24-34;5:34:14;+ 3:08:30
+2497;42469;Xiao Tu;USA;;M45-49;5:34:14;+ 3:08:30
+2498;42573;Marius Cirba;LTU;;M18-21;5:34:53;+ 3:09:10
+2499;42882;Fredrik Tufte;NOR;;M24-34;5:34:57;+ 3:09:14
+2500;42850;Frode Vittersø;NOR;Grevlingane Triatlonklubb;M60-64;5:35:00;+ 3:09:17
+2501;42461;Khalil Ashtari;USA;;M70-74;5:35:02;+ 3:09:18
+2502;42487;Torfinn R. Karlsen;NOR;;M24-34;5:35:23;+ 3:09:40
+2503;42833;Ragnhild Koren;NOR;Tjalve IK;K80-84;5:35:24;+ 3:09:41
+2504;42421;Nenad Dzepina;NOR;Serbia;M24-34;5:35:35;+ 3:09:51
+2505;41719;Ahmad Shah Idil;AUS;;M24-34;5:35:55;+ 3:10:12
+2506;42087;Justin Venter;RSA;;M35-39;5:36:00;+ 3:10:17
+2507;42943;Sana Jalal Ahmad;NOR;;K24-34;5:37:14;+ 3:11:31
+2508;42478;Detlef Klatt;GER;100 Marathon Club Germany;M55-59;5:38:10;+ 3:12:27
+2509;41834;Ryan Griffiths;GBR;;M35-39;5:38:58;+ 3:13:15
+2510;41686;Ingrid Stornes;NOR;;K24-34;5:39:17;+ 3:13:34
+2511;42577;Antonio Finn Fiane;NOR;Grimstad;M24-34;5:39:45;+ 3:14:02
+2512;42682;Saleh Sherifi;NOR;;M55-59;5:40:36;+ 3:14:53
+2513;42834;Subodh Deshmukh;NOR;;M60-64;5:40:48;+ 3:15:05
+2514;41766;Caroline Tiberg;NOR;;K24-34;5:41:36;+ 3:15:53
+2515;41720;Ola Stornes;NOR;;M24-34;5:41:47;+ 3:16:04
+2516;42274;Hanne Nystrøm;NOR;;K18-21;5:42:06;+ 3:16:23
+2517;42987;Kim Tore Fjørner;NOR;;M45-49;5:42:37;+ 3:16:54
+2518;42543;Mats Fiers;BEL;;M18-21;5:42:47;+ 3:17:04
+2519;42178;David Felipe Gómez Triana;NOR;;M24-34;5:42:57;+ 3:17:14
+2520;42239;Nicolás Caso;CHI;;M35-39;5:42:57;+ 3:17:14
+2521;42977;Tor Jørgen Tor Jørgen;NOR;;M24-34;5:43:00;+ 3:17:17
+2522;41986;Dean Waghorn;GBR;;M55-59;5:43:50;+ 3:18:06
+2523;41971;Kristoffer Holm Haug Paulsen;NOR;Ingeniørene;M24-34;5:44:40;+ 3:18:57
+2524;42308;Nebojsa Miljkovic;SRB;STRC;M55-59;5:44:49;+ 3:19:06
+2525;42968;Reagan Wallis;USA;;M22-23;5:45:03;+ 3:19:20
+2526;42022;Aimee Watson-Cook;GBR;;K40-44;5:45:12;+ 3:19:29
+2527;42051;Laura Pentland;GBR;;K40-44;5:45:12;+ 3:19:29
+2528;41984;Alexander Eliassen;NOR;;M24-34;5:48:04;+ 3:22:21
+2529;41716;Christel Klinger;GER;;K50-54;5:50:40;+ 3:24:57
+2530;41925;Massia Bailey;JAM;Pacers Running Club;K50-54;5:51:08;+ 3:25:25
+2531;42208;Tariq Almuaiseb;KSA;;M24-34;5:51:22;+ 3:25:39
+2532;1074;Jan-Sverre Pedersen;NOR;Høybråten og Stovner IL;M75-79;5:52:00;+ 3:26:17
+2533;42402;Emmet O' Sullivan-Ryan;IRL;;M22-23;5:53:53;+ 3:28:09
+2534;42257;Herbert Bauer;AUT;100 Marathon Club Austria;M60-64;5:54:37;+ 3:28:54
+2535;42322;Doug Ng;GBR;;M24-34;5:54:47;+ 3:29:03
+2536;41807;Allan Brink-Vilsen;DEN;;M40-44;5:54:54;+ 3:29:11
+2537;42507;Roni Baklichan;NOR;;M24-34;5:57:38;+ 3:31:54
+2538;42096;Oscar Nylander;SWE;;M24-34;5:57:53;+ 3:32:09
+2539;41887;Günter Reinfeld;NOR;Vareid skiklubb;M45-49;6:01:22;+ 3:35:39
+2540;41712;Chi Ho Li;HKG;;M24-34;6:01:25;+ 3:35:41
+2541;41885;Anila Gull;NOR;;K55-59;6:01:30;+ 3:35:47
+2542;41596;Karl-Alfred Erber;AUT;SKN SANKT POELTEN;M50-54;6:07:01;+ 3:41:17
+2543;42221;Claudie Jake Clamucha;PHI;;M35-39;6:10:08;+ 3:44:24
+2544;40301;Jay Redford;GBR;;M24-34;6:20:52;+ 3:55:09
+2545;42356;Andres Espana;NOR;;M40-44;6:22:27;+ 3:56:44
+2546;42046;Ali Butt;NOR;;M18-21;6:28:53;+ 4:03:10

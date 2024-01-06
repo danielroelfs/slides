@@ -1,0 +1,796 @@
+/**
+ * NORMENT theme for reveal.js, adapted from the Myplanet theme
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --main-font: "Poppins", sans-serif;
+  --main-font-size: 3.5vmin;
+  --main-font-color: #1f1f1f; /* DR: was #2A2A49 */
+  --header-font: "Lato", sans-serif;
+  --header-font-size: 2.5vmin;
+  --footer-font-size: 2vmin;
+  --code-font: "Fira Code", monospace;
+  --arrow-color: #9a87a8;
+  --arrow-size: 2vmin;
+  --color-white: #EEEDEF;
+  --color-ocean-green: #00343E;
+  --color-emerald-green: #14555A;
+  --color-sea-green: #007272;
+  --color-mint-green: #A5E1D2;
+  --color-summer-green: #28B482;
+  --color-accent-yellow: #FDBB31;
+  --color-indigo: #23195A;
+  --color-violet: #6E2382;
+  --color-sky-blue: #4BBED2;
+  --color-lavender: #F2F2F5;
+  --progress-bar-height: 0.67vh;
+}
+
+/*********************************************
+**** GLOBAL STYLES
+**********************************************/
+
+body {
+  font-family: var(--main-font);
+  font-size: var(--main-font-size);
+  color: var(--main-font-color);
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-family: var(--header-font);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.reveal h1 {
+  font-size: 2em; 
+}
+
+.reveal h2 {
+  font-size: 1.6em; 
+}
+.reveal h2.header {
+  color: var(--color-emerald-green);
+}
+
+.reveal h3 {
+  font-size: 1.3em; 
+}
+
+.reveal h4 {
+  font-size: 1em; 
+}
+
+.reveal {
+  font-family: "Poppins", "Nunito Sans", "Fira Code", Helvetica, sans-serif;
+  font-size: inherit;
+  font-weight: normal;
+  color: #222; 
+}
+
+.logo-img {
+  background-image: url("../lib/logo/amlif.svg"); 
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  display: inline-block;
+  grid-area: header;
+  height: 6vmin;
+  width: 6vmin;
+  margin-right: 6vmin;
+}
+
+.logo-dnb {
+  background-image: url("../lib/logo/dnb_logo_white.svg"); 
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  display: inline-block;
+  grid-area: header;
+  height: 100%;
+  width: 20vh;
+  border: 0px solid red;
+}
+
+/* Image settings */
+img.fullscreen {
+  object-fit: contain;
+  max-height: calc(100% - 2 * var(--progress-bar-height));
+  max-width: 100%;
+  height: calc(100% - 2 * var(--progress-bar-height));
+  width: 100%;
+}
+
+img.large {
+  object-fit: contain;
+  max-height: 80%;
+  max-width: 80%;
+  height: 80%;
+  width: 80%;
+  margin: auto;
+}
+
+/* Progress bar */
+.reveal .progress {
+  height: var(--progress-bar-height);
+  color: var(--color-sea-green);
+}
+
+/*********************************************
+**** SLIDE LAYOUTS
+**********************************************/
+
+.reveal .slides section {
+  height: 100vh;
+  max-height: 100vh;
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+  color: var(--main-font-color);
+  text-align: left;
+  overflow: hidden;
+  background: #FFFFFF;
+  background-color: #FFFFFF;
+}
+
+.reveal .slides section.stack {
+  background-color: transparent; }
+
+/* TITLE CARD */
+.reveal .slides section.title {
+  height: calc(100vh - 12vmin);
+  width: calc(100vw - 6vmin - 22vw); 
+  color: var(--color-white);
+  margin-left: 22vw;
+  background-color: var(--color-ocean-green);
+  border-radius: 20px;
+}
+
+.reveal .slides section.title .title-card {
+  display: grid;
+  box-sizing: border-box;
+  row-gap: 5vmin;
+  padding: 10vmin;
+  height: 100%;
+  grid-template-columns: auto 50%;
+  grid-template-rows: 12vmin 1fr auto;
+  grid-template-areas: 
+    "header header" 
+    "content content" 
+    ". presenter";
+}
+
+.reveal .slides section.title .logo {
+  grid-area: header;
+  vertical-align: middle;
+  height: 100%;
+  border: 0px solid black;
+}
+
+.reveal .slides section.title .logo .logo-img {
+  height: 100%;
+  width: 20%;
+  margin: 0;
+  margin-left: 4vmin;
+  border: 0px solid yellow;
+}
+
+.reveal .slides section.title .content {
+  font-size: calc(1.2 * var(--header-font-size));
+  align-self: center;
+  grid-area: content; 
+  border: 0px solid yellow;
+}
+
+.reveal .slides section.title .presenter {
+  align-self: flex-start;
+  grid-area: presenter;
+  line-height: 1.8em; 
+  border: 0px solid purple;
+}
+
+.reveal .slides section.title .presenter hr {
+  border: 1px solid var(--color-white);
+  margin: 0 0 .8em 0;
+  width: 20%; 
+}
+
+.reveal .slides section.title .presenter .name {
+  font-weight: bold; 
+}
+.reveal .slides section.title .presenter .role {
+  font-size: 0.8em;
+  line-height: 1.2;
+}
+
+/* STANDARD, TWO-COLUMN */
+.reveal .slides section .standard { 
+  display: grid; 
+  height: 100%;
+  grid-template-columns: 1fr 8vw; 
+  grid-template-rows: 20vh auto 8vh; 
+  grid-template-areas: 
+    "header logo"
+    "content logo"
+    "footer logo"; 
+}
+
+.reveal .slides section .standard .header,
+.reveal .slides section .standard-image .header,
+.reveal .slides section .standard-code .header,
+.reveal .slides section .two-column .header,
+.reveal .slides section .quote .header,
+.reveal .slides section .divider .header { 
+  grid-area: header; 
+  display: flex;
+  align-items: center;
+  padding-top: 4vh;
+  padding-left: 6vw;
+  border: 0px solid red;
+} 
+
+.reveal .slides section .standard .header h2,
+.reveal .slides section .standard-image .header h2,
+.reveal .slides section .standard-code .header h2,
+.reveal .slides section .quote .header h2,
+.reveal .slides section .two-column .header h2 {
+  font-family: var(--header-font);
+  font-size: var(--header-font-size);
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--color-emerald-green);
+}
+
+.reveal .slides section .standard .content,
+.reveal .slides section .standard-code .content,
+.reveal .slides section .two-column .left,
+.reveal .slides section .two-column .right,
+.reveal .slides section .full-two-column .left,
+.reveal .slides section .full-two-column .right,
+.reveal .slides section .whole-area .content { 
+  grid-area: content;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding-left: 6vw;
+  border: 0px solid green;
+}
+
+.reveal .slides section .standard .footer,
+.reveal .slides section .standard-code .footer { 
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  padding-left: calc(1.5 * 5vw);
+  font-size: var(--footer-font-size);
+  border: 0px solid yellow;
+} 
+
+/*.reveal .slides section .standard .logo,
+.reveal .slides section .standard-image .logo,
+.reveal .slides section .standard-code .logo,
+.reveal .slides section .two-column .logo,
+.reveal .slides section .full-two-column .logo,
+.reveal .slides section .whole-area .logo,
+.reveal .slides section .divider .logo,*/
+.reveal .slides section .divider.color-accent-yellow .logo,
+.reveal .slides section .divider.color-lavender .logo,
+.reveal .slides section .divider.color-mint-green .logo,
+/*.reveal .slides section .quote .logo,*/
+.reveal .slides section .quote.color-accent-yellow .logo,
+.reveal .slides section .quote.color-lavender .logo,
+.reveal .slides section .quote.color-mint-green .logo,
+.reveal .slides section .logo {
+  background-image: url(../lib/logo/dnb_sidelogo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-area: logo;
+  display: flex;
+  height: 400%;
+  padding: 0 2vw 0 0vw;
+  align-self: flex-end;
+  border: 0px solid purple;
+}
+
+@media screen and (max-width: 780px) {
+  .reveal .slides section .logo {
+    visibility: hidden;
+  }
+  .reveal .slides section .title-card .logo .logo-dnb {
+    visibility: visible;
+  }
+}
+
+/* STANDARD LARGE IMAGE */
+.reveal .slides section .standard-image { 
+  display: grid; 
+  height: 100%;
+  grid-template-columns: 1fr 8vw; 
+  grid-template-rows: 20vh auto; 
+  grid-template-areas: 
+    "header logo"
+    "content logo";
+}
+
+.reveal .slides section .standard-image .content { 
+  grid-area: content;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: calc(100vh - 20vh - 2 * var(--progress-bar-height));
+  max-width: calc(100vw - 8vw);
+  border: 0px solid green;
+}
+
+.reveal .slides section .standard-image .content img { 
+  grid-area: content;
+  display: flex;
+  max-height: calc(100vh - 20vh - 2 * var(--progress-bar-height));
+  max-width: calc(100vw - 8vw);
+  border: 0px solid green;
+}
+
+/* TWO-COLUMN LAYOUT */
+.reveal .slides section .two-column { 
+  display: grid; 
+  height: 100%;
+  grid-template-columns: 1fr 1fr 8vw; 
+  grid-template-rows: 20vh 1fr; 
+  grid-template-areas: 
+    "two-header two-header two-logo"
+    "two-left two-right two-logo"; 
+}
+
+.reveal .slides section .two-column .header {
+  grid-area: two-header;
+  border: 0px solid red;
+}
+
+.reveal .slides section .two-column .left {
+  grid-area: two-left;
+  margin-left: 2vw;
+  padding-left: 2vw;
+  border: 0px solid green;
+}
+
+.reveal .slides section .two-column .right {
+  grid-area: two-right;
+  margin-right: 2vw;
+  padding-left: 2vw;
+  border: 0px solid purple;
+}
+
+.reveal .slides section .two-column .logo {
+  grid-area: two-logo;
+}
+
+/* FULL-TWO-COLUMN LAYOUT */
+.reveal .slides section .full-two-column { 
+  display: grid; 
+  height: 100%;
+  grid-template-columns: 1fr 1fr 8vw; 
+  grid-template-areas: 
+    "two-left two-right two-logo"; 
+}
+
+.reveal .slides section .full-two-column .left {
+  grid-area: two-left;
+  margin-left: 2vw;
+  padding-left: 2vw;
+  border: 0px solid green;
+}
+
+.reveal .slides section .full-two-column .right {
+  grid-area: two-right;
+  margin-right: 2vw;
+  padding-left: 2vw;
+  border: 0px solid purple;
+}
+
+.reveal .slides section .full-two-column .logo {
+  grid-area: two-logo;
+}
+
+/* WHOLE AREA LAYOUT */
+.reveal .slides section .whole-area { 
+  display: grid; 
+  height: 100%;
+  grid-template-columns: 1fr 8vw; 
+  grid-template-rows: 100vh; 
+  grid-template-areas: 
+    "content logo"; 
+}
+
+.reveal .slides section .whole-area .content { 
+  grid-area: content;
+  justify-content: center;
+  padding-left: 0;
+  border: 0px solid red;
+} 
+
+.reveal .slides section .whole-area .logo {
+  grid-area: logo;
+}
+
+/* CARD LAYOUT */
+.reveal .slides section.card-layout {
+  height: calc(100vh - 12vmin);
+  width: calc(100vw - 12vmin); 
+  margin-left: 6vmin;
+  border-radius: 20px;
+}
+
+.reveal .slides section.card-layout .content {
+  display: flex;
+  margin-left: 8vmin;
+  align-items: center;
+  justify-content: left;
+  border: 0px solid red;
+}
+
+.reveal .slides section.card-layout .header h2 {
+  font-size: calc(2 * var(--header-font-size));
+}
+
+
+.reveal .slides section.card-layout .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+}
+
+.reveal .slides section.card-layout .logo-img {
+  margin: 0;
+  height: 25vmin;
+  width: 25vmin;
+}
+
+/* SPLIT SCREEN SLIDE */
+.reveal .slides section .split-screen {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 50vw 50vw;
+  grid-template-areas: "left right";
+}
+
+.reveal .slides section .split-screen .left {
+  grid-area: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid red;
+}
+
+.reveal .slides section .split-screen .right {
+  grid-area: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px solid purple;
+}
+
+.reveal .slides section .split-screen img {
+  object-fit: contain;
+  max-width: 50vw;
+  max-height: 100vh;
+  border: 0px solid green;
+}
+
+/* CODE & QUOTE SLIDES */
+.reveal .slides section .standard-code,
+.reveal .slides section .quote { 
+  display: grid; 
+  height: 100%;
+  grid-template-columns: 1fr 8vw; 
+  grid-template-rows: 20vh auto 8vh; 
+  grid-template-areas: 
+    "header logo"
+    "content logo"
+    "footer logo"; 
+}
+
+.reveal .slides section .standard-code .content,
+.reveal .slides section .quote .content { 
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  border: 0px solid green;
+}
+
+/* QUOTE SLIDES */
+.reveal .slides section .quote { 
+  font-size: calc(1.5 * var(--main-font-size));
+  color: var(--color-white);
+  background-color: var(--color-ocean-green);
+}
+
+.reveal .slides section .quote .header h2 { 
+  color: var(--color-white);
+}
+
+.reveal .slides section .quote .content {
+  margin-top: auto;
+  margin-bottom: 7.5%;
+  border: 0px solid red;
+}
+
+.reveal .slides section .quote .content blockquote {
+  font-weight: 500;
+  width: 80%;
+  padding-left: 6vw;
+}
+
+.reveal .slides section .quote .content hr {
+  border: 1px solid var(--color-white);
+  width: 20%;
+  margin: 0.8em 0;
+}
+
+.reveal .slides section .quote.color-accent-yellow .content hr,
+.reveal .slides section .quote.color-lavender .content hr,
+.reveal .slides section .quote.color-mint-green .content hr {
+  border: 1px solid var(--main-font-color);
+}
+
+.reveal .slides section .quote .content cite {
+  font-size: 0.75em; 
+}
+
+/* DIVIDER SLIDES */
+.reveal .slides section .divider {
+  display: grid;
+  height: 100%;
+  color: var(--color-white);
+  background-color: var(--color-ocean-green);
+  grid-template-columns: 1fr 8vw; 
+  grid-template-rows: 20vh 3fr 1fr; 
+  grid-template-areas: 
+    "header logo"
+    "title logo"
+    "description logo";
+}
+
+.reveal .slides section .divider .title {
+  grid-area: title;
+  margin: auto; 
+  border: 0px solid red;
+}
+
+.reveal .slides section .divider .description {
+  grid-area: description;
+  margin: auto; 
+  border: 0px solid yellow;
+}
+
+/* DARK SETTINGS */
+.reveal .slides section .dark,
+.reveal .slides section.card-layout.dark {
+  background: var(--color-emerald-green);
+  background-color:  var(--color-ocean-green);
+  color: var(--color-white);
+}
+.reveal .slides section.card-layout.dark .header h2,
+.reveal .slides section .standard.dark .header h2,
+.reveal .slides section .standard-image.dark .header h2,
+.reveal .slides section .standard-code.dark .header h2,
+.reveal .slides section .two-column.dark .header h2,
+.reveal .slides section .full-two-column.dark .header h2 {
+  color: var(--color-white);
+}
+
+.reveal .slides section.card-layout.dark .standard .logo,
+.reveal .slides section.card-layout.dark .two-column .logo,
+.reveal .slides section.card-layout.dark .logo-container .logo,
+.reveal .slides section .standard.dark .logo,
+.reveal .slides section .standard-image.dark .logo,
+.reveal .slides section .standard-code.dark .logo,
+.reveal .slides section .two-column.dark .logo,
+.reveal .slides section .full-two-column.dark .logo,
+.reveal .slides section .whole-area.dark .logo,
+.reveal .slides section .divider .logo,
+.reveal .slides section .divider.color-indigo .logo,
+.reveal .slides section .divider.color-violet .logo,
+.reveal .slides section .quote .logo { 
+  background-image: url(../lib/logo/dnb_sidelogo_white.svg);
+}
+
+/*********************************************
+**** BACKGROUNDS
+**********************************************/
+
+/* Prevent fading of background */
+.reveal .slides > section.past,
+.reveal .slides > section.future,
+.reveal .slides > section > section.past,
+.reveal .slides > section > section.future {
+  opacity: 1; 
+}
+
+.reveal[class*="background-"] {
+  background-position: center center;
+  background-size: 133vmax auto;
+}
+
+.reveal.background-pop {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../lib/background/pop/pattern.svg"); 
+}
+
+.reveal.background-river {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../lib/background/river/pattern.svg"); 
+}
+
+.reveal.background-stream {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../lib/background/stream/pattern.svg");
+}
+
+.reveal.background-waterfall {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../lib/background/waterfall/pattern.svg"); 
+}
+
+.reveal .slides section .color-ocean-green {
+  background: var(--color-ocean-green);
+}
+
+.reveal .slides section .color-emerald-green {
+  background: var(--color-emerald-green);
+}
+
+.reveal .slides section .color-sea-green {
+  background: var(--color-sea-green);
+}
+
+.reveal .slides section .color-mint-green {
+  background: var(--color-mint-green);
+}
+
+.reveal .slides section .color-summer-green {
+  background: var(--color-summer-green);
+}
+
+.reveal .slides section .color-accent-yellow {
+  background: var(--color-accent-yellow);
+}
+
+.reveal .slides section .color-indigo {
+  background: var(--color-indigo);
+}
+
+.reveal .slides section .color-violet {
+  background: var(--color-violet);
+}
+
+.reveal .slides section .color-sky-blue {
+  background: var(--color-sky-blue);
+}
+
+.reveal .slides section .color-lavender {
+  background: var(--color-lavender);
+}
+
+.reveal .slides section .color-mint-green,
+.reveal .slides section .color-accent-yellow,
+.reveal .slides section .color-sky-blue,
+.reveal .slides section .color-lavender {
+  color: var(--main-font-color);
+}
+
+.reveal .slides section .color-ocean-green,
+.reveal .slides section .color-emerald-green,
+.reveal .slides section .color-sea-green,
+.reveal .slides section .color-summer-green,
+.reveal .slides section .color-indigo,
+.reveal .slides section .color-violet {
+  color: var(--color-white);
+}
+
+
+.reveal .slides section .color-mint-green .header h2,
+.reveal .slides section .color-accent-yellow .header h2,
+.reveal .slides section .color-sky-blue .header h2,
+.reveal .slides section .color-lavender .header h2 {
+  color: var(--main-font-color);
+}
+
+.reveal .slides section .color-ocean-green .header h2,
+.reveal .slides section .color-emerald-green .header h2,
+.reveal .slides section .color-sea-green .header h2,
+.reveal .slides section .color-summer-green .header h2,
+.reveal .slides section .color-indigo .header h2,
+.reveal .slides section .color-violet .header h2 {
+  color: var(--color-white);
+}
+
+/*********************************************
+**** CODE STYLE
+**********************************************/
+
+.reveal figure.code {
+  font-family: var(--code-font);
+  color: var(--color-white);
+  margin-bottom: 4vh;
+}
+
+.reveal pre code {
+  display: block;
+  font-size: 0.75em;
+  line-height: 1.25em;
+  background-color: #3f3f3f;
+  border: 1ex solid #3f3f3f;
+  border-radius: 5px 5px 0 0;
+  tab-size: 2; 
+  -moz-tab-size: 2;
+  padding: 10px;
+  white-space: pre-wrap;
+}
+
+.reveal figure.code figcaption {
+  box-sizing: border-box;
+  padding: 1ex 2ex;
+  font-size: 0.75em;
+  background-color: #333333;
+  border-radius: 0 0 5px 5px;
+}
+
+/*********************************************
+**** RANDOM ELEMENTS
+**********************************************/
+
+code {
+  font-family: var(--code-font);
+}
+
+em {
+  font-style: italic;
+}
+
+.b {
+  font-weight: bold;
+}
+
+.em {
+  font-style: italic;
+}
+
+.bem {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.colem {
+  font-weight: bold;
+  color: var(--color-sea-green);
+}
+
+.em-mint {
+  color: var(--color-mint-green);
+}
+
+.em-summer-green {
+  color: var(--color-summer-green);
+}
+
+.dark .colem {
+  font-weight: bold;
+  color: var(--color-accent-yellow);
+}
+
+ul {
+  list-style: none;
+}
+
+li:not(:last-child) {
+  margin-bottom: calc(2.5 * var(--main-font-size));
+}
+
+::selection {
+  background-color: var(--color-accent-yellow);
+}

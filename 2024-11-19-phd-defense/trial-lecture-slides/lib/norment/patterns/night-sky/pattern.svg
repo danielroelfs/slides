@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 4000 4000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g>
+        <g>
+            <rect x="0" y="0" width="4000" height="4000" style="fill:rgb(33,166,149);"/>
+            <path d="M3380,1827.3C2320.5,1313.4 2028.9,971.4 2301,1007.7C2626.4,1051.1 1259.9,239.5 1817,194.2C2374.1,148.9 3326.3,-91.5 4222.7,1062.2C5119.1,2215.9 4360.3,2302.8 3380,1827.3Z" style="fill:rgb(208,230,224);fill-rule:nonzero;"/>
+            <path d="M2311.2,3187C1290.4,3324.8 -1227.2,2686.3 301.4,2710.2C1830,2734.1 3258.2,2441 3095.6,2709.5C2933,2978 2827.2,3117.4 2311.2,3187Z" style="fill:rgb(208,230,224);fill-rule:nonzero;"/>
+            <path d="M3024.7,1463.4C1874.5,1066.5 1407.7,285 2093,374.1C2778.3,463.2 2517,-232.4 3407.7,451.2C4327.6,1157.1 5205.2,2215.9 3024.7,1463.4Z" style="fill:rgb(92,36,131);fill-rule:nonzero;"/>
+            <g>
+                <circle cx="1320.9" cy="456.5" r="22.3" style="fill:white;"/>
+                <circle cx="1766.6" cy="456.5" r="22.3" style="fill:white;"/>
+                <circle cx="429.7" cy="456.5" r="22.3" style="fill:white;"/>
+                <circle cx="875.3" cy="456.5" r="22.3" style="fill:white;"/>
+                <circle cx="3103.5" cy="456.5" r="22.3" style="fill:white;"/>
+                <circle cx="3549.1" cy="456.5" r="22.3" style="fill:white;"/>
+                <circle cx="2212.2" cy="456.5" r="22.3" style="fill:white;"/>
+                <circle cx="2657.8" cy="456.5" r="22.3" style="fill:white;"/>
+                <circle cx="1320.9" cy="902.2" r="22.3" style="fill:white;"/>
+                <circle cx="1766.6" cy="902.2" r="22.3" style="fill:white;"/>
+                <circle cx="429.7" cy="902.2" r="22.3" style="fill:white;"/>
+                <circle cx="875.3" cy="902.2" r="22.3" style="fill:white;"/>
+                <circle cx="3103.5" cy="902.2" r="22.3" style="fill:white;"/>
+                <circle cx="3549.1" cy="902.2" r="22.3" style="fill:white;"/>
+                <circle cx="2212.2" cy="902.2" r="22.3" style="fill:white;"/>
+                <circle cx="2657.8" cy="902.2" r="22.3" style="fill:white;"/>
+                <circle cx="1320.9" cy="1347.8" r="22.3" style="fill:white;"/>
+                <circle cx="1766.6" cy="1347.8" r="22.3" style="fill:white;"/>
+                <circle cx="429.7" cy="1347.8" r="22.3" style="fill:white;"/>
+                <circle cx="875.3" cy="1347.8" r="22.3" style="fill:white;"/>
+                <circle cx="3103.5" cy="1347.8" r="22.3" style="fill:white;"/>
+                <circle cx="3549.1" cy="1347.8" r="22.3" style="fill:white;"/>
+                <circle cx="2212.2" cy="1347.8" r="22.3" style="fill:white;"/>
+                <circle cx="2657.8" cy="1347.8" r="22.3" style="fill:white;"/>
+                <circle cx="1320.9" cy="1793.4" r="22.3" style="fill:white;"/>
+                <circle cx="1766.6" cy="1793.4" r="22.3" style="fill:white;"/>
+                <circle cx="429.7" cy="1793.4" r="22.3" style="fill:white;"/>
+                <circle cx="875.3" cy="1793.4" r="22.3" style="fill:white;"/>
+                <circle cx="3103.5" cy="1793.4" r="22.3" style="fill:white;"/>
+                <circle cx="3549.1" cy="1793.4" r="22.3" style="fill:white;"/>
+                <circle cx="2212.2" cy="1793.4" r="22.3" style="fill:white;"/>
+                <circle cx="2657.8" cy="1793.4" r="22.3" style="fill:white;"/>
+                <circle cx="1320.9" cy="2239.1" r="22.3" style="fill:white;"/>
+                <circle cx="1766.6" cy="2239.1" r="22.3" style="fill:white;"/>
+                <circle cx="429.7" cy="2239.1" r="22.3" style="fill:white;"/>
+                <circle cx="875.3" cy="2239.1" r="22.3" style="fill:white;"/>
+                <circle cx="3103.5" cy="2239.1" r="22.3" style="fill:white;"/>
+                <circle cx="3549.1" cy="2239.1" r="22.3" style="fill:white;"/>
+                <circle cx="2212.2" cy="2239.1" r="22.3" style="fill:white;"/>
+                <circle cx="2657.8" cy="2239.1" r="22.3" style="fill:white;"/>
+                <circle cx="1320.9" cy="2684.7" r="22.3" style="fill:white;"/>
+                <circle cx="1766.6" cy="2684.7" r="22.3" style="fill:white;"/>
+                <circle cx="429.7" cy="2684.7" r="22.3" style="fill:white;"/>
+                <circle cx="875.3" cy="2684.7" r="22.3" style="fill:white;"/>
+                <circle cx="3103.5" cy="2684.7" r="22.3" style="fill:white;"/>
+                <circle cx="3549.1" cy="2684.7" r="22.3" style="fill:white;"/>
+                <circle cx="2212.2" cy="2684.7" r="22.3" style="fill:white;"/>
+                <circle cx="2657.8" cy="2684.7" r="22.3" style="fill:white;"/>
+                <circle cx="1320.9" cy="3130.3" r="22.3" style="fill:white;"/>
+                <circle cx="1766.6" cy="3130.3" r="22.3" style="fill:white;"/>
+                <circle cx="429.7" cy="3130.3" r="22.3" style="fill:white;"/>
+                <circle cx="875.3" cy="3130.3" r="22.3" style="fill:white;"/>
+                <circle cx="3103.5" cy="3130.3" r="22.3" style="fill:white;"/>
+                <circle cx="3549.1" cy="3130.3" r="22.3" style="fill:white;"/>
+                <circle cx="2212.2" cy="3130.3" r="22.3" style="fill:white;"/>
+                <circle cx="2657.8" cy="3130.3" r="22.3" style="fill:white;"/>
+                <circle cx="1320.9" cy="3575.9" r="22.3" style="fill:white;"/>
+                <circle cx="1766.6" cy="3575.9" r="22.3" style="fill:white;"/>
+                <circle cx="429.7" cy="3575.9" r="22.3" style="fill:white;"/>
+                <circle cx="875.3" cy="3575.9" r="22.3" style="fill:white;"/>
+                <circle cx="3103.5" cy="3575.9" r="22.3" style="fill:white;"/>
+                <circle cx="3549.1" cy="3575.9" r="22.3" style="fill:white;"/>
+                <circle cx="2212.2" cy="3575.9" r="22.3" style="fill:white;"/>
+                <circle cx="2657.8" cy="3575.9" r="22.3" style="fill:white;"/>
+            </g>
+            <path d="M391.2,1365.2C1048.8,1402.8 1242.7,1907.1 1753.6,2092.9C2264.5,2278.7 3456.7,2619.3 2698,2867C1939.3,3114.7 1397.5,3037.3 809.2,2867C220.9,2696.7 -1738.1,2092.9 -677.1,1783.2C-135.8,1625.2 -150.7,1334.3 391.2,1365.2Z" style="fill:rgb(239,135,181);fill-rule:nonzero;"/>
+            <path d="M3439,3792.4C2832.1,3885.9 1965.9,3679 3137,3226.5C4308.1,2774 4347.5,2990.4 4180.3,3275.7C4013.1,3561 3789.9,3738.3 3439,3792.4Z" style="fill:rgb(229,0,125);fill-rule:nonzero;"/>
+        </g>
+    </g>
+</svg>

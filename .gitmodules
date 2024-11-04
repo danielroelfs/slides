@@ -1,3 +1,6 @@
 [submodule "2024-11-19-phd-defense/disputation-slides/reveal.js"]
 	path = 2024-11-19-phd-defense/disputation-slides/reveal.js
 	url = git@github.com:hakimel/reveal.js.git
+[submodule "2024-11-19-phd-defense/trial-lecture-slides/reveal.js"]
+	path = 2024-11-19-phd-defense/trial-lecture-slides/reveal.js
+	url = git@github.com:hakimel/reveal.js.git

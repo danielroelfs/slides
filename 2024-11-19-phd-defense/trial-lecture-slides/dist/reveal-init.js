@@ -48,6 +48,7 @@
     maxScale: 1,
     history: true,
     hash: true,
+    slideNumber: false,
 
     // Arrow keys progress through sub-slides
     // keyboard: {

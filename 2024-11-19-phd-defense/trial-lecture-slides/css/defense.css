@@ -78,7 +78,6 @@ section.has-light-background h6 {
 .two-column {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
   grid-gap: 0.5vmin;
 }
 .column {
@@ -105,12 +104,12 @@ section.has-light-background h6 {
 
 .reveal ul.no-bullets {
   list-style: none !important;
+  margin-left: 0;
 }
 
 .reveal ul.no-bullets > li:before {
   content: none;
   position: absolute;
-  margin-left: -1.1em;
 }
 
 .reveal .wide li:not(:last-child) {
@@ -131,12 +130,17 @@ section.has-light-background h6 {
 
 .reveal .slides section .source {
   font-size: 0.5rem;
-  & a {
-    color: initial;
-    &:hover {
-      color: var(--light-accent2);
-    }
-  }
+}
+
+.reveal .slides section .source p {
+  line-height: 0.2rem;
+}
+
+.reveal .slides section .source a {
+  color: initial;
+}
+.reveal .slides section .source a:hover {
+  color: var(--light-accent2)
 }
 
 .reveal figure {
@@ -178,11 +182,6 @@ figure .fullscreen {
 
 body .fullscreen {
   background-color: transparent !important;
-}
-
-.hide-controls .controls {
-  color: transparent !important;
-  padding: 0 !important;
 }
 
 .basics img {
@@ -327,6 +326,19 @@ td {
   color: var(--white);
   font-weight: 600;
   font-size: 100%;
+}
+
+.brat {
+  font-family: 'Arial Narrow';
+  color: black;
+  line-height: 0.9;
+  filter: blur(1.5px);
+  transform: rotateY(180deg) scale(1, 1.5);
+  -webkit-transform: rotateY(180deg) scale(1, 1.5);
+  -moz-transform: rotateY(180deg) scale(1, 1.5);
+  -o-transform: rotateY(180deg) scale(1, 1.5);
+  -ms-transform: rotateY(180deg) scale(1, 1.5);
+  unicode-bidi: bidi-override;
 }
 
 /*********************************************
@@ -653,18 +665,36 @@ body {
   color: var(--arrow-color); /* DR: was #42affa */
 }
 
+.hide-controls .controls {
+  color: transparent !important;
+  padding: 0 !important;
+}
+
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
   color: var(--primary-accent); /* DR: was #42affa */
+  height: 0.1em;
 }
 
 .reveal .progress span {
   -webkit-transition: transform 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); /* DR: was `: width 800ms ...` */
   -moz-transition: transform 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); /* DR: was `: width 800ms ...` */
   transition: transform 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); /* DR: was `: width 800ms ...` */
+}
+
+.hide-controls .progress {
+  color: var(--title-background) !important;
+}
+
+.dark-progress .progress {
+  color: var(--main-font-color) !important;
+}
+
+.hide-progress .progress {
+  color: transparent !important;
 }
 
 /*********************************************
@@ -1226,7 +1256,10 @@ html {
 
 .reveal .slides section.quote.color--midnight a,
 .reveal .slides section.quote.color--ice a,
-.reveal .slides section.quote.color--radiant a {
+.reveal .slides section.quote.color--radiant a,
+.reveal .slides section.quote.color--dark-accent1 a,
+.reveal .slides section.quote.color--dark-accent2 a,
+.reveal .slides section.quote.color--dark-accent3 a {
   color: var(--white);
   transition: all 0.15s linear;
 }

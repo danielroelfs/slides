@@ -105,12 +105,12 @@ section.has-light-background h6 {
 
 .reveal ul.no-bullets {
   list-style: none !important;
+  margin-left: 0;
 }
 
 .reveal ul.no-bullets > li:before {
   content: none;
   position: absolute;
-  margin-left: -1.1em;
 }
 
 .reveal .wide li:not(:last-child) {
@@ -659,6 +659,7 @@ body {
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
   color: var(--primary-accent); /* DR: was #42affa */
+  height: 0.1em;
 }
 
 .reveal .progress span {

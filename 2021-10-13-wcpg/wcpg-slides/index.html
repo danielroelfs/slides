@@ -1,501 +1,514 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-		<title>Daniel Roelfs - World Congress for Psychiatry Genetics 2021 slides</title>
-
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="css/norment.css">
-		<link rel="stylesheet" href="css/custom_wcpg.css">
-
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="plugin/pointer/pointer.css" />
-		<link rel="stylesheet" href="lib/css/atom-one-dark.css">
-
-		<!--<link rel="icon" href="lib/norment/logo/radiant-orange/mark-knockout.svg"/>-->
-		<link rel="icon" href="lib/norment/logo/color/mark-outline.svg"/>
-		<link rel="icon" href="lib/norment/logo/color/mark-outline.png"/>
-
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-	</head>
-	<body>
-
-		<div class="reveal pattern--norment">
-			<div class="slides">
-
-				<!-- SLIDE -->
-				<section class="title" data-state="hide-controls">
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo logo--full"></div>
-						</div>
-						<div class="content">
-							<h1 style="font-size: 1.6em;">Shared Genetic Determinants Between the Brain Functional Connectome and Psychiatric Disorders</h1>
-						</div>
-						<div class="credit">
-							<hr/>
-							<div class="name">Daniel Roelfs</div>
-							<div class="twitter-handle" style="margin-top: -1.25em;"><a href="https://twitter.com/dthroelfs">@dthroelfs</a></div>
-							<div class="role">University of Oslo</div>
-						</div>
-					</div>
-				</section>
-
-				<!-- SLIDE -->
-				<section class="subsection color--white">
-					<div class="grid-wrapper">
-						<div class="logo logo--full"></div>
-						<h1 style="font-size: 1.2em;font-style: italic;">No disclosures to declare</h1>
-						<div class="footer">
-							<div class="source">Slide added to comply with ACCME accreditation guidelines</div>
-						</div>
-					</div>
-				</section>
-
-				<!-- SLIDE -->
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="section">Background</div>
-						</div>
-
-
-						<div class="content vcenter">
-							<ul class="no-bullets">
-								<li>Psychiatric conditions are highly polygenic and complex<sup>1</sup></li>
-								<li class="fragment" data-fragment-index="1">Psychiatric conditions share symptoms and genetic profiles<sup>2</sup></li>
-								<li class="fragment" data-fragment-index="2">MRI studies show that structural and functional changes are widespread across the brain<sup>3</sup></li>
-								<li class="fragment b">Investigate distributed nature of genetic effects in the brain and its associations with psychiatric conditions</li>
-							</ul>
-						</div>
-
-						<div class="footer">
-							<div class="source">
-								<ol style="line-height: 0;">
-									<li>Anttila <em>et al.</em> <em>Science</em> (2018), Sullivan & Geschwind <em>Cell</em> (2019), Paulus & Thompson <em>JAMA Psychiatry</em> (2019)</li>
-									<li class="fragment" data-fragment-index="1">Plana-Ripoll <em>et al.</em> <em>JAMA Psychiatry</em> (2019), Bulik-Sullivan <em>et al.</em> <em>Nature Genetics</em> (2015)</li>
-									<li class="fragment" data-fragment-index="2">Petterson-Yeo <em>et al.</em> <em>Neurosci. Biobehav. Rev.</em> (2011), Arnatkeviciute <em>et al.</em> <em>NeuroImage</em> (2021)</li>
-								  </ol>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<!-- SLIDE -->
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="section">Dataset</div>
-						</div>
-						
-						<figure class="large-image">
-							<img src="files/methods_ukb.png" class="large-image" style="width: 80%;">
-						</figure>
-					</div>
-				</section>
-
-				<!-- SLIDE -->
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="section">Why use fMRI?</div>
-						</div>
-
-						<div class="content vcenter">
-							<ul class="no-bullets">
-								<li>Changes in fMRI features associated with many psychiatric conditions<sup>1</sup></li>
-								<li class="fragment" data-fragment-index="1">Changes in structural MRI features have been used to study genetic architecture of conditions<sup>2</sup></li>
-								<li class="fragment">fMRI data provides insight into brain function rather than structure</li>
-								<li class="fragment b">Integrate changes in fMRI features with processes underlying psychiatric conditions</li>
-							</ul>
-						</div>
-
-						<div class="footer">
-							<div class="source">
-								<ol style="line-height: 0;">
-									<li>e.g. Brakowski <em>et al.</em> <em>J. Psychiatr. Res.</em> (2017), Syan <em>et al.</em> <em>J. Psychiatry. Neurosci.</em> (2018), etc.</li>
-									<li class="fragment" data-fragment-index="1">Elliott <em>et al.</em> <em>Nature</em> (2018), Friston <em>et al.</em> <em>Schizophr. Res.</em> (2016)</li>
-								</ol>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<!-- SLIDE -->
-				<section>
-
-					<!-- SUBSLIDE -->
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">Brain connectivity measures</div>
-							</div>
-
-							<figure class="large-image">
-								<img src="files/methods_fc.png" class="large-image" style="width: 80%;">
-							</figure>
-							
-						</div>
-					</section>
-
-					<!-- SUBSLIDE -->
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">Brain connectivity measures</div>
-							</div>
-
-							<figure class="large-image" style="margin-top: -3em;">
-								<img src="files/methods_fc_connectivity.png" class="large-image" style="width: 90%;">
-							</figure>
-							
-						</div>
-					</section>
-
-					<!-- SUBSLIDE -->
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">Brain functional connectivity</div>
-							</div>
-
-							<figure class="large-image">
-								<iframe data-src="https://www.fmrib.ox.ac.uk/ukbiobank/netjs_d25/" style="width: 75vw;height: 75vh;"></iframe>
-								<!--<img src="files/UKB_imaging_resource.png" style="height: 75vh;">-->
-							</figure>
-
-							<div class="footer">
-								<div class="source">
-									<a href="https://www.fmrib.ox.ac.uk/ukbiobank/netjs_d25/" target="_blank">UK Biobank Brain Imaging - Connectome Browser (d25)</a>
-								</div>
-							</div>
-
-						</div>
-					</section>
-
-				</section>
-
-				<!-- SLIDE -->
-				<section>
-
-					<!-- SUBSLIDE -->
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">Multivariate GWAS</div>
-							</div>
-
-							<figure class="large-image">
-								<img src="files/methods_gwas_fc.png" class="large-image" style="width: 80%;">
-							</figure>
-
-							<div class="footer">
-								<div class="source">
-									<ol style="line-height: 0;">
-										<li>van der Meer <em>et al.</em> <em>Nature Communications</em> (2020), <a href="https://github.com/precimed/mostest" target="_blank">github.com/precimed/mostest</a></li>
-									</ol>
-								</div>
-							</div>
-						</div>
-					</section>
-
-					<!-- SUBSLIDE -->
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">What is MOSTest?</div>
-							</div>
-
-							<div class="two-column" style="margin-top: -3em;">
-							
-								<div class="column">
-									<ul class="no-bullets hcenter">
-										<li style="padding-bottom: 3em;">Identifies small and distributed effects not detectable in univariate GWAS</li>
-										<li class="fragment fade-down" style="padding-bottom: 0.5em;">Takes univariate <em>z</em>-scores for each SNP across all phenotypes</li>
-										<li class="fragment fade-down"><i class="fas fa-arrow-down" style="font-size: 5vmin;padding-bottom: 0.5em;"></i><br>
-											Integrates into multivariate test statistic through Mahalanobis distance</li>
-									</ul>
-								</div>
-
-								<div class="column">
-									<figure>
-										<img src="files/methods_mostest.png">
-									</figure>
-								</div>
-								
-							</div>
-
-							<div class="footer">
-								<div class="source">
-									Details in van der Meer <em>et al.</em> <em>Nature Communications</em> (2020), <a href="https://github.com/precimed/mostest" target="_blank">github.com/precimed/mostest</a>
-								</div>
-							</div>
-						</div>
-					</section>
-
-					<!-- SUBSLIDE -->
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">MOSTest Manhattan plots</div>
-							</div>
-
-							<div class="content">
-								<div class="two-column hcenter" style="padding-left: 2em;">
-
-								
-									<div class="column">
-										<h4>Functional connectivity</h4>
-
-										<table style="margin-top: 1em;">
-											<tr>
-												<td style="font-weight: bold;">MOSTest</td>
-												<td>15 loci</td>
-											</tr>
-											<tr>
-												<td style="font-weight: bold;">Min-P</td>
-												<td>2 loci</td>
-											</tr>
-										</table>
-									
-									</div>
-
-									<div class="column">
-										<h4>Node variance</h4>
-
-										<table style="margin-top: 1em;">
-											<tr>
-												<td style="font-weight: bold;">MOSTest</td>
-												<td>5 loci</td>
-											</tr>
-											<tr>
-												<td style="font-weight: bold;">Min-P</td>
-												<td>3 loci</td>
-											</tr>
-										</table>
-									</div>
-
-								</div>
-
-								<figure>
-									<img src="files/miami_sidexside.png" style="min-width: 100%;">
-								</figure>
-							</div>
-
-						</div>
-					</section>
-
-				</section>
-
-				<!-- SLIDE -->
-				<section>
-
-					<!-- SUBSLIDE -->
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">Genetic overlap</div>
-							</div>
-
-							<figure class="large-image">
-								<img src="files/methods_pleio_fc.png" class="large-image" style="width: 80%;">
-							</figure>
-
-							<div class="footer">
-								<div class="source">
-									<ol style="line-height: 0;">
-										<li><em>PleioFDR</em>, Andreassen <em>et al.</em> <em>PLoS Genetics</em> (2019), <a href="https://github.com/precimed/pleiofdr" target="_blank">github.com/precimed/pleiofdr</a></li>
-									</ol>
-								</div>
-							</div>
-						</div>
-					</section>
-
-					<!-- SUBSLIDE -->
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">Conjunctional FDR</div>
-							</div>
-
-							<div class="content" style="margin-top: 1em;">
-								<figure class="large-image">
-									<img src="files/qq_pleio_figure.png" style="width: 85%;">
-								</figure>
-							</div>
-
-						</div>
-					</section>
-
-					<!-- SUBSLIDE -->
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">Conjunctional FDR</div>
-							</div>
-
-							<div class="content" style="margin-top: 1em;">
-								<figure class="large-image">
-									<img src="files/Pleio_manhattan.png" style="width: 80%;">
-								</figure>
-							</div>
-
-						</div>
-					</section>
-
-				</section>
-
-				<!-- SLIDE -->
-				<section>
-
-					<!-- SUBSLIDE -->
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">Mapped genes</div>
-							</div>
-
-							<div class="content">
-								<ul class="no-bullets hcenter" style="padding-top: 2em;margin: 0;width: 100%;">
-									<li>Functional annotation and mapping of genome-wide assocation studies (FUMA<sup>1</sup>)</li>
-									<li class="fragment fade-down" data-fragment-index="1"><i class="fas fa-arrow-down" style="font-size: 5vmin;padding-bottom: 1em;"></i><br>
-										Gene set mapped from the significant loci in the GWAS</li>
-									<li class="fragment fade-down" data-fragment-index="2"><i class="fas fa-arrow-down" style="font-size: 5vmin;padding-bottom: 1em;"></i><br>
-										Compare identified genes to genes involved in synapses (e.g. BDNF, NRXN1 etc.)<sup>2</sup><br>
-										<i class="fas fa-arrow-down" style="font-size: 5vmin;padding-top: 1em;"></i></li>
-								</ul>
-							</div>
-
-							<div class="footer">
-								<div class="source">
-									<ol style="line-height: 0;">
-										<li>Watanabe <em>et al.</em> <em>Nature Communications</em> (2017)</li>
-										<li class="fragment" data-fragment-index="2"><em>SynGO</em>, Koopmans <em>et al.</em> <em>Neuron</em> (2019)</li>
-									  </ol>
-								</div>
-							</div>
-
-						</div>
-					</section>
-
-					<!-- SUBSLIDE -->
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">Mapped biological processes</div>
-							</div>
-
-							<figure class="large-image">
-								<img src="files/reactome_figure_annot.png" style="width: 82%;">
-								<!--<iframe data-src="https://reactome.org/reacfoam/?species=48887&color=COPPER&analysis=MjAyMTEwMTMxMDQzMjVfNjY2MA%3D%3D&resource=TOTAL&coverage=false" style="width: 100%;height: 75vh;"></iframe>-->
-							</figure>
-
-							<div class="footer">
-								<div class="source">
-									<em><a href="https://reactome.org/reacfoam/?species=48887&color=COPPER&analysis=MjAyMTEwMTMxMDQzMjVfNjY2MA%3D%3D&resource=TOTAL&coverage=false">Reactome Pathway Database</a></em>, Jassal <em>et al.</em> <em>Nucleic Acids Res.</em> (2020)
-								</div>
-							</div>
-
-						</div>
-					</section>
-
-				</section>
-
-				<!-- SLIDE -->
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="section">Conclusion</div>
-						</div>
-
-						<div class="content">
-
-							<ul class="fa-ul spaced no-bullets" style="padding-left: 1em;padding-bottom: 1em;">
-								<li class="fragment fade-up"><span class="fa-li"><i class="fas fa-dna accent"></i></span>
-									<div style="padding-left: 2em;">Genetic overlap between the brain functional connectome and psychiatric conditions</div>
-								</li>
-								<li class="fragment fade-up"><span class="fa-li"><i class="fas fa-brain accent"></i></span>
-									<div style="padding-left: 2em;">Link shared genetic loci back to biological processes implicated in psychiatric conditions</div>
-								</li>
-								<li class="fragment fade-up"><span class="fa-li"><i class="fas fa-code-branch accent"></i></span>
-									<div style="padding-left: 2em;">Identified a number of synaptic processes associated with shared loci</div>
-								</li>
-							</ul>
-
-							<figure class="two-column fragment fade-up" style="display: flex;justify-content: center;align-items: flex-start;">
-								<img class="column" src="files/medrxiv_screenshot.png" style="width: 65%;text-align: center;">
-								<figure style="width: 23%;">
-									<a href="https://bit.ly/network_genetics_pre" target="_blank">
-										<img class="column" src="files/preprint_qr.svg" style="border-radius: 25px;">
-										<figcaption style="color: var(--primary-accent);">bit.ly/network_genetics_pre</figcaption>
-									</a>
-								</figure>
-							</figure>
-						</div>
-
-					</div>
-				</section>
-
-				<!-- SLIDE -->
-				<section class="end color--green" data-state="hide-controls">
-					<div class="logo-wrapper">
-						<div class="logo" style="margin-top: 25vmin;"></div>
-
-						<div>
-							<div class="col_logo"><img src="lib/norment/other/UiO_white.svg"></div>
-							<div class="col_logo" style="width: 15%;"><img src="lib/norment/other/OUS_logo_HVIT_eng.png"></div>
-							<div class="col_logo"><img src="lib/norment/other/UiBlogo_Eng_white_left.svg"></div>
-							<div class="col_logo"><img src="lib/norment/other/Haukeland_white.svg"></div>
-							<div class="col_logo" style="width: 10%;"><img src="lib/norment/other/CoE_white.png"></div>
-						</div>
-
-						<div style="margin-top: 1em;font-style: italic;">Thanks to</div>
-						<div class="ackn" style="border: solid;border-radius: 5vmin;border-spacing: 0;width: 80%;margin: auto;">
-							<div class="col_logo"><img src="files/ukb_logo.svg"></div>
-							<div class="col_logo"><img style="height: 10vmin;" src="files/tsd_logo.png">
-								<img src="files/sigma2_logo.png">
-							</div>
-							<div class="col_logo"><em>ERA-NET</em><img src="files/ERA_NET_NEURON_logo.png"></div>
-							<div class="col_logo" style="text-align: left;line-height: 1.5vmin;">
-								<span style="color: #EBEBEB;font-size: 3vmin;font-weight: bold;line-height: 4vmin;">SYNSCHIZ</span><br>
-								<span style="color: #EBEBEB;font-size: 1.2vmin;">Linking synaptic dysfunction to disease mechanisms in schizophrenia</span>
-							</div>
-							<div class="col_logo"><img style="min-width: 1v5vmax;" src="files/NFR_logo.svg"></div>
-						</div>
-					</div>
-
-				</section>
-
-			</div>
-		</div>
-
-		<!-- PLUGINS -->
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script src="plugin/pointer/pointer.js"></script>
-
-		<!-- REVEAL.JS SETTINGS -->
-		<script src="lib/js/head.min.js"></script>
-		<script src="dist/reveal.js"></script>
-		<script src="dist/reveal-init.js"></script>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Daniel Roelfs - World Congress for Psychiatry Genetics 2021 slides</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="css/norment.css" />
+    <link rel="stylesheet" href="css/custom_wcpg.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="plugin/pointer/pointer.css" />
+    <link rel="stylesheet" href="lib/css/atom-one-dark.css" />
+
+    <!--<link rel="icon" href="lib/norment/logo/radiant-orange/mark-knockout.svg"/>-->
+    <link rel="icon" href="lib/norment/logo/color/mark-outline.svg" />
+    <link rel="icon" href="lib/norment/logo/color/mark-outline.png" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  </head>
+  <body>
+    <div class="reveal pattern--norment">
+      <div class="slides">
+        <!-- SLIDE -->
+        <section class="title" data-state="hide-controls">
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="logo logo--full"></div>
+            </div>
+            <div class="content">
+              <h1 style="font-size: 1.6em">Shared Genetic Determinants Between the Brain Functional Connectome and Psychiatric Disorders</h1>
+            </div>
+            <div class="credit">
+              <hr />
+              <div class="name">Daniel Roelfs</div>
+              <div class="twitter-handle" style="margin-top: -1.25em"><a href="https://twitter.com/dthroelfs">@dthroelfs</a></div>
+              <div class="role">University of Oslo</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section class="subsection color--white">
+          <div class="grid-wrapper">
+            <div class="logo logo--full"></div>
+            <h1 style="font-size: 1.2em; font-style: italic">No disclosures to declare</h1>
+            <div class="footer">
+              <div class="source">Slide added to comply with ACCME accreditation guidelines</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="logo"></div>
+              <div class="section">Background</div>
+            </div>
+
+            <div class="content vcenter">
+              <ul class="no-bullets">
+                <li>Psychiatric conditions are highly polygenic and complex<sup>1</sup></li>
+                <li class="fragment" data-fragment-index="1">Psychiatric conditions share symptoms and genetic profiles<sup>2</sup></li>
+                <li class="fragment" data-fragment-index="2">
+                  MRI studies show that structural and functional changes are widespread across the brain<sup>3</sup>
+                </li>
+                <li class="fragment b">
+                  Investigate distributed nature of genetic effects in the brain and its associations with psychiatric conditions
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer">
+              <div class="source">
+                <ol style="line-height: 0">
+                  <li>
+                    Anttila <em>et al.</em> <em>Science</em> (2018), Sullivan & Geschwind <em>Cell</em> (2019), Paulus & Thompson
+                    <em>JAMA Psychiatry</em> (2019)
+                  </li>
+                  <li class="fragment" data-fragment-index="1">
+                    Plana-Ripoll <em>et al.</em> <em>JAMA Psychiatry</em> (2019), Bulik-Sullivan <em>et al.</em> <em>Nature Genetics</em> (2015)
+                  </li>
+                  <li class="fragment" data-fragment-index="2">
+                    Petterson-Yeo <em>et al.</em> <em>Neurosci. Biobehav. Rev.</em> (2011), Arnatkeviciute <em>et al.</em> <em>NeuroImage</em> (2021)
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="logo"></div>
+              <div class="section">Dataset</div>
+            </div>
+
+            <figure class="large-image">
+              <img src="files/methods_ukb.png" class="large-image" style="width: 80%" />
+            </figure>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="logo"></div>
+              <div class="section">Why use fMRI?</div>
+            </div>
+
+            <div class="content vcenter">
+              <ul class="no-bullets">
+                <li>Changes in fMRI features associated with many psychiatric conditions<sup>1</sup></li>
+                <li class="fragment" data-fragment-index="1">
+                  Changes in structural MRI features have been used to study genetic architecture of conditions<sup>2</sup>
+                </li>
+                <li class="fragment">fMRI data provides insight into brain function rather than structure</li>
+                <li class="fragment b">Integrate changes in fMRI features with processes underlying psychiatric conditions</li>
+              </ul>
+            </div>
+
+            <div class="footer">
+              <div class="source">
+                <ol style="line-height: 0">
+                  <li>
+                    e.g. Brakowski <em>et al.</em> <em>J. Psychiatr. Res.</em> (2017), Syan <em>et al.</em> <em>J. Psychiatry. Neurosci.</em> (2018),
+                    etc.
+                  </li>
+                  <li class="fragment" data-fragment-index="1">
+                    Elliott <em>et al.</em> <em>Nature</em> (2018), Friston <em>et al.</em> <em>Schizophr. Res.</em> (2016)
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <!-- SUBSLIDE -->
+          <section>
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">Brain connectivity measures</div>
+              </div>
+
+              <figure class="large-image">
+                <img src="files/methods_fc.png" class="large-image" style="width: 80%" />
+              </figure>
+            </div>
+          </section>
+
+          <!-- SUBSLIDE -->
+          <section>
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">Brain connectivity measures</div>
+              </div>
+
+              <figure class="large-image" style="margin-top: -3em">
+                <img src="files/methods_fc_connectivity.png" class="large-image" style="width: 90%" />
+              </figure>
+            </div>
+          </section>
+
+          <!-- SUBSLIDE -->
+          <section>
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">Brain functional connectivity</div>
+              </div>
+
+              <figure class="large-image">
+                <iframe data-src="https://www.fmrib.ox.ac.uk/ukbiobank/netjs_d25/" style="width: 75vw; height: 75vh"></iframe>
+                <!--<img src="files/UKB_imaging_resource.png" style="height: 75vh;">-->
+              </figure>
+
+              <div class="footer">
+                <div class="source">
+                  <a href="https://www.fmrib.ox.ac.uk/ukbiobank/netjs_d25/" target="_blank">UK Biobank Brain Imaging - Connectome Browser (d25)</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <!-- SUBSLIDE -->
+          <section>
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">Multivariate GWAS</div>
+              </div>
+
+              <figure class="large-image">
+                <img src="files/methods_gwas_fc.png" class="large-image" style="width: 80%" />
+              </figure>
+
+              <div class="footer">
+                <div class="source">
+                  <ol style="line-height: 0">
+                    <li>
+                      van der Meer <em>et al.</em> <em>Nature Communications</em> (2020),
+                      <a href="https://github.com/precimed/mostest" target="_blank">github.com/precimed/mostest</a>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SUBSLIDE -->
+          <section>
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">What is MOSTest?</div>
+              </div>
+
+              <div class="two-column" style="margin-top: -3em">
+                <div class="column">
+                  <ul class="no-bullets hcenter">
+                    <li style="padding-bottom: 3em">Identifies small and distributed effects not detectable in univariate GWAS</li>
+                    <li class="fragment fade-down" style="padding-bottom: 0.5em">
+                      Takes univariate <em>z</em>-scores for each SNP across all phenotypes
+                    </li>
+                    <li class="fragment fade-down">
+                      <i class="fas fa-arrow-down" style="font-size: 5vmin; padding-bottom: 0.5em"></i><br />
+                      Integrates into multivariate test statistic through Mahalanobis distance
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="column">
+                  <figure>
+                    <img src="files/methods_mostest.png" />
+                  </figure>
+                </div>
+              </div>
+
+              <div class="footer">
+                <div class="source">
+                  Details in van der Meer <em>et al.</em> <em>Nature Communications</em> (2020),
+                  <a href="https://github.com/precimed/mostest" target="_blank">github.com/precimed/mostest</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SUBSLIDE -->
+          <section>
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">MOSTest Manhattan plots</div>
+              </div>
+
+              <div class="content">
+                <div class="two-column hcenter" style="padding-left: 2em">
+                  <div class="column">
+                    <h4>Functional connectivity</h4>
+
+                    <table style="margin-top: 1em">
+                      <tr>
+                        <td style="font-weight: bold">MOSTest</td>
+                        <td>15 loci</td>
+                      </tr>
+                      <tr>
+                        <td style="font-weight: bold">Min-P</td>
+                        <td>2 loci</td>
+                      </tr>
+                    </table>
+                  </div>
+
+                  <div class="column">
+                    <h4>Node variance</h4>
+
+                    <table style="margin-top: 1em">
+                      <tr>
+                        <td style="font-weight: bold">MOSTest</td>
+                        <td>5 loci</td>
+                      </tr>
+                      <tr>
+                        <td style="font-weight: bold">Min-P</td>
+                        <td>3 loci</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+
+                <figure>
+                  <img src="files/miami_sidexside.png" style="min-width: 100%" />
+                </figure>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <!-- SUBSLIDE -->
+          <section>
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">Genetic overlap</div>
+              </div>
+
+              <figure class="large-image">
+                <img src="files/methods_pleio_fc.png" class="large-image" style="width: 80%" />
+              </figure>
+
+              <div class="footer">
+                <div class="source">
+                  <ol style="line-height: 0">
+                    <li>
+                      <em>PleioFDR</em>, Andreassen <em>et al.</em> <em>PLoS Genetics</em> (2019),
+                      <a href="https://github.com/precimed/pleiofdr" target="_blank">github.com/precimed/pleiofdr</a>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SUBSLIDE -->
+          <section>
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">Conjunctional FDR</div>
+              </div>
+
+              <div class="content" style="margin-top: 1em">
+                <figure class="large-image">
+                  <img src="files/qq_pleio_figure.png" style="width: 85%" />
+                </figure>
+              </div>
+            </div>
+          </section>
+
+          <!-- SUBSLIDE -->
+          <section>
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">Conjunctional FDR</div>
+              </div>
+
+              <div class="content" style="margin-top: 1em">
+                <figure class="large-image">
+                  <img src="files/Pleio_manhattan.png" style="width: 80%" />
+                </figure>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <!-- SUBSLIDE -->
+          <section>
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">Mapped genes</div>
+              </div>
+
+              <div class="content">
+                <ul class="no-bullets hcenter" style="padding-top: 2em; margin: 0; width: 100%">
+                  <li>Functional annotation and mapping of genome-wide assocation studies (FUMA<sup>1</sup>)</li>
+                  <li class="fragment fade-down" data-fragment-index="1">
+                    <i class="fas fa-arrow-down" style="font-size: 5vmin; padding-bottom: 1em"></i><br />
+                    Gene set mapped from the significant loci in the GWAS
+                  </li>
+                  <li class="fragment fade-down" data-fragment-index="2">
+                    <i class="fas fa-arrow-down" style="font-size: 5vmin; padding-bottom: 1em"></i><br />
+                    Compare identified genes to genes involved in synapses (e.g. BDNF, NRXN1 etc.)<sup>2</sup><br />
+                    <i class="fas fa-arrow-down" style="font-size: 5vmin; padding-top: 1em"></i>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer">
+                <div class="source">
+                  <ol style="line-height: 0">
+                    <li>Watanabe <em>et al.</em> <em>Nature Communications</em> (2017)</li>
+                    <li class="fragment" data-fragment-index="2"><em>SynGO</em>, Koopmans <em>et al.</em> <em>Neuron</em> (2019)</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SUBSLIDE -->
+          <section>
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">Mapped biological processes</div>
+              </div>
+
+              <figure class="large-image">
+                <img src="files/reactome_figure_annot.png" style="width: 82%" />
+                <!--<iframe data-src="https://reactome.org/reacfoam/?species=48887&color=COPPER&analysis=MjAyMTEwMTMxMDQzMjVfNjY2MA%3D%3D&resource=TOTAL&coverage=false" style="width: 100%;height: 75vh;"></iframe>-->
+              </figure>
+
+              <div class="footer">
+                <div class="source">
+                  <em
+                    ><a
+                      href="https://reactome.org/reacfoam/?species=48887&color=COPPER&analysis=MjAyMTEwMTMxMDQzMjVfNjY2MA%3D%3D&resource=TOTAL&coverage=false"
+                      >Reactome Pathway Database</a
+                    ></em
+                  >, Jassal <em>et al.</em> <em>Nucleic Acids Res.</em> (2020)
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="logo"></div>
+              <div class="section">Conclusion</div>
+            </div>
+
+            <div class="content">
+              <ul class="fa-ul spaced no-bullets" style="padding-left: 1em; padding-bottom: 1em">
+                <li class="fragment fade-up">
+                  <span class="fa-li"><i class="fas fa-dna accent"></i></span>
+                  <div style="padding-left: 2em">Genetic overlap between the brain functional connectome and psychiatric conditions</div>
+                </li>
+                <li class="fragment fade-up">
+                  <span class="fa-li"><i class="fas fa-brain accent"></i></span>
+                  <div style="padding-left: 2em">Link shared genetic loci back to biological processes implicated in psychiatric conditions</div>
+                </li>
+                <li class="fragment fade-up">
+                  <span class="fa-li"><i class="fas fa-code-branch accent"></i></span>
+                  <div style="padding-left: 2em">Identified a number of synaptic processes associated with shared loci</div>
+                </li>
+              </ul>
+
+              <figure class="two-column fragment fade-up" style="display: flex; justify-content: center; align-items: flex-start">
+                <img class="column" src="files/medrxiv_screenshot.png" style="width: 65%; text-align: center" />
+                <figure style="width: 23%">
+                  <a href="https://bit.ly/network_genetics_pre" target="_blank">
+                    <img class="column" src="files/preprint_qr.svg" style="border-radius: 25px" />
+                    <figcaption style="color: var(--primary-accent)">bit.ly/network_genetics_pre</figcaption>
+                  </a>
+                </figure>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section class="end color--green" data-state="hide-controls">
+          <div class="logo-wrapper">
+            <div class="logo" style="margin-top: 25vmin"></div>
+
+            <div>
+              <div class="col_logo"><img src="lib/norment/other/UiO_white.svg" /></div>
+              <div class="col_logo" style="width: 15%"><img src="lib/norment/other/OUS_logo_HVIT_eng.png" /></div>
+              <div class="col_logo"><img src="lib/norment/other/UiBlogo_Eng_white_left.svg" /></div>
+              <div class="col_logo"><img src="lib/norment/other/Haukeland_white.svg" /></div>
+              <div class="col_logo" style="width: 10%"><img src="lib/norment/other/CoE_white.png" /></div>
+            </div>
+
+            <div style="margin-top: 1em; font-style: italic">Thanks to</div>
+            <div class="ackn" style="border: solid; border-radius: 5vmin; border-spacing: 0; width: 80%; margin: auto">
+              <div class="col_logo"><img src="files/ukb_logo.svg" /></div>
+              <div class="col_logo">
+                <img style="height: 10vmin" src="files/tsd_logo.png" />
+                <img src="files/sigma2_logo.png" />
+              </div>
+              <div class="col_logo"><em>ERA-NET</em><img src="files/ERA_NET_NEURON_logo.png" /></div>
+              <div class="col_logo" style="text-align: left; line-height: 1.5vmin">
+                <span style="color: #ebebeb; font-size: 3vmin; font-weight: bold; line-height: 4vmin">SYNSCHIZ</span><br />
+                <span style="color: #ebebeb; font-size: 1.2vmin">Linking synaptic dysfunction to disease mechanisms in schizophrenia</span>
+              </div>
+              <div class="col_logo"><img style="min-width: 1v5vmax" src="files/NFR_logo.svg" /></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- PLUGINS -->
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/pointer/pointer.js"></script>
+
+    <!-- REVEAL.JS SETTINGS -->
+    <script src="lib/js/head.min.js"></script>
+    <script src="dist/reveal.js"></script>
+    <script src="dist/reveal-init.js"></script>
+  </body>
 </html>

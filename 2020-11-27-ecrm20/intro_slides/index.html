@@ -1,164 +1,174 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-		<title>Welcome and Introduction</title>
+    <title>Welcome and Introduction</title>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/ecrm.css" id="theme">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/ecrm.css" id="theme" />
 
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme" />
 
-		<!-- Add chart plugin -->
-		<script src="plugin/chart/Chart.min.js"></script>
-		<script src="plugin/chart/plugin.js"></script>
+    <!-- Add chart plugin -->
+    <script src="plugin/chart/Chart.min.js"></script>
+    <script src="plugin/chart/plugin.js"></script>
 
-		<!-- Word cloud scripts-->
-		<script src="https://d3js.org/d3.v4.js"></script>
-		<script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+    <!-- Word cloud scripts-->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
 
+    <base target="_blank" />
+  </head>
 
-		<base target="_blank">
-	</head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- START SLIDES -->
 
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<!-- START SLIDES -->
-				
-				<!-- SLIDE -->
-				<section data-background="files/map.png" class="center">
-					Welcome to the
-					<h1>Early-Career Researchers Meeting 2020</h1>
-					on
-					<h1 style="padding-bottom: 5em;">Open Science and Reproducibility<br>at NORMENT</h1>
+        <!-- SLIDE -->
+        <section data-background="files/map.png" class="center">
+          Welcome to the
+          <h1>Early-Career Researchers Meeting 2020</h1>
+          on
+          <h1 style="padding-bottom: 5em">Open Science and Reproducibility<br />at NORMENT</h1>
 
-					<!--<div style="text-align: center; margin-top: 20%; margin-left: -5%;"> 
+          <!--<div style="text-align: center; margin-top: 20%; margin-left: -5%;"> 
 						<img style="margin: auto" src="https://norment.github.io/ecrm20_escaperoom/images/norment.png" width="50"/>
 					</div>-->
+        </section>
 
-				</section>
+        <!-- SLIDE -->
+        <section class="center">
+          <h2>Open Science</h2>
 
-				<!-- SLIDE -->
-				<section class="center">
-					<h2>Open Science</h2>
-					
-					<div id="wordcloud" style="height: 80vh;"></div>
+          <div id="wordcloud" style="height: 80vh"></div>
 
-					<script>
+          <script>
+            // List of words
+            var keywords = [
+              { word: "open access", size: "60" },
+              { word: "open data", size: "60" },
+              { word: "open education", size: "60" },
+              { word: "open government", size: "40" },
+              { word: "open licenses", size: "40" },
+              { word: "open scholarship", size: "40" },
+              { word: "open software", size: "40" },
+              { word: "open source", size: "30" },
+              { word: "politics", size: "30" },
+              { word: "preprints", size: "20" },
+              { word: "pre-registrations", size: "20" },
+              { word: "democracy", size: "20" },
+              { word: "capitalism", size: "20" },
+              { word: "reproducibility", size: "20" },
+              { word: "scripts", size: "10" },
+              { word: "funding", size: "10" },
+              { word: "society", size: "10" },
+              { word: "sharing", size: "10" },
+              { word: "academia", size: "10" },
+              { word: "europe", size: "10" },
+              { word: "collaboration", size: "10" },
+              { word: "accessibility", size: "10" },
+            ];
 
-						// List of words
-						var keywords = [
-							{ word: "open access", size: "60" },
-							{ word: "open data", size: "60" },
-							{ word: "open education", size: "60" },
-							{ word: "open government", size: "40" },
-							{ word: "open licenses", size: "40" },
-							{ word: "open scholarship", size: "40" },
-							{ word: "open software", size: "40" },
-							{ word: "open source", size: "30" },
-							{ word: "politics", size: "30" },
-							{ word: "preprints", size: "20" },
-							{ word: "pre-registrations", size: "20" },
-							{ word: "democracy", size: "20" },
-							{ word: "capitalism", size: "20" },
-							{ word: "reproducibility", size: "20" },
-							{ word: "scripts", size: "10" },
-							{ word: "funding", size: "10" },
-							{ word: "society", size: "10" },
-							{ word: "sharing", size: "10" },
-							{ word: "academia", size: "10" },
-							{ word: "europe", size: "10" },
-							{ word: "collaboration", size: "10" },
-							{ word: "accessibility", size: "10" },
-						]
-						
-						// set the dimensions and margins of the graph
-						var margin = {top: 20, right: 20, bottom: 20, left: 20},
-							width = 800 - margin.left - margin.right,
-							height = 500 - margin.top - margin.bottom;
-						
-						// append the svg object to the body of the page
-						var svg = d3.select("#wordcloud").append("svg")
-							.attr("width", width + margin.left + margin.right)
-							.attr("height", height + margin.top + margin.bottom)
-						  .append("g")
-							.attr("transform",
-								  "translate(" + margin.left + "," + margin.top + ")");
-						
-						// Constructs a new cloud layout instance. It run an algorithm to find the position of words that suits your requirements
-						// Wordcloud features that are different from one word to the other must be here
-						var layout = d3.layout.cloud()
-						  .size([width, height])
-						  .words(keywords.map(function(d) { return {text: d.word, size:d.size}; }))
-						  .padding(5)        //space between words
-						  .rotate(function() { return ~~(Math.random() * 2) * 90; })
-						  .fontSize(function(d) { return d.size; })      // font size of words
-						  .on("end", draw);
-						layout.start();
-						
-						// This function takes the output of 'layout' above and draw the words
-						// Wordcloud features that are THE SAME from one word to the other can be here
-						function draw(words) {
-						  svg
-							.append("g")
-							  .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
-							  .selectAll("text")
-								.data(words)
-							  .enter().append("text")
-								.style("font-size", function(d) { return d.size; + 4 })
-								.style("fill", "#E896C1")
-								.attr("text-anchor", "middle")
-								.style("font-family", "Josefin Sans")
-								.attr("transform", function(d) {
-								  return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
-								})
-								.text(function(d) { return d.text; });
-						}
-					
-					</script>
+            // set the dimensions and margins of the graph
+            var margin = { top: 20, right: 20, bottom: 20, left: 20 },
+              width = 800 - margin.left - margin.right,
+              height = 500 - margin.top - margin.bottom;
 
-				</section>
+            // append the svg object to the body of the page
+            var svg = d3
+              .select("#wordcloud")
+              .append("svg")
+              .attr("width", width + margin.left + margin.right)
+              .attr("height", height + margin.top + margin.bottom)
+              .append("g")
+              .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-				<!-- SLIDE -->
-				<section data-visibility="hidden">
-					<div class="container">
-						<div class="col" style="display:flex; flex-direction:column; flex:1;">  
-							<h2>Open Science in Norway</h2>
+            // Constructs a new cloud layout instance. It run an algorithm to find the position of words that suits your requirements
+            // Wordcloud features that are different from one word to the other must be here
+            var layout = d3.layout
+              .cloud()
+              .size([width, height])
+              .words(
+                keywords.map(function (d) {
+                  return { text: d.word, size: d.size };
+                })
+              )
+              .padding(5) //space between words
+              .rotate(function () {
+                return ~~(Math.random() * 2) * 90;
+              })
+              .fontSize(function (d) {
+                return d.size;
+              }) // font size of words
+              .on("end", draw);
+            layout.start();
 
-							<br><br>
+            // This function takes the output of 'layout' above and draw the words
+            // Wordcloud features that are THE SAME from one word to the other can be here
+            function draw(words) {
+              svg
+                .append("g")
+                .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
+                .selectAll("text")
+                .data(words)
+                .enter()
+                .append("text")
+                .style("font-size", function (d) {
+                  return d.size;
+                  +4;
+                })
+                .style("fill", "#E896C1")
+                .attr("text-anchor", "middle")
+                .style("font-family", "Josefin Sans")
+                .attr("transform", function (d) {
+                  return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                })
+                .text(function (d) {
+                  return d.text;
+                });
+            }
+          </script>
+        </section>
 
-							Exerpt from the Norwegian Research Council's policy statement on Open Science
+        <!-- SLIDE -->
+        <section data-visibility="hidden">
+          <div class="container">
+            <div class="col" style="display: flex; flex-direction: column; flex: 1">
+              <h2>Open Science in Norway</h2>
 
-							<br><br>
+              <br /><br />
 
-							<blockquote>The Research Council seeks to lead the way in making research as open as possible and as closed as necessary.</blockquote>
+              Exerpt from the Norwegian Research Council's policy statement on Open Science
 
-							<div class="footnote" style="margin-top: 10em;">
-								Source: <a href="https://www.forskningsradet.no/en/Adviser-research-policy/open-science/policy-for-open-science/">Forskningsrådet</a>
-							</div>
-						</div>
-						
-						<div class="col" style="margin-top: 15%;">
-							<img src="files/NRC_OS_statement.png">
-						</div>
-						
-						</div>
-				</section>
+              <br /><br />
 
-				<!-- SLIDE -->
-				<section class="center" style="display: block;">
-					<h2>Is there a replicability crisis?</h2>
+              <blockquote>The Research Council seeks to lead the way in making research as open as possible and as closed as necessary.</blockquote>
 
-					<canvas class="stretch" data-chart="pie">
-						Is there a crisis, 7, 3, 38, 52
-						<!--
+              <div class="footnote" style="margin-top: 10em">
+                Source: <a href="https://www.forskningsradet.no/en/Adviser-research-policy/open-science/policy-for-open-science/">Forskningsrådet</a>
+              </div>
+            </div>
+
+            <div class="col" style="margin-top: 15%">
+              <img src="files/NRC_OS_statement.png" />
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section class="center" style="display: block">
+          <h2>Is there a replicability crisis?</h2>
+
+          <canvas class="stretch" data-chart="pie">
+            Is there a crisis, 7, 3, 38, 52
+            <!--
 						{
 							"data" : {
 								"labels" : ["Don't know", "No, there is no crisis", "Yes, a slight crisis", "Yes, a significant crisis"],
@@ -175,22 +185,19 @@
 							}
  						}
 						-->
-					</canvas>
+          </canvas>
 
-					<div class="footnote" style="padding-top: 2em;">
-						Source: <a href="https://doi.org/10.1038/533452a" target="_blank">Nature</a>
-					</div>
+          <div class="footnote" style="padding-top: 2em">Source: <a href="https://doi.org/10.1038/533452a" target="_blank">Nature</a></div>
+        </section>
 
-				</section>
+        <!-- SLIDE -->
+        <section class="center" style="display: block">
+          <h2>What factors contribute to irreproducible research?</h2>
 
-				<!-- SLIDE -->
-				<section class="center" style="display: block;">
-					<h2>What factors contribute to irreproducible research?</h2> 
-
-					<canvas class="stretch" data-chart="horizontalBar">
-						Always/often contribute,	68, 64, 56, 54, 52, 46, 46, 42, 41, 38, 38, 30, 22, 8
-						Sometimes contribute,		28, 32, 32, 34, 40, 36, 40, 37, 29, 43, 45, 46, 36, 30
-						<!-- 
+          <canvas class="stretch" data-chart="horizontalBar">
+            Always/often contribute, 68, 64, 56, 54, 52, 46, 46, 42, 41, 38, 38, 30, 22, 8 Sometimes contribute, 28, 32, 32, 34, 40, 36, 40, 37, 29,
+            43, 45, 46, 36, 30
+            <!-- 
 						{
 							"data" : {
 								"labels" : ["Selective reporting", "Pressure to publish", "Low statistical power or poor analysis", "Not replicated enough in original lab", 
@@ -218,90 +225,74 @@
 							}
 						}
 						-->
-					</canvas>
+          </canvas>
 
-					<div class="footnote" style="padding-top: 1em;">
-						Source: <a href="https://doi.org/10.1038/533452a" target="_blank">Nature</a>
-					</div>	
+          <div class="footnote" style="padding-top: 1em">Source: <a href="https://doi.org/10.1038/533452a" target="_blank">Nature</a></div>
+        </section>
 
-				</section>
+        <!-- SLIDE -->
+        <section>
+          <!-- SUBSLIDE -->
+          <section>
+            <h2>The Program</h2>
 
-				<!-- SLIDE -->
-				<section>
-					<!-- SUBSLIDE -->
-					<section>
-						<h2>The Program</h2>
-						
-						<p class="fragment fade-up inclist accent" style="margin-top: 3em;">2 keynote speakers</p> 
-						<p class="fragment fade-up inclist accent">4 internal speakers</p>
-						<p class="fragment fade-up inclist accent">1 exciting interactive session</p> 
+            <p class="fragment fade-up inclist accent" style="margin-top: 3em">2 keynote speakers</p>
+            <p class="fragment fade-up inclist accent">4 internal speakers</p>
+            <p class="fragment fade-up inclist accent">1 exciting interactive session</p>
+          </section>
 
-					</section>
+          <!-- SUBSLIDE -->
+          <section class="center">
+            <h2 style="text-align: left">Interactive Session</h2>
 
-					<!-- SUBSLIDE -->
-					<section class="center">
-						<h2 style="text-align: left;">Interactive Session</h2>
+            <blockquote>Virtual Open Science Escape Room</blockquote>
 
-						<blockquote>Virtual Open Science Escape Room</blockquote>
-						
-						<a href="https://norment.github.io/ecrm20_escaperoom/">
-							<img src="files/website_screenshot.png" height="80%" width="80%">
-						</a>
-					</section>
-				</section>
+            <a href="https://norment.github.io/ecrm20_escaperoom/">
+              <img src="files/website_screenshot.png" height="80%" width="80%" />
+            </a>
+          </section>
+        </section>
 
-				<!-- SLIDE -->
-				<section>
-					<h2>Follow along</h2>
-					
-					<p class="fragment fade-up inclist accent" style="margin-top: 3em;">
-						<a href="https://norment.github.io/ecrm20_escaperoom/pages/program/">
-							<i class="fa fa-calendar-alt"></i>&nbsp;norment.github.io/ecrm20_escaperoom/program
-						</a>
-					</p> 
-					<p class="fragment fade-up inclist accent">
-						<a href="http://twitter.com/share?hashtags=norment_ecrm20">
-							<i class="fab fa-twitter"></i>&nbsp;#norment_ecrm20
-						</a>
-					</p>
+        <!-- SLIDE -->
+        <section>
+          <h2>Follow along</h2>
 
-				</section>
+          <p class="fragment fade-up inclist accent" style="margin-top: 3em">
+            <a href="https://norment.github.io/ecrm20_escaperoom/pages/program/">
+              <i class="fa fa-calendar-alt"></i>&nbsp;norment.github.io/ecrm20_escaperoom/program
+            </a>
+          </p>
+          <p class="fragment fade-up inclist accent">
+            <a href="http://twitter.com/share?hashtags=norment_ecrm20"> <i class="fab fa-twitter"></i>&nbsp;#norment_ecrm20 </a>
+          </p>
+        </section>
 
-				<!-- SLIDE -->
-				<section data-background="files/map.png" class="center">
-					<h2>Enjoy!</h2>
-					
-					<a href="http://twitter.com/share?hashtags=norment_ecrm20"><i class="fab fa-twitter"></i>&nbsp;#norment_ecrm20</a>
+        <!-- SLIDE -->
+        <section data-background="files/map.png" class="center">
+          <h2>Enjoy!</h2>
 
-				</section>
+          <a href="http://twitter.com/share?hashtags=norment_ecrm20"><i class="fab fa-twitter"></i>&nbsp;#norment_ecrm20</a>
+        </section>
 
-				<!-- END SLIDES --> 
-			</div>
-		</div>
+        <!-- END SLIDES -->
+      </div>
+    </div>
 
-		<script src="js/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-				center: false,
+    <script src="js/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        center: false,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealChart ]
-			});
-		</script>
-	</body>
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealChart],
+      });
+    </script>
+  </body>
 </html>
-
-
-
-
-
-
-
-

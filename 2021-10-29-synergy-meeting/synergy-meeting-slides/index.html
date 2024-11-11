@@ -1,446 +1,432 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-		<title>Synergy Meeting Slides - Daniel Roelfs</title>
-
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="css/norment.css">
-		<link rel="stylesheet" href="css/synergy_custom.css">
-
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/atom-one-dark.css">
-		<link rel="stylesheet" href="plugin/pointer/pointer.css" />
-
-		<!--<link rel="icon" href="lib/norment/logo/radiant-orange/mark-knockout.svg"/>-->
-		<link rel="icon" href="lib/norment/logo/color/mark-outline.svg"/>
-		<link rel="icon" href="lib/norment/logo/color/mark-outline.png"/>
-
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-	</head>
-	<body>
-
-		<div class="reveal pattern--norment">
-			<div class="slides">
-
-				<!-- SLIDE -->
-				<section class="title" data-state="hide-controls">
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo logo--full"></div>
-						</div>
-						<div class="content">
-							<h1 style="font-size: 2em;">Using multimodal phenotypes in the UKB to study psychiatric conditions</h1>
-						</div>
-						<div class="credit">
-							<hr/>
-							<div class="name">Daniel Roelfs</div>
-							<div class="twitter-handle" style="margin-top: -1.25em;"><a href="https://twitter.com/dthroelfs">@dthroelfs</a></div>
-							<!--<div class="role">PhD Candidate</div>-->
-						</div>
-					</div>
-				</section>
-
-				<!-- SLIDE -->
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="section">Introduction</div>
-						</div>
-
-						<div class="content vcenter">
-							<ul class="no-bullets">
-								<li>Psychiatric conditions are highly polygenic and complex<sup>1</sup></li>
-								<li class="fragment" data-fragment-index="1">Psychiatric conditions share symptoms and genetic profiles<sup>2</sup></li>
-								<li class="fragment" data-fragment-index="2">MRI studies show that structural and functional changes are widespread across the brain<sup>3</sup></li>
-								<li class="fragment b">Investigate distributed nature of genetic effects in the brain and its associations with psychiatric conditions</li>
-							</ul>
-						</div>
-
-						<div class="footer">
-							<div class="source">
-								<ol style="line-height: 0;">
-									<li>Anttila <em>et al.</em> <em>Science</em> (2018), Sullivan & Geschwind <em>Cell</em> (2019), Paulus & Thompson <em>JAMA Psychiatry</em> (2019)</li>
-									<li class="fragment" data-fragment-index="1">Plana-Ripoll <em>et al.</em> <em>JAMA Psychiatry</em> (2019), Bulik-Sullivan <em>et al.</em> <em>Nature Genetics</em> (2015)</li>
-									<li class="fragment" data-fragment-index="2">Petterson-Yeo <em>et al.</em> <em>Neurosci. Biobehav. Rev.</em> (2011), Arnatkeviciute <em>et al.</em> <em>NeuroImage</em> (2021)</li>
-								  </ol>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<!-- SLIDE -->
-				<section>
-
-					<!-- SUBSLIDE -->
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">Methods (mental health)</div>
-							</div>
-							
-							<figure class="large-image">
-								<img src="files/methods_ukb_ica.png" class="large-image" style="width: 90%;">
-							</figure>
-
-						</div>
-					</section>
-
-					<!-- SUBSLIDE -->
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">Methods (mental health)</div>
-							</div>
-							
-							<figure class="large-image">
-								<img src="files/methods_ica.png" class="large-image" style="width: 80%;">
-							</figure>
-							
-						</div>
-					</section>
-
-					<!-- SUBSLIDE -->
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">Methods (mental health)</div>
-							</div>
-							
-							<figure class="large-image">
-								<img src="files/methods_gwas_ica.png" class="large-image" style="width: 80%;">
-							</figure>
-							
-						</div>
-					</section>
-
-					<!-- SUBSLIDE -->
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">Methods (mental health)</div>
-							</div>
-							
-							<figure class="large-image">
-								<img src="files/methods_ldsc_ica.png" class="large-image" style="width: 80%;">
-							</figure>
-							
-						</div>
-					</section>
-
-				</section>
-
-				<!-- SLIDE -->
-				<section>
-
-					<!-- SUBSLIDE -->
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">Results (ICA decomposition)</div>
-							</div>
-							
-							<figure class="large-image">
-								<img src="files/ICAWeightMatrix_subst.png" class="large-image" style="width: 79%;">
-							</figure>
-							
-						</div>
-					</section>
-
-					<!-- SUBSLIDE -->
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">Results (IC x IC)</div>
-							</div>
-							
-							<figure class="large-image" style="height: 80%;margin-top: -3em;"> 
-								<img src="files/ICxIC_ldsc_matrix.png" class="large-image">
-							</figure>
-							
-						</div>
-					</section>
-
-					<!-- SUBSLIDE -->
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">Results (IC x IC)</div>
-							</div>
-
-							<figure class="large-image" style="margin-top: 0;"> 
-								<img src="files/LDSC_stats_matrix.png" class="large-image">
-							</figure>
-
-						</div>
-					</section>
-				</section>
-
-				<!-- SLIDE -->
-				<section>
-
-					<!-- SUBSLIDE -->
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">Methods (fMRI)</div>
-							</div>
-							
-							<figure class="large-image">
-								<img src="files/methods_ukb_fc.png" class="large-image" style="width: 90%;">
-							</figure>
-
-						</div>
-					</section>
-
-					<!-- SUBSLIDE -->
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">Methods (fMRI)</div>
-							</div>
-							
-							<figure class="large-image">
-								<img src="files/methods_fc.png" class="large-image" style="width: 80%;">
-							</figure>
-							
-						</div>
-					</section>
-
-					<!-- SUBSLIDE -->
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">Brain connectivity measures</div>
-							</div>
-
-							<figure class="large-image" style="margin-top: -3em;">
-								<img src="files/methods_fc_connectivity.png" class="large-image" style="width: 90%;">
-							</figure>
-							
-						</div>
-					</section>
-
-					<!-- SUBSLIDE -->
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">Methods (fMRI)</div>
-							</div>
-							
-							<figure class="large-image">
-								<img src="files/methods_gwas_fc.png" class="large-image" style="width: 80%;">
-							</figure>
-
-							<div class="footer">
-								<div class="source">
-									<ol style="line-height: 0;">
-										<li>van der Meer <em>et al.</em> <em>Nature Communications</em> (2020), <a href="https://github.com/precimed/mostest" target="_blank">github.com/precimed/mostest</a></li>
-									</ol>
-								</div>
-							</div>
-							
-						</div>
-					</section>
-
-					<!-- SUBSLIDE -->
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">Methods (fMRI)</div>
-							</div>
-							
-							<figure class="large-image">
-								<img src="files/methods_pleio_fc.png" class="large-image" style="width: 80%;">
-							</figure>
-
-							<div class="footer">
-								<div class="source">
-									<ol style="line-height: 0;">
-										<li><em>PleioFDR</em>, Andreassen <em>et al.</em> <em>PLoS Genetics</em> (2019), <a href="https://github.com/precimed/pleiofdr" target="_blank">github.com/precimed/pleiofdr</a></li>
-									</ol>
-								</div>
-							</div>
-							
-						</div>
-					</section>
-
-				</section>
-
-				<!-- SLIDE -->
-				<section>
-
-					<!-- SUBSLIDE -->
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">MOSTest Manhattan plots</div>
-							</div>
-
-							<div class="content">
-								<div class="two-column hcenter" style="padding-left: 2em;">
-
-								
-									<div class="column">
-										<h4>Functional Connectivity</h4>
-
-										<table style="margin-top: 1em;">
-											<tr>
-												<td style="font-weight: bold;">MOSTest</td>
-												<td>15 loci</td>
-											</tr>
-											<tr>
-												<td style="font-weight: bold;">Min-P</td>
-												<td>2 loci</td>
-											</tr>
-										</table>
-									
-									</div>
-
-									<div class="column">
-										<h4>Temporal Node Variance</h4>
-
-										<table style="margin-top: 1em;">
-											<tr>
-												<td style="font-weight: bold;">MOSTest</td>
-												<td>5 loci</td>
-											</tr>
-											<tr>
-												<td style="font-weight: bold;">Min-P</td>
-												<td>3 loci</td>
-											</tr>
-										</table>
-									</div>
-
-								</div>
-
-								<figure>
-									<img src="files/miami_sidexside.png" style="min-width: 100%;">
-								</figure>
-							</div>
-
-						</div>
-					</section>
-
-				</section>
-
-
-				<!-- SLIDE -->
-				<section>
-
-					<!-- SUBSLIDE -->
-					<section data-visibility="hidden">
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">Conjunctional FDR</div>
-							</div>
-
-							<div class="content" style="margin-top: -0.5em;">
-								<figure>
-									<img src="files/qq_pleio_figure.png" style="min-width: 100%;">
-								</figure>
-							</div>
-
-						</div>
-					</section>
-
-					<!-- SUBSLIDE -->
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">Conjunctional FDR</div>
-							</div>
-
-							<div class="content" style="margin-top: -0em;">
-								<figure>
-									<img src="files/Pleio_manhattan.png" style="min-width: 100%;">
-								</figure>
-							</div>
-
-						</div>
-					</section>
-
-				</section>
-
-				<!-- SLIDE -->
-				<section>
-
-					<!-- SUBSLIDE -->
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">Mapped genes</div>
-							</div>
-
-							<div class="content">
-								<ul class="no-bullets hcenter" style="padding-top: 2em;margin: 0;width: 100%;">
-									<li>Functional annotation and mapping of genome-wide assocation studies (FUMA<sup>1</sup>)</li>
-									<li class="fragment fade-down" data-fragment-index="1"><i class="fas fa-arrow-down" style="font-size: 5vmin;padding-bottom: 1em;"></i><br>
-										Gene set mapped from the significant loci in the GWAS</li>
-									<li class="fragment fade-down" data-fragment-index="2"><i class="fas fa-arrow-down" style="font-size: 5vmin;padding-bottom: 1em;"></i><br>
-										Compare identified genes to genes involved in synapses (e.g. BDNF, NRXN1 etc.)<sup>2</sup><br></li>
-								</ul>
-							</div>
-
-							<div class="footer">
-								<div class="source">
-									<ol style="line-height: 0;">
-										<li>Watanabe <em>et al.</em> <em>Nature Communications</em> (2017)</li>
-										<li class="fragment" data-fragment-index="2"><em>SynGO</em>, Koopmans <em>et al.</em> <em>Neuron</em> (2019)</li>
-									  </ol>
-								</div>
-							</div>
-
-						</div>
-					</section>
-
-					<!-- SUBSLIDE -->
-					<section data-visibility="hidden">
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="section">Mapped biological processes</div>
-							</div>
-
-							<figure class="large-image">
-								<img src="files/reactome_figure_annot.png" class="large-image" style="width: 91%;">
-							</figure>
-
-						</div>
-					</section>
-
-				</section>
-
-				<!-- SLIDE -->
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="section">Conclusion</div>
-						</div>
-
-						<div class="content vcenter">
-							<!--<table style="margin-top: 1em;margin: 0;" class="spaced">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Synergy Meeting Slides - Daniel Roelfs</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="css/norment.css" />
+    <link rel="stylesheet" href="css/synergy_custom.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/atom-one-dark.css" />
+    <link rel="stylesheet" href="plugin/pointer/pointer.css" />
+
+    <!--<link rel="icon" href="lib/norment/logo/radiant-orange/mark-knockout.svg"/>-->
+    <link rel="icon" href="lib/norment/logo/color/mark-outline.svg" />
+    <link rel="icon" href="lib/norment/logo/color/mark-outline.png" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  </head>
+  <body>
+    <div class="reveal pattern--norment">
+      <div class="slides">
+        <!-- SLIDE -->
+        <section class="title" data-state="hide-controls">
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="logo logo--full"></div>
+            </div>
+            <div class="content">
+              <h1 style="font-size: 2em">Using multimodal phenotypes in the UKB to study psychiatric conditions</h1>
+            </div>
+            <div class="credit">
+              <hr />
+              <div class="name">Daniel Roelfs</div>
+              <div class="twitter-handle" style="margin-top: -1.25em"><a href="https://twitter.com/dthroelfs">@dthroelfs</a></div>
+              <!--<div class="role">PhD Candidate</div>-->
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="logo"></div>
+              <div class="section">Introduction</div>
+            </div>
+
+            <div class="content vcenter">
+              <ul class="no-bullets">
+                <li>Psychiatric conditions are highly polygenic and complex<sup>1</sup></li>
+                <li class="fragment" data-fragment-index="1">Psychiatric conditions share symptoms and genetic profiles<sup>2</sup></li>
+                <li class="fragment" data-fragment-index="2">
+                  MRI studies show that structural and functional changes are widespread across the brain<sup>3</sup>
+                </li>
+                <li class="fragment b">
+                  Investigate distributed nature of genetic effects in the brain and its associations with psychiatric conditions
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer">
+              <div class="source">
+                <ol style="line-height: 0">
+                  <li>
+                    Anttila <em>et al.</em> <em>Science</em> (2018), Sullivan & Geschwind <em>Cell</em> (2019), Paulus & Thompson
+                    <em>JAMA Psychiatry</em> (2019)
+                  </li>
+                  <li class="fragment" data-fragment-index="1">
+                    Plana-Ripoll <em>et al.</em> <em>JAMA Psychiatry</em> (2019), Bulik-Sullivan <em>et al.</em> <em>Nature Genetics</em> (2015)
+                  </li>
+                  <li class="fragment" data-fragment-index="2">
+                    Petterson-Yeo <em>et al.</em> <em>Neurosci. Biobehav. Rev.</em> (2011), Arnatkeviciute <em>et al.</em> <em>NeuroImage</em> (2021)
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <!-- SUBSLIDE -->
+          <section>
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">Methods (mental health)</div>
+              </div>
+
+              <figure class="large-image">
+                <img src="files/methods_ukb_ica.png" class="large-image" style="width: 90%" />
+              </figure>
+            </div>
+          </section>
+
+          <!-- SUBSLIDE -->
+          <section>
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">Methods (mental health)</div>
+              </div>
+
+              <figure class="large-image">
+                <img src="files/methods_ica.png" class="large-image" style="width: 80%" />
+              </figure>
+            </div>
+          </section>
+
+          <!-- SUBSLIDE -->
+          <section>
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">Methods (mental health)</div>
+              </div>
+
+              <figure class="large-image">
+                <img src="files/methods_gwas_ica.png" class="large-image" style="width: 80%" />
+              </figure>
+            </div>
+          </section>
+
+          <!-- SUBSLIDE -->
+          <section>
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">Methods (mental health)</div>
+              </div>
+
+              <figure class="large-image">
+                <img src="files/methods_ldsc_ica.png" class="large-image" style="width: 80%" />
+              </figure>
+            </div>
+          </section>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <!-- SUBSLIDE -->
+          <section>
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">Results (ICA decomposition)</div>
+              </div>
+
+              <figure class="large-image">
+                <img src="files/ICAWeightMatrix_subst.png" class="large-image" style="width: 79%" />
+              </figure>
+            </div>
+          </section>
+
+          <!-- SUBSLIDE -->
+          <section>
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">Results (IC x IC)</div>
+              </div>
+
+              <figure class="large-image" style="height: 80%; margin-top: -3em">
+                <img src="files/ICxIC_ldsc_matrix.png" class="large-image" />
+              </figure>
+            </div>
+          </section>
+
+          <!-- SUBSLIDE -->
+          <section>
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">Results (IC x IC)</div>
+              </div>
+
+              <figure class="large-image" style="margin-top: 0">
+                <img src="files/LDSC_stats_matrix.png" class="large-image" />
+              </figure>
+            </div>
+          </section>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <!-- SUBSLIDE -->
+          <section>
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">Methods (fMRI)</div>
+              </div>
+
+              <figure class="large-image">
+                <img src="files/methods_ukb_fc.png" class="large-image" style="width: 90%" />
+              </figure>
+            </div>
+          </section>
+
+          <!-- SUBSLIDE -->
+          <section>
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">Methods (fMRI)</div>
+              </div>
+
+              <figure class="large-image">
+                <img src="files/methods_fc.png" class="large-image" style="width: 80%" />
+              </figure>
+            </div>
+          </section>
+
+          <!-- SUBSLIDE -->
+          <section>
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">Brain connectivity measures</div>
+              </div>
+
+              <figure class="large-image" style="margin-top: -3em">
+                <img src="files/methods_fc_connectivity.png" class="large-image" style="width: 90%" />
+              </figure>
+            </div>
+          </section>
+
+          <!-- SUBSLIDE -->
+          <section>
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">Methods (fMRI)</div>
+              </div>
+
+              <figure class="large-image">
+                <img src="files/methods_gwas_fc.png" class="large-image" style="width: 80%" />
+              </figure>
+
+              <div class="footer">
+                <div class="source">
+                  <ol style="line-height: 0">
+                    <li>
+                      van der Meer <em>et al.</em> <em>Nature Communications</em> (2020),
+                      <a href="https://github.com/precimed/mostest" target="_blank">github.com/precimed/mostest</a>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SUBSLIDE -->
+          <section>
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">Methods (fMRI)</div>
+              </div>
+
+              <figure class="large-image">
+                <img src="files/methods_pleio_fc.png" class="large-image" style="width: 80%" />
+              </figure>
+
+              <div class="footer">
+                <div class="source">
+                  <ol style="line-height: 0">
+                    <li>
+                      <em>PleioFDR</em>, Andreassen <em>et al.</em> <em>PLoS Genetics</em> (2019),
+                      <a href="https://github.com/precimed/pleiofdr" target="_blank">github.com/precimed/pleiofdr</a>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <!-- SUBSLIDE -->
+          <section>
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">MOSTest Manhattan plots</div>
+              </div>
+
+              <div class="content">
+                <div class="two-column hcenter" style="padding-left: 2em">
+                  <div class="column">
+                    <h4>Functional Connectivity</h4>
+
+                    <table style="margin-top: 1em">
+                      <tr>
+                        <td style="font-weight: bold">MOSTest</td>
+                        <td>15 loci</td>
+                      </tr>
+                      <tr>
+                        <td style="font-weight: bold">Min-P</td>
+                        <td>2 loci</td>
+                      </tr>
+                    </table>
+                  </div>
+
+                  <div class="column">
+                    <h4>Temporal Node Variance</h4>
+
+                    <table style="margin-top: 1em">
+                      <tr>
+                        <td style="font-weight: bold">MOSTest</td>
+                        <td>5 loci</td>
+                      </tr>
+                      <tr>
+                        <td style="font-weight: bold">Min-P</td>
+                        <td>3 loci</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+
+                <figure>
+                  <img src="files/miami_sidexside.png" style="min-width: 100%" />
+                </figure>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <!-- SUBSLIDE -->
+          <section data-visibility="hidden">
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">Conjunctional FDR</div>
+              </div>
+
+              <div class="content" style="margin-top: -0.5em">
+                <figure>
+                  <img src="files/qq_pleio_figure.png" style="min-width: 100%" />
+                </figure>
+              </div>
+            </div>
+          </section>
+
+          <!-- SUBSLIDE -->
+          <section>
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">Conjunctional FDR</div>
+              </div>
+
+              <div class="content" style="margin-top: -0em">
+                <figure>
+                  <img src="files/Pleio_manhattan.png" style="min-width: 100%" />
+                </figure>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <!-- SUBSLIDE -->
+          <section>
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">Mapped genes</div>
+              </div>
+
+              <div class="content">
+                <ul class="no-bullets hcenter" style="padding-top: 2em; margin: 0; width: 100%">
+                  <li>Functional annotation and mapping of genome-wide assocation studies (FUMA<sup>1</sup>)</li>
+                  <li class="fragment fade-down" data-fragment-index="1">
+                    <i class="fas fa-arrow-down" style="font-size: 5vmin; padding-bottom: 1em"></i><br />
+                    Gene set mapped from the significant loci in the GWAS
+                  </li>
+                  <li class="fragment fade-down" data-fragment-index="2">
+                    <i class="fas fa-arrow-down" style="font-size: 5vmin; padding-bottom: 1em"></i><br />
+                    Compare identified genes to genes involved in synapses (e.g. BDNF, NRXN1 etc.)<sup>2</sup><br />
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer">
+                <div class="source">
+                  <ol style="line-height: 0">
+                    <li>Watanabe <em>et al.</em> <em>Nature Communications</em> (2017)</li>
+                    <li class="fragment" data-fragment-index="2"><em>SynGO</em>, Koopmans <em>et al.</em> <em>Neuron</em> (2019)</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SUBSLIDE -->
+          <section data-visibility="hidden">
+            <div class="grid-wrapper">
+              <div class="header">
+                <div class="logo"></div>
+                <div class="section">Mapped biological processes</div>
+              </div>
+
+              <figure class="large-image">
+                <img src="files/reactome_figure_annot.png" class="large-image" style="width: 91%" />
+              </figure>
+            </div>
+          </section>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="logo"></div>
+              <div class="section">Conclusion</div>
+            </div>
+
+            <div class="content vcenter">
+              <!--<table style="margin-top: 1em;margin: 0;" class="spaced">
 								<tr class="fragment fade-up">
 									<td><i class="fas fa-dna accent" style="padding-right: 1em;"></td>
 									<td>Largest multivariate GWAS of brain functional connectivity to date</td>
@@ -455,70 +441,117 @@
 								</tr>
 							</table>-->
 
-							<ul class="fa-ul no-bullets" style="padding-left: 1em;">
-								<li class="fragment fade-up"><span class="fa-li"><i class="fas fa-dna accent"></i></span>
-									<div style="padding-left: 2em;">Pleiotropy between mental health symptom profiles, functional connectivity, and psychiatric conditions</div>
-								</li>
-								<li class="fragment fade-up" style="padding-top: 1em;"><span class="fa-li"><i class="fas fa-brain accent"></i></span>
-									<div style="padding-left: 2em;">Link genetic loci back to biological processes implicated in psychiatric conditions</div>
-								</li>
-								<li class="fragment fade-up" style="padding-top: 1em;"><span class="fa-li"><i class="fas fa-code-branch accent"></i></span>
-									<div style="padding-left: 2em;">Identified a number of synaptic processes associated with these shared loci</div>
-								</li>
-							</ul>
+              <ul class="fa-ul no-bullets" style="padding-left: 1em">
+                <li class="fragment fade-up">
+                  <span class="fa-li"><i class="fas fa-dna accent"></i></span>
+                  <div style="padding-left: 2em">
+                    Pleiotropy between mental health symptom profiles, functional connectivity, and psychiatric conditions
+                  </div>
+                </li>
+                <li class="fragment fade-up" style="padding-top: 1em">
+                  <span class="fa-li"><i class="fas fa-brain accent"></i></span>
+                  <div style="padding-left: 2em">Link genetic loci back to biological processes implicated in psychiatric conditions</div>
+                </li>
+                <li class="fragment fade-up" style="padding-top: 1em">
+                  <span class="fa-li"><i class="fas fa-code-branch accent"></i></span>
+                  <div style="padding-left: 2em">Identified a number of synaptic processes associated with these shared loci</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-						</div>
+        <!-- SLIDE -->
+        <section class="end color--green" data-state="hide-controls">
+          <div class="logo-wrapper" style="display: flex; flex-direction: column; justify-content: center">
+            <!--<div class="logo"></div>-->
 
-					</div>
-				</section>
+            <div style="margin-top: 4em">
+              <h1 style="color: white">Thank you!</h1>
+            </div>
 
-				<!-- SLIDE -->
-				<section class="end color--green" data-state="hide-controls">
-					<div class="logo-wrapper" style="display: flex;flex-direction: column;justify-content: center;">
-						<!--<div class="logo"></div>-->
+            <div class="anim-logo">
+              <svg
+                data-allBits
+                style="width: 15%"
+                width="100%"
+                height="100%"
+                viewBox="0 0 577 551"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xml:space="preserve"
+                xmlns:serif="http://www.serif.com/"
+                style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2"
+              >
+                <g transform="matrix(3.33338,0,0,3.33338,296.767,399.208)">
+                  <path
+                    data-bit
+                    d="M0,20.926L-11.435,20.926C-12.037,20.926 -12.524,20.438 -12.524,19.836L-12.524,1.09C-12.524,0.488 -12.037,0 -11.435,0L0,0C0.602,0 1.09,0.488 1.09,1.09L1.09,19.836C1.09,20.438 0.602,20.926 0,20.926"
+                    style="fill: white; fill-rule: nonzero"
+                  />
+                </g>
+                <g transform="matrix(3.33338,0,0,3.33338,458.693,386.403)">
+                  <path
+                    data-bit
+                    d="M0,16.218L-12.218,16.218C-12.82,16.218 -13.308,15.73 -13.308,15.128L-13.308,1.089C-13.308,0.487 -12.82,0 -12.218,0L0,0C0.602,0 1.09,0.487 1.09,1.089L1.09,15.128C1.09,15.73 0.602,16.218 0,16.218"
+                    style="fill: white; fill-rule: nonzero"
+                  />
+                </g>
+                <g transform="matrix(3.33338,0,0,3.33338,379.82,457.27)">
+                  <path
+                    data-bit
+                    d="M0,-36.227L32.139,-36.227C32.741,-36.227 33.228,-35.739 33.228,-35.137L33.228,-27.592C33.228,-26.99 32.741,-26.502 32.139,-26.502L0,-26.502C-0.602,-26.502 -1.09,-26.015 -1.09,-25.413L-1.09,10.468C-1.09,11.07 -1.577,11.557 -2.179,11.557L-15.651,11.557C-16.252,11.557 -16.74,11.07 -16.74,10.468L-16.74,-46.695C-16.74,-47.297 -16.252,-47.784 -15.651,-47.784L-2.179,-47.784C-1.577,-47.784 -1.09,-47.297 -1.09,-46.695L-1.09,-37.317C-1.09,-36.715 -0.602,-36.227 0,-36.227"
+                    style="fill: white; fill-rule: nonzero"
+                  />
+                </g>
+                <g transform="matrix(3.33338,0,0,3.33338,204.82,425.846)">
+                  <path
+                    data-bit
+                    d="M0,-24.854L27.776,-24.854C28.377,-24.854 28.865,-24.366 28.865,-23.764L28.865,-18.323C28.865,-17.721 28.377,-17.233 27.776,-17.233L13.089,-17.233C11.319,-17.233 9.884,-15.798 9.884,-14.028L9.884,-1.09C9.884,-0.488 9.396,0 8.794,0L-8.715,0C-9.317,0 -9.805,-0.488 -9.805,-1.09L-9.805,-16.144C-9.805,-16.745 -9.317,-17.233 -8.715,-17.233L-2.179,-17.233C-1.577,-17.233 -1.09,-17.721 -1.09,-18.323L-1.09,-23.764C-1.09,-24.366 -0.602,-24.854 0,-24.854"
+                    style="fill: white; fill-rule: nonzero"
+                  />
+                </g>
+                <g transform="matrix(3.33338,0,0,3.33338,139.052,299.409)">
+                  <path
+                    data-bit
+                    d="M0,-9.665L0,-12.667C0,-13.269 0.488,-13.757 1.09,-13.757L15.544,-13.757C16.146,-13.757 16.634,-13.269 16.634,-12.667L16.634,-7.453C16.634,-6.852 16.146,-6.364 15.544,-6.364L12.735,-6.364C11.331,-6.364 10.194,-5.226 10.194,-3.823L10.194,3.003C10.194,3.605 9.706,4.092 9.104,4.092L-23.219,4.092C-23.821,4.092 -24.309,3.605 -24.309,3.003L-24.309,-7.486C-24.309,-8.088 -23.821,-8.575 -23.219,-8.575L-1.09,-8.575C-0.488,-8.575 0,-9.063 0,-9.665"
+                    style="fill: white; fill-rule: nonzero"
+                  />
+                </g>
+                <g transform="matrix(3.33338,0,0,3.33338,257.464,90.4827)">
+                  <path
+                    data-bit
+                    d="M11.791,42.753L-3.102,42.753C-3.704,42.753 -4.192,42.265 -4.192,41.663L-4.192,32.955C-4.192,31.196 -5.618,29.77 -7.377,29.77L-17.854,29.77C-18.456,29.77 -18.943,29.282 -18.943,28.68L-18.943,18.898C-18.943,18.296 -18.456,17.809 -17.854,17.809L-5.281,17.809C-4.68,17.809 -4.192,17.321 -4.192,16.719L-4.192,1.09C-4.192,0.488 -3.704,0 -3.102,0L4.866,0C5.467,0 5.955,0.488 5.955,1.09L5.955,8.413C5.955,9.014 6.443,9.502 7.045,9.502L11.791,9.502C12.392,9.502 12.88,9.99 12.88,10.592L12.88,41.663C12.88,42.265 12.392,42.753 11.791,42.753Z"
+                    style="fill: white; fill-rule: nonzero"
+                  />
+                </g>
+                <g transform="matrix(3.33338,0,0,3.33338,61.6534,250.901)">
+                  <path
+                    data-bit
+                    d="M0,-9.471L14.907,-9.471C15.509,-9.471 15.997,-8.983 15.997,-8.381L15.997,-1.089C15.997,-0.487 15.509,0 14.907,0L0,0C-0.602,0 -1.09,-0.487 -1.09,-1.089L-1.09,-8.381C-1.09,-8.983 -0.602,-9.471 0,-9.471"
+                    style="fill: white; fill-rule: nonzero"
+                  />
+                </g>
+                <g transform="matrix(3.33338,0,0,3.33338,366.931,240.205)">
+                  <path
+                    data-bit
+                    d="M0,-32.001L4.751,-32.001C5.353,-32.001 5.84,-31.513 5.84,-30.911L5.84,-8.592C5.84,-7.99 5.353,-7.502 4.751,-7.502L0,-7.502C-0.602,-7.502 -1.09,-7.99 -1.09,-8.592L-1.09,-30.911C-1.09,-31.513 -0.602,-32.001 0,-32.001M-12.874,-54.409L-12.874,10.505C-12.874,11.106 -12.386,11.594 -11.784,11.594L10.508,11.594C12.558,11.594 14.22,13.256 14.22,15.306L14.22,22.408C14.22,23.01 14.708,23.498 15.31,23.498L27.432,23.498C28.034,23.498 28.521,23.01 28.521,22.408L28.521,10.686C28.521,10.084 29.009,9.596 29.611,9.596L44.525,9.596C45.127,9.596 45.614,9.108 45.614,8.507L45.614,2.278C45.614,1.676 45.127,1.188 44.525,1.188L19.657,1.188C19.055,1.188 18.567,0.7 18.567,0.099L18.567,-7.218C18.567,-7.819 19.055,-8.307 19.657,-8.307L31.617,-8.307C32.219,-8.307 32.707,-8.795 32.707,-9.397L32.707,-20.161C32.707,-20.763 32.219,-21.25 31.617,-21.25L19.657,-21.25C19.055,-21.25 18.567,-21.738 18.567,-22.34L18.567,-40.082C18.567,-40.683 18.08,-41.171 17.478,-41.171L0,-41.171C-0.602,-41.171 -1.09,-41.659 -1.09,-42.261L-1.09,-54.409C-1.09,-55.011 -1.577,-55.499 -2.179,-55.499L-11.784,-55.499C-12.386,-55.499 -12.874,-55.011 -12.874,-54.409"
+                    style="fill: white; fill-rule: nonzero"
+                  />
+                </g>
+              </svg>
+            </div>
 
-						<div style="margin-top: 4em;">
-							<h1 style="color: white;">Thank you!</h1>
-						</div>
+            <div>
+              <div class="col_logo"><img src="lib/norment/other/UiO_white.svg" /></div>
+              <div class="col_logo" style="width: 15%"><img src="lib/norment/other/OUS_logo_HVIT_eng.png" /></div>
+              <div class="col_logo"><img src="lib/norment/other/UiBlogo_Eng_white_left.svg" /></div>
+              <div class="col_logo"><img src="lib/norment/other/Haukeland_white.svg" /></div>
+              <div class="col_logo" style="width: 10%"><img src="lib/norment/other/CoE_white.png" /></div>
+            </div>
 
-						<div class="anim-logo">
-							<svg data-allBits style="width: 15%" width="100%" height="100%" viewBox="0 0 577 551" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-								<g transform="matrix(3.33338,0,0,3.33338,296.767,399.208)">
-									<path data-bit d="M0,20.926L-11.435,20.926C-12.037,20.926 -12.524,20.438 -12.524,19.836L-12.524,1.09C-12.524,0.488 -12.037,0 -11.435,0L0,0C0.602,0 1.09,0.488 1.09,1.09L1.09,19.836C1.09,20.438 0.602,20.926 0,20.926" style="fill:white;fill-rule:nonzero;"/>
-								</g>
-								<g transform="matrix(3.33338,0,0,3.33338,458.693,386.403)">
-									<path data-bit d="M0,16.218L-12.218,16.218C-12.82,16.218 -13.308,15.73 -13.308,15.128L-13.308,1.089C-13.308,0.487 -12.82,0 -12.218,0L0,0C0.602,0 1.09,0.487 1.09,1.089L1.09,15.128C1.09,15.73 0.602,16.218 0,16.218" style="fill:white;fill-rule:nonzero;"/>
-								</g>
-								<g transform="matrix(3.33338,0,0,3.33338,379.82,457.27)">
-									<path data-bit d="M0,-36.227L32.139,-36.227C32.741,-36.227 33.228,-35.739 33.228,-35.137L33.228,-27.592C33.228,-26.99 32.741,-26.502 32.139,-26.502L0,-26.502C-0.602,-26.502 -1.09,-26.015 -1.09,-25.413L-1.09,10.468C-1.09,11.07 -1.577,11.557 -2.179,11.557L-15.651,11.557C-16.252,11.557 -16.74,11.07 -16.74,10.468L-16.74,-46.695C-16.74,-47.297 -16.252,-47.784 -15.651,-47.784L-2.179,-47.784C-1.577,-47.784 -1.09,-47.297 -1.09,-46.695L-1.09,-37.317C-1.09,-36.715 -0.602,-36.227 0,-36.227" style="fill:white;fill-rule:nonzero;"/>
-								</g>
-								<g transform="matrix(3.33338,0,0,3.33338,204.82,425.846)">
-									<path data-bit d="M0,-24.854L27.776,-24.854C28.377,-24.854 28.865,-24.366 28.865,-23.764L28.865,-18.323C28.865,-17.721 28.377,-17.233 27.776,-17.233L13.089,-17.233C11.319,-17.233 9.884,-15.798 9.884,-14.028L9.884,-1.09C9.884,-0.488 9.396,0 8.794,0L-8.715,0C-9.317,0 -9.805,-0.488 -9.805,-1.09L-9.805,-16.144C-9.805,-16.745 -9.317,-17.233 -8.715,-17.233L-2.179,-17.233C-1.577,-17.233 -1.09,-17.721 -1.09,-18.323L-1.09,-23.764C-1.09,-24.366 -0.602,-24.854 0,-24.854" style="fill:white;fill-rule:nonzero;"/>
-								</g>
-								<g transform="matrix(3.33338,0,0,3.33338,139.052,299.409)">
-									<path data-bit d="M0,-9.665L0,-12.667C0,-13.269 0.488,-13.757 1.09,-13.757L15.544,-13.757C16.146,-13.757 16.634,-13.269 16.634,-12.667L16.634,-7.453C16.634,-6.852 16.146,-6.364 15.544,-6.364L12.735,-6.364C11.331,-6.364 10.194,-5.226 10.194,-3.823L10.194,3.003C10.194,3.605 9.706,4.092 9.104,4.092L-23.219,4.092C-23.821,4.092 -24.309,3.605 -24.309,3.003L-24.309,-7.486C-24.309,-8.088 -23.821,-8.575 -23.219,-8.575L-1.09,-8.575C-0.488,-8.575 0,-9.063 0,-9.665" style="fill:white;fill-rule:nonzero;"/>
-								</g>
-								<g transform="matrix(3.33338,0,0,3.33338,257.464,90.4827)">
-									<path data-bit d="M11.791,42.753L-3.102,42.753C-3.704,42.753 -4.192,42.265 -4.192,41.663L-4.192,32.955C-4.192,31.196 -5.618,29.77 -7.377,29.77L-17.854,29.77C-18.456,29.77 -18.943,29.282 -18.943,28.68L-18.943,18.898C-18.943,18.296 -18.456,17.809 -17.854,17.809L-5.281,17.809C-4.68,17.809 -4.192,17.321 -4.192,16.719L-4.192,1.09C-4.192,0.488 -3.704,0 -3.102,0L4.866,0C5.467,0 5.955,0.488 5.955,1.09L5.955,8.413C5.955,9.014 6.443,9.502 7.045,9.502L11.791,9.502C12.392,9.502 12.88,9.99 12.88,10.592L12.88,41.663C12.88,42.265 12.392,42.753 11.791,42.753Z" style="fill:white;fill-rule:nonzero;"/>
-								</g>
-								<g transform="matrix(3.33338,0,0,3.33338,61.6534,250.901)">
-									<path data-bit d="M0,-9.471L14.907,-9.471C15.509,-9.471 15.997,-8.983 15.997,-8.381L15.997,-1.089C15.997,-0.487 15.509,0 14.907,0L0,0C-0.602,0 -1.09,-0.487 -1.09,-1.089L-1.09,-8.381C-1.09,-8.983 -0.602,-9.471 0,-9.471" style="fill:white;fill-rule:nonzero;"/>
-								</g>
-								<g transform="matrix(3.33338,0,0,3.33338,366.931,240.205)">
-									<path data-bit d="M0,-32.001L4.751,-32.001C5.353,-32.001 5.84,-31.513 5.84,-30.911L5.84,-8.592C5.84,-7.99 5.353,-7.502 4.751,-7.502L0,-7.502C-0.602,-7.502 -1.09,-7.99 -1.09,-8.592L-1.09,-30.911C-1.09,-31.513 -0.602,-32.001 0,-32.001M-12.874,-54.409L-12.874,10.505C-12.874,11.106 -12.386,11.594 -11.784,11.594L10.508,11.594C12.558,11.594 14.22,13.256 14.22,15.306L14.22,22.408C14.22,23.01 14.708,23.498 15.31,23.498L27.432,23.498C28.034,23.498 28.521,23.01 28.521,22.408L28.521,10.686C28.521,10.084 29.009,9.596 29.611,9.596L44.525,9.596C45.127,9.596 45.614,9.108 45.614,8.507L45.614,2.278C45.614,1.676 45.127,1.188 44.525,1.188L19.657,1.188C19.055,1.188 18.567,0.7 18.567,0.099L18.567,-7.218C18.567,-7.819 19.055,-8.307 19.657,-8.307L31.617,-8.307C32.219,-8.307 32.707,-8.795 32.707,-9.397L32.707,-20.161C32.707,-20.763 32.219,-21.25 31.617,-21.25L19.657,-21.25C19.055,-21.25 18.567,-21.738 18.567,-22.34L18.567,-40.082C18.567,-40.683 18.08,-41.171 17.478,-41.171L0,-41.171C-0.602,-41.171 -1.09,-41.659 -1.09,-42.261L-1.09,-54.409C-1.09,-55.011 -1.577,-55.499 -2.179,-55.499L-11.784,-55.499C-12.386,-55.499 -12.874,-55.011 -12.874,-54.409" style="fill:white;fill-rule:nonzero;"/>
-								</g>
-							</svg>						
-						</div>
-
-						<div>
-							<div class="col_logo"><img src="lib/norment/other/UiO_white.svg"></div>
-							<div class="col_logo" style="width: 15%;"><img src="lib/norment/other/OUS_logo_HVIT_eng.png"></div>
-							<div class="col_logo"><img src="lib/norment/other/UiBlogo_Eng_white_left.svg"></div>
-							<div class="col_logo"><img src="lib/norment/other/Haukeland_white.svg"></div>
-							<div class="col_logo" style="width: 10%;"><img src="lib/norment/other/CoE_white.png"></div>
-						</div>
-
-						<!--<div style="margin-top: 1em;font-style: italic;">Thanks to</div>
+            <!--<div style="margin-top: 1em;font-style: italic;">Thanks to</div>
 						<div class="ackn" style="border: solid;border-radius: 5vmin;border-spacing: 0;width: 80%;margin: auto;">
 							<div class="col_logo"><img src="files/ukb_logo.svg"></div>
 							<div class="col_logo"><img style="height: 10vmin;" src="files/tsd_logo.png">
@@ -531,22 +564,20 @@
 							</div>
 							<div class="col_logo"><img style="min-width: 1v5vmax;" src="files/NFR_logo.svg"></div>
 						</div>-->
-					</div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- PLUGINS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/pointer/pointer.js"></script>
 
-				</section>
-
-			</div>
-		</div>
-		<!-- PLUGINS -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script src="plugin/pointer/pointer.js"></script>
-
-		<!-- REVEAL.JS SETTINGS -->
-		<script src="lib/js/head.min.js"></script>
-		<script src="dist/reveal.js"></script>
-		<script src="dist/reveal-init.js"></script>
-	</body>
+    <!-- REVEAL.JS SETTINGS -->
+    <script src="lib/js/head.min.js"></script>
+    <script src="dist/reveal.js"></script>
+    <script src="dist/reveal-init.js"></script>
+  </body>
 </html>

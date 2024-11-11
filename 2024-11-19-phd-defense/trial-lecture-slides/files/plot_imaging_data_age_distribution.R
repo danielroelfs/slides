@@ -68,6 +68,7 @@ data_imaging_age |>
     ggplot(aes(x = min_age, y = max_age, size = sample_size)) + 
     geom_hline(yintercept = 0, linewidth = 1, color = "grey20") +
     geom_vline(xintercept = 0, linewidth = 1, color = "grey20") +
+    geom_abline(slope = 1, linetype = "dashed", linewidth = 1, color = "grey80") +
     geom_point(color = "#e67467") +
     ggrepel::geom_text_repel(aes(label = study), size = 3) +
     labs(

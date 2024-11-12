@@ -148,10 +148,14 @@ section.has-light-background h6 {
   width: 80%;
 }
 
-.reveal figure iframe {
-  margin-top: -2em;
+.reveal figure.large-image img {
   width: 100%;
-  height: 90vh;
+}
+
+.reveal figure iframe {
+  margin-top: -2.5em;
+  width: 100%;
+  height: 93vh;
 }
 
 .reveal figure figcaption {
@@ -159,8 +163,7 @@ section.has-light-background h6 {
   font-style: italic;
   text-align: right;
   margin-top: 0.5vmin;
-  margin: auto;
-  width: 80%;
+  width: 100%;
 }
 
 figure .fullscreen {

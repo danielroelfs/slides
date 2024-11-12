@@ -98,7 +98,7 @@ data_imaging_age |>
         panel.grid = element_line(color = "#dddddd"),
     )
 
-ggsave("files/imaging_age_distribution.png", width = 9, height = 4.5)
+ggsave("files/imaging_age_distribution.png", width = 9, height = 5)
 
 
 

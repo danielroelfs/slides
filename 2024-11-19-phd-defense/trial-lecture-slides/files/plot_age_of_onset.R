@@ -62,6 +62,6 @@ data_aoo |>
         panel.grid.major.y = element_blank(),
     )
 
-ggsave("files/age_of_onset_disorders.png", width = 9, height = 5)
+ggsave("files/age_of_onset_disorders.png", width = 9, height = 4.5)
 
 

@@ -7,15 +7,15 @@ library(ggtext)
 
 #-- Load data ------------------------
 
-data_imaging_age <- read_csv("files/Table_1_9_bankssts.csv") |> 
-    janitor::clean_names() |> 
-    group_by(study) |> 
+data_imaging_age <- read_csv("files/Table_1_9_bankssts.csv") |>
+    janitor::clean_names() |>
+    group_by(study) |>
     summarise(
         weighted_mean_age = weighted.mean(mean_age_in_days, sample_size),
         min_age = min(minimum_age_in_days),
         max_age = max(maximum_age_in_days),
         sample_size = sum(sample_size)
-    ) |> 
+    ) |>
     mutate(
         across(contains("age"), ~ .x / 365.25),
         log = log2(sample_size)
@@ -23,7 +23,7 @@ data_imaging_age <- read_csv("files/Table_1_9_bankssts.csv") |>
 
 #-- Create barplot ------------------------
 
-data_imaging_age |> 
+data_imaging_age |>
     ggplot(aes(x = reorder(study, weighted_mean_age), y = weighted_mean_age, fill = log)) +
     geom_col(width = 0.5) +
     geom_hline(yintercept = 0, linewidth = 1) +
@@ -64,13 +64,13 @@ ggsave("files/imaging_age_distribution.png", width = 9, height = 4.5)
 
 #-- Create Gapminder plot ------------------------
 
-data_imaging_age |> 
-    ggplot(aes(x = min_age, y = max_age, size = sample_size)) + 
+data_imaging_age |>
+    ggplot(aes(x = min_age, y = max_age, size = sample_size)) +
+    geom_abline(slope = 1, linetype = "dashed", linewidth = 1, color = "grey80") +
     geom_hline(yintercept = 0, linewidth = 1, color = "grey20") +
     geom_vline(xintercept = 0, linewidth = 1, color = "grey20") +
-    geom_abline(slope = 1, linetype = "dashed", linewidth = 1, color = "grey80") +
     geom_point(color = "#e67467") +
-    ggrepel::geom_text_repel(aes(label = study), size = 3) +
+    ggrepel::geom_text_repel(aes(label = study), size = 3, max.overlaps = 15, seed = 19) +
     labs(
         title = "Age within common imaging datasets",
         x = "Minimum age (years)",
@@ -78,7 +78,13 @@ data_imaging_age |>
         color = "Mean age (years)",
         size = "Sample size"
     ) +
-    scale_size_area(max_size = 16, breaks = c(100, 500, 1000, 2000, 5000, 10000, 50000), guide = guide_legend(override.aes = list(color = "#e67467"))) +
+    scale_x_continuous(limits = c(0, 100)) +
+    scale_y_continuous(limits = c(0, 100)) +
+    scale_size_area(
+        max_size = 16,
+        breaks = c(100, 500, 1000, 2000, 5000, 10000, 50000),
+        guide = guide_legend(override.aes = list(color = "#e67467"))
+    ) +
     scale_color_gradient(
         low = "grey80", high = "#e67467",
         limits = c(0, NA),
@@ -89,7 +95,9 @@ data_imaging_age |>
     ) +
     theme_minimal() +
     theme(
-        legend.title = element_markdown(hjust = 0),
+        legend.position = "inside",
+        legend.position.inside = c(0.8, 0.35),
+        legend.title = element_markdown(hjust = 0, face = "bold"),
         text = element_text(family = "Source Sans"),
         axis.title = element_markdown(),
         plot.title.position = "plot",
@@ -99,6 +107,3 @@ data_imaging_age |>
     )
 
 ggsave("files/imaging_age_distribution.png", width = 9, height = 5)
-
-
-

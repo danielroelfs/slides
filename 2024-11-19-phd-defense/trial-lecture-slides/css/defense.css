@@ -17,7 +17,7 @@ section.has-light-background h6 {
 
 :root {
   --main-font: "Source Sans 3", sans-serif;
-  --main-font-size: 40px;
+  --main-font-size: 3.5vh;
   --main-font-color: #1f1f1f;
   /*--header-font: "Cooper Hewitt", sans-serif;*/
   --header-font: "neue-haas-grotesk-display", sans-serif;

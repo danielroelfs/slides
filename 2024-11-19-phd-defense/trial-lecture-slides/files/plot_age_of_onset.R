@@ -9,12 +9,12 @@ library(ggtext)
 
 data_aoo <- tibble(
     disorder = c(
-        "Any mental disorder", "Neurodevelopmental disorders", "Autism spectrum disorder", "Attention deficit hyperactivity disorder", 
-        "Anxiety and fear-related disorders", "Specific phobia/separation anxiety disorder", "Social anxiety disorder", "Panic disorder", 
-        "Generalized anxiety disorder", "Obsessive-compulsive related disorders", "Obsessive-compulsive disorder", "Feeding or eating disorders", 
-        "Anorexia nervosa", "Bulimia Nervosa", "Binge eating disorder", "Trauma-related disorders", "Post-traumatic stress disorder", 
-        "Disorders due to substance use or addictive behaviors", "Disorder due to use of cannabis", "Disorder due to use of alcohol", 
-        "Schizophrenia-spectrum and primary psychotic disorders", "Schizophrenia", "Acute and transient psychotic disorder", "Personality disorders", 
+        "Any mental disorder", "Neurodevelopmental disorders", "Autism spectrum disorder", "Attention deficit hyperactivity disorder",
+        "Anxiety and fear-related disorders", "Specific phobia/separation anxiety disorder", "Social anxiety disorder", "Panic disorder",
+        "Generalized anxiety disorder", "Obsessive-compulsive related disorders", "Obsessive-compulsive disorder", "Feeding or eating disorders",
+        "Anorexia nervosa", "Bulimia Nervosa", "Binge eating disorder", "Trauma-related disorders", "Post-traumatic stress disorder",
+        "Disorders due to substance use or addictive behaviors", "Disorder due to use of cannabis", "Disorder due to use of alcohol",
+        "Schizophrenia-spectrum and primary psychotic disorders", "Schizophrenia", "Acute and transient psychotic disorder", "Personality disorders",
         "Mood disorders", "Depressive disorders", "Bipolar or related disorders"
     ),
     num_samples = c(14, 21, 2, 12, 73, 22, 42, 22, 24, 20, 20, 11, 8, 8, 5, 16, 16, 58, 10, 44, 36, 25, 2, 6, 79, 62, 40),
@@ -29,7 +29,7 @@ data_aoo <- tibble(
 
 #-- Plot age of onset ------------------------
 
-data_aoo |> 
+data_aoo |>
     ggplot(aes(x = median, y = reorder(disorder, -median))) +
     geom_col(fill = "#e67467", width = 0.5) +
     geom_vline(xintercept = 0, linewidth = 1) +
@@ -63,5 +63,3 @@ data_aoo |>
     )
 
 ggsave("files/age_of_onset_disorders.png", width = 9, height = 4.5)
-
-

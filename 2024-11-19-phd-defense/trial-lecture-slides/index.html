@@ -47,6 +47,46 @@
         <section>
           <div class="grid-wrapper">
             <div class="header">
+              <div class="section">Outline</div>
+            </div>
+
+            <div class="two-column">
+              <div class="col">
+                <ul class="no-bullets">
+                  <li>
+                    <h3>Neurodevelopment</h3>
+                    <p>Definition and focus</p>
+                  </li>
+                  <li class="fragment">
+                    <h3>Imaging</h3>
+                    <p>Relevance and application</p>
+                  </li>
+                  <li class="fragment">
+                    <h3>Genetics</h3>
+                    <p>Relevance and application</p>
+                  </li>
+                  <li class="fragment">
+                    <h3>Imaging-genetics</h3>
+                    <p>1 + 1 = 3</p>
+                  </li>
+                  <li class="fragment">
+                    <h3>Conclusions</h3>
+                  </li>
+                </ul>
+              </div>
+              <div class="col vcenter">
+                <figure class="large-image">
+                  <img class="plain" src="files/development_growing_brain.png" style="margin-right: -3em" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
               <div class="section">Neurodevelopment</div>
             </div>
 
@@ -55,7 +95,7 @@
                 <ul class="no-bullets wide">
                   <li>
                     <h3>When does development happen</h3>
-                    <p>Throughout life pre-natal to dealth</p>
+                    <p>Throughout life pre-natal to the onset of neurodegeneration</p>
                   </li>
                   <li class="fragment" data-fragment-index="1">
                     <h3>Healthy vs abnormal</h3>
@@ -65,7 +105,7 @@
               </div>
               <div class="col vcenter">
                 <figure class="large-image">
-                  <img class="plain" src="files/development_growing_brain.png" style="margin-right: -3em" />
+                  <img class="plain" src="files/development_heads.png" style="margin-right: -3em" />
                 </figure>
               </div>
             </div>
@@ -111,7 +151,7 @@
             <div class="content">
               <figure class="large-image">
                 <img src="files/chart_brain_lifespan.png" style="width: 64%; margin-top: -2em" />
-                <figcaption style="margin-right: 13em">
+                <figcaption style="margin-right: 12em">
                   Bethlehem <em>et al.</em>, <a href="https://doi.org/10.1038/s41586-022-04554-y"><em>Brain charts for the human lifespan</em></a
                   >, Nature (2022)
                 </figcaption>
@@ -285,7 +325,7 @@
             <div class="two-column">
               <div class="col vcenter">
                 <ul class="no-bullets wide">
-                  <li>Detectable changes in brain volumes associated with psychopathology already at age 9-10</li>
+                  <li>Detectable changes in surface areas associated with psychopathology already at age 9-10</li>
 
                   <li class="fragment" data-fragment-index="1">
                     Difference in cortical thickness in various areas of the brain associated with neurodevelopmental disorders
@@ -380,6 +420,60 @@
                       >Association of Heritable Cognitive Ability and Psychopathology With White Matter Properties in Children and Adolescents
                     </em></a
                   >, JAMA Psychiatry (2018)
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Insights from imaging studies</div>
+            </div>
+
+            <div class="two-column">
+              <div class="col vcenter">
+                <ul class="no-bullets wide">
+                  <li>Delay in network tuning process associated with neurodevelopmental disorders</li>
+                  <li class="fragment" data-fragment-index="1">
+                    Decreased connectivity in areas associated with language processing in low-verbal ASD patients
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col">
+                <img
+                  class="fragment fade-out"
+                  data-fragment-index="1"
+                  src="files/fmri_delayed_distinctiveness.jpg"
+                  height="600"
+                  style="position: absolute; right: 2vw; top: 20vh"
+                />
+                <img
+                  class="fragment"
+                  data-fragment-index="1"
+                  src="files/fmri_asd_changes.png"
+                  height="350"
+                  style="position: absolute; right: 1vw; top: 50vh"
+                />
+              </div>
+            </div>
+
+            <div class="footer">
+              <div class="source">
+                <div>
+                  Kaufmann <em>et al.</em>,
+                  <a href="https://doi.org/10.1038/nn.4511"
+                    ><em>Delayed stabilization and individualization in connectome development are related to psychiatric disorders</em></a
+                  >, Nat Neurosci (2017)
+                </div>
+                <div class="fragment" data-fragment-index="1">
+                  Gabrielsen <em>et al.</em>,
+                  <a href="https://doi.org/10.1186/s13229-018-0248-y"
+                    ><em>Functional MRI connectivity of children with autism and low verbal and cognitive performance </em></a
+                  >, Molecular Autism (2018)
                 </div>
               </div>
             </div>
@@ -575,42 +669,6 @@
               <div class="section">Population-based studies</div>
             </div>
 
-            <div class="content vcenter">
-              <ul class="no-bullets wide">
-                <li class="fragment" data-fragment-index="1">
-                  <h3>GWAS</h3>
-                  <p>Identifies common genetic variants associated with a trait</p>
-                  <img src="./files/manhattan_plot.png" height="300" style="position: absolute; right: 5vw; top: 12vh" />
-                </li>
-                <li class="fragment" data-fragment-index="2">
-                  <h3>SNP-based heritability (h<sup>2</sup><sub>SNP</sub>)</h3>
-                  <p>Proportion of phenotypic variance attributable to additive effects of causal genetic variants</p>
-                </li>
-
-                <li class="fragment" data-fragment-index="3">
-                  <h3>PGS</h3>
-                  <p>Based on GWAS summary statistics, identifies a "polygenic score" for a trait</p>
-                </li>
-              </ul>
-            </div>
-
-            <div class="footer">
-              <div class="source fragment" data-fragment-index="2">
-                Yang <em>et al.</em>,
-                <a href="https://doi.org/10.1038/ng.3941"><em>Concepts, estimation and interpretation of SNP-based heritability</em></a
-                >, Nat Genet (2017)
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- SLIDE -->
-        <section>
-          <div class="grid-wrapper">
-            <div class="header">
-              <div class="section">Population-based studies</div>
-            </div>
-
             <div class="content">
               <h3>Polygenic Score</h3>
               <ul class="no-bullets">
@@ -644,25 +702,77 @@
         <section>
           <div class="grid-wrapper">
             <div class="header">
+              <div class="section">Population-based studies</div>
+            </div>
+
+            <div class="content vcenter">
+              <ul class="no-bullets wide">
+                <li class="fragment" data-fragment-index="1">
+                  <h3>GWAS</h3>
+                  <p>Identifies common genetic variants associated with a trait</p>
+                  <img src="./files/manhattan_plot.png" height="300" style="position: absolute; right: 5vw; top: 12vh" />
+                </li>
+                <li class="fragment" data-fragment-index="2">
+                  <h3>SNP-based heritability (h<sup>2</sup><sub>SNP</sub>)</h3>
+                  <p>Proportion of phenotypic variance attributable to additive effects of causal genetic variants</p>
+                </li>
+
+                <li class="fragment" data-fragment-index="3">
+                  <h3>PGS</h3>
+                  <p>Based on GWAS summary statistics, identifies a "polygenic score" for a trait</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer">
+              <div class="source fragment" data-fragment-index="2">
+                Yang <em>et al.</em>,
+                <a href="https://doi.org/10.1038/ng.3941"><em>Concepts, estimation and interpretation of SNP-based heritability</em></a
+                >, Nat Genet (2017)
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
               <div class="section">Challenges</div>
             </div>
 
-            <div class="content">
-              <ul class="no-bullets wide">
-                <li class="fragment">
+            <div class="content" style="grid-template-columns: 1.2fr 0.8fr">
+              <ul class="no-bullets">
+                <li class="fragment" data-fragment-index="1" style="margin-bottom: 1.7em">
                   <h3>Sample size</h3>
-                  <p>For twin studies: there are only so many twins one can study</p>
-                  <p>For GWAS: power to detect genetic influence may be limited in rare conditions</p>
+                  <p>For twin studies: there are only so many twins<br />one can study</p>
+                  <p>For GWAS: power to detect genetic influence may<br />be limited</p>
+                  <img
+                    src="./files/mixer_power_plot.png"
+                    class="fragment large-image"
+                    data-fragment-index="1"
+                    style="position: absolute; right: 1vw; top: 10vh; width: 45%"
+                  />
                 </li>
-                <li class="fragment">
+                <li class="fragment" data-fragment-index="2" style="margin-bottom: 1.7em">
                   <h3>Healthy people don't stay healthy</h3>
                   <p>Many disorders develop later in development</p>
                 </li>
-                <li class="fragment">
+                <li class="fragment" data-fragment-index="3">
                   <h3>Population stratification</h3>
                   <p>Family relations in the GWAS dataset introduce spurious assocations</p>
                 </li>
               </ul>
+            </div>
+            <div class="footer">
+              <div class="source fragment" data-fragment-index="1">
+                Holland <em>et al.</em>,
+                <a href="https://doi.org/10.1371/journal.pgen.1008612"
+                  ><em
+                    >Beyond SNP heritability: Polygenicity and discoverability of phenotypes estimated with a univariate Gaussian mixture model</em
+                  ></a
+                >, PLoS Genetics (2020)
+              </div>
             </div>
           </div>
         </section>
@@ -678,8 +788,8 @@
               <ul class="no-bullets">
                 <li>
                   <h3>GWAS results</h3>
-                  <p>Heritability (h<sup>2</sup><sub>SNP</sub>) for ASD = 0.118, ADHD = 0.22</p>
-                  <p>PGS a solid predictor for neurodevelopmental disorders</p>
+                  <p>Heritability (h<sup>2</sup><sub>SNP</sub>) for ASD = 11.8%, ADHD = 22%</p>
+                  <p>PGS at young age has been associated with psychopathological symptoms related to neurdevelopmental disorders</p>
                 </li>
                 <li class="fragment" data-fragment-index="2" style="margin-top: 2em">
                   <h3>Other GWAS results</h3>
@@ -775,14 +885,16 @@
                 <li>
                   <h3>Combine findings from both domains</h3>
                   <p>Connect the power of genetic association tests with<br />brain structure and/or functioning</p>
-                  <figure class="fragment large-image" data-fragment-index="1" style="position: absolute; right: 1vw; top: 5vh; width: 42%">
-                    <img src="./files/mixer_power_plot.png" />
-                    <figcaption style="margin-right: 1em">Unpublished figure</figcaption>
-                  </figure>
+                  <img
+                    src="./files/mostest_initial_fig.png"
+                    class="fragment"
+                    data-fragment-index="1"
+                    style="position: absolute; right: 1vw; top: 20vh; width: 42%"
+                  />
                 </li>
                 <li class="fragment" data-fragment-index="1">
                   <h3>Boost discovery in either direction</h3>
-                  <p>Use PGS to boost imaging signal, use imaging signal to boost gene discovery</p>
+                  <p>Use PGS to help identify relevant imaging features,<br />use imaging signal to boost gene discovery</p>
                 </li>
                 <li class="fragment" data-fragment-index="2">
                   <h3>Wide possibilities</h3>
@@ -797,6 +909,11 @@
                   Klein <em>et al.</em>,
                   <a href="https://doi.org/10.1002/ajmg.b.32542"><em>Imaging genetics in neurodevelopmental psychopathology</em></a
                   >, Am J Med Genet B Neuropsychiatr Genet (2017)
+                </div>
+                <div class="fragment" data-fragment-index="1">
+                  Van der Meer <em>et al.</em>,
+                  <a href="https://doi.org/10.1038/s41467-020-17368-1"><em>Understanding the genetic determinants of the brain with MOSTest</em></a
+                  >, Nat Commun (2020)
                 </div>
                 <div class="fragment" data-fragment-index="2">
                   Tissink <em>et al.</em>,
@@ -826,17 +943,23 @@
                   <h3>Lack of datasets including both imaging and genetics</h3>
                   <p>Requires resources and follow-up routines</p>
                 </li>
-                <li class="fragment" data-fragment-index="2">
-                  <h3>Lack of datasets from<br />underresearched groups</h3>
-                  <p>e.g. Africa has &lt;1 MRI scanner per million inhabitants</p>
-                  <img class="plain" src="files/mri_scanners_map.png" height="400" style="position: absolute; top: 56vh; right: 2vw" />
+                <li>
+                  <h3 class="fragment" data-fragment-index="2">Lack of datasets from<br />underrepresented populations</h3>
+                  <p class="fragment" data-fragment-index="3">e.g. Africa has &lt;1 MRI scanner per million inhabitants</p>
+                  <img
+                    class="plain fragment"
+                    data-fragment-index="3"
+                    src="files/mri_scanners_map.png"
+                    height="400"
+                    style="position: absolute; top: 56vh; right: 2vw"
+                  />
                 </li>
               </ul>
             </div>
 
             <div class="footer">
               <div class="source">
-                <div class="fragment" data-fragment-index="2">
+                <div class="fragment" data-fragment-index="3">
                   <p>
                     Anazodo <em>et al.</em>,
                     <a href="https://doi.org/10.1038/s41467-020-17368-1"
@@ -902,7 +1025,7 @@
                   >, <em>Mol Psychiatry</em> (2023)
                 </div>
                 <div class="fragment" data-fragment-index="1">
-                  Norbom,
+                  Norbom <em>et al.</em>,
                   <a href="https://doi.org/10.1038/s41398-020-00931-1"
                     ><em
                       >Testing relationships between multimodal modes of brain structural variation and age, sex and polygenic scores for neuroticism
@@ -933,23 +1056,30 @@
                     <h3>Compare genetic architecture</h3>
                     <p>Using genetic correlations, conjunctional methods, estimate polygenic overlap</p>
                   </li>
+                  <li class="fragment" data-fragment-index="2">
+                    <h3>Improve PGS</h3>
+                    <p>Filter disease PGS based on imaging GWAS</p>
+                  </li>
                 </ul>
               </div>
               <div class="col">
                 <img
+                  src="files/imggen_tissink_figure.png"
                   class="plain fragment fade-out"
                   data-fragment-index="1"
-                  src="files/imggen_tissink_figure.png"
-                  height="850"
-                  style="position: absolute; top: 17vh; right: 2vw"
+                  height="900"
+                  style="position: absolute; top: 17vh"
                 />
-                <figure class="fragment" data-fragment-index="1" style="position: absolute; top: 25vh; right: -10vw; width: 65%">
+                <figure class="fragment fade-in-then-out" data-fragment-index="1" style="position: absolute; top: 15vh; right: -10vw; width: 65%">
                   <img class="plain" src="files/venn_diagram_mostest_fc_by_ADHD.png" />
                   <figcaption style="margin-right: 15vw; margin-top: -2em">Unpublished figure</figcaption>
                 </figure>
+                <figure class="fragment" data-fragment-index="2" style="position: absolute; top: 35vh; right: -5vw; width: 62%">
+                  <img class="plain" src="files/mostest_pgs_improvement.jpg" />
+                  <figcaption style="margin-right: 6.5vw"></figcaption>
+                </figure>
               </div>
             </div>
-
             <div class="footer">
               <div class="source">
                 <div>
@@ -957,6 +1087,12 @@
                   <a href="https://doi.org/10.1038/s41562-023-01530-y"
                     ><em>Abundant pleiotropy across neuroimaging modalities identified through a multivariate genome-wide association study</em></a
                   >, Nat Commun (2024)
+                </div>
+                <div class="fragment" data-fragment-index="2">
+                  Van der Meer <em>et al.</em>,
+                  <a href="https://doi.org/10.1016/j.biopsych.2021.12.007"
+                    ><em>Boosting Schizophrenia Genetics by Utilizing Genetic Overlap With Brain Morphology </em></a
+                  >, <em>Biol Psychiatry</em> (2022)
                 </div>
               </div>
             </div>
@@ -987,22 +1123,28 @@
 
               <div class="column">
                 <img
-                  class="fragment fade-in-then-out"
+                  src="./files/art2_pleio_manhattan.png"
+                  class="fragment fade-out"
                   data-fragment-index="1"
-                  src="./files/imggen_cortical_mostest_figure.png"
-                  height="600"
-                  style="position: absolute; right: 5vw; top: 25vh"
+                  height="900"
+                  style="position: absolute; right: 2vw; top: 15vh"
                 />
                 <img
+                  src="./files/imggen_cortical_mostest_figure.png"
+                  class="fragment fade-in-then-out"
+                  data-fragment-index="1"
+                  height="700"
+                  style="position: absolute; right: 2vw; top: 25vh"
+                />
+                <img
+                  src="./files/imggen_cortical_genes_figure.png"
                   class="fragment"
                   data-fragment-index="2"
-                  src="./files/imggen_cortical_genes_figure.png"
-                  height="350"
-                  style="position: absolute; right: 2vw; top: 50vh"
+                  height="360"
+                  style="position: absolute; right: 1vw; top: 56vh"
                 />
               </div>
             </div>
-
             <div class="footer">
               <div class="source">
                 <div>
@@ -1033,6 +1175,28 @@
         <section>
           <div class="grid-wrapper">
             <div class="header">
+              <div class="section">Imaging-genetics</div>
+            </div>
+
+            <div class="content vcenter">
+              <ul class="no-bullets wide">
+                <li>
+                  <h3>Genetics and imaging are both relevant for neurodevelopmental research</h3>
+                  <p>Both in healthy state and in psychopathology</p>
+                </li>
+                <li class="fragment" data-fragment-index="1">
+                  <h3>Leveraging multiple modalities can improve our understanding of the mechanisms underlying neurodevelopment</h3>
+                  <p>Aids in the discovery of genetic variants and helps map the genetic findings to imaging features</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
               <div class="section">From populations to patients</div>
             </div>
 
@@ -1045,28 +1209,6 @@
                 <li class="fragment">
                   <h3>Beyond PGS</h3>
                   <p>Multimodal approaches offer better predictability</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <!-- SLIDE -->
-        <section>
-          <div class="grid-wrapper">
-            <div class="header">
-              <div class="section">Imaging-genetics</div>
-            </div>
-
-            <div class="content vcenter">
-              <ul class="no-bullets wide">
-                <li>
-                  <h3>Genetics and imaging are both relevant for neurodevelopmental research</h3>
-                  <p>Both in healthy state and in psychopathology</p>
-                </li>
-                <li class="fragment" data-fragment-index="1">
-                  <h3>Leveraging multiple modalities can boost signal in either direction</h3>
-                  <p>Aids in the discovery of genetic variants and helps map the genetic findings to imaging features</p>
                 </li>
               </ul>
             </div>

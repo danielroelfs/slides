@@ -4,3 +4,6 @@
 [submodule "2024-11-19-phd-defense/trial-lecture-slides/reveal.js"]
 	path = 2024-11-19-phd-defense/trial-lecture-slides/reveal.js
 	url = git@github.com:hakimel/reveal.js.git
+[submodule "2024-01-10-promenta-career-day/promenta-career-day-slides/reveal.js"]
+	path = 2024-01-10-promenta-career-day/promenta-career-day-slides/reveal.js
+	url = git@github.com:hakimel/reveal.js.git

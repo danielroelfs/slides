@@ -19,9 +19,8 @@ $(document).ready(function ($) {
 // Show favicon on every page
 window.onload = function() {
     var link = top.document.createElement("link");
-    link.type = "image/png";
     link.rel = "icon";
-    link.href = "https://danielroelfs.com/images/avatar.png";
+    link.href = "./favicon.ico";
     top.document.getElementsByTagName("head")[0].appendChild(link);
 
     var umamiscript = document.createElement("script");

@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Trial lecture slides</title>
+
+    <!-- Cooper Hewitt -->
+    <link href="https://fonts.cdnfonts.com/css/cooper-hewitt" rel="stylesheet" />
+    <!-- Source Serif 4-->
+    <link rel="stylesheet" href="https://use.typekit.net/jxt2fnp.css" />
+    <!-- Source Code -->
+    <link rel="stylesheet" href="https://use.typekit.net/uwd7war.css" />
+
+    <link rel="stylesheet" href="reveal.js/dist/reset.css" />
+    <link rel="stylesheet" href="reveal.js/dist/reveal.css" />
+    <link rel="stylesheet" href="css/defense.css" />
+
+    <!-- Plugins -->
+    <link rel="stylesheet" href="plugin/pointer/pointer.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/atom-one-dark.css" />
+
+    <link rel="icon" href="lib/norment/logo/color/mark-outline.svg" />
+    <link rel="icon" href="lib/norment/logo/color/mark-outline.png" />
+  </head>
+  <body>
+    <div class="reveal pattern--brains-mono">
+      <div class="slides">
+        <!-- SLIDE -->
+        <section class="title" data-state="hide-controls">
+          <div class="grid-wrapper">
+            <div class="content">
+              <h1>Neuroimaging genetics to understand principles of neurodevelopment</h1>
+            </div>
+            <div class="credit">
+              <hr />
+              <div class="name">Daniel Roelfs</div>
+              <div class="role">PhD Candidate</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Outline</div>
+            </div>
+
+            <div class="two-column">
+              <div class="col">
+                <ul class="no-bullets">
+                  <li>
+                    <h3>Neurodevelopment</h3>
+                    <p>Definition and focus</p>
+                  </li>
+                  <li class="fragment">
+                    <h3>Imaging</h3>
+                    <p>Relevance and application</p>
+                  </li>
+                  <li class="fragment">
+                    <h3>Genetics</h3>
+                    <p>Relevance and application</p>
+                  </li>
+                  <li class="fragment">
+                    <h3>Imaging-genetics</h3>
+                    <p>1 + 1 = 3</p>
+                  </li>
+                  <li class="fragment">
+                    <h3>Conclusions</h3>
+                  </li>
+                </ul>
+              </div>
+              <div class="col vcenter">
+                <figure class="large-image">
+                  <img class="plain" src="files/development_growing_brain.png" style="margin-right: -3em" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section class="subsection color--light-accent3" data-state="hide-controls">
+          <div class="grid-wrapper">
+            <h1>Neurodevelopment</h1>
+            <div class="description em">What is neurodevelopment and why is it relevant</div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Neurodevelopment</div>
+            </div>
+
+            <div class="two-column">
+              <div class="col vcenter">
+                <ul class="no-bullets wide">
+                  <li>
+                    <h3>When does development happen</h3>
+                    <p>Throughout life pre-natal to the onset of neurodegeneration</p>
+                  </li>
+                  <li class="fragment" data-fragment-index="1">
+                    <h3>Healthy vs abnormal</h3>
+                    <p>Defining what normal neurodevelopment looks like is essential to understand processes underlying psychopathology</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="col vcenter">
+                <figure class="large-image">
+                  <img class="plain" src="files/development_heads.png" style="margin-right: -3em" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Brain development</div>
+            </div>
+
+            <div class="two-column">
+              <div class="column" style="margin-top: -1em">
+                <h4>Height/weight growth chart</h4>
+                <figure style="width: 82%">
+                  <img src="files/growth_curve_weight.pdf" />
+                  <figcaption style="margin-right: 4em"><a href="https://www.vekststudien.no/en/">The Bergen Growth Study</a></figcaption>
+                </figure>
+              </div>
+              <div class="column" style="margin-top: -1em">
+                <h4>Brain "growth charts"</h4>
+                <figure style="width: 150%; margin-left: -5em">
+                  <img src="files/normative_modeling_chart.png" />
+                  <figcaption style="margin-right: 5em">
+                    Rutherford <em>et al.</em>, <a href="https://doi.org/10.7554/eLife.85082">Evidence for embracing normative modeling</a>, eLife
+                    (2023)
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">The brain and the onset of mental disorders</div>
+            </div>
+
+            <div class="content">
+              <figure class="large-image">
+                <img src="files/chart_brain_lifespan.png" style="width: 64%; margin-top: -2em" />
+                <figcaption style="margin-right: 12em">
+                  Bethlehem <em>et al.</em>, <a href="https://doi.org/10.1038/s41586-022-04554-y"><em>Brain charts for the human lifespan</em></a
+                  >, Nature (2022)
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Age of onset of psychiatric disorders</div>
+            </div>
+
+            <div class="content">
+              <figure class="large-image">
+                <img src="files/age_of_onset_disorders.png" />
+              </figure>
+            </div>
+
+            <div class="footer">
+              <div class="source">
+                Data from Solmi <em>et al.</em>,
+                <a href="https://doi.org/10.1038/s41380-021-01161-7"
+                  ><em>Age at onset of mental disorders worldwide: large-scale meta-analysis of 192 epidemiological studies</em></a
+                >, Mol Psychiatry (2021)
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section class="subsection color--dark-accent1" data-state="hide-controls">
+          <div class="grid-wrapper">
+            <h1>Brain imaging</h1>
+            <div class="description em">What imaging techniques can tell us about neurodevelopment</div>
+          </div>
+          <aside class="notes">Checkpoint: 10 minutes</aside>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Brain imaging datasets</div>
+            </div>
+
+            <div class="content">
+              <figure class="large-image" style="margin-top: -1em">
+                <img src="files/imaging_age_distribution.png" style="width: 94%" />
+              </figure>
+            </div>
+
+            <div class="footer">
+              <div class="source">
+                Data from Bethlehem <em>et al.</em>,
+                <a href="https://doi.org/10.1038/s41586-022-04554-y"><em>Brain charts for the human lifespan</em></a
+                >, Nature (2022)
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Imaging Modalities</div>
+            </div>
+
+            <div class="content">
+              <ul class="no-bullets" style="margin-top: -1.2em">
+                <li class="fragment" data-fragment-index="1">
+                  <h3>T1</h3>
+                  <p>CSF is dark, grey matter appears bright</p>
+                  <img src="./files/imaging_modalities/t1.png" height="475" style="position: absolute; right: 6vw; top: 15vh" />
+                </li>
+                <li class="fragment">
+                  <h3>T2</h3>
+                  <p>CSF appears white, white matter darker shade of grey</p>
+                  <img src="./files/imaging_modalities/t2.png" height="475" style="position: absolute; right: 4vw; top: 32vh" />
+                </li>
+                <li class="fragment">
+                  <h3>DWI/DTI</h3>
+                  <p>Visualizes white matter tracts, areas with higher diffusion are brighter</p>
+                  <img src="./files/imaging_modalities/dti_md.png" height="475" style="position: absolute; right: -17.3vw; top: 26vh" />
+                  <img src="./files/imaging_modalities/dti_fa.png" height="475" style="position: absolute; right: 10vw; top: 45.75vh" />
+                </li>
+                <li class="fragment">
+                  <h3>fMRI</h3>
+                  <p>Areas with high activity (i.e. oxygen perfusion) are brighter</p>
+                  <img src="./files/imaging_modalities/fmri.png" height="475" style="position: absolute; right: 4vw; top: 44vh" />
+                </li>
+                <li class="fragment">
+                  <h3>Others</h3>
+                  <p>e.g. PET, EEG, EMG</p>
+                  <img src="./files/imaging_modalities/pet.png" height="475" style="position: absolute; right: 3vw; top: 53vh" />
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer">
+              <div class="source">
+                <div class="fragment" data-fragment-index="1">
+                  Schwarz,
+                  <a href="https://doi.org/10.1038/s41586-018-0579-z"
+                    ><em>Uses of Human MR and PET Imaging in Research of Neurodegenerative Brain Diseases</em></a
+                  >, <em>Neurotherapeutics</em> (2021)
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Challenges</div>
+            </div>
+
+            <div class="content vcenter">
+              <ul class="no-bullets wide">
+                <li class="fragment" data-fragment-index="1">No standardized imaging protocol</li>
+                <li class="fragment">Different selection process and inclusion/exclusion criteria</li>
+                <li class="fragment">Few studies with longitudinal data</li>
+                <li class="fragment">Healthy controls don't necessarily stay healthy</li>
+                <li class="fragment">Scanner changes or upgrades</li>
+              </ul>
+            </div>
+
+            <div class="footer">
+              <div class="source fragment" data-fragment-index="1">
+                Anderson <em>et al.</em>,
+                <a href="https://doi.org/10.1259/bjr.20180910"
+                  ><em>Neuroimaging in Psychiatry and Neurodevelopment: why the emperor has no clothes</em></a
+                >, Br J Radiol (2019)
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section class="quote color--dark-accent2" data-state="hide-controls">
+          <div class="grid-wrapper">
+            <blockquote>
+              <em
+                >"The lack of tools for standardized assessment of brain development and ageing is particularly relevant to research studies of
+                psychiatric disorders, which are increasingly recognized as a consequence of atypical brain development [...]"</em
+              >
+              <hr />
+              <cite>Bethlehem <em>et al.</em> (2022)</cite>
+            </blockquote>
+
+            <div class="footer">
+              <div class="source">
+                Bethlehem <em>et al.</em>, <a href="https://doi.org/10.1038/s41586-022-04554-y"><em>Brain charts for the human lifespan</em></a
+                >, Nature (2022)
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Insights from imaging studies</div>
+            </div>
+
+            <div class="two-column">
+              <div class="col vcenter">
+                <ul class="no-bullets wide">
+                  <li>Detectable changes in surface areas associated with psychopathology already at age 9-10</li>
+
+                  <li class="fragment" data-fragment-index="1">
+                    Difference in cortical thickness in various areas of the brain associated with neurodevelopmental disorders
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col">
+                <img
+                  class="fragment fade-out"
+                  data-fragment-index="1"
+                  src="./files/abcd_study_logo.png"
+                  height="200"
+                  style="position: absolute; right: 5vw; top: 6vh"
+                />
+                <img
+                  class="fragment fade-in-then-out"
+                  data-fragment-index="1"
+                  src="./files/enigma_logo.png"
+                  height="200"
+                  style="position: absolute; right: 5vw; top: 6vh"
+                />
+                <img
+                  class="fragment fade-out"
+                  data-fragment-index="1"
+                  src="./files/parcel_wise_cortical_associations_p_factor.jpg"
+                  height="500"
+                  style="position: absolute; right: 5vw; top: 26vh"
+                />
+                <img
+                  class="fragment fade-in-then-out"
+                  data-fragment-index="1"
+                  src="./files/imaging_cortical_thickness.png"
+                  height="350"
+                  style="position: absolute; right: 5vw; top: 40vh"
+                />
+              </div>
+            </div>
+
+            <div class="footer">
+              <div class="source">
+                Romer <em>et al.</em>,
+                <a href="https://doi.org/10.1016/j.jaac.2023.02.002"
+                  ><em>Brain Structure Relations With Psychopathology Trajectories in the ABCD Study</em></a
+                >, JAMA Child Adolesc Psychiatry (2023)
+                <div class="fragment" data-fragment-index="1">
+                  Hettwer <em>et al.</em>,
+                  <a href="https://doi.org/10.1038/s41467-022-34367-6"
+                    ><em>Coordinated cortical thickness alterations across six neurodevelopmental and psychiatric disorders</em></a
+                  >, Nat Commun (2022)
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Insights from imaging studies</div>
+            </div>
+
+            <div class="two-column">
+              <div class="col vcenter">
+                <ul class="no-bullets wide">
+                  <li>Changes in frontotemporal connectivity tracts in children from the PNC sample associated with cognition and psychopathology</li>
+                  <li class="fragment">Alterations in myelination associated with pyschopathology measured already in adolescents</li>
+                </ul>
+              </div>
+
+              <div class="col">
+                <img src="files/imaging_diffusion_fa.png" height="600" style="position: absolute; right: 2vw; top: 20vh" />
+              </div>
+            </div>
+
+            <div class="footer">
+              <div class="source">
+                <div>
+                  Satterthwaite <em>et al.</em>,
+                  <a href="https://doi.org/10.1016/j.neuroimage.2015.03.056"
+                    ><em
+                      >The Philadelphia Neurodevelopmental Cohort: A publicly available resource for the study of normal and abnormal brain
+                      development in youth</em
+                    ></a
+                  >, NeuroImage (2016)
+                </div>
+                <div>
+                  Alnæs <em>et al.</em>,
+                  <a href="https://doi.org/10.1001/jamapsychiatry.2017.4277"
+                    ><em
+                      >Association of Heritable Cognitive Ability and Psychopathology With White Matter Properties in Children and Adolescents
+                    </em></a
+                  >, JAMA Psychiatry (2018)
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Insights from imaging studies</div>
+            </div>
+
+            <div class="two-column">
+              <div class="col vcenter">
+                <ul class="no-bullets wide">
+                  <li>Delay in network tuning process associated with neurodevelopmental disorders</li>
+                  <li class="fragment" data-fragment-index="1">
+                    Decreased connectivity in areas associated with language processing in low-verbal ASD patients
+                  </li>
+                  <li class="fragment" data-fragment-index="2">Alterations in connectivity associated with clinical symptom scores</li>
+                </ul>
+              </div>
+
+              <div class="col">
+                <img
+                  class="fragment fade-out"
+                  data-fragment-index="1"
+                  src="files/fmri_delayed_distinctiveness.jpg"
+                  height="600"
+                  style="position: absolute; right: 2vw; top: 20vh"
+                />
+                <img
+                  class="fragment fade-in-then-out"
+                  data-fragment-index="1"
+                  src="files/fmri_asd_changes.png"
+                  height="350"
+                  style="position: absolute; right: 1vw; top: 40vh"
+                />
+                <img
+                  class="fragment"
+                  data-fragment-index="2"
+                  src="files/fmri_cca_correlations.png"
+                  height="900"
+                  style="position: absolute; right: 4vw; top: 15vh"
+                />
+              </div>
+            </div>
+
+            <div class="footer">
+              <div class="source">
+                <div>
+                  Kaufmann <em>et al.</em>,
+                  <a href="https://doi.org/10.1038/nn.4511"
+                    ><em>Delayed stabilization and individualization in connectome development are related to psychiatric disorders</em></a
+                  >, Nat Neurosci (2017)
+                </div>
+                <div class="fragment" data-fragment-index="1">
+                  Gabrielsen <em>et al.</em>,
+                  <a href="https://doi.org/10.1186/s13229-018-0248-y"
+                    ><em>Functional MRI connectivity of children with autism and low verbal and cognitive performance </em></a
+                  >, Molecular Autism (2018)
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section class="subsection color--dark-accent3" data-state="hide-controls">
+          <div class="grid-wrapper">
+            <h1>Genetics</h1>
+            <div class="description em">What genetic analysis can tell us about neurodevelopment</div>
+          </div>
+          <aside class="notes">Checkpoint: 20 minutes</aside>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Twin-based studies</div>
+            </div>
+
+            <div class="content vcenter">
+              <ul class="no-bullets wide">
+                <li class="fragment" data-fragment-index="1">
+                  <h3>Similar genetics, similar environments</h3>
+                  <p>Or basically identical genetics in the case of monozygotic twins</p>
+                </li>
+                <li class="fragment" data-fragment-index="2">
+                  <h3>Study the relative contribution of environment and genetics</h3>
+                  <p>Outcomes may change while environment remains relatively stable</p>
+                </li>
+                <li class="fragment" data-fragment-index="3">
+                  <h3>Provides an estimate of heritability (h<sup>2</sup><sub>TWIN</sub>)</h3>
+                  <p>Estimates are typically higher than heritability calulated from population samples</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer">
+              <div class="source fragment" data-fragment-index="1">
+                Polderman <em>et al.</em>,
+                <a href="https://doi.org/10.1038/ng.3285"
+                  ><em>Meta-analysis of the heritability of human traits based on fifty years of twin studies</em></a
+                >, Nat Genet (2015)
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Twin-based studies</div>
+            </div>
+
+            <div class="content">
+              <figure class="large-image" style="width: 110%; margin-left: -2em; margin-top: -1em">
+                <img class="plain" src="files/danish_twin_example.png" />
+              </figure>
+            </div>
+
+            <div class="footer">
+              <div class="source">
+                Hilker <em>et al.</em>,
+                <a href="https://doi.org/10.1016/j.biopsych.2017.08.017"
+                  ><em>Heritability of Schizophrenia and Schizophrenia Spectrum Based on the Nationwide Danish Twin Register</em></a
+                >, Biol Psychiatry (2018)
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Twin-based heritability</div>
+            </div>
+
+            <div class="content">
+              <figure class="large-image">
+                <img class="plain" src="files/heritable_traits_figure.png" />
+                <figcaption style="margin-right: 2em">
+                  Boomsma <em>et al.</em>, <a href="https://doi.org/10.1038/nrg932"><em>Classical twin studies and beyond</em></a
+                  >, Nat Rev Genet (2002)
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Population-based studies</div>
+            </div>
+
+            <div class="content">
+              <figure class="large-image" style="width: 110%; margin-left: -2em">
+                <img class="plain" src="files/frequency_vs_penetrance_illustration.png" />
+              </figure>
+            </div>
+
+            <div class="footer">
+              <div class="source">
+                Adapted from McCarthy <em>et al.</em>,
+                <a href="https://doi.org/10.1038/nrg2344"
+                  ><em>Genome-wide association studies for complex traits: consensus, uncertainty and challenges</em></a
+                >, Nat Rev Genet (2008)
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Genome-wide association studies</div>
+            </div>
+
+            <div class="content">
+              <figure class="large-image">
+                <img src="files/gwas_illustration.png" />
+              </figure>
+              <div
+                class="fragment fade-out"
+                data-fragment-index="1"
+                style="position: absolute; width: 100vw; top: 55vh; left: 0; height: 35vh; background-color: #eeedef"
+              ></div>
+              <div
+                class="fragment fade-out"
+                data-fragment-index="2"
+                style="position: absolute; width: 72vw; top: 69vh; right: 0; height: 20vh; background-color: #eeedef"
+              ></div>
+              <div
+                class="fragment fade-out"
+                data-fragment-index="2"
+                style="position: absolute; width: 50vw; top: 62vh; right: 0; height: 18vh; background-color: #eeedef"
+              ></div>
+            </div>
+
+            <div class="footer" style="visibility: hidden">
+              <div class="source">
+                See e.g. Uffelman <em>et al.</em>, <a href="https://doi.org/10.1038/s43586-021-00056-9"><em>Genome-wide association studies</em></a
+                >, Nat Rev Methods Primers (2021)
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Post-GWAS analysis</div>
+            </div>
+
+            <div class="content">
+              <figure class="large-image" style="margin-top: -1em">
+                <img src="files/post_gwas_illustration.png" />
+              </figure>
+            </div>
+
+            <div class="footer">
+              <div class="source">
+                <p>
+                  Watanabe <em>et al.</em>,
+                  <a href="https://doi.org/10.1038/s41467-017-01261-5"><em>Functional mapping and annotation of genetic associations with FUMA</em></a
+                  >, Nat Commun (2017)
+                </p>
+                <p>
+                  De Leeuw <em>et al.</em>,
+                  <a href="https://doi.org/10.1371/journal.pcbi.1004219"><em>MAGMA: Generalized Gene-Set Analysis of GWAS Data</em></a
+                  >, PLOS Computational Biology (2015)
+                </p>
+                <p>
+                  Fabregat <em>et al.</em>,
+                  <a href="10.1186/s12859-017-1559-2"><em>Reactome pathway analysis: a high-performance in-memory approach</em></a
+                  >, BMC Bioinformatics (2017)
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Population-based studies</div>
+            </div>
+
+            <div class="content">
+              <h3>Polygenic Score</h3>
+              <ul class="no-bullets">
+                <li>Calculates the genetic predisposition for a trait</li>
+              </ul>
+              <figure class="large-image fragment" data-fragment-index="1" style="margin-top: 1em">
+                <img src="files/prs_illustration.png" />
+              </figure>
+              <div
+                class="fragment fade-out"
+                data-fragment-index="2"
+                style="position: absolute; width: 100vw; top: 77vh; left: 0; height: 10vh; background-color: #eeedef"
+              ></div>
+            </div>
+
+            <div class="footer">
+              <div class="source">
+                <div class="fragment" data-fragment-index="1">
+                  Adapted from Abdellaoui <em>et al.</em>,
+                  <a
+                    href="https://www.tijdschriftvoorpsychiatrie.nl/en/artikelen/article/50-12336_Genen-en-omgeving-beide-belangrijk-bij-psychisch-lijden"
+                    ><em>Genen en omgeving beide belangrijk bij psychisch lijden</em></a
+                  >, Tijdschr Psychiatr (2020)
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Population-based studies</div>
+            </div>
+
+            <div class="content vcenter">
+              <ul class="no-bullets wide">
+                <li class="fragment" data-fragment-index="1">
+                  <h3>GWAS</h3>
+                  <p>Identifies common genetic variants associated with a trait</p>
+                  <img src="./files/manhattan_plot.png" height="300" style="position: absolute; right: 5vw; top: 12vh" />
+                </li>
+                <li class="fragment" data-fragment-index="2">
+                  <h3>SNP-based heritability (h<sup>2</sup><sub>SNP</sub>)</h3>
+                  <p>Proportion of phenotypic variance attributable to additive effects of causal genetic variants</p>
+                </li>
+
+                <li class="fragment" data-fragment-index="3">
+                  <h3>PGS</h3>
+                  <p>Based on GWAS summary statistics, identifies a "polygenic score" for a trait</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer">
+              <div class="source fragment" data-fragment-index="2">
+                Yang <em>et al.</em>,
+                <a href="https://doi.org/10.1038/ng.3941"><em>Concepts, estimation and interpretation of SNP-based heritability</em></a
+                >, Nat Genet (2017)
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Challenges</div>
+            </div>
+
+            <div class="content" style="grid-template-columns: 1.2fr 0.8fr">
+              <ul class="no-bullets">
+                <li class="fragment" data-fragment-index="1" style="margin-bottom: 1.7em">
+                  <h3>Sample size</h3>
+                  <p>For twin studies: there are only so many twins<br />one can study</p>
+                  <p>For GWAS: power to detect genetic influence may<br />be limited</p>
+                  <img
+                    src="./files/mixer_power_plot.png"
+                    class="fragment large-image"
+                    data-fragment-index="1"
+                    style="position: absolute; right: 1vw; top: 10vh; width: 45%"
+                  />
+                </li>
+                <li class="fragment" data-fragment-index="2" style="margin-bottom: 1.7em">
+                  <h3>Healthy people don't stay healthy</h3>
+                  <p>Many disorders develop later in development</p>
+                </li>
+                <li class="fragment" data-fragment-index="3">
+                  <h3>Population stratification</h3>
+                  <p>Family relations in the GWAS dataset introduce spurious assocations</p>
+                </li>
+              </ul>
+            </div>
+            <div class="footer">
+              <div class="source fragment" data-fragment-index="1">
+                Holland <em>et al.</em>,
+                <a href="https://doi.org/10.1371/journal.pgen.1008612"
+                  ><em
+                    >Beyond SNP heritability: Polygenicity and discoverability of phenotypes estimated with a univariate Gaussian mixture model</em
+                  ></a
+                >, PLoS Genetics (2020)
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Population-based studies</div>
+            </div>
+
+            <div class="content">
+              <ul class="no-bullets">
+                <li>
+                  <h3>GWAS results</h3>
+                  <p>Heritability (h<sup>2</sup><sub>SNP</sub>) for ASD = 11.8%, ADHD = 22%</p>
+                  <p>PGS at young age has been associated with psychopathological symptoms related to neurdevelopmental disorders</p>
+                </li>
+                <li class="fragment" data-fragment-index="2" style="margin-top: 2em">
+                  <h3>Other GWAS results</h3>
+                  <p>Shared genetic architecture between various disorders</p>
+                  <p>
+                    Genes mapped from GWAS significant SNPs associated with biological structures and processes relevant for neurodevelopmental
+                    disorders
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer">
+              <div class="source">
+                <div>
+                  <p>
+                    Grove <em>et al.</em>,
+                    <a href="https://doi.org/10.1038/s41588-019-0344-8"
+                      ><em>Identification of common genetic risk variants for autism spectrum disorder</em></a
+                    >, Nat Genet (2019)
+                  </p>
+                  <p>
+                    Faraone <em>et al.</em>,
+                    <a href="https://doi.org/10.1038/s41380-018-0070-0"><em>Genetics of attention deficit hyperactivity disorder</em></a
+                    >, Mol Psychiatry (2019)
+                  </p>
+                  <p>
+                    Askeland <em>et al.</em>,
+                    <a href="https://doi.org/10.1111/jcpp.13528"><em>Early manifestations of genetic risk for neurodevelopmental disorders</em></a
+                    >, J Child Psychol Psychiatry (2022)
+                  </p>
+                  <p class="fragment" data-fragment-index="2">
+                    Hope <em>et al.</em>,
+                    <a href="https://doi.org/10.1038/s41398-023-02563-7"
+                      ><em>Bidirectional genetic overlap between autism spectrum disorder and cognitive traits</em></a
+                    >, Translational Psychiatry (2023)
+                  </p>
+                  <p class="fragment" data-fragment-index="2">
+                    Gidziela <em>et al.</em>,
+                    <a href="https://doi.org/10.1038/s41562-023-01530-y"
+                      ><em>A meta-analysis of genetic effects associated with neurodevelopmental disorders and co-occurring conditions</em></a
+                    >, Nat Hum Behav (2023)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section class="subsection color--light-accent4" data-state="hide-controls dark-progress">
+          <div class="grid-wrapper">
+            <h1>Imaging-genetics</h1>
+            <div class="description em">1 + 1 = 3</div>
+          </div>
+          <aside class="notes">Checkpoint: 30 minutes</aside>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Why imaging-genetics</div>
+            </div>
+
+            <div class="content">
+              <ul class="no-bullets wide">
+                <li>
+                  <h3>Neurodevelopment is complex</h3>
+                  <p>Connects the static nature of genetics with the elastic nature of brain features</p>
+                </li>
+                <li class="fragment" data-fragment-index="1">
+                  <h3>Psychiatric disorders are multifaceted</h3>
+                  <p>No single modality is going to sufficiently describe the full complexity</p>
+                </li>
+                <li class="fragment" data-fragment-index="2">
+                  <h3>Genetic factors affect brain features</h3>
+                  <p>Using a greater variety of biological traits to uncover etiology and progression</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Why imaging-genetics</div>
+            </div>
+
+            <div class="content">
+              <ul class="no-bullets wide">
+                <li>
+                  <h3>Combine findings from both domains</h3>
+                  <p>Connect the power of genetic association tests with<br />brain structure and/or functioning</p>
+                  <img
+                    src="./files/mostest_initial_fig.png"
+                    class="fragment"
+                    data-fragment-index="1"
+                    style="position: absolute; right: 1vw; top: 20vh; width: 42%"
+                  />
+                </li>
+                <li class="fragment" data-fragment-index="1">
+                  <h3>Boost discovery in either direction</h3>
+                  <p>Use PGS to help identify relevant imaging features,<br />use imaging signal to boost gene discovery</p>
+                </li>
+                <li class="fragment" data-fragment-index="2">
+                  <h3>Wide possibilities</h3>
+                  <p>Can use any imaging modality or genetic trait</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer">
+              <div class="source">
+                <div>
+                  Klein <em>et al.</em>,
+                  <a href="https://doi.org/10.1002/ajmg.b.32542"><em>Imaging genetics in neurodevelopmental psychopathology</em></a
+                  >, Am J Med Genet B Neuropsychiatr Genet (2017)
+                </div>
+                <div class="fragment" data-fragment-index="1">
+                  Van der Meer <em>et al.</em>,
+                  <a href="https://doi.org/10.1038/s41467-020-17368-1"><em>Understanding the genetic determinants of the brain with MOSTest</em></a
+                  >, Nat Commun (2020)
+                </div>
+                <div class="fragment" data-fragment-index="2">
+                  Tissink <em>et al.</em>,
+                  <a href="https://doi.org/10.1038/s41562-023-01530-y"
+                    ><em>Abundant pleiotropy across neuroimaging modalities identified through a multivariate genome-wide association study</em></a
+                  >, Nat Commun (2024)
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Challenges</div>
+            </div>
+
+            <div class="content">
+              <ul class="no-bullets wide">
+                <li>
+                  <h3>Same as previously mentioned</h3>
+                  <p>Lack of standard protocol, inclusion/exclusion criteria</p>
+                </li>
+                <li class="fragment" data-fragment-index="1">
+                  <h3>Lack of datasets including both imaging and genetics</h3>
+                  <p>Requires resources and follow-up routines</p>
+                </li>
+                <li>
+                  <h3 class="fragment" data-fragment-index="2">Lack of datasets from<br />underrepresented populations</h3>
+                  <p class="fragment" data-fragment-index="3">e.g. Africa has &lt;1 MRI scanner per million inhabitants</p>
+                  <img
+                    class="plain fragment"
+                    data-fragment-index="3"
+                    src="files/mri_scanners_map.png"
+                    height="400"
+                    style="position: absolute; top: 56vh; right: 2vw"
+                  />
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer">
+              <div class="source">
+                <div class="fragment" data-fragment-index="3">
+                  <p>
+                    Anazodo <em>et al.</em>,
+                    <a href="https://doi.org/10.1038/s41467-020-17368-1"
+                      ><em>A framework for advancing sustainable magnetic resonance imaging access in Africa</em></a
+                    >, NMR Biomed (2023)
+                  </p>
+                  <p>
+                    Hricak <em>et al.</em>,
+                    <a href="https://doi.org/10.1016/S1470-2045(20)30751-8"
+                      ><em>Medical imaging and nuclear medicine: a Lancet Oncology Commission</em></a
+                    >, Lancet Oncol (2021)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">"Combination" approaches</div>
+            </div>
+
+            <div class="two-column">
+              <div class="col vcenter">
+                <ul class="no-bullets wide">
+                  <li>
+                    <h3>Machine learning approaches</h3>
+                    <p>Use both imaging and genetic traits as features</p>
+                  </li>
+                  <li class="fragment" data-fragment-index="1">
+                    <h3>Correlations</h3>
+                    <p>Correlations between genetic and imaging traits</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="col">
+                <img
+                  class="plain fragment fade-out"
+                  data-fragment-index="1"
+                  src="files/img_gen_asd_flow.png"
+                  height="680"
+                  style="position: absolute; right: 2vw"
+                />
+                <img
+                  class="plain fragment"
+                  data-fragment-index="1"
+                  src="files/imggen_ass_pgs_ic.png"
+                  height="200"
+                  style="position: absolute; top: 50vh; right: 2vw"
+                />
+              </div>
+            </div>
+
+            <div class="footer">
+              <div class="source">
+                <div>
+                  Nisar & Haris,
+                  <a href="https://doi.org/10.1038/s41380-023-02060-9"
+                    ><em>Neuroimaging genetics approaches to identify new biomarkers for the early diagnosis of autism spectrum disorder</em></a
+                  >, <em>Mol Psychiatry</em> (2023)
+                </div>
+                <div class="fragment" data-fragment-index="1">
+                  Norbom <em>et al.</em>,
+                  <a href="https://doi.org/10.1038/s41398-020-00931-1"
+                    ><em
+                      >Testing relationships between multimodal modes of brain structural variation and age, sex and polygenic scores for neuroticism
+                      in children and adolescents</em
+                    ></a
+                  >, <em>Transl Psychiatry</em> (2020)
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">"Enrichment" approaches</div>
+            </div>
+
+            <div class="two-column">
+              <div class="col vcenter">
+                <ul class="no-bullets wide">
+                  <li>
+                    <h3>GWAS</h3>
+                    <p>Identifying SNPs and genes associated with imaging features</p>
+                  </li>
+                  <li class="fragment" data-fragment-index="1">
+                    <h3>Compare genetic architecture</h3>
+                    <p>Using genetic correlations, conjunctional methods, estimate polygenic overlap</p>
+                  </li>
+                  <li class="fragment" data-fragment-index="2">
+                    <h3>Improve PGS</h3>
+                    <p>Filter disease PGS based on imaging GWAS</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="col">
+                <img
+                  src="files/imggen_tissink_figure.png"
+                  class="plain fragment fade-out"
+                  data-fragment-index="1"
+                  height="900"
+                  style="position: absolute; top: 17vh"
+                />
+                <figure class="fragment fade-in-then-out" data-fragment-index="1" style="position: absolute; top: 15vh; right: -10vw; width: 65%">
+                  <img class="plain" src="files/venn_diagram_mostest_fc_by_ADHD.png" />
+                  <figcaption style="margin-right: 15vw; margin-top: -2em">Unpublished figure</figcaption>
+                </figure>
+                <figure class="fragment" data-fragment-index="2" style="position: absolute; top: 35vh; right: -5vw; width: 62%">
+                  <img class="plain" src="files/mostest_pgs_improvement.jpg" />
+                  <figcaption style="margin-right: 6.5vw"></figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="footer">
+              <div class="source">
+                <div>
+                  Tissink <em>et al.</em>,
+                  <a href="https://doi.org/10.1038/s41562-023-01530-y"
+                    ><em>Abundant pleiotropy across neuroimaging modalities identified through a multivariate genome-wide association study</em></a
+                  >, Nat Commun (2024)
+                </div>
+                <div class="fragment" data-fragment-index="2">
+                  Van der Meer <em>et al.</em>,
+                  <a href="https://doi.org/10.1016/j.biopsych.2021.12.007"
+                    ><em>Boosting Schizophrenia Genetics by Utilizing Genetic Overlap With Brain Morphology </em></a
+                  >, <em>Biol Psychiatry</em> (2022)
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Imaging-genetics studies</div>
+            </div>
+
+            <div class="two-column">
+              <div class="column">
+                <ul class="no-bullets wide">
+                  <li>
+                    <p>Shared genetic architecture for imaging and genetic traits associated with neurodevelopmental disorders</p>
+                  </li>
+                  <li class="fragment" data-fragment-index="1">
+                    <p>Identification of genes associated with both brain structure and neurodevelopmental disorders</p>
+                  </li>
+                  <li class="fragment" data-fragment-index="2">
+                    <p>Map SNPs identified using GWAS to biologically relevant processes</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="column">
+                <img
+                  src="./files/art2_pleio_manhattan.png"
+                  class="fragment fade-out"
+                  data-fragment-index="1"
+                  height="900"
+                  style="position: absolute; right: 2vw; top: 15vh"
+                />
+                <img
+                  src="./files/imggen_cortical_mostest_figure.png"
+                  class="fragment fade-in-then-out"
+                  data-fragment-index="1"
+                  height="700"
+                  style="position: absolute; right: 2vw; top: 25vh"
+                />
+                <img
+                  src="./files/imggen_cortical_genes_figure.png"
+                  class="fragment"
+                  data-fragment-index="2"
+                  height="360"
+                  style="position: absolute; right: 1vw; top: 56vh"
+                />
+              </div>
+            </div>
+            <div class="footer">
+              <div class="source">
+                <div>
+                  Roelfs <em>et al.</em>,
+                  <a href="https://doi.org/10.1038/s44220-023-00190-1"
+                    ><em>Genetic overlap between multivariate measures of human functional brain connectivity and psychiatric disorders</em></a
+                  >, Nat Mental Health (2024)
+                </div>
+                <div class="fragment" data-fragment-index="1">
+                  Van der Meer <em>et al.</em>,
+                  <a href="https://doi.org/10.1038/s41467-020-17368-1"><em>Understanding the genetic determinants of the brain with MOSTest</em></a
+                  >, Nat Commun (2020)
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section class="subsection color--dark-accent2" data-state="hide-controls">
+          <div class="grid-wrapper">
+            <h1>Conclusions</h1>
+            <div class="description em">How does imaging-genetics help us understand principles of neurodevelopment?</div>
+          </div>
+          <aside class="notes">Checkpoint: 40 minutes</aside>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Imaging-genetics</div>
+            </div>
+
+            <div class="content vcenter">
+              <div class="callout fragment fade-up" style="width: 67vw">
+                <div class="callout-header">Key takeaway</div>
+                <div class="callout-container" style="font-size: 1.5em">Genetics and imaging are both relevant for neurodevelopmental research</div>
+              </div>
+              <div class="callout fragment fade-up" style="width: 67vw">
+                <div class="callout-header">Key takeaway</div>
+                <div class="callout-container" style="font-size: 1.5em">
+                  Leveraging multiple modalities can improve our understanding of the mechanisms underlying neurodevelopment
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">From populations to patients</div>
+            </div>
+
+            <div class="content vcenter">
+              <ul class="no-bullets wide">
+                <li>
+                  <h3>Translate population-level findings to indivdiuals</h3>
+                  <p>Abstractification will boost discovery, but some specification is required</p>
+                </li>
+                <li class="fragment">
+                  <h3>Beyond PGS</h3>
+                  <p>Multimodal approaches offer better predictability</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section>
+          <div class="grid-wrapper">
+            <div class="header">
+              <div class="section">Future directions</div>
+            </div>
+
+            <div class="content">
+              <ul class="no-bullets wide">
+                <li>
+                  <h3>Larger samples</h3>
+                  <p>Improves statistical power for both imaging and genetics</p>
+                </li>
+                <li class="fragment">
+                  <h3>Longitudinal data</h3>
+                  <p>Study the changes within individuals to better map different conditions in absence of genetic changes</p>
+                </li>
+                <li class="fragment">
+                  <h3>Progress is incremental</h3>
+                  <p>Development of methods, larger datasets with both imaging and genetics, and better understanding of psychopathology</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE -->
+        <section class="screensaver" data-state="hide-controls hide-progress">
+          <div class="card">
+            <h1>Thank you!</h1>
+          </div>
+        </section>
+
+        <!-- END OF SLIDES -->
+      </div>
+    </div>
+
+    <!-- PLUGINS -->
+    <script src="reveal.js/plugin/notes/notes.js"></script>
+    <script src="reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="reveal.js/plugin/math/math.js"></script>
+    <script src="plugin/pointer/pointer.js"></script>
+
+    <!-- REVEAL.JS SETTINGS -->
+    <script src="lib/js/head.min.js"></script>
+    <script src="reveal.js/dist/reveal.js"></script>
+    <script src="dist/reveal-init.js"></script>
+  </body>
+</html>

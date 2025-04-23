@@ -136,6 +136,15 @@ a:hover {
   overflow: hidden;
 }
 
+.frame-disclaimer {
+  padding: 0 10px;
+}
+@media (min-width: 800px) {
+  .frame-disclaimer {
+    display: none;
+  }
+}
+
 iframe.slides-frame {
   margin: 10px;
   border: 1px solid black;
@@ -145,13 +154,4 @@ iframe.slides-frame {
   -webkit-transform-origin-y: 0;
   -ms-transform-origin-y: 0;
   -moz-transform-origin-y: 0;
-}
-
-.frame-disclaimer {
-  padding: 0 10px;
-}
-@media (min-width: 800px) {
-  .frame-disclaimer {
-    display: none;
-  }
 }

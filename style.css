@@ -129,6 +129,7 @@ a:hover {
   transition: all 0.5s ease;
 }
 
+/* iframe settings */
 .reveal-container {
   max-height: 100vh;
   max-width: 100vw;

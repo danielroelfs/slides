@@ -136,7 +136,7 @@ a:hover {
 }
 
 iframe.slides-frame {
-  margin: auto;
+  margin: 10px;
   border: 1px solid black;
   -webkit-transform-origin-x: 0;
   -ms-transform-origin-x: 0;
@@ -144,4 +144,13 @@ iframe.slides-frame {
   -webkit-transform-origin-y: 0;
   -ms-transform-origin-y: 0;
   -moz-transform-origin-y: 0;
+}
+
+.frame-disclaimer {
+  padding: 0 10px;
+}
+@media (min-width: 1000px) {
+  .frame-disclaimer {
+    display: none;
+  }
 }

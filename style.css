@@ -149,7 +149,7 @@ iframe.slides-frame {
 .frame-disclaimer {
   padding: 0 10px;
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   .frame-disclaimer {
     display: none;
   }
